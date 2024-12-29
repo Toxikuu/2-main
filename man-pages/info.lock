@@ -1,0 +1,8 @@
+name = "man-pages"
+version = "6.9.1"
+repo = "main"
+
+[data]
+source = { url = "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.9.1.tar.xz", hash = "4jy6wp8RC6Vx8NqFI-edNzaRRm7X8qMTAXIYF9NFML0" }
+extra = [
+]
