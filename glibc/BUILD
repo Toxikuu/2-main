@@ -63,6 +63,8 @@ cp -a 32DEST/usr/lib32/* ../D/usr/lib32/
 install -vm644 32DEST/usr/include/gnu/{lib-names,stubs}-32.h \
                $PWD/../D/usr/include/gnu/
 
+cd ..
+
 # _cfg_flags=(
 #   --disable-werror
 #   --disable-nscd
