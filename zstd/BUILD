@@ -11,6 +11,7 @@ EXTRA=()
 b-make prefix=/usr
 b-make prefix=/usr DESTDIR=$PWD/D
 
+mkdir -pv D/usr/lib32
 b-make clean
 CC="gcc -m32" b-make prefix=/usr
 b-make prefix=/usr DESTDIR=$PWD/32DEST install
