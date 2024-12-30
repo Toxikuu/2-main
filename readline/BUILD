@@ -28,4 +28,6 @@ make SHLIB_LIBS="-lncursesw"
 make SHLIB_LIBS="-lncursesw" DESTDIR=$PWD/32DEST install
 cp -Rv 32DEST/usr/lib32/* D/usr/lib32
 
+rm -rvf D/usr/share/{info,doc}
+
 }
