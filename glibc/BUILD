@@ -52,7 +52,7 @@ die 'm32 configure failed'
 
 make || die 'm32 make failed'
 make DESTDIR=$PWD/32DEST install || die 'm32 make install failed'
-mkdir -pv ../usr/lib32
+mkdir -pv ../D/usr/lib32
 cp -a 32DEST/usr/lib32/* ../D/usr/lib32/
 
 install -vm644 32DEST/usr/include/gnu/{lib-names,stubs}-32.h \
