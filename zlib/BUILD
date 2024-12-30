@@ -19,6 +19,7 @@ CFLAGS+=" -m32" CXXFLAGS+=" -m32" \
 b-make
 
 make DESTDIR=$PWD/32DEST install
+mkdir -pv D/usr/lib32
 cp -Rv 32DEST/usr/lib32/* D/usr/lib32
 
 rm -vf D/usr/lib/libz.a
