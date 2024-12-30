@@ -15,7 +15,7 @@ sed -i 's/-Wl,-rpath,[^ ]*//' support/shobj-conf
 
 b-cfg --with-curses
 b-make SHLIB_LIBS="-lncursesw"
-b-make SHLIB_LIBS="-lncursesw" install
+b-make SHLIB_LIBS="-lncursesw" DESTDIR=$PWD/D install
 
 mkdir -pv D/usr/lib32
 b-make distclean
