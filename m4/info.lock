@@ -1,0 +1,8 @@
+name = "m4"
+version = "1.4.19"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz", hash = "Y67eXG0zttmxNRHNC-LKwEby5w_QoHqpVzoEqCeDr5Y" }
+extra = [
+]
