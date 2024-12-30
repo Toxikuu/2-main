@@ -1,0 +1,8 @@
+name = "file"
+version = "5.46"
+repo = "main"
+
+[data]
+source = { url = "https://astron.com/pub/file/file-5.46.tar.gz", hash = "ycx3x8VgxUMTXtxVWvYJ1WGdvvARmX6YjOQKPXXYYIg" }
+extra = [
+]
