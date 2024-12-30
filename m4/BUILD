@@ -9,8 +9,11 @@ EXTRA=()
 
 2b() {
 
-b-cfg
-b-make
-b-mi
+# disable a bogus null pointer dereference warning that werrors the build
+sed -i '/-Wnull-dereference/d' configure
+./configure --prefix=/usr
+
+make
+make DESTDIR=$PWD/D install
 
 }
