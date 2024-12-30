@@ -1,0 +1,8 @@
+name = "bzip2"
+version = "1.0.8"
+repo = "main"
+
+[data]
+source = { url = "https://www.sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz", hash = "q1oDF27hBtPw-pDjgdpHjdrkBZGBU8yiSOaCzQxKImk" }
+extra = [
+]
