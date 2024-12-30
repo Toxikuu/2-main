@@ -34,6 +34,11 @@ sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
 make DESTDIR=$PWD/../D install || die 'make install failed'
 sed '/RTLDLIST=/s@/usr@@g' -i ../D/usr/bin/ldd
 
+pushd ..
+b-make -C "$PWD/localedata" objdir="$PWD/build" \
+  DESTDIR="$PWD/D" install-locale-files
+popd
+
 rm -rf ./*
 find .. -name "*.a" -delete
 
@@ -57,11 +62,6 @@ cp -a 32DEST/usr/lib32/* ../D/usr/lib32/
 
 install -vm644 32DEST/usr/include/gnu/{lib-names,stubs}-32.h \
                $PWD/../D/usr/include/gnu/
-
-cd ..
-
-b-make -C "$PWD/localedata" objdir="$PWD/build" \
-  DESTDIR="$PWD/D" install-locale-files
 
 # _cfg_flags=(
 #   --disable-werror
