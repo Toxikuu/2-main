@@ -8,14 +8,14 @@ EXTRA=()
 
 2b() {
 
-b-cfg
+./configure --prefix=/usr
 b-make
 b-mi
 
 make distclean
 
 CFLAGS+=" -m32" CXXFLAGS+=" -m32" \
-b-cfg --libdir=/usr/lib32
+./configure --prefix=/usr --libdir=/usr/lib32
 b-make
 
 make DESTDIR=$PWD/32DEST install
