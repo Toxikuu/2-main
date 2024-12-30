@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-CC=gcc b-cfg -G -O3 -r
+CC=gcc ./configure --prefix=/usr -G -O3 -r
 b-make
 b-mi
 
