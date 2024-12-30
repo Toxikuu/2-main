@@ -15,6 +15,6 @@ b-mi
 ln -sv flex D/usr/bin/lex
 ln -sv flex.1 D/usr/share/man/man1/lex.1
 
-rm -rvf D/usr/share/doc/flex
+rm -rvf D/usr/share/doc
 
 }
