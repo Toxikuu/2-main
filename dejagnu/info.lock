@@ -1,0 +1,8 @@
+name = "dejagnu"
+version = "1.6.3"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz", hash = "h9rvrNeVi0pp-IxoVtvRY0JhljxBQHnQw3H1ic1mouM" }
+extra = [
+]
