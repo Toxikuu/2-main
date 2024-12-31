@@ -1,0 +1,8 @@
+name = "tcl"
+version = "8.6.16"
+repo = "main"
+
+[data]
+source = { url = "https://downloads.sourceforge.net/tcl/tcl8.6.16-src.tar.gz", hash = "kcuPphdxxjwmLvtVMFm3x61nV6-lhXr2Jl5LC9wqFKU" }
+extra = [
+]
