@@ -35,6 +35,7 @@ b-mi
 
 ln -sv gcc.1 D/usr/share/man/man1/cc.1
 
+mkdir -pv D/usr/lib/bfd-plugins
 ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/14.2.0/liblto_plugin.so \
         D/usr/lib/bfd-plugins/
 
@@ -55,5 +56,8 @@ rm -v dummy.c a.out dummy.log
 
 mkdir -pv D/usr/share/gdb/auto-load/usr/lib
 mv -v D/usr/lib/*gdb.py D/usr/share/gdb/auto-load/usr/lib
+
+# move D to where 2 expects it to be (the build root)
+mv -v D "$BLD"
 
 }
