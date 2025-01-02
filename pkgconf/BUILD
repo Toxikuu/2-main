@@ -3,7 +3,7 @@ VERS="2.3.0"
 DESC="Package compiler and linker metadata toolkit"
 UPST="https://github.com/pkgconf/pkgconf.git"
 
-SOURCE="https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-$VERS.tar.gz"
+SOURCE="https://distfiles.ariadne.space/pkgconf/pkgconf-$VERS.tar.xz"
 EXTRA=()
 
 2b() {
