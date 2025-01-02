@@ -3,6 +3,6 @@ version = "2.3.0"
 repo = "main"
 
 [data]
-source = { url = "https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.3.0.tar.gz", hash = "DuEDzTkMPuDnenoccdy3mlCkJvoqZI9tB_JnjCOtxeM" }
+source = { url = "https://distfiles.ariadne.space/pkgconf/pkgconf-2.3.0.tar.xz", hash = "OpCArFHQNhXnwZEKCiqN8IQkiStfE7BiiiBNP8zg6os" }
 extra = [
 ]
