@@ -6,6 +6,7 @@ UPST="https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
 SOURCE="https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-$VERS.tar.xz"
 EXTRA=()
 
+# NOTE: these instructions do not install any binaries, just libraries
 2b() {
 
 sed -i '/install -m.*STA/d' libcap/Makefile
