@@ -35,6 +35,10 @@ DESTDIR="$PWD/32DEST" b-ninja install
 mkdir -pv D/usr/lib32
 cp -vR 32DEST/usr/lib32/* D/usr/lib32
 
+mkdir -pv D/etc/pam.d
+cp -v "$PORT/system-*" D/etc/pam.d/
+cp -v "$PORT/other" D/etc/pam.d/
+
 }
 
 2z() {
