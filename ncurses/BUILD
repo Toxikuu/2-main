@@ -48,7 +48,7 @@ CC="gcc -m32" CXX="g++ -m32" \
 b-make
 b-make DESTDIR="$PWD/32DEST" install
 
-mkdir -pv 32DEST/usr/lib32/pkgconfig
+mkdir -pv {32DEST,D}/usr/lib32/pkgconfig
 for lib in ncurses form panel menu ; do
     rm -vf                    32DEST/usr/lib32/lib${lib}.so
     echo "INPUT(-l${lib}w)" > 32DEST/usr/lib32/lib${lib}.so
