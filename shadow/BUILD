@@ -55,4 +55,24 @@ do
     sed -i "s/^${FUNCTION}/# &/" D/etc/login.defs
 done
 
+mkdir -pv D/etc/pam.d
+for FILE in login passwd su chpasswd newusers chage
+do
+    cp -vf "$PORT/$FILE" D/etc/pam.d/
+done
+
+for PROGRAM in chfn chgpasswd chsh groupadd groupdel \
+               groupmems groupmod useradd userdel usermod
+do
+    install -v -m644 D/etc/pam.d/chage D/etc/pam.d/${PROGRAM}
+    sed -i "s/chage/$PROGRAM/" D/etc/pam.d/${PROGRAM}
+done
+
+}
+
+2z() {
+
+if [ -f /etc/login.access ]; then mv -v /etc/login.access{,.NOUSE}; fi
+if [ -f /etc/limits ]; then mv -v /etc/limits{,.NOUSE}; fi
+
 }
