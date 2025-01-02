@@ -10,12 +10,18 @@ EXTRA=()
 
 sed -i '/install -m.*STA/d' libcap/Makefile
 
-b-make
-b-mi prefix="$PWD/D/usr" lib=lib
+_mk_opts=(
+DYNAMIC=yes
+prefix=/usr
+-C libcap
+)
 
-make distclean
-b-make CC="gcc -m32 -march=i686"
-b-mi CC="gcc -m32 -march=i686" lib=lib32 prefix="$PWD/32DEST/usr" -C libcap
+b-make "${_mk_opts[@]}"
+b-mi lib=lib "${_mk_opts[@]}"
+
+make distclean || true
+b-make CC="gcc -m32 -march=i686" "${_mk_opts[@]}"
+b-make CC="gcc -m32 -march=i686" lib=lib32 "${_mk_opts[@]}" DESTDIR="$PWD/32DEST" install
 
 mkdir -pv D/usr/lib32
 cp -Rv 32DEST/usr/lib32/* D/usr/lib32
