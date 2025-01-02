@@ -15,9 +15,7 @@ CP=build b-ms -D docs=disabled
 b-ninja -C build
 b-ni    -C build
 
-chmod -v 4755 D/usr/sbin/unix_chkpwd
 rm -rvf D/usr/lib/systemd
-
 mkdir -pv D/etc/pam.d
 
 rm -rf   build
@@ -31,18 +29,19 @@ CP=build b-ms        \
 
 b-ninja -C build
 
-DESTDIR="$PWD/32DEST" b-ninja install
+DESTDIR="$PWD/32DEST" b-ninja install -C build
 mkdir -pv D/usr/lib32
 cp -vR 32DEST/usr/lib32/* D/usr/lib32
 
 mkdir -pv D/etc/pam.d
-cp -v "$PORT/system-*" D/etc/pam.d/
+cp -v "$PORT/system-"* D/etc/pam.d/
 cp -v "$PORT/other" D/etc/pam.d/
 
 }
 
 2z() {
 
+chmod -v 4755 /usr/sbin/unix_chkpwd
 ldconfig
 
 }
