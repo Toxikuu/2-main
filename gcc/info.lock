@@ -1,0 +1,8 @@
+name = "gcc"
+version = "14.2.0"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz", hash = "p7Obxpy_niWCbFpgqyZHcAH3wI2FzsBLwOKcq-1vPMk" }
+extra = [
+]
