@@ -1,0 +1,8 @@
+name = "gmp"
+version = "6.3.0"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz", hash = "o8K4AgG4nmhhb0rTC8Zq7kknw85Q4zkpyoGdXENTiJg" }
+extra = [
+]
