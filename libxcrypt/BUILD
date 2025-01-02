@@ -25,6 +25,7 @@ b-cfg         \
     --disable-failure-tokens
 
 b-make
+mkdir -pv D/usr/lib32
 cp -av .libs/libcrypt.so* D/usr/lib32
 
 b-make install-pkgconfigDATA
