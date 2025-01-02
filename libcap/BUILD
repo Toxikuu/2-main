@@ -1,0 +1,25 @@
+NAME="libcap"
+VERS="2.73"
+DESC="POSIX 1003.1e capabilities"
+UPST="https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
+
+SOURCE="https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-$VERS.tar.xz"
+EXTRA=()
+
+2b() {
+
+sed -i '/install -m.*STA/d' libcap/Makefile
+b-make prefix=/usr lib=lib
+b-mi prefix="$PWD/D/usr" lib=lib
+
+b-make distclean
+b-make CC="gcc -m32 -march=i686"
+b-mi CC="gcc -m32 -march=i686" lib=lib32 prefix="$PWD/32DEST/usr" -C libcap
+
+mkdir -pv D/usr/lib32
+cp -Rv 32DEST/usr/lib32/* D/usr/lib32
+
+sed -e "s@^libdir=.*@libdir=/usr/lib32@" -i /usr/lib32/pkgconfig/lib{cap,psx}.pc
+chmod -v 755 D/usr/lib32/libcap.so.$VERS
+
+}

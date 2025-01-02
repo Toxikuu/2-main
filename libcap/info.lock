@@ -1,0 +1,8 @@
+name = "libcap"
+version = "2.73"
+repo = "main"
+
+[data]
+source = { url = "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.73.tar.xz", hash = "ZAX2CJz0zdjCcVQM2ZBlTXjdCxmJstm9og-TOnWnlaU" }
+extra = [
+]
