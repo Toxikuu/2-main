@@ -1,0 +1,8 @@
+name = "attr"
+version = "2.5.2"
+repo = "main"
+
+[data]
+source = { url = "https://download.savannah.gnu.org/releases/attr/attr-2.5.2.tar.gz", hash = "Ob9nRS-kHQlIwhl2AQU_SLPXigKTiXNDMqYwmmgMbIc" }
+extra = [
+]
