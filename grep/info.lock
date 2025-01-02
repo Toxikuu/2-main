@@ -1,0 +1,8 @@
+name = "grep"
+version = "3.11"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz", hash = "HbKu3eidDepCsW2VKPiUyNFdrk4ZC1muzHj1qVEnbqs" }
+extra = [
+]
