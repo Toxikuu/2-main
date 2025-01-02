@@ -1,0 +1,8 @@
+name = "bash"
+version = "5.2.37"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz", hash = "lZmyLs0dV4etfTt78MWfMSszltHigRdd0fikAU2mIf8" }
+extra = [
+]
