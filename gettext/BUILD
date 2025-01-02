@@ -28,4 +28,6 @@ b-make
 b-mi
 chmod -v 0755 D/usr/lib/preloadable_libintl.so
 
+rm -rvf D/usr/share/{info,doc}
+
 }
