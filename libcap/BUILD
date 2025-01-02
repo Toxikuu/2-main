@@ -9,6 +9,7 @@ EXTRA=()
 2b() {
 
 sed -i '/install -m.*STA/d' libcap/Makefile
+mkdir -pv build64 build32
 
 b-make -C build64
 b-mi prefix="$PWD/D/usr" lib=lib -C build64
