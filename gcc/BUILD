@@ -33,10 +33,10 @@ mlist=m64,m32
 b-make
 b-mi
 
-ln -sv gcc.1 /usr/share/man/man1/cc.1
+ln -sv gcc.1 D/usr/share/man/man1/cc.1
 
 ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/14.2.0/liblto_plugin.so \
-        /usr/lib/bfd-plugins/
+        D/usr/lib/bfd-plugins/
 
 echo 'int main(){}' > dummy.c
 cc dummy.c -v -Wl,--verbose &> dummy.log
