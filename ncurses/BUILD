@@ -19,13 +19,10 @@ EXTRA=()
             --with-pkg-config-libdir=/usr/lib/pkgconfig
 
 b-make
-b-make DESTDIR="$PWD/dest" install
+b-mi
 
-install -vm755 dest/usr/lib/libncursesw.so.6.5 D/usr/lib
-rm -v  dest/usr/lib/libncursesw.so.6.5
 sed -e 's/^#if.*XOPEN.*$/#if 1/' \
-    -i dest/usr/include/curses.h
-cp -av dest/* D/
+    -i D/usr/include/curses.h
 
 for lib in ncurses form panel menu ; do
     ln -sfv lib${lib}w.so D/usr/lib/lib${lib}.so
