@@ -45,6 +45,7 @@ if [ NUMPASSED -lt 197 ]; then
     echo "Only $NUMPASSED gmp tests passed (>= 197 needed)!"
 fi
 
+mkdir -pv D/usr/{lib32,include/m32}
 b-make DESTDIR="$PWD/32DEST" install
 cp -Rv 32DEST/usr/lib32/* D/usr/lib32
 cp -Rv 32DEST/usr/include/m32/* D/usr/include/m32/
