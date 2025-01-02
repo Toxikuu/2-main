@@ -1,0 +1,8 @@
+name = "linux-pam"
+version = "1.7.0"
+repo = "main"
+
+[data]
+source = { url = "https://github.com/linux-pam/linux-pam/releases/download/v1.7.0/Linux-PAM-1.7.0.tar.xz", hash = "V9zXprlm7NW72V4dERc3NGkeFraGkvpZZhza6bE7Fpc" }
+extra = [
+]
