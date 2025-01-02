@@ -1,0 +1,8 @@
+name = "libtool"
+version = "2.5.4"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/libtool/libtool-2.5.4.tar.xz", hash = "-B9YYGZrC8fYS63e-mDRy5-m_OsjmMw7rKavqmAmZnU" }
+extra = [
+]
