@@ -13,6 +13,6 @@ b-make
 b-mi
 
 mkdir -pv D/usr/share/gdb/auto-load/usr/lib
-mv -v /usr/lib/libisl*gdb.py D/usr/share/gdb/auto-load/usr/lib
+mv -v D/usr/lib/libisl*gdb.py D/usr/share/gdb/auto-load/usr/lib
 
 }
