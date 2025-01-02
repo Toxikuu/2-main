@@ -13,7 +13,7 @@ sed -i '/install -m.*STA/d' libcap/Makefile
 b-make
 b-mi prefix="$PWD/D/usr" lib=lib
 
-make distclean || true # libcap tries to use git and fails because this isn't a git repo
+make distclean
 b-make CC="gcc -m32 -march=i686"
 b-mi CC="gcc -m32 -march=i686" lib=lib32 prefix="$PWD/32DEST/usr" -C libcap
 
