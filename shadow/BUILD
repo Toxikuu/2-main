@@ -26,10 +26,11 @@ sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' \
     -e '/PATH=/{s@/sbin:@@;s@/bin:@@}'                  \
     -i etc/login.defs
 
-./configure --sysconfdir=/etc \
-            --disable-static  \
-            --without-libbsd  \
-            --with-{b,yes}crypt
+./configure --sysconfdir=/etc   \
+            --disable-static    \
+            --without-libbsd    \
+            --with-{b,yes}crypt \
+            --with-group-name-max-length=32 
 b-make
 b-mi exec_prefix=/usr pamddir=
 
