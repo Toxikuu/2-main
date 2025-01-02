@@ -57,7 +57,4 @@ rm -v dummy.c a.out dummy.log
 mkdir -pv D/usr/share/gdb/auto-load/usr/lib
 mv -v D/usr/lib/*gdb.py D/usr/share/gdb/auto-load/usr/lib
 
-# move D to where 2 expects it to be (the build root)
-mv -v D "$BLD"
-
 }
