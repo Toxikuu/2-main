@@ -1,0 +1,8 @@
+name = "gdbm"
+version = "1.24"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/gdbm/gdbm-1.24.tar.gz", hash = "aV6YJ_33Y1E_EzkQvH5s_bkYeUOk_slD5XRJcj0rjb8" }
+extra = [
+]
