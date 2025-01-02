@@ -1,0 +1,8 @@
+name = "ncurses"
+version = "6.5"
+repo = "main"
+
+[data]
+source = { url = "https://invisible-mirror.net/archives/ncurses/ncurses-6.5.tar.gz", hash = "E22RvCaamleF5fnpgLx2q1dCj2BM4-WlqQzrx2eXHMY" }
+extra = [
+]
