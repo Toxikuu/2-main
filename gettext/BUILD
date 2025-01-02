@@ -1,0 +1,31 @@
+NAME="gettext"
+VERS="0.23.1"
+DESC="Internationalization and localization utilities"
+UPST="https://git.savannah.gnu.org/git/gettext.git"
+
+SOURCE="https://ftp.gnu.org/gnu/gettext/gettext-$VERS.tar.xz"
+EXTRA=()
+
+2b() {
+
+sed -e '/^structured/s/xmlError \*/typeof(xmlCtxtGetLastError(NULL)) /' \
+    -i gettext-tools/src/its.c
+
+_cfg_opts=(
+    --enable-curses       \
+    --disable-csharp      \
+    --disable-java        \
+    --disable-native-java \
+    --disable-rpath       \
+    --disable-nls         \
+    --without-cvs         \
+    --without-git         \
+    --without-included-gettext
+)
+
+b-cfg "${_cfg_opts[@]}"
+b-make
+b-mi
+chmod -v 0755 D/usr/lib/preloadable_libintl.so
+
+}
