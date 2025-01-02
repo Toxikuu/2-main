@@ -12,14 +12,21 @@ sed -e '/^structured/s/xmlError \*/typeof(xmlCtxtGetLastError(NULL)) /' \
     -i gettext-tools/src/its.c
 
 _cfg_opts=(
-    --enable-curses       \
-    --disable-csharp      \
-    --disable-java        \
-    --disable-native-java \
-    --disable-rpath       \
-    --disable-nls         \
-    --without-cvs         \
-    --without-git         \
+    --disable-c++
+    --disable-csharp
+    --disable-dependency-tracking
+    --disable-java
+    --disable-native-java
+    --disable-nls
+    --disable-rpath
+    --enable-curses
+    --enable-shared
+    --enable-threads=posix
+    --with-xz
+    --without-bzip2
+    --without-cvs
+    --without-emacs
+    --without-git
     --without-included-gettext
 )
 
