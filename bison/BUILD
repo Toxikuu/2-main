@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-b-fg --prefix=/usr
+b-cfg --prefix=/usr
 b-make
 b-mi
 
