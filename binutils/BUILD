@@ -27,7 +27,7 @@ cd       build
 
 b-make tooldir=/usr
 
-b-make -k check
+make -k check
 NUMFAILED=$(grep '^FAIL:' $(find -name '*.log') | wc -l)
 
 if [ NUMFAILED -gt 12 ]; then
