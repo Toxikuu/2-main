@@ -1,0 +1,8 @@
+name = "shadow"
+version = "4.17.1"
+repo = "main"
+
+[data]
+source = { url = "https://github.com/shadow-maint/shadow/releases/download/4.17.1/shadow-4.17.1.tar.xz", hash = "QRWlf5QEoDgIXhYJIPs5WCf-NDYyh_cJu52MHtjLzgI" }
+extra = [
+]
