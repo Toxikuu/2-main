@@ -1,0 +1,8 @@
+name = "gperf"
+version = "1.24"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/gperf/gperf-1.24.tar.gz", hash = "" }
+extra = [
+]
