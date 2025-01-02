@@ -21,6 +21,7 @@ b-cfg \
 
 b-make
 b-make DESTDIR="$PWD/32DEST" install
+mkdir -pv D/usr/lib32
 cp -Rv 32DEST/usr/lib32/* D/usr/lib32/
 
 }
