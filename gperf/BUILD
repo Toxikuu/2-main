@@ -1,5 +1,5 @@
 NAME="gperf"
-VERS="1.24"
+VERS="3.1"
 DESC="Perfect hash function generator"
 UPST="https://git.savannah.gnu.org/git/gperf.git"
 
