@@ -11,7 +11,7 @@ EXTRA=()
 _cfg_opts=(
     --prefix=/usr
     --disable-debuginfod
-    --enable-libdebuginfod
+    --enable-libdebuginfod=dummy
 )
 
 ./configure "${_cfg_opts[@]}"
