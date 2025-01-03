@@ -9,14 +9,14 @@ EXTRA=()
 2b() {
 
 _cfg_opts=(
-    --libdir=lib
     --openssldir=/etc/ssl
     --prefix=/usr  
     shared
     zlib-dynamic
 )
 
-./config "${_cfg_opts[@]}"
+./config --libdir=lib \
+         "${_cfg_opts[@]}"
 b-make
 
 sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
