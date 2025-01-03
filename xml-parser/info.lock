@@ -1,0 +1,8 @@
+name = "xml-parser"
+version = "2.47"
+repo = "main"
+
+[data]
+source = { url = "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.47.tar.gz", hash = "rUquZD7HhPSJuVar6VJDKHGmItTitcYZ6IVazL_E0dg" }
+extra = [
+]
