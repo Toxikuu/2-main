@@ -24,7 +24,7 @@ b-mi MANSUFFIX=ssl
 
 b-make distclean
 ./config --libdir=lib32 \
-         --linux-x86    \
+         linux-x86      \
          "${_cfg_opts[@]}"
 b-make
 b-make DESTDIR="$PWD/32DEST" install
