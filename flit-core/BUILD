@@ -9,6 +9,7 @@ EXTRA=()
 2b() {
 
 pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD
+mkdir -pv D
 pip3 install --no-index --no-user --find-links --prefix="$PWD/D" dist flit_core
 
 }
