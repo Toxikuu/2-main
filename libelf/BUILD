@@ -19,7 +19,7 @@ _cfg_opts=(
 b-make
 b-mi -C libelf
 
-install -vDm644 config/libelf.pc D/usr/lib/pkgconfig/
+install -vDm644 config/libelf.pc D/usr/lib/pkgconfig/libelf.pc
 rm -v D/usr/lib/libelf.a
 
 b-make distclean
