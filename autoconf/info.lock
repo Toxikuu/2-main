@@ -1,0 +1,8 @@
+name = "autoconf"
+version = "2.72"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.xz", hash = "uohcExlXjWyU1G6bDc60AUyq_iSQ5Deg28o_JwoiP1o" }
+extra = [
+]
