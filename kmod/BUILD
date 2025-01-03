@@ -18,7 +18,7 @@ _cfg_opts=(
     --disable-manpages
 )
 
-./configure "${kmod[@]}"
+./configure "${_cfg_opts[@]}"
 
 b-make
 b-mi
