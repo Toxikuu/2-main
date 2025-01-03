@@ -1,0 +1,8 @@
+name = "python"
+version = "3.13.1"
+repo = "main"
+
+[data]
+source = { url = "https://www.python.org/ftp/python/3.13.1/Python-3.13.1.tar.xz", hash = "nPlCe-6eIkLjh33Q9rZBwYU8pGHznWUDziYKWcgL8Nk" }
+extra = [
+]
