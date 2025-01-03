@@ -1,0 +1,8 @@
+name = "less"
+version = "671"
+repo = "main"
+
+[data]
+source = { url = "https://github.com/gwsw/less/archive/refs/tags/v671.tar.gz", hash = "mWJ0OLvriwBRePjWEQJC5RnJiJEM9P_SZ8YAx5-rvhw" }
+extra = [
+]
