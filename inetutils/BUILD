@@ -27,6 +27,4 @@ _cfg_opts=(
 b-make
 b-mi
 
-mv -v D/usr/{,s}bin/ifconfig
-
 }
