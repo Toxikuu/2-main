@@ -8,6 +8,8 @@ EXTRA=()
 
 2b() {
 
+mkdir -pv D/usr/{lib32,sbin}
+
 _cfg_opts=(
     --prefix=/usr
     --sysconfdir=/etc
@@ -39,7 +41,6 @@ CC="gcc -m32" ./configure     \
 
 b-make
 b-make DESTDIR="$PWD/32DEST" install
-mkdir -pv D/usr/lib32
 cp -Rv 32DEST/usr/lib32/* D/usr/lib32
 
 }
