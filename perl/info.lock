@@ -1,0 +1,8 @@
+name = "perl"
+version = "5.41.7"
+repo = "main"
+
+[data]
+source = { url = "https://www.cpan.org/src/5.0/perl-5.41.7.tar.gz", hash = "xptoiZ5a5rCQpL2kOneiR0gpmYFFt-Kt4TleKxbzxFI" }
+extra = [
+]
