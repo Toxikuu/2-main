@@ -14,7 +14,7 @@ EXTRA=()
 export BUILD_ZLIB=False
 export BUILD_BZIP2=0
 
-sh Configure -des                                                 \
+yes 'y' | sh Configure -des                                       \
              -D prefix=/usr                                       \
              -D vendorprefix=/usr                                 \
              -D privlib=/usr/lib/perl$MAJOR/$MINOR/core_perl      \
