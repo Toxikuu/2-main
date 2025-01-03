@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-pip-build
-pip-install wheel
+b-pipbuild
+b-pipinstall wheel
 
 }
