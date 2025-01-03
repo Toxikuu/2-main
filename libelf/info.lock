@@ -1,0 +1,8 @@
+name = "libelf"
+version = "0.192"
+repo = "main"
+
+[data]
+source = { url = "https://sourceware.org/ftp/elfutils/0.192/elfutils-0.192.tar.bz2", hash = "YWCZvq4kq6Efm2PYbKbMjVZtlouAI5EzTJHfVOq0FrQ" }
+extra = [
+]
