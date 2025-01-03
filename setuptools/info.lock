@@ -1,0 +1,8 @@
+name = "setuptools"
+version = "75.6.0"
+repo = "main"
+
+[data]
+source = { url = "https://pypi.org/packages/source/s/setuptools/setuptools-75.6.0.tar.gz", hash = "gZkiJVjffIYhavT4TDDps0ph2LoZNmzJFEJM29KCUvY" }
+extra = [
+]
