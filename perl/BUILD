@@ -27,7 +27,8 @@ sh Configure -des                                                 \
              -D man3dir=/usr/share/man/man3                       \
              -D pager="/usr/bin/less -isR"                        \
              -D useshrplib                                        \
-             -D usethreads
+             -D usethreads                                        \
+             -D usedevel
 
 b-make
 b-mi
