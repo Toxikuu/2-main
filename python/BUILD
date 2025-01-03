@@ -15,4 +15,6 @@ EXTRA=()
 b-make
 b-mi
 
+install -vDm644 "$PORT/pip.conf" D/etc/pip.conf
+
 }
