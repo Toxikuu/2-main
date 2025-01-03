@@ -1,0 +1,8 @@
+name = "kmod"
+version = "33"
+repo = "main"
+
+[data]
+source = { url = "https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-33.tar.xz", hash = "3HaLMVUXIJH1bcaUMLVIHy127NnMtU6tjCVA289eqbw" }
+extra = [
+]
