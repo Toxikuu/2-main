@@ -1,5 +1,5 @@
 NAME="perl"
-VERS="5.41.7"
+VERS="5.40.0" # latest release
 DESC="The Practical Extraction and Report Language"
 UPST="https://github.com/Perl/perl5.git"
 
@@ -14,7 +14,7 @@ EXTRA=()
 export BUILD_ZLIB=False
 export BUILD_BZIP2=0
 
-yes 'y' | sh Configure -des                                       \
+sh Configure -des                                                 \
              -D prefix=/usr                                       \
              -D vendorprefix=/usr                                 \
              -D privlib=/usr/lib/perl$MAJOR/$MINOR/core_perl      \
@@ -27,8 +27,7 @@ yes 'y' | sh Configure -des                                       \
              -D man3dir=/usr/share/man/man3                       \
              -D pager="/usr/bin/less -isR"                        \
              -D useshrplib                                        \
-             -D usethreads                                        \
-             -D usedevel
+             -D usethreads
 
 b-make
 b-mi
