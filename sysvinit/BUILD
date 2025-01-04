@@ -12,9 +12,9 @@ EXTRA=(
 
 b-patch "$SRC"/sysvinit-3.12-consolidated-1.patch
 b-make
-b-mi
+b-make ROOT="$PWD/D" install
 
 mkdir -pv D/etc
-cp -vR "$PORT"/etc D/etc
+cp -vR "$PORT"/etc D
 
 }
