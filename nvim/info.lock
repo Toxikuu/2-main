@@ -1,0 +1,8 @@
+name = "nvim"
+version = "0.10.3"
+repo = "main"
+
+[data]
+source = { url = "https://github.com/neovim/neovim/archive/refs/tags/v0.10.3.tar.gz", hash = "Ofq0fSQdp7lBiCPMVjxonVIsHEst7wQDY5ODTz8cqUw" }
+extra = [
+]
