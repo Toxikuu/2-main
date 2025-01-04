@@ -11,7 +11,7 @@ EXTRA=()
 mkdir -pv build
 cd        build
 
-b-cfg \
+CP=.. b-cfg \
     --sysconfdir=/etc   \
     --enable-elf-shlibs \
     --disable-libblkid  \
