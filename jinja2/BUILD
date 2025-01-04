@@ -1,5 +1,5 @@
 NAME="jinja2"
-VERS="3.15"
+VERS="3.1.5"
 DESC="Python module implementing a simple template language"
 UPST="https://github.com/pallets/jinja.git"
 
