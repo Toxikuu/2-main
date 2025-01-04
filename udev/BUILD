@@ -41,6 +41,7 @@ b-ninja udevadm systemd-hwdb                                           \
       $udev_helpers
 
 install -vm755 -d {"$BLD"/D/usr/lib,/etc}/udev/{hwdb.d,rules.d,network}
+install -vm755 -d "$BLD"/D/usr/{s,}bin
 install -vm755 -d "$BLD"/D/usr/{lib,share}/pkgconfig
 install -vm755 udevadm                             "$BLD"/D/usr/bin/
 install -vm755 systemd-hwdb                        "$BLD"/D/usr/bin/udev-hwdb
