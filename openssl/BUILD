@@ -22,13 +22,6 @@ b-make
 sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
 b-mi MANSUFFIX=ssl
 
-# this is a fucking stupid solution but i cant get openssl to cooperate LOL
-# works fucking FINE for m32 though!!
-pushd D/usr/lib
-ln -sfv libssl.so{.3,}
-ln -sfv libcrypto.so{.3,}
-popd
-
 b-make distclean
 ./config --libdir=lib32 \
          linux-x86      \
@@ -37,5 +30,12 @@ b-make
 b-make DESTDIR="$PWD/32DEST" install
 mkdir -pv D/usr/lib32
 cp -Rv 32DEST/usr/lib32/* D/usr/lib32
+
+# this is a fucking stupid solution but i cant get openssl to cooperate LOL
+pushd D/usr/lib
+ln -sfv libssl.so{.3,}
+ln -sfv libcrypto.so{.3,}
+popd
+
 
 }
