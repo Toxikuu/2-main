@@ -1,0 +1,8 @@
+name = "patch"
+version = "2.7.6"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz", hash = "rGEL2per4Nn2t8ljJVoR3LGWwl4zfGH5Tkd41jLx2P0" }
+extra = [
+]
