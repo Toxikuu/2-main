@@ -1,0 +1,8 @@
+name = "efibootmgr"
+version = "18"
+repo = "main"
+
+[data]
+source = { url = "https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz", hash = "RChn0S-FJQNKQE_IrzA226jh_JcJmK8khsO5QN-tCHQ" }
+extra = [
+]
