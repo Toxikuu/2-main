@@ -18,8 +18,6 @@ _cfg_opts=(
 ./config --libdir=lib \
          "${_cfg_opts[@]}"
 b-make
-
-sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
 b-make MANSUFFIX=ssl DESTDIR="$PWD/D" install
 
 b-make distclean
