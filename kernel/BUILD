@@ -61,9 +61,9 @@ clean_build() {
 }
 
 if [ -z "$kver" ]; then
-    clean_build()
+    clean_build
 else
-    reuse_build()
+    reuse_build
 fi
 
 }
