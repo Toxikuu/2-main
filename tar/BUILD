@@ -8,7 +8,9 @@ EXTRA=()
 
 2b() {
 
+FORCE_UNSAFE_CONFIGURE=1 \
 b-cfg
+
 b-make
 b-mi
 
