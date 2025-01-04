@@ -1,0 +1,8 @@
+name = "kernel"
+version = "6.12.8"
+repo = "main"
+
+[data]
+source = { url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.8.tar.gz", hash = "ISZGtBeisspXg0WelxujFJ9HKgkumpp1YaHYhIXVGBI" }
+extra = [
+]
