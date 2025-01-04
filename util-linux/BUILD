@@ -44,7 +44,6 @@ trap restore EXIT
 mv -v /usr/bin/ncursesw6-config{,.tmp}
 
 b-32cfg "${_cfg_opts[@]}" --libdir=/usr/lib32
-
 b-make
 b-32mi
 mv -v /usr/bin/ncursesw6-config{.tmp,}
