@@ -76,9 +76,9 @@ b-ninja \
         build.ninja | awk '{ print $2 }') \
       $(realpath libudev.so --relative-to .)
 
-mkdir -pv D/usr/lib32/pkgconfig
-cp -av libudev.so{,*[0-9]} D/usr/lib32/
-sed -e "s@/usr/lib@&32@g" src/libudev/libudev.pc > D/usr/lib32/pkgconfig/libudev.pc
+mkdir -pv "$BLD"/D/usr/lib32/pkgconfig
+cp -av libudev.so{,*[0-9]} "$BLD"/D/usr/lib32/
+sed -e "s@/usr/lib@&32@g" src/libudev/libudev.pc > "$BLD"/D/usr/lib32/pkgconfig/libudev.pc
 
 }
 
