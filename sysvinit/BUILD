@@ -1,9 +1,9 @@
 NAME="sysvinit"
-VERS="3.12"
+VERS="3.13"
 DESC="A simple init system"
 UPST="https://github.com/slicer69/sysvinit.git"
 
-SOURCE="https://github.com/slicer69/sysvinit/releases/download/$VERS/sysvinit-$VERS.tar.xz"
+SOURCE="https://github.com/slicer69/sysvinit/releases/download/$VERS/sysvinit-3.12.tar.xz"
 EXTRA=(
     "https://www.linuxfromscratch.org/patches/lfs/development/sysvinit-$VERS-consolidated-1.patch"
 )
