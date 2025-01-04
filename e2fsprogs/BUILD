@@ -17,6 +17,7 @@ CP=.. b-cfg \
     --disable-libblkid  \
     --disable-libuuid   \
     --disable-uuidd     \
+    --disable-fuse2fs   \
     --disable-fsck
 
 b-make
