@@ -9,7 +9,7 @@ EXTRA=()
 2b() {
 
 b-pipbuild
-b-pipinstall $NAME
+b-pipinstall meson
 
 install -vDm644 data/shell-completions/bash/meson D/usr/share/bash-completion/completions/meson
 install -vDm644 data/shell-completions/zsh/_meson D/usr/share/zsh/site-functions/_meson
