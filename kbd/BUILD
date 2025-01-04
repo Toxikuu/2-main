@@ -1,10 +1,12 @@
 NAME="kbd"
 VERS="2.7.1"
 DESC="Keyboard utilities and keytable files"
-UPST="https://www.kernel.org/pub/linux/utils/kbd/kbd-$VERS.tar.xz"
+UPST="https://git.kernel.org/pub/scm/linux/kernel/git/legion/kbd.git"
 
-SOURCE=""
-EXTRA=()
+SOURCE="https://www.kernel.org/pub/linux/utils/kbd/kbd-$VERS.tar.xz"
+EXTRA=(
+    "https://www.linuxfromscratch.org/patches/lfs/development/kbd-$PATCHVERS-backspace-1.patch"
+)
 
 2b() {
 
