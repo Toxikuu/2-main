@@ -10,7 +10,7 @@ EXTRA=(
 
 2b() {
 
-b-patch "$SRC"/sysvinit-3.13-consolidated-1.patch
+b-patch "$SRC"/sysvinit-3.12-consolidated-1.patch
 b-make
 b-mi
 
