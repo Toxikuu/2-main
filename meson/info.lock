@@ -1,0 +1,8 @@
+name = "meson"
+version = "1.6.1"
+repo = "main"
+
+[data]
+source = { url = "https://github.com/mesonbuild/meson/releases/download/1.6.1/meson-1.6.1.tar.gz", hash = "HspJ62wm1Yu-5n_TM32O9VfAgE4wptFr_fJp25l0ZN4" }
+extra = [
+]
