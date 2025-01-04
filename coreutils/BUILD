@@ -20,7 +20,7 @@ FORCE_UNSAFE_CONFIGURE=1  \
 b-make
 b-mi
 
-mkdir -pv D/usr/sbin
+mkdir -pv D/usr/sbin D/usr/share/man/man8
 mv -v D/usr/bin/chroot D/usr/sbin/
 mv -v D/usr/share/man/man1/chroot.1 D/usr/share/man/man8/chroot.8
 sed -i 's@"1"@"8"@' D/usr/share/man/man8/chroot.8
