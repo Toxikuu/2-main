@@ -1,0 +1,8 @@
+name = "lfs-bootscripts"
+version = "20240825"
+repo = "main"
+
+[data]
+source = { url = "https://www.linuxfromscratch.org/lfs/downloads/development/lfs-bootscripts-20240825.tar.xz", hash = "leEz03LOo8DndihKTUVUJ99SyySqcWJBc9vHQgRh6V4" }
+extra = [
+]
