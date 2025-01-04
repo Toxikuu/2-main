@@ -22,8 +22,12 @@ b-make
 sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
 b-mi MANSUFFIX=ssl
 
-# openssl really doesn't want to put the symlinks in DESTDIR LOL
-find . -maxdepth 1 -type l -name 'lib*.so' -exec cp -av {} D/usr/lib \;
+# this is a fucking stupid solution but i cant get openssl to cooperate LOL
+# works fucking FINE for m32 though!!
+pushd D/usr/lib
+ln -sv libssl.so{.3,}
+ln -sv libcrypto.so{.3,}
+popd
 
 b-make distclean
 ./config --libdir=lib32 \
