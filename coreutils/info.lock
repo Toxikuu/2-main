@@ -1,0 +1,9 @@
+name = "coreutils"
+version = "9.5"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/coreutils/coreutils-9.5.tar.xz", hash = "zTKO3qyS9qZl3p8yPJO3Eq8YWLwuDYjz9xAEaUcKG4o" }
+extra = [
+  { url = "https://www.linuxfromscratch.org/patches/lfs/development/coreutils-9.5-i18n-2.patch", hash = "mfFVPOm33tY0u1bawUum5Dn8Ek2vjaQ27kzaH9KG9KI" },
+]
