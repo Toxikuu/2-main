@@ -1,0 +1,8 @@
+name = "markupsafe"
+version = "3.0.2"
+repo = "main"
+
+[data]
+source = { url = "https://pypi.org/packages/source/M/MarkupSafe/markupsafe-3.0.2.tar.gz", hash = "7lXT7fgBZ-SOoRqSPHOG9Gad9n15lFVDh_hOfYsKK_A" }
+extra = [
+]
