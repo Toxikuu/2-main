@@ -1,0 +1,44 @@
+NAME="util-linux"
+VERS="2.40.2"
+DESC="Miscellaneous utility prorgrams"
+UPST="https://github.com/util-linux/util-linux.git"
+
+SOURCE="https://www.kernel.org/pub/linux/utils/util-linux/v${VERS%.*}/util-linux-$VERS.tar.xz"
+EXTRA=()
+
+2b() {
+
+_cfg_opts=(
+    --bindir=/usr/bin     \
+    --libdir=/usr/lib     \
+    --runstatedir=/run    \
+    --sbindir=/usr/sbin   \
+    --disable-chfn-chsh   \
+    --disable-login       \
+    --disable-nologin     \
+    --disable-su          \
+    --disable-setpriv     \
+    --disable-runuser     \
+    --disable-pylibmount  \
+    --disable-liblastlog2 \
+    --without-python      \
+    --without-systemd     \
+    --without-systemdsystemunitdir        \
+    ADJTIME_PATH=/var/lib/hwclock/adjtime \
+    --docdir=/usr/share/doc/util-linux-$VERS
+)
+
+b-cfg "${_cfg_opts[@]}"
+b-make
+b-mi
+
+b-make distclean
+mv -v /usr/bin/ncursesw6-config{,.tmp}
+
+b-32cfg "${_cfg_opts[@]}"
+
+b-make
+b-32mi
+mv -v /usr/bin/ncursesw6-config{.tmp,}
+
+}
