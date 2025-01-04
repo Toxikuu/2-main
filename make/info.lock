@@ -1,0 +1,8 @@
+name = "make"
+version = "4.4.1"
+repo = "main"
+
+[data]
+source = { url = "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz", hash = "3Rb7HWe_q3mnL16DkHNcSePo5wtJRaFasfgd23hlj7M" }
+extra = [
+]
