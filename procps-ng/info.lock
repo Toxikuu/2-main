@@ -1,0 +1,8 @@
+name = "procps-ng"
+version = "4.0.5"
+repo = "main"
+
+[data]
+source = { url = "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.5.tar.xz", hash = "wubRk8x4-EzW3bcqr21capFi8EcOWZIJIFf1_1GFYvo" }
+extra = [
+]
