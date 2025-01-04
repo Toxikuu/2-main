@@ -8,9 +8,16 @@ EXTRA=()
 
 2b() {
 
+restore() {
+    if [ -e /usr/bin/ncursesw6-config.tmp ]; then
+        mv -v /usr/bin/ncursesw6-config{.tmp,}
+    fi
+}
+
+restore
+
 _cfg_opts=(
     --bindir=/usr/bin     \
-    --libdir=/usr/lib     \
     --runstatedir=/run    \
     --sbindir=/usr/sbin   \
     --disable-chfn-chsh   \
@@ -28,14 +35,15 @@ _cfg_opts=(
     --docdir=/usr/share/doc/util-linux-$VERS
 )
 
-b-cfg "${_cfg_opts[@]}"
+b-cfg "${_cfg_opts[@]}" --libdir=/usr/lib
 b-make
 b-mi
 
 b-make distclean
+trap restore EXIT
 mv -v /usr/bin/ncursesw6-config{,.tmp}
 
-b-32cfg "${_cfg_opts[@]}"
+b-32cfg "${_cfg_opts[@]}" --libdir=/usr/lib32
 
 b-make
 b-32mi
