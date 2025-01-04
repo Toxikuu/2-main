@@ -14,6 +14,7 @@ b-patch "$SRC"/sysvinit-$VERS-consolidated-1.patch
 b-make
 b-mi
 
+mkdir -pv D/etc
 cp -vR "$PORT"/etc D/etc
 
 }
