@@ -5,5 +5,5 @@ repo = "main"
 [data]
 source = { url = "https://www.kernel.org/pub/linux/utils/kbd/kbd-2.7.1.tar.xz", hash = "8WfYmdkrVszxL29JNVFz-ThwqV8V2K7r9f3NKKYhrKg" }
 extra = [
-  { url = "https://www.linuxfromscratch.org/patches/lfs/development/kbd--backspace-1.patch", hash = "" },
+  { url = "https://www.linuxfromscratch.org/patches/lfs/development/kbd-2.7.1-backspace-1.patch", hash = "i-KNyxFCBiSlAPLqT-l193EXS__uUOVOyM0pWi3sEE4" },
 ]

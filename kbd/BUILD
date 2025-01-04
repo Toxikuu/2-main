@@ -5,7 +5,7 @@ UPST="https://git.kernel.org/pub/scm/linux/kernel/git/legion/kbd.git"
 
 SOURCE="https://www.kernel.org/pub/linux/utils/kbd/kbd-$VERS.tar.xz"
 EXTRA=(
-    "https://www.linuxfromscratch.org/patches/lfs/development/kbd-$PATCHVERS-backspace-1.patch"
+    "https://www.linuxfromscratch.org/patches/lfs/development/kbd-$VERS-backspace-1.patch"
 )
 
 2b() {
