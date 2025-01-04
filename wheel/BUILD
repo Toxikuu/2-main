@@ -9,6 +9,7 @@ EXTRA=()
 2b() {
 
 b-pipbuild
+echo "\$NAME: $NAME"
 b-pipinstall
 
 }
