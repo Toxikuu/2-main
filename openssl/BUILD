@@ -25,8 +25,8 @@ b-mi MANSUFFIX=ssl
 # this is a fucking stupid solution but i cant get openssl to cooperate LOL
 # works fucking FINE for m32 though!!
 pushd D/usr/lib
-ln -sv libssl.so{.3,}
-ln -sv libcrypto.so{.3,}
+ln -sfv libssl.so{.3,}
+ln -sfv libcrypto.so{.3,}
 popd
 
 b-make distclean
