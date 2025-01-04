@@ -1,0 +1,8 @@
+name = "kbd"
+version = "2.7.1"
+repo = "main"
+
+[data]
+source = { url = "", hash = "" }
+extra = [
+]
