@@ -18,7 +18,12 @@ _cfg_opts=(
 ./config --libdir=lib \
          "${_cfg_opts[@]}"
 b-make
-b-make MANSUFFIX=ssl DESTDIR="$PWD/D" install
+
+sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
+b-mi MANSUFFIX=ssl
+
+# openssl really doesn't want to put the symlinks in DESTDIR LOL
+find . -maxdepth 1 -type l -name 'lib*.so' -exec cp -av {} D/usr/lib \;
 
 b-make distclean
 ./config --libdir=lib32 \
