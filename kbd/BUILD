@@ -20,8 +20,8 @@ b-make
 b-mi
 
 mkdir -pv D/usr/share/doc
-cp -Rv docs/doc -T /usr/share/doc/kbd-$VERS
+cp -Rv docs/doc -T D/usr/share/doc/kbd-$VERS
 
-# TODO: Conosider not packaging mac, atari, sun keymaps
+# TODO: Consider not packaging mac, atari, sun keymaps
 
 }
