@@ -22,7 +22,6 @@ make DESTDIR=$PWD/32DEST install
 mkdir -pv D/usr/lib32
 cp -Rv 32DEST/usr/lib32/* D/usr/lib32
 
-rm -vf D/usr/lib/libz.a
-rm -vf /usr/lib32/libz.a
+rm -vf D/usr/lib{,32}/libz.a
 
 }
