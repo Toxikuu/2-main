@@ -12,7 +12,7 @@ sed -i /ARPD/d Makefile
 rm -fv man/man8/arpd.8
 
 b-make NETNS_RUN_DIR=/run/netns
-b-make SBINDIR=/usr/sbin install
+b-mi SBINDIR=/usr/sbin
 
 install -vDm644 COPYING README* -t D/usr/share/doc/iproute2-$VERS
 
