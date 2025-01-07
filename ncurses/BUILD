@@ -9,41 +9,38 @@ EXTRA=()
 
 2b() {
 
-./configure --prefix=/usr           \
-            --mandir=/usr/share/man \
-            --with-shared           \
-            --without-debug         \
-            --without-normal        \
-            --with-cxx-shared       \
-            --enable-pc-files       \
-            --with-pkg-config-libdir=/usr/lib/pkgconfig
+DS=1 b-cfg \
+    --mandir=/usr/share/man \
+    --with-shared           \
+    --without-debug         \
+    --without-normal        \
+    --with-cxx-shared       \
+    --enable-pc-files       \
+    --with-pkg-config-libdir=/usr/lib/pkgconfig
 
 b-make
 b-mi
 
 sed -e 's/^#if.*XOPEN.*$/#if 1/' \
-    -i D/usr/include/curses.h
+    -i "$D"/usr/include/curses.h
 
 for lib in ncurses form panel menu ; do
-    ln -sfv lib${lib}w.so D/usr/lib/lib${lib}.so
-    ln -sfv ${lib}w.pc    D/usr/lib/pkgconfig/${lib}.pc
+    ln -sfv lib${lib}w.so "$D"/usr/lib/lib${lib}.so
+    ln -sfv ${lib}w.pc    "$D"/usr/lib/pkgconfig/${lib}.pc
 done
 
-ln -sfv libncursesw.so D/usr/lib/libcurses.so
+ln -sfv libncursesw.so "$D"/usr/lib/libcurses.so
 
 make distclean
 
-CC="gcc -m32" CXX="g++ -m32" \
-./configure --prefix=/usr           \
-            --host=i686-pc-linux-gnu \
-            --libdir=/usr/lib32     \
-            --mandir=/usr/share/man \
-            --with-shared           \
-            --without-debug         \
-            --without-normal        \
-            --with-cxx-shared       \
-            --enable-pc-files       \
-            --with-pkg-config-libdir=/usr/lib32/pkgconfig
+DS=1 b-32cfg \
+    --mandir=/usr/share/man \
+    --with-shared           \
+    --without-debug         \
+    --without-normal        \
+    --with-cxx-shared       \
+    --enable-pc-files       \
+    --with-pkg-config-libdir=/usr/lib32/pkgconfig
 
 b-make
 b-make DESTDIR="$PWD/32DEST" install
@@ -58,6 +55,6 @@ done
 rm -vf                     32DEST/usr/lib32/libcursesw.so
 echo "INPUT(-lncursesw)" > 32DEST/usr/lib32/libcursesw.so
 ln -sfv libncurses.so      32DEST/usr/lib32/libcurses.so
-cp -Rv 32DEST/usr/lib32/* D/usr/lib32
+cp -Rv 32DEST/usr/lib32/* "$D"/usr/lib32
 
 }
