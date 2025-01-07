@@ -27,15 +27,12 @@ b-make distclean
          linux-x86      \
          "${_cfg_opts[@]}"
 b-make
-b-make DESTDIR="$PWD/32DEST" install
-mkdir -pv D/usr/lib32
-cp -Rv 32DEST/usr/lib32/* D/usr/lib32
+b-32mi
 
 # this is a fucking stupid solution but i cant get openssl to cooperate LOL
 pushd D/usr/lib
 ln -sfv libssl.so{.3,}
 ln -sfv libcrypto.so{.3,}
 popd
-
 
 }
