@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-mkdir -pv D/usr/{lib32,sbin}
+mkdir -pv "$D"/usr/sbin
 
 _cfg_opts=(
     --prefix=/usr
@@ -20,27 +20,24 @@ _cfg_opts=(
     --disable-manpages
 )
 
-./configure "${_cfg_opts[@]}"
+DS=1 b-cfg "${_cfg_opts[@]}"
 
 b-make
 b-mi
 
 for target in depmod insmod modinfo modprobe rmmod; do
-  ln -sfv ../bin/kmod D/usr/sbin/$target
-  rm -fv D/usr/bin/$target
+  ln -sfv ../bin/kmod "$D"/usr/sbin/$target
+  rm -fv "$D"/usr/bin/$target
 done
 
 sed -e "s/^CLEANFILES =.*/CLEANFILES =/" -i man/Makefile
 b-make clean
 
-CC="gcc -m32" ./configure     \
-    --host=i686-pc-linux-gnu  \
-    --libdir=/usr/lib32       \
-    "${_cfg_opts[@]}"         \
+DS=1 b-32cfg \
+    "${_cfg_opts[@]}" \
     --with-rootlibdir=/usr/lib32
 
 b-make
-b-make DESTDIR="$PWD/32DEST" install
-cp -Rv 32DEST/usr/lib32/* D/usr/lib32
+b-32mi
 
 }
