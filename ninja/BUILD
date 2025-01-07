@@ -17,8 +17,8 @@ sed -i '/int Guess/a \
 
 python3 configure.py --bootstrap
 
-install -vDm755 ninja D/usr/bin/ninja
-install -vDm644 misc/bash-completion D/usr/share/bash-completion/completions/ninja
-install -vDm644 misc/zsh-completion  D/usr/share/zsh/site-functions/_ninja
+install -vDm755 ninja "$D"/usr/bin/ninja
+install -vDm644 misc/bash-completion "$D"/usr/share/bash-completion/completions/ninja
+install -vDm644 misc/zsh-completion  "$D"/usr/share/zsh/site-functions/_ninja
 
 }
