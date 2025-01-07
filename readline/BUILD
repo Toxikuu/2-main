@@ -15,19 +15,12 @@ sed -i 's/-Wl,-rpath,[^ ]*//' support/shobj-conf
 
 b-cfg --with-curses
 b-make SHLIB_LIBS="-lncursesw"
-b-make SHLIB_LIBS="-lncursesw" DESTDIR=$PWD/D install
+b-mi SHLIB_LIBS="-lncursesw"
 
-mkdir -pv D/usr/lib32
 b-make distclean
-CC="gcc -m32" b-cfg \
-    --host=i686-pc-linux-gnu  \
-    --libdir=/usr/lib32       \
-    --with-curses
 
+b-32cfg --with-curses
 make SHLIB_LIBS="-lncursesw"
-make SHLIB_LIBS="-lncursesw" DESTDIR=$PWD/32DEST install
-cp -Rv 32DEST/usr/lib32/* D/usr/lib32
-
-rm -rvf D/usr/share/{info,doc}
+b-32mi SHLIB_LIBS="-lncursesw"
 
 }
