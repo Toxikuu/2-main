@@ -13,15 +13,9 @@ b-make
 b-mi
 
 b-make distclean
-CC="gcc -m32" CXX="g++ -m32" \
-b-cfg \
-    --libdir=/usr/lib32      \
-    --host=i686-pc-linux-gnu \
-    --enable-libgdbm-compat
+b-32cfg --enable-libgdbm-compat
 
 b-make
-b-make DESTDIR="$PWD/32DEST" install
-mkdir -pv D/usr/lib32
-cp -Rv 32DEST/usr/lib32/* D/usr/lib32/
+b-32mi
 
 }
