@@ -13,7 +13,7 @@ b-patch "$SRC/binutils-$VERS-upstream_fix-1.patch"
 mkdir -v build
 cd       build
 
-../configure --prefix=/usr  \
+DS=1 CP=.. b-cfg \
     --sysconfdir=/etc       \
     --enable-gold           \
     --enable-ld=default     \
@@ -35,6 +35,6 @@ if [ NUMFAILED -gt 12 ]; then
 fi
 
 b-mi tooldir=/usr
-rm -vf D/usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a
+rm -vf "$D"/usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a
 
 }
