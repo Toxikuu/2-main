@@ -33,7 +33,7 @@ b-cfg "${_cfg_flags[@]}"
 b-make
 b-mi
 
-mkdir -pv D/etc
-cp -vf "$PORT"/chrony.conf D/etc/chrony.conf
+mkdir -pv "$D"/etc
+cp -vf "$PORT"/chrony.conf "$D"/etc/chrony.conf
 
 }
