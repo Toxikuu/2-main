@@ -1,0 +1,8 @@
+name = "eza"
+version = "0.20.15"
+repo = "main"
+
+[data]
+source = { url = "https://github.com/eza-community/eza/archive/refs/tags/v0.20.15.tar.gz", hash = "y7UOYbNbBsz0h-5syI07YkkxCTVGGU3VorvVCe0XhtY" }
+extra = [
+]
