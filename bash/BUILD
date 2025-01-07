@@ -9,9 +9,9 @@ EXTRA=()
 
 2b() {
 
-./configure --prefix=/usr         \
-            --without-bash-malloc \
-            --with-installed-readline
+DS=1 b-cfg \
+    --without-bash-malloc \
+    --with-installed-readline
 b-make
 b-mi
 
