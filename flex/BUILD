@@ -12,9 +12,7 @@ b-cfg
 b-make
 b-mi
 
-ln -sv flex D/usr/bin/lex
-ln -sv flex.1 D/usr/share/man/man1/lex.1
-
-rm -rvf D/usr/share/{info,doc}
+ln -sv flex "$D"/usr/bin/lex
+ln -sv flex.1 "$D"/usr/share/man/man1/lex.1
 
 }
