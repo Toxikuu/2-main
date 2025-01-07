@@ -19,7 +19,7 @@ mkdir -v build
 cd       build
 
 mlist=m64,m32
-DS=1 b-cfg \
+CP=.. DS=1 b-cfg \
     LD=ld                       \
     --enable-languages=c,c++    \
     --enable-default-pie        \
