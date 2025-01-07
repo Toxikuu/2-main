@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-sed '20,$ d' -i trust/trust-extract-compat &&
+sed '20,$ d' -i trust/trust-extract-compat
 
 cat >> trust/trust-extract-compat << "EOF"
 # Copy existing anchor modifications to /etc/ssl/local
@@ -30,8 +30,8 @@ CP=.. b-32ms -D trust_paths=/etc/pki/anchors
 b-ninja
 b-32ni
 
-ln -sfv ./pkcs11/p11-kit-trust.so "$BLD"/D/usr/lib/libnssckbi.so
-ln -sfv ./pkcs11/p11-kit-trust.so "$BLD"/D/usr/lib32/libnssckbi.so
+ln -sfv ./pkcs11/p11-kit-trust.so "$D"/usr/lib/libnssckbi.so
+ln -sfv ./pkcs11/p11-kit-trust.so "$D"/usr/lib32/libnssckbi.so
 
 }
 
