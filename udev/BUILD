@@ -60,7 +60,7 @@ install -vm755 $udev_helpers                       "$D"/usr/lib/udev
 install -vm644 ../network/99-default.link          "$D"/usr/lib/udev/network
 
 tar -xvf "$SRC"/udev-lfs-20230818.tar.xz
-b-make -f udev-lfs-20230818/Makefile.lfs DESTDIR="$BLD/D" install
+b-make -f udev-lfs-20230818/Makefile.lfs DESTDIR="$D" install
 
 unset udev_helpers
 
