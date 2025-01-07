@@ -14,6 +14,6 @@ sed -i 's:\\\${:\\\$\\{:' intltool-update.in
 b-make
 b-mi
 
-install -vDm644 doc/I18N-HOWTO D/usr/share/doc/intltool-$VERS/I18N-HOWTO
+install -vDm644 doc/I18N-HOWTO "$D"/usr/share/doc/intltool-$VERS/I18N-HOWTO
 
 }
