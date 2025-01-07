@@ -28,11 +28,8 @@ cp -v configfsf.sub   config.sub
 ABI="32" \
 CFLAGS="-m32 -O2 -pedantic -fomit-frame-pointer -mtune=generic -march=i686" \
 CXXFLAGS="$CFLAGS" \
-PKG_CONFIG_PATH="/usr/lib32/pkgconfig" \
-b-cfg \
-    --host=i686-pc-linux-gnu  \
-    --enable-cxx              \
-    --libdir=/usr/lib32       \
+b-32cfg \
+    --enable-cxx \
     --includedir=/usr/include/m32/gmp
 
 sed -i 's/$(exec_prefix)\/include/$\(includedir\)/' Makefile
@@ -45,9 +42,7 @@ if [ NUMPASSED -lt 197 ]; then
     echo "Only $NUMPASSED gmp tests passed (>= 197 needed)!"
 fi
 
-mkdir -pv D/usr/{lib32,include/m32}
-b-make DESTDIR="$PWD/32DEST" install
-cp -Rv 32DEST/usr/lib32/* D/usr/lib32
-cp -Rv 32DEST/usr/include/m32/* D/usr/include/m32/
+mkdir -pv "$D"/usr/{lib32,include/m32}
+DIRS=("usr/include/m32") b-32mi
 
 }
