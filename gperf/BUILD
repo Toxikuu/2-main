@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-./configure --prefix=/usr
+DS=1 b-cfg
 b-make
 b-mi
 
