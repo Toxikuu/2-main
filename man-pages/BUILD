@@ -9,6 +9,6 @@ EXTRA=()
 2b() {
 
 rm -v man3/crypt* # libxcrypt provides better ones
-make prefix=D/usr install
+make prefix="$D/usr" install
 
 }
