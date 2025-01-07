@@ -3,7 +3,7 @@ VERS="3.107"
 DESC="Network Security Services"
 UPST="https://github.com/nss-dev/nss.git"
 
-SOURCE="https://archive.mozilla.org/pub/security/nss/releases/NSS_${ver}_RTM/src/nss-$VERS.tar.gz"
+SOURCE="https://archive.mozilla.org/pub/security/nss/releases/NSS_${VERS//./_}_RTM/src/nss-$VERS.tar.gz"
 EXTRA=(
     "https://glfs-book.github.io/glfs/patches/nss-standalone-1.patch"
 )
