@@ -24,16 +24,17 @@ reuse_build() {
 
     b-make olddefconfig
     b-make
-    b-make modules_install INSTALL_MOD_PATH="$PWD/D"
-    mkdir -pv D/{efi,boot}
+    b-make modules_install INSTALL_MOD_PATH="$D"
+    mkdir -pv "$D"/{efi,boot}
 
-    cp -vf arch/x86/boot/bzImage D/boot/vmlinuz-$VERS-two
-    cp -vf System.map D/boot/System.map-$VERS
-    cp -vf .config D/boot/config-$VERS
-    cp -vf D/boot/vmlinuz-$VERS-two D/efi/tox64.efi
+    cp -vf arch/x86/boot/bzImage "$D"/boot/vmlinuz-$VERS-two
+    cp -vf System.map "$D"/boot/System.map-$VERS
+    cp -vf .config "$D"/boot/config-$VERS
+    cp -vf "$D"/boot/vmlinuz-$VERS-two "$D"/efi/tox64.efi
 
 }
 
+# THE BELOW IS NOT YET TESTED
 clean_build() {
 
     tar xf "$SRC/kernel=$VERS.tar."*z* -C /usr/src --checkpoint=4096 --checkpoint-action='echo="#%u: %T"'
