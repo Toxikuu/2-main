@@ -15,7 +15,7 @@ b-make
 make check 2>&1 | tee gmp-check-log
 NUMPASSED=$(awk '/# PASS:/{total+=$3} ; END{print total}' gmp-check-log)
 
-if [ NUMPASSED -lt 199 ]; then
+if [ $NUMPASSED -lt 199 ]; then
     die "Only $NUMPASSED gmp tests passed (>= 199 needed)!"
 fi
 
@@ -38,7 +38,7 @@ b-make
 make check 2>&1 | tee gmp-check-log
 NUMPASSED=$(awk '/# PASS:/{total+=$3} ; END{print total}' gmp-check-log)
 
-if [ NUMPASSED -lt 197 ]; then
+if [ $NUMPASSED -lt 197 ]; then
     echo "Only $NUMPASSED gmp tests passed (>= 197 needed)!"
 fi
 
