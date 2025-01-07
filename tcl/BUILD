@@ -9,9 +9,9 @@ EXTRA=()
 2b() {
 
 cd unix
-./configure --prefix=/usr \
-            --mandir=/usr/share/man \
-            --disable-rpath
+DS=1 b-cfg \
+    --mandir=/usr/share/man \
+    --disable-rpath
 b-make
 
 ver="${VERS%.*}"
@@ -34,11 +34,11 @@ sed -e "s@$BLD/unix/pkgs/$itclver@/usr/lib/$itclver@" \
     -i pkgs/$itclver/itclConfig.sh
 
 b-mi
-b-make install-private-headers DESTDIR=$PWD/D
+b-make install-private-headers DESTDIR="$D"
 
-chmod -v u+w D/usr/lib/libtcl$ver.so
-ln -sfv tclsh$ver D/usr/bin/tclsh
-ln -sfv libtcl$ver D/usr/lib/libtcl.so
-mv -vf D/usr/share/man/man3/{Thread,Tcl_Thread}.3
+chmod -v u+w "$D"/usr/lib/libtcl$ver.so
+ln -sfv tclsh$ver "$D"/usr/bin/tclsh
+ln -sfv libtcl$ver "$D"/usr/lib/libtcl.so
+mv -vf "$D"/usr/share/man/man3/{Thread,Tcl_Thread}.3
 
 }
