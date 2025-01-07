@@ -30,7 +30,7 @@ b-make
 b-32mi
 
 # this is a fucking stupid solution but i cant get openssl to cooperate LOL
-pushd D/usr/lib
+pushd "$D"/usr/lib
 ln -sfv libssl.so{.3,}
 ln -sfv libcrypto.so{.3,}
 popd
