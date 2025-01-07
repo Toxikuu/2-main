@@ -13,8 +13,8 @@ b-make
 b-mi
 
 b-make distclean
-b-32cfg --enable-libgdbm-compat
 
+b-32cfg --enable-libgdbm-compat
 b-make
 b-32mi
 
