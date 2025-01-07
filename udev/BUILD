@@ -40,24 +40,24 @@ b-ninja udevadm systemd-hwdb                                           \
       $(realpath libudev.so --relative-to .)                           \
       $udev_helpers
 
-install -vm755 -d {"$BLD"/D/usr/lib,"$BLD"/D/etc}/udev/{hwdb.d,rules.d,network}
-install -vm755 -d "$BLD"/D/usr/{s,}bin
-install -vm755 -d "$BLD"/D/usr/include
-install -vm755 -d "$BLD"/D/usr/{lib,share}/pkgconfig
-install -vm755 udevadm                             "$BLD"/D/usr/bin/
-install -vm755 systemd-hwdb                        "$BLD"/D/usr/bin/udev-hwdb
-ln      -svfn  ../bin/udevadm                      "$BLD"/D/usr/sbin/udevd
-cp      -av    libudev.so{,*[0-9]}                 "$BLD"/D/usr/lib/
-install -vm644 ../src/libudev/libudev.h            "$BLD"/D/usr/include/
-install -vm644 src/libudev/*.pc                    "$BLD"/D/usr/lib/pkgconfig/
-install -vm644 src/udev/*.pc                       "$BLD"/D/usr/share/pkgconfig/
-install -vm644 ../src/udev/udev.conf               "$BLD"/D/etc/udev/
-install -vm644 rules.d/* ../rules.d/README         "$BLD"/D/usr/lib/udev/rules.d/
+install -vm755 -d {"$D"/usr/lib,"$D"/etc}/udev/{hwdb.d,rules.d,network}
+install -vm755 -d "$D"/usr/{s,}bin
+install -vm755 -d "$D"/usr/include
+install -vm755 -d "$D"/usr/{lib,share}/pkgconfig
+install -vm755 udevadm                             "$D"/usr/bin/
+install -vm755 systemd-hwdb                        "$D"/usr/bin/udev-hwdb
+ln      -svfn  ../bin/udevadm                      "$D"/usr/sbin/udevd
+cp      -av    libudev.so{,*[0-9]}                 "$D"/usr/lib/
+install -vm644 ../src/libudev/libudev.h            "$D"/usr/include/
+install -vm644 src/libudev/*.pc                    "$D"/usr/lib/pkgconfig/
+install -vm644 src/udev/*.pc                       "$D"/usr/share/pkgconfig/
+install -vm644 ../src/udev/udev.conf               "$D"/etc/udev/
+install -vm644 rules.d/* ../rules.d/README         "$D"/usr/lib/udev/rules.d/
 install -vm644 $(find ../rules.d/*.rules \
-                      -not -name '*power-switch*') "$BLD"/D/usr/lib/udev/rules.d/
-install -vm644 hwdb.d/*  ../hwdb.d/{*.hwdb,README} "$BLD"/D/usr/lib/udev/hwdb.d/
-install -vm755 $udev_helpers                       "$BLD"/D/usr/lib/udev
-install -vm644 ../network/99-default.link          "$BLD"/D/usr/lib/udev/network
+                      -not -name '*power-switch*') "$D"/usr/lib/udev/rules.d/
+install -vm644 hwdb.d/*  ../hwdb.d/{*.hwdb,README} "$D"/usr/lib/udev/hwdb.d/
+install -vm755 $udev_helpers                       "$D"/usr/lib/udev
+install -vm644 ../network/99-default.link          "$D"/usr/lib/udev/network
 
 tar -xvf "$SRC"/udev-lfs-20230818.tar.xz
 b-make -f udev-lfs-20230818/Makefile.lfs DESTDIR="$BLD/D" install
@@ -76,11 +76,9 @@ b-ninja \
         build.ninja | awk '{ print $2 }') \
       $(realpath libudev.so --relative-to .)
 
-mkdir -pv "$BLD"/D/usr/lib32/pkgconfig
-cp -av libudev.so{,*[0-9]} "$BLD"/D/usr/lib32/
-sed -e "s@/usr/lib@&32@g" src/libudev/libudev.pc > "$BLD"/D/usr/lib32/pkgconfig/libudev.pc
-
-cd "$BLD"
+mkdir -pv "$D"/usr/lib32/pkgconfig
+cp -av libudev.so{,*[0-9]} "$D"/usr/lib32/
+sed -e "s@/usr/lib@&32@g" src/libudev/libudev.pc > "$D"/usr/lib32/pkgconfig/libudev.pc
 
 }
 
