@@ -18,16 +18,20 @@ cat >> trust/trust-extract-compat << "EOF"
 /usr/sbin/make-ca -r
 EOF
 
-b-ms -D trust_paths=/etc/pki/anchors
+mkdir p11-build
+cd    p11-build
+
+CP=.. b-ms -D trust_paths=/etc/pki/anchors
 b-ninja
 b-ni
 
-b-32ms -D trust_paths=/etc/pki/anchors
+rm -rf *
+CP=.. b-32ms -D trust_paths=/etc/pki/anchors
 b-ninja
 b-32ni
 
-ln -sfv ./pkcs11/p11-kit-trust.so D/usr/lib/libnssckbi.so
-ln -sfv ./pkcs11/p11-kit-trust.so D/usr/lib32/libnssckbi.so
+ln -sfv ./pkcs11/p11-kit-trust.so "$BLD"/D/usr/lib/libnssckbi.so
+ln -sfv ./pkcs11/p11-kit-trust.so "$BLD"/D/usr/lib32/libnssckbi.so
 
 }
 
