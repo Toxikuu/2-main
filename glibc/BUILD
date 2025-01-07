@@ -20,23 +20,22 @@ mkdir -v build
 cd       build
 
 echo "rootsbindir=/usr/sbin" > configparms
-../configure --prefix=/usr                            \
+DS=1 b-cfg \
              --disable-werror                         \
              --enable-kernel=6.11                     \
              --enable-stack-protector=strong          \
              --disable-nscd                           \
-             libc_cv_slibdir=/usr/lib                ||
-die 'configure failed'
+             libc_cv_slibdir=/usr/lib
 
-make || die 'make failed'
+b-make
 sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
 
-make DESTDIR=$PWD/../D install || die 'make install failed'
-sed '/RTLDLIST=/s@/usr@@g' -i ../D/usr/bin/ldd
+b-mi
+sed '/RTLDLIST=/s@/usr@@g' -i "$D"/usr/bin/ldd
 
 pushd ..
 b-make -C "$PWD/localedata" objdir="$PWD/build" \
-  DESTDIR="$PWD/D" install-locale-files
+  DESTDIR="$D" install-locale-files
 popd
 
 rm -rf ./*
@@ -55,19 +54,18 @@ CXX="g++ -m32 -mstackrealign -fno-omit-frame-pointer -mno-omit-leaf-frame-pointe
       libc_cv_slibdir=/usr/lib32        ||
 die 'm32 configure failed'
 
-make || die 'm32 make failed'
-make DESTDIR=$PWD/32DEST install || die 'm32 make install failed'
-mkdir -pv ../D/usr/lib32
-cp -a 32DEST/usr/lib32/* ../D/usr/lib32/
+b-make
+b-32mi
+# make DESTDIR=$PWD/32DEST install || die 'm32 make install failed'
+# mkdir -pv ../D/usr/lib32
+# cp -a 32DEST/usr/lib32/* ../D/usr/lib32/
 
-install -vm644 32DEST/usr/include/gnu/{lib-names,stubs}-32.h \
-               $PWD/../D/usr/include/gnu/
+install -vm644 "$BLD"/32DEST/usr/include/gnu/{lib-names,stubs}-32.h \
+               "$D"/usr/include/gnu/
 
-cd ..
-
-mkdir -pv D/etc
+mkdir -pv "$D"/etc
 for FILE in nsswitch.conf ld.so.conf; do
-  cp -vf "$PORT/$FILE" "D/etc/$FILE"
+  cp -vf "$PORT/$FILE" "$D/etc/$FILE"
 done
 
 }
