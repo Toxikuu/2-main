@@ -43,6 +43,6 @@ if [ NUMPASSED -lt 197 ]; then
 fi
 
 mkdir -pv "$D"/usr/{lib32,include/m32}
-DIRS=("usr/include/m32") b-32mi
+DIRS+=("usr/include/m32") b-32mi
 
 }
