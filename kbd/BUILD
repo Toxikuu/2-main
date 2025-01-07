@@ -19,8 +19,8 @@ b-cfg --disable-vlock
 b-make
 b-mi
 
-mkdir -pv D/usr/share/doc
-cp -Rv docs/doc -T D/usr/share/doc/kbd-$VERS
+mkdir -pv $D/usr/share/doc
+cp -Rv docs/doc -T $D/usr/share/doc/kbd-$VERS
 
 # TODO: Consider not packaging mac, atari, sun keymaps
 
