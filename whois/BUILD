@@ -9,6 +9,6 @@ EXTRA=()
 2b() {
 
 b-make
-b-make prefix=/usr DESTDIR="$PWD/D" install
+b-make prefix=/usr DESTDIR="$D" install
 
 }
