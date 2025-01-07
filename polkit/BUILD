@@ -11,7 +11,7 @@ EXTRA=()
 sed -i '/systemd_sysusers_dir/s/^/#/' meson.build
 
 mkdir -pv build
-b-ms -C build \
+CP=build b-ms \
     -D man=false                \
     -D tests=false              \
     -D session_tracking=elogind \
