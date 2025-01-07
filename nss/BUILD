@@ -12,6 +12,7 @@ EXTRA=(
 
 b-patch "$SRC"/nss-standalone-1.patch
 
+# TODO: Use trap, a cleanup function, and NOUSE instead of deletion
 sqlite3 --version > /dev/null 2>&1 || 
 if [ -f /usr/lib/libsqlite3.so ]; then
     rm -vf /usr/lib/libsqlite3.so
@@ -30,12 +31,14 @@ b-make BUILD_OPT=1                    \
 
 cd ../dist
 
-install -vDm755 Linux*/lib/*.so              D/usr/lib              &&
-install -vDm644 Linux*/lib/{*.chk,libcrmf.a} D/usr/lib              &&
-install -vm755 -d                            D/usr/include/nss      &&
-cp -v -RL {public,private}/nss/*             D/usr/include/nss      &&
-install -vDm755 Linux*/bin/{certutil,nss-config,pk12util} D/usr/bin &&
-install -vDm644 Linux*/lib/pkgconfig/nss.pc  D/usr/lib/pkgconfig    ||
+mkdir -pv D/usr/lib{,32}/pkgconfig D/usr/{bin,include}
+
+install -vm755 Linux*/lib/*.so              D/usr/lib              &&
+install -vm644 Linux*/lib/{*.chk,libcrmf.a} D/usr/lib              &&
+install -vm755 -d                           D/usr/include/nss      &&
+cp -v -RL {public,private}/nss/*            D/usr/include/nss      &&
+install -vm755 Linux*/bin/{certutil,nss-config,pk12util} D/usr/bin &&
+install -vm644 Linux*/lib/pkgconfig/nss.pc  D/usr/lib/pkgconfig    ||
 die "Install failed"
 
 cd ../nss                                         &&
@@ -58,10 +61,10 @@ $([ -f /usr/lib32/libsqlite3.so ] && echo NSS_USE_SYSTEM_SQLITE=1)
 
 cd ../dist
 
-install -vDm755 Linux*/lib/*.so              D/usr/lib32            &&
-install -vDm644 Linux*/lib/{*.chk,libcrmf.a} D/usr/lib32            &&
-sed -i 's/lib/lib32/g' Linux*/lib/pkgconfig/nss.pc                   &&
-install -vDm644 Linux*/lib/pkgconfig/nss.pc  D/usr/lib32/pkgconfig  ||
+install -vm755 Linux*/lib/*.so              D/usr/lib32            &&
+install -vm644 Linux*/lib/{*.chk,libcrmf.a} D/usr/lib32            &&
+sed -i 's/lib/lib32/g' Linux*/lib/pkgconfig/nss.pc                 &&
+install -vm644 Linux*/lib/pkgconfig/nss.pc  D/usr/lib32/pkgconfig  ||
 die "Install failed"
 
 
