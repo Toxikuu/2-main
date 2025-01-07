@@ -13,7 +13,7 @@ b-cfg
 b-make
 b-mi
 
-ln -sv gawk.1 D/usr/share/man/man1/awk.1
-install -vDm644 doc/{awkforai.txt,*.{eps,pdf,jpg}} -t D/usr/share/doc/gawk-$VERS
+ln -sv gawk.1 "$D"/usr/share/man/man1/awk.1
+install -vDm644 doc/{awkforai.txt,*.{eps,pdf,jpg}} -t "$D"/usr/share/doc/gawk-$VERS
 
 }
