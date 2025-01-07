@@ -16,19 +16,16 @@ b-cfg \
 b-make
 b-mi
 
-CC="gcc -m32" \
-b-cfg         \
-    --host=i686-pc-linux-gnu     \
-    --libdir=/usr/lib32          \
+b-32cfg \
     --enable-hashes=strong,glibc \
     --enable-obsolete-api=glibc  \
     --disable-failure-tokens
 
 b-make
-mkdir -pv D/usr/lib32/pkgconfig
-cp -av .libs/libcrypt.so* D/usr/lib32
+mkdir -pv "$D"/usr/lib32/pkgconfig
+cp -av .libs/libcrypt.so* "$D"/usr/lib32
 
 b-make install-pkgconfigDATA
-ln -sfv libxcrypt.pc D/usr/lib32/pkgconfig/libcrypt.pc
+ln -sfv libxcrypt.pc "$D"/usr/lib32/pkgconfig/libcrypt.pc
 
 }
