@@ -11,9 +11,8 @@ EXTRA=()
 mkdir -pv build
 cd        build
 
-../configure --prefix=/usr
+DS=1 b-cfg
 
-b-make check
 b-mi
 
 }
