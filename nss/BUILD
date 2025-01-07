@@ -1,0 +1,68 @@
+NAME="nss"
+VERS="3.107"
+DESC="Network Security Services"
+UPST="https://github.com/nss-dev/nss.git"
+
+SOURCE="https://archive.mozilla.org/pub/security/nss/releases/NSS_${ver}_RTM/src/nss-$VERS.tar.gz"
+EXTRA=(
+    "https://glfs-book.github.io/glfs/patches/nss-standalone-1.patch"
+)
+
+2b() {
+
+b-patch "$SRC"/nss-standalone-1.patch
+
+sqlite3 --version > /dev/null 2>&1 || 
+if [ -f /usr/lib/libsqlite3.so ]; then
+    rm -vf /usr/lib/libsqlite3.so
+fi
+
+cd nss
+
+b-make BUILD_OPT=1                    \
+    NSPR_INCLUDE_DIR=/usr/include/nspr  \
+    NSS_DISABLE_GTESTS=1                \
+    USE_SYSTEM_ZLIB=1                   \
+    ZLIB_LIBS=-lz                       \
+    NSS_ENABLE_WERROR=0                 \
+    $([ $(uname -m) = x86_64 ] && echo USE_64=1) \
+    $([ -f /usr/lib/libsqlite3.so ] && echo NSS_USE_SYSTEM_SQLITE=1)
+
+cd ../dist
+
+install -v -m755 Linux*/lib/*.so              D/usr/lib              &&
+install -v -m644 Linux*/lib/{*.chk,libcrmf.a} D/usr/lib              &&
+install -v -m755 -d                           D/usr/include/nss      &&
+cp -v -RL {public,private}/nss/*              D/usr/include/nss      &&
+install -v -m755 Linux*/bin/{certutil,nss-config,pk12util} D/usr/bin &&
+install -v -m644 Linux*/lib/pkgconfig/nss.pc  D/usr/lib/pkgconfig    ||
+die "Install failed"
+
+cd ../nss                                         &&
+find -name "Linux*.OBJ" -type d -exec rm -rf {} + &&
+rm -rf ../dist
+
+sqlite3 --version > /dev/null 2>&1 || 
+if [ -f /usr/lib32/libsqlite3.so ]; then
+    rm -vf /usr/lib32/libsqlite3.so
+fi
+
+CC="gcc -m32" CXX="g++ -m32"            \
+b-make BUILD_OPT=1                      \
+    NSPR_INCLUDE_DIR=/usr/include/nspr  \
+    USE_SYSTEM_ZLIB=1                   \
+    NSS_DISABLE_GTESTS=1                \
+    ZLIB_LIBS=-lz                       \
+    NSS_ENABLE_WERROR=0                 \
+$([ -f /usr/lib32/libsqlite3.so ] && echo NSS_USE_SYSTEM_SQLITE=1)
+
+cd ../dist
+
+install -v -m755 Linux*/lib/*.so              D/usr/lib32            &&
+install -v -m644 Linux*/lib/{*.chk,libcrmf.a} D/usr/lib32            &&
+sed -i 's/lib/lib32/g' Linux*/lib/pkgconfig/nss.pc                   &&
+install -v -m644 Linux*/lib/pkgconfig/nss.pc  D/usr/lib32/pkgconfig  ||
+die "Install failed"
+
+
+}
