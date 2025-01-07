@@ -8,6 +8,6 @@ EXTRA=()
 
 2b() {
 
-install -vDm644 -t D/etc services protocols
+install -vDm644 -t "$D"/etc services protocols
 
 }
