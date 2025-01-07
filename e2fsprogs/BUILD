@@ -23,6 +23,6 @@ CP=.. b-cfg \
 b-make
 b-mi
 
-rm -vf D/usr/lib/{libcom_err,libe2p,libext2fs,libss}.a
+rm -vf "$D"/usr/lib/{libcom_err,libe2p,libext2fs,libss}.a
 
 }
