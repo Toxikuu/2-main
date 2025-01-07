@@ -67,5 +67,6 @@ sed -i 's/lib/lib32/g' Linux*/lib/pkgconfig/nss.pc                 &&
 install -vm644 Linux*/lib/pkgconfig/nss.pc  "$BLD"/D/usr/lib32/pkgconfig  ||
 die "Install failed"
 
+cd "$BLD"
 
 }
