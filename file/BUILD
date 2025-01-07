@@ -13,14 +13,10 @@ b-cfg
 b-make
 b-mi
 
-mkdir -pv D/usr/lib32
 b-make distclean
-CC="gcc -m32" b-cfg \
-    --libdir=/usr/lib32 \
-    --host=i686-pc-linux-gnu
 
+b-32cfg
 b-make
-b-make DESTDIR=$PWD/32DEST install
-cp -Rv 32DEST/usr/lib32/* D/usr/lib32
+b-32mi
 
 }
