@@ -20,7 +20,7 @@ mkdir -v build
 cd       build
 
 echo "rootsbindir=/usr/sbin" > configparms
-DS=1 b-cfg \
+DS=1 CP=.. b-cfg \
              --disable-werror                         \
              --enable-kernel=6.11                     \
              --enable-stack-protector=strong          \
