@@ -31,14 +31,14 @@ b-make BUILD_OPT=1                    \
 
 cd ../dist
 
-mkdir -pv "$BLD"/D/usr/lib{,32}/pkgconfig "$BLD"/D/usr/{bin,include}
+mkdir -pv "$D"/usr/lib{,32}/pkgconfig "$D"/usr/{bin,include}
 
-install -vm755 Linux*/lib/*.so              "$BLD"/D/usr/lib              &&
-install -vm644 Linux*/lib/{*.chk,libcrmf.a} "$BLD"/D/usr/lib              &&
-install -vm755 -d                           "$BLD"/D/usr/include/nss      &&
-cp -v -RL {public,private}/nss/*            "$BLD"/D/usr/include/nss      &&
-install -vm755 Linux*/bin/{certutil,nss-config,pk12util} "$BLD"/D/usr/bin &&
-install -vm644 Linux*/lib/pkgconfig/nss.pc  "$BLD"/D/usr/lib/pkgconfig    ||
+install -vm755 Linux*/lib/*.so              "$D"/usr/lib              &&
+install -vm644 Linux*/lib/{*.chk,libcrmf.a} "$D"/usr/lib              &&
+install -vm755 -d                           "$D"/usr/include/nss      &&
+cp -v -RL {public,private}/nss/*            "$D"/usr/include/nss      &&
+install -vm755 Linux*/bin/{certutil,nss-config,pk12util} "$D"/usr/bin &&
+install -vm644 Linux*/lib/pkgconfig/nss.pc  "$D"/usr/lib/pkgconfig    ||
 die "Install failed"
 
 cd ../nss                                         &&
@@ -61,12 +61,10 @@ $([ -f /usr/lib32/libsqlite3.so ] && echo NSS_USE_SYSTEM_SQLITE=1)
 
 cd ../dist
 
-install -vm755 Linux*/lib/*.so              "$BLD"/D/usr/lib32            &&
-install -vm644 Linux*/lib/{*.chk,libcrmf.a} "$BLD"/D/usr/lib32            &&
+install -vm755 Linux*/lib/*.so              "$D"/usr/lib32            &&
+install -vm644 Linux*/lib/{*.chk,libcrmf.a} "$D"/usr/lib32            &&
 sed -i 's/lib/lib32/g' Linux*/lib/pkgconfig/nss.pc                 &&
-install -vm644 Linux*/lib/pkgconfig/nss.pc  "$BLD"/D/usr/lib32/pkgconfig  ||
+install -vm644 Linux*/lib/pkgconfig/nss.pc  "$D"/usr/lib32/pkgconfig  ||
 die "Install failed"
-
-cd "$BLD"
 
 }
