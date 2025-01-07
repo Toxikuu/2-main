@@ -9,19 +9,19 @@ EXTRA=()
 2b() {
 
 b-make BUILD_STATIC=no PREFIX=/usr
-b-make BUILD_STATIC=no PREFIX=/usr DESTDIR=$(pwd)/D install
+b-make BUILD_STATIC=no PREFIX=/usr DESTDIR="$D" install
 
-mkdir -pv D/usr/lib32
+mkdir -pv "$D"/usr/lib32
 b-make clean
 CC="gcc -m32" make BUILD_STATIC=no
 
-b-make      \
+b-make \
     BUILD_STATIC=no       \
     PREFIX=/usr           \
     LIBDIR=/usr/lib32     \
     DESTDIR=$(pwd)/32DEST \
     install
 
-cp -a 32DEST/usr/lib32/* D/usr/lib32
+cp -av 32DEST/usr/lib32/* "$D"/usr/lib32
 
 }
