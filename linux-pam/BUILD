@@ -15,27 +15,19 @@ CP=build b-ms -D docs=disabled
 b-ninja -C build
 b-ni    -C build
 
-rm -rvf D/usr/lib/systemd
-mkdir -pv D/etc/pam.d
+rm -rvf "$D"/usr/lib/systemd
+mkdir -pv "$D"/etc/pam.d
 
 rm -rf   build
 mkdir -v build
 
-CC="gcc -m32" CXX="g++ -m32"            \
-PKG_CONFIG_PATH="/usr/lib32/pkgconfig"  \
-CP=build b-ms        \
-    -D docs=disabled \
-    --libdir=/usr/lib32
-
+CP=build b-32ms -D docs=disabled
 b-ninja -C build
+b-32ni  -C build
 
-DESTDIR="$PWD/32DEST" b-ninja install -C build
-mkdir -pv D/usr/lib32
-cp -vR 32DEST/usr/lib32/* D/usr/lib32
-
-mkdir -pv D/etc/pam.d
-cp -v "$PORT/system-"* D/etc/pam.d/
-cp -v "$PORT/other" D/etc/pam.d/
+mkdir -pv "$D"/etc/pam.d
+cp -v "$PORT/system-"* "$D"/etc/pam.d/
+cp -v "$PORT/other" "$D"/etc/pam.d/
 
 }
 
