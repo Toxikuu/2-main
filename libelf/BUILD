@@ -14,7 +14,7 @@ _cfg_opts=(
     --enable-libdebuginfod=dummy
 )
 
-./configure "${_cfg_opts[@]}"
+DS=1 b-cfg "${_cfg_opts[@]}"
 
 b-make
 b-mi -C libelf
@@ -24,16 +24,10 @@ rm -v "$D"/usr/lib/libelf.a
 
 b-make distclean
 
-CC="gcc -m32" CXX="g++ -m32" \
-./configure                  \
-    --host=i686-pc-linux-gnu \
-    --libdir=/usr/lib32      \
-    "${_cfg_opts[@]}"
+DS=1 b-32cfg "${_cfg_opts[@]}"
 
 b-make
-b-make DESTDIR="$PWD/32DEST" -C libelf install
-install -vDm644 config/libelf.pc 32DEST/usr/lib32/pkgconfig/libelf.pc
-mkdir -pv "$D"/usr/lib32
-cp -Rv 32DEST/usr/lib32/* "$D"/usr/lib32
+b-32mi -C libelf
+install -vDm644 config/libelf.pc "$D"/usr/lib32/pkgconfig/libelf.pc
 
 }
