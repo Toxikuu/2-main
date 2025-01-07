@@ -34,7 +34,7 @@ sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' \
 b-make
 b-mi exec_prefix=/usr pamddir=
 
-install -v -m644 D/etc/login.defs D/etc/login.defs.orig
+install -v -m644 "$D"/etc/login.defs "$D"/etc/login.defs.orig
 
 for FUNCTION in FAIL_DELAY               \
                 FAILLOG_ENAB             \
@@ -53,20 +53,20 @@ for FUNCTION in FAIL_DELAY               \
                 CHFN_AUTH ENCRYPT_METHOD \
                 ENVIRON_FILE
 do
-    sed -i "s/^${FUNCTION}/# &/" D/etc/login.defs
+    sed -i "s/^${FUNCTION}/# &/" "$D"/etc/login.defs
 done
 
-mkdir -pv D/etc/pam.d
+mkdir -pv "$D"/etc/pam.d
 for FILE in login passwd su chpasswd newusers chage
 do
-    cp -vf "$PORT/$FILE" D/etc/pam.d/
+    cp -vf "$PORT/$FILE" "$D"/etc/pam.d/
 done
 
 for PROGRAM in chfn chgpasswd chsh groupadd groupdel \
                groupmems groupmod useradd userdel usermod
 do
-    install -v -m644 D/etc/pam.d/chage D/etc/pam.d/${PROGRAM}
-    sed -i "s/chage/$PROGRAM/" D/etc/pam.d/${PROGRAM}
+    install -v -m644 "$D"/etc/pam.d/chage "$D"/etc/pam.d/${PROGRAM}
+    sed -i "s/chage/$PROGRAM/" "$D"/etc/pam.d/${PROGRAM}
 done
 
 }
