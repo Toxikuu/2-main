@@ -19,25 +19,25 @@ mkdir -v build
 cd       build
 
 mlist=m64,m32
-../configure --prefix=/usr               \
-             LD=ld                       \
-             --enable-languages=c,c++    \
-             --enable-default-pie        \
-             --enable-default-ssp        \
-             --enable-host-pie           \
-             --enable-multilib           \
-             --with-multilib-list=$mlist \
-             --disable-bootstrap         \
-             --disable-fixincludes       \
-             --with-system-zlib
+DS=1 b-cfg \
+    LD=ld                       \
+    --enable-languages=c,c++    \
+    --enable-default-pie        \
+    --enable-default-ssp        \
+    --enable-host-pie           \
+    --enable-multilib           \
+    --with-multilib-list=$mlist \
+    --disable-bootstrap         \
+    --disable-fixincludes       \
+    --with-system-zlib
 b-make
 b-mi
 
-ln -sv gcc.1 D/usr/share/man/man1/cc.1
+ln -sv gcc.1 "$D"/usr/share/man/man1/cc.1
 
-mkdir -pv D/usr/lib/bfd-plugins
-ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/14.2.0/liblto_plugin.so \
-        D/usr/lib/bfd-plugins/
+mkdir -pv "$D"/usr/lib/bfd-plugins
+ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/$VERS/liblto_plugin.so \
+        "$D"/usr/lib/bfd-plugins/
 
 echo 'int main(){}' > dummy.c
 cc dummy.c -v -Wl,--verbose &> dummy.log
@@ -54,7 +54,7 @@ grep found dummy.log | grep found || die "GCC sanity check failure!"
 
 rm -v dummy.c a.out dummy.log
 
-mkdir -pv D/usr/share/gdb/auto-load/usr/lib
-mv -v D/usr/lib/*gdb.py D/usr/share/gdb/auto-load/usr/lib
+mkdir -pv "$D"/usr/share/gdb/auto-load/usr/lib
+mv -v "$D"/usr/lib/*gdb.py "$D"/usr/share/gdb/auto-load/usr/lib
 
 }
