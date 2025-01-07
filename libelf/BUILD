@@ -19,8 +19,8 @@ _cfg_opts=(
 b-make
 b-mi -C libelf
 
-install -vDm644 config/libelf.pc D/usr/lib/pkgconfig/libelf.pc
-rm -v D/usr/lib/libelf.a
+install -vDm644 config/libelf.pc "$D"/usr/lib/pkgconfig/libelf.pc
+rm -v "$D"/usr/lib/libelf.a
 
 b-make distclean
 
@@ -33,7 +33,7 @@ CC="gcc -m32" CXX="g++ -m32" \
 b-make
 b-make DESTDIR="$PWD/32DEST" -C libelf install
 install -vDm644 config/libelf.pc 32DEST/usr/lib32/pkgconfig/libelf.pc
-mkdir -pv D/usr/lib32
-cp -Rv 32DEST/usr/lib32/* D/usr/lib32
+mkdir -pv "$D"/usr/lib32
+cp -Rv 32DEST/usr/lib32/* "$D"/usr/lib32
 
 }
