@@ -30,12 +30,12 @@ b-make BUILD_OPT=1                    \
 
 cd ../dist
 
-install -v -m755 Linux*/lib/*.so              D/usr/lib              &&
-install -v -m644 Linux*/lib/{*.chk,libcrmf.a} D/usr/lib              &&
-install -v -m755 -d                           D/usr/include/nss      &&
-cp -v -RL {public,private}/nss/*              D/usr/include/nss      &&
-install -v -m755 Linux*/bin/{certutil,nss-config,pk12util} D/usr/bin &&
-install -v -m644 Linux*/lib/pkgconfig/nss.pc  D/usr/lib/pkgconfig    ||
+install -vDm755 Linux*/lib/*.so              D/usr/lib              &&
+install -vDm644 Linux*/lib/{*.chk,libcrmf.a} D/usr/lib              &&
+install -vm755 -d                            D/usr/include/nss      &&
+cp -v -RL {public,private}/nss/*             D/usr/include/nss      &&
+install -vDm755 Linux*/bin/{certutil,nss-config,pk12util} D/usr/bin &&
+install -vDm644 Linux*/lib/pkgconfig/nss.pc  D/usr/lib/pkgconfig    ||
 die "Install failed"
 
 cd ../nss                                         &&
@@ -58,10 +58,10 @@ $([ -f /usr/lib32/libsqlite3.so ] && echo NSS_USE_SYSTEM_SQLITE=1)
 
 cd ../dist
 
-install -v -m755 Linux*/lib/*.so              D/usr/lib32            &&
-install -v -m644 Linux*/lib/{*.chk,libcrmf.a} D/usr/lib32            &&
+install -vDm755 Linux*/lib/*.so              D/usr/lib32            &&
+install -vDm644 Linux*/lib/{*.chk,libcrmf.a} D/usr/lib32            &&
 sed -i 's/lib/lib32/g' Linux*/lib/pkgconfig/nss.pc                   &&
-install -v -m644 Linux*/lib/pkgconfig/nss.pc  D/usr/lib32/pkgconfig  ||
+install -vDm644 Linux*/lib/pkgconfig/nss.pc  D/usr/lib32/pkgconfig  ||
 die "Install failed"
 
 
