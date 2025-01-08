@@ -1,9 +1,9 @@
 NAME="curl"
 VERS="8.11.1"
 DESC="Tool and library for transferring data with URLs"
-UPST="https://curl.se/download/curl-$VERS.tar.xz"
+UPST="https://github.com/curl/curl.git"
 
-SOURCE="https://github.com/curl/curl.git"
+SOURCE="https://curl.se/download/curl-$VERS.tar.xz"
 EXTRA=(
     "https://glfs-book.github.io/glfs/patches/curl-eventfd_regression-1.patch"
 )
