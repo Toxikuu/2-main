@@ -11,10 +11,10 @@ EXTRA=(
 
 2b() {
 
-# if [ -e /usr/include/glib-2.0 ]; then
-#     rm -rf /usr/include/glib-2.0.old &&
-#     mv -vf /usr/include/glib-2.0{,.old}
-# fi
+if [ -e /usr/include/glib-2.0 ]; then
+    rm -rf /usr/include/glib-2.0.old &&
+    mv -vf /usr/include/glib-2.0{,.old}
+fi
 
 mkdir -pv build
 cd        build
@@ -31,7 +31,7 @@ CP=.. b-ms "${_cfg_opts[@]}"
 b-ninja
 b-ni
 
-# cp -av {"$D",}/usr/include/glib-2.0 # annoying but i cant think of a better fix
+cp -av {"$D",}/usr/include/glib-2.0 # annoying but painless
 
 mkdir -pv "$BLD"/pkgconfigtmp
 cp -vf {"$PORT","$BLD"/pkgconfigtmp}/glib-2.0.pc
@@ -56,5 +56,8 @@ CP=.. b-32ms \
 
 b-ninja
 b-32ni
+
+rm -rf /usr/include/glib-2.0
+mv -vf /usr/include/glib-2.0{.old,}
 
 }
