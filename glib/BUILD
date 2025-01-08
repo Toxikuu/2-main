@@ -37,7 +37,7 @@ meson setup gobject-introspection-$GOBJV gi-build \
     --prefix=/usr --buildtype=release
 b-ninja -C gi-build
 
-b-ni -C g-build
+b-ni -C gi-build
 
 meson configure -D introspection=enabled
 b-ninja
