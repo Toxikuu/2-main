@@ -1,0 +1,9 @@
+name = "git"
+version = "2.47.1"
+repo = "main"
+
+[data]
+source = { url = "https://www.kernel.org/pub/software/scm/git/git-2.47.1.tar.xz", hash = "89j5uyOuOSN06RzZ05WXDavFucXucvOYhGE82Epu0xA" }
+extra = [
+  { url = "https://www.kernel.org/pub/software/scm/git/git-manpages-2.47.1.tar.xz", hash = "_8IAWomwVsBye2Z_a-2gBoNxYZdi6khErQIpCRvv7hM" },
+]
