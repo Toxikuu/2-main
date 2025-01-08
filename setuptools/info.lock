@@ -1,8 +1,8 @@
 name = "setuptools"
-version = "75.7.0"
+version = "75.8.0"
 repo = "main"
 
 [data]
-source = { url = "https://pypi.org/packages/source/s/setuptools/setuptools-75.7.0.tar.gz", hash = "iG_3sWzTQvHR3vwW_JjJzj_eaeCHpOGYPXq2NOX0H08" }
+source = { url = "https://pypi.org/packages/source/s/setuptools/setuptools-75.8.0.tar.gz", hash = "xa_I9AfGJrgxOobhAxHdP2YcbNnAnUv4wVwOEfnysOY" }
 extra = [
 ]
