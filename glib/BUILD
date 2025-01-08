@@ -11,10 +11,10 @@ EXTRA=(
 
 2b() {
 
-if [ -e /usr/include/glib-2.0 ]; then
-    rm -rf /usr/include/glib-2.0.old &&
-    mv -vf /usr/include/glib-2.0{,.old}
-fi
+# if [ -e /usr/include/glib-2.0 ]; then
+#     rm -rf /usr/include/glib-2.0.old &&
+#     mv -vf /usr/include/glib-2.0{,.old}
+# fi
 
 mkdir -pv build
 cd        build
@@ -31,20 +31,21 @@ CP=.. b-ms "${_cfg_opts[@]}"
 b-ninja
 b-ni
 
-cp -av {"$D",}/usr/include/glib-2.0 # annoying but painless
+# cp -av {"$D",}/usr/include/glib-2.0 # annoying but painless
 
 mkdir -pv "$BLD"/pkgconfigtmp
 cp -vf {"$PORT","$BLD"/pkgconfigtmp}/glib-2.0.pc
 sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/glib-2.0.pc
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.xz
 
-PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
+export PKG_CONFIG_PATH="$BLD/pkgconfigtmp"
 meson setup gobject-introspection-$GOBJV gi-build \
     --prefix=/usr --buildtype=release
 b-ninja -C gi-build
 
 b-ni -C gi-build
 
+unset PKG_CONFIG_PATH
 meson configure -D introspection=enabled
 b-ninja
 b-ni
@@ -57,7 +58,7 @@ CP=.. b-32ms \
 b-ninja
 b-32ni
 
-rm -rf /usr/include/glib-2.0
-mv -vf /usr/include/glib-2.0{.old,}
+# rm -rf /usr/include/glib-2.0
+# mv -vf /usr/include/glib-2.0{.old,}
 
 }
