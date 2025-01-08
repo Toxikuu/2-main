@@ -1,0 +1,8 @@
+name = "alsa-utils"
+version = "1.2.13"
+repo = "main"
+
+[data]
+source = { url = "https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.13.tar.bz2", hash = "FwKmsc35uj6ZbsvB3c-RceaAj1lh1QPQ8n6A7hYvHao" }
+extra = [
+]
