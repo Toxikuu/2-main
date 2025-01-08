@@ -16,6 +16,6 @@ b-make distclean
 
 b-32cfg
 b-make
-b-mi
+b-32mi
 
 }
