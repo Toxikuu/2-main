@@ -1,0 +1,8 @@
+name = "alsa-plugins"
+version = "1.2.12"
+repo = "main"
+
+[data]
+source = { url = "https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.12.tar.bz2", hash = "e9ioPTBOji2GoliV2Nyw7wJFqN8y4nGVnNvcavObZvI" }
+extra = [
+]
