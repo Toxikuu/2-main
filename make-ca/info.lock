@@ -1,0 +1,8 @@
+name = "make-ca"
+version = "1.14"
+repo = "main"
+
+[data]
+source = { url = "https://github.com/lfs-book/make-ca/archive/v1.14/make-ca-1.14.tar.gz", hash = "Y5Fpj-bbFusZDaGrqAK8kMCci6pMEW2cZWR76ofxkNs" }
+extra = [
+]
