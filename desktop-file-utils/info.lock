@@ -1,0 +1,8 @@
+name = "desktop-file-utils"
+version = "0.28"
+repo = "main"
+
+[data]
+source = { url = "https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz", hash = "RAHU4jHYQsLegkI5WnSjlcpGjNlvX2ENgi3zNZSJinA" }
+extra = [
+]
