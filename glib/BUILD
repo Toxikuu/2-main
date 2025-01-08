@@ -19,18 +19,21 @@ fi
 mkdir -pv build
 cd        build
 
-CP=.. b-ms \
-    -D introspection=disabled \
-    -D glib_debug=disabled    \
-    -D man-pages=disabled     \
-    -D tests=false            \
+_cfg_opts=(
+    -D introspection=disabled
+    -D glib_debug=disabled
+    -D man-pages=disabled
+    -D tests=false
     -D sysprof=disabled
+)
 
+CP=.. b-ms "${_cfg_opts[@]}"
 b-ninja
 b-ni
 
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.xz
-b-ms gobject-introspection-$GOBJV gi-build
+meson setup gobject-introspection-$GOBJV gi-build \
+    --prefix=/usr --buildtype=release
 b-ninja -C gi-build
 
 b-ni -C g-build
@@ -42,11 +45,7 @@ b-ni
 rm -rf *
 CP=.. b-32ms \
     --cross-file lib32 \
-    -D introspection=disabled \
-    -D glib_debug=disabled    \
-    -D man-pages=disabled     \
-    -D tests=false            \
-    -D sysprof=disabled
+    "${_cfg_opts[@]}"
 
 b-ninja
 b-32ni
