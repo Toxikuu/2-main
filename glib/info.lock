@@ -1,0 +1,9 @@
+name = "glib"
+version = "2.82.4"
+repo = "main"
+
+[data]
+source = { url = "https://download.gnome.org/sources/glib/2.82/glib-2.82.4.tar.xz", hash = "N90Id_6WTNFemicQsEShgw-xvZNlKm0Mtriy3_GHxwk" }
+extra = [
+  { url = "https://download.gnome.org/sources/gobject-introspection/1.82/gobject-introspection-1.82.0.tar.xz", hash = "D1pMGQhCS_JrxB6TYRaMNjaFCA-9uHoZbIkchAHKLwk" },
+]
