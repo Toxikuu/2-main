@@ -15,7 +15,7 @@ DEPS=(
 mkdir -pv build
 cd        build
 
-CP=.. ms -D update-mimedb=true
+CP=.. b-ms -D update-mimedb=true
 b-ninja
 b-ni
 
