@@ -33,6 +33,7 @@ b-ni
 
 # cp -av {"$D",}/usr/include/glib-2.0 # annoying but painless
 
+# ty @seal331
 mkdir -pv "$BLD"/pkgconfigtmp
 cp -vf {"$PORT","$BLD"/pkgconfigtmp}/glib-2.0.pc
 sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/glib-2.0.pc
