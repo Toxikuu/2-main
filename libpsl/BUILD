@@ -9,13 +9,15 @@ EXTRA=()
 2b() {
 
 mkdir -pv build
-CP=build b-ms
+cd        build
+
+CP=.. b-ms
 b-ninja
 b-ni
 
-rm -rf build/{,.}*
+rm -rf *
 
-CP=build b-32ms
+CP=.. b-32ms
 b-ninja
 b-32ni
 
