@@ -1,0 +1,8 @@
+name = "libpsl"
+version = "0.21.5"
+repo = "main"
+
+[data]
+source = { url = "https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz", hash = "Hcyc6uixKPPAs_ZU3s0OHoka_G_4EJjyJ-8mBEna4gg" }
+extra = [
+]
