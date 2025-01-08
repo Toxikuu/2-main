@@ -1,0 +1,8 @@
+name = "wget"
+version = "2.2.0"
+repo = "main"
+
+[data]
+source = { url = "https://gnuwget.gitlab.io/wget2/wget2-latest.tar.gz", hash = "B7ryVoCNOpKmdvyiSO-EmcuROmAfpxKqse58iTC0EiY" }
+extra = [
+]
