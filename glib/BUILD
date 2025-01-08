@@ -33,7 +33,8 @@ b-ni
 
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.xz
 meson setup gobject-introspection-$GOBJV gi-build \
-    --prefix=/usr --buildtype=release
+    --prefix=/usr --buildtype=release \
+    -D glib_src_dir="$BLD/build"
 b-ninja -C gi-build
 
 b-ni -C g-build
