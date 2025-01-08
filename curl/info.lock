@@ -1,0 +1,9 @@
+name = "curl"
+version = "8.11.1"
+repo = "main"
+
+[data]
+source = { url = "https://github.com/curl/curl.git", hash = "H1gmWXurRlmoDtJmH--0cTn2wYbdkjV5NyitBclCho4" }
+extra = [
+  { url = "https://glfs-book.github.io/glfs/patches/curl-eventfd_regression-1.patch", hash = "djJQJqVY4lpDA3HQSLyMV2MwRw1qZUhZ1WrRPRQwjXc" },
+]
