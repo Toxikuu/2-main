@@ -32,7 +32,13 @@ b-ninja
 b-ni
 
 # cp -av {"$D",}/usr/include/glib-2.0 # annoying but i cant think of a better fix
+
+mkdir -pv "$BLD"/pkgconfigtmp
+cp -vf {"$PORT","$BLD"/pkgconfigtmp}/glib-2.0.pc
+sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/glib-2.0.pc
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.xz
+
+PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
 meson setup gobject-introspection-$GOBJV gi-build \
     --prefix=/usr --buildtype=release
 b-ninja -C gi-build
