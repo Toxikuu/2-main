@@ -11,10 +11,10 @@ EXTRA=(
 
 2b() {
 
-if [ -e /usr/include/glib-2.0 ]; then
-    rm -rf /usr/include/glib-2.0.old &&
-    mv -vf /usr/include/glib-2.0{,.old}
-fi
+# if [ -e /usr/include/glib-2.0 ]; then
+#     rm -rf /usr/include/glib-2.0.old &&
+#     mv -vf /usr/include/glib-2.0{,.old}
+# fi
 
 mkdir -pv build
 cd        build
@@ -31,7 +31,7 @@ CP=.. b-ms "${_cfg_opts[@]}"
 b-ninja
 b-ni
 
-cp -av {"$D",}/usr/include/glib-2.0 # annoying but i cant think of a better fix
+# cp -av {"$D",}/usr/include/glib-2.0 # annoying but i cant think of a better fix
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.xz
 meson setup gobject-introspection-$GOBJV gi-build \
     --prefix=/usr --buildtype=release
