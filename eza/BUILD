@@ -8,6 +8,8 @@ EXTRA=()
 
 2b() {
 
+. e-rust
+
 cargo build --release
 install -vDm755 target/release/eza "$D/usr/bin/eza"
 
