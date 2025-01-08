@@ -31,10 +31,10 @@ CP=.. b-ms "${_cfg_opts[@]}"
 b-ninja
 b-ni
 
+cp -av {"$D",}/usr/include/glib-2.0 # annoying but i cant think of a better fix
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.xz
 meson setup gobject-introspection-$GOBJV gi-build \
-    --prefix=/usr --buildtype=release \
-    -D glib_src_dir="$BLD/build"
+    --prefix=/usr --buildtype=release
 b-ninja -C gi-build
 
 b-ni -C g-build
