@@ -20,13 +20,12 @@ _cfg_opts=(
 CP=.. DS=1 b-ms "${_cfg_opts[@]}"
 b-ninja
 b-ni
-rm "$D"/usr/share/dbus-1/system.d/pulseaudio-system.conf
+rm -vf "$D"/usr/share/dbus-1/system.d/pulseaudio-system.conf
 
-cd "$BLD/build"
 rm -rf *
 
-CP=.. DS=1 b-ms --libdir=/usr/lib32 --cross-file lib32 "${_cfg_opts[@]}"
-b-make
-b-32mi
+CP=.. DS=1 b-32ms --cross-file lib32 "${_cfg_opts[@]}"
+b-ninja
+b-32ni
 
 }
