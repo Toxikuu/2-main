@@ -22,6 +22,7 @@ b-ninja
 b-ni
 rm "$D"/usr/share/dbus-1/system.d/pulseaudio-system.conf
 
+cd "$BLD/build"
 rm -rf *
 
 CP=.. DS=1 b-ms --libdir=/usr/lib32 --cross-file lib32 "${_cfg_opts[@]}"
