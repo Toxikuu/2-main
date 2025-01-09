@@ -17,6 +17,6 @@ b-make distclean
 
 b-32cfg --disable-thorough-tests
 b-make
-b-mi
+b-32mi
 
 }
