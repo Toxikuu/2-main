@@ -8,17 +8,15 @@ EXTRA=()
 
 2b() {
 
-mkdir -pv build
-cd        build
-
-CP=.. DS=1 b-cfg --disable-thorough-tests \
-    --docdir=/usr/share/doc/flac-$VERS
+DS=1 b-cfg --disable-thorough-tests
 b-make
 b-mi
 
-rm -rf {,.}*
+b-make distclean
 
-CP=.. DS=1 b-32cfg --disable-thorough-tests
+CC="gcc -m32" CXX="g++ -m32"                  \
+CFLAGS="-L/usr/lib32" CXXFLAGS="-L/usr/lib32" \
+DS=1 b-32cfg --disable-thorough-tests
 b-make
 b-32mi
 
