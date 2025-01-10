@@ -1,0 +1,8 @@
+name = "rust"
+version = "9999"
+repo = "main"
+
+[data]
+source = { url = "", hash = "" }
+extra = [
+]
