@@ -24,7 +24,7 @@ rustup component add cargo clippy rustfmt
 
 mkdir -pv "$D"/usr/share/bash-completion/completions
 
-mv -vf /etc/bash_completion.d/cargo "$D"/usr/share/bash-completion/completions
+# mv -vf /etc/bash_completion.d/cargo "$D"/usr/share/bash-completion/completions
 rm -vf "$CARGO_HOME"/env
 
 chmod 777 "$CARGO_HOME"
