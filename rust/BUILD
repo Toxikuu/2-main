@@ -1,7 +1,6 @@
 NAME="rust"
 VERS="9999"
 DESC="The Rust programming language"
-# UPST=""
 
 2b() {
 
@@ -23,13 +22,10 @@ rustup toolchain install "$VERS"
 rustup default "$VERS"
 rustup component add cargo clippy rustfmt
 
+mkdir -pv "$D"/usr/share/bash-completion/completions
+
 mv -vf /etc/bash_completion.d/cargo "$D"/usr/share/bash-completion/completions
 rm -vf "$CARGO_HOME"/env
-
-cat << EOF > "$D"/etc/profile.d/rust.sh
-
-
-EOF
 
 chmod 777 "$CARGO_HOME"
 chmod 755 "$RUSTUP_HOME"
