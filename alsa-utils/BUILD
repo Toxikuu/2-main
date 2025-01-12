@@ -25,7 +25,7 @@ b-mi
 
 2z() {
 
-alsactl init
-alsactl -L store
+alsactl init &&
+alsactl -L store || true
 
 }
