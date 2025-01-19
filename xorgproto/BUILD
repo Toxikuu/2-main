@@ -17,6 +17,6 @@ CP=.. b-ms
 b-ninja
 b-ni
 
-mv -v /usr/share/doc/xorgproto{,-2024.1}
+mv -v "$D"/usr/share/doc/xorgproto{,-2024.1}
 
 }
