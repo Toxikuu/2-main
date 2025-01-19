@@ -14,6 +14,6 @@ DEPS="rust"
 
 cargo build --release
 install -vDm755 target/release/jaq "$D/usr/bin/jaq"
-ln -sv "$D/usr/bin/jq" jaq
+ln -sv jaq "$D/usr/bin/jq"
 
 }
