@@ -1,5 +1,5 @@
 NAME="elogind"
-VERS="255.5"
+VERS="255.17"
 DESC="Systemd's \"logind\", extracted to a standalone package"
 UPST="https://github.com/elogind/elogind.git"
 

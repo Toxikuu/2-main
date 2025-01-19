@@ -1,8 +1,8 @@
 name = "elogind"
-version = "255.5"
+version = "255.17"
 repo = "main"
 
 [data]
-source = { url = "https://github.com/elogind/elogind/archive/v255.5/elogind-255.5.tar.gz", hash = "74O-s4EGRRbCkpDw_ty7423gUvMT1y0SDq3mmrJrgv4" }
+source = { url = "https://github.com/elogind/elogind/archive/v255.17/elogind-255.17.tar.gz", hash = "qXJa4_c_jZEN6EwQi8Eb_Ux4K-9qQZCy7HDF0vIjRNs" }
 extra = [
 ]
