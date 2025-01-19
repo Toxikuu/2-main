@@ -1,0 +1,8 @@
+name = "libxau"
+version = "1.0.12"
+repo = "main"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libXau-1.0.12.tar.xz", hash = "dNDk36PTmtiTnpm9o39ZZ6ulKCEQdoKEZNJ3fUd_wPs" }
+extra = [
+]
