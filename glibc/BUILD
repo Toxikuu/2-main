@@ -3,6 +3,7 @@
 # NOTE: 
 # This build script is still in early development.
 # It is not tested and it is not stable.
+# TODO: Test this fully
 
 NAME="glibc"
 VERS="2.40"
