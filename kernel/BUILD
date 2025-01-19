@@ -2,8 +2,11 @@
 # THIS SCRIPT IS VERY EARLY IN DEVELOPMENT; DO NOT USE IT
 ### WARNING
 
+# TODO: Move this to tox/ and provide stabler defaults here
+# TODO: Test this
+
 NAME="kernel"
-VERS="6.12.8"
+VERS="6.12.10"
 DESC="The Linux kernel"
 UPST="https://kernel.org"
 VCMD="curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
