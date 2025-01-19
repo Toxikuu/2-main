@@ -1,8 +1,8 @@
 name = "iana-etc"
-version = "20241220"
+version = "20250114"
 repo = "main"
 
 [data]
-source = { url = "https://github.com/Mic92/iana-etc/releases/download/20241220/iana-etc-20241220.tar.gz", hash = "HdSjX3ZtCMDvllf0TCPqpJip9WoPe6Zl0T_XR60fkJE" }
+source = { url = "https://github.com/Mic92/iana-etc/releases/download/20250114/iana-etc-20250114.tar.gz", hash = "0UzsGvW6gMevOfTDo39lhCqKJfCmlyEPhnwv9ytvW_A" }
 extra = [
 ]
