@@ -1,0 +1,8 @@
+name = "util-macros"
+version = "1.20.2"
+repo = "main"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/util/util-macros-1.20.2.tar.xz", hash = "msJp66JPZy19ezV05L5fMz0T8Ep3EjA7GCGypRrILo4" }
+extra = [
+]
