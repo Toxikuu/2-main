@@ -10,7 +10,7 @@ EXTRA=()
 
 . e-xorg
 
-b-cfg "$XORG_CONFIG"
+b-cfg $XORG_CONFIG
 b-mi
 
 }
