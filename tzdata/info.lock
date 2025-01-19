@@ -1,0 +1,8 @@
+name = "tzdata"
+version = "2025a"
+repo = "main"
+
+[data]
+source = { url = "https://data.iana.org/time-zones/releases/tzdata2025a.tar.gz", hash = "TV_Lxyx8RQ6_4LZZvQ8cAvv1L9f1F6nqE_5xwh618NA" }
+extra = [
+]
