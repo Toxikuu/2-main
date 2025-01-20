@@ -13,8 +13,8 @@ EXTRACT=1
 
 TZ=America/New_York
 
-cp -vf "$SRC"/tzdata"$VERS".tar.gz .
-tar xvf tzdata"$VERS".tar.gz
+cp -vf "$SRC"/tzdata"=$VERS".tar.gz .
+tar xvf tzdata"=$VERS".tar.gz
 
 ZONEINFO="$D"/usr/share/zoneinfo
 mkdir -pv "$ZONEINFO"/{posix,right}
