@@ -30,7 +30,6 @@ cp -v zone.tab zone1970.tab iso3166.tab "$ZONEINFO"
 zic -d "$ZONEINFO" -p "$TZ"
 unset ZONEINFO
 
-
 }
 
 2i() {
