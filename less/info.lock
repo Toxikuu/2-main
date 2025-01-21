@@ -1,8 +1,8 @@
 name = "less"
-version = "671"
+version = "672"
 repo = "main"
 
 [data]
-source = { url = "https://github.com/gwsw/less/archive/refs/tags/v671.tar.gz", hash = "mWJ0OLvriwBRePjWEQJC5RnJiJEM9P_SZ8YAx5-rvhw" }
+source = { url = "https://github.com/gwsw/less/archive/refs/tags/v672.tar.gz", hash = "GLvbRZ2UoOn3wxzv5G1DlXAsl50MTEnTLvEo28Ihv-I" }
 extra = [
 ]
