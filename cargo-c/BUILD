@@ -16,6 +16,6 @@ DEPS="rust"
 [ ! -e /usr/include/sqlite3.h ] || export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
 cargo build --release
 
-install -vm755 target/release/cargo-{capi,cbuild,cinstall,ctest} "$D"/usr/bin/
+install -vDm755 target/release/cargo-{capi,cbuild,cinstall,ctest} "$D"/usr/bin/
 
 }
