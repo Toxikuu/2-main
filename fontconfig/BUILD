@@ -22,8 +22,12 @@ b-cfg "${_cfg_opts[@]}"
 b-make
 b-mi
 
+b-make distclean
+
 b-32cfg "${_cfg_opts[@]}"
 b-make
 b-32mi
 
 }
+
+#d forgot to distclean oops
