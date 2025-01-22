@@ -1,11 +1,15 @@
 NAME="which"
 VERS="2.21"
 DESC="A utility to show the full path of commands"
-UPST=""
+UPST="https://ftp.gnu.org/gnu/which/?C=M;O=D"
 
-SOURCE=""
+SOURCE="https://ftp.gnu.org/gnu/which/which-$VERS.tar.gz"
 EXTRA=()
 
 2b() {
+
+b-cfg
+b-make
+b-mi
 
 }
