@@ -1,0 +1,8 @@
+name = "libxcb"
+version = "1.17.0"
+repo = "main"
+
+[data]
+source = { url = "https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.17.0.tar.xz", hash = "WZ6_mZZxD-pxYi5uGE86itW0PQ5fqMTkBxI8iKWabVU" }
+extra = [
+]
