@@ -1,0 +1,9 @@
+name = "libpng"
+version = "1.6.45"
+repo = "main"
+
+[data]
+source = { url = "https://github.com/pnggroup/libpng/archive/refs/tags/v1.6.45.tar.gz", hash = "f_aJhSBkVxbdw9g4HZe24Ck3sD2pLm_Q18-dfSsNp4A" }
+extra = [
+  { url = "https://sourceforge.net/projects/libpng-apng/files/latest/download", hash = "aulUljivHlsmkH4BVnHQCldh7qk-Mm9Xbf6CsIVnJ0w" },
+]
