@@ -1,0 +1,8 @@
+name = "xcb-proto"
+version = "1.17.0"
+repo = "main"
+
+[data]
+source = { url = "https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz", hash = "LBus0hEPR5n3TebrtxS5TPb4D7ESMWsSGUgP0iViFIw" }
+extra = [
+]
