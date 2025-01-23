@@ -1,0 +1,8 @@
+name = "sdl2"
+version = "2.30.11"
+repo = "main"
+
+[data]
+source = { url = "https://www.libsdl.org/release/SDL2-2.30.11.tar.gz", hash = "i41K7yA4Uz2oFJZSIPiPd9YN-g8yaF-A6tZeUBM32n8" }
+extra = [
+]
