@@ -1,5 +1,5 @@
 NAME="xz"
-VERS="5.6.3"
+VERS="5.6.4"
 DESC="The xz compression algorithm"
 UPST="https://github.com/tukaani-project/xz.git"
 
