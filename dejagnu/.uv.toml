@@ -1,1 +1,1 @@
-upstream = "https://git.savannah.gnu.org/git/dejagnu.git"
+command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/dejagnu.git' | grep release | tail -n1 | cut -d- -f2"
