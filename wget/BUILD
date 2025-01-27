@@ -29,3 +29,5 @@ ln -sfv wget2 "$D"/usr/bin/wget
 rm -vf "$D"/usr/bin/wget2_noinstall # delete a useless testing binary
 
 }
+
+#d fixed .uv.toml
