@@ -1,0 +1,1 @@
+upstream = "https://kernel.googlesource.com/pub/scm/utils/kernel/kmod/kmod.git"

@@ -1,0 +1,2 @@
+upstream = "https://github.com/file/file.git"
+command = "git ls-remote --tags '$UPST' | sed 's:.*/::' | sort -V | tail -n2 | head -n1 | sed 's/FILE//' | sed 's/_/./g'"

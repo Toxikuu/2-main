@@ -8,7 +8,6 @@
 NAME="glibc"
 VERS="2.40"
 DESC="The GNU C library"
-UPST="git://sourceware.org/git/glibc.git"
 
 SOURCE="https://ftp.gnu.org/gnu/glibc/glibc-$VERS.tar.xz"
 EXTRA=("https://www.linuxfromscratch.org/patches/lfs/development/glibc-$VERS-fhs-1.patch")

@@ -1,7 +1,6 @@
 NAME="chrony"
 VERS="4.6.1"
 DESC="Lightweight NTP client and server"
-UPST="https://gitlab.com/chrony/chrony.git"
 
 SOURCE="https://chrony-project.org/releases/chrony-$VERS.tar.gz"
 EXTRA=()

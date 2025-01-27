@@ -1,7 +1,6 @@
 NAME="inetutils"
 VERS="2.5"
 DESC="Networking utilities"
-UPST="https://git.savannah.gnu.org/git/inetutils.git"
 
 SOURCE="https://ftp.gnu.org/gnu/inetutils/inetutils-$VERS.tar.xz"
 EXTRA=()

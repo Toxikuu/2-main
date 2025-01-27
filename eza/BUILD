@@ -1,7 +1,6 @@
 NAME="eza"
 VERS="0.20.17"
 DESC="Very nice replacement for ls"
-UPST="https://github.com/eza-community/eza.git"
 
 SOURCE="https://github.com/eza-community/eza/archive/refs/tags/v$VERS.tar.gz"
 EXTRA=()

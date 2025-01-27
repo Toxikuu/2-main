@@ -1,7 +1,6 @@
 NAME="libcap"
 VERS="2.73"
 DESC="POSIX 1003.1e capabilities"
-UPST="https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
 
 SOURCE="https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-$VERS.tar.xz"
 EXTRA=()

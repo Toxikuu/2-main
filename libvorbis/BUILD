@@ -1,7 +1,6 @@
 NAME="libvorbis"
 VERS="1.3.7"
 DESC="Reference implementation of the Ogg Vorbis audio format"
-UPST="https://github.com/xiph/vorbis.git"
 
 SOURCE="https://downloads.xiph.org/releases/vorbis/libvorbis-$VERS.tar.xz"
 EXTRA=()

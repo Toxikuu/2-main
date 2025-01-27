@@ -1,0 +1,1 @@
+command = "curl -s 'https://invisible-mirror.net/archives/ncurses/?C=M;O=D' | grep ncurses- | head -n1 | cut -d- -f2 | cut -d. -f1-2"

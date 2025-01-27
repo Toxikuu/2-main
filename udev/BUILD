@@ -1,7 +1,6 @@
 NAME="udev"
 VERS="257.1"
 DESC="Programs for dynamic device node creation"
-UPST="https://github.com/systemd/systemd.git"
 
 SOURCE="https://github.com/systemd/systemd/archive/v$VERS/systemd-$VERS.tar.gz"
 EXTRA=(

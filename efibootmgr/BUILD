@@ -1,7 +1,6 @@
 NAME="efibootmgr"
 VERS="18"
 DESC="User-space application to modify the EFI Boot Manager"
-UPST="https://github.com/rhboot/efibootmgr.git"
 DEPS=(
     "efivar"
     "popt"

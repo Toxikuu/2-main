@@ -1,7 +1,6 @@
 NAME="bzip2"
 VERS="1.0.8"
 DESC="The bzip2 compression algorithm"
-UPST="git://sourceware.org/git/bzip2.git"
 
 SOURCE="https://www.sourceware.org/pub/bzip2/bzip2-$VERS.tar.gz"
 EXTRA=()

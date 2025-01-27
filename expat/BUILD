@@ -1,7 +1,6 @@
 NAME="expat"
 VERS="2.6.4"
 DESC="XML parsing library"
-UPST="https://github.com/libexpat/libexpat.git"
 
 SOURCE="https://prdownloads.sourceforge.net/expat/expat-$VERS.tar.xz"
 EXTRA=()

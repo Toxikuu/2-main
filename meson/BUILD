@@ -1,7 +1,6 @@
 NAME="meson"
 VERS="1.6.1"
 DESC="Fast, user-friendly build system"
-UPST="https://github.com/mesonbuild/meson.git"
 
 SOURCE="https://github.com/mesonbuild/meson/releases/download/$VERS/meson-$VERS.tar.gz"
 EXTRA=()

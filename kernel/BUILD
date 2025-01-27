@@ -8,7 +8,6 @@
 NAME="kernel"
 VERS="6.12.10"
 DESC="The Linux kernel"
-UPST="https://kernel.org"
 VCMD="curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 
 SOURCE="https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-$VERS.tar.gz"

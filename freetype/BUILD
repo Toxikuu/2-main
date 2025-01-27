@@ -1,7 +1,6 @@
 NAME="freetype"
 VERS="2.13.3"
 DESC="A library for rendering TTFs"
-UPST="https://gitlab.freedesktop.org/freetype/freetype.git"
 
 SOURCE="https://downloads.sourceforge.net/project/freetype/freetype2/$VERS/freetype-$VERS.tar.xz"
 EXTRA=()

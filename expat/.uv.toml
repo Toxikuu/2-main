@@ -1,0 +1,1 @@
+command = "curl -s https://sourceforge.net/projects/expect/files/Expect/ | rg 'tr title=' | head -n1 | cut -d'\"' -f2"

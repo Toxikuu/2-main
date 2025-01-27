@@ -1,8 +1,6 @@
 NAME="shadow"
 VERS="4.17.1"
 DESC="Secure password handling"
-UPST="https://github.com/shadow-maint/shadow.git"
-VCMD="git ls-remote --tags '$UPST' | sed 's:.*/::' | grep -v rc | sort -V | grep -B1 19990709 | head -n1"
 DEPS="linux-pam"
 
 SOURCE="https://github.com/shadow-maint/shadow/releases/download/$VERS/shadow-$VERS.tar.xz"

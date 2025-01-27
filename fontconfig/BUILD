@@ -1,7 +1,6 @@
 NAME="fontconfig"
 VERS="2.16.0"
 DESC="Library and utilities for configuring fonts"
-UPST="https://gitlab.freedesktop.org/fontconfig/fontconfig.git"
 
 SOURCE="https://www.freedesktop.org/software/fontconfig/release/fontconfig-$VERS.tar.xz"
 EXTRA=()

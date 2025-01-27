@@ -1,8 +1,6 @@
 NAME="gmp"
 VERS="6.3.0"
 DESC="Arbitrary precision math libraries"
-UPST="https://ftp.gnu.org/gnu/gmp/?C=M;O=D" # gmp is hosted on mercurial and idk how to use it lol
-VCMD="curl -s '$UPST' | grep gmp- | head -n1 | cut -d'\"' -f8 | cut -d- -f2 | cut -d. -f1-3"
 
 SOURCE="https://ftp.gnu.org/gnu/gmp/gmp-$VERS.tar.xz"
 EXTRA=()

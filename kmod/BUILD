@@ -1,7 +1,6 @@
 NAME="kmod"
 VERS="33"
 DESC="Libraries and utilities for loading kernel modules"
-UPST="https://kernel.googlesource.com/pub/scm/utils/kernel/kmod/kmod.git"
 
 SOURCE="https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-$VERS.tar.xz"
 EXTRA=()

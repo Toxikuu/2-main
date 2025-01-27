@@ -1,8 +1,6 @@
 NAME="expect"
 VERS="5.45.4"
 DESC="Tools for automating interactive applications"
-UPST="https://sourceforge.net/projects/expect/files"
-VCMD="curl -s https://sourceforge.net/projects/expect/files/Expect/ | rg 'tr title=' | head -n1 | cut -d'\"' -f2"
 
 SOURCE="https://prdownloads.sourceforge.net/expect/expect$VERS.tar.gz"
 EXTRA=("https://www.linuxfromscratch.org/patches/lfs/development/expect-5.45.4-gcc14-1.patch")

@@ -1,7 +1,6 @@
 NAME="gawk"
 VERS="5.3.1"
 DESC="Programs for manipulating text files"
-UPST="https://git.savannah.gnu.org/git/gawk.git"
 
 SOURCE="https://ftp.gnu.org/gnu/gawk/gawk-$VERS.tar.xz"
 EXTRA=()

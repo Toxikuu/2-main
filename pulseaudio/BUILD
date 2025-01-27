@@ -1,7 +1,6 @@
 NAME="pulseaudio"
 VERS="17.0"
 DESC="General-purpose sound server"
-UPST="https://github.com/$NAME/$NAME.git"
 
 SOURCE="https://www.freedesktop.org/software/$NAME/releases/$NAME-$VERS.tar.xz"
 EXTRA=()

@@ -1,7 +1,6 @@
 NAME="polkit"
 VERS="125"
 DESC="Toolkit for defining and handling authorizations"
-UPST="https://github.com/polkit-org/polkit.git"
 
 SOURCE="https://github.com/polkit-org/polkit/archive/$VERS/polkit-$VERS.tar.gz"
 EXTRA=()

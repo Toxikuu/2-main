@@ -2,7 +2,6 @@ NAME="glib"
 VERS="2.82.4"
 GOBJV="1.82.0"
 DESC="Low level core library"
-UPST="https://github.com/GNOME/glib.git"
 
 SOURCE="https://download.gnome.org/sources/glib/${VERS%.*}/glib-$VERS.tar.xz"
 EXTRA=(

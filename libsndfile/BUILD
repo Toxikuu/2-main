@@ -1,7 +1,6 @@
 NAME="libsndfile"
 VERS="1.2.2"
 DESC="Library of C routines for reading and writing files containing sampled audio data"
-UPST="https://github.com/$NAME/$NAME.git"
 
 SOURCE="https://github.com/$NAME/$NAME/releases/download/$VERS/$NAME-$VERS.tar.xz"
 EXTRA=()

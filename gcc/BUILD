@@ -1,7 +1,6 @@
 NAME="gcc"
 VERS="14.2.0"
 DESC="The GNU compiler collection"
-UPST="git://gcc.gnu.org/git/gcc.git"
 
 SOURCE="https://ftp.gnu.org/gnu/gcc/gcc-$VERS/gcc-$VERS.tar.xz"
 EXTRA=()

@@ -1,7 +1,6 @@
 NAME="harfbuzz"
 VERS="10.2.0"
 DESC="OpenType text shaping engine"
-UPST="https://github.com/harfbuzz/harfbuzz.git"
 
 SOURCE="https://github.com/harfbuzz/harfbuzz/releases/download/$VERS/harfbuzz-$VERS.tar.xz"
 EXTRA=()

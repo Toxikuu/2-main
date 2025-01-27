@@ -1,7 +1,6 @@
 NAME="tcl"
 VERS="8.6.16"
 DESC="Tool Command Language"
-UPST="https://github.com/tcltk/tcl.git"
 
 SOURCE="https://downloads.sourceforge.net/tcl/tcl$VERS-src.tar.gz"
 EXTRA=()

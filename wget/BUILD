@@ -1,7 +1,6 @@
 NAME="wget"
 VERS="2.2.0"
 DESC="Utility useful for non-interactive file downloads"
-UPST="https://gitlab.com/gnuwget/wget2.git"
 
 SOURCE="https://gnuwget.gitlab.io/wget2/wget2-latest.tar.gz"
 EXTRA=()

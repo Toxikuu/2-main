@@ -1,7 +1,6 @@
 NAME="which"
 VERS="2.21"
 DESC="A utility to show the full path of commands"
-UPST="https://ftp.gnu.org/gnu/which/?C=M;O=D"
 
 SOURCE="https://ftp.gnu.org/gnu/which/which-$VERS.tar.gz"
 EXTRA=()

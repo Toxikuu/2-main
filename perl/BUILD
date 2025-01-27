@@ -1,7 +1,6 @@
 NAME="perl"
 VERS="5.40.1"
 DESC="The Practical Extraction and Report Language"
-UPST="https://github.com/Perl/perl5.git"
 
 MINOR="${VERS%.*}"
 MAJOR="${MINOR%.*}"

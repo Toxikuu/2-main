@@ -1,0 +1,1 @@
+command = "git ls-remote --tags 'https://git.savannah.gnu.org/git/m4.git' | sed 's:.*/::' | sort -V | grep -B1 v1.5.89a | head -n1"

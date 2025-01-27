@@ -1,7 +1,6 @@
 NAME="shared-mime-info"
 VERS="2.4"
 DESC="MIME type database"
-UPST="https://gitlab.freedesktop.org/xdg/shared-mime-info.git"
 
 SOURCE="https://gitlab.freedesktop.org/xdg/$NAME/-/archive/$VERS/$NAME-$VERS.tar.gz"
 EXTRA=()

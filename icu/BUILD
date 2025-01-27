@@ -1,7 +1,6 @@
 NAME="icu"
 VERS="76.1"
 DESC="International Components for Unicode"
-UPST="https://github.com/unicode-org/icu.git"
 
 SOURCE="https://github.com/unicode-org/icu/releases/download/release-${VERS//./-}/icu4c-${VERS//./_}-src.tgz"
 EXTRA=()

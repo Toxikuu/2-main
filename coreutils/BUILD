@@ -1,7 +1,6 @@
 NAME="coreutils"
 VERS="9.5"
 DESC="Basic utility programs needed by every OS"
-UPST="git://git.savannah.gnu.org/coreutils.git"
 
 SOURCE="https://ftp.gnu.org/gnu/coreutils/coreutils-$VERS.tar.xz"
 EXTRA=(

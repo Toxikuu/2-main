@@ -1,7 +1,6 @@
 NAME="git"
 VERS="2.47.1"
 DESC="The fast distributed version control system"
-UPST="https://github.com/git/git.git"
 
 SOURCE="https://www.kernel.org/pub/software/scm/git/git-$VERS.tar.xz"
 EXTRA=(

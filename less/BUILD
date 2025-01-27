@@ -1,7 +1,6 @@
 NAME="less"
 VERS="672"
 DESC="Text pager"
-UPST="https://github.com/gwsw/less.git"
 
 SOURCE="https://github.com/gwsw/less/archive/refs/tags/v$VERS.tar.gz"
 EXTRA=()

@@ -1,7 +1,6 @@
 NAME="zstd"
 VERS="1.5.6"
 DESC="The zstandard compression algorithm"
-UPST="https://github.com/facebook/zstd.git"
 
 SOURCE="https://github.com/facebook/zstd/releases/download/v$VERS/zstd-$VERS.tar.gz"
 EXTRA=()

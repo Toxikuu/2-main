@@ -1,7 +1,6 @@
 NAME="libelf"
 VERS="0.192"
 DESC="Library for handling ELF files"
-UPST="git://sourceware.org/git/elfutils.git"
 
 SOURCE="https://sourceware.org/ftp/elfutils/$VERS/elfutils-$VERS.tar.bz2"
 EXTRA=()

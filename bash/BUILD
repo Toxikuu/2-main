@@ -1,8 +1,6 @@
 NAME="bash"
 VERS="5.2.37"
 DESC="The Bourne-Again Shell"
-UPST="https://ftp.gnu.org/gnu/bash/?C=M;O=D" # upstream doesn't tag patches
-VCMD="curl -s '$UPST' | grep bash- | grep -Ev 'beta|alpha' | head -n1 | cut -d'\"' -f8 | cut -d- -f2 | cut -d. -f1-3"
 
 SOURCE="https://ftp.gnu.org/gnu/bash/bash-$VERS.tar.gz"
 EXTRA=()

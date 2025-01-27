@@ -1,7 +1,6 @@
 NAME="libffi"
 VERS="3.4.6"
 DESC="Foreign Function Interface library"
-UPST="https://github.com/libffi/libffi.git"
 
 SOURCE="https://github.com/libffi/libffi/releases/download/v$VERS/libffi-$VERS.tar.gz"
 EXTRA=()

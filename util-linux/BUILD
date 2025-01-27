@@ -1,7 +1,6 @@
 NAME="util-linux"
 VERS="2.40.2"
 DESC="Miscellaneous utility prorgrams"
-UPST="https://github.com/util-linux/util-linux.git"
 
 SOURCE="https://www.kernel.org/pub/linux/utils/util-linux/v${VERS%.*}/util-linux-$VERS.tar.xz"
 EXTRA=()

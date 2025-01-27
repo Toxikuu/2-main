@@ -1,0 +1,1 @@
+command = "curl -s 'https://ftp.gnu.org/gnu/readline/?C=M;O=D' | grep readline- | grep -Ev 'beta|alpha' | head -n2 | tail -n1 | cut -d- -f2 | cut -d. -f1-3"
