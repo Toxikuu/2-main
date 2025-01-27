@@ -30,3 +30,5 @@ b-32mi -C libelf
 install -vDm644 config/libelf.pc "$D"/usr/lib32/pkgconfig/libelf.pc
 
 }
+
+#d fixed .uv.toml
