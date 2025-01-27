@@ -10,3 +10,5 @@ EXTRA=()
 install -vDm644 -t "$D"/etc services protocols
 
 }
+
+#d fixed .uv.toml
