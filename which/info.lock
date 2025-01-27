@@ -1,8 +1,8 @@
 name = "which"
-version = "2.21"
+version = "2.22"
 repo = "main"
 
 [data]
-source = { url = "https://ftp.gnu.org/gnu/which/which-2.21.tar.gz", hash = "9KJFuUEks3fYtJZGv0IfkVXTaqdhS26_g3BdP_x26q0" }
+source = { url = "https://ftp.gnu.org/gnu/which/which-2.22.tar.gz", hash = "n4XN4_LCVwIbhQj3VnBL7mAC-o9WgCl9MPGGzB80KvU" }
 extra = [
 ]

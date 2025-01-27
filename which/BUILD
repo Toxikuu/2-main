@@ -1,5 +1,5 @@
 NAME="which"
-VERS="2.21"
+VERS="2.22"
 DESC="A utility to show the full path of commands"
 
 SOURCE="https://ftp.gnu.org/gnu/which/which-$VERS.tar.gz"
