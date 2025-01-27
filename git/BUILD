@@ -1,5 +1,5 @@
 NAME="git"
-VERS="2.47.1"
+VERS="2.48.1"
 DESC="The fast distributed version control system"
 
 SOURCE="https://www.kernel.org/pub/software/scm/git/git-$VERS.tar.xz"

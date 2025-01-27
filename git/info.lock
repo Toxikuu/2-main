@@ -1,9 +1,9 @@
 name = "git"
-version = "2.47.1"
+version = "2.48.1"
 repo = "main"
 
 [data]
-source = { url = "https://www.kernel.org/pub/software/scm/git/git-2.47.1.tar.xz", hash = "89j5uyOuOSN06RzZ05WXDavFucXucvOYhGE82Epu0xA" }
+source = { url = "https://www.kernel.org/pub/software/scm/git/git-2.48.1.tar.xz", hash = "HF1UX13B61HpXSxQ2Y_fiLGja6H6MOmuXVOFxgJPgq0" }
 extra = [
-  { url = "https://www.kernel.org/pub/software/scm/git/git-manpages-2.47.1.tar.xz", hash = "_8IAWomwVsBye2Z_a-2gBoNxYZdi6khErQIpCRvv7hM" },
+  { url = "https://www.kernel.org/pub/software/scm/git/git-manpages-2.48.1.tar.xz", hash = "TA7eevpNbb9gLS8v0VHDarV9MiTmuf0XNC6F8F04aIY" },
 ]
