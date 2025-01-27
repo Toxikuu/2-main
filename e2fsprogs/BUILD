@@ -1,5 +1,5 @@
 NAME="e2fsprogs"
-VERS="1.47.1"
+VERS="1.47.2"
 DESC="Programs for the ext4 filesystem"
 
 SOURCE="https://github.com/tytso/e2fsprogs/archive/refs/tags/v$VERS.tar.gz"

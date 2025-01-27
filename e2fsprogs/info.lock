@@ -1,8 +1,8 @@
 name = "e2fsprogs"
-version = "1.47.1"
+version = "1.47.2"
 repo = "main"
 
 [data]
-source = { url = "https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.47.1.tar.gz", hash = "25X_HLbvdByaqIddnz9So0FoNg_runZbY3e4C62gmow" }
+source = { url = "https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.47.2.tar.gz", hash = "vn7dcDFzTR_vijGfCQGCj4q4no87UHPmsYdAvjdxqVw" }
 extra = [
 ]
