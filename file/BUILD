@@ -18,3 +18,5 @@ b-make
 b-32mi
 
 }
+
+#d fixed .uv.toml
