@@ -7,3 +7,4 @@ source = { url = "http://download.savannah.gnu.org/releases/lzip/lzip-1.25.tar.g
 extra = [
 ]
 upstream = "http://download.savannah.gnu.org/releases/lzip/?C=M&O=D"
+version_command = '''curl -s 'http://download.savannah.gnu.org/releases/lzip/?C=M&O=D' | grep 'lzip-' | head -n1 | cut -d- -f2 | cut -d. -f1-3 | sed 's@.tar.*@@''''
