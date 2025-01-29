@@ -7,3 +7,4 @@ source = { url = "https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz", hash = "a5
 extra = [
 ]
 upstream = "https://git.savannah.gnu.org/git/groff.git"
+version_command = '''git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/groff.git' | sed 's@.*/@@' | grep -E '^[0-9]+' | grep -Ev '[a-z]+' | tail -n1'''
