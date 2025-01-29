@@ -9,6 +9,7 @@ NAME="glibc"
 VERS="2.40"
 DESC="The GNU C library"
 UPST="https://sourceware.org/git/glibc.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\\.' | sort -V | tail -n1"
 
 SOURCE="https://ftp.gnu.org/gnu/glibc/glibc-$VERS.tar.xz"
 EXTRA=("https://www.linuxfromscratch.org/patches/lfs/development/glibc-$VERS-fhs-1.patch")
