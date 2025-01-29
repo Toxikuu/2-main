@@ -2,6 +2,7 @@ NAME="libcap"
 VERS="2.73"
 DESC="POSIX 1003.1e capabilities"
 UPST="https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep 'libcap-korg-' | tail -n1 | cut -d- -f3"
 
 SOURCE="https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-$VERS.tar.xz"
 EXTRA=()

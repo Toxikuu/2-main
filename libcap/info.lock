@@ -7,3 +7,4 @@ source = { url = "https://www.kernel.org/pub/linux/libs/security/linux-privs/lib
 extra = [
 ]
 upstream = "https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
+version_command = '''git ls-remote --tags --refs 'https://git.kernel.org/pub/scm/libs/libcap/libcap.git' | sed 's@.*/@@' | grep 'libcap-korg-' | tail -n1 | cut -d- -f3'''
