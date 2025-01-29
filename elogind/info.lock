@@ -7,3 +7,4 @@ source = { url = "https://github.com/elogind/elogind/archive/v255.17/elogind-255
 extra = [
 ]
 upstream = "https://github.com/elogind/elogind.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/elogind/elogind.git' | sed 's@.*/@@' | grep -Ev 'pre|r|alpha' | sed 's@v@@' | sort -V | tail -n1'''

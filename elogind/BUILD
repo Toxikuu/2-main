@@ -2,6 +2,7 @@ NAME="elogind"
 VERS="255.17"
 DESC="Systemd's \"logind\", extracted to a standalone package"
 UPST="https://github.com/elogind/elogind.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -Ev 'pre|r|alpha' | sed 's@v@@' | sort -V | tail -n1"
 
 SOURCE="https://github.com/elogind/elogind/archive/v$VERS/elogind-$VERS.tar.gz"
 EXTRA=()
