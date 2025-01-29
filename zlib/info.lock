@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://zlib.net/fossils/zlib-1.3.1.tar.gz", hash = "mpOyt9_ax3zrpaVYpYDnRmfdb-3kWFuR7vtg8Dty3yM" }
 extra = [
 ]
+upstream = "https://github.com/madler/zlib.git"
