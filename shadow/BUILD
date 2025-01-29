@@ -3,7 +3,7 @@ VERS="4.17.1"
 DESC="Secure password handling"
 DEPS="linux-pam"
 UPST="https://github.com/shadow-maint/shadow.git"
-VCMD="git ls-remote --tags '$UPST' | sed 's:.*/::' | grep -v rc | sort -V | grep -B1 19990709 | head -n1"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's:.*/::' | grep -v rc | sort -V | grep -B1 19990709 | head -n1"
 
 SOURCE="https://github.com/shadow-maint/shadow/releases/download/$VERS/shadow-$VERS.tar.xz"
 EXTRA=()

@@ -7,4 +7,4 @@ source = { url = "https://github.com/shadow-maint/shadow/releases/download/4.17.
 extra = [
 ]
 upstream = "https://github.com/shadow-maint/shadow.git"
-version_command = "git ls-remote --tags 'https://github.com/shadow-maint/shadow.git' | sed 's:.*/::' | grep -v rc | sort -V | grep -B1 19990709 | head -n1"
+version_command = "git ls-remote --tags --refs 'https://github.com/shadow-maint/shadow.git' | sed 's:.*/::' | grep -v rc | sort -V | grep -B1 19990709 | head -n1"
