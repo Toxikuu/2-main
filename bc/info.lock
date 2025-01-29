@@ -7,3 +7,4 @@ source = { url = "https://github.com/gavinhoward/bc/releases/download/7.0.3/bc-7
 extra = [
 ]
 upstream = "https://github.com/gavinhoward/bc.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/gavinhoward/bc.git' | sed 's@.*/@@' | grep -Ev '[a-z]+' | tail -n1'''
