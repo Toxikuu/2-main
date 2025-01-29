@@ -7,3 +7,4 @@ source = { url = "https://www.freedesktop.org/software/desktop-file-utils/releas
 extra = [
 ]
 upstream = "https://gitlab.freedesktop.org/xdg/desktop-file-utils.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xdg/desktop-file-utils.git' | sed 's@.*/@@' | grep -E '^[0-9]+' | tail -n1'''
