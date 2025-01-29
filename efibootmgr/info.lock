@@ -7,3 +7,4 @@ source = { url = "https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.
 extra = [
 ]
 upstream = "https://github.com/rhboot/efibootmgr.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/rhboot/efibootmgr.git' | sed 's@.*/@@' | grep -E '^[0-9]+$' | tail -n1'''
