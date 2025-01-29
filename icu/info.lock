@@ -7,3 +7,4 @@ source = { url = "https://github.com/unicode-org/icu/releases/download/release-7
 extra = [
 ]
 upstream = "https://github.com/unicode-org/icu.git"
+version_command = '''git ls-remote --tags 'https://github.com/unicode-org/icu.git' | sed 's@.*/@@' | grep release- | grep -Ev 'tools-|-rc|alpha|preview' | tail -n1 | cut -d- -f2- | sed 's@-@.@''''
