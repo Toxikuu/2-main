@@ -8,3 +8,4 @@ extra = [
   { url = "https://glfs-book.github.io/glfs/patches/curl-eventfd_regression-1.patch", hash = "djJQJqVY4lpDA3HQSLyMV2MwRw1qZUhZ1WrRPRQwjXc" },
 ]
 upstream = "https://github.com/curl/curl.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/curl/curl.git' | sed 's@.*/@@' | grep -E '^curl-[0-9]+' | grep -Ev 'pre|alpha' | sed 's@_@.@g' | cut -d- -f2 | sort -V | tail -n1'''

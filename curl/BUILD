@@ -2,6 +2,7 @@ NAME="curl"
 VERS="8.11.1"
 DESC="Tool and library for transferring data with URLs"
 UPST="https://github.com/curl/curl.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E '^curl-[0-9]+' | grep -Ev 'pre|alpha' | sed 's@_@.@g' | cut -d- -f2 | sort -V | tail -n1"
 
 SOURCE="https://curl.se/download/curl-$VERS.tar.xz"
 EXTRA=(
