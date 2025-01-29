@@ -7,3 +7,4 @@ source = { url = "https://github.com/openssl/openssl/releases/download/openssl-3
 extra = [
 ]
 upstream = "https://github.com/openssl/openssl.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/openssl/openssl.git' | sed 's@.*/@@' | grep -Ev 'alpha|beta' | grep 'openssl-''''
