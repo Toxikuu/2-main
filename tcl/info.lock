@@ -7,3 +7,4 @@ source = { url = "https://downloads.sourceforge.net/tcl/tcl8.6.16-src.tar.gz", h
 extra = [
 ]
 upstream = "https://github.com/tcltk/tcl.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/tcltk/tcl.git' | sed -e 's@.*/@@' -e 's@^core-@@' -e 's@-@.@g' | grep -Ev '[a-z]' | grep '\.' | tail -n1'''

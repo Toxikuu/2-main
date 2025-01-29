@@ -2,6 +2,7 @@ NAME="tcl"
 VERS="8.6.16"
 DESC="Tool Command Language"
 UPST="https://github.com/tcltk/tcl.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' -e 's@^core-@@' -e 's@-@.@g' | grep -Ev '[a-z]' | grep '\\.' | tail -n1"
 
 SOURCE="https://downloads.sourceforge.net/tcl/tcl$VERS-src.tar.gz"
 EXTRA=()
