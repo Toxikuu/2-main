@@ -6,3 +6,5 @@ repo = "main"
 source = { url = "https://prdownloads.sourceforge.net/expat/expat-2.6.4.tar.xz", hash = "ppVina4EcFWzfVCg_0d20dRdCkyELPTM7hWEQfVf9-4" }
 extra = [
 ]
+upstream = "https://github.com/libexpat/libexpat.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/libexpat/libexpat.git' | sed 's:.*/::' | sort -V | grep -B 1 V1_0 | head -n1 | cut -d_ -f2- | sed 's/_/./g''''
