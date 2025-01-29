@@ -7,4 +7,4 @@ source = { url = "https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz", hash = "lZmy
 extra = [
 ]
 upstream = "https://ftp.gnu.org/gnu/bash/?C=M;O=D"
-version_command = "curl -s 'https://ftp.gnu.org/gnu/bash/?C=M;O=D' | grep bash- | grep -Ev 'beta|alpha' | head -n1 | cut -d'"' -f8 | cut -d- -f2 | cut -d. -f1-3"
+version_command = '''curl -s 'https://ftp.gnu.org/gnu/bash/?C=M;O=D' | grep bash- | grep -Ev 'beta|alpha' | head -n1 | cut -d '"' -f8 | cut -d- -f2 | cut -d. -f1-3'''
