@@ -7,3 +7,4 @@ source = { url = "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool
 extra = [
 ]
 upstream = "https://salsa.debian.org/gnome-team/intltool.git"
+version_command = '''git ls-remote --tags --refs 'https://salsa.debian.org/gnome-team/intltool.git' | sed 's@.*/@@' | cut -d- -f1 | uniq | tail -n1'''

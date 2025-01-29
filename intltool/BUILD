@@ -2,6 +2,7 @@ NAME="intltool"
 VERS="0.51.0"
 DESC="Internationalization tool for extracting translatable strings from source files"
 UPST="https://salsa.debian.org/gnome-team/intltool.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | cut -d- -f1 | uniq | tail -n1"
 
 SOURCE="https://launchpad.net/intltool/trunk/$VERS/+download/intltool-$VERS.tar.gz"
 EXTRA=()
