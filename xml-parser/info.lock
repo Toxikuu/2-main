@@ -7,3 +7,4 @@ source = { url = "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.4
 extra = [
 ]
 upstream = "https://github.com/cpan-authors/XML-Parser.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/cpan-authors/XML-Parser.git' | sed -e 's@.*/@@' -e 's@^v@@' -e 's@_@.@g' | sort -V | tail -n1'''
