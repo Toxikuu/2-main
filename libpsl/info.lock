@@ -7,3 +7,4 @@ source = { url = "https://github.com/rockdaboot/libpsl/releases/download/0.21.5/
 extra = [
 ]
 upstream = "https://github.com/rockdaboot/libpsl.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/rockdaboot/libpsl.git' | sed -e 's@.*/@@' -e 's@libpsl-@@' | grep -v -- - | sort -V | tail -n1'''
