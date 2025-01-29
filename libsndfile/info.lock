@@ -7,3 +7,4 @@ source = { url = "https://github.com/libsndfile/libsndfile/releases/download/1.2
 extra = [
 ]
 upstream = "https://github.com/libsndfile/libsndfile.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/libsndfile/libsndfile.git' | sed 's@.*/@@' | grep -B1 'v1.0.28pre1' | head -n1'''
