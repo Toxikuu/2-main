@@ -1,8 +1,9 @@
 NAME="glib"
-VERS="2.82.4"
+VERS="2.83.3"
 GOBJV="1.82.0"
 DESC="Low level core library"
 UPST="https://github.com/GNOME/glib.git"
+VCMD="git ls-remote --tags --refs '$UPST' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' | head -n1 | sed 's@.*/@@'"
 
 SOURCE="https://download.gnome.org/sources/glib/${VERS%.*}/glib-$VERS.tar.xz"
 EXTRA=(
