@@ -6,4 +6,5 @@ repo = "main"
 source = { url = "https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz", hash = "p7Obxpy_niWCbFpgqyZHcAH3wI2FzsBLwOKcq-1vPMk" }
 extra = [
 ]
-upstream = "git://gcc.gnu.org/git/gcc.git"
+upstream = "https://gcc.gnu.org/git/gcc.git"
+version_command = '''git ls-remote --tags 'https://gcc.gnu.org/git/gcc.git' | sed 's:.*/::' | sort -V | grep gcc- | tail -n1 | cut -d- -f2'''
