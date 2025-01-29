@@ -6,5 +6,5 @@ repo = "main"
 source = { url = "https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz", hash = "h9rvrNeVi0pp-IxoVtvRY0JhljxBQHnQw3H1ic1mouM" }
 extra = [
 ]
-upstream = "htps://git.savannah.gnu.org/git/dejagnu.git"
-version_command = "git ls-remote --tags --refs 'htps://git.savannah.gnu.org/git/dejagnu.git' | grep release | tail -n1 | cut -d- -f2"
+upstream = "https://git.savannah.gnu.org/git/dejagnu.git"
+version_command = '''git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/dejagnu.git' | grep release | tail -n1 | cut -d- -f2'''
