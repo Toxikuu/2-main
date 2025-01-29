@@ -1,10 +1,11 @@
 NAME="perl"
 VERS="5.40.1"
 DESC="The Practical Extraction and Report Language"
+UPST="https://github.com/Perl/perl5.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E 'v[0-9]+\\.([0-9]*[02468])\\.[0-9]+' | grep -v RC | tail -n1" # even minor part means stable
 
 MINOR="${VERS%.*}"
 MAJOR="${MINOR%.*}"
-UPST="https://github.com/Perl/perl5.git"
 
 SOURCE="https://www.cpan.org/src/${MAJOR}.0/perl-${VERS}.tar.gz"
 EXTRA=()

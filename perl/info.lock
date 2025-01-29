@@ -7,3 +7,4 @@ source = { url = "https://www.cpan.org/src/5.0/perl-5.40.1.tar.gz", hash = "AvjE
 extra = [
 ]
 upstream = "https://github.com/Perl/perl5.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/Perl/perl5.git' | sed 's@.*/@@' | grep -E 'v[0-9]+\.([0-9]*[02468])\.[0-9]+' | grep -v RC | tail -n1'''
