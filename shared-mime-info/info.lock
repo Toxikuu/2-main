@@ -7,3 +7,4 @@ source = { url = "https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/
 extra = [
 ]
 upstream = "https://gitlab.freedesktop.org/xdg/shared-mime-info.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xdg/shared-mime-info.git' | sed 's@.*/@@' | grep -v Release- | tail -n1'''
