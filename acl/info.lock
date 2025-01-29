@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://download.savannah.gnu.org/releases/acl/acl-2.3.2.tar.xz", hash = "lyA6csrpmriaBn_iIQwcvwUrxJK0eeyn0ibZgwiDsL0" }
 extra = [
 ]
+upstream = "https://git.savannah.nongnu.org/git/acl.git"

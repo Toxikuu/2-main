@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz", hash = "TCGnkbYQuVGbnQ4SuAl78vNZsS-N2SZHYRqSnmv9fWQ" }
 extra = [
 ]
+upstream = "https://gitlab.com/libidn/libidn2.git"

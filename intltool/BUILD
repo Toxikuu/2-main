@@ -1,6 +1,7 @@
 NAME="intltool"
 VERS="0.51.0"
 DESC="Internationalization tool for extracting translatable strings from source files"
+UPST="https://salsa.debian.org/gnome-team/intltool.git"
 
 SOURCE="https://launchpad.net/intltool/trunk/$VERS/+download/intltool-$VERS.tar.gz"
 EXTRA=()

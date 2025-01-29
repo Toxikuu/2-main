@@ -1,6 +1,7 @@
 NAME="tzdata"
 VERS="2025a"
 DESC="Timezone data"
+UPST="https://data.iana.org/time-zones/releases/?C=M;O=D"
 
 SOURCE="https://data.iana.org/time-zones/releases/tzdata"$VERS".tar.gz"
 EXTRA=()

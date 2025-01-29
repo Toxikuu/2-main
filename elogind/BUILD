@@ -1,6 +1,7 @@
 NAME="elogind"
 VERS="255.17"
 DESC="Systemd's \"logind\", extracted to a standalone package"
+UPST="https://github.com/elogind/elogind.git"
 
 SOURCE="https://github.com/elogind/elogind/archive/v$VERS/elogind-$VERS.tar.gz"
 EXTRA=()

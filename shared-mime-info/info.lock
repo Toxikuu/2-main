@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.4/shared-mime-info-2.4.tar.gz", hash = "UxKR0Dh-uU4W53XX5zeI0G0rL92M0qxraxUodZO2ot4" }
 extra = [
 ]
+upstream = "https://gitlab.freedesktop.org/xdg/shared-mime-info.git"

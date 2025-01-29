@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz", hash = "Z8dNlBlrFTt3Srn4my-mxrp5NSQHA3yMFNWuszTpWc0" }
 extra = [
 ]
+upstream = "https://salsa.debian.org/gnome-team/intltool.git"

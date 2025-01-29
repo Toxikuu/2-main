@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://pypi.org/packages/source/w/wheel/wheel-0.45.1.tar.gz", hash = "Zh4avZGYUHsUCaIMAhBtlnCyV26RbVj1IDFmZqvKZyk" }
 extra = [
 ]
+upstream = "https://github.com/pypa/wheel.git"

@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz", hash = "kOXpPMck5OvhLt6A3xY0Bjx6hVaSaFkZv-YLVWyb0J4" }
 extra = [
 ]
+upstream = "https://git.savannah.gnu.org/git/diffutils.git"

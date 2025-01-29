@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://www.kernel.org/pub/linux/utils/util-linux/v2.40/util-linux-2.40.2.tar.xz", hash = "14s3pm9ZItcO3zvfsBprM9NO08PK_WYoIDsqK2fI6LM" }
 extra = [
 ]
+upstream = "https://github.com/util-linux/util-linux.git"

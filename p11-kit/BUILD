@@ -1,6 +1,7 @@
 NAME="p11-kit"
 VERS="0.25.5"
 DESC="Loads and enumerates PKCS#11 modules"
+UPST="https://github.com/p11-glue/p11-kit.git"
 
 SOURCE="https://github.com/p11-glue/p11-kit/releases/download/$VERS/p11-kit-$VERS.tar.xz"
 EXTRA=()

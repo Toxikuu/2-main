@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/harfbuzz/harfbuzz/releases/download/10.2.0/harfbuzz-10.2.0.tar.xz", hash = "Yg40aPrsLqhoXTLEalhGm4UO9jBAs1Zc3gWVmCW0gic" }
 extra = [
 ]
+upstream = "https://github.com/harfbuzz/harfbuzz.git"

@@ -1,6 +1,7 @@
 NAME="alsa-utils"
 VERS="1.2.13"
 DESC="ALSA utilities"
+UPST="https://github.com/alsa-project/alsa-utils.git"
 
 SOURCE="https://www.alsa-project.org/files/pub/utils/alsa-utils-$VERS.tar.bz2"
 EXTRA=()

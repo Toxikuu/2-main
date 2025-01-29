@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://libisl.sourceforge.io/isl-0.27.tar.xz", hash = "bYurtZ57Zy6Mt4cOh08_e4E7bgDmrz-LBPdXmWVkPVw" }
 extra = [
 ]
+upstream = "git://repo.or.cz/isl.git"

@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/gwsw/less/archive/refs/tags/v672.tar.gz", hash = "GLvbRZ2UoOn3wxzv5G1DlXAsl50MTEnTLvEo28Ihv-I" }
 extra = [
 ]
+upstream = "https://github.com/gwsw/less.git"

@@ -6,3 +6,5 @@ repo = "main"
 source = { url = "https://astron.com/pub/file/file-5.46.tar.gz", hash = "ycx3x8VgxUMTXtxVWvYJ1WGdvvARmX6YjOQKPXXYYIg" }
 extra = [
 ]
+upstream = "https://github.com/file/file.git"
+version_command = "git ls-remote --tags 'https://github.com/file/file.git' | sed 's:.*/::' | sort -V | tail -n2 | head -n1 | sed 's/FILE//' | sed 's/_/./g'"

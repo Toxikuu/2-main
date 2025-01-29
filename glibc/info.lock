@@ -7,3 +7,4 @@ source = { url = "https://ftp.gnu.org/gnu/glibc/glibc-2.40.tar.xz", hash = "GaiQ
 extra = [
   { url = "https://www.linuxfromscratch.org/patches/lfs/development/glibc-2.40-fhs-1.patch", hash = "ZDVS2wMOLy1__eT1WOD1-D0_q_NKLg5W69tJdQrCew0" },
 ]
+upstream = "git://sourceware.org/git/glibc.git"

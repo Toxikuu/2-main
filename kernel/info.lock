@@ -6,3 +6,5 @@ repo = "main"
 source = { url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.10.tar.gz", hash = "PGA--QpxCfXAiBm_0Uv4GbWuEV7ekFc-awpKLrs-TWk" }
 extra = [
 ]
+upstream = "https://kernel.org"
+version_command = "curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"

@@ -6,3 +6,5 @@ repo = "main"
 source = { url = "https://github.com/Mic92/iana-etc/releases/download/20250123/iana-etc-20250123.tar.gz", hash = "k9qd0pYtonty3vCPcy6wncY71_y6SjWXOtZT4k0y_f4" }
 extra = [
 ]
+upstream = "https://github.com/Mic92/iana-etc.git"
+version_command = "git ls-remote --tags 'https://github.com/Mic92/iana-etc.git' | sed 's@.*/@@' | sort -V | grep -B1 untagged | head -n1"

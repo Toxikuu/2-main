@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/besser82/libxcrypt/releases/download/v4.4.37/libxcrypt-4.4.37.tar.xz", hash = "kCqil2-Vm16-VWebFyK4R5-PE81M4u9DKwqErimP_9A" }
 extra = [
 ]
+upstream = "https://github.com/besser82/libxcrypt.git"

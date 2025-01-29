@@ -3,6 +3,8 @@ version = "2.2.0"
 repo = "main"
 
 [data]
-source = { url = "https://gnuwget.gitlab.io/wget2/wget2-latest.tar.gz", hash = "B7ryVoCNOpKmdvyiSO-EmcuROmAfpxKqse58iTC0EiY" }
+source = { url = "https://gnuwget.gitlab.io/wget2/wget2-latest.tar.gz", hash = "sdZCJmBGGzVCP_BWB_HdMTWkv7FOyGThWkta3Fgpcxs" }
 extra = [
 ]
+upstream = "https://gitlab.com/gnuwget/wget2.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.com/gnuwget/wget2.git' | grep v | tail -n1 | cut -d/ -f3"

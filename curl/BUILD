@@ -1,6 +1,7 @@
 NAME="curl"
 VERS="8.11.1"
 DESC="Tool and library for transferring data with URLs"
+UPST="https://github.com/curl/curl.git"
 
 SOURCE="https://curl.se/download/curl-$VERS.tar.xz"
 EXTRA=(

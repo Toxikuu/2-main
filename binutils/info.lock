@@ -7,3 +7,4 @@ source = { url = "https://sourceware.org/pub/binutils/releases/binutils-2.43.1.t
 extra = [
   { url = "https://www.linuxfromscratch.org/patches/downloads/binutils/binutils-2.43.1-upstream_fix-1.patch", hash = "P8fZqP2xVDAHk-4sD0HQlZpiyqKAPrrx9ZY9Z6LrQnM" },
 ]
+upstream = "https://sourceware.org/git/binutils-gdb.git"

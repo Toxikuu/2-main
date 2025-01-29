@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz", hash = "a5dX9ZK3UYtJAutq9-VFcL3Mujeocf3bLTCuOGNRHBM" }
 extra = [
 ]
+upstream = "https://git.savannah.gnu.org/git/groff.git"

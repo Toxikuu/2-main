@@ -1,6 +1,7 @@
 NAME="libxcrypt"
 VERS="4.4.37"
 DESC="Modern library for password hashing"
+UPST="https://github.com/besser82/libxcrypt.git"
 
 SOURCE="https://github.com/besser82/libxcrypt/releases/download/v$VERS/libxcrypt-$VERS.tar.xz"
 EXTRA=()

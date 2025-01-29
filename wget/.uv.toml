@@ -1,1 +1,0 @@
-command = "git ls-remote --tags --refs https://gitlab.com/gnuwget/wget2.git | grep v | tail -n1 | cut -d/ -f3"

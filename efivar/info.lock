@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz", hash = "ye3RXy7u6mMjLz5mmkjpkse-mv9X7iJnKsMfXsoWCaY" }
 extra = [
 ]
+upstream = "https://github.com/rhboot/efivar.git"

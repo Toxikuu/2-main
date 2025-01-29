@@ -1,6 +1,7 @@
 NAME="gettext"
 VERS="0.23.1"
 DESC="Internationalization and localization utilities"
+UPST="https://git.savannah.gnu.org/git/gettext.git"
 
 SOURCE="https://ftp.gnu.org/gnu/gettext/gettext-$VERS.tar.xz"
 EXTRA=()

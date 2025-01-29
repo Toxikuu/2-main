@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz", hash = "ajPcVVzJuosQyvdpWHjvE07rNtCvNmBB9jmx2ptu0iA" }
 extra = [
 ]
+upstream = "https://gitlab.freedesktop.org/fontconfig/fontconfig.git"

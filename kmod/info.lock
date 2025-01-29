@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-33.tar.xz", hash = "3HaLMVUXIJH1bcaUMLVIHy127NnMtU6tjCVA289eqbw" }
 extra = [
 ]
+upstream = "https://kernel.googlesource.com/pub/scm/utils/kernel/kmod/kmod.git"

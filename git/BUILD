@@ -1,6 +1,7 @@
 NAME="git"
 VERS="2.48.1"
 DESC="The fast distributed version control system"
+UPST="https://github.com/git/git.git"
 
 SOURCE="https://www.kernel.org/pub/software/scm/git/git-$VERS.tar.xz"
 EXTRA=(
@@ -24,3 +25,4 @@ tar xvf "$SRC"/git-manpages-$VERS.tar.xz \
     -C "$D"/usr/share/man --no-same-owner --no-overwrite-dir
 
 }
+UPST=https://github.com/git/git.git

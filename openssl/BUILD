@@ -1,6 +1,7 @@
 NAME="openssl"
 VERS="3.4.0"
 DESC="Cryptography tools and libraries"
+UPST="https://github.com/openssl/openssl.git"
 
 SOURCE="https://github.com/openssl/openssl/releases/download/openssl-$VERS/openssl-$VERS.tar.gz"
 EXTRA=()

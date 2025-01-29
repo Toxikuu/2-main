@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.8.tar.gz", hash = "GxIDyhUszWOYPD8hEvf-b6Wv1FMhjt5RU9GzHhG7hAU" }
 extra = [
 ]
+upstream = "https://gitlab.com/libpipeline/libpipeline.git"

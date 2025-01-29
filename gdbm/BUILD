@@ -1,6 +1,7 @@
 NAME="gdbm"
 VERS="1.24"
 DESC="The GNU Database Manager"
+UPST="https://git.savannah.gnu.org/git/gdbm.git"
 
 SOURCE="https://ftp.gnu.org/gnu/gdbm/gdbm-$VERS.tar.gz"
 EXTRA=()

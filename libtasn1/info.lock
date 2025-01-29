@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.19.0.tar.gz", hash = "FhPwrBz0hNbsDOO4wG1WJjzHJC8cI7MNgtI940WmP3o" }
 extra = [
 ]
+upstream = "https://gitlab.com/gnutls/libtasn1.git"

@@ -1,1 +1,0 @@
-command = "git ls-remote --tags 'https://github.com/file/file.git' | sed 's:.*/::' | sort -V | tail -n2 | head -n1 | sed 's/FILE//' | sed 's/_/./g'"

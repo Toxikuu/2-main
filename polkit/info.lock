@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/polkit-org/polkit/archive/125/polkit-125.tar.gz", hash = "6lzW5uKvprrZOO53C_DCzZMXkQ83lW-uuihprc83R9E" }
 extra = [
 ]
+upstream = "https://github.com/polkit-org/polkit.git"

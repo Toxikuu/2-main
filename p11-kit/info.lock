@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz", hash = "BNCoZFDNsb4BjyavZpmFcXGhiKxtW4yQeGpghU4RmOU" }
 extra = [
 ]
+upstream = "https://github.com/p11-glue/p11-kit.git"

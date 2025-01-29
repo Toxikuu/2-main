@@ -4,6 +4,7 @@ DESC="The Practical Extraction and Report Language"
 
 MINOR="${VERS%.*}"
 MAJOR="${MINOR%.*}"
+UPST="https://github.com/Perl/perl5.git"
 
 SOURCE="https://www.cpan.org/src/${MAJOR}.0/perl-${VERS}.tar.gz"
 EXTRA=()

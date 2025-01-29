@@ -1,6 +1,7 @@
 NAME="pkgconf"
 VERS="2.3.0"
 DESC="Package compiler and linker metadata toolkit"
+UPST="https://github.com/pkgconf/pkgconf.git"
 
 SOURCE="https://distfiles.ariadne.space/pkgconf/pkgconf-$VERS.tar.xz"
 EXTRA=()

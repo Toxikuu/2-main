@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.44/pcre2-10.44.tar.bz2", hash = "008C4RPPcZOh6_J3DTrFJwiNSF1OBH7RDl0hfG713pY" }
 extra = [
 ]
+upstream = "https://github.com/PCRE2Project/pcre2.git"

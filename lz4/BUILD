@@ -1,6 +1,7 @@
 NAME="lz4"
 VERS="1.10.0"
 DESC="The lz4 compression algorithm."
+UPST="https://github.com/lz4/lz4.git"
 
 SOURCE="https://github.com/lz4/lz4/releases/download/v$VERS/lz4-$VERS.tar.gz"
 EXTRA=()

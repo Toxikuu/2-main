@@ -1,6 +1,7 @@
 NAME="libpng"
 VERS="1.6.45"
 DESC="Libraries for reading and writing PNG formats"
+UPST="https://github.com/pnggroup/libpng.git"
 
 SOURCE="https://github.com/pnggroup/libpng/archive/refs/tags/v$VERS.tar.gz"
 EXTRA=(

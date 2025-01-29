@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz", hash = "rGEL2per4Nn2t8ljJVoR3LGWwl4zfGH5Tkd41jLx2P0" }
 extra = [
 ]
+upstream = "https://git.savannah.gnu.org/git/patch.git"

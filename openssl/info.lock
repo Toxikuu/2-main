@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/openssl/openssl/releases/download/openssl-3.4.0/openssl-3.4.0.tar.gz", hash = "4V3agv4v6BOdwqwho21MoB1TE8dfmfRsTooncJtylL8" }
 extra = [
 ]
+upstream = "https://github.com/openssl/openssl.git"

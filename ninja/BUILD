@@ -1,6 +1,7 @@
 NAME="ninja"
 VERS="1.12.1"
 DESC="A small build system with a focus on speed"
+UPST="https://github.com/ninja-build/ninja.git"
 
 SOURCE="https://github.com/ninja-build/ninja/archive/v$VERS/ninja-$VERS.tar.gz"
 EXTRA=()

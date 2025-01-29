@@ -3,6 +3,8 @@ version = "20240825"
 repo = "main"
 
 [data]
-source = { url = "https://www.linuxfromscratch.org/lfs/downloads/development/lfs-bootscripts-20240825.tar.xz", hash = "leEz03LOo8DndihKTUVUJ99SyySqcWJBc9vHQgRh6V4" }
+source = { url = "https://www.linuxfromscratch.org/lfs/downloads/development/lfs-bootscripts-20240825.tar.xz", hash = "xXB7uir4FuxAgRB1_tXM83Wo8z4mODCMcxiQM-Y68Xc" }
 extra = [
 ]
+upstream = "https://www.linuxfromscratch.org/~thomas/multilib-m32/chapter09/bootscripts.html"
+version_command = "curl -s 'https://www.linuxfromscratch.org/~thomas/multilib-m32/chapter09/bootscripts.html' | grep LFS-Bootscripts- | tail -n1 | cut -d- -f3"

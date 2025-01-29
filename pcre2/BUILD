@@ -1,6 +1,7 @@
 NAME="pcre2"
 VERS="10.44"
 DESC="A new generation of the Perl Compatible Regular Expression libraries"
+UPST="https://github.com/PCRE2Project/pcre2.git"
 
 SOURCE="https://github.com/PCRE2Project/pcre2/releases/download/pcre2-$VERS/pcre2-$VERS.tar.bz2"
 EXTRA=()

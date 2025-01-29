@@ -1,6 +1,7 @@
 NAME="libtool"
 VERS="2.5.4"
 DESC="The GNU generic library support script"
+UPST="git://git.savannah.gnu.org/libtool.git"
 
 SOURCE="https://ftp.gnu.org/gnu/libtool/libtool-$VERS.tar.xz"
 EXTRA=()

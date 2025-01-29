@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/rfc1036/whois/archive/v5.5.23/whois-5.5.23.tar.gz", hash = "3PwI8zYsdOyK4waRlBkJ68zwyz0n2gQjb34nkNvHdXw" }
 extra = [
 ]
+upstream = "https://github.com/rfc1036/whois"

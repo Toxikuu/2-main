@@ -1,6 +1,7 @@
 NAME="make-ca"
 VERS="1.14"
 DESC="PKI setup script for LFS"
+UPST="https://github.com/lfs-book/make-ca.git"
 
 SOURCE="https://github.com/lfs-book/make-ca/archive/v1.14/make-ca-1.14.tar.gz"
 EXTRA=()

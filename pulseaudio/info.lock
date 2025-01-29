@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz", hash = "BTeU1mcaPjl9hJ5HioC4KmPLnYyilr01tzMXu1zrh7U" }
 extra = [
 ]
+upstream = "https://github.com/pulseaudio/pulseaudio.git"

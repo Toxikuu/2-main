@@ -6,3 +6,5 @@ repo = "main"
 source = { url = "https://ftp.gnu.org/gnu/which/which-2.22.tar.gz", hash = "n4XN4_LCVwIbhQj3VnBL7mAC-o9WgCl9MPGGzB80KvU" }
 extra = [
 ]
+upstream = "https://ftp.gnu.org/gnu/which/?C=M;O=D"
+version_command = "curl -s 'https://ftp.gnu.org/gnu/which/?C=M;O=D' | grep which- | head -n1 | cut -d- -f2 | cut -d. -f1-2"

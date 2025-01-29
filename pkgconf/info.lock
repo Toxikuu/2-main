@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://distfiles.ariadne.space/pkgconf/pkgconf-2.3.0.tar.xz", hash = "OpCArFHQNhXnwZEKCiqN8IQkiStfE7BiiiBNP8zg6os" }
 extra = [
 ]
+upstream = "https://github.com/pkgconf/pkgconf.git"

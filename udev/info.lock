@@ -7,3 +7,4 @@ source = { url = "https://github.com/systemd/systemd/archive/v257.1/systemd-257.
 extra = [
   { url = "https://anduin.linuxfromscratch.org/LFS/udev-lfs-20230818.tar.xz", hash = "EEzd5SqJjGSM40ap7R--kpdRRlZTRjamWEEyzy10KNk" },
 ]
+upstream = "https://github.com/systemd/systemd.git"

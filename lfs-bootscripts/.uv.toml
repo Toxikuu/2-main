@@ -1,1 +1,0 @@
-command = "curl -s 'https://www.linuxfromscratch.org/~thomas/multilib-m32/chapter09/bootscripts.html' | grep LFS-Bootscripts- | tail -n1 | cut -d- -f3"

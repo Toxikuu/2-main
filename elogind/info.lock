@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/elogind/elogind/archive/v255.17/elogind-255.17.tar.gz", hash = "qXJa4_c_jZEN6EwQi8Eb_Ux4K-9qQZCy7HDF0vIjRNs" }
 extra = [
 ]
+upstream = "https://github.com/elogind/elogind.git"

@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/lu-zero/cargo-c/archive/v0.10.9/cargo-c-0.10.9.tar.gz", hash = "RULjmqZ7-HEsYPIXAcyOi1FT0DRK_hthjxIfaWtXin8" }
 extra = [
 ]
+upstream = "https://github.com/lu-zero/cargo-c.git"

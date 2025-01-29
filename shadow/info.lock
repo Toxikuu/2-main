@@ -6,3 +6,5 @@ repo = "main"
 source = { url = "https://github.com/shadow-maint/shadow/releases/download/4.17.1/shadow-4.17.1.tar.xz", hash = "QRWlf5QEoDgIXhYJIPs5WCf-NDYyh_cJu52MHtjLzgI" }
 extra = [
 ]
+upstream = "https://github.com/shadow-maint/shadow.git"
+version_command = "git ls-remote --tags 'https://github.com/shadow-maint/shadow.git' | sed 's:.*/::' | grep -v rc | sort -V | grep -B1 19990709 | head -n1"

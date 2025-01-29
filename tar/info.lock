@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz", hash = "TWL_NzQux67XSFNTI5MMfPlKz3HDWRiCsmp-pQ8-3BY" }
 extra = [
 ]
+upstream = "https://git.savannah.gnu.org/git/tar.git"

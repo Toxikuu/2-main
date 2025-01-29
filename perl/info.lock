@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://www.cpan.org/src/5.0/perl-5.40.1.tar.gz", hash = "AvjEW7N57Qw951FPrUjHFP1Gvo8LU2v9UyAFAWWh7iY" }
 extra = [
 ]
+upstream = "https://github.com/Perl/perl5.git"

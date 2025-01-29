@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://www.sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz", hash = "q1oDF27hBtPw-pDjgdpHjdrkBZGBU8yiSOaCzQxKImk" }
 extra = [
 ]
+upstream = "https://sourceware.org/git/bzip2.git"

@@ -1,1 +1,0 @@
-command = "curl -s 'https://ftp.gnu.org/gnu/which/?C=M;O=D' | grep which- | head -n1 | cut -d- -f2 | cut -d. -f1-2"

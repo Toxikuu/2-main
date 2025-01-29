@@ -1,6 +1,7 @@
 NAME="man-db"
 VERS="2.13.0"
 DESC="Programs for finding and viewing man pages"
+UPST="https://gitlab.com/man-db/man-db.git"
 
 SOURCE="https://download.savannah.gnu.org/releases/man-db/man-db-$VERS.tar.xz"
 EXTRA=()

@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.2.1.tar.gz", hash = "XK3cvKgFEx_1kLEm0yGAGYguTKELyetJC7pRwFubO3U" }
 extra = [
 ]
+upstream = "https://github.com/Old-Man-Programmer/tree"

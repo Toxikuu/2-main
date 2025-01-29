@@ -7,3 +7,4 @@ source = { url = "https://prdownloads.sourceforge.net/expect/expect5.45.4.tar.gz
 extra = [
   { url = "https://www.linuxfromscratch.org/patches/lfs/development/expect-5.45.4-gcc14-1.patch", hash = "UXwM3V25Sc3Znfo4t6bDlF4VJMUONGcCiXMpjyx2qSw" },
 ]
+upstream = "https://sourceforge.net/projects/expect/files"

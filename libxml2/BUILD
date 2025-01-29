@@ -1,6 +1,7 @@
 NAME="libxml2"
 VERS="2.13.5"
 DESC="Libraries and utilities for XML parsing"
+UPST="https://github.com/GNOME/libxml2.git"
 
 SOURCE="https://download.gnome.org/sources/libxml2/${VERS%.*}/libxml2-$VERS.tar.xz"
 EXTRA=()

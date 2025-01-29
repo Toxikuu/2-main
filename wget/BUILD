@@ -1,6 +1,8 @@
 NAME="wget"
 VERS="2.2.0"
 DESC="Utility useful for non-interactive file downloads"
+UPST="https://gitlab.com/gnuwget/wget2.git"
+VCMD="git ls-remote --tags --refs '$UPST' | grep v | tail -n1 | cut -d/ -f3"
 
 SOURCE="https://gnuwget.gitlab.io/wget2/wget2-latest.tar.gz"
 EXTRA=()

@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/libffi/libffi/releases/download/v3.4.6/libffi-3.4.6.tar.gz", hash = "sN6p3yPIY6elDoJUQPPr_6vWXfFJcQjl1Dd0eEOJWk4" }
 extra = [
 ]
+upstream = "https://github.com/libffi/libffi.git"

@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://pypi.org/packages/source/s/setuptools/setuptools-75.8.0.tar.gz", hash = "xa_I9AfGJrgxOobhAxHdP2YcbNnAnUv4wVwOEfnysOY" }
 extra = [
 ]
+upstream = "https://github.com/pypa/setuptools.git"

@@ -1,6 +1,7 @@
 NAME="flac"
 VERS="1.4.3"
 DESC="Lossless audio codec"
+UPST="https://github.com/xiph/flac.git"
 
 SOURCE="https://downloads.xiph.org/releases/flac/flac-$VERS.tar.xz"
 EXTRA=()

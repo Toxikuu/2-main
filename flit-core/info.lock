@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://pypi.org/packages/source/f/flit-core/flit_core-3.10.1.tar.gz", hash = "ZuW4eHSg1uOWkfDiLwkwZza2M1SGcK08CeydsDxWYvc" }
 extra = [
 ]
+upstream = "https://www.kernel.org/pub/software/scm/git/git-manpages-2.47.1.tar.xz"

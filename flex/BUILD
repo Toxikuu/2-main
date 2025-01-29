@@ -1,6 +1,7 @@
 NAME="flex"
 VERS="2.6.4"
 DESC="Tool for generating text-scanning programs"
+UPST="https://github.com/westes/flex.git"
 
 SOURCE="https://github.com/westes/flex/releases/download/v$VERS/flex-$VERS.tar.gz"
 EXTRA=()

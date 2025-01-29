@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://ftp.gnu.org/gnu/gettext/gettext-0.23.1.tar.xz", hash = "wfl6cqc4W35x3Qe1_qbNrxLJuItWSXayO9jBGFevKXA" }
 extra = [
 ]
+upstream = "https://git.savannah.gnu.org/git/gettext.git"

@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.1.tar.xz", hash = "J3gHNTpnJpeJlpRa8T5Sgp46vXqaW3-yeTiU4Y8fy7I" }
 extra = [
 ]
+upstream = "https://gitlab.inria.fr/mpfr/mpfr.git"

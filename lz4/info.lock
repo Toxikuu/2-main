@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/lz4/lz4/releases/download/v1.10.0/lz4-1.10.0.tar.gz", hash = "U3USkEdEs14jKRIFXM-Oxm12hjn_Or5XiNkNeS7F9Is" }
 extra = [
 ]
+upstream = "https://github.com/lz4/lz4.git"

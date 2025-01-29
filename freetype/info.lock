@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://downloads.sourceforge.net/project/freetype/freetype2/2.13.3/freetype-2.13.3.tar.xz", hash = "BVA1BmbUJ8dNrrhdWse7NTrLpfdpVjlZlTEanG8GMok" }
 extra = [
 ]
+upstream = "https://gitlab.freedesktop.org/freetype/freetype.git"

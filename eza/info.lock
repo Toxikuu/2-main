@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://github.com/eza-community/eza/archive/refs/tags/v0.20.17.tar.gz", hash = "Yrz48bLQh_oMLINl5EJ60w_6mGMwQTGR2kcGGuz-IN4" }
 extra = [
 ]
+upstream = "https://github.com/eza-community/eza.git"

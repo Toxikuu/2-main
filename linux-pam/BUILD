@@ -1,6 +1,7 @@
 NAME="linux-pam"
 VERS="1.7.0"
 DESC="Pluggable Authentication Modules"
+UPST="https://github.com/linux-pam/linux-pam.git"
 
 SOURCE="https://github.com/linux-pam/linux-pam/releases/download/v$VERS/Linux-PAM-$VERS.tar.xz"
 EXTRA=()

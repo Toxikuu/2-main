@@ -6,3 +6,4 @@ repo = "main"
 source = { url = "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.5.tar.xz", hash = "wubRk8x4-EzW3bcqr21capFi8EcOWZIJIFf1_1GFYvo" }
 extra = [
 ]
+upstream = "https://gitlab.com/procps-ng/procps.git"
