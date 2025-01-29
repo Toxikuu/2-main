@@ -7,3 +7,4 @@ source = { url = "https://downloads.sourceforge.net/project/freetype/freetype2/2
 extra = [
 ]
 upstream = "https://gitlab.freedesktop.org/freetype/freetype.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/freetype/freetype.git' | sed -e 's@.*/@@' -e 's@VER-@@' -e 's@-@.@g' | grep -Ev '[a-Z]+' | sort -V'''
