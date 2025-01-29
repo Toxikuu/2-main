@@ -7,4 +7,4 @@ source = { url = "https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz", hash = "o8K4AgG
 extra = [
 ]
 upstream = "https://ftp.gnu.org/gnu/gmp/?C=M;O=D"
-version_command = "curl -s 'https://ftp.gnu.org/gnu/gmp/?C=M;O=D' | grep gmp- | head -n1 | cut -d \" -f8 | cut -d- -f2 | cut -d. -f1-3"
+version_command = "curl -s 'https://ftp.gnu.org/gnu/gmp/?C=M;O=D' | grep gmp- | head -n1 | cut -d \\\" -f8 | cut -d- -f2 | cut -d. -f1-3"
