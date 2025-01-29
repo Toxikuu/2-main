@@ -7,3 +7,4 @@ source = { url = "https://github.com/harfbuzz/harfbuzz/releases/download/10.2.0/
 extra = [
 ]
 upstream = "https://github.com/harfbuzz/harfbuzz.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/harfbuzz/harfbuzz.git' | sed 's@.*/@@' | sort -V | grep -E '[0-9]' | tail -n1'''
