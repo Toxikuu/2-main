@@ -7,3 +7,4 @@ source = { url = "https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz",
 extra = [
 ]
 upstream = "https://github.com/rhboot/efivar.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/rhboot/efivar.git' | grep -B1 'refs/tags/4$' | head -n1 | cut -d/ -f3'''
