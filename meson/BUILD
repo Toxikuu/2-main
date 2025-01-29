@@ -1,5 +1,5 @@
 NAME="meson"
-VERS="1.6.1"
+VERS="1.7.0"
 DESC="Fast, user-friendly build system"
 UPST="https://github.com/mesonbuild/meson.git"
 

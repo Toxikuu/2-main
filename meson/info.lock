@@ -1,9 +1,9 @@
 name = "meson"
-version = "1.6.1"
+version = "1.7.0"
 repo = "main"
 
 [data]
-source = { url = "https://github.com/mesonbuild/meson/releases/download/1.6.1/meson-1.6.1.tar.gz", hash = "HspJ62wm1Yu-5n_TM32O9VfAgE4wptFr_fJp25l0ZN4" }
+source = { url = "https://github.com/mesonbuild/meson/releases/download/1.7.0/meson-1.7.0.tar.gz", hash = "CO--hIA-7Qf4Y7BQktZTqdNI9wOHYdkAQS_d9W3rAoQ" }
 extra = [
 ]
 upstream = "https://github.com/mesonbuild/meson.git"
