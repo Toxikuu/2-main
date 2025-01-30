@@ -2,6 +2,7 @@ NAME="nss"
 VERS="3.107"
 DESC="Network Security Services"
 UPST="https://github.com/nss-dev/nss.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E '^NSS.+RTM$' | sed -e 's@NSS_@@' -e 's@_RTM@@' -e 's@_@.@g' | grep -Ev '[a-Z]+' | sort -V | tail -n1"
 
 SOURCE="https://archive.mozilla.org/pub/security/nss/releases/NSS_${VERS//./_}_RTM/src/nss-$VERS.tar.gz"
 EXTRA=(
