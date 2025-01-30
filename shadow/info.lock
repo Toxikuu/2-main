@@ -1,10 +1,10 @@
 name = "shadow"
-version = "4.17.1"
+version = "4.17.2"
 repo = "main"
 
 [data]
-source = { url = "https://github.com/shadow-maint/shadow/releases/download/4.17.1/shadow-4.17.1.tar.xz", hash = "QRWlf5QEoDgIXhYJIPs5WCf-NDYyh_cJu52MHtjLzgI" }
+source = { url = "https://github.com/shadow-maint/shadow/releases/download/4.17.2/shadow-4.17.2.tar.xz", hash = "ohzw00v_xDFM7eAc_yWGiRdPqzDKSUro9FeE09VsmEk" }
 extra = [
 ]
 upstream = "https://github.com/shadow-maint/shadow.git"
-version_command = "git ls-remote --tags --refs 'https://github.com/shadow-maint/shadow.git' | sed 's:.*/::' | grep -v rc | sort -V | grep -B1 19990709 | head -n1"
+version_command = '''git ls-remote --tags --refs 'https://github.com/shadow-maint/shadow.git' | sed 's:.*/::' | grep -v rc | sort -V | grep -B1 19990709 | head -n1'''

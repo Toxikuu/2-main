@@ -1,5 +1,5 @@
 NAME="shadow"
-VERS="4.17.1"
+VERS="4.17.2"
 DESC="Secure password handling"
 DEPS="linux-pam"
 UPST="https://github.com/shadow-maint/shadow.git"
