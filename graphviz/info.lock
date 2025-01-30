@@ -7,3 +7,4 @@ source = { url = "https://gitlab.com/graphviz/graphviz/-/archive/12.2.1/graphviz
 extra = [
 ]
 upstream = "https://gitlab.com/graphviz/graphviz.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.com/graphviz/graphviz.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1'''
