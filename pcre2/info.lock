@@ -7,3 +7,4 @@ source = { url = "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-
 extra = [
 ]
 upstream = "https://github.com/PCRE2Project/pcre2.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/PCRE2Project/pcre2.git' | sed 's@.*/@@' | grep -v RC | tail -n1'''

@@ -2,6 +2,7 @@ NAME="pcre2"
 VERS="10.44"
 DESC="A new generation of the Perl Compatible Regular Expression libraries"
 UPST="https://github.com/PCRE2Project/pcre2.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -v RC | tail -n1"
 
 SOURCE="https://github.com/PCRE2Project/pcre2/releases/download/pcre2-$VERS/pcre2-$VERS.tar.bz2"
 EXTRA=()
