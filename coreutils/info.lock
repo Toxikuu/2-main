@@ -5,6 +5,5 @@ repo = "main"
 [data]
 source = { url = "https://ftp.gnu.org/gnu/coreutils/coreutils-9.6.tar.xz", hash = "egEkMns5j9nrGmq95YM4mCFCLHRP-hBzSyT1V2ENMoM" }
 extra = [
-  { url = "https://www.linuxfromscratch.org/patches/lfs/development/coreutils-9.6-i18n-2.patch", hash = "" },
 ]
 upstream = "https://git.savannah.gnu.org/coreutils.git"
