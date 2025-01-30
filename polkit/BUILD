@@ -34,4 +34,3 @@ id polkitd || useradd -c "PolicyKit Daemon Owner" \
     -g polkitd -s /bin/false polkitd
 
 }
-#d prevent install failure if polkitd group/user exist
