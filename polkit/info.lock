@@ -7,3 +7,4 @@ source = { url = "https://github.com/polkit-org/polkit/archive/125/polkit-125.ta
 extra = [
 ]
 upstream = "https://github.com/polkit-org/polkit.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/polkit-org/polkit.git' | sed 's@.*/@@' | grep -E '^[0-9]+$' | tail -n1'''
