@@ -7,3 +7,4 @@ source = { url = "https://chrony-project.org/releases/chrony-4.6.1.tar.gz", hash
 extra = [
 ]
 upstream = "https://gitlab.com/chrony/chrony.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.com/chrony/chrony.git' | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1'''

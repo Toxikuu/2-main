@@ -2,6 +2,7 @@ NAME="chrony"
 VERS="4.6.1"
 DESC="Lightweight NTP client and server"
 UPST="https://gitlab.com/chrony/chrony.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 
 SOURCE="https://chrony-project.org/releases/chrony-$VERS.tar.gz"
 EXTRA=()
