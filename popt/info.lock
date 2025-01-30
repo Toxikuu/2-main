@@ -7,3 +7,4 @@ source = { url = "https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.1
 extra = [
 ]
 upstream = "https://github.com/rpm-software-management/popt.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/rpm-software-management/popt.git' | sed 's@.*/@@' | grep -E 'popt-[0-9]+\.[0-9]+-release' | cut -d- -f2 | tail -n1'''
