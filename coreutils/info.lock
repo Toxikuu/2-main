@@ -6,5 +6,5 @@ repo = "main"
 source = { url = "https://ftp.gnu.org/gnu/coreutils/coreutils-9.6.tar.xz", hash = "egEkMns5j9nrGmq95YM4mCFCLHRP-hBzSyT1V2ENMoM" }
 extra = [
 ]
-upstream = "https://git.savannah.gnu.org/coreutils.git"
-version_command = '''git ls-remote --tags --refs 'https://git.savannah.gnu.org/coreutils.git' | sed 's@.*/@@' | tail -n1'''
+upstream = "git://git.savannah.gnu.org/coreutils.git"
+version_command = '''git ls-remote --tags --refs 'git://git.savannah.gnu.org/coreutils.git' | sed 's@.*/@@' | tail -n1'''
