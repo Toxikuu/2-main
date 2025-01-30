@@ -4,6 +4,7 @@
 # This build script is still in early development.
 # It is not tested and it is not stable.
 # TODO: Test this fully
+# TODO: Vendor the FHS compliance patch
 
 NAME="glibc"
 VERS="2.40"
