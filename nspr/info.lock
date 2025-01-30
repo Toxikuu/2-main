@@ -7,3 +7,4 @@ source = { url = "https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4
 extra = [
 ]
 upstream = "https://gitlab.archlinux.org/archlinux/packaging/packages/nspr.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.archlinux.org/archlinux/packaging/packages/nspr.git' | sed 's@.*/@@' | sort -V | cut -d- -f1 | tail -n1'''

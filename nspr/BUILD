@@ -2,6 +2,7 @@ NAME="nspr"
 VERS="4.36"
 DESC="Netscape Portable Runtime"
 UPST="https://gitlab.archlinux.org/archlinux/packaging/packages/nspr.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | sort -V | cut -d- -f1 | tail -n1"
 
 SOURCE="https://archive.mozilla.org/pub/nspr/releases/v$VERS/src/nspr-$VERS.tar.gz"
 EXTRA=()
