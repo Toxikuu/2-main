@@ -1,5 +1,5 @@
 NAME="polkit"
-VERS="125"
+VERS="126"
 DESC="Toolkit for defining and handling authorizations"
 UPST="https://github.com/polkit-org/polkit.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E '^[0-9]+$' | tail -n1"
