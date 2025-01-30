@@ -1,10 +1,10 @@
 name = "libpng"
-version = "1.6.45"
+version = "1.6.46"
 repo = "main"
 
 [data]
-source = { url = "https://github.com/pnggroup/libpng/archive/refs/tags/v1.6.45.tar.gz", hash = "f_aJhSBkVxbdw9g4HZe24Ck3sD2pLm_Q18-dfSsNp4A" }
+source = { url = "https://github.com/pnggroup/libpng/archive/refs/tags/v1.6.46.tar.gz", hash = "dnsBk2-WINSrTN9uw0j2Um-GH4JWSLYQsdYEFn3HONI" }
 extra = [
-  { url = "https://sourceforge.net/projects/libpng-apng/files/latest/download", hash = "Kb7C39BG71HVLz5TIPkfr_yWvge0HZy51D2d9Veg0wM" },
+  { url = "https://sourceforge.net/projects/libpng-apng/files/libpng16/1.6.46/libpng-1.6.46-apng.patch.gz", hash = "Kb7C39BG71HVLz5TIPkfr_yWvge0HZy51D2d9Veg0wM" },
 ]
 upstream = "https://github.com/pnggroup/libpng.git"
