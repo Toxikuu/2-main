@@ -7,3 +7,4 @@ source = { url = "https://www.kernel.org/pub/linux/utils/util-linux/v2.40/util-l
 extra = [
 ]
 upstream = "https://github.com/util-linux/util-linux.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/util-linux/util-linux.git' | sed 's@.*/@@' | grep -Ev '[a-Z]$|r' | sort -V | tail -n1'''
