@@ -1,5 +1,5 @@
 NAME="util-linux"
-VERS="2.40.2"
+VERS="2.40.4"
 DESC="Miscellaneous utility prorgrams"
 UPST="https://github.com/util-linux/util-linux.git"
 
