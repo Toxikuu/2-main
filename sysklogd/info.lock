@@ -1,9 +1,9 @@
 name = "sysklogd"
-version = "2.6.2"
+version = "2.7.0"
 repo = "main"
 
 [data]
-source = { url = "https://github.com/troglobit/sysklogd/releases/download/v2.6.2/sysklogd-2.6.2.tar.gz", hash = "QKO7WT11B-SaQ3n0iuipvEto3MWD782_O5BWEoRCySo" }
+source = { url = "https://github.com/troglobit/sysklogd/releases/download/v2.7.0/sysklogd-2.7.0.tar.gz", hash = "ardKtQARIbsyaX_S96s8xLRFLD9yFnfgbltgmCoE0Mw" }
 extra = [
 ]
 upstream = "https://github.com/troglobit/sysklogd.git"
