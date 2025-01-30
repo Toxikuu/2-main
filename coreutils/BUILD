@@ -2,6 +2,7 @@ NAME="coreutils"
 VERS="9.6"
 DESC="Basic utility programs needed by every OS"
 UPST="https://git.savannah.gnu.org/coreutils.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | tail -n1"
 
 SOURCE="https://ftp.gnu.org/gnu/coreutils/coreutils-$VERS.tar.xz"
 # EXTRA=(
@@ -28,4 +29,3 @@ mv -v "$D"/usr/share/man/man1/chroot.1 "$D"/usr/share/man/man8/chroot.8
 sed -i 's@"1"@"8"@' "$D"/usr/share/man/man8/chroot.8
 
 }
-#d manually regenerated because i removed the patch

@@ -7,3 +7,4 @@ source = { url = "https://ftp.gnu.org/gnu/coreutils/coreutils-9.6.tar.xz", hash 
 extra = [
 ]
 upstream = "https://git.savannah.gnu.org/coreutils.git"
+version_command = '''git ls-remote --tags --refs 'https://git.savannah.gnu.org/coreutils.git' | sed 's@.*/@@' | tail -n1'''
