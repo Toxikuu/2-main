@@ -4,15 +4,17 @@ DESC="Basic utility programs needed by every OS"
 UPST="https://git.savannah.gnu.org/coreutils.git"
 
 SOURCE="https://ftp.gnu.org/gnu/coreutils/coreutils-$VERS.tar.xz"
-EXTRA=(
-    "https://www.linuxfromscratch.org/patches/lfs/development/coreutils-$VERS-i18n-2.patch"
-)
+# EXTRA=(
+#     "https://www.linuxfromscratch.org/patches/lfs/development/coreutils-$VERS-i18n-2.patch"
+# )
+#
+# keeping i18n isn't worth the effort rn
 
 2b() {
 
-patch -Np1 -i "$SRC"/coreutils-$VERS-i18n-2.patch
+# patch -Np1 -i "$SRC"/coreutils-$VERS-i18n-2.patch
 
-autoreconf -fiv
+# autoreconf -fiv
 FORCE_UNSAFE_CONFIGURE=1  \
 DS=1 b-cfg \
     --enable-no-installed-program=kill,uptime
