@@ -7,3 +7,4 @@ source = { url = "https://www.libsdl.org/release/SDL2-2.30.11.tar.gz", hash = "i
 extra = [
 ]
 upstream = "https://github.com/libsdl-org/SDL.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/libsdl-org/SDL.git' | sed 's@.*/@@' | grep '^release-2' | cut -d- -f2 | sort -V | tail -n1'''
