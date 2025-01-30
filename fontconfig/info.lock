@@ -7,3 +7,4 @@ source = { url = "https://www.freedesktop.org/software/fontconfig/release/fontco
 extra = [
 ]
 upstream = "https://gitlab.freedesktop.org/fontconfig/fontconfig.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/fontconfig/fontconfig.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1'''
