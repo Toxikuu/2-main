@@ -2,6 +2,7 @@ NAME="binutils"
 VERS="2.43.1"
 DESC="Programs for working with binary and object files"
 UPST="https://sourceware.org/git/binutils-gdb.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E '^binutils-[0-9]+_+' | grep -Ev 'release|branchpoint' | sed 's@_@.@g' | tail -n1"
 
 SOURCE="https://sourceware.org/pub/binutils/releases/binutils-$VERS.tar.xz"
 EXTRA=("https://www.linuxfromscratch.org/patches/downloads/binutils/binutils-$VERS-upstream_fix-1.patch")
