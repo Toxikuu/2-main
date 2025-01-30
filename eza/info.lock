@@ -1,9 +1,9 @@
 name = "eza"
-version = "0.20.18"
+version = "0.20.19"
 repo = "main"
 
 [data]
-source = { url = "https://github.com/eza-community/eza/archive/refs/tags/v0.20.18.tar.gz", hash = "sSOil0f-Fk2PmFHa5CFVERvzjIggtrtRzSRTvX-b5rw" }
+source = { url = "https://github.com/eza-community/eza/archive/refs/tags/v0.20.19.tar.gz", hash = "t0nnsEwXPzPPFfACLRA7tZ5559KojsAHIfK-AxbMnvk" }
 extra = [
 ]
 upstream = "https://github.com/eza-community/eza.git"
