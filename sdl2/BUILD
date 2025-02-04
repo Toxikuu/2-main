@@ -1,5 +1,5 @@
 NAME="sdl2"
-VERS="2.30.11"
+VERS="2.30.12"
 DESC="A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard"
 UPST="https://github.com/libsdl-org/SDL.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '^release-2' | cut -d- -f2 | sort -V | tail -n1"
