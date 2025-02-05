@@ -17,7 +17,7 @@ EXTRACT=1
 
 2b() {
 
-kver=$(realpath /usr/src/linux | cut -d'=' -f2-)
+kver=$(realpath /usr/src/linux | cut -d- -f2-)
 
 reuse_build() {
     ln -sv /usr/src/linux "$BLD/build"
@@ -58,13 +58,11 @@ fresh_build() {
     cp -vf .config "$D"/boot/config-$VERS
 }
 
-fresh_build
-
-# if [ -z "$kver" ]; then
-#     fresh_build
-# else
-#     reuse_build
-# fi
+if [ -z "$kver" ]; then
+    fresh_build
+else
+    reuse_build
+fi
 
 }
 
@@ -75,3 +73,4 @@ fresh_build
     echo "Also, if you use nvidia's drivers, you're gonna wanna rebuild those"
 }
 
+#d Evidently, the kernel makefiles can't handle '=' in the path because reasons. Switched back to using '-' instead of dealing with writing a patch for this bs.
