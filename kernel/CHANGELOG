@@ -8,3 +8,4 @@
 [9c5014eed21aff938d9d286ceecc1e77c54e9566] [2025-02-05 03:00:28] | Revised kernel
 [4216a8539747c92fa454b3e8b9db150d41f221f8] [2025-02-05 03:06:42] | Revised kernel
 [b5398724c7e903a190e3c37d47c82e3cf5536975] [2025-02-05 03:13:19] | Revised kernel
+[0c99235da0dc67cb40023efeb62dc6ed3d4f824b] [2025-02-05 03:19:00] | Revised kernel: Evidently, the kernel makefiles can't handle '=' in the path because reasons. Switched back to using '-' instead of dealing with writing a patch for this bs.
