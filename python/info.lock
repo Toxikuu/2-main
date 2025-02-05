@@ -1,9 +1,9 @@
 name = "python"
-version = "3.13.1"
+version = "3.13.2"
 repo = "main"
 
 [data]
-source = { url = "https://www.python.org/ftp/python/3.13.1/Python-3.13.1.tar.xz", hash = "nPlCe-6eIkLjh33Q9rZBwYU8pGHznWUDziYKWcgL8Nk" }
+source = { url = "https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz", hash = "2YS8xXzWfKqyb33vQuUjscAVu8XcB4Ns9PC2P6FZ61Y" }
 extra = [
 ]
 upstream = "https://github.com/python/cpython.git"
