@@ -37,12 +37,12 @@ reuse_build() {
 
 # THE BELOW IS NOT YET TESTED
 fresh_build() {
+    rm -rf "/usr/src/linux=$VERS"
     tar xf "$SRC/kernel=$VERS.tar."*z*  \
       -C /usr/src                       \
       --checkpoint=4096                 \
       --checkpoint-action='echo="#%u: %T"'
 
-    rm -rf "/usr/src/linux=$VERS"
     mv -vf /usr/src/linux{-,'='}$VERS 
     ln -sfv "/usr/src/linux=$VERS" "/usr/src/linux"
 
