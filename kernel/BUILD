@@ -2,7 +2,7 @@
 # THIS SCRIPT IS VERY EARLY IN DEVELOPMENT; DO NOT USE IT
 ### WARNING
 
-# TODO: Move this to tox/ and provide stabler defaults here
+# TODO: Make a more generic kernel config
 # TODO: Test this
 
 NAME="kernel"
@@ -28,46 +28,55 @@ reuse_build() {
     b-make olddefconfig
     b-make
     b-make modules_install INSTALL_MOD_PATH="$D"
-    mkdir -pv "$D"/{efi,boot}
+    mkdir -pv "$D"/boot
 
     cp -vf arch/x86/boot/bzImage "$D"/boot/vmlinuz-$VERS-two
     cp -vf System.map "$D"/boot/System.map-$VERS
     cp -vf .config "$D"/boot/config-$VERS
-    cp -vf "$D"/boot/vmlinuz-$VERS-two "$D"/efi/tox64.efi
 
 }
 
 # THE BELOW IS NOT YET TESTED
-clean_build() {
+fresh_build() {
+    tar xf "$SRC/kernel=$VERS.tar."*z*  \
+      -C /usr/src                       \
+      --checkpoint=4096                 \
+      --checkpoint-action='echo="#%u: %T"'
 
-    tar xf "$SRC/kernel=$VERS.tar."*z* -C /usr/src --checkpoint=4096 --checkpoint-action='echo="#%u: %T"'
     mv -vf /usr/src/linux{-,'='}$VERS 
-
     ln -sv "/usr/src/linux=$VERS" "$BLD/build"
-
     cd "$BLD/build"
 
     cp -vf "$PORT"/kernelconfig .config
+
     b-make olddefconfig
     b-make
-    b-make modules_install INSTALL_MOD_PATH="$PWD/D"
-    mkdir -pv D/{efi,boot}
+    b-make modules_install INSTALL_MOD_PATH="$D"
+    mkdir -pv "$D"/boot
 
-    cp -vf arch/x86/boot/bzImage D/boot/vmlinuz-$VERS-two
-    cp -vf System.map D/boot/System.map-$VERS
-    cp -vf .config D/boot/config-$VERS
-    cp -vf D/boot/vmlinuz-$VERS-two D/efi/tox64.efi
+    cp -vf arch/x86/boot/bzImage "$D"/boot/vmlinuz-$VERS-two
+    cp -vf System.map "$D"/boot/System.map-$VERS
+    cp -vf .config "$D"/boot/config-$VERS
 
     rm -vf /usr/src/linux || die "/usr/src/linux should be a symlink to /usr/src/linux-$kver"
     cp -Rv "$BLD/build" "/usr/src/linux=$VERS"
     ln -sv linux "/usr/src/linux=$VERS"
+}
+
+fresh_build
+
+# if [ -z "$kver" ]; then
+#     fresh_build
+# else
+#     reuse_build
+# fi
 
 }
 
-if [ -z "$kver" ]; then
-    clean_build
-else
-    reuse_build
-fi
-
+2z() {
+    echo "The kernel has been compiled and installed to /boot" >&2
+    echo "You must now specify it in your bootloader or whatever" >&2
+    echo "Also, if you use nvidia's drivers, you're gonna wanna rebuild those"
 }
+
+#d Made build directions more generic
