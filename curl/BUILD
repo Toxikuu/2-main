@@ -5,13 +5,8 @@ UPST="https://github.com/curl/curl.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E '^curl-[0-9]+' | grep -Ev 'pre|alpha' | sed 's@_@.@g' | cut -d- -f2 | sort -V | tail -n1"
 
 SOURCE="https://curl.se/download/curl-$VERS.tar.xz"
-EXTRA=(
-    "https://glfs-book.github.io/glfs/patches/curl-eventfd_regression-1.patch"
-)
 
 2b() {
-
-b-patch "$SRC"/curl-eventfd_regression-1.patch
 
 mkdir -pv build
 cd        build
@@ -41,3 +36,5 @@ b-make
 b-32mi
 
 }
+
+#d Removed unneeded patch
