@@ -21,9 +21,9 @@ EXTRACT=1
 kver=$(realpath /usr/src/linux | cut -d'=' -f2-)
 
 reuse_build() {
-
     ln -sv /usr/src/linux "$BLD/build"
     cd "$BLD/build"
+    [ -e .config ] || die 'Missing kernel config! :(('
 
     b-make olddefconfig
     b-make
@@ -33,7 +33,6 @@ reuse_build() {
     cp -vf arch/x86/boot/bzImage "$D"/boot/vmlinuz-$VERS-two
     cp -vf System.map "$D"/boot/System.map-$VERS
     cp -vf .config "$D"/boot/config-$VERS
-
 }
 
 # THE BELOW IS NOT YET TESTED
@@ -46,9 +45,9 @@ fresh_build() {
     rm -rf "/usr/src/linux=$VERS"
     mv -vf /usr/src/linux{-,'='}$VERS 
     ln -sfv "/usr/src/linux=$VERS" "/usr/src/linux"
+
     ln -sv "/usr/src/linux" "$BLD/build"
     cd "$BLD/build"
-
     cp -vf "$PORT"/kernelconfig .config
 
     b-make olddefconfig
@@ -59,10 +58,6 @@ fresh_build() {
     cp -vf arch/x86/boot/bzImage "$D"/boot/vmlinuz-$VERS-two
     cp -vf System.map "$D"/boot/System.map-$VERS
     cp -vf .config "$D"/boot/config-$VERS
-
-    rm -vf /usr/src/linux || die "/usr/src/linux should be a symlink to /usr/src/linux-$kver"
-    cp -Rv "$BLD/build" "/usr/src/linux=$VERS"
-    ln -sv linux "/usr/src/linux=$VERS"
 }
 
 if [ -z "$kver" ]; then
