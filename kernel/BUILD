@@ -1,9 +1,8 @@
 ### WARNING
-# THIS SCRIPT IS VERY EARLY IN DEVELOPMENT; DO NOT USE IT
+# THIS SCRIPT IS VERY EARLY IN DEVELOPMENT; USE AT YOUR OWN RISK
 ### WARNING
 
 # TODO: Make a more generic kernel config
-# TODO: Test this
 
 NAME="kernel"
 VERS="6.13.1"
@@ -35,15 +34,15 @@ reuse_build() {
     cp -vf .config "$D"/boot/config-$VERS
 }
 
-# THE BELOW IS NOT YET TESTED
 fresh_build() {
-    rm -rf "/usr/src/linux=$VERS"
+    rm -rf "/usr/src/linux=$VERS" # prevent some dumb shit from happening
     tar xf "$SRC/kernel=$VERS.tar."*z*  \
       -C /usr/src                       \
       --checkpoint=4096                 \
       --checkpoint-action='echo="#%u: %T"'
 
     mv -vf /usr/src/linux{-,'='}$VERS 
+    rm -rf "/usr/src/linux" # prevent more dumb shit from happening
     ln -sfv "/usr/src/linux=$VERS" "/usr/src/linux"
 
     ln -sv "/usr/src/linux" "$BLD/build"
