@@ -60,11 +60,13 @@ fresh_build() {
     cp -vf .config "$D"/boot/config-$VERS
 }
 
-if [ -z "$kver" ]; then
-    fresh_build
-else
-    reuse_build
-fi
+fresh_build
+
+# if [ -z "$kver" ]; then
+#     fresh_build
+# else
+#     reuse_build
+# fi
 
 }
 
