@@ -7,7 +7,7 @@
 # TODO: Vendor the FHS compliance patch
 
 NAME="glibc"
-VERS="2.40"
+VERS="2.41"
 DESC="The GNU C library"
 UPST="https://sourceware.org/git/glibc.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\\.' | sort -V | tail -n1"
@@ -59,9 +59,6 @@ die 'm32 configure failed'
 
 b-make
 b-32mi
-# make DESTDIR=$PWD/32DEST install || die 'm32 make install failed'
-# mkdir -pv ../D/usr/lib32
-# cp -a 32DEST/usr/lib32/* ../D/usr/lib32/
 
 install -vm644 "$BLD"/32DEST/usr/include/gnu/{lib-names,stubs}-32.h \
                "$D"/usr/include/gnu/

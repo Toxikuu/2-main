@@ -1,11 +1,11 @@
 name = "glibc"
-version = "2.40"
+version = "2.41"
 repo = "main"
 
 [data]
-source = { url = "https://ftp.gnu.org/gnu/glibc/glibc-2.40.tar.xz", hash = "GaiQF16SY9dI9ieZPeb0sa-c0h4D8IDkv7Oh-sECBaI" }
+source = { url = "https://ftp.gnu.org/gnu/glibc/glibc-2.41.tar.xz", hash = "paJrIvVF1rfXs92CjhHkKPJPT6xDyTT7BxtqfQgo6QE" }
 extra = [
-  { url = "https://www.linuxfromscratch.org/patches/lfs/development/glibc-2.40-fhs-1.patch", hash = "ZDVS2wMOLy1__eT1WOD1-D0_q_NKLg5W69tJdQrCew0" },
+  { url = "https://www.linuxfromscratch.org/patches/lfs/development/glibc-2.41-fhs-1.patch", hash = "ZDVS2wMOLy1__eT1WOD1-D0_q_NKLg5W69tJdQrCew0" },
 ]
 upstream = "https://sourceware.org/git/glibc.git"
 version_command = '''git ls-remote --tags --refs 'https://sourceware.org/git/glibc.git' | sed 's@.*/@@' | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\.' | sort -V | tail -n1'''
