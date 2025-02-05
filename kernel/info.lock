@@ -1,0 +1,10 @@
+name = "kernel"
+version = "6.13.1"
+repo = "main"
+
+[data]
+source = { url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.1.tar.gz", hash = "mxxjxICufpITmFNSqqvnihTezfPrrcvC-uirxuMF240" }
+extra = [
+]
+upstream = "https://kernel.org"
+version_command = '''curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1'''
