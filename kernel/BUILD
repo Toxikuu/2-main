@@ -45,7 +45,8 @@ fresh_build() {
 
     rm -rf "/usr/src/linux=$VERS"
     mv -vf /usr/src/linux{-,'='}$VERS 
-    ln -sv "/usr/src/linux=$VERS" "$BLD/build"
+    ln -sfv "/usr/src/linux=$VERS" "/usr/src/linux"
+    ln -sv "/usr/src/linux" "$BLD/build"
     cd "$BLD/build"
 
     cp -vf "$PORT"/kernelconfig .config
