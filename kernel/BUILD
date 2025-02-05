@@ -65,19 +65,18 @@ fresh_build() {
     ln -sv linux "/usr/src/linux=$VERS"
 }
 
-fresh_build
-
-# if [ -z "$kver" ]; then
-#     fresh_build
-# else
-#     reuse_build
-# fi
+if [ -z "$kver" ]; then
+    fresh_build
+else
+    reuse_build
+fi
 
 }
 
 2z() {
     echo "The kernel has been compiled and installed to /boot" >&2
     echo "You must now specify it in your bootloader or whatever" >&2
+    sleep 0.02 # i have no idea why the commands dont execute in order here :sob:
     echo "Also, if you use nvidia's drivers, you're gonna wanna rebuild those"
 }
 
