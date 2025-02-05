@@ -10,7 +10,7 @@ EXTRA=(
 
 2b() {
 
-patch -Np1 -i "$SRC"/kbd-$VERS-backspace-1.patch
+b-patch "$SRC"/kbd-$VERS-backspace-1.patch
 
 sed -i '/RESIZECONS_PROGS=/s/yes/no/' configure
 sed -i 's/resizecons.8 //' docs/man/man8/Makefile.in
