@@ -43,6 +43,7 @@ fresh_build() {
       --checkpoint=4096                 \
       --checkpoint-action='echo="#%u: %T"'
 
+    rm -rf "/usr/src/linux=$VERS"
     mv -vf /usr/src/linux{-,'='}$VERS 
     ln -sv "/usr/src/linux=$VERS" "$BLD/build"
     cd "$BLD/build"
@@ -79,4 +80,3 @@ fresh_build
     echo "Also, if you use nvidia's drivers, you're gonna wanna rebuild those"
 }
 
-#d Made build directions more generic
