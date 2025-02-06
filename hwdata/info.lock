@@ -1,9 +1,9 @@
 name = "hwdata"
-version = "0.391"
+version = "0.392"
 repo = "main"
 
 [data]
-source = { url = "https://github.com/vcrhonek/hwdata/archive/v0.391/hwdata-0.391.tar.gz", hash = "Yg_hwikio9G9EGJCTpzGuVSs6i-Dty_wy0UUSYHLGXU" }
+source = { url = "https://github.com/vcrhonek/hwdata/archive/v0.392/hwdata-0.392.tar.gz", hash = "H0ctjy7IJNTv5qdUgHZ8TOJA-l2RtkKNn4d1A12juh8" }
 extra = [
 ]
 upstream = "https://github.com/vcrhonek/hwdata.git"
