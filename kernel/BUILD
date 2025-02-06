@@ -73,4 +73,3 @@ fi
     echo "Also, if you use nvidia's drivers, you're gonna wanna rebuild those"
 }
 
-#d Evidently, the kernel makefiles can't handle '=' in the path because reasons. Switched back to using '-' instead of dealing with writing a patch for this bs.
