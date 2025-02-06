@@ -2,3 +2,4 @@
 [5ec763b6162688cb51c9cf14d74467a3ad60d226] [2025-02-05 03:37:22] | Revised curl: Removed unneeded patch
 [05b3341cfa3c947ad0ae5fda79a70a54f0486bcb] [2025-02-05 03:39:58] | Revised curl
 [d7e1c4172ec981ff317a0c8788e030632c0862e6] [2025-02-05 03:45:28] | Revised curl
+[bc3302cbf2f79c00f01e0dc98631b0566cafa2f5] [2025-02-06 01:02:31] | Updated curl: 8.11.1 -> 8.12.0
