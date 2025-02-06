@@ -1,0 +1,9 @@
+name = "hwdata"
+version = "0.391"
+repo = "main"
+
+[data]
+source = { url = "https://github.com/vcrhonek/hwdata/archive/v0.391/hwdata-0.391.tar.gz", hash = "Yg_hwikio9G9EGJCTpzGuVSs6i-Dty_wy0UUSYHLGXU" }
+extra = [
+]
+upstream = "https://github.com/vcrhonek/hwdata.git"
