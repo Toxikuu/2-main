@@ -1,5 +1,5 @@
 NAME="libtasn1"
-VERS="4.19.0"
+VERS="4.20.0"
 DESC="Library for encoding and decoding DER/BER data"
 UPST="https://gitlab.com/gnutls/libtasn1.git"
 
