@@ -1,9 +1,9 @@
 name = "nss"
-version = "3.107"
+version = "3.108"
 repo = "main"
 
 [data]
-source = { url = "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz", hash = "f36WRz44FQdxphX11A6MQbo6GThTAa4MUlCR8vydZyk" }
+source = { url = "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_108_RTM/src/nss-3.108.tar.gz", hash = "oPb8tdutwWNbQ4J1F6l546bQBdB4hSeAKmsx4sX2buw" }
 extra = [
   { url = "https://github.com/glfs-book/glfs/raw/refs/heads/trunk/patches/nss/nss-standalone-1.patch", hash = "h7sa8LEf1BMRuYmRh_bks_yplAZREjx7yDbsdJfS2oQ" },
 ]
