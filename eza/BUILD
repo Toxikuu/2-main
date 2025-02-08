@@ -1,5 +1,5 @@
 NAME="eza"
-VERS="0.20.19"
+VERS="0.20.20"
 DESC="Very nice replacement for ls"
 UPST="https://github.com/eza-community/eza.git"
 
