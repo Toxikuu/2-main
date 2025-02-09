@@ -10,3 +10,4 @@
 [b5398724c7e903a190e3c37d47c82e3cf5536975] [2025-02-05 03:13:19] | Revised kernel
 [0c99235da0dc67cb40023efeb62dc6ed3d4f824b] [2025-02-05 03:19:00] | Revised kernel: Evidently, the kernel makefiles can't handle '=' in the path because reasons. Switched back to using '-' instead of dealing with writing a patch for this bs.
 [e013a7be7a9d7b38e66e2c5bef74a4f6265dd025] [2025-02-06 03:05:49] | Revised kernel
+[b62262db9483f7726c86332e4262d0648c12ac28] [2025-02-09 09:40:14] | Updated kernel: 6.13.1 -> 6.13.2
