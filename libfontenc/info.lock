@@ -1,0 +1,10 @@
+name = "libfontenc"
+version = "1.1.8"
+repo = "main"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libfontenc-1.1.8.tar.xz", hash = "ewLD1AUjbg2GgGsd6daGj-YMMTYos4NQsDKRSqT9FMY" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libfontenc.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libfontenc.git' | sed 's@.*/@@' | grep -i libfontenc- | sed 's@_@.@g' | sort -V | tail -n1'''
