@@ -1,9 +1,9 @@
 name = "sdl2"
-version = "2.30.12"
+version = "2.32.0"
 repo = "main"
 
 [data]
-source = { url = "https://www.libsdl.org/release/SDL2-2.30.12.tar.gz", hash = "rDVupV6LndCy0fon2kDvfiOCZ8z5MkcEhQ1dRzdbSOo" }
+source = { url = "https://www.libsdl.org/release/SDL2-2.32.0.tar.gz", hash = "9cK1JJh4WFjz3h4pluujwbgF0I_haKR-pSfH_DOQctA" }
 extra = [
 ]
 upstream = "https://github.com/libsdl-org/SDL.git"
