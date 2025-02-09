@@ -1,10 +1,9 @@
 name = "sysvinit"
-version = "3.13"
+version = "3.14"
 repo = "main"
 
 [data]
-source = { url = "https://github.com/slicer69/sysvinit/releases/download/3.13/sysvinit-3.13.tar.xz", hash = "y66r3cNaZRG4fIdFLuXofGeKJjKcfX0X-2mitCoxTYY" }
+source = { url = "https://github.com/slicer69/sysvinit/releases/download/3.14/sysvinit-3.14.tar.xz", hash = "yQh0uMBUo1mR-4xNMMRD7R6bGBX_YWXHtIP1WL5OS1M" }
 extra = [
-  { url = "https://www.linuxfromscratch.org/patches/lfs/development/sysvinit-3.12-consolidated-1.patch", hash = "" },
 ]
 upstream = "https://github.com/slicer69/sysvinit.git"

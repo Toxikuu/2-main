@@ -1,5 +1,5 @@
 NAME="sysvinit"
-VERS="3.13"
+VERS="3.14"
 DESC="A simple init system"
 UPST="https://github.com/slicer69/sysvinit.git"
 
