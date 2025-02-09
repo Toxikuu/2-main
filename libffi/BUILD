@@ -1,5 +1,5 @@
 NAME="libffi"
-VERS="3.4.6"
+VERS="3.4.7"
 DESC="Foreign Function Interface library"
 UPST="https://github.com/libffi/libffi.git"
 
