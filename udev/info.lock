@@ -1,10 +1,12 @@
+repo = "main"
 name = "udev"
 version = "257.2"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/systemd/systemd/archive/v257.2/systemd-257.2.tar.gz", hash = "fyvDJT5Ph1eBMsXkM--f9-j-4B2etaW3xkN21hf2lNA" }
-extra = [
-  { url = "https://anduin.linuxfromscratch.org/LFS/udev-lfs-20230818.tar.xz", hash = "EEzd5SqJjGSM40ap7R--kpdRRlZTRjamWEEyzy10KNk" },
-]
 upstream = "https://github.com/systemd/systemd.git"
+
+[source]
+url = "https://github.com/systemd/systemd/archive/v257.2/systemd-257.2.tar.gz"
+hash = "fyvDJT5Ph1eBMsXkM--f9-j-4B2etaW3xkN21hf2lNA"
+
+[[extra]]
+url = "https://anduin.linuxfromscratch.org/LFS/udev-lfs-20230818.tar.xz"
+hash = "EEzd5SqJjGSM40ap7R--kpdRRlZTRjamWEEyzy10KNk"
