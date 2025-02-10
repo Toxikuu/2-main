@@ -1,10 +1,9 @@
+repo = "main"
 name = "fontconfig"
 version = "2.16.0"
-repo = "main"
-
-[data]
-source = { url = "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz", hash = "ajPcVVzJuosQyvdpWHjvE07rNtCvNmBB9jmx2ptu0iA" }
-extra = [
-]
 upstream = "https://gitlab.freedesktop.org/fontconfig/fontconfig.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/fontconfig/fontconfig.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/fontconfig/fontconfig.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1"
+
+[source]
+url = "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz"
+hash = "ajPcVVzJuosQyvdpWHjvE07rNtCvNmBB9jmx2ptu0iA"
