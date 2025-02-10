@@ -1,10 +1,9 @@
+repo = "main"
 name = "dejagnu"
 version = "1.6.3"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz", hash = "h9rvrNeVi0pp-IxoVtvRY0JhljxBQHnQw3H1ic1mouM" }
-extra = [
-]
 upstream = "https://git.savannah.gnu.org/git/dejagnu.git"
-version_command = '''git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/dejagnu.git' | grep release | tail -n1 | cut -d- -f2'''
+version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/dejagnu.git' | grep release | tail -n1 | cut -d- -f2"
+
+[source]
+url = "https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz"
+hash = "h9rvrNeVi0pp-IxoVtvRY0JhljxBQHnQw3H1ic1mouM"
