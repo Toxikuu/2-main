@@ -1,9 +1,8 @@
+repo = "main"
 name = "e2fsprogs"
 version = "1.47.2"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.47.2.tar.gz", hash = "vn7dcDFzTR_vijGfCQGCj4q4no87UHPmsYdAvjdxqVw" }
-extra = [
-]
 upstream = "https://github.com/tytso/e2fsprogs.git"
+
+[source]
+url = "https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.47.2.tar.gz"
+hash = "vn7dcDFzTR_vijGfCQGCj4q4no87UHPmsYdAvjdxqVw"
