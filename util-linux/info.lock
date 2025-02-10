@@ -1,9 +1,8 @@
+repo = "main"
 name = "util-linux"
 version = "2.40.4"
-repo = "main"
-
-[data]
-source = { url = "https://www.kernel.org/pub/linux/utils/util-linux/v2.40/util-linux-2.40.4.tar.xz", hash = "XB2vczsE6YWa_cO9h8xIEYDuD4i1wJRrFv3skxl1-3k" }
-extra = [
-]
 upstream = "https://github.com/util-linux/util-linux.git"
+
+[source]
+url = "https://www.kernel.org/pub/linux/utils/util-linux/v2.40/util-linux-2.40.4.tar.xz"
+hash = "XB2vczsE6YWa_cO9h8xIEYDuD4i1wJRrFv3skxl1-3k"
