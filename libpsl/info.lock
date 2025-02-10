@@ -1,10 +1,9 @@
+repo = "main"
 name = "libpsl"
 version = "0.21.5"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz", hash = "Hcyc6uixKPPAs_ZU3s0OHoka_G_4EJjyJ-8mBEna4gg" }
-extra = [
-]
 upstream = "https://github.com/rockdaboot/libpsl.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/rockdaboot/libpsl.git' | sed -e 's@.*/@@' -e 's@libpsl-@@' | grep -v -- - | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/rockdaboot/libpsl.git' | sed -e 's@.*/@@' -e 's@libpsl-@@' | grep -v -- - | sort -V | tail -n1"
+
+[source]
+url = "https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz"
+hash = "Hcyc6uixKPPAs_ZU3s0OHoka_G_4EJjyJ-8mBEna4gg"
