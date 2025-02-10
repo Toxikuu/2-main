@@ -1,10 +1,9 @@
+repo = "main"
 name = "xml-parser"
 version = "2.47"
-repo = "main"
-
-[data]
-source = { url = "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.47.tar.gz", hash = "rUquZD7HhPSJuVar6VJDKHGmItTitcYZ6IVazL_E0dg" }
-extra = [
-]
 upstream = "https://github.com/cpan-authors/XML-Parser.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/cpan-authors/XML-Parser.git' | sed -e 's@.*/@@' -e 's@^v@@' -e 's@_@.@g' | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/cpan-authors/XML-Parser.git' | sed -e 's@.*/@@' -e 's@^v@@' -e 's@_@.@g' | sort -V | tail -n1"
+
+[source]
+url = "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.47.tar.gz"
+hash = "rUquZD7HhPSJuVar6VJDKHGmItTitcYZ6IVazL_E0dg"
