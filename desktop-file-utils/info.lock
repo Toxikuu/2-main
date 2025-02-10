@@ -1,10 +1,9 @@
+repo = "main"
 name = "desktop-file-utils"
 version = "0.28"
-repo = "main"
-
-[data]
-source = { url = "https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz", hash = "RAHU4jHYQsLegkI5WnSjlcpGjNlvX2ENgi3zNZSJinA" }
-extra = [
-]
 upstream = "https://gitlab.freedesktop.org/xdg/desktop-file-utils.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xdg/desktop-file-utils.git' | sed 's@.*/@@' | grep -E '^[0-9]+' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xdg/desktop-file-utils.git' | sed 's@.*/@@' | grep -E '^[0-9]+' | tail -n1"
+
+[source]
+url = "https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz"
+hash = "RAHU4jHYQsLegkI5WnSjlcpGjNlvX2ENgi3zNZSJinA"
