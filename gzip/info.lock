@@ -1,9 +1,8 @@
+repo = "main"
 name = "gzip"
 version = "1.13"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz", hash = "dFTraTXbF8ZlVXbC4bD6vv04tNCTbg-H9IzQYs6RoFc" }
-extra = [
-]
 upstream = "https://git.savannah.gnu.org/git/gzip.git"
+
+[source]
+url = "https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz"
+hash = "dFTraTXbF8ZlVXbC4bD6vv04tNCTbg-H9IzQYs6RoFc"
