@@ -1,10 +1,9 @@
+repo = "main"
 name = "polkit"
 version = "126"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/polkit-org/polkit/archive/126/polkit-126.tar.gz", hash = "KBSnKBmJ9rqp5XvTO7xeFIgn4nIczvIqryirKzdgaOg" }
-extra = [
-]
 upstream = "https://github.com/polkit-org/polkit.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/polkit-org/polkit.git' | sed 's@.*/@@' | grep -E '^[0-9]+$' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/polkit-org/polkit.git' | sed 's@.*/@@' | grep -E '^[0-9]+$' | tail -n1"
+
+[source]
+url = "https://github.com/polkit-org/polkit/archive/126/polkit-126.tar.gz"
+hash = "KBSnKBmJ9rqp5XvTO7xeFIgn4nIczvIqryirKzdgaOg"
