@@ -1,10 +1,9 @@
+repo = "main"
 name = "libcap"
 version = "2.73"
-repo = "main"
-
-[data]
-source = { url = "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.73.tar.xz", hash = "ZAX2CJz0zdjCcVQM2ZBlTXjdCxmJstm9og-TOnWnlaU" }
-extra = [
-]
 upstream = "https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
-version_command = '''git ls-remote --tags --refs 'https://git.kernel.org/pub/scm/libs/libcap/libcap.git' | sed 's@.*/@@' | grep 'libcap-korg-' | tail -n1 | cut -d- -f3'''
+version_command = "git ls-remote --tags --refs 'https://git.kernel.org/pub/scm/libs/libcap/libcap.git' | sed 's@.*/@@' | grep 'libcap-korg-' | tail -n1 | cut -d- -f3"
+
+[source]
+url = "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.73.tar.xz"
+hash = "ZAX2CJz0zdjCcVQM2ZBlTXjdCxmJstm9og-TOnWnlaU"
