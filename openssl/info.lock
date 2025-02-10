@@ -1,10 +1,9 @@
+repo = "main"
 name = "openssl"
 version = "3.4.0"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/openssl/openssl/releases/download/openssl-3.4.0/openssl-3.4.0.tar.gz", hash = "4V3agv4v6BOdwqwho21MoB1TE8dfmfRsTooncJtylL8" }
-extra = [
-]
 upstream = "https://github.com/openssl/openssl.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/openssl/openssl.git' | sed 's@.*/@@' | grep -Ev 'alpha|beta' | grep 'openssl-' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/openssl/openssl.git' | sed 's@.*/@@' | grep -Ev 'alpha|beta' | grep 'openssl-' | tail -n1"
+
+[source]
+url = "https://github.com/openssl/openssl/releases/download/openssl-3.4.0/openssl-3.4.0.tar.gz"
+hash = "4V3agv4v6BOdwqwho21MoB1TE8dfmfRsTooncJtylL8"
