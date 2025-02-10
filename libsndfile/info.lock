@@ -1,10 +1,9 @@
+repo = "main"
 name = "libsndfile"
 version = "1.2.2"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz", hash = "N5nKmSTTElA4iANnvxRo5TobfjaGqTTwmLfh0obNuA4" }
-extra = [
-]
 upstream = "https://github.com/libsndfile/libsndfile.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/libsndfile/libsndfile.git' | sed 's@.*/@@' | grep -B1 'v1.0.28pre1' | head -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/libsndfile/libsndfile.git' | sed 's@.*/@@' | grep -B1 'v1.0.28pre1' | head -n1"
+
+[source]
+url = "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz"
+hash = "N5nKmSTTElA4iANnvxRo5TobfjaGqTTwmLfh0obNuA4"
