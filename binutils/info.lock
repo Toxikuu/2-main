@@ -1,10 +1,9 @@
+repo = "main"
 name = "binutils"
 version = "2.44"
-repo = "main"
-
-[data]
-source = { url = "https://sourceware.org/pub/binutils/releases/binutils-2.44.tar.xz", hash = "ziAX4FnWPmfduSQOnU7EnCiTYFA1zWDpKtUxd_Q3cjc" }
-extra = [
-]
 upstream = "https://sourceware.org/git/binutils-gdb.git"
-version_command = '''git ls-remote --tags --refs 'https://sourceware.org/git/binutils-gdb.git' | sed 's@.*/@@' | grep -E '^binutils-[0-9]+_+' | grep -Ev 'release|branchpoint' | sed 's@_@.@g' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://sourceware.org/git/binutils-gdb.git' | sed 's@.*/@@' | grep -E '^binutils-[0-9]+_+' | grep -Ev 'release|branchpoint' | sed 's@_@.@g' | tail -n1"
+
+[source]
+url = "https://sourceware.org/pub/binutils/releases/binutils-2.44.tar.xz"
+hash = "ziAX4FnWPmfduSQOnU7EnCiTYFA1zWDpKtUxd_Q3cjc"
