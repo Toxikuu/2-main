@@ -1,9 +1,8 @@
+repo = "main"
 name = "man-pages"
 version = "6.10"
-repo = "main"
-
-[data]
-source = { url = "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.10.tar.xz", hash = "20lQOtTaB2M_ooASoniRXw8BeK1sMzRuWbetpzGSVwk" }
-extra = [
-]
 upstream = "https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git"
+
+[source]
+url = "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.10.tar.xz"
+hash = "20lQOtTaB2M_ooASoniRXw8BeK1sMzRuWbetpzGSVwk"
