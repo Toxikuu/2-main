@@ -1,10 +1,12 @@
+repo = "main"
 name = "git"
 version = "2.48.1"
-repo = "main"
-
-[data]
-source = { url = "https://www.kernel.org/pub/software/scm/git/git-2.48.1.tar.xz", hash = "HF1UX13B61HpXSxQ2Y_fiLGja6H6MOmuXVOFxgJPgq0" }
-extra = [
-  { url = "https://www.kernel.org/pub/software/scm/git/git-manpages-2.48.1.tar.xz", hash = "TA7eevpNbb9gLS8v0VHDarV9MiTmuf0XNC6F8F04aIY" },
-]
 upstream = "https://github.com/git/git.git"
+
+[source]
+url = "https://www.kernel.org/pub/software/scm/git/git-2.48.1.tar.xz"
+hash = "HF1UX13B61HpXSxQ2Y_fiLGja6H6MOmuXVOFxgJPgq0"
+
+[[extra]]
+url = "https://www.kernel.org/pub/software/scm/git/git-manpages-2.48.1.tar.xz"
+hash = "TA7eevpNbb9gLS8v0VHDarV9MiTmuf0XNC6F8F04aIY"
