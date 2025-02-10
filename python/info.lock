@@ -1,10 +1,9 @@
+repo = "main"
 name = "python"
 version = "3.13.2"
-repo = "main"
-
-[data]
-source = { url = "https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz", hash = "2YS8xXzWfKqyb33vQuUjscAVu8XcB4Ns9PC2P6FZ61Y" }
-extra = [
-]
 upstream = "https://github.com/python/cpython.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/python/cpython.git' | sed 's@.*/@@' | grep -Ev 'a|b|rc' | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/python/cpython.git' | sed 's@.*/@@' | grep -Ev 'a|b|rc' | sort -V | tail -n1"
+
+[source]
+url = "https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz"
+hash = "2YS8xXzWfKqyb33vQuUjscAVu8XcB4Ns9PC2P6FZ61Y"
