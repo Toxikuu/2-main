@@ -1,10 +1,9 @@
+repo = "main"
 name = "efivar"
 version = "39"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz", hash = "ye3RXy7u6mMjLz5mmkjpkse-mv9X7iJnKsMfXsoWCaY" }
-extra = [
-]
 upstream = "https://github.com/rhboot/efivar.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/rhboot/efivar.git' | grep -B1 'refs/tags/4$' | head -n1 | cut -d/ -f3'''
+version_command = "git ls-remote --tags --refs 'https://github.com/rhboot/efivar.git' | grep -B1 'refs/tags/4$' | head -n1 | cut -d/ -f3"
+
+[source]
+url = "https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz"
+hash = "ye3RXy7u6mMjLz5mmkjpkse-mv9X7iJnKsMfXsoWCaY"
