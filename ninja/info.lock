@@ -1,9 +1,8 @@
+repo = "main"
 name = "ninja"
 version = "1.12.1"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/ninja-build/ninja/archive/v1.12.1/ninja-1.12.1.tar.gz", hash = "ghvf9Io_aDvEuztvC1_nstZHz2XVKutjMoyRpsbfKFo" }
-extra = [
-]
 upstream = "https://github.com/ninja-build/ninja.git"
+
+[source]
+url = "https://github.com/ninja-build/ninja/archive/v1.12.1/ninja-1.12.1.tar.gz"
+hash = "ghvf9Io_aDvEuztvC1_nstZHz2XVKutjMoyRpsbfKFo"
