@@ -1,10 +1,9 @@
+repo = "main"
 name = "libpipeline"
 version = "1.5.8"
-repo = "main"
-
-[data]
-source = { url = "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.8.tar.gz", hash = "GxIDyhUszWOYPD8hEvf-b6Wv1FMhjt5RU9GzHhG7hAU" }
-extra = [
-]
 upstream = "https://gitlab.com/libpipeline/libpipeline.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.com/libpipeline/libpipeline.git' | sed 's@.*/@@' | grep -Ev '^2.+' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.com/libpipeline/libpipeline.git' | sed 's@.*/@@' | grep -Ev '^2.+' | tail -n1"
+
+[source]
+url = "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.8.tar.gz"
+hash = "GxIDyhUszWOYPD8hEvf-b6Wv1FMhjt5RU9GzHhG7hAU"
