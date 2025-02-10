@@ -1,9 +1,8 @@
+repo = "main"
 name = "nghttp2"
 version = "1.64.0"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/nghttp2/nghttp2/releases/download/v1.64.0/nghttp2-1.64.0.tar.xz", hash = "iLuUyeT9HEmZZ_g97ONqeBIq99X7QNogGcVrnMxuud0" }
-extra = [
-]
 upstream = "https://github.com/nghttp2/nghttp2.git"
+
+[source]
+url = "https://github.com/nghttp2/nghttp2/releases/download/v1.64.0/nghttp2-1.64.0.tar.xz"
+hash = "iLuUyeT9HEmZZ_g97ONqeBIq99X7QNogGcVrnMxuud0"
