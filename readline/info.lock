@@ -1,10 +1,9 @@
+repo = "main"
 name = "readline"
 version = "8.2.13"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/readline/readline-8.2.13.tar.gz", hash = "Dlvk0pN-i9m3zWDUZyHOefiKM0Fd1owtc4-1kkY49lY" }
-extra = [
-]
 upstream = "https://ftp.gnu.org/gnu/readline/?C=M;O=D"
 version_command = "curl -s 'https://ftp.gnu.org/gnu/readline/?C=M;O=D' | grep readline- | grep -Ev 'beta|alpha' | head -n2 | tail -n1 | cut -d- -f2 | cut -d. -f1-3"
+
+[source]
+url = "https://ftp.gnu.org/gnu/readline/readline-8.2.13.tar.gz"
+hash = "Dlvk0pN-i9m3zWDUZyHOefiKM0Fd1owtc4-1kkY49lY"
