@@ -1,10 +1,9 @@
+repo = "main"
 name = "efibootmgr"
 version = "18"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz", hash = "RChn0S-FJQNKQE_IrzA226jh_JcJmK8khsO5QN-tCHQ" }
-extra = [
-]
 upstream = "https://github.com/rhboot/efibootmgr.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/rhboot/efibootmgr.git' | sed 's@.*/@@' | grep -E '^[0-9]+$' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/rhboot/efibootmgr.git' | sed 's@.*/@@' | grep -E '^[0-9]+$' | tail -n1"
+
+[source]
+url = "https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz"
+hash = "RChn0S-FJQNKQE_IrzA226jh_JcJmK8khsO5QN-tCHQ"
