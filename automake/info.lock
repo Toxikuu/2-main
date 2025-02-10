@@ -1,10 +1,9 @@
+repo = "main"
 name = "automake"
 version = "1.17"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/automake/automake-1.17.tar.xz", hash = "iSDB_EEeE7kL9wTvnbbynVQOdtIyyzssn03EzFmb2ZA" }
-extra = [
-]
 upstream = "https://git.savannah.gnu.org/git/automake.git"
-version_command = '''git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/automake.git' | sed 's@.*/@@' | grep -E '^v[0-9]+' | cut -dv -f2 | grep -Ev '[a-z]' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/automake.git' | sed 's@.*/@@' | grep -E '^v[0-9]+' | cut -dv -f2 | grep -Ev '[a-z]' | tail -n1"
+
+[source]
+url = "https://ftp.gnu.org/gnu/automake/automake-1.17.tar.xz"
+hash = "iSDB_EEeE7kL9wTvnbbynVQOdtIyyzssn03EzFmb2ZA"
