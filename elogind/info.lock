@@ -1,10 +1,9 @@
+repo = "main"
 name = "elogind"
 version = "255.17"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/elogind/elogind/archive/v255.17/elogind-255.17.tar.gz", hash = "qXJa4_c_jZEN6EwQi8Eb_Ux4K-9qQZCy7HDF0vIjRNs" }
-extra = [
-]
 upstream = "https://github.com/elogind/elogind.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/elogind/elogind.git' | sed 's@.*/@@' | grep -Ev 'pre|r|alpha' | sed 's@v@@' | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/elogind/elogind.git' | sed 's@.*/@@' | grep -Ev 'pre|r|alpha' | sed 's@v@@' | sort -V | tail -n1"
+
+[source]
+url = "https://github.com/elogind/elogind/archive/v255.17/elogind-255.17.tar.gz"
+hash = "qXJa4_c_jZEN6EwQi8Eb_Ux4K-9qQZCy7HDF0vIjRNs"
