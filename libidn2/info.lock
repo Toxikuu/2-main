@@ -1,9 +1,8 @@
+repo = "main"
 name = "libidn2"
 version = "2.3.7"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz", hash = "TCGnkbYQuVGbnQ4SuAl78vNZsS-N2SZHYRqSnmv9fWQ" }
-extra = [
-]
 upstream = "https://gitlab.com/libidn/libidn2.git"
+
+[source]
+url = "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz"
+hash = "TCGnkbYQuVGbnQ4SuAl78vNZsS-N2SZHYRqSnmv9fWQ"
