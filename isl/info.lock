@@ -1,9 +1,8 @@
+repo = "main"
 name = "isl"
 version = "0.27"
-repo = "main"
+upstream = "https://repo.or.cz/isl.git"
 
-[data]
-source = { url = "https://libisl.sourceforge.io/isl-0.27.tar.xz", hash = "bYurtZ57Zy6Mt4cOh08_e4E7bgDmrz-LBPdXmWVkPVw" }
-extra = [
-]
-upstream = "git://repo.or.cz/isl.git"
+[source]
+url = "https://libisl.sourceforge.io/isl-0.27.tar.xz"
+hash = "bYurtZ57Zy6Mt4cOh08_e4E7bgDmrz-LBPdXmWVkPVw"
