@@ -1,3 +1,8 @@
 repo = "main"
 name = "time"
 version = "1.9"
+upstream = "https://git.savannah.gnu.org/git/time.git"
+
+[source]
+url = "https://ftp.gnu.org/gnu/time/time-1.9.tar.gz"
+hash = "-6zwyB5iQp3z4zvaTO44dWYE8Y4B2XczjiMwaj47Uh4"
