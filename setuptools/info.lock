@@ -1,9 +1,8 @@
+repo = "main"
 name = "setuptools"
 version = "75.8.0"
-repo = "main"
-
-[data]
-source = { url = "https://pypi.org/packages/source/s/setuptools/setuptools-75.8.0.tar.gz", hash = "xa_I9AfGJrgxOobhAxHdP2YcbNnAnUv4wVwOEfnysOY" }
-extra = [
-]
 upstream = "https://github.com/pypa/setuptools.git"
+
+[source]
+url = "https://pypi.org/packages/source/s/setuptools/setuptools-75.8.0.tar.gz"
+hash = "xa_I9AfGJrgxOobhAxHdP2YcbNnAnUv4wVwOEfnysOY"
