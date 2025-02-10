@@ -1,10 +1,9 @@
+repo = "main"
 name = "bc"
 version = "7.0.3"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/gavinhoward/bc/releases/download/7.0.3/bc-7.0.3.tar.xz", hash = "ket0yu0O5mVbZpcRpPNQwlV5d4aU3ySOKDYzGOA8f8Q" }
-extra = [
-]
 upstream = "https://github.com/gavinhoward/bc.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/gavinhoward/bc.git' | sed 's@.*/@@' | grep -Ev '[a-z]+' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/gavinhoward/bc.git' | sed 's@.*/@@' | grep -Ev '[a-z]+' | tail -n1"
+
+[source]
+url = "https://github.com/gavinhoward/bc/releases/download/7.0.3/bc-7.0.3.tar.xz"
+hash = "ket0yu0O5mVbZpcRpPNQwlV5d4aU3ySOKDYzGOA8f8Q"
