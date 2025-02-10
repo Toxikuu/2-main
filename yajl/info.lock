@@ -1,12 +1,20 @@
+repo = "main"
 name = "yajl"
 version = "2.1.0"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/lloyd/yajl/archive/refs/tags/2.1.0.tar.gz", hash = "P7czZKWjDv5hUEbQfm250J_StBx2PF99O_sSHNXFrFo" }
-extra = [
-  { url = "https://gitlab.archlinux.org/archlinux/packaging/packages/yajl/-/raw/main/yajl-2.1.0-CVE-2017-16516.patch", hash = "tetgF4Bx4t8AiIVpOfq71Fhk2DYlm2ESYPxJijQVRhQ" },
-  { url = "https://gitlab.archlinux.org/archlinux/packaging/packages/yajl/-/raw/main/yajl-2.1.0-CVE-2022-24795.patch", hash = "pY9RhxqevYCEnIvHQY329Y1m-P5wH14RpkKf0PMtns8" },
-  { url = "https://gitlab.archlinux.org/archlinux/packaging/packages/yajl/-/raw/main/yajl-2.1.0-memory_leak.patch", hash = "zTb39RUguqwr2EZ9e7sE8sbiYZaJgaHowQ_07XoK_2k" },
-]
 upstream = "https://github.com/lloyd/yajl.git"
+
+[source]
+url = "https://github.com/lloyd/yajl/archive/refs/tags/2.1.0.tar.gz"
+hash = "P7czZKWjDv5hUEbQfm250J_StBx2PF99O_sSHNXFrFo"
+
+[[extra]]
+url = "https://gitlab.archlinux.org/archlinux/packaging/packages/yajl/-/raw/main/yajl-2.1.0-CVE-2017-16516.patch"
+hash = "tetgF4Bx4t8AiIVpOfq71Fhk2DYlm2ESYPxJijQVRhQ"
+
+[[extra]]
+url = "https://gitlab.archlinux.org/archlinux/packaging/packages/yajl/-/raw/main/yajl-2.1.0-CVE-2022-24795.patch"
+hash = "pY9RhxqevYCEnIvHQY329Y1m-P5wH14RpkKf0PMtns8"
+
+[[extra]]
+url = "https://gitlab.archlinux.org/archlinux/packaging/packages/yajl/-/raw/main/yajl-2.1.0-memory_leak.patch"
+hash = "zTb39RUguqwr2EZ9e7sE8sbiYZaJgaHowQ_07XoK_2k"
