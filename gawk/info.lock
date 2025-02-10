@@ -1,9 +1,8 @@
+repo = "main"
 name = "gawk"
 version = "5.3.1"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/gawk/gawk-5.3.1.tar.xz", hash = "aU23ZIEqYjZCPU_0DOt7bExEEwG3KtUCu1wn4AzVb3g" }
-extra = [
-]
 upstream = "https://git.savannah.gnu.org/git/gawk.git"
+
+[source]
+url = "https://ftp.gnu.org/gnu/gawk/gawk-5.3.1.tar.xz"
+hash = "aU23ZIEqYjZCPU_0DOt7bExEEwG3KtUCu1wn4AzVb3g"
