@@ -1,10 +1,9 @@
+repo = "main"
 name = "chrony"
 version = "4.6.1"
-repo = "main"
-
-[data]
-source = { url = "https://chrony-project.org/releases/chrony-4.6.1.tar.gz", hash = "Vx_3P78K4wl_BgTsouALHYuy6Rr_4aNJR4X_IdYZnFw" }
-extra = [
-]
 upstream = "https://gitlab.com/chrony/chrony.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.com/chrony/chrony.git' | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.com/chrony/chrony.git' | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
+
+[source]
+url = "https://chrony-project.org/releases/chrony-4.6.1.tar.gz"
+hash = "Vx_3P78K4wl_BgTsouALHYuy6Rr_4aNJR4X_IdYZnFw"
