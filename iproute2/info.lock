@@ -1,9 +1,8 @@
+repo = "main"
 name = "iproute2"
 version = "6.13.0"
-repo = "main"
-
-[data]
-source = { url = "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.13.0.tar.xz", hash = "pDqkMzjYgrRNAeVJ8_EFqSrp_uoyqC-uRaiOekkwKBk" }
-extra = [
-]
 upstream = "https://github.com/iproute2/iproute2.git"
+
+[source]
+url = "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.13.0.tar.xz"
+hash = "pDqkMzjYgrRNAeVJ8_EFqSrp_uoyqC-uRaiOekkwKBk"
