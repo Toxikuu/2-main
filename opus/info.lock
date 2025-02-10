@@ -1,9 +1,8 @@
+repo = "main"
 name = "opus"
 version = "1.5.2"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/xiph/opus/releases/download/v1.5.2/opus-1.5.2.tar.gz", hash = "ZcHS94ufL7IAgsOMvkfJUa1YOTRYduRpQWEu6H-afOE" }
-extra = [
-]
 upstream = "https://github.com/xiph/opus.git"
+
+[source]
+url = "https://github.com/xiph/opus/releases/download/v1.5.2/opus-1.5.2.tar.gz"
+hash = "ZcHS94ufL7IAgsOMvkfJUa1YOTRYduRpQWEu6H-afOE"
