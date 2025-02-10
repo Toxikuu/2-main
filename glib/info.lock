@@ -1,11 +1,13 @@
+repo = "main"
 name = "glib"
 version = "2.83.3"
-repo = "main"
-
-[data]
-source = { url = "https://download.gnome.org/sources/glib/2.83/glib-2.83.3.tar.xz", hash = "0MZTGLsuP6WUJ3z5inHP-vX2ZsB42znc7BIXV7K6Mo0" }
-extra = [
-  { url = "https://download.gnome.org/sources/gobject-introspection/1.82/gobject-introspection-1.82.0.tar.xz", hash = "D1pMGQhCS_JrxB6TYRaMNjaFCA-9uHoZbIkchAHKLwk" },
-]
 upstream = "https://github.com/GNOME/glib.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/GNOME/glib.git' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' | head -n1 | sed 's@.*/@@''''
+version_command = "git ls-remote --tags --refs 'https://github.com/GNOME/glib.git' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' | head -n1 | sed 's@.*/@@'"
+
+[source]
+url = "https://download.gnome.org/sources/glib/2.83/glib-2.83.3.tar.xz"
+hash = "0MZTGLsuP6WUJ3z5inHP-vX2ZsB42znc7BIXV7K6Mo0"
+
+[[extra]]
+url = "https://download.gnome.org/sources/gobject-introspection/1.82/gobject-introspection-1.82.0.tar.xz"
+hash = "D1pMGQhCS_JrxB6TYRaMNjaFCA-9uHoZbIkchAHKLwk"
