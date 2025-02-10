@@ -1,9 +1,8 @@
+repo = "main"
 name = "libxcrypt"
 version = "4.4.38"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz", hash = "gDBLnDBup5kyfwHZp1Sb2ygxd4kYJjHxtU9FEbQgbdY" }
-extra = [
-]
 upstream = "https://github.com/besser82/libxcrypt.git"
+
+[source]
+url = "https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz"
+hash = "gDBLnDBup5kyfwHZp1Sb2ygxd4kYJjHxtU9FEbQgbdY"
