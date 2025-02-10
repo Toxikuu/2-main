@@ -1,11 +1,13 @@
+repo = "main"
 name = "expect"
 version = "5.45.4"
-repo = "main"
-
-[data]
-source = { url = "https://prdownloads.sourceforge.net/expect/expect5.45.4.tar.gz", hash = "Safag7C92fRtBKBN7sGcd2e7mjI-QMR4H4nK92C5LDQ" }
-extra = [
-  { url = "https://www.linuxfromscratch.org/patches/lfs/development/expect-5.45.4-gcc14-1.patch", hash = "UXwM3V25Sc3Znfo4t6bDlF4VJMUONGcCiXMpjyx2qSw" },
-]
 upstream = "https://sourceforge.net/projects/expect/files/Expect/"
 version_command = '''curl -s 'https://sourceforge.net/projects/expect/files/Expect/' | rg 'tr title=' | head -n1 | cut -d'"' -f2'''
+
+[source]
+url = "https://prdownloads.sourceforge.net/expect/expect5.45.4.tar.gz"
+hash = "Safag7C92fRtBKBN7sGcd2e7mjI-QMR4H4nK92C5LDQ"
+
+[[extra]]
+url = "https://www.linuxfromscratch.org/patches/lfs/development/expect-5.45.4-gcc14-1.patch"
+hash = "UXwM3V25Sc3Znfo4t6bDlF4VJMUONGcCiXMpjyx2qSw"
