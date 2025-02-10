@@ -1,9 +1,8 @@
+repo = "main"
 name = "findutils"
 version = "4.10.0"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz", hash = "E4fgtn_yR9Kr3pmPkN-_cMFJE5Glnd_suK5ph4nwpPU" }
-extra = [
-]
 upstream = "https://git.savannah.gnu.org/git/findutils.git"
+
+[source]
+url = "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz"
+hash = "E4fgtn_yR9Kr3pmPkN-_cMFJE5Glnd_suK5ph4nwpPU"
