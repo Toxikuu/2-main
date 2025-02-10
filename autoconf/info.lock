@@ -1,10 +1,9 @@
+repo = "main"
 name = "autoconf"
 version = "2.72"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.xz", hash = "uohcExlXjWyU1G6bDc60AUyq_iSQ5Deg28o_JwoiP1o" }
-extra = [
-]
 upstream = "https://git.savannah.gnu.org/git/autoconf.git"
 version_command = '''git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/autoconf.git' | sed 's@.*/@@' | grep -E '^v[0-9]\.[0-9]' | grep -v '[a-k]$' | tail -n1'''
+
+[source]
+url = "https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.xz"
+hash = "uohcExlXjWyU1G6bDc60AUyq_iSQ5Deg28o_JwoiP1o"
