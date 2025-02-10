@@ -1,9 +1,8 @@
+repo = "main"
 name = "gperf"
 version = "3.1"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz", hash = "WIVGuUW7pLcLajphboC0q0ZuPzMCSjUvwhmBEs27OuI" }
-extra = [
-]
 upstream = "https://git.savannah.gnu.org/git/gperf.git"
+
+[source]
+url = "https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz"
+hash = "WIVGuUW7pLcLajphboC0q0ZuPzMCSjUvwhmBEs27OuI"
