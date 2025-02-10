@@ -1,10 +1,5 @@
+repo = "main"
 name = "rust"
 version = "9999"
-repo = "main"
-
-[data]
-source = { url = "", hash = "" }
-extra = [
-]
 upstream = "https://github.com/rust-lang/rust.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/rust-lang/rust.git' | sed 's@.*/@@' | grep -v 'release-' | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/rust-lang/rust.git' | sed 's@.*/@@' | grep -v 'release-' | sort -V | tail -n1"
