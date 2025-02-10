@@ -1,10 +1,9 @@
+repo = "main"
 name = "mpc"
 version = "1.3.1"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/mpc/mpc-1.3.1.tar.gz", hash = "q2QkkvXPiCt0qgy3MM1BCoHtzb7IlRg86TDnBsHHWbg" }
-extra = [
-]
 upstream = "https://gitlab.inria.fr/mpc/mpc.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.inria.fr/mpc/mpc.git' | sed 's@.*/@@' | grep -E '^[0-9]+' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.inria.fr/mpc/mpc.git' | sed 's@.*/@@' | grep -E '^[0-9]+' | tail -n1"
+
+[source]
+url = "https://ftp.gnu.org/gnu/mpc/mpc-1.3.1.tar.gz"
+hash = "q2QkkvXPiCt0qgy3MM1BCoHtzb7IlRg86TDnBsHHWbg"
