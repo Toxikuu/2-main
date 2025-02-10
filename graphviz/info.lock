@@ -1,10 +1,9 @@
+repo = "main"
 name = "graphviz"
 version = "12.2.1"
-repo = "main"
-
-[data]
-source = { url = "https://gitlab.com/graphviz/graphviz/-/archive/12.2.1/graphviz-12.2.1.tar.bz2", hash = "qZCzjD6oB6Bll86NRth4eOWbs_sSYJ_ZjAKoYaTKgbg" }
-extra = [
-]
 upstream = "https://gitlab.com/graphviz/graphviz.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.com/graphviz/graphviz.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.com/graphviz/graphviz.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1"
+
+[source]
+url = "https://gitlab.com/graphviz/graphviz/-/archive/12.2.1/graphviz-12.2.1.tar.bz2"
+hash = "qZCzjD6oB6Bll86NRth4eOWbs_sSYJ_ZjAKoYaTKgbg"
