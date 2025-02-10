@@ -1,10 +1,9 @@
+repo = "main"
 name = "m4"
 version = "1.4.19"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz", hash = "Y67eXG0zttmxNRHNC-LKwEby5w_QoHqpVzoEqCeDr5Y" }
-extra = [
-]
 upstream = "https://git.savannah.gnu.org/git/m4.git"
 version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/m4.git' | sed 's:.*/::' | sort -V | grep -B1 v1.5.89a | head -n1"
+
+[source]
+url = "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz"
+hash = "Y67eXG0zttmxNRHNC-LKwEby5w_QoHqpVzoEqCeDr5Y"
