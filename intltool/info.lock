@@ -1,10 +1,9 @@
+repo = "main"
 name = "intltool"
 version = "0.51.0"
-repo = "main"
-
-[data]
-source = { url = "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz", hash = "Z8dNlBlrFTt3Srn4my-mxrp5NSQHA3yMFNWuszTpWc0" }
-extra = [
-]
 upstream = "https://salsa.debian.org/gnome-team/intltool.git"
-version_command = '''git ls-remote --tags --refs 'https://salsa.debian.org/gnome-team/intltool.git' | sed 's@.*/@@' | cut -d- -f1 | uniq | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://salsa.debian.org/gnome-team/intltool.git' | sed 's@.*/@@' | cut -d- -f1 | uniq | tail -n1"
+
+[source]
+url = "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz"
+hash = "Z8dNlBlrFTt3Srn4my-mxrp5NSQHA3yMFNWuszTpWc0"
