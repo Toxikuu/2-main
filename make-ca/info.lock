@@ -1,6 +1,6 @@
 repo = "main"
 name = "make-ca"
-version = "1.14"
+version = "1.15"
 upstream = "https://github.com/lfs-book/make-ca.git"
 
 [source]
