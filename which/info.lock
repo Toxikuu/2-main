@@ -1,10 +1,9 @@
+repo = "main"
 name = "which"
 version = "2.23"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/which/which-2.23.tar.gz", hash = "osVYIm_E2eTOMxvS_Tw_F_lVEV0sAORHYYpO-ZeKKnM" }
-extra = [
-]
 upstream = "https://ftp.gnu.org/gnu/which/?C=M;O=D"
-version_command = '''curl -s 'https://ftp.gnu.org/gnu/which/?C=M;O=D' | grep which- | head -n1 | cut -d- -f2 | cut -d. -f1-2'''
+version_command = "curl -s 'https://ftp.gnu.org/gnu/which/?C=M;O=D' | grep which- | head -n1 | cut -d- -f2 | cut -d. -f1-2"
+
+[source]
+url = "https://ftp.gnu.org/gnu/which/which-2.23.tar.gz"
+hash = "osVYIm_E2eTOMxvS_Tw_F_lVEV0sAORHYYpO-ZeKKnM"
