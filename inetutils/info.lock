@@ -1,10 +1,9 @@
+repo = "main"
 name = "inetutils"
 version = "2.5"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/inetutils/inetutils-2.5.tar.xz", hash = "h2l9YKMeELXLhqnwZR4ex77pgyDQSMBzlDGqw9V2T7Y" }
-extra = [
-]
 upstream = "https://git.savannah.gnu.org/git/inetutils.git"
-version_command = '''git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/inetutils.git' | sed 's@.*/@@' | grep -E '^v[0-9]+' | grep -Ev '9[0-9]$' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/inetutils.git' | sed 's@.*/@@' | grep -E '^v[0-9]+' | grep -Ev '9[0-9]$' | tail -n1"
+
+[source]
+url = "https://ftp.gnu.org/gnu/inetutils/inetutils-2.5.tar.xz"
+hash = "h2l9YKMeELXLhqnwZR4ex77pgyDQSMBzlDGqw9V2T7Y"
