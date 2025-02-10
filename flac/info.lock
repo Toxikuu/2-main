@@ -1,9 +1,8 @@
+repo = "main"
 name = "flac"
 version = "1.4.3"
-repo = "main"
-
-[data]
-source = { url = "https://downloads.xiph.org/releases/flac/flac-1.4.3.tar.xz", hash = "bFjmnNIjSPRBuGEJK4JeWR0Lgi4QbebrDuTQXScgW3A" }
-extra = [
-]
 upstream = "https://github.com/xiph/flac.git"
+
+[source]
+url = "https://downloads.xiph.org/releases/flac/flac-1.4.3.tar.xz"
+hash = "bFjmnNIjSPRBuGEJK4JeWR0Lgi4QbebrDuTQXScgW3A"
