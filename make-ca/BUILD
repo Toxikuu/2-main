@@ -1,5 +1,5 @@
 NAME="make-ca"
-VERS="1.14"
+VERS="1.15"
 DESC="PKI setup script for LFS"
 UPST="https://github.com/lfs-book/make-ca.git"
 
