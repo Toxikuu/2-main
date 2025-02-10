@@ -1,10 +1,9 @@
+repo = "main"
 name = "tcl"
 version = "8.6.16"
-repo = "main"
-
-[data]
-source = { url = "https://downloads.sourceforge.net/tcl/tcl8.6.16-src.tar.gz", hash = "kcuPphdxxjwmLvtVMFm3x61nV6-lhXr2Jl5LC9wqFKU" }
-extra = [
-]
 upstream = "https://github.com/tcltk/tcl.git"
 version_command = '''git ls-remote --tags --refs 'https://github.com/tcltk/tcl.git' | sed -e 's@.*/@@' -e 's@^core-@@' -e 's@-@.@g' | grep -Ev '[a-z]' | grep '\.' | tail -n1'''
+
+[source]
+url = "https://downloads.sourceforge.net/tcl/tcl8.6.16-src.tar.gz"
+hash = "kcuPphdxxjwmLvtVMFm3x61nV6-lhXr2Jl5LC9wqFKU"
