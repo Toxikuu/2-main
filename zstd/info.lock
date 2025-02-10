@@ -1,10 +1,9 @@
+repo = "main"
 name = "zstd"
 version = "1.5.6"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/facebook/zstd/releases/download/v1.5.6/zstd-1.5.6.tar.gz", hash = "jCngbPQqrMHq_EB3ri7Gxvy5amJhV-BZPV6Co0_UA8E" }
-extra = [
-]
 upstream = "https://github.com/facebook/zstd.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/facebook/zstd.git' | sed 's@.*/@@' | grep -E '^v[0-9]+' | grep -v -- -kernel | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/facebook/zstd.git' | sed 's@.*/@@' | grep -E '^v[0-9]+' | grep -v -- -kernel | tail -n1"
+
+[source]
+url = "https://github.com/facebook/zstd/releases/download/v1.5.6/zstd-1.5.6.tar.gz"
+hash = "jCngbPQqrMHq_EB3ri7Gxvy5amJhV-BZPV6Co0_UA8E"
