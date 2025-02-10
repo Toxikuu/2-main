@@ -1,9 +1,8 @@
+repo = "main"
 name = "man-db"
 version = "2.13.0"
-repo = "main"
-
-[data]
-source = { url = "https://download.savannah.gnu.org/releases/man-db/man-db-2.13.0.tar.xz", hash = "gvBzn09hqrXrk30jTeOwFOd3tVOKKMvTFDPEWuCa77k" }
-extra = [
-]
 upstream = "https://gitlab.com/man-db/man-db.git"
+
+[source]
+url = "https://download.savannah.gnu.org/releases/man-db/man-db-2.13.0.tar.xz"
+hash = "gvBzn09hqrXrk30jTeOwFOd3tVOKKMvTFDPEWuCa77k"
