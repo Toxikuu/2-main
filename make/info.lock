@@ -1,10 +1,9 @@
+repo = "main"
 name = "make"
 version = "4.4.1"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz", hash = "3Rb7HWe_q3mnL16DkHNcSePo5wtJRaFasfgd23hlj7M" }
-extra = [
-]
 upstream = "https://git.savannah.gnu.org/git/make.git"
-version_command = '''git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/make.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | grep -Ev '9[0-9]$' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/make.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | grep -Ev '9[0-9]$' | tail -n1"
+
+[source]
+url = "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz"
+hash = "3Rb7HWe_q3mnL16DkHNcSePo5wtJRaFasfgd23hlj7M"
