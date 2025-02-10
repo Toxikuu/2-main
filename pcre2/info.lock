@@ -1,10 +1,9 @@
+repo = "main"
 name = "pcre2"
 version = "10.45"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.bz2", hash = "IVR_NRYSDHVZflswqZLielkqMZULUUDnuL_ePxkgM8Q" }
-extra = [
-]
 upstream = "https://github.com/PCRE2Project/pcre2.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/PCRE2Project/pcre2.git' | sed 's@.*/@@' | grep -v RC | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/PCRE2Project/pcre2.git' | sed 's@.*/@@' | grep -v RC | tail -n1"
+
+[source]
+url = "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.bz2"
+hash = "IVR_NRYSDHVZflswqZLielkqMZULUUDnuL_ePxkgM8Q"
