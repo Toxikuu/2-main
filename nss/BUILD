@@ -14,7 +14,7 @@ EXTRA=(
 b-patch "$SRC"/nss-standalone-1.patch
 
 # TODO: Use trap, a cleanup function, and NOUSE instead of deletion
-sqlite3 --version > /dev/null 2>&1 || 
+sqlite3 --version > /dev/null 2>&1 ||
 if [ -f /usr/lib/libsqlite3.so ]; then
     rm -vf /usr/lib/libsqlite3.so
 fi
@@ -46,7 +46,7 @@ cd ../nss                                         &&
 find -name "Linux*.OBJ" -type d -exec rm -rf {} + &&
 rm -rf ../dist
 
-sqlite3 --version > /dev/null 2>&1 || 
+sqlite3 --version > /dev/null 2>&1 ||
 if [ -f /usr/lib32/libsqlite3.so ]; then
     rm -vf /usr/lib32/libsqlite3.so
 fi

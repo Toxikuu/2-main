@@ -11,7 +11,7 @@ EXTRA=()
 
 _cfg_opts=(
     --openssldir=/etc/ssl
-    --prefix=/usr  
+    --prefix=/usr
     shared
     zlib-dynamic
 )

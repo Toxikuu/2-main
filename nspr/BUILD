@@ -24,7 +24,7 @@ b-make distclean
 
 b-32cfg --disable-64bit \
         --with-pthreads \
-        --with-mozilla 
+        --with-mozilla
 b-make
 b-32mi
 

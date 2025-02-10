@@ -10,6 +10,6 @@ EXTRA=()
 
 sed -i 's/-Os/-O2/' Makefile.sharedlibrary
 b-make -f Makefile.sharedlibrary INSTALL_PREFIX=/usr
-b-mi   -f Makefile.sharedlibrary INSTALL_PREFIX=/usr 
+b-mi   -f Makefile.sharedlibrary INSTALL_PREFIX=/usr
 
 }
