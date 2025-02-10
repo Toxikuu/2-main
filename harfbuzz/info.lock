@@ -1,10 +1,9 @@
+repo = "main"
 name = "harfbuzz"
 version = "10.2.0"
-repo = "main"
-
-[data]
-source = { url = "https://github.com/harfbuzz/harfbuzz/releases/download/10.2.0/harfbuzz-10.2.0.tar.xz", hash = "Yg40aPrsLqhoXTLEalhGm4UO9jBAs1Zc3gWVmCW0gic" }
-extra = [
-]
 upstream = "https://github.com/harfbuzz/harfbuzz.git"
-version_command = '''git ls-remote --tags --refs 'https://github.com/harfbuzz/harfbuzz.git' | sed 's@.*/@@' | sort -V | grep -E '[0-9]' | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://github.com/harfbuzz/harfbuzz.git' | sed 's@.*/@@' | sort -V | grep -E '[0-9]' | tail -n1"
+
+[source]
+url = "https://github.com/harfbuzz/harfbuzz/releases/download/10.2.0/harfbuzz-10.2.0.tar.xz"
+hash = "Yg40aPrsLqhoXTLEalhGm4UO9jBAs1Zc3gWVmCW0gic"
