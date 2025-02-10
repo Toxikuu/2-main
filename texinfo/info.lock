@@ -1,9 +1,8 @@
+repo = "main"
 name = "texinfo"
 version = "7.2"
-repo = "main"
-
-[data]
-source = { url = "https://ftp.gnu.org/gnu/texinfo/texinfo-7.2.tar.xz", hash = "AynXeI--8RP6gsuAiJyhl6NEzg33ZG_gAJdMXXFDY6Y" }
-extra = [
-]
 upstream = "https://git.savannah.gnu.org/git/texinfo.git"
+
+[source]
+url = "https://ftp.gnu.org/gnu/texinfo/texinfo-7.2.tar.xz"
+hash = "AynXeI--8RP6gsuAiJyhl6NEzg33ZG_gAJdMXXFDY6Y"
