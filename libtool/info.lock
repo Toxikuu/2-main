@@ -1,7 +1,7 @@
 repo = "main"
 name = "libtool"
 version = "2.5.4"
-upstream = "https://git.savannah.gnu.org/libtool.git"
+upstream = "git://git.savannah.gnu.org/libtool.git"
 
 [source]
 url = "https://ftp.gnu.org/gnu/libtool/libtool-2.5.4.tar.xz"
