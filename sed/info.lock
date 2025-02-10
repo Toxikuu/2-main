@@ -1,9 +1,8 @@
+repo = "main"
 name = "sed"
 version = "4.9"
-repo = "main"
+upstream = "https://git.savannah.gnu.org/sed.git"
 
-[data]
-source = { url = "https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz", hash = "biJrcy4c1zlGStaGK9Ghq6QteYKSLaelNRljHSSXUYE" }
-extra = [
-]
-upstream = "git://git.savannah.gnu.org/sed.git"
+[source]
+url = "https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz"
+hash = "biJrcy4c1zlGStaGK9Ghq6QteYKSLaelNRljHSSXUYE"
