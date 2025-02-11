@@ -1,11 +1,9 @@
 repo = "main"
 name = "openssl"
-version = """
-3.4.1
-"""
+version = "3.4.1"
 upstream = "https://github.com/openssl/openssl.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/openssl/openssl.git' | sed 's@.*/@@' | grep -Ev 'alpha|beta' | grep 'openssl-' | tail -n1"
 
 [source]
-url = "https://github.com/openssl/openssl/releases/download/openssl-3.4.0/openssl-3.4.0.tar.gz"
-hash = "4V3agv4v6BOdwqwho21MoB1TE8dfmfRsTooncJtylL8"
+url = "https://github.com/openssl/openssl/releases/download/openssl-3.4.1/openssl-3.4.1.tar.gz"
+hash = "ACotazC1i_S-pGxDvdljZar42qbEKHgqpP7uBtoZffM"
