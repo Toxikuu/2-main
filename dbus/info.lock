@@ -1,0 +1,4 @@
+repo = "main"
+name = "dbus"
+version = "1.16.0"
+upstream = "https://gitlab.freedesktop.org/dbus/dbus.git"
