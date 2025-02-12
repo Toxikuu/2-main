@@ -1,0 +1,8 @@
+repo = "main"
+name = "nettle"
+version = "3.10"
+upstream = "https://git.lysator.liu.se/nettle/nettle.git"
+
+[source]
+url = "https://ftp.gnu.org/gnu/nettle/nettle-3.10.tar.gz"
+hash = "tMUYrbF05ITLSs6lQRjwI4DHEzdx5-m-uYoHhxlO5Hw"
