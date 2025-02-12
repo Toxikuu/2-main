@@ -17,8 +17,6 @@ b-make clean
 b-32cfg
 b-make
 
-DIRS=(
-    /usr/libunwind/libunwind-x86.h
-) b-32mi
+DIRS=/usr/libunwind/libunwind-x86.h b-32mi # array syntax fucking sucks
 
 }
