@@ -1,0 +1,19 @@
+repo = "main"
+name = "ext4magic"
+version = "0.3.2"
+
+[source]
+url = "https://downloads.sourceforge.net/ext4magic/ext4magic-0.3.2.tar.gz"
+hash = "jZxqWU8hKuz061QQ0nfK6uo63APTU3glff0BfvIOoRU"
+
+[[extra]]
+url = "https://gitweb.gentoo.org/repo/gentoo.git/plain/sys-fs/ext4magic/files/ext4magic-0.3.2-fix-sys-types-h.patch"
+hash = "Sn596bsb1MQCiIxuI3JX_tl-KUfvkZLQMlv7UvxwULk"
+
+[[extra]]
+url = "https://gitweb.gentoo.org/repo/gentoo.git/plain/sys-fs/ext4magic/files/ext4magic-0.3.2-i_dir_acl.patch"
+hash = "5kBLMiedye8W0BuOd6UQznEcSgqhjun09yASqu2qqSg"
+
+[[extra]]
+url = "https://gitweb.gentoo.org/repo/gentoo.git/plain/sys-fs/ext4magic/files/ext4magic-0.3.2-sysmacros.patch"
+hash = "rmuqaH_c62_jtmGDnv52hAdlw-uXiTKa8HYmzuDrFGw"
