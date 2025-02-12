@@ -1,0 +1,8 @@
+repo = "main"
+name = "libunwind"
+version = "1.8.1"
+upstream = "https://github.com/libunwind/libunwind.git"
+
+[source]
+url = "https://github.com/libunwind/libunwind/releases/download/v1.8.1/libunwind-1.8.1.tar.gz"
+hash = "3fDjLdX6_lKDGY035L-d7Pe6F3C25-AGwz5t955qYVc"
