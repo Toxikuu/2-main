@@ -12,5 +12,7 @@ mkdir -pv build
 cd        build
 
 CP=.. b-ms -D server=disabled -D libseat-seatd=disabled
+b-ninja
+b-ni
 
 }
