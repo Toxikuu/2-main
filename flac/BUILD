@@ -1,5 +1,5 @@
 NAME="flac"
-VERS="1.4.3"
+VERS="1.5.0"
 DESC="Lossless audio codec"
 UPST="https://github.com/xiph/flac.git"
 
