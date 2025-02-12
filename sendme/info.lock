@@ -1,0 +1,8 @@
+repo = "main"
+name = "sendme"
+version = "0.23.0"
+upstream = "https://github.com/n0-computer/sendme.git"
+
+[source]
+url = "https://github.com/n0-computer/sendme/archive/refs/tags/v0.23.0.tar.gz"
+hash = "L_hXFdTCVA_ePQNHHIKcBX59XyHSbwjF5vDaXPspsWY"
