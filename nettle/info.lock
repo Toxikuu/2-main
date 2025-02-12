@@ -1,11 +1,9 @@
 repo = "main"
 name = "nettle"
-version = """
-3.10.1
-"""
+version = "3.10.1"
 upstream = "https://git.lysator.liu.se/nettle/nettle.git"
 version_command = "git ls-remote --tags --refs 'https://git.lysator.liu.se/nettle/nettle.git' | sed 's@.*/@@' | grep '_release_' | cut -d_ -f2 | sort -V | tail -n1"
 
 [source]
-url = "https://ftp.gnu.org/gnu/nettle/nettle-3.10.tar.gz"
-hash = "tMUYrbF05ITLSs6lQRjwI4DHEzdx5-m-uYoHhxlO5Hw"
+url = "https://ftp.gnu.org/gnu/nettle/nettle-3.10.1.tar.gz"
+hash = "sPzdf8DN6m6A3PHdhbp5SvDVtKV-Jjl-7jvBkyctkTI"
