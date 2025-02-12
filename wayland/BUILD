@@ -12,12 +12,12 @@ mkdir -pv build
 cd        build
 
 CP=.. b-ms -D documentation=false
-b-make
-b-mi
+b-ninja
+b-ni
 
 rm -rf ./*
 CP=.. b-32ms -D documentation=false
-b-make
-b-32mi
+b-ninja
+b-32ni
 
 }
