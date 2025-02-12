@@ -1,0 +1,8 @@
+repo = "main"
+name = "pixman"
+version = "0.44.2"
+upstream = "https://gitlab.freedesktop.org/pixman/pixman.git"
+
+[source]
+url = "https://www.x.org/releases/individual/lib/pixman-0.44.2.tar.xz"
+hash = "ULr4IN3gxf-XFNA9LfSXD2BqPTsQJPVATAOYqYIcxLA"
