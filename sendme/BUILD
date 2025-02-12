@@ -11,6 +11,8 @@ EXTRA=()
 . e-rust
 
 cargo build --release
+cargo strip || true
+
 install -vDm755 target/release/sendme "$D/usr/bin/sendme"
 
 }
