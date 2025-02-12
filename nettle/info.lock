@@ -1,6 +1,8 @@
 repo = "main"
 name = "nettle"
-version = "3.10"
+version = """
+3.10.1
+"""
 upstream = "https://git.lysator.liu.se/nettle/nettle.git"
 version_command = "git ls-remote --tags --refs 'https://git.lysator.liu.se/nettle/nettle.git' | sed 's@.*/@@' | grep '_release_' | cut -d_ -f2 | sort -V | tail -n1"
 
