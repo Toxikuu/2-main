@@ -1,0 +1,8 @@
+repo = "main"
+name = "gnutls"
+version = "3.8.9"
+upstream = "https://gitlab.com/gnutls/gnutls.git"
+
+[source]
+url = "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.9.tar.xz"
+hash = "aeET2ALRZwxNWsG5kECx8tXHwF2uxQA4E8BJtRhIIO0"
