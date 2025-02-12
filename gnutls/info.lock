@@ -2,6 +2,7 @@ repo = "main"
 name = "gnutls"
 version = "3.8.9"
 upstream = "https://gitlab.com/gnutls/gnutls.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.com/gnutls/gnutls.git' | sed -e 's@.*/@@' -e 's@_@.@g' -e 's@gnutls.@@' | grep -Ev 'pre|a|-' | sort -V | tail -n1"
 
 [source]
 url = "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.9.tar.xz"
