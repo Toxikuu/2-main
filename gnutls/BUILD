@@ -2,6 +2,7 @@ NAME="gnutls"
 VERS="3.8.9"
 DESC="Library providing a secure layer over a reliable transport layer"
 UPST="https://gitlab.com/gnutls/gnutls.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' -e 's@_@.@g' -e 's@gnutls.@@' | grep -Ev 'pre|a|-' | sort -V | tail -n1"
 DEPS=(
   "nettle"
   "make-ca"
