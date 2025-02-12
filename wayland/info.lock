@@ -1,0 +1,8 @@
+repo = "main"
+name = "wayland"
+version = "1.23.1"
+upstream = "https://gitlab.freedesktop.org/wayland/wayland.git"
+
+[source]
+url = "https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.1/downloads/wayland-1.23.1.tar.xz"
+hash = "hk-yqDmeLQ7DnVbp2bdTwJN3W-rcYCLOgfRBkpqB5e0"
