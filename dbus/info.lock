@@ -2,3 +2,11 @@ repo = "main"
 name = "dbus"
 version = "1.16.0"
 upstream = "https://gitlab.freedesktop.org/dbus/dbus.git"
+
+[source]
+url = "https://dbus.freedesktop.org/releases/dbus/dbus-1.16.0.tar.xz"
+hash = "n4yl61HL4JlRrshiS4bCkpkK4kKLQbhW4r7RfsZciEk"
+
+[[extra]]
+url = "https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20240913.tar.xz"
+hash = "bwEU5cPSdYnN8HY8tPAVodVmJtbJYG25qDWXhCh7XTs"
