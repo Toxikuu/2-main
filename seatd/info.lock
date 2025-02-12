@@ -1,0 +1,8 @@
+repo = "main"
+name = "seatd"
+version = "0.9.1"
+upstream = "https://github.com/kennylevinsen/seatd.git"
+
+[source]
+url = "https://git.sr.ht/~kennylevinsen/seatd/archive/0.9.1.tar.gz"
+hash = "gZl5ySKgviWK7RM9k5ILzmo9NWWmBYjW03LOnbJxLNM"
