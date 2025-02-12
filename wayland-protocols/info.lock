@@ -1,0 +1,8 @@
+repo = "main"
+name = "wayland-protocols"
+version = "1.40"
+upstream = "https://gitlab.freedesktop.org/wayland/wayland-protocols.git"
+
+[source]
+url = "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.40/downloads/wayland-protocols-1.40.tar.xz"
+hash = "shcReTJHwsQnY5FDkt-p_LnjcoyktKoRCtuNkV_ABok"
