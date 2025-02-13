@@ -1,0 +1,8 @@
+repo = "main"
+name = "pciutils"
+version = "3.13.0"
+upstream = "https://github.com/pciutils/pciutils.git"
+
+[source]
+url = "https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz"
+hash = ""
