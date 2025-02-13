@@ -1,0 +1,8 @@
+repo = "main"
+name = "vulkan-headers"
+version = "1.4.304"
+upstream = "https://github.com/KhronosGroup/Vulkan-Headers.git"
+
+[source]
+url = "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.304/Vulkan-Headers-1.4.304.tar.gz"
+hash = ""
