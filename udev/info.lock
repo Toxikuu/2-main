@@ -1,6 +1,8 @@
 repo = "main"
 name = "udev"
-version = "257.2"
+version = """
+257.3
+"""
 upstream = "https://github.com/systemd/systemd.git"
 
 [source]
