@@ -1,10 +1,8 @@
 repo = "main"
 name = "eza"
-version = """
-0.20.21
-"""
+version = "0.20.21"
 upstream = "https://github.com/eza-community/eza.git"
 
 [source]
-url = "https://github.com/eza-community/eza/archive/refs/tags/v0.20.20.tar.gz"
+url = "https://github.com/eza-community/eza/archive/refs/tags/v0.20.21.tar.gz"
 hash = ""
