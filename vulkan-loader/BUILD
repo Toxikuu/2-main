@@ -11,14 +11,14 @@ EXTRA=()
 mkdir -pv build
 cd        build
 
-b-cmake
+CP=.. b-cmake
 b-ninja
 b-ni
 
 rm -rf ./*
 
 ASFLAGS=--32 CFLAGS=-m32 CXXFLAGS=-m32 \
-b-32cmake
+CP=.. b-32cmake
 b-ninja
 b-32ni
 
