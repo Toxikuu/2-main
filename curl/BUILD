@@ -1,5 +1,5 @@
 NAME="curl"
-VERS="8.12.0"
+VERS="8.12.1"
 DESC="Tool and library for transferring data with URLs"
 UPST="https://github.com/curl/curl.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E '^curl-[0-9]+' | grep -Ev 'pre|alpha' | sed 's@_@.@g' | cut -d- -f2 | sort -V | tail -n1"
@@ -36,4 +36,3 @@ b-make
 b-32mi
 
 }
-
