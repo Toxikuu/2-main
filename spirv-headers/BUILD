@@ -12,7 +12,7 @@ EXTRA=()
 mkdir -pv build
 cd        build
 
-b-cmake
+CP=.. b-cmake
 b-ninja
 b-ni
 
