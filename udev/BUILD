@@ -1,5 +1,5 @@
 NAME="udev"
-VERS="257.2"
+VERS="257.3"
 DESC="Programs for dynamic device node creation"
 UPST="https://github.com/systemd/systemd.git"
 
