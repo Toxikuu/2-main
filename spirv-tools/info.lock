@@ -1,0 +1,9 @@
+repo = "main"
+name = "spirv-tools"
+version = "1.4.304.1"
+upstream = "https://github.com/KhronosGroup/SPIRV-Headers.git"
+version_command = "git ls-remote --tags 'https://github.com/KhronosGroup/SPIRV-Headers.git' | sed 's@.*/@@' | sort -V | tail -n1 | cut  -d- -f3"
+
+[source]
+url = "https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.304.1/SPIRV-Tools-1.4.304.1.tar.gz"
+hash = ""
