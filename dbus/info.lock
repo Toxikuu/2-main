@@ -2,6 +2,7 @@ repo = "main"
 name = "dbus"
 version = "1.16.0"
 upstream = "https://gitlab.freedesktop.org/dbus/dbus.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/dbus/dbus.git' | sed 's@.*/@@' | grep -E 'dbus-[0-9]' | sort -V | tail -n1"
 
 [source]
 url = "https://dbus.freedesktop.org/releases/dbus/dbus-1.16.0.tar.xz"
