@@ -5,4 +5,4 @@ upstream = "https://github.com/pciutils/pciutils.git"
 
 [source]
 url = "https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz"
-hash = ""
+hash = "oDyIoKq3CbFpfKF1N2b0Q-eCl_hMe82AqCwUIu3Xy0I"
