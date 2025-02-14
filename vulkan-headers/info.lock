@@ -5,5 +5,5 @@ upstream = "https://github.com/KhronosGroup/Vulkan-Headers.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/KhronosGroup/Vulkan-Headers.git' | sed 's@.*/@@' | grep -E '^v[0-9]' | tail -n1"
 
 [source]
-url = "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.304/Vulkan-Headers-1.4.304.tar.gz"
-hash = ""
+url = "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.307/Vulkan-Headers-1.4.307.tar.gz"
+hash = "XhoGs_J-dYG1XR3qF2_ZfuCi8plAbbL0N8HS8pfOuls"
