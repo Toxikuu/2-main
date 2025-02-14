@@ -6,4 +6,4 @@ version_command = "git ls-remote --tags --refs 'https://github.com/KhronosGroup/
 
 [source]
 url = "https://github.com/KhronosGroup/glslang/archive/15.1.0/glslang-15.1.0.tar.gz"
-hash = ""
+hash = "S9zYzbMwMT8NTe7XvlJ7CsHBFf8nLkkoU6bpit1htLw"
