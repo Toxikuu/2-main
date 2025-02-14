@@ -6,4 +6,4 @@ version_command = "git ls-remote --tags 'https://github.com/KhronosGroup/SPIRV-H
 
 [source]
 url = "https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.304.1/SPIRV-Tools-1.4.304.1.tar.gz"
-hash = ""
+hash = "n-c2mA1CTATxMDrnG5Sxi8xgRq40iQnDkzRKReG9f_g"
