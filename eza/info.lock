@@ -5,4 +5,4 @@ upstream = "https://github.com/eza-community/eza.git"
 
 [source]
 url = "https://github.com/eza-community/eza/archive/refs/tags/v0.20.21.tar.gz"
-hash = ""
+hash = "uw4zwoD0n4viJu_0_zdzu75ZWscWt0gXuZASSN9rz9M"
