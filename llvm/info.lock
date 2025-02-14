@@ -1,0 +1,25 @@
+repo = "main"
+name = "llvm"
+version = "19.1.7"
+upstream = "https://github.com/llvm/llvm-project.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/llvm/llvm-project.git' | cut -d- -f2- | grep -v [a-Z] | sort -V | tail -n1"
+
+[source]
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/llvm-19.1.7.src.tar.xz"
+hash = ""
+
+[[extra]]
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/cmake-19.1.7.src.tar.xz"
+hash = ""
+
+[[extra]]
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/third-party-19.1.7.src.tar.xz"
+hash = ""
+
+[[extra]]
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/clang-19.1.7.src.tar.xz"
+hash = ""
+
+[[extra]]
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/compiler-rt-19.1.7.src.tar.xz"
+hash = ""
