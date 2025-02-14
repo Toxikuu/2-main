@@ -5,5 +5,5 @@ upstream = "https://github.com/KhronosGroup/Vulkan-Loader.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/KhronosGroup/Vulkan-Loader.git' | sed 's@.*/@@' | grep -E '^v[0-9]' | tail -n1"
 
 [source]
-url = "https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.304/Vulkan-Loader-1.4.304.tar.gz"
-hash = ""
+url = "https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.307/Vulkan-Loader-1.4.307.tar.gz"
+hash = "No2CgWBKP03uA4v8xVxE4wUDHsZ_bj_dUM3rg1hsmfk"
