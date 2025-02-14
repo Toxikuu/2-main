@@ -13,19 +13,14 @@ EXTRA=(
 
 2b() {
 
-b-patch "$SRC/yajl-$VERS-*.patch"
+for patch in "$SRC/yajl-$VERS-"*.patch; do
+    b-patch "$patch"
+done
 
 mkdir -pv build
 cd        build
 
-cmake \
-  -D CMAKE_INSTALL_PREFIX=/usr      \
-  -D CMAKE_BUILD_TYPE=Release       \
-  -D BUILD_SHARED_LIBS=ON           \
-  -D CMAKE_SKIP_INSTALL_RPATH=ON    \
-  "$@"
-  -W no-dev -G Ninja ..
-
+CP=.. b-cmake
 b-ninja
 b-ni
 
