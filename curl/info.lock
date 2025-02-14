@@ -5,5 +5,5 @@ upstream = "https://github.com/curl/curl.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/curl/curl.git' | sed 's@.*/@@' | grep -E '^curl-[0-9]+' | grep -Ev 'pre|alpha' | sed 's@_@.@g' | cut -d- -f2 | sort -V | tail -n1"
 
 [source]
-url = "https://curl.se/download/curl-8.12.0.tar.xz"
-hash = ""
+url = "https://curl.se/download/curl-8.12.1.tar.xz"
+hash = "mkYox2S-axqZCVZ8E-jncQQWCd9DshWPysTgXqcJfl0"
