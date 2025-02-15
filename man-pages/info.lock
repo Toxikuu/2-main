@@ -1,6 +1,6 @@
 repo = "main"
 name = "man-pages"
-version = "6.10"
+version = "6.11"
 upstream = "https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git"
 
 [source]
