@@ -1,5 +1,5 @@
 NAME="man-pages"
-VERS="6.10"
+VERS="6.11"
 DESC="A man page database"
 UPST="https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git"
 
