@@ -1,5 +1,5 @@
 NAME="iana-etc"
-VERS="20250123"
+VERS="20250213"
 DESC="The Internet Assigned Numbers Authority's services and protocols"
 UPST="https://github.com/Mic92/iana-etc.git"
 VCMD="git ls-remote --tags '$UPST' | sed 's@.*/@@' | sort -V | grep -B1 untagged | head -n1"
@@ -12,5 +12,3 @@ EXTRA=()
 install -vDm644 -t "$D"/etc services protocols
 
 }
-
-#d fixed .uv.toml
