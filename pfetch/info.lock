@@ -1,0 +1,8 @@
+repo = "main"
+name = "pfetch"
+version = "0.6.0"
+upstream = "https://github.com/dylanaraps/pfetch.git"
+
+[source]
+url = "https://github.com/dylanaraps/pfetch/archive/refs/tags/0.6.0.tar.gz"
+hash = "0fYR5hwfiuVb0U-PYFTQb8uaLZcwlTZ8FiaELbZrMYI"
