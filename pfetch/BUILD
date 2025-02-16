@@ -8,6 +8,6 @@ EXTRA=()
 
 2b() {
 
-b-mi
+install -vDm755 pfetch "$D"/usr/bin/pfetch
 
 }
