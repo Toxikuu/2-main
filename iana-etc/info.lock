@@ -1,6 +1,6 @@
 repo = "main"
 name = "iana-etc"
-version = "20250123"
+version = "20250213"
 upstream = "https://github.com/Mic92/iana-etc.git"
 version_command = "git ls-remote --tags 'https://github.com/Mic92/iana-etc.git' | sed 's@.*/@@' | sort -V | grep -B1 untagged | head -n1"
 
