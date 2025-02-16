@@ -14,7 +14,7 @@ b-pipinstall meson
 install -vDm644 data/shell-completions/bash/meson "$D"/usr/share/bash-completion/completions/meson
 install -vDm644 data/shell-completions/zsh/_meson "$D"/usr/share/zsh/site-functions/_meson
 
-cp -av "$PORT"/usr/* "$D"/usr/
+cp -av {"$PORT"/usr,"$D"}
 
 }
-#d usr/usr bugfix
+#d nevermind, it was fine before
