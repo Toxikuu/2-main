@@ -1,6 +1,6 @@
 NAME="flac"
 VERS="1.5.0"
-DESC="Lossless audio codec"
+DESC="Free lossless audio codec"
 UPST="https://github.com/xiph/flac.git"
 
 SOURCE="https://downloads.xiph.org/releases/flac/flac-$VERS.tar.xz"
