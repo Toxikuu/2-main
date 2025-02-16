@@ -1,0 +1,8 @@
+repo = "main"
+name = "fastfetch"
+version = "2.36.1"
+upstream = "https://github.com/fastfetch-cli/fastfetch.git"
+
+[source]
+url = "https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.36.1.tar.gz"
+hash = "SQ1blx3X-sTDEBg1SQT91eLECZJLqGgVe9o7_h-1xIU"
