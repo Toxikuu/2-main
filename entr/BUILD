@@ -8,6 +8,7 @@ EXTRA=()
 
 2b() {
 
+export PREFIX='/usr'
 b-cfg
 b-mi
 
