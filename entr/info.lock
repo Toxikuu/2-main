@@ -1,0 +1,8 @@
+repo = "main"
+name = "entr"
+version = "5.7"
+upstream = "https://github.com/eradman/entr.git"
+
+[source]
+url = "https://github.com/eradman/entr/archive/refs/tags/5.7.tar.gz"
+hash = "kMXZQ4IMcM7zfrQaOCpupPXdf9le_vE7K1Ug0yD10Gc"
