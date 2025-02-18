@@ -10,13 +10,12 @@ DEPS="rust"
 
 2b() {
 
-. e-rust
+with rust
 
 [ ! -e /usr/include/libssh2.h ] || export LIBSSH2_SYS_USE_PKG_CONFIG=1
 [ ! -e /usr/include/sqlite3.h ] || export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
-cargo build --release
+cbr
 
-mkdir -pv "$D/usr/bin"
-install -vm755 target/release/cargo-{capi,cbuild,cinstall,ctest} "$D"/usr/bin/
+install -vDm755 target/release/cargo-{capi,cbuild,cinstall,ctest} "$D"/usr/bin/
 
 }
