@@ -25,7 +25,7 @@ CP=.. cfg \
 
 mk tooldir=/usr
 
-mk -k check || true
+make -k check || true
 NUMFAILED=$(grep '^FAIL:' $(find -name '*.log') | wc -l)
 
 if [ NUMFAILED -gt 12 ]; then
