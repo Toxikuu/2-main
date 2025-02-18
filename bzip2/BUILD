@@ -11,11 +11,11 @@ EXTRA=()
 sed -i 's@\(ln -s -f \)$(PREFIX)/bin/@\1@' Makefile
 sed -i "s@(PREFIX)/man@(PREFIX)/share/man@g" Makefile
 
-b-make -f Makefile-libbz2_so
-b-make clean
+mk -f Makefile-libbz2_so
+mk clean
 
-b-make
-make PREFIX=D/usr install
+mk
+mk PREFIX=D/usr install
 
 cp -av libbz2.so.* "$D"/usr/lib
 ln -sv libbz2.so.$VERS "$D"/usr/lib/libbz2.so
@@ -27,10 +27,10 @@ done
 
 rm -fv "$D"/usr/lib/libbz2.a
 
-b-make clean
+mk clean
 sed -e "s/^CC=.*/CC=gcc -m32/" -i Makefile{,-libbz2_so}
-b-make -f Makefile-libbz2_so
-b-make libbz2.a
+mk -f Makefile-libbz2_so
+mk libbz2.a
 
 install -vDm755 libbz2.so.$VERS "$D"/usr/lib32/libbz2.so.$VERS
 ln -sf libbz2.so.$VERS "$D"/usr/lib32/libbz2.so
