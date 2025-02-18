@@ -1,0 +1,8 @@
+repo = "main"
+name = "iniparser"
+version = "4.2.6"
+upstream = "https://github.com/ndevilla/iniparser.git"
+
+[source]
+url = "https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.6.tar.gz"
+hash = "oL03BxOnRLH6jsJ7uoiev529QwYOyS4H--kftD48s6w"
