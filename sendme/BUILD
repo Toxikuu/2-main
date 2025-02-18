@@ -8,11 +8,9 @@ EXTRA=()
 
 2b() {
 
-. e-rust
+with rust
 
-cargo build --release
-cargo strip || true
-
+cbr
 install -vDm755 target/release/sendme "$D/usr/bin/sendme"
 
 }
