@@ -9,13 +9,14 @@ EXTRA=()
 2b() {
 
 mkdir -pv build
-CP=build b-cmake        \
+cd        build
+
+CP=.. b-cmake           \
   -DBUILD_DOCS=OFF      \
   -DBUILD_EXAMPLES=OFF  \
   -DBUILD_STATIC_LIBS=OFF
 
-cmake --build build
-cd build
+cmake --build .
 b-mi
 
 }
