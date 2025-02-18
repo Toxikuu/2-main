@@ -8,8 +8,8 @@ EXTRA=()
 
 2b() {
 
-b-cfg --prefix=/usr
-b-make
-b-mi
+cfg
+mk
+mi
 
 }
