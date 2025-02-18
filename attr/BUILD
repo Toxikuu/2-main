@@ -8,14 +8,15 @@ EXTRA=()
 
 2b() {
 
-b-cfg --sysconfdir=/etc
-b-make
-b-mi
+cfg --sysconfdir=/etc
+mk
+mi
 
-b-make distclean
-b-32cfg --sysconfdir=/etc
+mk distclean
+m32=1
 
-b-make
-b-32mi
+cfg --sysconfdir=/etc
+mk
+32mi
 
 }
