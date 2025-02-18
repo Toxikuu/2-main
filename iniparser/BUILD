@@ -16,7 +16,7 @@ CP=.. b-cmake           \
   -DBUILD_EXAMPLES=OFF  \
   -DBUILD_STATIC_LIBS=OFF
 
-cmake --build .
+cmake --build ../build
 b-mi
 
 }
