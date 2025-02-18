@@ -8,18 +8,18 @@ EXTRA=()
 
 2b() {
 
-sed -e 's/acp-pdm-dmic/acp-dmic-codec/'                   \
-    -e '/LABEL="alsa_restore_go"/s/go/std/'               \
-    -e '/^ENV.ALSA_CARD_NUMBER/i LABEL="alsa_restore_go"' \
-    -i alsactl/90-alsa-restore.rules.in
+tsed -e 's/acp-pdm-dmic/acp-dmic-codec/'                   \
+     -e '/LABEL="alsa_restore_go"/s/go/std/'               \
+     -e '/^ENV.ALSA_CARD_NUMBER/i LABEL="alsa_restore_go"' \
+     -i alsactl/90-alsa-restore.rules.in
 
-DS=1 b-cfg \
+cfg \
     --disable-alsaconf  \
     --disable-bat       \
     --disable-xmlto     \
     --with-curses=ncursesw
-b-make
-b-mi
+mk
+mi
 
 }
 
