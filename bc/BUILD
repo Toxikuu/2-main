@@ -10,7 +10,7 @@ EXTRA=()
 2b() {
 
 CC=gcc ./configure --prefix=/usr -G -O3 -r
-b-make
-b-mi
+mk
+mi
 
 }
