@@ -9,11 +9,11 @@ EXTRA=()
 
 2b() {
 
-DS=1 b-cfg \
+cfg \
     --without-bash-malloc \
     --with-installed-readline
-b-make
-b-mi
+mk
+mi
 
 }
 
@@ -23,5 +23,3 @@ echo "To replace the current shell, run:" >&2
 echo "exec /usr/bin/bash --login" >&2
 
 }
-
-#d i hate escape sequences
