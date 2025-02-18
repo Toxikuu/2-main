@@ -11,7 +11,7 @@ SOURCE="https://sourceware.org/pub/binutils/releases/binutils-$VERS.tar.xz"
 mkdir -v build
 cd       build
 
-DS=1 CP=.. b-cfg \
+CP=.. cfg \
     --sysconfdir=/etc       \
     --enable-gold           \
     --enable-ld=default     \
@@ -23,16 +23,16 @@ DS=1 CP=.. b-cfg \
     --enable-multilib       \
     --enable-default-hash-style=gnu
 
-b-make tooldir=/usr
+mk tooldir=/usr
 
-make -k check || true
+mk -k check || true
 NUMFAILED=$(grep '^FAIL:' $(find -name '*.log') | wc -l)
 
 if [ NUMFAILED -gt 12 ]; then
     die "$NUMFAILED tests failed (<= 12 is acceptable)"
 fi
 
-b-mi tooldir=/usr
+mi tooldir=/usr
 rm -vf "$D"/usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a
 
 }
