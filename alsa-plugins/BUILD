@@ -8,14 +8,15 @@ EXTRA=()
 
 2b() {
 
-DS=1 b-cfg --sysconfdir=/etc --disable-libav
-b-make
-b-mi
+cfg --sysconfdir=/etc --disable-libav
+mk
+mi
 
-b-make distclean
+mk distclean
 
-DS=1 b-32cfg --sysconfdir=/etc --disable-libav
-b-make
-b-32mi
+m32=1
+cfg --sysconfdir=/etc --disable-libav
+mk
+mi
 
 }
