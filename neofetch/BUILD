@@ -8,6 +8,6 @@ EXTRA=()
 
 2b() {
 
-b-mi
+mi
 
 }
