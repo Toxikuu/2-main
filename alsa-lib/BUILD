@@ -8,15 +8,16 @@ EXTRA=()
 
 2b() {
 
-DS=1 b-cfg
-b-make
-b-mi
+DONT_DISABLE_STATIC=1
+cfg
+mk
+mi
 
-b-make distclean
+mk distclean
 
-DS=1 b-32cfg
-b-make
-b-32mi
-
+m32=1
+cfg
+mk
+mi
 
 }
