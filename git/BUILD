@@ -13,16 +13,15 @@ EXTRA=(
 PV=$(cat "$PORT"/../perl/.data/INSTALLED)
 [ -z "$PV" ] && die "git depends on perl"
 
-DS=1 b-cfg \
+cfg \
     --with-python=python3 \
     --with-gitconfig=/etc/gitconfig
 
-b-make
-b-mi perllibdir=/usr/lib/perl${PV%.*.*}/${PV%.*}/site_perl
+mk
+mi perllibdir=/usr/lib/perl${PV%.*.*}/${PV%.*}/site_perl
 
 mkdir -pv "$D"/usr/share/man
 tar xvf "$SRC"/git-manpages-$VERS.tar.xz \
     -C "$D"/usr/share/man --no-same-owner --no-overwrite-dir
 
 }
-UPST=https://github.com/git/git.git
