@@ -15,6 +15,8 @@ EXTRA=(
 
 2b() {
 
+with cmake ninja
+
 tar -xf "$SRC/cmake-$VERS.src.tar.xz"
 tar -xf "$SRC/third-party-$VERS.src.tar.xz"
 
@@ -34,9 +36,6 @@ grep -rl '#!.*python' | xargs sed -i '1s/python$/python3/'
 # install filecheck (needed by some package test suites)
 sed 's/utility/tool/' -i utils/FileCheck/CMakeLists.txt
 
-mkdir -pv build
-cd        build
-
 # the amdgpu target is excluded
 # TODO: ^ include it, and move my slightly tailored llvm build to tox
 _cfg_opts=(
@@ -52,23 +51,24 @@ _cfg_opts=(
 )
 
 CC=gcc CXX=g++ \
-CP=.. b-cmake ${_cfg_opts[@]}
-b-ninja
-b-ni
+cm ${_cfg_opts[@]}
+nj
+ni
 
 cp bin/FileCheck "$D"/usr/bin
-rm -rf ./*
+cd ..
+m32=1
 
 CC=gcc CXX=g++ \
-CP=.. b-32cmake ${_cfg_opts[@]}                       \
+cm ${_cfg_opts[@]}                                    \
     -D CMAKE_C_FLAGS:STRING=-m32                      \
     -D CMAKE_CXX_FLAGS:STRING=-m32                    \
     -D LLVM_TARGET_ARCH:STRING=i686                   \
     -D LLVM_LIBDIR_SUFFIX=32                          \
     -D LLVM_DEFAULT_TARGET_TRIPLE="i686-pc-linux-gnu" \
     -D LLVM_HOST_TRIPLE="x86_64-pc-linux-gnu"
-b-ninja
-b-32ni
+nj
+ni
 
 mkdir -pv "$D/etc/clang"
 for i in clang clang++; do
