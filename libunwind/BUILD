@@ -8,16 +8,17 @@ EXTRA=()
 
 2b() {
 
-b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
-b-make clean
+mk clean
+m32=1
 
-b-32cfg
-b-make
+cfg
+mk
 
-b-32mi # array syntax fucking sucks
+mi
 cp -v "$BLD"/32DEST/usr/include/libunwind-x86.h "$D"/usr/include/
 
 }
