@@ -8,9 +8,9 @@ EXTRA=()
 
 2b() {
 
-b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
 mkdir -pv "$D"/usr/share/gdb/auto-load/usr/lib
 mv -v "$D"/usr/lib/libisl*gdb.py "$D"/usr/share/gdb/auto-load/usr/lib
