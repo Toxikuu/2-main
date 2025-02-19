@@ -20,10 +20,9 @@ _cfg_opts=(
     --disable-manpages
 )
 
-DS=1 b-cfg "${_cfg_opts[@]}"
-
-b-make
-b-mi
+cfg "${_cfg_opts[@]}"
+mk
+mi
 
 for target in depmod insmod modinfo modprobe rmmod; do
   ln -sfv ../bin/kmod "$D"/usr/sbin/$target
@@ -31,13 +30,13 @@ for target in depmod insmod modinfo modprobe rmmod; do
 done
 
 sed -e "s/^CLEANFILES =.*/CLEANFILES =/" -i man/Makefile
-b-make clean
+mk clean
+m32=1
 
-DS=1 b-32cfg \
-    "${_cfg_opts[@]}" \
+cfg "${_cfg_opts[@]}" \
     --with-rootlibdir=/usr/lib32
 
-b-make
-b-32mi
+mk
+mi
 
 }
