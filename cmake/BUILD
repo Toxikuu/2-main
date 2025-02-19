@@ -14,7 +14,7 @@ EXTRA=()
 
 2b() {
 
-sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
+tsed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
 
 ./bootstrap --prefix=/usr          \
             --parallel=$(nproc)    \
@@ -24,7 +24,7 @@ sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
             --no-system-cppdap     \
             --no-system-librhash   \
             --docdir=/share/doc/cmake-$VERS
-b-make
-b-mi
+mk
+mi
 
 }
