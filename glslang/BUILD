@@ -9,6 +9,8 @@ EXTRA=()
 
 2b() {
 
+with cmake ninja
+
 _cfg_opts=(
     -D ALLOW_EXTERNAL_SPIRV_TOOLS=ON
     -D GLSLANG_TESTS=OFF
