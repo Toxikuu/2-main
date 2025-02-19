@@ -5,7 +5,7 @@
 # TODO: Make a more generic kernel config
 
 NAME="kernel"
-VERS="6.13.2"
+VERS="6.13.3"
 DESC="The Linux kernel"
 VCMD="curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 UPST="https://kernel.org"
