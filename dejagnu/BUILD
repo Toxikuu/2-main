@@ -12,7 +12,12 @@ EXTRA=()
 mkdir -pv build
 cd        build
 
-cfg
+CP=.. cfg
+makeinfo --html --no-split -o doc/dejagnu.html ../doc/dejagnu.texi
+makeinfo --plaintext       -o doc/dejagnu.txt  ../doc/dejagnu.texi
 mi
+
+install -vdm755  "$D"/usr/share/doc/dejagnu
+install -vm644   doc/dejagnu.{html,txt} "$D"/usr/share/doc/dejagnu
 
 }
