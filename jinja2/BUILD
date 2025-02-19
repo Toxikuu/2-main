@@ -8,6 +8,8 @@ EXTRA=()
 
 2b() {
 
+with python
+
 pipb
 pipi "$NAME"
 
