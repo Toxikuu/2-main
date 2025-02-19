@@ -10,7 +10,7 @@ NAME="glibc"
 VERS="2.41"
 DESC="The GNU C library"
 UPST="https://sourceware.org/git/glibc.git"
-VCMD="git ls-remote --tags --refs '$UPST' | tsed 's@.*/@@' | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\\.' | sort -V | tail -n1"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\\.' | sort -V | tail -n1"
 
 SOURCE="https://ftp.gnu.org/gnu/glibc/glibc-$VERS.tar.xz"
 EXTRA=("https://www.linuxfromscratch.org/patches/lfs/development/glibc-$VERS-fhs-1.patch")
@@ -31,10 +31,10 @@ CP=.. cfg \
              libc_cv_slibdir=/usr/lib
 
 mk
-tsed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
+sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
 
 mi
-tsed '/RTLDLIST=/s@/usr@@g' -i "$D"/usr/bin/ldd
+sed '/RTLDLIST=/s@/usr@@g' -i "$D"/usr/bin/ldd
 
 pushd ..
 mk -C "$PWD/localedata" objdir="$PWD/build" \
