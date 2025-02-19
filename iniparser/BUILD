@@ -8,6 +8,8 @@ EXTRA=()
 
 2b() {
 
+with cmake
+
 cm
   -D BUILD_DOCS=OFF               \
   -D BUILD_EXAMPLES=OFF           \
