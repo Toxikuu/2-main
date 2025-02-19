@@ -3,7 +3,7 @@ VERS="2.83.3"
 GOBJV="1.82.0"
 DESC="Low level core library"
 UPST="https://github.com/GNOME/glib.git"
-VCMD="git ls-remote --tags --refs '$UPST' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' | head -n1 | tsed 's@.*/@@'"
+VCMD="git ls-remote --tags --refs '$UPST' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' | head -n1 | sed 's@.*/@@'"
 
 SOURCE="https://download.gnome.org/sources/glib/${VERS%.*}/glib-$VERS.tar.xz"
 EXTRA=(
@@ -36,7 +36,7 @@ ni
 # ty @seal331
 mkdir -pv "$BLD"/pkgconfigtmp
 cp -vf {"$PORT","$BLD"/pkgconfigtmp}/glib-2.0.pc
-tsed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/glib-2.0.pc
+sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/glib-2.0.pc
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.xz
 
 export PKG_CONFIG_PATH="$BLD/pkgconfigtmp"
