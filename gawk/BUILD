@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-tsed -i 's/extras//' Makefile.in
+sed -i 's/extras//' Makefile.in
 cfg
 mk
 mi
