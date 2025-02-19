@@ -11,9 +11,10 @@ EXTRA=()
 
 sed -i 's:\\\${:\\\$\\{:' intltool-update.in
 
-./configure --prefix=/usr
-b-make
-b-mi
+# ./configure --prefix=/usr
+cfg
+mk
+mi
 
 install -vDm644 doc/I18N-HOWTO "$D"/usr/share/doc/intltool-$VERS/I18N-HOWTO
 
