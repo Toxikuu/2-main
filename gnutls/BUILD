@@ -16,8 +16,8 @@ EXTRA=()
 
 2b() {
 
-b-cfg --with-default-trust-store-pkcs11="pkcs11:"
-b-make
-b-mi
+cfg --with-default-trust-store-pkcs11="pkcs11:"
+mk
+mi
 
 }
