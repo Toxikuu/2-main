@@ -24,8 +24,8 @@ _cfg_opts=(
     --disable-servers
 )
 
-./configure "${_cfg_opts[@]}"
-b-make
-b-mi
+cfg "${_cfg_opts[@]}"
+mk
+mi
 
 }
