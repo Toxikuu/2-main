@@ -12,7 +12,7 @@ cfg
 mk
 mi
 
-make clean
+mk clean
 m32=1
 
 cfg
