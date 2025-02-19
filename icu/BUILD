@@ -11,14 +11,15 @@ EXTRA=()
 
 cd source
 
-DS=1 b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
-b-make clean
+mk clean
+m32=1
 
-DS=1 b-32cfg
-b-make
-b-32mi
+cfg
+mk
+mi
 
 }
