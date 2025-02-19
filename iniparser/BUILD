@@ -16,6 +16,7 @@ cm \
   -D BUILD_STATIC_LIBS=OFF
 
 cmake --build .
+pwd; ls
 mi
 
 }
