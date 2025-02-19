@@ -11,7 +11,7 @@ EXTRA=()
 mkdir -pv build
 cd        build
 
-CP=.. b-cfg \
+CP=.. cfg \
     --sysconfdir=/etc   \
     --enable-elf-shlibs \
     --disable-libblkid  \
@@ -20,8 +20,8 @@ CP=.. b-cfg \
     --disable-fuse2fs   \
     --disable-fsck
 
-b-make
-b-mi
+mk
+mi
 
 rm -vf "$D"/usr/lib/{libcom_err,libe2p,libext2fs,libss}.a
 
