@@ -68,5 +68,5 @@ fi
 }
 
 2z() {
-    warn "The kernel has been compiled and installed to /boot. You must not specify it in your bootloader or whatever. Also, if you use nvidia drivers, you're gonna wanna rebuild those."
+    warn "The kernel has been compiled and installed to /boot. You must now specify it in your bootloader or whatever. Also, if you use nvidia drivers, you're gonna wanna rebuild those."
 }
