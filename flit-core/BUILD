@@ -8,6 +8,8 @@ EXTRA=()
 
 2b() {
 
+with pip
+
 pipb
 NAME="${NAME//-/_}" pipi
 
