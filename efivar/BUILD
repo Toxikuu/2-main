@@ -9,7 +9,7 @@ EXTRA=()
 
 2b() {
 
-b-make ENABLE_DOCS=0
-b-mi LIBDIR=/usr/lib ENABLE_DOCS=0
+mk ENABLE_DOCS=0
+mi LIBDIR=/usr/lib ENABLE_DOCS=0
 
 }
