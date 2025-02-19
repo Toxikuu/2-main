@@ -12,10 +12,10 @@ EXTRA=()
 sed -i '/LIBPOSTFIX="64"/s/64//' configure.ac
 
 ./autogen.sh
-DS=1 b-cfg
+cfg
 
 sed -i "s/0/$(date +%Y%m%d)/" builddate.h
-b-make
-b-mi
+mk
+mi
 
 }
