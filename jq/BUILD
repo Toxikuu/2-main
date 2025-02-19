@@ -10,9 +10,9 @@ DEPS="rust"
 
 2b() {
 
-. e-rust
+with rust
 
-cargo build --release
+cbr
 install -vDm755 target/release/jaq "$D/usr/bin/jaq"
 ln -sv jaq "$D/usr/bin/jq"
 
