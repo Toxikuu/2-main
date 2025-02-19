@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-tsed -e '/^structured/s/xmlError \*/typeof(xmlCtxtGetLastError(NULL)) /' \
+sed -e '/^structured/s/xmlError \*/typeof(xmlCtxtGetLastError(NULL)) /' \
     -i gettext-tools/src/its.c
 
 _cfg_opts=(
