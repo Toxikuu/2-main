@@ -11,21 +11,20 @@ DEPS=( "freetype" ) # circular (freetype -> harfbuzz -> freetype)
 
 2b() {
 
-mkdir -pv build
-cd        build
+with meson ninja
 
-CP=.. b-ms -D graphite2=disabled
-b-ninja
-b-ni
+ms  -D graphite2=disabled
+nj
+ni
 
-rm -rf {,.}*
+cd ..
+m32=1
 
-CP=.. b-32ms              \
-    -D glib=disabled      \
+ms  -D glib=disabled      \
     -D cairo=disabled     \
     -D gobject=disabled   \
     -D graphite2=disabled
-b-ninja
-b-32ni
+nj
+ni
 
 }
