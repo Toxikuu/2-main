@@ -8,8 +8,8 @@ EXTRA=()
 
 2b() {
 
-b-cfg --localstatedir=/var/lib/locate
-b-make
-b-mi
+cfg --localstatedir=/var/lib/locate
+mk
+mi
 
 }
