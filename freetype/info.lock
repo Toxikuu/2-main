@@ -2,7 +2,7 @@ repo = "main"
 name = "freetype"
 version = "2.13.3"
 upstream = "https://gitlab.freedesktop.org/freetype/freetype.git"
-version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/freetype/freetype.git' | tsed -e 's@.*/@@' -e 's@VER-@@' -e 's@-@.@g' | grep -Ev '[a-Z]+' | sort -V | tail -n1"
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/freetype/freetype.git' | sed -e 's@.*/@@' -e 's@VER-@@' -e 's@-@.@g' | grep -Ev '[a-Z]+' | sort -V | tail -n1"
 
 [source]
 url = "https://downloads.sourceforge.net/project/freetype/freetype2/2.13.3/freetype-2.13.3.tar.xz"
