@@ -11,13 +11,16 @@ EXTRA=(
 2b() {
 
 gzip -cd "$SRC"/libpng-$VERS-apng.patch.gz | patch -p1
-b-cfg
-b-make
-b-mi
 
-b-make distclean
-b-32cfg
-b-make
-b-32mi
+cfg
+mk
+mi
+
+mk distclean
+m32=1
+
+cfg
+mk
+mi
 
 }
