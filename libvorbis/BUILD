@@ -8,14 +8,16 @@ EXTRA=()
 
 2b() {
 
-b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 install -vDm644 doc/Vorbis* "$D"/usr/share/doc/libvorbis-$VERS
 
-b-make distclean
-b-32cfg
-b-make
-b-32mi
+mk distclean
+m32=1
+
+cfg
+mk
+mi
 
 }
