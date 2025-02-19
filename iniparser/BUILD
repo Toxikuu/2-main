@@ -8,19 +8,12 @@ EXTRA=()
 
 2b() {
 
-mkdir -pv build
-
-cmake -B build \
-  -D CMAKE_INSTALL_PREFIX=/usr    \
-  -D CMAKE_BUILD_TYPE=Release     \
-  -D BUILD_SHARED_LIBS=ON         \
-  -D CMAKE_SKIP_INSTALL_RPATH=ON  \
+cm
   -D BUILD_DOCS=OFF               \
   -D BUILD_EXAMPLES=OFF           \
   -D BUILD_STATIC_LIBS=OFF
 
-cmake --build build
-cd            build
-b-mi
+cmake --build .
+mi
 
 }
