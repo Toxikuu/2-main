@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-tsed -e 's/acp-pdm-dmic/acp-dmic-codec/'                   \
+sed -e 's/acp-pdm-dmic/acp-dmic-codec/'                   \
      -e '/LABEL="alsa_restore_go"/s/go/std/'               \
      -e '/^ENV.ALSA_CARD_NUMBER/i LABEL="alsa_restore_go"' \
      -i alsactl/90-alsa-restore.rules.in
