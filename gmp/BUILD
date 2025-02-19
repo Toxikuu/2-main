@@ -44,9 +44,7 @@ fi
 
 mkdir -pv "$D"/usr/{lib32,include/m32}
 
-DIRS=(
-    "/usr/include/m32"
-)
 mi
+cp -av "$BLD/32DEST/usr/include/m32" "$D/usr/include/m32"
 
 }
