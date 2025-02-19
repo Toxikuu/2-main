@@ -16,9 +16,9 @@ _cfg_opts=(
     --with-ca-path=/etc/ssl/certs
 )
 
-CP=.. b-cfg "${_cfg_opts[@]}"
-b-make
-b-mi
+CP=.. cfg "${_cfg_opts[@]}"
+mk
+mi
 
 rm -rf docs/examples/.deps &&
 
@@ -31,8 +31,9 @@ cp -av docs -T /usr/share/doc/curl-$VERS
 
 rm -rf *
 
-CP=.. b-32cfg "${_cfg_opts[@]}"
-b-make
-b-32mi
+m32=1
+CP=.. cfg "${_cfg_opts[@]}"
+mk
+mi
 
 }
