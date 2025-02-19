@@ -8,15 +8,16 @@ EXTRA=()
 
 2b() {
 
-DS=1 b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
-b-make distclean
+mk distclean
+m32=1
 
-DS=1 b-32cfg
-b-make
-b-32mi
+cfg
+mk
+mi
 
 rm -vf "$D"/usr/lib{,32}/libltdl.a
 
