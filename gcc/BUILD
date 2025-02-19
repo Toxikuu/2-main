@@ -9,9 +9,9 @@ EXTRA=()
 
 2b() {
 
-tsed -e '/m64=/s/lib64/lib/' \
+sed -e '/m64=/s/lib64/lib/' \
     -e '/m32=/s/m32=.*/m32=..\/lib32$(call if_multiarch,:i386-linux-gnu)/' \
-    -i .orig gcc/config/i386/t-linux64
+    -i.orig gcc/config/i386/t-linux64
 
 tsed '/STACK_REALIGN_DEFAULT/s/0/(!TARGET_64BIT \&\& TARGET_SSE)/' \
       -i gcc/config/i386/i386.h
