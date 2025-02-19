@@ -24,9 +24,9 @@ reuse_build() {
     cd "$BLD/build"
     [ -e .config ] || die 'Missing kernel config! :(('
 
-    b-make olddefconfig
-    b-make
-    b-make modules_install INSTALL_MOD_PATH="$D"
+    mk olddefconfig
+    mk
+    mk modules_install INSTALL_MOD_PATH="$D"
     mkdir -pv "$D"/boot
 
     cp -vf arch/x86/boot/bzImage "$D"/boot/vmlinuz-$VERS-two
@@ -48,9 +48,9 @@ fresh_build() {
     cd "$BLD/build"
     cp -vf "$PORT"/kernelconfig .config
 
-    b-make olddefconfig
-    b-make
-    b-make modules_install INSTALL_MOD_PATH="$D"
+    mk olddefconfig
+    mk
+    mk modules_install INSTALL_MOD_PATH="$D"
     mkdir -pv "$D"/boot
 
     cp -vf arch/x86/boot/bzImage "$D"/boot/vmlinuz-$VERS-two
@@ -67,9 +67,5 @@ fi
 }
 
 2z() {
-    echo "The kernel has been compiled and installed to /boot" >&2
-    echo "You must now specify it in your bootloader or whatever" >&2
-    sleep 0.02 # i have no idea why the commands dont execute in order here :sob:
-    echo "Also, if you use nvidia's drivers, you're gonna wanna rebuild those"
+    warn "The kernel has been compiled and installed to /boot. You must not specify it in your bootloader or whatever. Also, if you use nvidia drivers, you're gonna wanna rebuild those."
 }
-
