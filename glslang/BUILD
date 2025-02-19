@@ -14,16 +14,15 @@ _cfg_opts=(
     -D GLSLANG_TESTS=OFF
 )
 
-mkdir -pv build
-cd        build
+cmake ${_cfg_opts[@]}
+nj
+ni
 
-CP=.. b-cmake ${_cfg_opts[@]}
-b-ninja
-b-ni
+cd ..
+m32=1
 
-rm -rf ./*
-CP=.. b-32cmake ${_cfg_opts[@]}
-b-ninja
-b-32ni
+cmake ${_cfg_opts[@]}
+nj
+ni
 
 }
