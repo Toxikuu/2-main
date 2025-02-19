@@ -10,10 +10,10 @@ EXTRA=()
 
 sed -i "s/echo/#echo/" src/egrep.sh
 
-DS=1 b-cfg \
+cfg \
     --disable-rpath \
     --disable-perl-regexp
-b-make
-b-mi
+mk
+mi
 
 }
