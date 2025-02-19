@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-tsed -i 's/-Os/-O2/' Makefile.sharedlibrary
+sed -i 's/-Os/-O2/' Makefile.sharedlibrary
 mk -f Makefile.sharedlibrary INSTALL_PREFIX=/usr
 mi   -f Makefile.sharedlibrary INSTALL_PREFIX=/usr
 
