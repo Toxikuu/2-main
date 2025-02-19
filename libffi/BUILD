@@ -8,14 +8,15 @@ EXTRA=()
 
 2b() {
 
-b-cfg --with-gcc-arch=native
-b-make
-b-mi
+cfg --with-gcc-arch=native
+mk
+mi
 
-b-make distclean
+mk distclean
+m32=1
 
-b-32cfg
-b-make
-b-32mi
+cfg
+mk
+mi
 
 }
