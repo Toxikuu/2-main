@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-with python
+with pip
 
 pipb
 pipi "$NAME"
