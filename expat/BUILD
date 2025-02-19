@@ -9,15 +9,16 @@ EXTRA=()
 
 2b() {
 
-b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
-sed -e "/^am__append_1/ s/doc//" -i Makefile
-b-make clean
+tsed -e "/^am__append_1/ s/doc//" -i Makefile
+mk clean
 
-b-32cfg
-b-make
-b-32mi
+m32=1
+cfg
+mk
+mi
 
 }
