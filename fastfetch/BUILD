@@ -8,10 +8,9 @@ EXTRA=()
 
 2b() {
 
-mkdir -pv build
-cd        build
+with cmake
 
-CP=.. b-cmake
+cm
 cmake --build . --target fastfetch
 install -vDm755 fastfetch "$D"/usr/bin/fastfetch
 
