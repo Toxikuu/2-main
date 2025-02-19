@@ -8,16 +8,17 @@ EXTRA=()
 
 2b() {
 
-DS=1 b-cfg --disable-thorough-tests
-b-make
-b-mi
+cfg --disable-thorough-tests
+mk
+mi
 
-b-make distclean
+mk distclean
 
-CC="gcc -m32" CXX="g++ -m32"                  \
-CFLAGS="-L/usr/lib32" CXXFLAGS="-L/usr/lib32" \
-DS=1 b-32cfg --disable-thorough-tests
-b-make
-b-32mi
+# CC="gcc -m32" CXX="g++ -m32"                  \
+# CFLAGS="-L/usr/lib32" CXXFLAGS="-L/usr/lib32" \
+m32=1
+cfg --disable-thorough-tests
+mk
+mi
 
 }
