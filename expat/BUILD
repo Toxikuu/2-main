@@ -13,7 +13,7 @@ cfg
 mk
 mi
 
-tsed -e "/^am__append_1/ s/doc//" -i Makefile
+sed -e "/^am__append_1/ s/doc//" -i Makefile
 mk clean
 
 m32=1
