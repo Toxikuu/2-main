@@ -13,20 +13,24 @@ EXTRA=()
 sed -i '/install -m.*STA/d' libcap/Makefile
 
 _mk_opts=(
-DYNAMIC=yes
-prefix=/usr
--C libcap
+    DYNAMIC=yes
+    prefix=/usr
+    -C libcap
 )
 
-b-make "${_mk_opts[@]}"
-b-mi lib=lib "${_mk_opts[@]}"
+mk "${_mk_opts[@]}"
+mi lib=lib "${_mk_opts[@]}"
 
-make distclean || true
-b-make CC="gcc -m32 -march=i686" "${_mk_opts[@]}"
-b-make CC="gcc -m32 -march=i686" lib=lib32 "${_mk_opts[@]}" DESTDIR="$PWD/32DEST" install
+make distclean || true # flaky
+m32=1
 
-mkdir -pv "$D"/usr/lib32
-cp -Rv 32DEST/usr/lib32/* "$D"/usr/lib32
+mk "${_mk_opts[@]}"
+mi "${_mk_opts[@]}" lib=lib32
+# mk CC="gcc -m32 -march=i686" "${_mk_opts[@]}"
+# mk CC="gcc -m32 -march=i686" lib=lib32 "${_mk_opts[@]}" DESTDIR="$PWD/32DEST" install
+
+# mkdir -pv "$D"/usr/lib32
+# cp -Rv 32DEST/usr/lib32/* "$D"/usr/lib32
 
 sed -e "s@^libdir=.*@libdir=/usr/lib32@" -i "$D"/usr/lib32/pkgconfig/lib{cap,psx}.pc
 chmod -v 755 "$D"/usr/lib32/libcap.so.$VERS
