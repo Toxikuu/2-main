@@ -9,8 +9,8 @@ EXTRA=()
 
 2b() {
 
-PAGE="letter" b-cfg
-b-make
-b-mi
+PAGE="letter" cfg
+mk
+mi
 
 }
