@@ -12,12 +12,12 @@ EXTRA=(
 
 2b() {
 
-b-patch "$SRC/$NAME-$VERS-sysmacros.patch"
-b-patch "$SRC/$NAME-$VERS-i_dir_acl.patch"
-b-patch "$SRC/$NAME-$VERS-fix-sys-types-h.patch"
+for p in "$SRC/$NAME-$VERS-"*.patch; do
+  tpatch "$p"
+done
 
-b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
 }
