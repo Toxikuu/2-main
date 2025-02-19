@@ -12,13 +12,13 @@ cfg
 mk
 mi
 
-mk clean
+make clean
 m32=1
 
 cfg
 mk
-
 mi
+
 cp -v "$BLD"/32DEST/usr/include/libunwind-x86.h "$D"/usr/include/
 
 }
