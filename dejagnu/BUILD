@@ -12,9 +12,7 @@ EXTRA=()
 mkdir -pv build
 cd        build
 
-DS=1 b-cfg
-
-b-mi
+cfg
+mi
 
 }
-
