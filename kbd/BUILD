@@ -10,14 +10,14 @@ EXTRA=(
 
 2b() {
 
-b-patch "$SRC"/kbd-$VERS-backspace-1.patch
+tpatch "$SRC"/kbd-$VERS-backspace-1.patch
 
 sed -i '/RESIZECONS_PROGS=/s/yes/no/' configure
 sed -i 's/resizecons.8 //' docs/man/man8/Makefile.in
 
-b-cfg --disable-vlock
-b-make
-b-mi
+cfg --disable-vlock
+mk
+mi
 
 mkdir -pv $D/usr/share/doc
 cp -Rv docs/doc -T $D/usr/share/doc/kbd-$VERS
@@ -25,4 +25,3 @@ cp -Rv docs/doc -T $D/usr/share/doc/kbd-$VERS
 # TODO: Consider not packaging mac, atari, sun keymaps
 
 }
-UPST="https://git.kernel.org/pub/scm/linux/kernel/git/legion/kbd.git"
