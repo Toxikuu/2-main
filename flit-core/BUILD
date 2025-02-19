@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-b-pipbuild
-NAME="${NAME//-/_}" b-pipinstall
+pipb
+NAME="${NAME//-/_}" pipi
 
 }
