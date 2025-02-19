@@ -11,10 +11,9 @@ EXTRA=()
 sed -i /ARPD/d Makefile
 rm -fv man/man8/arpd.8
 
-b-make NETNS_RUN_DIR=/run/netns
-b-mi SBINDIR=/usr/sbin
+mk NETNS_RUN_DIR=/run/netns
+mi SBINDIR=/usr/sbin
 
 install -vDm644 COPYING README* -t $D/usr/share/doc/iproute2-$VERS
 
 }
-UPST=https://github.com/iproute2/iproute2.git
