@@ -9,21 +9,21 @@ EXTRA=("https://www.linuxfromscratch.org/patches/lfs/development/expect-5.45.4-g
 
 2b() {
 
-# expect requires working ptys
+# expect requires working ptys, so ensure functionality
 python3 -c 'from pty import spawn; spawn(["echo", "ok"])' | grep ok
 
-b-patch "$SRC"/expect-5.45.4-gcc14-1.patch
+tpatch "$SRC"/expect-$VERS-gcc14-1.patch
 
-b-cfg \
+cfg \
     --with-tcl=/usr/lib     \
     --enable-shared         \
     --disable-rpath         \
     --mandir=/usr/share/man \
     --with-tclinclude=/usr/include
 
-b-make
-b-make test
-b-mi
+mk
+make test
+mi
 
 ln -sfv expect$VERS/libexpect$VERS.so D/usr/lib
 
