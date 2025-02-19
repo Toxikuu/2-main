@@ -10,7 +10,7 @@ EXTRA=()
 
 with cmake
 
-cm
+cm \
   -D BUILD_DOCS=OFF               \
   -D BUILD_EXAMPLES=OFF           \
   -D BUILD_STATIC_LIBS=OFF
