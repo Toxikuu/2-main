@@ -16,9 +16,6 @@ EXTRA=(
 
 with meson ninja
 
-mkdir -pv build
-cd        build
-
 _cfg_opts=(
     -D localstatedir=/var
     -D runtime_dir=/run
@@ -39,8 +36,7 @@ _cfg_opts=(
     -D system_socket=/run/dbus/system_bus_socket
 )
 
-CP=.. ms ${cfg_opts[@]}
-
+ms ${cfg_opts[@]}
 nj
 ni
 
@@ -49,13 +45,15 @@ chmod -v      4750       "$D"/usr/libexec/dbus-daemon-launch-helper
 
 dbus-uuidgen --ensure
 
-rm -rf ./*
-CP=.. b-32ms \
+cd ..
+m32=1
+
+ms \
     --cross-file=/usr/share/meson/cross/lib32 \
     ${_cfg_opts[@]}
 
 nj
-b-32ni
+ni
 
 }
 
