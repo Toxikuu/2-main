@@ -14,7 +14,7 @@ EXTRA=()
 
 2b() {
 
-tsed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
+sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
 
 ./bootstrap --prefix=/usr          \
             --parallel=$(nproc)    \
