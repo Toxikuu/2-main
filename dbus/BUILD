@@ -14,6 +14,8 @@ EXTRA=(
 
 2b() {
 
+with meson ninja
+
 mkdir -pv build
 cd        build
 
@@ -37,10 +39,10 @@ _cfg_opts=(
     -D system_socket=/run/dbus/system_bus_socket
 )
 
-CP=.. b-ms ${cfg_opts[@]}
+CP=.. ms ${cfg_opts[@]}
 
-b-ninja
-b-ni
+nj
+ni
 
 chown -v root:messagebus "$D"/usr/libexec/dbus-daemon-launch-helper
 chmod -v      4750       "$D"/usr/libexec/dbus-daemon-launch-helper
@@ -52,7 +54,7 @@ CP=.. b-32ms \
     --cross-file=/usr/share/meson/cross/lib32 \
     ${_cfg_opts[@]}
 
-b-ninja
+nj
 b-32ni
 
 }
