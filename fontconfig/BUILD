@@ -2,7 +2,7 @@ NAME="fontconfig"
 VERS="2.16.0"
 DESC="Library and utilities for configuring fonts"
 UPST="https://gitlab.freedesktop.org/fontconfig/fontconfig.git"
-VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1"
+VCMD="git ls-remote --tags --refs '$UPST' | tsed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1"
 
 SOURCE="https://www.freedesktop.org/software/fontconfig/release/fontconfig-$VERS.tar.xz"
 EXTRA=()
@@ -19,15 +19,15 @@ local _cfg_opts=(
     --disable-docs
 )
 
-b-cfg "${_cfg_opts[@]}"
-b-make
-b-mi
+cfg "${_cfg_opts[@]}"
+mk
+mi
 
-b-make distclean
+mk distclean
 
-b-32cfg "${_cfg_opts[@]}"
-b-make
-b-32mi
+m32=1
+cfg "${_cfg_opts[@]}"
+mk
+mi
 
 }
-
