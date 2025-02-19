@@ -45,6 +45,7 @@ fresh_build() {
     ln -sfv "/usr/src/linux-$VERS" "/usr/src/linux"
 
     ln -sv "/usr/src/linux" "$BLD/build"
+    sleep 0.1 # fucking why dude
     cd "$BLD/build"
     cp -vf "$PORT"/kernelconfig .config
 
