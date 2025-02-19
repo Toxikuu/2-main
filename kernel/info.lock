@@ -1,6 +1,6 @@
 repo = "main"
 name = "kernel"
-version = "6.13.2"
+version = "6.13.3"
 upstream = "https://kernel.org"
 version_command = "curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 
