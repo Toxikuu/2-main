@@ -10,55 +10,54 @@ NAME="glibc"
 VERS="2.41"
 DESC="The GNU C library"
 UPST="https://sourceware.org/git/glibc.git"
-VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\\.' | sort -V | tail -n1"
+VCMD="git ls-remote --tags --refs '$UPST' | tsed 's@.*/@@' | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\\.' | sort -V | tail -n1"
 
 SOURCE="https://ftp.gnu.org/gnu/glibc/glibc-$VERS.tar.xz"
 EXTRA=("https://www.linuxfromscratch.org/patches/lfs/development/glibc-$VERS-fhs-1.patch")
 
 2b() {
 
-b-patch "$SRC"/glibc-$VERS-fhs-1.patch
+tpatch "$SRC"/glibc-$VERS-fhs-1.patch
 
 mkdir -v build
 cd       build
 
 echo "rootsbindir=/usr/sbin" > configparms
-DS=1 CP=.. b-cfg \
+CP=.. cfg \
              --disable-werror                         \
              --enable-kernel=6.11                     \
              --enable-stack-protector=strong          \
              --disable-nscd                           \
              libc_cv_slibdir=/usr/lib
 
-b-make
-sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
+mk
+tsed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
 
-b-mi
-sed '/RTLDLIST=/s@/usr@@g' -i "$D"/usr/bin/ldd
+mi
+tsed '/RTLDLIST=/s@/usr@@g' -i "$D"/usr/bin/ldd
 
 pushd ..
-b-make -C "$PWD/localedata" objdir="$PWD/build" \
+mk -C "$PWD/localedata" objdir="$PWD/build" \
   DESTDIR="$D" install-locale-files
 popd
 
 rm -rf ./*
 find .. -name "*.a" -delete
 
+m32=1
 CC="gcc -m32 -mstackrealign -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"  \
 CXX="g++ -m32 -mstackrealign -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer" \
-../configure                             \
-      --prefix=/usr                      \
+CP=.. cfg                                \
       --host=i686-pc-linux-gnu           \
       --build=$(../scripts/config.guess) \
       --enable-kernel=6.11               \
       --disable-nscd                     \
       --libdir=/usr/lib32                \
       --libexecdir=/usr/lib32            \
-      libc_cv_slibdir=/usr/lib32        ||
-die 'm32 configure failed'
+      libc_cv_slibdir=/usr/lib32
 
-b-make
-b-32mi
+mk
+mi
 
 install -vm644 "$BLD"/32DEST/usr/include/gnu/{lib-names,stubs}-32.h \
                "$D"/usr/include/gnu/
