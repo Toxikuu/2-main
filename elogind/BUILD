@@ -9,6 +9,8 @@ EXTRA=()
 
 2b() {
 
+with meson ninja
+
 _cfg_opts=(
     -D cgroup-controller=elogind           
     -D dev-kvm-mode=0660                   
