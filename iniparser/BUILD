@@ -8,15 +8,14 @@ EXTRA=()
 
 2b() {
 
-with cmake
+with cmake ninja
 
 cm \
   -D BUILD_DOCS=OFF               \
   -D BUILD_EXAMPLES=OFF           \
   -D BUILD_STATIC_LIBS=OFF
 
-cmake --build .
-pwd; ls
-mi
+nj
+ni
 
 }
