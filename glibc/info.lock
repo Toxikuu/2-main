@@ -2,7 +2,7 @@ repo = "main"
 name = "glibc"
 version = "2.41"
 upstream = "https://sourceware.org/git/glibc.git"
-version_command = '''git ls-remote --tags --refs 'https://sourceware.org/git/glibc.git' | sed 's@.*/@@' | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\.' | sort -V | tail -n1'''
+version_command = '''git ls-remote --tags --refs 'https://sourceware.org/git/glibc.git' | tsed 's@.*/@@' | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\.' | sort -V | tail -n1'''
 
 [source]
 url = "https://ftp.gnu.org/gnu/glibc/glibc-2.41.tar.xz"
