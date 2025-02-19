@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-sed -e '/^structured/s/xmlError \*/typeof(xmlCtxtGetLastError(NULL)) /' \
+tsed -e '/^structured/s/xmlError \*/typeof(xmlCtxtGetLastError(NULL)) /' \
     -i gettext-tools/src/its.c
 
 _cfg_opts=(
@@ -30,9 +30,9 @@ _cfg_opts=(
     --without-included-gettext
 )
 
-b-cfg "${_cfg_opts[@]}"
-b-make
-b-mi
+cfg "${_cfg_opts[@]}"
+mk
+mi
 chmod -v 0755 "$D"/usr/lib/preloadable_libintl.so
 
 }
