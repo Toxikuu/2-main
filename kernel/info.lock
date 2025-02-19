@@ -6,4 +6,4 @@ version_command = "curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -
 
 [source]
 url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.3.tar.gz"
-hash = "K1TlUFR-K9v7Rstjz7AYOYPSs_DzZ4li9lN5XvReERw"
+hash = "lODy_895IKzeVK6DM9v3Oxxd8pEuMOKAeYKEb9usf6I"
