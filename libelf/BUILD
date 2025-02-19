@@ -15,22 +15,20 @@ _cfg_opts=(
     --enable-libdebuginfod=dummy
 )
 
-DS=1 b-cfg "${_cfg_opts[@]}"
-
-b-make
-b-mi -C libelf
+cfg "${_cfg_opts[@]}"
+mk
+mi -C libelf
 
 install -vDm644 config/libelf.pc "$D"/usr/lib/pkgconfig/libelf.pc
 rm -v "$D"/usr/lib/libelf.a
 
-b-make distclean
+mk distclean
+m32=1
 
-DS=1 b-32cfg "${_cfg_opts[@]}"
+cfg "${_cfg_opts[@]}"
+mk
+mi -C libelf
 
-b-make
-b-32mi -C libelf
 install -vDm644 config/libelf.pc "$D"/usr/lib32/pkgconfig/libelf.pc
 
 }
-
-#d fixed .uv.toml
