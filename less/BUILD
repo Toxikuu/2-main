@@ -11,8 +11,8 @@ EXTRA=()
 make -f Makefile.aut distfiles
 autoreconf -fiv
 
-DS=1 b-cfg --sysconfdir=/etc
-b-make
-b-mi
+cfg --sysconfdir=/etc
+mk
+mi
 
 }
