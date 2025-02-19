@@ -9,8 +9,8 @@ EXTRA=()
 
 2b() {
 
-tsed -ri "s:.*(AUX_MODULES.*valid):\1:" modules.cfg
-tsed -ri "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" include/freetype/config/ftoption.h
+sed -ri "s:.*(AUX_MODULES.*valid):\1:" modules.cfg
+sed -ri "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" include/freetype/config/ftoption.h
 
 [ -e "$PORT/../harfbuzz/.data/INSTALLED" ] || HB="--with-harfbuzz=no"
 
