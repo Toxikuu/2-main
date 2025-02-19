@@ -16,14 +16,14 @@ _cfg_opts=(
     -D GLSLANG_TESTS=OFF
 )
 
-cmake ${_cfg_opts[@]}
+cm ${_cfg_opts[@]}
 nj
 ni
 
 cd ..
 m32=1
 
-cmake ${_cfg_opts[@]}
+cm ${_cfg_opts[@]}
 nj
 ni
 
