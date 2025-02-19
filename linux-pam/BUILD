@@ -8,22 +8,21 @@ EXTRA=()
 
 2b() {
 
-mkdir -v build
+with meson ninja
 
-CP=build b-ms -D docs=disabled
-
-b-ninja -C build
-b-ni    -C build
+ms -D docs=disabled
+nj
+ni
 
 rm -rvf "$D"/usr/lib/systemd
 mkdir -pv "$D"/etc/pam.d
 
-rm -rf   build
-mkdir -v build
+cd ..
+m32=1
 
-CP=build b-32ms -D docs=disabled
-b-ninja -C build
-b-32ni  -C build
+ms -D docs=disabled
+nj
+ni
 
 mkdir -pv "$D"/etc/pam.d
 cp -v "$PORT/system-"* "$D"/etc/pam.d/
