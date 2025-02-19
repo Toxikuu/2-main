@@ -8,24 +8,26 @@ EXTRA=()
 
 2b() {
 
-b-cfg \
+cfg \
   --enable-hashes=strong,glibc  \
   --enable-obsolete-api=no      \
   --disable-failure-tokens
 
-b-make
-b-mi
+mk
+mi
 
-b-32cfg \
+m32=1
+
+cfg \
     --enable-hashes=strong,glibc \
     --enable-obsolete-api=glibc  \
     --disable-failure-tokens
 
-b-make
+mk
 mkdir -pv "$D"/usr/lib32/pkgconfig
 cp -av .libs/libcrypt.so* "$D"/usr/lib32
 
-b-make install-pkgconfigDATA
+mk install-pkgconfigDATA
 ln -sfv libxcrypt.pc "$D"/usr/lib32/pkgconfig/libcrypt.pc
 
 }
