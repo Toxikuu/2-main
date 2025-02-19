@@ -8,14 +8,15 @@ EXTRA=()
 
 2b() {
 
-b-cfg --enable-libgdbm-compat
-b-make
-b-mi
+cfg --enable-libgdbm-compat
+mk
+mi
 
-b-make distclean
+mk distclean
 
-b-32cfg --enable-libgdbm-compat
-b-make
-b-32mi
+m32=1
+cfg --enable-libgdbm-compat
+mk
+mi
 
 }
