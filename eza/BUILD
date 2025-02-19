@@ -8,9 +8,9 @@ EXTRA=()
 
 2b() {
 
-. e-rust
+with rust
 
-cargo build --release
+cbr
 install -vDm755 target/release/eza "$D/usr/bin/eza"
 
 }
