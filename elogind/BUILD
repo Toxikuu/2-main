@@ -9,33 +9,27 @@ EXTRA=()
 
 2b() {
 
-mkdir -pv build
-cd        build
-
-CP=.. b-ms \
-    -D docdir=/usr/share/doc/elogind-$VERS \
-    -D cgroup-controller=elogind           \
-    -D dev-kvm-mode=0660                   \
+_cfg_opts=(
+    -D cgroup-controller=elogind           
+    -D dev-kvm-mode=0660                   
     -D dbuspolicydir=/etc/dbus-1/system.d
+)
 
-b-ninja
-b-ni
+ms "${_cfg_opts[@]}"
+nj
+ni
 
 ln -sfv  libelogind.pc "$D"/usr/lib/pkgconfig/libsystemd.pc
 ln -sfvn elogind "$D"/usr/include/systemd
 
-rm -rf *
+cd ..
+m32=1
 
-CP=.. b-32ms \
-    -D cgroup-controller=elogind           \
-    -D dev-kvm-mode=0660                   \
-    -D dbuspolicydir=/etc/dbus-1/system.d
-
-b-ninja
-b-32ni
+ms "${_cfg_opts[@]}"
+nj
+ni
 
 ln -sfv libelogind.pc "$D"/usr/lib32/pkgconfig/libsystemd.pc
-
 cp -av {"$PORT","$D"}/etc
 
 }
