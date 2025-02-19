@@ -2,25 +2,25 @@ NAME="gcc"
 VERS="14.2.0"
 DESC="The GNU compiler collection"
 UPST="https://gcc.gnu.org/git/gcc.git"
-VCMD="git ls-remote --tags --refs '$UPST' | sed 's:.*/::' | sort -V | grep gcc- | tail -n1 | cut -d- -f2" # gcc 15 is currently upstable, so ignore this
+VCMD="git ls-remote --tags --refs '$UPST' | tsed 's:.*/::' | sort -V | grep gcc- | tail -n1 | cut -d- -f2" # gcc 15 is currently upstable, so ignore this
 
 SOURCE="https://ftp.gnu.org/gnu/gcc/gcc-$VERS/gcc-$VERS.tar.xz"
 EXTRA=()
 
 2b() {
 
-sed -e '/m64=/s/lib64/lib/' \
+tsed -e '/m64=/s/lib64/lib/' \
     -e '/m32=/s/m32=.*/m32=..\/lib32$(call if_multiarch,:i386-linux-gnu)/' \
-    -i.orig gcc/config/i386/t-linux64
+    -i .orig gcc/config/i386/t-linux64
 
-sed '/STACK_REALIGN_DEFAULT/s/0/(!TARGET_64BIT \&\& TARGET_SSE)/' \
+tsed '/STACK_REALIGN_DEFAULT/s/0/(!TARGET_64BIT \&\& TARGET_SSE)/' \
       -i gcc/config/i386/i386.h
 
 mkdir -v build
 cd       build
 
 mlist=m64,m32
-CP=.. DS=1 b-cfg \
+CP=.. cfg \
     LD=ld                       \
     --enable-languages=c,c++    \
     --enable-default-pie        \
@@ -31,8 +31,8 @@ CP=.. DS=1 b-cfg \
     --disable-bootstrap         \
     --disable-fixincludes       \
     --with-system-zlib
-b-make
-b-mi
+mk
+mi
 
 ln -sv gcc.1 "$D"/usr/share/man/man1/cc.1
 
