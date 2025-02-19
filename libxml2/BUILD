@@ -14,15 +14,16 @@ _cfg_opts=(
     --with-icu
 )
 
-b-cfg "${_cfg_opts[@]}" PYTHON=/usr/bin/python3
-b-make
-b-mi
+cfg "${_cfg_opts[@]}" PYTHON=/usr/bin/python3
+mk
+mi
 
-b-make distclean
+mk distclean
+m32=1
 
-b-32cfg "${_cfg_opts[@]}" --without-python
-b-make
-b-32mi
+cfg "${_cfg_opts[@]}" --without-python
+mk
+mi
 
 rm -vf "$D"/usr/lib{,32}/libxml2.la
 sed '/libs=/s/xml2.*/xml2"/' -i "$D"/usr/bin/xml2-config
