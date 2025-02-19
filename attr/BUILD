@@ -17,6 +17,6 @@ m32=1
 
 cfg --sysconfdir=/etc
 mk
-32mi
+mi
 
 }
