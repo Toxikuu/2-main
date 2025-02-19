@@ -9,8 +9,8 @@ EXTRA=()
 
 2b() {
 
-b-cfg --enable-cxx
-b-make
+cfg --enable-cxx
+mk
 
 make check 2>&1 | tee gmp-check-log
 NUMPASSED=$(awk '/# PASS:/{total+=$3} ; END{print total}' gmp-check-log)
@@ -19,21 +19,21 @@ if [ $NUMPASSED -lt 199 ]; then
     die "Only $NUMPASSED gmp tests passed (>= 199 needed)!"
 fi
 
-b-mi
-b-make distclean
+mi
+mk distclean
 
 cp -v configfsf.guess config.guess
 cp -v configfsf.sub   config.sub
 
-ABI="32" \
+m32=1
 CFLAGS="-m32 -O2 -pedantic -fomit-frame-pointer -mtune=generic -march=i686" \
-CXXFLAGS="$CFLAGS" \
-b-32cfg \
+CXXFLAGS="$CFLAGS" ABI="32" \
+cfg \
     --enable-cxx \
     --includedir=/usr/include/m32/gmp
 
 sed -i 's/$(exec_prefix)\/include/$\(includedir\)/' Makefile
-b-make
+mk
 
 make check 2>&1 | tee gmp-check-log
 NUMPASSED=$(awk '/# PASS:/{total+=$3} ; END{print total}' gmp-check-log)
@@ -47,7 +47,6 @@ mkdir -pv "$D"/usr/{lib32,include/m32}
 DIRS=(
     "/usr/include/m32"
 )
-b-32mi
+mi
 
 }
-
