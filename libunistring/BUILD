@@ -8,14 +8,15 @@ EXTRA=()
 
 2b() {
 
-b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
-b-make distclean
+mk distclean
+m32=1
 
-b-32cfg
-b-make
-b-32mi
+cfg
+mk
+mi
 
 }
