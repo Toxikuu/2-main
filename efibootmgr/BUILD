@@ -13,7 +13,7 @@ EXTRA=()
 
 2b() {
 
-b-make EFIDIR=LFS EFI_LOADER=tox64.efi
-b-mi EFIDIR=LFS
+mk EFIDIR=LFS EFI_LOADER=tox64.efi
+mi EFIDIR=LFS
 
 }
