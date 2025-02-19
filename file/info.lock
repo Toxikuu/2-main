@@ -2,7 +2,7 @@ repo = "main"
 name = "file"
 version = "5.46"
 upstream = "https://github.com/file/file.git"
-version_command = "git ls-remote --tags 'https://github.com/file/file.git' | sed 's:.*/::' | sort -V | tail -n2 | head -n1 | sed 's/FILE//' | sed 's/_/./g'"
+version_command = "git ls-remote --tags 'https://github.com/file/file.git' | tsed 's:.*/::' | sort -V | tail -n2 | head -n1 | tsed 's/FILE//' | tsed 's/_/./g'"
 
 [source]
 url = "https://astron.com/pub/file/file-5.46.tar.gz"
