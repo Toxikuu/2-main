@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-b-cfg --disable-blacklist
-b-mi
+cfg --disable-blacklist
+mi
 
 }
