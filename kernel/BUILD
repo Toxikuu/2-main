@@ -58,10 +58,10 @@ fresh_build() {
     cp -vf .config "$D"/boot/config-$VERS
 }
 
-if [ -z "$kver" ]; then
-    fresh_build
-else
+if [[ "$kver" == "$VERS" ]]; then
     reuse_build
+else
+    fresh_build
 fi
 
 }
