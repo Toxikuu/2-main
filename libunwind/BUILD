@@ -15,6 +15,9 @@ mi
 mk clean
 m32=1
 
+CFLAGS="-O2 -pipe"
+CXXFLAGS="-O2 -pipe"
+
 cfg
 mk
 mi
