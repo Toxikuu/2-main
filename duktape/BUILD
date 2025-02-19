@@ -8,8 +8,8 @@ EXTRA=()
 
 2b() {
 
-sed -i 's/-Os/-O2/' Makefile.sharedlibrary
-b-make -f Makefile.sharedlibrary INSTALL_PREFIX=/usr
-b-mi   -f Makefile.sharedlibrary INSTALL_PREFIX=/usr
+tsed -i 's/-Os/-O2/' Makefile.sharedlibrary
+mk -f Makefile.sharedlibrary INSTALL_PREFIX=/usr
+mi   -f Makefile.sharedlibrary INSTALL_PREFIX=/usr
 
 }
