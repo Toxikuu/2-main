@@ -6,4 +6,4 @@ version_command = "curl -s 'https://www.linuxfromscratch.org/~thomas/multilib-m3
 
 [source]
 url = "https://www.linuxfromscratch.org/lfs/downloads/development/lfs-bootscripts-20240825.tar.xz"
-hash = "aDdz9xr4qOTglFDWPWWInvKa3hbZgJiKMQdgfmcZpHw"
+hash = "itLyMb8DJGqzt3RJ-4Ga_TKMOWzYxP4t6lz0jTthkwQ"
