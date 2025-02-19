@@ -2,7 +2,7 @@ repo = "main"
 name = "fontconfig"
 version = "2.16.0"
 upstream = "https://gitlab.freedesktop.org/fontconfig/fontconfig.git"
-version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/fontconfig/fontconfig.git' | tsed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1"
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/fontconfig/fontconfig.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1"
 
 [source]
 url = "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz"
