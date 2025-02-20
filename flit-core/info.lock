@@ -1,6 +1,6 @@
 repo = "main"
 name = "flit-core"
-version = "3.10.1"
+version = "3.11.0"
 upstream = "https://github.com/pypa/flit.git"
 
 [source]
