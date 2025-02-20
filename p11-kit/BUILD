@@ -8,6 +8,8 @@ EXTRA=()
 
 2b() {
 
+with meson ninja
+
 sed '20,$ d' -i trust/trust-extract-compat
 
 cat >> trust/trust-extract-compat << "EOF"
@@ -18,17 +20,16 @@ cat >> trust/trust-extract-compat << "EOF"
 /usr/sbin/make-ca -r
 EOF
 
-mkdir p11-build
-cd    p11-build
+ms -D trust_paths=/etc/pki/anchors
+nj
+ni
 
-CP=.. b-ms -D trust_paths=/etc/pki/anchors
-b-ninja
-b-ni
+cd ..
+m32=1
 
-rm -rf *
-CP=.. b-32ms -D trust_paths=/etc/pki/anchors
-b-ninja
-b-32ni
+ms -D trust_paths=/etc/pki/anchors
+nj
+ni
 
 ln -sfv ./pkcs11/p11-kit-trust.so "$D"/usr/lib/libnssckbi.so
 ln -sfv ./pkcs11/p11-kit-trust.so "$D"/usr/lib32/libnssckbi.so
