@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-b-make
-make PREFIX="$D"/usr MANDIR="$D"/usr/share/man install
+mk
+mk PREFIX="$D"/usr MANDIR="$D"/usr/share/man install
 
 }
