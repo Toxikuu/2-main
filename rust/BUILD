@@ -6,8 +6,6 @@ VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -v 'release-' |
 
 2b() {
 
-. e-rust
-
 export CARGO_HOME="$D"/opt/cargo
 export RUSTUP_HOME="$D"/opt/rustup
 
@@ -28,4 +26,3 @@ chmod 755 "$RUSTUP_HOME"
 cp -av "$PORT"/etc "$D"
 
 }
-
