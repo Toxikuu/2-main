@@ -9,7 +9,7 @@ EXTRA=()
 
 2b() {
 
-b-cfg \
+cfg \
     --with-lzma             \
     --with-bzip2            \
     --without-lzip          \
@@ -24,12 +24,10 @@ b-cfg \
     --with-gnu-ld           \
     --without-plugin-support
 
-b-make
-b-mi
+mk
+mi
 
 ln -sfv wget2 "$D"/usr/bin/wget
 rm -vf "$D"/usr/bin/wget2_noinstall # delete a useless testing binary
 
 }
-
-#d fixed .uv.toml
