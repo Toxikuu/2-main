@@ -14,18 +14,19 @@ cd nspr
 sed -i '/^RELEASE/s|^|#|' pr/src/misc/Makefile.in
 sed -i 's|$(LIBRARY) ||'  config/rules.mk
 
-DS=1 b-cfg --with-mozilla \
-    --with-pthreads       \
+cfg --with-mozilla  \
+    --with-pthreads \
     $([ $(uname -m) = x86_64 ] && echo --enable-64bit)
-b-make
-b-mi
+mk
+mi
 
-b-make distclean
+mk distclean
+m32=1
 
-b-32cfg --disable-64bit \
-        --with-pthreads \
-        --with-mozilla
-b-make
-b-32mi
+cfg --disable-64bit \
+    --with-pthreads \
+    --with-mozilla
+mk
+mi
 
 }
