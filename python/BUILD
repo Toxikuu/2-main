@@ -9,12 +9,13 @@ EXTRA=()
 
 2b() {
 
-./configure --prefix=/usr       \
-            --enable-shared     \
-            --with-system-expat \
-            --enable-optimizations
-b-make
-b-mi
+# ./configure --prefix=/usr       \
+#             --enable-shared     \
+#             --with-system-expat \
+#             --enable-optimizations
+cfg --enable-shared --with-system-expat --enable-optimizations
+mk
+mi
 
 install -vDm644 "$PORT/pip.conf" "$D"/etc/pip.conf
 
