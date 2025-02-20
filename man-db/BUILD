@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-b-cfg \
+cfg \
     --docdir=/usr/share/doc/man-db-$VERS  \
     --sysconfdir=/etc                     \
     --disable-setuid                      \
@@ -19,7 +19,7 @@ b-cfg \
     --with-systemdtmpfilesdir=            \
     --with-systemdsystemunitdir=
 
-b-make
-b-mi
+mk
+mi
 
 }
