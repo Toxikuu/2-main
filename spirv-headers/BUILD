@@ -9,7 +9,7 @@ EXTRA=()
 
 2b() {
 
-with cmake ninjaj
+with cmake ninja
 
 cm
 nj
