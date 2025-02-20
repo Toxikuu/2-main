@@ -35,17 +35,18 @@ _cfg_opts=(
     --docdir=/usr/share/doc/util-linux-$VERS
 )
 
-b-cfg "${_cfg_opts[@]}" --libdir=/usr/lib
-b-make
-b-mi
+cfg "${_cfg_opts[@]}" --libdir=/usr/lib
+mk
+mi
 
-b-make distclean
+mk distclean
+m32=1
 trap restore EXIT
 mv -v /usr/bin/ncursesw6-config{,.tmp}
 
-b-32cfg "${_cfg_opts[@]}" --libdir=/usr/lib32
-b-make
-b-32mi
+cfg "${_cfg_opts[@]}" --libdir=/usr/lib32
+mk
+mi
 mv -v /usr/bin/ncursesw6-config{.tmp,}
 
 }
