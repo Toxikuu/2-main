@@ -8,8 +8,7 @@ EXTRA=()
 
 2b() {
 
-mkdir -pv build
-cd        build
+with meson ninja
 
 _cfg_opts=(
     -D database=gdbm
@@ -17,15 +16,16 @@ _cfg_opts=(
     -D bluez5=disabled
 )
 
-CP=.. DS=1 b-ms "${_cfg_opts[@]}"
-b-ninja
-b-ni
+ms "${_cfg_opts[@]}"
+nj
+ni
 rm -vf "$D"/usr/share/dbus-1/system.d/pulseaudio-system.conf
 
-rm -rf *
+cd ..
+m32=1
 
-CP=.. DS=1 b-32ms --cross-file lib32 "${_cfg_opts[@]}"
-b-ninja
-b-32ni
+ms --cross-file lib32 "${_cfg_opts[@]}"
+nj
+ni
 
 }
