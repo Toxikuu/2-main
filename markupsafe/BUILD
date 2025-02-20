@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-b-pipbuild
-b-pipinstall "$NAME"
+pipb
+pipi "$NAME"
 
 }
