@@ -12,7 +12,7 @@ cat >> make-ca << "EOF"
 ln -svf /etc/pki/tls/certs/ca-bundle.crt /etc/ssl/certs/ca-certificates.crt
 EOF
 
-b-mi
+mi
 install -vdm755 "$D"/etc/ssl/local
 
 }
