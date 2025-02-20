@@ -7,13 +7,11 @@ SOURCE="https://github.com/slicer69/sysvinit/releases/download/$VERS/sysvinit-$V
 
 2b() {
 
-b-patch "$PORT"/consolidated.patch
-b-make
-b-make ROOT="$D" install
+tpatch "$PORT"/consolidated.patch
+mk
+mk ROOT="$D" install
 
 mkdir -pv "$D"/etc
 cp -av "$PORT"/etc "$D"
 
 }
-
-#d patch is now stored locally
