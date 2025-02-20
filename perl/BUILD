@@ -30,8 +30,8 @@ sh Configure -des                                                 \
              -D useshrplib                                        \
              -D usethreads
 
-b-make
-b-mi
+mk
+mi
 
 unset BUILD_ZLIB BUILD_BZIP2
 
