@@ -1,6 +1,6 @@
 repo = "main"
 name = "zstd"
-version = "1.5.6"
+version = "1.5.7"
 upstream = "https://github.com/facebook/zstd.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/facebook/zstd.git' | sed 's@.*/@@' | grep -E '^v[0-9]+' | grep -v -- -kernel | tail -n1"
 
