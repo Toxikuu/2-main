@@ -8,8 +8,8 @@ EXTRA=()
 
 2b() {
 
-b-cfg --enable-lib-only
-b-make
-b-mi
+cfg --enable-lib-only
+mk
+mi
 
 }
