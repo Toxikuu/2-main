@@ -8,11 +8,10 @@ EXTRA=()
 
 2b() {
 
-mkdir -pv build
-cd        build
+with meson ninja
 
-CP=.. b-ms -D server=disabled -D libseat-seatd=disabled
-b-ninja
-b-ni
+ms -D server=disabled -D libseat-seatd=disabled
+nj
+ni
 
 }
