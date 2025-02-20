@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-b-make PREFIX=/usr
-b-mi PREFIX=/usr
+mk PREFIX=/usr
+mi PREFIX=/usr
 
 }
