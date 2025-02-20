@@ -13,15 +13,14 @@ EXTRA=(
 
 2b() {
 
+with cmake ninja
+
 for patch in "$SRC/yajl-$VERS-"*.patch; do
-    b-patch "$patch"
+    tpatch "$patch"
 done
 
-mkdir -pv build
-cd        build
-
-CP=.. b-cmake
-b-ninja
-b-ni
+cm
+nj
+ni
 
 }
