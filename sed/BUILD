@@ -8,8 +8,8 @@ EXTRA=()
 
 2b() {
 
-DS=1 b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
 }
