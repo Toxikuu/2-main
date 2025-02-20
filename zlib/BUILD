@@ -16,10 +16,8 @@ mi
 make distclean
 m32=1
 
-# CFLAGS+=" -m32" CXXFLAGS+=" -m32" \
-DONT_DISABLE_STATIC=1 \
-cfg --libdir=/usr/lib32
-# ./configure --prefix=/usr --libdir=/usr/lib32 # b-32cfg doesn't work bc this configure is picky
+CFLAGS+=" -m32" CXXFLAGS+=" -m32" \
+./configure --prefix=/usr --libdir=/usr/lib32 # doesnt recognize --host=i686-pc-linux-gnu => no abstraction :(
 mk
 mi
 
