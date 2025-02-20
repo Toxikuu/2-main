@@ -8,12 +8,12 @@ EXTRA=()
 
 2b() {
 
-b-cfg --disable-kill  \
+cfg --disable-kill  \
     --disable-rpath   \
     --disable-nls     \
     --docdir=/usr/share/doc/procps-ng-$VERS
 
-b-make
-b-mi
+mk
+mi
 
 }
