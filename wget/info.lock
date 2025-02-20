@@ -6,4 +6,4 @@ version_command = "git ls-remote --tags --refs 'https://gitlab.com/gnuwget/wget2
 
 [source]
 url = "https://gnuwget.gitlab.io/wget2/wget2-latest.tar.gz"
-hash = "brV1TicPp6RvboxjzKytc3nsdAoDFv37D72VEqRh1m4"
+hash = "B7ryVoCNOpKmdvyiSO-EmcuROmAfpxKqse58iTC0EiY"
