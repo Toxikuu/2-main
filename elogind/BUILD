@@ -12,8 +12,8 @@ EXTRA=()
 with meson ninja
 
 _cfg_opts=(
-    -D cgroup-controller=elogind           
-    -D dev-kvm-mode=0660                   
+    -D cgroup-controller=elogind
+    -D dev-kvm-mode=0660
     -D dbuspolicydir=/etc/dbus-1/system.d
 )
 
@@ -35,3 +35,4 @@ ln -sfv libelogind.pc "$D"/usr/lib32/pkgconfig/libsystemd.pc
 cp -av {"$PORT","$D"}/etc
 
 }
+#d trimmed trailing whitespace
