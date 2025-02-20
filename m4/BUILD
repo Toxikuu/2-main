@@ -12,8 +12,8 @@ EXTRA=()
 # disable a bogus null pointer dereference warning that werrors the build
 sed -i '/-Wnull-dereference/d' configure
 
-DS=1 b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
 }
