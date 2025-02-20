@@ -9,10 +9,8 @@ EXTRA=()
 
 2b() {
 
-b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
 }
-
-#d fixed .uv.toml
