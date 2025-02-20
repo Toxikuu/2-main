@@ -10,7 +10,7 @@ EXTRA=()
 2b() {
 
 perl Makefile.PL
-b-make
-b-mi
+mk
+mi
 
 }
