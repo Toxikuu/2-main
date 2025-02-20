@@ -19,14 +19,15 @@ _cfg_opts=(
     --enable-pcre2test-libreadline
 )
 
-b-cfg "${_cfg_opts[@]}"
-b-make
-b-mi
+cfg "${_cfg_opts[@]}"
+mk
+mi
 
-b-make distclean
+mk distclean
+m32=1
 
-b-32cfg "${_cfg_opts[@]}"
-b-make
-b-32mi
+cfg "${_cfg_opts[@]}"
+mk
+mi
 
 }
