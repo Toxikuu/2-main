@@ -38,8 +38,7 @@ unset ZONEINFO
 TZ=${TZ:-$(curl -s https://ipinfo.io | grep timezone | cut -d '"' -f4 || echo 'America/New_York')}
 
 ln -sfv /usr/share/zoneinfo/"$TZ" /etc/localtime
-echo "Set timezone to $TZ"
-echo "This can (for now) be overridden with the TZ variable in /usr/share/2/bin/e-core"
+warn "Set timezone to $TZ."
 # TODO: Move system configuration variables to /etc/2/sysconf.toml
 
 }
