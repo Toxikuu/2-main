@@ -9,18 +9,18 @@ EXTRA=()
 
 2b() {
 
-mkdir -pv build
-cd        build
+with cmake
 
-CP=.. b-cmake
-b-ninja
-b-ni
+cm
+nj
+ni
 
-rm -rf ./*
+cd ..
+m32=1
 
-ASFLAGS=--32 CFLAGS=-m32 CXXFLAGS=-m32 \
-CP=.. b-32cmake
-b-ninja
-b-32ni
+ASFLAGS=--32 \
+cm
+nj
+ni
 
 }
