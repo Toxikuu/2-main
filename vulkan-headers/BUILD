@@ -12,11 +12,10 @@ EXTRA=()
 
 2b() {
 
-mkdir -pv build
-cd        build
+with cmake
 
-CP=.. b-cmake
-b-ninja
-b-ni
+cm
+nj
+ni
 
 }
