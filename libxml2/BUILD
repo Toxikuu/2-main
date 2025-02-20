@@ -1,5 +1,5 @@
 NAME="libxml2"
-VERS="2.13.5"
+VERS="2.13.6"
 DESC="Libraries and utilities for XML parsing"
 UPST="https://github.com/GNOME/libxml2.git"
 
