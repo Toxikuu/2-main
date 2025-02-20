@@ -11,7 +11,16 @@ EXTRA=(
 
 2b() {
 
-b-patch "$SRC"/nss-standalone-1.patch
+tpatch "$SRC"/nss-standalone-1.patch
+
+_cfg_opts=(
+    BUILD_OPT=1                         
+    NSPR_INCLUDE_DIR=/usr/include/nspr  
+    USE_SYSTEM_ZLIB=1                   
+    NSS_DISABLE_GTESTS=1                
+    ZLIB_LIBS=-lz                       
+    NSS_ENABLE_WERROR=0                 
+)
 
 # TODO: Use trap, a cleanup function, and NOUSE instead of deletion
 sqlite3 --version > /dev/null 2>&1 ||
@@ -21,12 +30,7 @@ fi
 
 cd nss
 
-b-make BUILD_OPT=1                    \
-    NSPR_INCLUDE_DIR=/usr/include/nspr  \
-    NSS_DISABLE_GTESTS=1                \
-    USE_SYSTEM_ZLIB=1                   \
-    ZLIB_LIBS=-lz                       \
-    NSS_ENABLE_WERROR=0                 \
+mk "${_cfg_opts[@]}" \
     $([ $(uname -m) = x86_64 ] && echo USE_64=1) \
     $([ -f /usr/lib/libsqlite3.so ] && echo NSS_USE_SYSTEM_SQLITE=1)
 
@@ -51,14 +55,10 @@ if [ -f /usr/lib32/libsqlite3.so ]; then
     rm -vf /usr/lib32/libsqlite3.so
 fi
 
-CC="gcc -m32" CXX="g++ -m32"            \
-b-make BUILD_OPT=1                      \
-    NSPR_INCLUDE_DIR=/usr/include/nspr  \
-    USE_SYSTEM_ZLIB=1                   \
-    NSS_DISABLE_GTESTS=1                \
-    ZLIB_LIBS=-lz                       \
-    NSS_ENABLE_WERROR=0                 \
-$([ -f /usr/lib32/libsqlite3.so ] && echo NSS_USE_SYSTEM_SQLITE=1)
+m32=1
+
+mk "${_cfg_opts[@]}" \
+    $([ -f /usr/lib32/libsqlite3.so ] && echo NSS_USE_SYSTEM_SQLITE=1)
 
 cd ../dist
 
@@ -66,6 +66,6 @@ install -vm755 Linux*/lib/*.so              "$D"/usr/lib32            &&
 install -vm644 Linux*/lib/{*.chk,libcrmf.a} "$D"/usr/lib32            &&
 sed -i 's/lib/lib32/g' Linux*/lib/pkgconfig/nss.pc                 &&
 install -vm644 Linux*/lib/pkgconfig/nss.pc  "$D"/usr/lib32/pkgconfig  ||
-die "Install failed"
+die "Install (m32) failed"
 
 }
