@@ -8,9 +8,9 @@ EXTRA=()
 
 2b() {
 
-b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
 ln -sv pkgconf "$D"/usr/bin/pkg-config
 ln -sv pkgconf.1 "$D"/usr/share/man/man1/pkg-config.1
