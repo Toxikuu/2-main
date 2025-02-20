@@ -9,14 +9,15 @@ EXTRA=()
 
 2b() {
 
-b-make prefix=/usr
-b-mi prefix=/usr
+mk prefix=/usr
+mi prefix=/usr
 
 mkdir -pv "$D"/usr/lib32
-b-make clean
+mk clean
+m32=1
 
-CC="gcc -m32" b-make prefix=/usr
-b-make prefix=/usr DESTDIR="$PWD/32DEST" install
+mk prefix=/usr
+mk prefix=/usr DESTDIR="$PWD/32DEST" install
 cp -av 32DEST/usr/lib/* "$D"/usr/lib32/ # note lib -> lib32
 
 sed -e "/^libdir/s/lib$/lib32/" -i "$D"/usr/lib32/pkgconfig/libzstd.pc
