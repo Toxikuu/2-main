@@ -9,17 +9,17 @@ EXTRA=()
 
 2b() {
 
+with meson ninja
+
 sed -i '/systemd_sysusers_dir/s/^/#/' meson.build
 
-mkdir -pv build
-CP=build b-ms \
-    -D man=false                \
+ms  -D man=false                \
     -D tests=false              \
     -D session_tracking=elogind \
     -D introspection=false      \
     -D os_type=lfs
-b-ninja -C build
-b-ni    -C build
+nj
+ni
 
 rm -vf "$D"/tmp/*.service
 rm -rf "$D"/usr/lib/{sysusers,tmpfiles}.d
