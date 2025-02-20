@@ -8,13 +8,12 @@ EXTRA=()
 
 2b() {
 
-b-cfg \
-    --sysconfdir=/etc   \
+cfg --sysconfdir=/etc   \
     --runstatedir=/run  \
     --without-logger    \
     --docdir=/usr/share/doc/sysklogd-$VERS
 
-b-make
-b-mi
+mk
+mi
 
 }
