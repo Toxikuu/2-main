@@ -16,19 +16,21 @@ _cfg_opts=(
     zlib-dynamic
 )
 
-./config --libdir=lib \
-         "${_cfg_opts[@]}"
-b-make
+./config "${_cfg_opts[@]}" \
+          --libdir=lib
+mk
 
 sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
-b-mi MANSUFFIX=ssl
+mi MANSUFFIX=ssl
 
-b-make distclean
-./config --libdir=lib32 \
-         linux-x86      \
-         "${_cfg_opts[@]}"
-b-make
-b-32mi
+mk distclean
+m32=1
+
+./config "${_cfg_opts[@]}" \
+          --libdir=lib32   \
+          linux-x86
+mk
+mi
 
 # this is a fucking stupid solution but i cant get openssl to cooperate LOL
 pushd "$D"/usr/lib
