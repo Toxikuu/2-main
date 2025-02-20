@@ -14,12 +14,12 @@ EXTRA=(
 tpatch "$SRC"/nss-standalone-1.patch
 
 _cfg_opts=(
-    BUILD_OPT=1                         
-    NSPR_INCLUDE_DIR=/usr/include/nspr  
-    USE_SYSTEM_ZLIB=1                   
-    NSS_DISABLE_GTESTS=1                
-    ZLIB_LIBS=-lz                       
-    NSS_ENABLE_WERROR=0                 
+    BUILD_OPT=1
+    NSPR_INCLUDE_DIR=/usr/include/nspr
+    USE_SYSTEM_ZLIB=1
+    NSS_DISABLE_GTESTS=1
+    ZLIB_LIBS=-lz
+    NSS_ENABLE_WERROR=0
 )
 
 # TODO: Use trap, a cleanup function, and NOUSE instead of deletion
@@ -69,3 +69,4 @@ install -vm644 Linux*/lib/pkgconfig/nss.pc  "$D"/usr/lib32/pkgconfig  ||
 die "Install (m32) failed"
 
 }
+#d trimmed trailing whitespace
