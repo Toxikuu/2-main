@@ -8,14 +8,15 @@ EXTRA=()
 
 2b() {
 
-b-cfg --disable-doc
-b-make
-b-mi
+cfg --disable-doc
+mk
+mi
 
-b-make distclean
+mk distclean
+m32=1
 
-b-32cfg --disable-doc
-b-make
-b-32mi
+cfg --disable-doc
+mk
+mi
 
 }
