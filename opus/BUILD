@@ -8,16 +8,17 @@ EXTRA=()
 
 2b() {
 
-mkdir -pv build
-cd        build
+with meson ninja
 
-CP=.. b-ms
-b-ninja
-b-ni
+ms
+nj
+ni
 
-rm -rf *
-CP=.. b-32ms
-b-ninja
-b-32ni
+cd ..
+m32=1
+
+ms
+nj
+ni
 
 }
