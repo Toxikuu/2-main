@@ -13,11 +13,10 @@ DEPS=(
 
 2b() {
 
-mkdir -pv build
-cd        build
+with meson ninja
 
-CP=.. b-ms -D update-mimedb=true
-b-ninja
-b-ni
+ms -D update-mimedb=true
+nj
+ni
 
 }
