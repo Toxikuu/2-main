@@ -10,6 +10,8 @@ EXTRA=(
 
 2b() {
 
+with meson ninja
+
 sed -e 's/GROUP="render"/GROUP="video"/' \
     -e 's/GROUP="sgx", //'               \
     -i rules.d/50-udev-default.rules.in
@@ -19,9 +21,6 @@ sed -i '/systemd-sysctl/s/^/#/' rules.d/99-systemd.rules.in
 sed -e '/NETWORK_DIRS/s/systemd/udev/' \
     -i src/libsystemd/sd-network/network-util.h
 
-mkdir -pv build
-cd        build
-
 _ms_opts=(
     -D mode=release
     -D dev-kvm-mode=0660
@@ -30,13 +29,13 @@ _ms_opts=(
     -D vconsole=false
 )
 
-CP=.. b-ms "${_ms_opts[@]}"
+ms "${_ms_opts[@]}"
 
 export udev_helpers=$(grep "'name' :" ../src/udev/meson.build | \
                       awk '{print $3}' | tr -d ",'" | grep -v 'udevadm')
 
-b-ninja udevadm systemd-hwdb                                           \
-      $(b-ninja -n | grep -Eo '(src/(lib)?udev|rules.d|hwdb.d)/[^ ]*') \
+nj udevadm systemd-hwdb                                           \
+      $(nj -n | grep -Eo '(src/(lib)?udev|rules.d|hwdb.d)/[^ ]*') \
       $(realpath libudev.so --relative-to .)                           \
       $udev_helpers
 
@@ -60,21 +59,20 @@ install -vm755 $udev_helpers                       "$D"/usr/lib/udev
 install -vm644 ../network/99-default.link          "$D"/usr/lib/udev/network
 
 tar -xvf "$SRC"/udev-lfs-20230818.tar.xz
-b-make -f udev-lfs-20230818/Makefile.lfs DESTDIR="$D" install
+mk -f udev-lfs-20230818/Makefile.lfs DESTDIR="$D" install
 
 unset udev_helpers
 
 
-# m32
-rm -rf *
+cd ..
+m32=1
 
 LANG=en_US.UTF-8 \
-CP=.. b-32ms "${_ms_opts[@]}"
+ms "${_ms_opts[@]}"
 
-b-ninja \
-      $(grep -o -E "^build (src/libudev|src/udev)[^:]*" \
-        build.ninja | awk '{ print $2 }') \
-      $(realpath libudev.so --relative-to .)
+nj  $(grep -o -E "^build (src/libudev|src/udev)[^:]*" \
+      build.ninja | awk '{ print $2 }') \
+    $(realpath libudev.so --relative-to .)
 
 mkdir -pv "$D"/usr/lib32/pkgconfig
 cp -av libudev.so{,*[0-9]} "$D"/usr/lib32/
