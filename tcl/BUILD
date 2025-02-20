@@ -10,10 +10,8 @@ EXTRA=()
 2b() {
 
 cd unix
-DS=1 b-cfg \
-    --mandir=/usr/share/man \
-    --disable-rpath
-b-make
+cfg --disable-rpath --mandir=/usr/share/man
+mk
 
 ver="${VERS%.*}"
 sed -e "s@$BLD/unix@/usr/lib@"                \
@@ -34,8 +32,8 @@ sed -e "s@$BLD/unix/pkgs/$itclver@/usr/lib/$itclver@" \
     -e "s@$BLD/pkgs/$itclver@/usr/include@"            \
     -i pkgs/$itclver/itclConfig.sh
 
-b-mi
-b-make install-private-headers DESTDIR="$D"
+mi
+mk install-private-headers DESTDIR="$D"
 
 chmod -v u+w "$D"/usr/lib/libtcl$ver.so
 ln -sfv tclsh$ver "$D"/usr/bin/tclsh
