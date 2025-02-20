@@ -8,6 +8,7 @@ EXTRA=()
 
 2b() {
 
+DONT_DISABLE_STATIC=1 \
 cfg
 mk
 mi
