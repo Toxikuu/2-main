@@ -19,16 +19,17 @@ _cfg_opts=(
     -D SPIRV-Headers_SOURCE_DIR=/usr
 )
 
-mkdir -pv build
-cd        build
+with cmake ninja
 
-CP=.. b-cmake ${_cfg_opts[@]}
-b-ninja
-b-ni
+cm ${_cfg_opts[@]}
+nj
+ni
 
-rm -rf ./*
-CP=.. b-32cmake ${_cfg_opts[@]}
-b-ninja
-b-32ni
+cd ..
+m32=1
+
+cm ${_cfg_opts[@]}
+nj
+ni
 
 }
