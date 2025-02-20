@@ -1,6 +1,6 @@
 repo = "main"
 name = "fastfetch"
-version = "2.36.1"
+version = "2.37.0"
 upstream = "https://github.com/fastfetch-cli/fastfetch.git"
 
 [source]
