@@ -13,14 +13,15 @@ sed -i '/MV.*old/d' Makefile.in
 sed -i '/{OLDSUFF}/c:' support/shlib-install
 sed -i 's/-Wl,-rpath,[^ ]*//' support/shobj-conf
 
-b-cfg --with-curses
-b-make SHLIB_LIBS="-lncursesw"
-b-mi SHLIB_LIBS="-lncursesw"
+cfg --with-curses
+mk SHLIB_LIBS="-lncursesw"
+mi SHLIB_LIBS="-lncursesw"
 
-b-make distclean
+mk distclean
+m32=1
 
-b-32cfg --with-curses
-make SHLIB_LIBS="-lncursesw"
-b-32mi SHLIB_LIBS="-lncursesw"
+cfg --with-curses
+mk SHLIB_LIBS="-lncursesw"
+mi SHLIB_LIBS="-lncursesw"
 
 }
