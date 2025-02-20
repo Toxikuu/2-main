@@ -18,8 +18,8 @@ _mk_opts=(
     DESTDIR="$D"
 )
 
-b-make ${_mk_opts[@]}
-b-make ${_mk_opts[@]} install install-lib
+mk ${_mk_opts[@]}
+mk ${_mk_opts[@]} install install-lib
 
 chmod -v 755 "$D"/usr/lib/libpci.so
 
