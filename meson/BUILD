@@ -8,6 +8,8 @@ EXTRA=()
 
 2b() {
 
+with pip
+
 pipb
 pipi meson
 
