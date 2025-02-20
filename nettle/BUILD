@@ -9,9 +9,9 @@ EXTRA=()
 
 2b() {
 
-b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
 chmod -v 755 "$D"/usr/lib/lib{hogweed,nettle}.so
 
