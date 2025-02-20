@@ -9,7 +9,7 @@ EXTRA=()
 
 2b() {
 
-DS=1 b-cfg \
+cfg \
     --mandir=/usr/share/man \
     --with-shared           \
     --without-debug         \
@@ -18,8 +18,8 @@ DS=1 b-cfg \
     --enable-pc-files       \
     --with-pkg-config-libdir=/usr/lib/pkgconfig
 
-b-make
-b-mi
+mk
+mi
 
 sed -e 's/^#if.*XOPEN.*$/#if 1/' \
     -i "$D"/usr/include/curses.h
@@ -31,9 +31,10 @@ done
 
 ln -sfv libncursesw.so "$D"/usr/lib/libcurses.so
 
-make distclean
+mk distclean
+m32=1
 
-DS=1 b-32cfg \
+cfg \
     --mandir=/usr/share/man \
     --with-shared           \
     --without-debug         \
@@ -42,8 +43,8 @@ DS=1 b-32cfg \
     --enable-pc-files       \
     --with-pkg-config-libdir=/usr/lib32/pkgconfig
 
-b-make
-b-make DESTDIR="$PWD/32DEST" install
+mk
+mi
 
 mkdir -pv {32DEST,D}/usr/lib32/pkgconfig
 for lib in ncurses form panel menu ; do
