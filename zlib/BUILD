@@ -8,17 +8,18 @@ EXTRA=()
 
 2b() {
 
-DS=1 b-cfg
-b-make
-b-mi
+cfg
+mk
+mi
 
 make distclean
+m32=1
 
-CFLAGS+=" -m32" CXXFLAGS+=" -m32" \
-./configure --prefix=/usr --libdir=/usr/lib32 # b-32cfg doesn't work bc this configure is picky
-b-make
-
-b-32mi
+# CFLAGS+=" -m32" CXXFLAGS+=" -m32" \
+cm --libdir=/usr/lib32
+# ./configure --prefix=/usr --libdir=/usr/lib32 # b-32cfg doesn't work bc this configure is picky
+mk
+mi
 
 rm -vf D/usr/lib{,32}/libz.a
 
