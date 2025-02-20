@@ -9,8 +9,8 @@ EXTRA=()
 
 2b() {
 
-b-cfg --enable-thread-safe
-b-make
-b-mi
+cfg --enable-thread-safe
+mk
+mi
 
 }
