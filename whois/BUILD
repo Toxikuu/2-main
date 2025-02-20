@@ -8,7 +8,7 @@ EXTRA=()
 
 2b() {
 
-b-make
-b-make prefix=/usr DESTDIR="$D" install
+mk
+mi prefix=/usr
 
 }
