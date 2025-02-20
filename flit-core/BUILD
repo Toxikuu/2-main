@@ -1,5 +1,5 @@
 NAME="flit-core"
-VERS="3.10.1"
+VERS="3.11.0"
 DESC="Tool for building distributable Python modules"
 UPST="https://github.com/pypa/flit.git"
 
