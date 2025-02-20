@@ -1,6 +1,6 @@
 repo = "main"
 name = "libpng"
-version = "1.6.46"
+version = "1.6.47"
 upstream = "https://github.com/pnggroup/libpng.git"
 
 [source]
