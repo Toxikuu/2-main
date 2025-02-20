@@ -16,6 +16,7 @@ make distclean
 m32=1
 
 # CFLAGS+=" -m32" CXXFLAGS+=" -m32" \
+DONT_DISABLE_STATIC=1 \
 cm --libdir=/usr/lib32
 # ./configure --prefix=/usr --libdir=/usr/lib32 # b-32cfg doesn't work bc this configure is picky
 mk
