@@ -18,7 +18,7 @@ ni
 cd ..
 m32=1
 
-ASFLAGS=--32 \
+ASFLAGS=--32 CFLAGS=-m32 CXXFLAGS=-m32 \
 cm
 nj
 ni
