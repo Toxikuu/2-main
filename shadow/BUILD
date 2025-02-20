@@ -31,8 +31,8 @@ sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' \
             --without-libbsd    \
             --with-{b,yes}crypt \
             --with-group-name-max-length=32
-b-make
-b-mi exec_prefix=/usr pamddir=
+mk
+mi exec_prefix=/usr pamddir=
 
 install -v -m644 "$D"/etc/login.defs "$D"/etc/login.defs.orig
 
