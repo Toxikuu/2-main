@@ -4,5 +4,5 @@ version = "6.11"
 upstream = "https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git"
 
 [source]
-url = "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.10.tar.xz"
+url = "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.11.tar.xz"
 hash = "20lQOtTaB2M_ooASoniRXw8BeK1sMzRuWbetpzGSVwk"
