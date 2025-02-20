@@ -2,7 +2,11 @@ repo = "main"
 name = "glibc"
 version = "2.41"
 description = "The GNU C library"
-timestamp = "2025-02-20 17:37:33"
+categories = [
+    "critical",
+    "core",
+]
+timestamp = "2025-02-20 17:44:05"
 upstream = "https://sourceware.org/git/glibc.git"
 version_command = '''git ls-remote --tags --refs 'https://sourceware.org/git/glibc.git' | sed 's@.*/@@' | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\.' | sort -V | tail -n1'''
 
