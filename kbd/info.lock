@@ -1,6 +1,8 @@
 repo = "main"
 name = "kbd"
 version = "2.7.1"
+description = "Keyboard utilities and keytable files"
+timestamp = "2025-02-20 20:19:50"
 upstream = "https://git.kernel.org/pub/scm/linux/kernel/git/legion/kbd.git"
 
 [source]
