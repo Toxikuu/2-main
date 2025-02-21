@@ -1,6 +1,8 @@
 repo = "main"
 name = "udev"
 version = "257.3"
+description = "Programs for dynamic device node creation"
+timestamp = "2025-02-20 20:23:26"
 upstream = "https://github.com/systemd/systemd.git"
 
 [source]
