@@ -40,14 +40,14 @@ sed 's/utility/tool/' -i utils/FileCheck/CMakeLists.txt
 # TODO: ^ include it, and move my slightly tailored llvm build to tox
 _cfg_opts=(
     -D LLVM_ENABLE_FFI=ON
-    -D LLVM_BUILD_LLVM_DYLIB=ON                \
-    -D LLVM_LINK_LLVM_DYLIB=ON                 \
-    -D LLVM_ENABLE_RTTI=ON                     \
-    -D LLVM_TARGETS_TO_BUILD="X86;host"        \
-    -D LLVM_BINUTILS_INCDIR=/usr/include       \
-    -D LLVM_INCLUDE_BENCHMARKS=OFF             \
-    -D CLANG_DEFAULT_PIE_ON_LINUX=ON           \
-    -D CLANG_CONFIG_FILE_SYSTEM_DIR=/etc/clang \
+    # -D LLVM_BUILD_LLVM_DYLIB=ON
+    # -D LLVM_LINK_LLVM_DYLIB=ON
+    -D LLVM_ENABLE_RTTI=ON
+    -D LLVM_TARGETS_TO_BUILD="X86;host"
+    -D LLVM_BINUTILS_INCDIR=/usr/include
+    -D LLVM_INCLUDE_BENCHMARKS=OFF
+    -D CLANG_DEFAULT_PIE_ON_LINUX=ON
+    -D CLANG_CONFIG_FILE_SYSTEM_DIR=/etc/clang
 )
 
 CC=gcc CXX=g++ \
