@@ -1,0 +1,15 @@
+repo = "main"
+name = "cbindgen"
+version = "0.28.0"
+description = "Tool for generating C bindings from Rust code"
+categories = [
+    "dev",
+    "graphics",
+]
+timestamp = "2025-02-21 15:27:12"
+dependencies = ["rust"]
+upstream = "https://github.com/mozilla/cbindgen.git"
+
+[source]
+url = "https://github.com/mozilla/cbindgen/archive/v0.28.0/cbindgen-0.28.0.tar.gz"
+hash = "sO053aCJyvulg-QHGD5D3hUdKunZRddPtIcNt-TKhY4"
