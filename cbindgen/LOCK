@@ -6,7 +6,7 @@ categories = [
     "dev",
     "graphics",
 ]
-timestamp = "2025-02-21 15:27:12"
+timestamp = "2025-02-21 15:32:22"
 dependencies = ["rust"]
 upstream = "https://github.com/mozilla/cbindgen.git"
 
