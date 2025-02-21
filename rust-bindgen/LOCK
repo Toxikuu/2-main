@@ -1,0 +1,18 @@
+repo = "main"
+name = "rust-bindgen"
+version = "0.71.1"
+description = "Automatically generates Rust FFI bindings to C (and some C++) libraries"
+categories = [
+    "dev",
+    "graphics",
+]
+timestamp = "2025-02-21 15:30:50"
+dependencies = [
+    "llvm",
+    "rust",
+]
+upstream = "https://github.com/rust-lang/rust-bindgen.git"
+
+[source]
+url = "https://github.com/rust-lang/rust-bindgen/archive/v0.71.1/rust-bindgen-0.71.1.tar.gz"
+hash = "Yg2Awytqr0LRLYXehvxWlQyGsqE6W5Q8EMKdMMTz77A"
