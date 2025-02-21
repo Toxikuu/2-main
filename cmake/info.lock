@@ -1,6 +1,14 @@
 repo = "main"
 name = "cmake"
 version = "3.31.5"
+description = "Build system succeeding configure scripts"
+timestamp = "2025-02-20 20:19:48"
+dependencies = [
+    "curl",
+    "libarchive",
+    "libuv",
+    "nghttp2",
+]
 upstream = "https://gitlab.kitware.com/cmake/cmake.git"
 
 [source]
