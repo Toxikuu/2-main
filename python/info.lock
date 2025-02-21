@@ -1,6 +1,8 @@
 repo = "main"
 name = "python"
 version = "3.13.2"
+description = "The Python programming language"
+timestamp = "2025-02-20 20:23:25"
 upstream = "https://github.com/python/cpython.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/python/cpython.git' | sed 's@.*/@@' | grep -Ev 'a|b|rc' | sort -V | tail -n1"
 
