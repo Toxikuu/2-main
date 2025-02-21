@@ -1,6 +1,8 @@
 repo = "main"
 name = "libpipeline"
 version = "1.5.8"
+description = "Library for manipulating subprocess pipelines"
+timestamp = "2025-02-20 20:19:51"
 upstream = "https://gitlab.com/libpipeline/libpipeline.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.com/libpipeline/libpipeline.git' | sed 's@.*/@@' | grep -Ev '^2.+' | tail -n1"
 
