@@ -1,6 +1,8 @@
 repo = "main"
 name = "dejagnu"
 version = "1.6.3"
+description = "Framework for running GNU test suites written in expect"
+timestamp = "2025-02-20 20:19:48"
 upstream = "https://git.savannah.gnu.org/git/dejagnu.git"
 version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/dejagnu.git' | grep release | tail -n1 | cut -d- -f2"
 
