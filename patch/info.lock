@@ -1,6 +1,8 @@
 repo = "main"
 name = "patch"
 version = "2.7.6"
+description = "Utility to apply patch files to source files"
+timestamp = "2025-02-20 20:23:25"
 upstream = "https://git.savannah.gnu.org/git/patch.git"
 
 [source]
