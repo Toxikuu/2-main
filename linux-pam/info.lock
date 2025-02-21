@@ -1,6 +1,8 @@
 repo = "main"
 name = "linux-pam"
 version = "1.7.0"
+description = "Pluggable Authentication Modules"
+timestamp = "2025-02-20 20:23:23"
 upstream = "https://github.com/linux-pam/linux-pam.git"
 
 [source]
