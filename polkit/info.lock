@@ -1,6 +1,8 @@
 repo = "main"
 name = "polkit"
 version = "126"
+description = "Toolkit for defining and handling authorizations"
+timestamp = "2025-02-20 20:23:25"
 upstream = "https://github.com/polkit-org/polkit.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/polkit-org/polkit.git' | sed 's@.*/@@' | grep -E '^[0-9]+$' | tail -n1"
 
