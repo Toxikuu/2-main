@@ -1,6 +1,8 @@
 repo = "main"
 name = "autoconf"
 version = "2.72"
+description = "Programs to produce shell scripts to automatically configure source code"
+timestamp = "2025-02-20 20:19:47"
 upstream = "https://git.savannah.gnu.org/git/autoconf.git"
 version_command = '''git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/autoconf.git' | sed 's@.*/@@' | grep -E '^v[0-9]\.[0-9]' | grep -v '[a-k]$' | tail -n1'''
 
