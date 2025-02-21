@@ -1,6 +1,8 @@
 repo = "main"
 name = "curl"
 version = "8.12.1"
+description = "Tool and library for transferring data with URLs"
+timestamp = "2025-02-20 20:19:48"
 upstream = "https://github.com/curl/curl.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/curl/curl.git' | sed 's@.*/@@' | grep -E '^curl-[0-9]+' | grep -Ev 'pre|alpha' | sed 's@_@.@g' | cut -d- -f2 | sort -V | tail -n1"
 
