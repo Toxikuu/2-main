@@ -1,6 +1,8 @@
 repo = "main"
 name = "nss"
 version = "3.108"
+description = "Network Security Services"
+timestamp = "2025-02-20 20:23:24"
 upstream = "https://github.com/nss-dev/nss.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/nss-dev/nss.git' | sed 's@.*/@@' | grep -E '^NSS.+RTM$' | sed -e 's@NSS_@@' -e 's@_RTM@@' -e 's@_@.@g' | grep -Ev '[a-Z]+' | sort -V | tail -n1"
 
