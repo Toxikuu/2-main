@@ -1,6 +1,8 @@
 repo = "main"
 name = "findutils"
 version = "4.10.0"
+description = "Programs to find and execute commands on files"
+timestamp = "2025-02-20 20:19:48"
 upstream = "https://git.savannah.gnu.org/git/findutils.git"
 
 [source]
