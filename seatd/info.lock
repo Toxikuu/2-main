@@ -1,6 +1,8 @@
 repo = "main"
 name = "seatd"
 version = "0.9.1"
+description = "Universal seat management library"
+timestamp = "2025-02-20 20:23:25"
 upstream = "https://github.com/kennylevinsen/seatd.git"
 
 [source]
