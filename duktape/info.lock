@@ -1,6 +1,8 @@
 repo = "main"
 name = "duktape"
 version = "2.7.0"
+description = "Lightweight, portable, embeddable Javascript engine"
+timestamp = "2025-02-20 20:19:48"
 upstream = "https://github.com/svaarala/duktape.git"
 
 [source]
