@@ -1,6 +1,8 @@
 repo = "main"
 name = "whois"
 version = "5.5.23"
+description = "Tool to query domain name information"
+timestamp = "2025-02-20 20:23:26"
 upstream = "https://github.com/rfc1036/whois"
 
 [source]
