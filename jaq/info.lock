@@ -1,8 +1,8 @@
 repo = "main"
-name = "jq"
+name = "jaq"
 version = "2.1.0"
 description = "A jq clone focussed on correctness, speed, and simplicity"
-timestamp = "2025-02-20 20:19:50"
+timestamp = "2025-02-20 20:55:44"
 dependencies = ["rust"]
 upstream = "https://github.com/01mf02/jaq.git"
 
