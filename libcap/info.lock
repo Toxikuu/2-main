@@ -1,6 +1,8 @@
 repo = "main"
 name = "libcap"
 version = "2.73"
+description = "POSIX 1003.1e capabilities"
+timestamp = "2025-02-20 20:19:51"
 upstream = "https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
 version_command = "git ls-remote --tags --refs 'https://git.kernel.org/pub/scm/libs/libcap/libcap.git' | sed 's@.*/@@' | grep 'libcap-korg-' | tail -n1 | cut -d- -f3"
 
