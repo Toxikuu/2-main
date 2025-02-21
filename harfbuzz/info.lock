@@ -1,6 +1,9 @@
 repo = "main"
 name = "harfbuzz"
 version = "10.2.0"
+description = "OpenType text shaping engine"
+timestamp = "2025-02-20 20:19:49"
+dependencies = ["freetype"]
 upstream = "https://github.com/harfbuzz/harfbuzz.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/harfbuzz/harfbuzz.git' | sed 's@.*/@@' | sort -V | grep -E '[0-9]' | tail -n1"
 
