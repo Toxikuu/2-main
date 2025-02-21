@@ -1,6 +1,8 @@
 repo = "main"
 name = "pfetch"
 version = "0.6.0"
+description = "Pretty (and unmaintained) fetch script written in POSIX sh"
+timestamp = "2025-02-20 20:23:25"
 upstream = "https://github.com/dylanaraps/pfetch.git"
 
 [source]
