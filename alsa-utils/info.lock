@@ -1,6 +1,8 @@
 repo = "main"
 name = "alsa-utils"
 version = "1.2.13"
+description = "ALSA utilities"
+timestamp = "2025-02-20 20:19:47"
 upstream = "https://github.com/alsa-project/alsa-utils.git"
 
 [source]
