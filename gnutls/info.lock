@@ -1,6 +1,15 @@
 repo = "main"
 name = "gnutls"
 version = "3.8.9"
+description = "Library providing a secure layer over a reliable transport layer"
+timestamp = "2025-02-20 20:19:49"
+dependencies = [
+    "nettle",
+    "make-ca",
+    "libunistring",
+    "libtasn1",
+    "p11-kit",
+]
 upstream = "https://gitlab.com/gnutls/gnutls.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.com/gnutls/gnutls.git' | sed -e 's@.*/@@' -e 's@_@.@g' -e 's@gnutls.@@' | grep -Ev 'pre|a|-' | sort -V | tail -n1"
 
