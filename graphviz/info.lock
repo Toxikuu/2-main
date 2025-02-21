@@ -1,6 +1,8 @@
 repo = "main"
 name = "graphviz"
 version = "12.2.1"
+description = "Graph visualization software"
+timestamp = "2025-02-20 20:19:49"
 upstream = "https://gitlab.com/graphviz/graphviz.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.com/graphviz/graphviz.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1"
 
