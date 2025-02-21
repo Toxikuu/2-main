@@ -1,6 +1,8 @@
 repo = "main"
 name = "sed"
 version = "4.9"
+description = "Stream editor"
+timestamp = "2025-02-20 20:23:25"
 upstream = "git://git.savannah.gnu.org/sed.git"
 
 [source]
