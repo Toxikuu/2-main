@@ -36,14 +36,17 @@ grep -rl '#!.*python' | xargs sed -i '1s/python$/python3/'
 # install filecheck (needed by some package test suites)
 sed 's/utility/tool/' -i utils/FileCheck/CMakeLists.txt
 
-# the amdgpu target is excluded
-# TODO: ^ include it, and move my slightly tailored llvm build to tox
+# BUILD_SHARED_LIBS=ON in the abstraction
+# The shared libs conflict with rustc, but rustup ships its own copy of llvm anyway
+# The options required for rustc with system llvm are commented out
+#
+# The AMDGPU target is included in this build as well
 _cfg_opts=(
     -D LLVM_ENABLE_FFI=ON
     # -D LLVM_BUILD_LLVM_DYLIB=ON
     # -D LLVM_LINK_LLVM_DYLIB=ON
     -D LLVM_ENABLE_RTTI=ON
-    -D LLVM_TARGETS_TO_BUILD="X86;host"
+    -D LLVM_TARGETS_TO_BUILD="X86;host;AMDGPU"
     -D LLVM_BINUTILS_INCDIR=/usr/include
     -D LLVM_INCLUDE_BENCHMARKS=OFF
     -D CLANG_DEFAULT_PIE_ON_LINUX=ON
