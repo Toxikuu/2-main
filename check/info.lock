@@ -1,6 +1,8 @@
 repo = "main"
 name = "check"
 version = "0.15.2"
+description = "Unit testing framework for C"
+timestamp = "2025-02-20 20:19:48"
 upstream = "https://github.com/libcheck/check.git"
 
 [source]
