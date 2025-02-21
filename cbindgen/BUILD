@@ -15,6 +15,6 @@ EXTRA=()
 with rust
 
 cbr
-install -vDm755 target/release/cbindgen "$D"/usr/bin/
+install -vDm755 target/release/cbindgen "$D"/usr/bin/cbindgen
 
 }
