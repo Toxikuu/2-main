@@ -1,6 +1,8 @@
 repo = "main"
 name = "gettext"
 version = "0.23.1"
+description = "Internationalization and localization utilities"
+timestamp = "2025-02-20 20:19:49"
 upstream = "https://git.savannah.gnu.org/git/gettext.git"
 
 [source]
