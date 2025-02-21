@@ -2,7 +2,11 @@ repo = "main"
 name = "gcc"
 version = "14.2.0"
 description = "The GNU compiler collection"
-timestamp = "2025-02-20 20:06:22"
+categories = [
+    "critical",
+    "core",
+]
+timestamp = "2025-02-20 20:19:48"
 upstream = "https://gcc.gnu.org/git/gcc.git"
 version_command = "git ls-remote --tags --refs 'https://gcc.gnu.org/git/gcc.git' | sed 's:.*/::' | sort -V | grep gcc- | tail -n1 | cut -d- -f2"
 
