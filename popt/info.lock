@@ -1,6 +1,8 @@
 repo = "main"
 name = "popt"
 version = "1.19"
+description = "Libraries for parsing command-line options"
+timestamp = "2025-02-20 20:23:25"
 upstream = "https://github.com/rpm-software-management/popt.git"
 version_command = '''git ls-remote --tags --refs 'https://github.com/rpm-software-management/popt.git' | sed 's@.*/@@' | grep -E 'popt-[0-9]+\.[0-9]+-release' | cut -d- -f2 | tail -n1'''
 
