@@ -1,6 +1,8 @@
 repo = "main"
 name = "ext4magic"
 version = "0.3.2"
+description = "Utility to recover deleted files on the ext3/4 filesystems"
+timestamp = "2025-02-20 20:19:48"
 
 [source]
 url = "https://downloads.sourceforge.net/ext4magic/ext4magic-0.3.2.tar.gz"
