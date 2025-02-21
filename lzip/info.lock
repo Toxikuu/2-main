@@ -1,6 +1,8 @@
 repo = "main"
 name = "lzip"
 version = "1.25"
+description = "A lossless file compressor based on the LZMA algorithm"
+timestamp = "2025-02-20 20:23:24"
 upstream = "http://download.savannah.gnu.org/releases/lzip/?C=M&O=D"
 version_command = "curl -s 'http://download.savannah.gnu.org/releases/lzip/?C=M&O=D' | grep 'lzip-' | head -n1 | cut -d- -f2 | cut -d. -f1-3 | sed 's@.tar.*@@'"
 
