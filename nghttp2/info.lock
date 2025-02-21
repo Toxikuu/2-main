@@ -1,6 +1,8 @@
 repo = "main"
 name = "nghttp2"
 version = "1.64.0"
+description = "Implementation of HTTP/2"
+timestamp = "2025-02-20 20:23:24"
 upstream = "https://github.com/nghttp2/nghttp2.git"
 
 [source]
