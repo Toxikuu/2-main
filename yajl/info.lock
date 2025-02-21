@@ -1,6 +1,9 @@
 repo = "main"
 name = "yajl"
 version = "2.1.0"
+description = "Yet another json library"
+timestamp = "2025-02-20 20:23:26"
+dependencies = ["cmake"]
 upstream = "https://github.com/lloyd/yajl.git"
 
 [source]
