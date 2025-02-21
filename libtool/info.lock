@@ -1,6 +1,8 @@
 repo = "main"
 name = "libtool"
 version = "2.5.4"
+description = "The GNU generic library support script"
+timestamp = "2025-02-20 20:23:23"
 upstream = "git://git.savannah.gnu.org/libtool.git"
 
 [source]
