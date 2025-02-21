@@ -2,6 +2,7 @@ NAME="gcc"
 VERS="14.2.0"
 DESC="The GNU compiler collection"
 UPST="https://gcc.gnu.org/git/gcc.git"
+CATG="critical core"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's:.*/::' | sort -V | grep gcc- | tail -n1 | cut -d- -f2" # gcc 15 is currently upstable, so ignore this
 
 SOURCE="https://ftp.gnu.org/gnu/gcc/gcc-$VERS/gcc-$VERS.tar.xz"
