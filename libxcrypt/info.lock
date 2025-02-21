@@ -1,6 +1,8 @@
 repo = "main"
 name = "libxcrypt"
 version = "4.4.38"
+description = "Modern library for password hashing"
+timestamp = "2025-02-20 20:23:23"
 upstream = "https://github.com/besser82/libxcrypt.git"
 
 [source]
