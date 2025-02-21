@@ -1,6 +1,12 @@
 repo = "main"
 name = "efibootmgr"
 version = "18"
+description = "User-space application to modify the EFI Boot Manager"
+timestamp = "2025-02-20 20:19:48"
+dependencies = [
+    "efivar",
+    "popt",
+]
 upstream = "https://github.com/rhboot/efibootmgr.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/rhboot/efibootmgr.git' | sed 's@.*/@@' | grep -E '^[0-9]+$' | tail -n1"
 
