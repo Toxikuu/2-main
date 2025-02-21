@@ -1,6 +1,8 @@
 repo = "main"
 name = "libsndfile"
 version = "1.2.2"
+description = "Library of C routines for reading and writing files containing sampled audio data"
+timestamp = "2025-02-20 20:23:23"
 upstream = "https://github.com/libsndfile/libsndfile.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/libsndfile/libsndfile.git' | sed 's@.*/@@' | grep -B1 'v1.0.28pre1' | head -n1"
 
