@@ -1,6 +1,8 @@
 repo = "main"
 name = "which"
 version = "2.23"
+description = "A utility to show the full path of commands"
+timestamp = "2025-02-20 20:23:26"
 upstream = "https://ftp.gnu.org/gnu/which/?C=M;O=D"
 version_command = "curl -s 'https://ftp.gnu.org/gnu/which/?C=M;O=D' | grep which- | head -n1 | cut -d- -f2 | cut -d. -f1-2"
 
