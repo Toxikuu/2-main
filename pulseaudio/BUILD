@@ -14,6 +14,7 @@ _cfg_opts=(
     -D database=gdbm
     -D doxygen=false
     -D bluez5=disabled
+    -D tests=disabled
 )
 
 ms "${_cfg_opts[@]}"
@@ -29,3 +30,4 @@ nj
 ni
 
 }
+# disable tests for pulseaudio, as they aren't run and rope in check
