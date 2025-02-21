@@ -1,6 +1,8 @@
 repo = "main"
 name = "jinja2"
 version = "3.1.5"
+description = "Python module implementing a simple template language"
+timestamp = "2025-02-20 20:19:50"
 upstream = "https://github.com/pallets/jinja.git"
 
 [source]
