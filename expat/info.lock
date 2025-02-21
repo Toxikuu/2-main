@@ -1,6 +1,8 @@
 repo = "main"
 name = "expat"
 version = "2.6.4"
+description = "XML parsing library"
+timestamp = "2025-02-20 20:19:48"
 upstream = "https://github.com/libexpat/libexpat.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/libexpat/libexpat.git' | sed 's:.*/::' | sort -V | grep -B 1 V1_0 | head -n1 | cut -d_ -f2- | sed 's/_/./g'"
 
