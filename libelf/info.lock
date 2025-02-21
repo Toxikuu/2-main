@@ -1,6 +1,8 @@
 repo = "main"
 name = "libelf"
 version = "0.192"
+description = "Library for handling ELF files"
+timestamp = "2025-02-20 20:19:51"
 upstream = "https://sourceware.org/git/elfutils.git"
 version_command = "git ls-remote --tags 'https://sourceware.org/git/elfutils.git' | tail -n2 | head -n1 | cut -d- -f2"
 
