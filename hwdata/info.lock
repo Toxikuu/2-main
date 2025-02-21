@@ -1,6 +1,8 @@
 repo = "main"
 name = "hwdata"
 version = "0.392"
+description = "Hardware PCI and vendor ID databases"
+timestamp = "2025-02-20 20:19:49"
 upstream = "https://github.com/vcrhonek/hwdata.git"
 
 [source]
