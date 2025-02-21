@@ -22,9 +22,9 @@ mkdir -pv \
     "$D"/usr/share/zsh/site-functions \
     "$D"/usr/share/bash-completion/completions
 
-bindgen --generate-shell-completions bash \
+target/release/bindgen --generate-shell-completions bash \
     > "$D"/usr/share/bash-completion/completions/bindgen
-bindgen --generate-shell-completions zsh  \
+target/release/bindgen --generate-shell-completions zsh  \
     > "$D"/usr/share/zsh/site-functions/_bindgen
 
 }
