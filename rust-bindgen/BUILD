@@ -16,7 +16,7 @@ EXTRA=()
 with rust
 
 cbr
-install -vDm755 target/release/bindgen "$D"/usr/bin/
+install -vDm755 target/release/bindgen "$D"/usr/bin/bindgen
 
 mkdir -pv \
     "$D"/usr/share/zsh/site-functions \
