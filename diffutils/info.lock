@@ -1,6 +1,8 @@
 repo = "main"
 name = "diffutils"
 version = "3.11"
+description = "Programs to show the differences between files or directories"
+timestamp = "2025-02-20 20:19:48"
 upstream = "https://git.savannah.gnu.org/git/diffutils.git"
 
 [source]
