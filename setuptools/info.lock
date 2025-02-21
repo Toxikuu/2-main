@@ -1,6 +1,8 @@
 repo = "main"
 name = "setuptools"
 version = "75.8.0"
+description = "Tool for downloading, building, installing, upgrading, and uninstalling Python pacakges"
+timestamp = "2025-02-20 20:23:25"
 upstream = "https://github.com/pypa/setuptools.git"
 
 [source]
