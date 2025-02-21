@@ -1,6 +1,8 @@
 repo = "main"
 name = "lfs-bootscripts"
 version = "20240825"
+description = "A set of scripts to start/stop the LFS system at bootup/shutdown"
+timestamp = "2025-02-20 20:19:51"
 upstream = "https://www.linuxfromscratch.org/~thomas/multilib-m32/chapter09/bootscripts.html"
 version_command = "curl -s 'https://www.linuxfromscratch.org/~thomas/multilib-m32/chapter09/bootscripts.html' | grep LFS-Bootscripts- | tail -n1 | cut -d- -f3"
 
