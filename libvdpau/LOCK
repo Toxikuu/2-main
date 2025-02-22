@@ -1,0 +1,12 @@
+repo = "main"
+name = "libvdpau"
+version = "1.5"
+description = "Nvidia VDPAU (Video Decode and Presentation API for Unix) library"
+categories = ["graphics"]
+timestamp = "2025-02-22 13:18:07"
+dependencies = ["xorg/@libs"]
+upstream = "https://gitlab.freedesktop.org/vdpau/libvdpau.git"
+
+[source]
+url = "https://gitlab.freedesktop.org/vdpau/libvdpau/-/archive/1.5/libvdpau-1.5.tar.bz2"
+hash = "pdUKQrjCiP68BxUatkOsjeBqGERpZcckH4m06BCCGRM"
