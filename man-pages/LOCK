@@ -2,7 +2,7 @@ repo = "main"
 name = "man-pages"
 version = "6.11"
 description = "A man page database"
-timestamp = "2025-02-22 15:42:44"
+timestamp = "2025-02-22 15:43:36"
 upstream = "https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git"
 
 [source]
