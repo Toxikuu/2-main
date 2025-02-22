@@ -12,6 +12,8 @@ EXTRA=()
 
 2b() {
 
+with meson ninja
+
 ms
 nj
 ni
