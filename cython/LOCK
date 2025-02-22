@@ -1,0 +1,17 @@
+repo = "main"
+name = "cython"
+version = "3.0.12"
+description = "C-Extensions for Python"
+categories = ["dev"]
+timestamp = "2025-02-22 13:26:05"
+dependencies = [
+    "python",
+    "glibc",
+    "setuptools",
+    "wheel",
+]
+upstream = "https://github.com/cython/cython.git"
+
+[source]
+url = "https://github.com/cython/cython/releases/download/3.0.12/cython-3.0.12.tar.gz"
+hash = "uYi7KXznbGceKMl9AXuVQRAQ98d_pmI90LtH7tGu4bw"
