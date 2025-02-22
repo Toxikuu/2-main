@@ -10,7 +10,7 @@ EXTRA=()
 
 2b() {
 
-cm
+cfg
 mk
 mi
 
