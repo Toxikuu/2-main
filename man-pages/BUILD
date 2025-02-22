@@ -8,7 +8,9 @@ EXTRA=()
 
 2b() {
 
-rm -v man3/crypt* # libxcrypt provides better ones
-make prefix="$D/usr" install
+rm -v man3/crypt*.3 # libxcrypt provides better ones
+rm -v man{5,8}/nscd.{5,8} # nscd is dead
+
+mi prefix=/usr -R
 
 }
