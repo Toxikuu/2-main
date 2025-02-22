@@ -3,7 +3,7 @@ name = "libyaml"
 version = "0.2.5"
 description = "C library for parsing and emitting YAML"
 categories = ["dev"]
-timestamp = "2025-02-22 13:34:04"
+timestamp = "2025-02-22 13:34:24"
 upstream = "https://github.com/yaml/libyaml.git"
 
 [source]
