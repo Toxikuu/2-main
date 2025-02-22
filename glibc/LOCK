@@ -6,7 +6,7 @@ categories = [
     "critical",
     "core",
 ]
-timestamp = "2025-02-20 20:19:49"
+timestamp = "2025-02-22 16:29:10"
 upstream = "https://sourceware.org/git/glibc.git"
 version_command = '''git ls-remote --tags --refs 'https://sourceware.org/git/glibc.git' | sed 's@.*/@@' | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\.' | sort -V | tail -n1'''
 
