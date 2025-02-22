@@ -1,0 +1,18 @@
+repo = "main"
+name = "mako"
+version = "1.3.9"
+description = "Hyperfast, lightweight Python templating"
+categories = ["dev"]
+timestamp = "2025-02-22 13:07:02"
+dependencies = [
+    "python",
+    "setuptools",
+    "wheel",
+    "markupsafe",
+]
+upstream = "https://github.com/sqlalchemy/mako.git"
+version_command = "git ls-remote 'https://github.com/sqlalchemy/mako.git' | sed -e 's@.*/@@' -e 's|_|.|g' | tail -n1 | cut -d. -f2-"
+
+[source]
+url = "https://github.com/sqlalchemy/mako/archive/refs/tags/rel_1_3_9.tar.gz"
+hash = "na_XZnmtowYDQ7DWrciIKRgXBJ3hNRtID2Z2KvjLBGw"
