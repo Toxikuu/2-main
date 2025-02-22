@@ -12,7 +12,12 @@ cfg
 mk
 mi
 
+install -vd /usr/share/doc/isl
+install -m644 doc/{CodingStyle,manual.pdf,SubmittingPatches,user.pod} \
+        /usr/share/doc/isl
+
 mkdir -pv "$D"/usr/share/gdb/auto-load/usr/lib
 mv -v "$D"/usr/lib/libisl*gdb.py "$D"/usr/share/gdb/auto-load/usr/lib
 
 }
+#d added documentation
