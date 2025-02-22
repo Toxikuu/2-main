@@ -18,6 +18,6 @@ EXTRA=()
 with pip
 
 pipb
-pipi "$NAME"
+pipi "${NAME^}"
 
 }
