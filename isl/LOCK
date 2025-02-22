@@ -2,7 +2,7 @@ repo = "main"
 name = "isl"
 version = "0.27"
 description = "Library for manipulating sets and relations of integer points bounded by linear constraints"
-timestamp = "2025-02-20 20:19:50"
+timestamp = "2025-02-22 16:04:11"
 upstream = "https://repo.or.cz/isl.git"
 
 [source]
