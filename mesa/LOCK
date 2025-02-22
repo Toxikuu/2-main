@@ -1,0 +1,20 @@
+repo = "main"
+name = "mesa"
+version = "25.0.0"
+description = "Graphics software bundle (OpenGL, Vulkan, etc.)"
+categories = ["graphics"]
+timestamp = "2025-02-22 13:48:46"
+dependencies = [
+    "xorg/@lib",
+    "libdrm",
+    "mako",
+    "pyyaml",
+    "glslang",
+    "meson",
+    "wayland-protocols",
+]
+upstream = "https://gitlab.freedesktop.org/mesa/mesa.git"
+
+[source]
+url = "https://mesa.freedesktop.org/archive/mesa-25.0.0.tar.xz"
+hash = "lqU1Af1ZZ5ZUJzJYxsahBVog41LuFCnwsSNRbHGQ5bA"
