@@ -1,0 +1,15 @@
+repo = "main"
+name = "libclc"
+version = "19.1.7"
+description = "Library requirements of the OpenCL C programming language"
+categories = ["dev"]
+timestamp = "2025-02-22 13:22:45"
+dependencies = [
+    "llvm",
+    "spirv-llvm-translator",
+]
+upstream = "https://github.com/llvm/llvm-project.git"
+
+[source]
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/libclc-19.1.7.src.tar.xz"
+hash = "d-LXH1zqHQsQFLqIGGKZ0aCEjrPcIJSLquZJ2552Qcs"
