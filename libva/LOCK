@@ -1,0 +1,12 @@
+repo = "main"
+name = "libva"
+version = "2.22.0"
+description = "Video Acceleration (VA) API for Linux"
+categories = ["graphics"]
+timestamp = "2025-02-22 13:15:15"
+dependencies = ["libdrm"]
+upstream = "https://github.com/intel/libva.git"
+
+[source]
+url = "https://github.com/intel/libva/archive/2.22.0/libva-2.22.0.tar.gz"
+hash = "RnxBjCZAoXjGuq1b4uANVphCEjdjuAUHchq4frevhzU"
