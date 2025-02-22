@@ -46,8 +46,10 @@ rm -rf ./*
 find .. -name "*.a" -delete
 
 m32=1
-CC="gcc -m32 -mstackrealign -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"  \
-CXX="g++ -m32 -mstackrealign -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer" \
+# remove frame pointer flags due to nvidia driver + steam crashes
+# https://gitlab.archlinux.org/archlinux/packaging/packages/glibc/-/issues/10
+CC="gcc -m32 -mstackrealign"  \
+CXX="g++ -m32 -mstackrealign" \
 CP=.. cfg                                \
       --host=i686-pc-linux-gnu           \
       --build=$(../scripts/config.guess) \
