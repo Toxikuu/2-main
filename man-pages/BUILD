@@ -11,6 +11,9 @@ EXTRA=()
 rm -v man3/crypt*.3 # libxcrypt provides better ones
 rm -v man5/nscd.conf.5 man8/nscd.8 # ncsd is dead
 
+# make -R is required until make 4.5 according to
+# https://gitlab.archlinux.org/archlinux/packaging/packages/man-pages/-/blob/d39465cf81398e23036c2bdc8472e6a1006eddc2/PKGBUILD
 mi prefix=/usr -R
 
 }
+#d clarified -R
