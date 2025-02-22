@@ -1,0 +1,11 @@
+repo = "main"
+name = "libyaml"
+version = "0.2.5"
+description = "C library for parsing and emitting YAML"
+categories = ["dev"]
+timestamp = "2025-02-22 13:34:04"
+upstream = "https://github.com/yaml/libyaml.git"
+
+[source]
+url = "https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz"
+hash = "xkKum3X-4SCy2WxxJTi9LPKDIo0jN98s8piOPAJnjvQ"
