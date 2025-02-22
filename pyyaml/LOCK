@@ -1,0 +1,15 @@
+repo = "main"
+name = "pyyaml"
+version = "6.0.2"
+description = "Python YAML parser and emitter"
+categories = ["dev"]
+timestamp = "2025-02-22 13:37:31"
+dependencies = [
+    "cython",
+    "libyaml",
+]
+upstream = "https://github.com/yaml/pyyaml.git"
+
+[source]
+url = "https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.2.tar.gz"
+hash = "1YTZ7JGtZYYcwI1C6DQyTviQoILlkQN6vhFIUP97vD4"
