@@ -9,7 +9,7 @@ EXTRA=()
 2b() {
 
 rm -v man3/crypt*.3 # libxcrypt provides better ones
-rm -v man{5,8}/nscd.{5,8} # nscd is dead
+rm -v man5/nscd.conf.5 man8/nscd.8 # ncsd is dead
 
 mi prefix=/usr -R
 
