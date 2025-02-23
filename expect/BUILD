@@ -14,8 +14,7 @@ python3 -c 'from pty import spawn; spawn(["echo", "ok"])' | grep ok
 
 tpatch "$SRC"/expect-$VERS-gcc14-1.patch
 
-cfg \
-    --with-tcl=/usr/lib     \
+cfg --with-tcl=/usr/lib     \
     --enable-shared         \
     --disable-rpath         \
     --mandir=/usr/share/man \
