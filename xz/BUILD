@@ -15,7 +15,7 @@ mi
 mk distclean
 m32=1
 
-CC="gcc -m32" cfg --disable-doc
+cfg --disable-doc
 mk
 mi
 
