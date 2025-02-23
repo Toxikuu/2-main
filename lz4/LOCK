@@ -2,7 +2,7 @@ repo = "main"
 name = "lz4"
 version = "1.10.0"
 description = "The lz4 compression algorithm."
-timestamp = "2025-02-20 20:23:24"
+timestamp = "2025-02-23 00:19:18"
 upstream = "https://github.com/lz4/lz4.git"
 
 [source]
