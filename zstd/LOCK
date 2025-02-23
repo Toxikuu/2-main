@@ -2,7 +2,7 @@ repo = "main"
 name = "zstd"
 version = "1.5.7"
 description = "The zstandard compression algorithm"
-timestamp = "2025-02-20 20:23:26"
+timestamp = "2025-02-23 00:21:29"
 upstream = "https://github.com/facebook/zstd.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/facebook/zstd.git' | sed 's@.*/@@' | grep -E '^v[0-9]+' | grep -v -- -kernel | tail -n1"
 
