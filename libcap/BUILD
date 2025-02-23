@@ -24,8 +24,8 @@ mi lib=lib "${_mk_opts[@]}"
 make distclean || true # flaky
 m32=1
 
-mk "${_mk_opts[@]}"
-mi "${_mk_opts[@]}" lib=lib32
+mk CC="gcc -m32 -march=i686" "${_mk_opts[@]}"
+mi CC="gcc -m32 -march=i686" "${_mk_opts[@]}" lib=lib32
 # mk CC="gcc -m32 -march=i686" "${_mk_opts[@]}"
 # mk CC="gcc -m32 -march=i686" lib=lib32 "${_mk_opts[@]}" DESTDIR="$PWD/32DEST" install
 
@@ -36,3 +36,4 @@ sed -e "s@^libdir=.*@libdir=/usr/lib32@" -i "$D"/usr/lib32/pkgconfig/lib{cap,psx
 chmod -v 755 "$D"/usr/lib32/libcap.so.$VERS
 
 }
+# m32 bugfix
