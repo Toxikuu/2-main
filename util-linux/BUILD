@@ -32,21 +32,24 @@ _cfg_opts=(
     --without-systemd     \
     --without-systemdsystemunitdir        \
     ADJTIME_PATH=/var/lib/hwclock/adjtime \
-    --docdir=/usr/share/doc/util-linux-$VERS
+    --docdir=/usr/share/doc/util-linux
 )
 
-cfg "${_cfg_opts[@]}" --libdir=/usr/lib
+cfg --libdir=/usr/lib "${_cfg_opts[@]}"
 mk
 mi
 
 mk distclean
 m32=1
+
 trap restore EXIT
 mv -v /usr/bin/ncursesw6-config{,.tmp}
 
-cfg "${_cfg_opts[@]}" --libdir=/usr/lib32
+cfg --libdir=/usr/lib32 "${_cfg_opts[@]}"
+
+restore
+
 mk
 mi
-mv -v /usr/bin/ncursesw6-config{.tmp,}
 
 }
