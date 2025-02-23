@@ -13,9 +13,8 @@ mi BUILD_STATIC=no PREFIX=/usr
 
 mkdir -pv "$D"/usr/lib32
 mk clean
-m32=1
 
-mk BUILD_STATIC=no PREFIX=/usr
+CC="gcc -m32" mk BUILD_STATIC=no PREFIX=/usr
 mi BUILD_STATIC=no PREFIX=/usr LIBDIR=/usr/lib32
 
 }
