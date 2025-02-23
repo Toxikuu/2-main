@@ -2,12 +2,12 @@ repo = "main"
 name = "glib"
 version = "2.83.4"
 description = "Low level core library"
-timestamp = "2025-02-20 20:29:34"
+timestamp = "2025-02-23 14:45:31"
 upstream = "https://github.com/GNOME/glib.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/GNOME/glib.git' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' | head -n1 | sed 's@.*/@@'"
 
 [source]
-url = "https://download.gnome.org/sources/glib/2.83/glib-2.83.3.tar.xz"
+url = "https://download.gnome.org/sources/glib/2.83/glib-2.83.4.tar.xz"
 hash = "0MZTGLsuP6WUJ3z5inHP-vX2ZsB42znc7BIXV7K6Mo0"
 
 [[extra]]
