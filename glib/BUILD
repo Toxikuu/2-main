@@ -56,8 +56,13 @@ ni
 
 # ty @seal331
 mkdir -pv "$BLD"/pkgconfigtmp
-cp -vf {"$PORT","$BLD"/pkgconfigtmp}/g*-2.0.pc
+for pc in "$PORT"/*.pc; do
+    echo "Copying over vendored pkgconfig file: $pc" >&2
+    cp -vf {"$PORT","$BLD/pkgconfigtmp"}/"$pc"
+done
+echo "Spoofing pkgconfig files..." >&2
 sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/g*-2.0.pc
+
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.*z*
 
 PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
@@ -66,7 +71,6 @@ meson setup gobject-introspection-$GOBJV gi-build \
 nj -C gi-build
 ni -C gi-build
 
-PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
 meson configure -D introspection=enabled
 nj
 ni
