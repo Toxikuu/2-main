@@ -51,9 +51,11 @@ die "Meson setup failed"
 nj
 ni
 
+nj install # fuck gnome
 # this satisfies gobject-introspection pkgconfig which wants glib
 # this is not at all optimal but gnome enjoys making my life difficult
-cp -av {"$D",}/usr/include/glib-2.0 # annoying but painless
+
+# cp -av {"$D",}/usr/include/glib-2.0 # annoying but painless
 
 # ty @seal331
 # mkdir -pv "$BLD"/pkgconfigtmp
