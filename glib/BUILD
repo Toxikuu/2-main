@@ -22,9 +22,12 @@ with meson ninja
 _cfg_opts=(
     -D introspection=disabled
     -D glib_debug=disabled
+    -D dtrace=disabled
     -D man-pages=disabled
     -D tests=false
     -D sysprof=disabled
+    -D selinux=disabled
+    -D systemtap=disabled
 )
 
 ms "${_cfg_opts[@]}"
@@ -43,7 +46,6 @@ export PKG_CONFIG_PATH="$BLD/pkgconfigtmp"
 meson setup gobject-introspection-$GOBJV gi-build \
     --prefix=/usr --buildtype=release
 nj -C gi-build
-
 ni -C gi-build
 
 unset PKG_CONFIG_PATH
