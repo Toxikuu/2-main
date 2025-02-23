@@ -51,12 +51,13 @@ die "Meson setup failed"
 nj
 ni
 
+# # this satisfies gobject-introspection pkgconfig which wants glib
 # cp -av {"$D",}/usr/include/glib-2.0 # annoying but painless
 
 # ty @seal331
 mkdir -pv "$BLD"/pkgconfigtmp
-cp -vf {"$PORT","$BLD"/pkgconfigtmp}/glib-2.0.pc
-sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/glib-2.0.pc
+cp -vf {"$PORT","$BLD"/pkgconfigtmp}/g*-2.0.pc
+sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/g*-2.0.pc
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.*z*
 
 PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
