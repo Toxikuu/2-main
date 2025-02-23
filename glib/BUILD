@@ -1,5 +1,5 @@
 NAME="glib"
-VERS="2.83.4"
+VERS="2.82.4"
 GOBJV="1.82.0"
 DESC="Low level core library"
 UPST="https://github.com/GNOME/glib.git"
@@ -8,16 +8,26 @@ VCMD="git ls-remote --tags --refs '$UPST' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' |
 SOURCE="https://download.gnome.org/sources/glib/${VERS%.*}/glib-$VERS.tar.xz"
 EXTRA=(
     "https://download.gnome.org/sources/gobject-introspection/${GOBJV%.*}/gobject-introspection-$GOBJV.tar.xz"
+    "https://glfs-book.github.io/glfs/patches/glib/glib-skip_warnings-1.patch"
 )
 
 2b() {
 
 with meson ninja
 
-# if [ -e /usr/include/glib-2.0 ]; then
-#     rm -rf /usr/include/glib-2.0.old &&
-#     mv -vf /usr/include/glib-2.0{,.old}
-# fi
+tpatch "$SRC"/glib-skip_warnings-1.patch
+
+restore() {
+    [[ -e /usr/include/glib-2.0.old ]] &&
+    mv -vf /usr/include/glib-2.0{.old,}
+}
+
+if [ -e /usr/include/glib-2.0 ]; then
+    rm -rf /usr/include/glib-2.0.old &&
+    mv -vf /usr/include/glib-2.0{,.old}
+fi
+
+trap restore EXIT
 
 _cfg_opts=(
     -D introspection=disabled
@@ -30,7 +40,14 @@ _cfg_opts=(
     -D systemtap=disabled
 )
 
-ms "${_cfg_opts[@]}"
+mkdir build
+cd    build
+meson setup ..            \
+    --prefix=/usr         \
+    --buildtype=release   \
+    ${_cfg_opts[@]}      ||
+die "Meson setup failed"
+
 nj
 ni
 
@@ -40,28 +57,25 @@ ni
 mkdir -pv "$BLD"/pkgconfigtmp
 cp -vf {"$PORT","$BLD"/pkgconfigtmp}/glib-2.0.pc
 sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/glib-2.0.pc
-tar xf "$SRC"/gobject-introspection-$GOBJV.tar.xz
+tar xf "$SRC"/gobject-introspection-$GOBJV.tar.*z*
 
-export PKG_CONFIG_PATH="$BLD/pkgconfigtmp"
+PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
 meson setup gobject-introspection-$GOBJV gi-build \
     --prefix=/usr --buildtype=release
 nj -C gi-build
 ni -C gi-build
 
-unset PKG_CONFIG_PATH
+PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
 meson configure -D introspection=enabled
 nj
 ni
 
 m32=1
-cd ..
+cd "$BLD"
 ms "${_cfg_opts[@]}" \
     --cross-file lib32
 
 nj
 ni
-
-# rm -rf /usr/include/glib-2.0
-# mv -vf /usr/include/glib-2.0{.old,}
 
 }
