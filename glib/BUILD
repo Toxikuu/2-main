@@ -51,22 +51,23 @@ die "Meson setup failed"
 nj
 ni
 
-# # this satisfies gobject-introspection pkgconfig which wants glib
-# cp -av {"$D",}/usr/include/glib-2.0 # annoying but painless
+# this satisfies gobject-introspection pkgconfig which wants glib
+# this is not at all optimal but gnome enjoys making my life difficult
+cp -av {"$D",}/usr/include/glib-2.0 # annoying but painless
 
 # ty @seal331
-mkdir -pv "$BLD"/pkgconfigtmp
-for pc in "$PORT"/*.pc; do
-    pc=$(basename "$pc")
-    echo "Copying over vendored pkgconfig file: $pc" >&2
-    cp -vf {"$PORT","$BLD/pkgconfigtmp"}/"$pc"
-done
-echo "Spoofing pkgconfig files..." >&2
-sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/g*-2.0.pc
+# mkdir -pv "$BLD"/pkgconfigtmp
+# for pc in "$PORT"/*.pc; do
+#     pc=$(basename "$pc")
+#     echo "Copying over vendored pkgconfig file: $pc" >&2
+#     cp -vf {"$PORT","$BLD/pkgconfigtmp"}/"$pc"
+# done
+# echo "Spoofing pkgconfig files..." >&2
+# sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/g*-2.0.pc
 
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.*z*
 
-PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
+# PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
 meson setup gobject-introspection-$GOBJV gi-build \
     --prefix=/usr --buildtype=release
 nj -C gi-build
