@@ -15,7 +15,7 @@ mi
 mk distclean
 m32=1
 
-cfg
+cfg --with-gcc-arch=i686
 mk
 mi
 
