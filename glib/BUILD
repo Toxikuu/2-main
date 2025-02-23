@@ -57,6 +57,7 @@ ni
 # ty @seal331
 mkdir -pv "$BLD"/pkgconfigtmp
 for pc in "$PORT"/*.pc; do
+    pc=$(basename "$pc")
     echo "Copying over vendored pkgconfig file: $pc" >&2
     cp -vf {"$PORT","$BLD/pkgconfigtmp"}/"$pc"
 done
