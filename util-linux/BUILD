@@ -17,22 +17,31 @@ restore() {
 restore
 
 _cfg_opts=(
-    --bindir=/usr/bin     \
-    --runstatedir=/run    \
-    --sbindir=/usr/sbin   \
-    --disable-chfn-chsh   \
-    --disable-login       \
-    --disable-nologin     \
-    --disable-su          \
-    --disable-setpriv     \
-    --disable-runuser     \
-    --disable-pylibmount  \
-    --disable-liblastlog2 \
-    --without-python      \
-    --without-systemd     \
-    --without-systemdsystemunitdir        \
-    ADJTIME_PATH=/var/lib/hwclock/adjtime \
+    --bindir=/usr/bin
+    --runstatedir=/run
+    --sbindir=/usr/sbin
+    --disable-rpath
+    --disable-chfn-chsh
+    --disable-login
+    --disable-nologin
+    --disable-su
+    --disable-setpriv
+    --disable-runuser
+    --disable-pylibmount
+    --disable-liblastlog2
+    --disable-minix
+    --disable-rename # perl rename >>>>>>>>>
+    --disable-more # less >>>>>>>>>
+    --without-ncurses
+    --without-econf
+    --without-python
+    --without-user
+    --without-systemd
+    --without-systemdsystemunitdir
+    --with-gnu-ld
+    --with-ncursesw
     --docdir=/usr/share/doc/util-linux
+    ADJTIME_PATH=/var/lib/hwclock/adjtime
 )
 
 cfg --libdir=/usr/lib "${_cfg_opts[@]}"
