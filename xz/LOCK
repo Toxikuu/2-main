@@ -2,7 +2,7 @@ repo = "main"
 name = "xz"
 version = "5.6.4"
 description = "The xz compression algorithm"
-timestamp = "2025-02-22 21:07:10"
+timestamp = "2025-02-22 21:08:50"
 upstream = "https://github.com/tukaani-project/xz.git"
 
 [source]
