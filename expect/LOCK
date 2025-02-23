@@ -2,7 +2,7 @@ repo = "main"
 name = "expect"
 version = "5.45.4"
 description = "Tools for automating interactive applications"
-timestamp = "2025-02-20 20:19:48"
+timestamp = "2025-02-22 20:01:43"
 upstream = "https://sourceforge.net/projects/expect/files/Expect/"
 version_command = '''curl -s 'https://sourceforge.net/projects/expect/files/Expect/' | rg 'tr title=' | head -n1 | cut -d'"' -f2'''
 
