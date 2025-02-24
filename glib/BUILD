@@ -55,16 +55,20 @@ nj
 ni
 
 # ty @seal331
+spoof_pc() {
+    mkdir -pv "$BLD"/pkgconfigtmp
+    for pc in "$D"/usr/lib/pkgconfig/*.pc; do
+        base="$(basename "$pc")"
+        echo "Copying pkgconfig file: $base" >&2
+        cp -vf "$pc" "$BLD/pkgconfigtmp/$base"
+    done
+    # spoofing the prefix to destdir to satisfy meson
+    echo "Spoofing pkgconfig files..." >&2
+    sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/*.pc
+}
+
 # spoof pkgconfig files that are expected to exist at /usr/lib/pkgconfig (but which currently exist in $D)
-mkdir -pv "$BLD"/pkgconfigtmp
-for pc in "$D"/usr/lib/pkgconfig/*.pc; do
-    base="$(basename "$pc")"
-    echo "Copying pkgconfig file: $base" >&2
-    cp -vf "$pc" "$BLD/pkgconfigtmp/$base"
-done
-# spoofing the prefix to destdir to satisfy meson
-echo "Spoofing pkgconfig files..." >&2
-sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/*.pc
+spoof_pc
 
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.*z*
 
@@ -76,11 +80,13 @@ meson setup gobject-introspection-$GOBJV gi-build \
 nj -C gi-build
 ni -C gi-build
 
+# done again so that the glib rebuild can find gobject-introspection pc files
+spoof_pc
+
 # rebuild glib with gobject-introspection
 # may be missing pkgconfig files at this point
-PKG_CONFIG_PATH="$BLD/pkgconfigtmp"   \
+export PKG_CONFIG_PATH="$BLD/pkgconfigtmp"
 meson setup ..          \
-    --reconfigure       \
     --prefix=/usr       \
     --buildtype=release \
     ${_cfg_opts[@]}     \
