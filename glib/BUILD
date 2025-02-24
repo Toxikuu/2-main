@@ -15,6 +15,7 @@ EXTRA=(
 
 with meson ninja
 
+# optional log level selection patch
 tpatch "$SRC"/glib-skip_warnings-1.patch
 
 restore() {
@@ -22,6 +23,7 @@ restore() {
     mv -vf /usr/include/glib-2.0{.old,}
 }
 
+# move headers out of the way to avoid potential conflicts
 if [ -e /usr/include/glib-2.0 ]; then
     rm -rf /usr/include/glib-2.0.old &&
     mv -vf /usr/include/glib-2.0{,.old}
@@ -39,6 +41,7 @@ _cfg_opts=(
     -D systemtap=disabled
 )
 
+# initial build of glib without gobject-introspection
 mkdir build
 cd    build
 meson setup ..            \
@@ -52,25 +55,30 @@ nj
 ni
 
 # ty @seal331
+# spoof pkgconfig files that are expected to exist at /usr/lib/pkgconfig (but which currently exist in $D)
 mkdir -pv "$BLD"/pkgconfigtmp
 for pc in "$D"/usr/lib/pkgconfig/*.pc; do
     base="$(basename "$pc")"
     echo "Copying pkgconfig file: $base" >&2
     cp -vf "$pc" "$BLD/pkgconfigtmp/$base"
 done
+# spoofing the prefix to destdir to satisfy meson
 echo "Spoofing pkgconfig files..." >&2
 sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/*.pc
 
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.*z*
 
+# build gobject-introspection
+# if pkg_config_libdir is set, glib can't find stuff and tries to vendor its own
 export PKG_CONFIG_PATH="$BLD/pkgconfigtmp"
 meson setup gobject-introspection-$GOBJV gi-build \
     --prefix=/usr --buildtype=release
 nj -C gi-build
 ni -C gi-build
 
+# rebuild glib with gobject-introspection
+# may be missing pkgconfig files at this point
 PKG_CONFIG_PATH="$BLD/pkgconfigtmp"   \
-PKG_CONFIG_LIBDIR="$BLD/pkgconfigtmp" \
 meson setup ..          \
     --clearcache        \
     --reconfigure       \
@@ -82,13 +90,14 @@ die "Failed to reconfigure glib to use introspection"
 nj
 ni
 
-unset PKG_CONFIG_PATH # lib32 gobject isn't built
+unset PKG_CONFIG_PATH
 m32=1
 cd "$BLD"
 
+# build lib32 glib without gobject-introspection
 ms --cross-file lib32 \
     ${_cfg_opts[@]}   \
-    -D introspection=enabled
+    -D introspection=disabled
 nj
 ni
 
