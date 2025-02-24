@@ -2,7 +2,7 @@ repo = "main"
 name = "kernel"
 version = "6.13.3"
 description = "The Linux kernel"
-timestamp = "2025-02-20 20:19:50"
+timestamp = "2025-02-23 20:39:51"
 upstream = "https://kernel.org"
 version_command = "curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 
