@@ -63,13 +63,15 @@ sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/*.pc
 
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.*z*
 
-PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
+PKG_CONFIG_PATH="$BLD/pkgconfigtmp"   \
+PKG_CONFIG_LIBDIR="$BLD/pkgconfigtmp" \
 meson setup gobject-introspection-$GOBJV gi-build \
     --prefix=/usr --buildtype=release
 nj -C gi-build
 ni -C gi-build
 
-PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
+PKG_CONFIG_PATH="$BLD/pkgconfigtmp"   \
+PKG_CONFIG_LIBDIR="$BLD/pkgconfigtmp" \
 meson setup ..          \
     --clearcache        \
     --reconfigure       \
