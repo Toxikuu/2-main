@@ -53,13 +53,13 @@ ni
 
 # ty @seal331
 mkdir -pv "$BLD"/pkgconfigtmp
-for pc in "$PORT"/*.pc; do
-    pc=$(basename "$pc")
-    echo "Copying over vendored pkgconfig file: $pc" >&2
-    cp -vf {"$PORT","$BLD/pkgconfigtmp"}/"$pc"
+for pc in "$D"/usr/lib/pkgconfig/*.pc; do
+    base="$(basename "$pc")"
+    echo "Copying pc file: $base" >&2
+    cp -vf "$pc" "$BLD/pkgconfigtmp/$base"
 done
 echo "Spoofing pkgconfig files..." >&2
-sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/g*-2.0.pc
+sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/*.pc
 
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.*z*
 
