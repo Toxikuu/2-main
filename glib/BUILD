@@ -74,7 +74,7 @@ tar xf "$SRC"/gobject-introspection-$GOBJV.tar.*z*
 
 # build gobject-introspection
 # if pkg_config_libdir is set, glib can't find stuff and tries to vendor its own
-export PKG_CONFIG_PATH="$BLD/pkgconfigtmp"
+PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
 meson setup gobject-introspection-$GOBJV gi-build \
     --prefix=/usr --buildtype=release
 nj -C gi-build
@@ -85,7 +85,7 @@ spoof_pc
 
 # rebuild glib with gobject-introspection
 # may be missing pkgconfig files at this point
-export PKG_CONFIG_PATH="$BLD/pkgconfigtmp"
+PKG_CONFIG_PATH="$BLD/pkgconfigtmp" \
 meson setup ..          \
     --prefix=/usr       \
     --buildtype=release \
