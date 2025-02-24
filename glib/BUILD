@@ -69,11 +69,11 @@ meson setup gobject-introspection-$GOBJV gi-build \
 nj -C gi-build
 ni -C gi-build
 
-unset PKG_CONFIG_PATH
 meson configure -D introspection=enabled
 nj
 ni
 
+unset PKG_CONFIG_PATH # lib32 gobject isn't built
 m32=1
 cd "$BLD"
 ms "${_cfg_opts[@]}" \
