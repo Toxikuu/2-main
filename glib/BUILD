@@ -15,7 +15,7 @@ EXTRA=(
 
 with meson ninja
 
-patch -Np1 -i "$SRC"/glib-skip_warnings-1.patch
+tpatch "$SRC"/glib-skip_warnings-1.patch
 
 restore() {
     [[ -e /usr/include/glib-2.0.old ]] &&
@@ -30,7 +30,6 @@ fi
 trap restore EXIT
 
 _cfg_opts=(
-    -D introspection=disabled
     -D glib_debug=disabled
     -D dtrace=disabled
     -D man-pages=disabled
@@ -45,7 +44,8 @@ cd    build
 meson setup ..            \
     --prefix=/usr         \
     --buildtype=release   \
-    ${_cfg_opts[@]}      ||
+    ${_cfg_opts[@]}       \
+    -D introspection=disabled ||
 die "Meson setup failed"
 
 nj
@@ -55,7 +55,7 @@ ni
 mkdir -pv "$BLD"/pkgconfigtmp
 for pc in "$D"/usr/lib/pkgconfig/*.pc; do
     base="$(basename "$pc")"
-    echo "Copying pc file: $base" >&2
+    echo "Copying pkgconfig file: $base" >&2
     cp -vf "$pc" "$BLD/pkgconfigtmp/$base"
 done
 echo "Spoofing pkgconfig files..." >&2
@@ -69,16 +69,24 @@ meson setup gobject-introspection-$GOBJV gi-build \
 nj -C gi-build
 ni -C gi-build
 
-meson configure -D introspection=enabled
+meson setup ..          \
+    --clearcache        \
+    --reconfigure       \
+    --prefix=/usr       \
+    --buildtype=release \
+    ${_cfg_opts[@]}     \
+    -D introspection=enabled ||
+die "Failed to reconfigure glib to use introspection"
 nj
 ni
 
 unset PKG_CONFIG_PATH # lib32 gobject isn't built
 m32=1
 cd "$BLD"
-ms "${_cfg_opts[@]}" \
-    --cross-file lib32
 
+ms --cross-file lib32 \
+    ${_cfg_opts[@]}   \
+    -D introspection=enabled
 nj
 ni
 
