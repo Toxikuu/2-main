@@ -19,12 +19,13 @@ with meson ninja
 tpatch "$SRC"/glib-skip_warnings-1.patch
 
 restore() {
-    [[ -e /usr/include/glib-2.0.old ]] &&
-    mv -vf /usr/include/glib-2.0{.old,}
+    if [[ -e /usr/include/glib-2.0.old && ! -e /usr/include/glib-2.0 ]]; then
+        mv -vf /usr/include/glib-2.0{.old,}
+    fi
 }
 
 # move headers out of the way to avoid potential conflicts
-if [ -e /usr/include/glib-2.0 ]; then
+if [[ -e /usr/include/glib-2.0 ]]; then
     rm -rf /usr/include/glib-2.0.old &&
     mv -vf /usr/include/glib-2.0{,.old}
 fi
