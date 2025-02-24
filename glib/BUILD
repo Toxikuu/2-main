@@ -80,7 +80,6 @@ ni -C gi-build
 # may be missing pkgconfig files at this point
 PKG_CONFIG_PATH="$BLD/pkgconfigtmp"   \
 meson setup ..          \
-    --clearcache        \
     --reconfigure       \
     --prefix=/usr       \
     --buildtype=release \
