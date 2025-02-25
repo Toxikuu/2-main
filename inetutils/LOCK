@@ -1,8 +1,8 @@
 repo = "main"
 name = "inetutils"
-version = "2.5"
+version = "2.6"
 description = "Networking utilities"
-timestamp = "2025-02-20 20:19:50"
+timestamp = "2025-02-24 20:48:15"
 upstream = "https://git.savannah.gnu.org/git/inetutils.git"
 version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/inetutils.git' | sed 's@.*/@@' | grep -E '^v[0-9]+' | grep -Ev '9[0-9]$' | tail -n1"
 
