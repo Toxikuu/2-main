@@ -3,9 +3,10 @@ name = "libvdpau"
 version = "1.5"
 description = "Nvidia VDPAU (Video Decode and Presentation API for Unix) library"
 categories = ["graphics"]
-timestamp = "2025-02-24 21:01:28"
+timestamp = "2025-02-24 21:15:24"
 dependencies = ["xorg/@libs"]
 upstream = "https://gitlab.freedesktop.org/vdpau/libvdpau.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/vdpau/libvdpau.git' | sed 's@.*/@@' | sed 's@libvdpau-@@' | sort -V | tail -n1"
 
 [source]
 url = "https://gitlab.freedesktop.org/vdpau/libvdpau/-/archive/1.5/libvdpau-1.5.tar.bz2"
