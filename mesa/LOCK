@@ -3,7 +3,7 @@ name = "mesa"
 version = "25.0.0"
 description = "Graphics software bundle (OpenGL, Vulkan, etc.)"
 categories = ["graphics"]
-timestamp = "2025-02-24 20:53:59"
+timestamp = "2025-02-24 20:57:31"
 dependencies = [
     "xorg/@lib",
     "libdrm",
@@ -14,6 +14,7 @@ dependencies = [
     "wayland-protocols",
 ]
 upstream = "https://gitlab.freedesktop.org/mesa/mesa.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/mesa/mesa.git' | sed 's@.*/@@' | grep 'mesa-[0-9]' | cut -d- -f2 | grep -v '[a-z]' | sort -V | tail -n1"
 
 [source]
 url = "https://mesa.freedesktop.org/archive/mesa-25.0.0.tar.xz"
