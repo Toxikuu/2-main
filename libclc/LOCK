@@ -3,12 +3,13 @@ name = "libclc"
 version = "19.1.7"
 description = "Library requirements of the OpenCL C programming language"
 categories = ["dev"]
-timestamp = "2025-02-24 20:56:05"
+timestamp = "2025-02-24 21:15:48"
 dependencies = [
     "llvm",
     "spirv-llvm-translator",
 ]
 upstream = "https://github.com/llvm/llvm-project.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/llvm/llvm-project.git' | sed 's@.*/@@' | grep -Ev 'init|rc' | sort -V | cut -d- -f2 | tail -n1"
 
 [source]
 url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/libclc-19.1.7.src.tar.xz"
