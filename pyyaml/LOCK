@@ -3,12 +3,13 @@ name = "pyyaml"
 version = "6.0.2"
 description = "Python YAML parser and emitter"
 categories = ["dev"]
-timestamp = "2025-02-24 20:50:47"
+timestamp = "2025-02-24 21:15:48"
 dependencies = [
     "cython",
     "libyaml",
 ]
 upstream = "https://github.com/yaml/pyyaml.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/yaml/pyyaml.git' | sed 's@.*/@@' | grep -v '[a-z]' | tail -n1"
 
 [source]
 url = "https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.2.tar.gz"
