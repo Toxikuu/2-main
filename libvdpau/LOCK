@@ -3,7 +3,7 @@ name = "libvdpau"
 version = "1.5"
 description = "Nvidia VDPAU (Video Decode and Presentation API for Unix) library"
 categories = ["graphics"]
-timestamp = "2025-02-22 13:18:07"
+timestamp = "2025-02-24 21:01:28"
 dependencies = ["xorg/@libs"]
 upstream = "https://gitlab.freedesktop.org/vdpau/libvdpau.git"
 
