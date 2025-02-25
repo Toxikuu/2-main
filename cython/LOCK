@@ -3,7 +3,7 @@ name = "cython"
 version = "3.0.12"
 description = "C-Extensions for Python"
 categories = ["dev"]
-timestamp = "2025-02-22 13:26:29"
+timestamp = "2025-02-24 20:59:09"
 dependencies = [
     "python",
     "glibc",
