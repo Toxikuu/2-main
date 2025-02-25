@@ -3,7 +3,7 @@ name = "cython"
 version = "3.0.12"
 description = "C-Extensions for Python"
 categories = ["dev"]
-timestamp = "2025-02-24 20:59:09"
+timestamp = "2025-02-24 21:15:47"
 dependencies = [
     "python",
     "glibc",
@@ -11,6 +11,7 @@ dependencies = [
     "wheel",
 ]
 upstream = "https://github.com/cython/cython.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/cython/cython.git' | sed 's@.*/@@' | grep -Ev '[a-z]|-' | sort -V | tail -n1"
 
 [source]
 url = "https://github.com/cython/cython/releases/download/3.0.12/cython-3.0.12.tar.gz"
