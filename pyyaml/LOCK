@@ -3,7 +3,7 @@ name = "pyyaml"
 version = "6.0.2"
 description = "Python YAML parser and emitter"
 categories = ["dev"]
-timestamp = "2025-02-22 13:37:31"
+timestamp = "2025-02-24 20:50:47"
 dependencies = [
     "cython",
     "libyaml",
