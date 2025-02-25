@@ -3,6 +3,7 @@ VERS="0.28.0"
 DESC="Tool for generating C bindings from Rust code"
 CATG="dev graphics"
 UPST="https://github.com/mozilla/cbindgen.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '^v[0-9]' | sort -V | tail -n1"
 DEPS=(
   "rust"
 )
