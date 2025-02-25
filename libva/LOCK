@@ -3,9 +3,10 @@ name = "libva"
 version = "2.22.0"
 description = "Video Acceleration (VA) API for Linux"
 categories = ["graphics"]
-timestamp = "2025-02-24 20:51:58"
+timestamp = "2025-02-24 20:53:43"
 dependencies = ["libdrm"]
 upstream = "https://github.com/intel/libva.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/intel/libva.git' | sed 's@.*/@@' | grep '^[0-9]\.' | grep -v '[a-z]' | sort -V | tail -n1'''
 
 [source]
 url = "https://github.com/intel/libva/archive/2.22.0/libva-2.22.0.tar.gz"
