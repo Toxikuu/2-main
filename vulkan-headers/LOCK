@@ -1,12 +1,12 @@
 repo = "main"
 name = "vulkan-headers"
-version = "1.4.307"
+version = "1.4.309"
 description = "Header files needed to build and link applications against the Vulkan API"
-timestamp = "2025-02-20 20:23:26"
+timestamp = "2025-02-24 20:48:08"
 dependencies = ["cmake"]
 upstream = "https://github.com/KhronosGroup/Vulkan-Headers.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/KhronosGroup/Vulkan-Headers.git' | sed 's@.*/@@' | grep -E '^v[0-9]' | tail -n1"
 
 [source]
 url = "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.307/Vulkan-Headers-1.4.307.tar.gz"
-hash = "XhoGs_J-dYG1XR3qF2_ZfuCi8plAbbL0N8HS8pfOuls"
+hash = "boRFvBLB4nAsJ_TwLRoFf7g_QMxWxqjkWDFB1OqtkNQ"
