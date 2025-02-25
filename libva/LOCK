@@ -3,7 +3,7 @@ name = "libva"
 version = "2.22.0"
 description = "Video Acceleration (VA) API for Linux"
 categories = ["graphics"]
-timestamp = "2025-02-22 13:15:26"
+timestamp = "2025-02-24 20:51:58"
 dependencies = ["libdrm"]
 upstream = "https://github.com/intel/libva.git"
 
