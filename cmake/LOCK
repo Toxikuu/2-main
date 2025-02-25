@@ -1,8 +1,8 @@
 repo = "main"
 name = "cmake"
-version = "3.31.5"
+version = "3.31.6"
 description = "Build system succeeding configure scripts"
-timestamp = "2025-02-20 20:19:48"
+timestamp = "2025-02-24 20:49:42"
 dependencies = [
     "curl",
     "libarchive",
