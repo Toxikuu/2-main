@@ -6,9 +6,10 @@ categories = [
     "dev",
     "graphics",
 ]
-timestamp = "2025-02-24 21:03:56"
+timestamp = "2025-02-24 21:05:56"
 dependencies = ["rust"]
 upstream = "https://github.com/mozilla/cbindgen.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/mozilla/cbindgen.git' | sed 's@.*/@@' | grep '^v[0-9]' | sort -V | tail -n1"
 
 [source]
 url = "https://github.com/mozilla/cbindgen/archive/v0.28.0/cbindgen-0.28.0.tar.gz"
