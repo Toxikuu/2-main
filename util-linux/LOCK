@@ -2,8 +2,9 @@ repo = "main"
 name = "util-linux"
 version = "2.40.4"
 description = "Miscellaneous utility prorgrams"
-timestamp = "2025-02-24 21:02:36"
+timestamp = "2025-02-24 21:14:57"
 upstream = "https://github.com/util-linux/util-linux.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/util-linux/util-linux.git' | sed 's@.*/@@' | grep -Eiv 'start|rc|pre|real' | sort -V | tail -n1"
 
 [source]
 url = "https://www.kernel.org/pub/linux/utils/util-linux/v2.40/util-linux-2.40.4.tar.xz"
