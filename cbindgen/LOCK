@@ -6,7 +6,7 @@ categories = [
     "dev",
     "graphics",
 ]
-timestamp = "2025-02-24 21:05:56"
+timestamp = "2025-02-24 21:14:57"
 dependencies = ["rust"]
 upstream = "https://github.com/mozilla/cbindgen.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/mozilla/cbindgen.git' | sed 's@.*/@@' | grep '^v[0-9]' | sort -V | tail -n1"
