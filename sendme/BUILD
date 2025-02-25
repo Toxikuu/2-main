@@ -1,5 +1,5 @@
 NAME="sendme"
-VERS="0.23.0"
+VERS="0.24.0"
 DESC="Stupid easy file transferring"
 UPST="https://github.com/n0-computer/sendme.git"
 
