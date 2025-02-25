@@ -3,7 +3,7 @@ name = "libclc"
 version = "19.1.7"
 description = "Library requirements of the OpenCL C programming language"
 categories = ["dev"]
-timestamp = "2025-02-22 13:22:45"
+timestamp = "2025-02-24 20:56:05"
 dependencies = [
     "llvm",
     "spirv-llvm-translator",
