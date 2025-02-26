@@ -1,5 +1,6 @@
 NAME="util-linux"
 VERS="2.40.4"
+CATG="core"
 DESC="Miscellaneous utility prorgrams"
 UPST="https://github.com/util-linux/util-linux.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -Eiv 'start|rc|pre|real' | sort -V | tail -n1"
