@@ -1,5 +1,6 @@
 NAME="sysvinit"
 VERS="3.14"
+CATG="core"
 DESC="A simple init system"
 UPST="https://github.com/slicer69/sysvinit.git"
 
