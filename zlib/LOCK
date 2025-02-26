@@ -2,7 +2,8 @@ repo = "main"
 name = "zlib"
 version = "1.3.1"
 description = "Compression library used by a lot of packages"
-timestamp = "2025-02-20 20:23:26"
+categories = ["core"]
+timestamp = "2025-02-25 20:14:26"
 upstream = "https://github.com/madler/zlib.git"
 
 [source]
