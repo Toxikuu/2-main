@@ -1,5 +1,6 @@
 NAME="bash"
 VERS="5.2.37"
+CATG="core"
 DESC="The Bourne-Again Shell"
 UPST="https://ftp.gnu.org/gnu/bash/?C=M;O=D"
 VCMD=$(printf "curl -s '%s' | grep bash- | grep -Ev 'beta|alpha' | head -n1 | cut -d '\"' -f8 | cut -d- -f2 | cut -d. -f1-3" "$UPST")
