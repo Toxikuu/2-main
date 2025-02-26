@@ -2,7 +2,8 @@ repo = "main"
 name = "xml-parser"
 version = "2.47"
 description = "A Perl interfact to Expat"
-timestamp = "2025-02-20 20:23:26"
+categories = ["core"]
+timestamp = "2025-02-25 20:17:01"
 upstream = "https://github.com/cpan-authors/XML-Parser.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/cpan-authors/XML-Parser.git' | sed -e 's@.*/@@' -e 's@^v@@' -e 's@_@.@g' | sort -V | tail -n1"
 
