@@ -1,5 +1,6 @@
 NAME="psmisc"
 VERS="23.7"
+CATG="core"
 DESC="Process monitoring utilities"
 UPST="https://gitlab.com/psmisc/psmisc.git"
 
