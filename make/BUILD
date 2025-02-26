@@ -1,5 +1,6 @@
 NAME="make"
 VERS="4.4.1"
+CATG="core"
 DESC="Program for generating executables and other files from source code"
 UPST="https://git.savannah.gnu.org/git/make.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -Ev '[a-Z]' | grep -Ev '9[0-9]$' | tail -n1"
