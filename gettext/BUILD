@@ -1,5 +1,6 @@
 NAME="gettext"
 VERS="0.23.1"
+CATG="core"
 DESC="Internationalization and localization utilities"
 UPST="https://git.savannah.gnu.org/git/gettext.git"
 
