@@ -2,7 +2,8 @@ repo = "main"
 name = "attr"
 version = "2.5.2"
 description = "Utilities to administer filesystem object attributes"
-timestamp = "2025-02-20 20:19:47"
+categories = ["core"]
+timestamp = "2025-02-25 20:15:28"
 upstream = "https://git.savannah.nongnu.org/git/attr.git"
 
 [source]
