@@ -2,7 +2,8 @@ repo = "main"
 name = "coreutils"
 version = "9.6"
 description = "Basic utility programs needed by every OS"
-timestamp = "2025-02-20 20:19:48"
+categories = ["core"]
+timestamp = "2025-02-25 20:17:34"
 upstream = "git://git.savannah.gnu.org/coreutils.git"
 
 [source]
