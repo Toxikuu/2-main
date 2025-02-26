@@ -1,5 +1,6 @@
 NAME="kbd"
 VERS="2.7.1"
+CATG="core"
 DESC="Keyboard utilities and keytable files"
 UPST="https://git.kernel.org/pub/scm/linux/kernel/git/legion/kbd.git"
 
