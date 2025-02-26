@@ -1,5 +1,5 @@
 NAME="setuptools"
-VERS="75.8.0"
+VERS="75.8.1"
 CATG="core"
 DESC="Tool for downloading, building, installing, upgrading, and uninstalling Python pacakges"
 UPST="https://github.com/pypa/setuptools.git"
