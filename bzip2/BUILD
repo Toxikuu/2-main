@@ -1,5 +1,6 @@
 NAME="bzip2"
 VERS="1.0.8"
+CATG="core"
 DESC="The bzip2 compression algorithm"
 UPST="https://sourceware.org/git/bzip2.git"
 
