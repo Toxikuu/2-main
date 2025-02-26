@@ -2,7 +2,8 @@ repo = "main"
 name = "bc"
 version = "7.0.3"
 description = "Arbitrary precision numeric processing language"
-timestamp = "2025-02-20 20:19:47"
+categories = ["core"]
+timestamp = "2025-02-25 20:14:50"
 upstream = "https://github.com/gavinhoward/bc.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/gavinhoward/bc.git' | sed 's@.*/@@' | grep -Ev '[a-z]+' | tail -n1"
 
