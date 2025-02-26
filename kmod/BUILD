@@ -1,5 +1,6 @@
 NAME="kmod"
 VERS="34"
+CATG="core"
 DESC="Libraries and utilities for loading kernel modules"
 UPST="https://kernel.googlesource.com/pub/scm/utils/kernel/kmod/kmod.git"
 
