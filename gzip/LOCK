@@ -2,7 +2,8 @@ repo = "main"
 name = "gzip"
 version = "1.13"
 description = "Programs for (de)compressing files"
-timestamp = "2025-02-20 20:19:49"
+categories = ["core"]
+timestamp = "2025-02-25 20:17:41"
 upstream = "https://git.savannah.gnu.org/git/gzip.git"
 
 [source]
