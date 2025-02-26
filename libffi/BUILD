@@ -1,5 +1,6 @@
 NAME="libffi"
 VERS="3.4.7"
+CATG="core"
 DESC="Foreign Function Interface library"
 UPST="https://github.com/libffi/libffi.git"
 
