@@ -1,5 +1,6 @@
 NAME="e2fsprogs"
 VERS="1.47.2"
+CATG="core"
 DESC="Programs for the ext4 filesystem"
 UPST="https://github.com/tytso/e2fsprogs.git"
 
