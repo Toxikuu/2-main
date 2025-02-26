@@ -76,4 +76,8 @@ done
 if [ -f /etc/login.access ]; then mv -v /etc/login.access{,.NOUSE}; fi
 if [ -f /etc/limits ]; then mv -v /etc/limits{,.NOUSE}; fi
 
+# sync /etc/{shadow,passwd}
+pwconv
+
 }
+#d ensured /etc/shadow exists with pwconv
