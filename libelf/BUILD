@@ -1,5 +1,6 @@
 NAME="libelf"
 VERS="0.192"
+CATG="core"
 DESC="Library for handling ELF files"
 UPST="https://sourceware.org/git/elfutils.git"
 VCMD="git ls-remote --tags '$UPST' | tail -n2 | head -n1 | cut -d- -f2"
