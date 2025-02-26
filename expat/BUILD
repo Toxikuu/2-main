@@ -1,5 +1,6 @@
 NAME="expat"
 VERS="2.6.4"
+CATG="core"
 DESC="XML parsing library"
 UPST="https://github.com/libexpat/libexpat.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's:.*/::' | sort -V | grep -B 1 V1_0 | head -n1 | cut -d_ -f2- | sed 's/_/./g'"
