@@ -1,5 +1,6 @@
 NAME="flex"
 VERS="2.6.4"
+CATG="core"
 DESC="Tool for generating text-scanning programs"
 UPST="https://github.com/westes/flex.git"
 
