@@ -2,7 +2,8 @@ repo = "main"
 name = "m4"
 version = "1.4.19"
 description = "Macro processor"
-timestamp = "2025-02-20 20:23:24"
+categories = ["core"]
+timestamp = "2025-02-25 20:14:48"
 upstream = "https://git.savannah.gnu.org/git/m4.git"
 version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/m4.git' | sed 's:.*/::' | sort -V | grep -B1 v1.5.89a | head -n1"
 
