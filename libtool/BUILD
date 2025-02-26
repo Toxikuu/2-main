@@ -1,5 +1,6 @@
 NAME="libtool"
 VERS="2.5.4"
+CATG="core"
 DESC="The GNU generic library support script"
 UPST="git://git.savannah.gnu.org/libtool.git"
 
