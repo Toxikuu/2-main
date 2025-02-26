@@ -2,7 +2,7 @@ repo = "main"
 name = "less"
 version = "672"
 description = "Text pager"
-timestamp = "2025-02-20 20:23:23"
+timestamp = "2025-02-25 20:16:42"
 upstream = "https://github.com/gwsw/less.git"
 
 [source]
