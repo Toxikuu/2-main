@@ -2,10 +2,14 @@ repo = "main"
 name = "inetutils"
 version = "2.6"
 description = "Networking utilities"
-timestamp = "2025-02-24 20:48:15"
+categories = [
+    "core",
+    "net",
+]
+timestamp = "2025-02-25 20:16:23"
 upstream = "https://git.savannah.gnu.org/git/inetutils.git"
 version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/inetutils.git' | sed 's@.*/@@' | grep -E '^v[0-9]+' | grep -Ev '9[0-9]$' | tail -n1"
 
 [source]
-url = "https://ftp.gnu.org/gnu/inetutils/inetutils-2.5.tar.xz"
+url = "https://ftp.gnu.org/gnu/inetutils/inetutils-2.6.tar.xz"
 hash = "h2l9YKMeELXLhqnwZR4ex77pgyDQSMBzlDGqw9V2T7Y"
