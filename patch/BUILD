@@ -1,5 +1,6 @@
 NAME="patch"
 VERS="2.7.6"
+CATG="core"
 DESC="Utility to apply patch files to source files"
 UPST="https://git.savannah.gnu.org/git/patch.git"
 
