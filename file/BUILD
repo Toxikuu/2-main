@@ -1,5 +1,6 @@
 NAME="file"
 VERS="5.46"
+CATG="core"
 DESC="Utility for determining file type"
 UPST="https://github.com/file/file.git"
 VCMD="git ls-remote --tags '$UPST' | sed 's:.*/::' | sort -V | tail -n2 | head -n1 | sed 's/FILE//' | sed 's/_/./g'"
