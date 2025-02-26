@@ -1,5 +1,5 @@
 NAME="gettext"
-VERS="0.23.1"
+VERS="0.24"
 CATG="core"
 DESC="Internationalization and localization utilities"
 UPST="https://git.savannah.gnu.org/git/gettext.git"
@@ -29,9 +29,14 @@ _cfg_opts=(
     --without-emacs
     --without-git
     --without-included-gettext
+    --without-included-libunistring
 )
 
 cfg "${_cfg_opts[@]}"
+
+sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' \
+    gettext-{tools,runtime,runtime/libasprintf}/libtool
+
 mk
 mi
 chmod -v 0755 "$D"/usr/lib/preloadable_libintl.so
