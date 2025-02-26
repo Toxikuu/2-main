@@ -6,7 +6,7 @@ categories = [
     "critical",
     "core",
 ]
-timestamp = "2025-02-20 20:19:48"
+timestamp = "2025-02-25 20:15:56"
 upstream = "https://gcc.gnu.org/git/gcc.git"
 version_command = "git ls-remote --tags --refs 'https://gcc.gnu.org/git/gcc.git' | sed 's:.*/::' | sort -V | grep gcc- | tail -n1 | cut -d- -f2"
 
