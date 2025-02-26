@@ -1,5 +1,6 @@
 NAME="meson"
 VERS="1.7.0"
+CATG="core"
 DESC="Fast, user-friendly build system"
 UPST="https://github.com/mesonbuild/meson.git"
 
