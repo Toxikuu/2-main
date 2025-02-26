@@ -1,5 +1,6 @@
 NAME="bc"
 VERS="7.0.3"
+CATG="core"
 DESC="Arbitrary precision numeric processing language"
 UPST="https://github.com/gavinhoward/bc.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -Ev '[a-z]+' | tail -n1"
