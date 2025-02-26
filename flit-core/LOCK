@@ -2,7 +2,8 @@ repo = "main"
 name = "flit-core"
 version = "3.11.0"
 description = "Tool for building distributable Python modules"
-timestamp = "2025-02-20 20:19:48"
+categories = ["core"]
+timestamp = "2025-02-25 20:17:26"
 upstream = "https://github.com/pypa/flit.git"
 
 [source]
