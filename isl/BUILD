@@ -1,5 +1,6 @@
 NAME="isl"
 VERS="0.27"
+CATG="critical core"
 DESC="Library for manipulating sets and relations of integer points bounded by linear constraints"
 UPST="https://repo.or.cz/isl.git"
 
@@ -20,4 +21,3 @@ mkdir -pv "$D"/usr/share/gdb/auto-load/usr/lib
 mv -v "$D"/usr/lib/libisl*gdb.py "$D"/usr/share/gdb/auto-load/usr/lib
 
 }
-#d added documentation
