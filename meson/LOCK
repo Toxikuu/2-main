@@ -2,7 +2,8 @@ repo = "main"
 name = "meson"
 version = "1.7.0"
 description = "Fast, user-friendly build system"
-timestamp = "2025-02-20 20:23:24"
+categories = ["core"]
+timestamp = "2025-02-25 20:17:32"
 upstream = "https://github.com/mesonbuild/meson.git"
 
 [source]
