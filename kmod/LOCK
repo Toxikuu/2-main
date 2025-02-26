@@ -2,9 +2,10 @@ repo = "main"
 name = "kmod"
 version = "34"
 description = "Libraries and utilities for loading kernel modules"
-timestamp = "2025-02-24 20:48:50"
+categories = ["core"]
+timestamp = "2025-02-25 20:17:14"
 upstream = "https://kernel.googlesource.com/pub/scm/utils/kernel/kmod/kmod.git"
 
 [source]
-url = "https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-33.tar.xz"
+url = "https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-34.tar.xz"
 hash = "3HaLMVUXIJH1bcaUMLVIHy127NnMtU6tjCVA289eqbw"
