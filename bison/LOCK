@@ -2,7 +2,8 @@ repo = "main"
 name = "bison"
 version = "3.8.2"
 description = "Parser generator"
-timestamp = "2025-02-20 20:19:47"
+categories = ["core"]
+timestamp = "2025-02-25 20:16:08"
 upstream = "https://git.savannah.gnu.org/git/bison.git"
 
 [source]
