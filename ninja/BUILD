@@ -1,5 +1,6 @@
 NAME="ninja"
 VERS="1.12.1"
+CATG="core"
 DESC="A small build system with a focus on speed"
 UPST="https://github.com/ninja-build/ninja.git"
 
