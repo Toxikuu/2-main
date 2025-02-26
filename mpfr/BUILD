@@ -1,5 +1,6 @@
 NAME="mpfr"
 VERS="4.2.1"
+CATG="critical core"
 DESC="Arbitrary-precision floating-point math library"
 UPST="https://gitlab.inria.fr/mpfr/mpfr.git"
 VCMD="git ls-remote --tags --refs '$UPST' | grep -Ev 'emptycommit|deleted|-rc|-root' | tail -n1 | sed 's@.*/@@'"
