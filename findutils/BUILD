@@ -1,5 +1,6 @@
 NAME="findutils"
 VERS="4.10.0"
+CATG="core"
 DESC="Programs to find and execute commands on files"
 UPST="https://git.savannah.gnu.org/git/findutils.git"
 
