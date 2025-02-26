@@ -1,5 +1,6 @@
 NAME="lz4"
 VERS="1.10.0"
+CATG="core"
 DESC="The lz4 compression algorithm."
 UPST="https://github.com/lz4/lz4.git"
 
