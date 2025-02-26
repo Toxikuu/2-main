@@ -1,5 +1,6 @@
 NAME="sed"
 VERS="4.9"
+CATG="core"
 DESC="Stream editor"
 UPST="git://git.savannah.gnu.org/sed.git"
 
