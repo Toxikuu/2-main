@@ -1,5 +1,6 @@
 NAME="acl"
 VERS="2.3.2"
+CATG="core"
 DESC="Access Control Lists"
 UPST="https://git.savannah.nongnu.org/git/acl.git"
 
