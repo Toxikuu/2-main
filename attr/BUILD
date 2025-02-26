@@ -1,5 +1,6 @@
 NAME="attr"
 VERS="2.5.2"
+CATG="core"
 DESC="Utilities to administer filesystem object attributes"
 UPST="https://git.savannah.nongnu.org/git/attr.git"
 
