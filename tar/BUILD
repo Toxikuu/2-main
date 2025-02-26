@@ -1,5 +1,6 @@
 NAME="tar"
 VERS="1.35"
+CATG="core"
 DESC="Archive utility"
 UPST="https://git.savannah.gnu.org/git/tar.git"
 
