@@ -1,5 +1,6 @@
 NAME="grep"
 VERS="3.11"
+CATG="core"
 DESC="String search utility"
 UPST="https://git.savannah.gnu.org/git/grep.git"
 
