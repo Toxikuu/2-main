@@ -1,5 +1,6 @@
 NAME="markupsafe"
 VERS="3.0.2"
+CATG="core"
 DESC="Python module implementing an XML/HTML/XHTML Markup safe string"
 UPST="https://github.com/pallets/markupsafe.git"
 
