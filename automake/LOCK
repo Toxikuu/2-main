@@ -2,7 +2,8 @@ repo = "main"
 name = "automake"
 version = "1.17"
 description = "Programs for generating Makefiles for use with Autoconf"
-timestamp = "2025-02-20 20:19:47"
+categories = ["core"]
+timestamp = "2025-02-25 20:17:07"
 upstream = "https://git.savannah.gnu.org/git/automake.git"
 version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/automake.git' | sed 's@.*/@@' | grep -E '^v[0-9]+' | cut -dv -f2 | grep -Ev '[a-z]' | tail -n1"
 
