@@ -1,5 +1,6 @@
 NAME="zlib"
 VERS="1.3.1"
+CATG="core"
 DESC="Compression library used by a lot of packages"
 UPST="https://github.com/madler/zlib.git"
 
