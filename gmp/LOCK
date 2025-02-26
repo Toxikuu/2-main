@@ -2,7 +2,11 @@ repo = "main"
 name = "gmp"
 version = "6.3.0"
 description = "Arbitrary precision math libraries"
-timestamp = "2025-02-22 16:07:05"
+categories = [
+    "critical",
+    "core",
+]
+timestamp = "2025-02-25 20:15:04"
 upstream = "https://ftp.gnu.org/gnu/gmp/?C=M;O=D"
 version_command = '''curl -s 'https://ftp.gnu.org/gnu/gmp/?C=M;O=D' | grep gmp- | head -n1 | cut -d'"' -f8 | cut -d- -f2 | cut -d. -f1-3'''
 
