@@ -1,5 +1,6 @@
 NAME="inetutils"
 VERS="2.6"
+CATG="core net"
 DESC="Networking utilities"
 UPST="https://git.savannah.gnu.org/git/inetutils.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E '^v[0-9]+' | grep -Ev '9[0-9]$' | tail -n1"
