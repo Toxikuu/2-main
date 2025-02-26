@@ -1,5 +1,6 @@
 NAME="ncurses"
 VERS="6.5"
+CATG="core"
 DESC="Libraries for terminal-independent character screen handling"
 UPST="https://invisible-mirror.net/archives/ncurses/?C=M;O=D"
 VCMD="curl -s '$UPST' | grep ncurses- | head -n1 | cut -d- -f2 | cut -d. -f1-2"
