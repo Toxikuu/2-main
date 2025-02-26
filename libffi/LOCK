@@ -2,7 +2,8 @@ repo = "main"
 name = "libffi"
 version = "3.4.7"
 description = "Foreign Function Interface library"
-timestamp = "2025-02-23 15:08:17"
+categories = ["core"]
+timestamp = "2025-02-25 20:17:21"
 upstream = "https://github.com/libffi/libffi.git"
 
 [source]
