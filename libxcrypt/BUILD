@@ -1,5 +1,6 @@
 NAME="libxcrypt"
 VERS="4.4.38"
+CATG="core security"
 DESC="Modern library for password hashing"
 UPST="https://github.com/besser82/libxcrypt.git"
 
