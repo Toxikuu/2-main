@@ -1,5 +1,6 @@
 NAME="gdbm"
 VERS="1.24"
+CATG="core"
 DESC="The GNU Database Manager"
 UPST="https://git.savannah.gnu.org/git/gdbm.git"
 
