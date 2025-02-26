@@ -1,5 +1,6 @@
 NAME="pkgconf"
 VERS="2.3.0"
+CATG="core"
 DESC="Package compiler and linker metadata toolkit"
 UPST="https://github.com/pkgconf/pkgconf.git"
 
