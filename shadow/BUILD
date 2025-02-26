@@ -1,5 +1,6 @@
 NAME="shadow"
 VERS="4.17.3"
+CATG="core security"
 DESC="Secure password handling"
 DEPS="linux-pam"
 UPST="https://github.com/shadow-maint/shadow.git"
@@ -80,4 +81,3 @@ if [ -f /etc/limits ]; then mv -v /etc/limits{,.NOUSE}; fi
 pwconv
 
 }
-#d ensured /etc/shadow exists with pwconv
