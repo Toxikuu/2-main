@@ -2,7 +2,8 @@ repo = "main"
 name = "make"
 version = "4.4.1"
 description = "Program for generating executables and other files from source code"
-timestamp = "2025-02-20 20:23:24"
+categories = ["core"]
+timestamp = "2025-02-25 20:17:53"
 upstream = "https://git.savannah.gnu.org/git/make.git"
 version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/make.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | grep -Ev '9[0-9]$' | tail -n1"
 
