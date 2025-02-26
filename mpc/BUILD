@@ -1,5 +1,6 @@
 NAME="mpc"
 VERS="1.3.1"
+CATG="critical core"
 DESC="Artibrary-precision complex arithmetic library"
 UPST="https://gitlab.inria.fr/mpc/mpc.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E '^[0-9]+' | tail -n1"
