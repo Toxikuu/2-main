@@ -2,7 +2,8 @@ repo = "main"
 name = "psmisc"
 version = "23.7"
 description = "Process monitoring utilities"
-timestamp = "2025-02-20 20:23:25"
+categories = ["core"]
+timestamp = "2025-02-25 20:16:03"
 upstream = "https://gitlab.com/psmisc/psmisc.git"
 
 [source]
