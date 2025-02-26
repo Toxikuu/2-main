@@ -2,7 +2,11 @@ repo = "main"
 name = "shadow"
 version = "4.17.3"
 description = "Secure password handling"
-timestamp = "2025-02-25 20:08:27"
+categories = [
+    "core",
+    "security",
+]
+timestamp = "2025-02-25 20:15:52"
 dependencies = ["linux-pam"]
 upstream = "https://github.com/shadow-maint/shadow.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/shadow-maint/shadow.git' | sed 's:.*/::' | grep -v rc | sort -V | grep -B1 19990709 | head -n1"
