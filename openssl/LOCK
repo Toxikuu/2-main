@@ -2,7 +2,11 @@ repo = "main"
 name = "openssl"
 version = "3.4.1"
 description = "Cryptography tools and libraries"
-timestamp = "2025-02-20 20:23:25"
+categories = [
+    "core",
+    "security",
+]
+timestamp = "2025-02-25 20:17:11"
 upstream = "https://github.com/openssl/openssl.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/openssl/openssl.git' | sed 's@.*/@@' | grep -Ev 'alpha|beta' | grep 'openssl-' | tail -n1"
 
