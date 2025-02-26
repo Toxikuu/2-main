@@ -1,5 +1,6 @@
 NAME="bison"
 VERS="3.8.2"
+CATG="core"
 DESC="Parser generator"
 UPST="https://git.savannah.gnu.org/git/bison.git"
 
