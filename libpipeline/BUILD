@@ -1,5 +1,6 @@
 NAME="libpipeline"
 VERS="1.5.8"
+CATG="core"
 DESC="Library for manipulating subprocess pipelines"
 UPST="https://gitlab.com/libpipeline/libpipeline.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -Ev '^2.+' | tail -n1"
