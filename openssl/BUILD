@@ -1,5 +1,6 @@
 NAME="openssl"
 VERS="3.4.1"
+CATG="core security"
 DESC="Cryptography tools and libraries"
 UPST="https://github.com/openssl/openssl.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -Ev 'alpha|beta' | grep 'openssl-' | tail -n1"
