@@ -2,7 +2,8 @@ repo = "main"
 name = "acl"
 version = "2.3.2"
 description = "Access Control Lists"
-timestamp = "2025-02-20 20:19:47"
+categories = ["core"]
+timestamp = "2025-02-25 20:15:35"
 upstream = "https://git.savannah.nongnu.org/git/acl.git"
 
 [source]
