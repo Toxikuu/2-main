@@ -3,7 +3,7 @@ name = "spirv-llvm-translator"
 version = "19.1.4"
 description = "Bi-directional translation between SPIR-V and LLVM IR"
 categories = ["dev"]
-timestamp = "2025-02-22 13:20:37"
+timestamp = "2025-03-03 03:07:05"
 dependencies = [
     "cmake",
     "libxml2",
@@ -12,6 +12,7 @@ dependencies = [
     "spirv-tools",
 ]
 upstream = "https://github.com/KhronosGroup/SPIRV-LLVM-Translator.git"
+version_command = "git ls-remote 'https://github.com/KhronosGroup/SPIRV-LLVM-Translator.git' | sed 's@.*/@@' | sort -V | tail -n1"
 
 [source]
 url = "https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v19.1.4/SPIRV-LLVM-Translator-19.1.4.tar.gz"
