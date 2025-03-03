@@ -2,7 +2,7 @@ repo = "main"
 name = "sdl2"
 version = "2.32.2"
 description = "A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard"
-timestamp = "2025-03-03 02:11:06"
+timestamp = "2025-03-03 03:30:50"
 dependencies = [
     "libxkbcommon",
     "wayland-protocols",
