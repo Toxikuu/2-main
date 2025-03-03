@@ -1,5 +1,5 @@
 NAME="sysklogd"
-VERS="2.7.0"
+VERS="2.7.1"
 CATG="core"
 DESC="Programs for logging system messages"
 UPST="https://github.com/troglobit/sysklogd.git"
