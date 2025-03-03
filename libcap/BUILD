@@ -1,5 +1,5 @@
 NAME="libcap"
-VERS="2.73"
+VERS="2.74"
 CATG="core"
 DESC="POSIX 1003.1e capabilities"
 UPST="https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
