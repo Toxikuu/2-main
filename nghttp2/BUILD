@@ -1,5 +1,5 @@
 NAME="nghttp2"
-VERS="1.64.0"
+VERS="1.65.0"
 DESC="Implementation of HTTP/2"
 UPST="https://github.com/nghttp2/nghttp2.git"
 
