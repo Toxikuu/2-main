@@ -2,10 +2,10 @@ repo = "main"
 name = "cargo-c"
 version = "0.10.11"
 description = "A cargo subcommand to build and install C-ABI compatibile dynamic and static libraries"
-timestamp = "2025-02-24 20:45:58"
+timestamp = "2025-03-03 04:01:14"
 dependencies = ["rust"]
 upstream = "https://github.com/lu-zero/cargo-c.git"
 
 [source]
-url = "https://github.com/lu-zero/cargo-c/archive/v0.10.9/cargo-c-0.10.9.tar.gz"
+url = "https://github.com/lu-zero/cargo-c/archive/v0.10.11/cargo-c-0.10.11.tar.gz"
 hash = "RULjmqZ7-HEsYPIXAcyOi1FT0DRK_hthjxIfaWtXin8"
