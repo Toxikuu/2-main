@@ -27,6 +27,7 @@ mk
 mi
 
 m32=1
+mk distclean
 
 cfg
 mk
