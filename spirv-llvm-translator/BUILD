@@ -3,6 +3,7 @@ VERS="19.1.4"
 DESC="Bi-directional translation between SPIR-V and LLVM IR"
 CATG="dev"
 UPST="https://github.com/KhronosGroup/SPIRV-LLVM-Translator.git"
+VCMD="git ls-remote '$UPST' | sed 's@.*/@@' | sort -V | tail -n1"
 DEPS=(
     "cmake"
     "libxml2"
