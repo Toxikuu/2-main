@@ -1,5 +1,5 @@
 NAME="nss"
-VERS="3.108"
+VERS="3.109"
 DESC="Network Security Services"
 UPST="https://github.com/nss-dev/nss.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E '^NSS.+RTM$' | sed -e 's@NSS_@@' -e 's@_RTM@@' -e 's@_@.@g' | grep -Ev '[a-Z]+' | sort -V | tail -n1"
@@ -69,4 +69,3 @@ install -vm644 Linux*/lib/pkgconfig/nss.pc  "$D"/usr/lib32/pkgconfig  ||
 die "Install (m32) failed"
 
 }
-#d trimmed trailing whitespace
