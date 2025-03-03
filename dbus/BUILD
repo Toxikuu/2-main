@@ -1,5 +1,5 @@
 NAME="dbus"
-VERS="1.16.0"
+VERS="1.16.2"
 DESC="Freedesktop.org message bus system"
 UPST="https://gitlab.freedesktop.org/dbus/dbus.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E 'dbus-[0-9]' | sort -V | tail -n1"
