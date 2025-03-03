@@ -1,5 +1,5 @@
 NAME="spirv-llvm-translator"
-VERS="19.1.4"
+VERS="19.1.5"
 DESC="Bi-directional translation between SPIR-V and LLVM IR"
 CATG="dev"
 UPST="https://github.com/KhronosGroup/SPIRV-LLVM-Translator.git"
