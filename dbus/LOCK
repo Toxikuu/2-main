@@ -1,15 +1,15 @@
 repo = "main"
 name = "dbus"
-version = "1.16.0"
+version = "1.16.2"
 description = "Freedesktop.org message bus system"
-timestamp = "2025-02-20 20:19:48"
+timestamp = "2025-03-03 02:10:37"
 dependencies = ["xorg/@libs"]
 upstream = "https://gitlab.freedesktop.org/dbus/dbus.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/dbus/dbus.git' | sed 's@.*/@@' | grep -E 'dbus-[0-9]' | sort -V | tail -n1"
 
 [source]
-url = "https://dbus.freedesktop.org/releases/dbus/dbus-1.16.0.tar.xz"
-hash = "n4yl61HL4JlRrshiS4bCkpkK4kKLQbhW4r7RfsZciEk"
+url = "https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz"
+hash = "C6KhpLFq_nvOssB-nOmajCw1COXewpDbtkM4S9a-t-I"
 
 [[extra]]
 url = "https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20240913.tar.xz"
