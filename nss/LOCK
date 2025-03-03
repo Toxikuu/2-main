@@ -1,14 +1,14 @@
 repo = "main"
 name = "nss"
-version = "3.108"
+version = "3.109"
 description = "Network Security Services"
-timestamp = "2025-02-20 20:23:24"
+timestamp = "2025-03-03 02:11:41"
 upstream = "https://github.com/nss-dev/nss.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/nss-dev/nss.git' | sed 's@.*/@@' | grep -E '^NSS.+RTM$' | sed -e 's@NSS_@@' -e 's@_RTM@@' -e 's@_@.@g' | grep -Ev '[a-Z]+' | sort -V | tail -n1"
 
 [source]
-url = "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_108_RTM/src/nss-3.108.tar.gz"
-hash = "oPb8tdutwWNbQ4J1F6l546bQBdB4hSeAKmsx4sX2buw"
+url = "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_109_RTM/src/nss-3.109.tar.gz"
+hash = "vqRsJWEYzYkQIC8FM5Yn11KR8TuABUUn31hBm50pwYs"
 
 [[extra]]
 url = "https://github.com/glfs-book/glfs/raw/refs/heads/trunk/patches/nss/nss-standalone-1.patch"
