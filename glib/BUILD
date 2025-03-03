@@ -1,5 +1,5 @@
 NAME="glib"
-VERS="2.83.4"
+VERS="2.83.5"
 GOBJV="1.82.0"
 DESC="Low level core library"
 UPST="https://github.com/GNOME/glib.git"
@@ -109,4 +109,3 @@ nj
 ni
 
 }
-#d fucking hell i hate glib but at least it builds now LOL
