@@ -1,11 +1,11 @@
 repo = "main"
 name = "jinja2"
-version = "3.1.5"
+version = "3.1.6"
 description = "Python module implementing a simple template language"
 categories = ["core"]
-timestamp = "2025-02-25 20:20:29"
+timestamp = "2025-03-05 14:24:15"
 upstream = "https://github.com/pallets/jinja.git"
 
 [source]
-url = "https://pypi.org/packages/source/J/Jinja2/jinja2-3.1.5.tar.gz"
-hash = "j-__jcMDTie7gNZ8Zx64qbxCTA70wIJu2_8wTM7_Q7s"
+url = "https://pypi.org/packages/source/J/Jinja2/jinja2-3.1.6.tar.gz"
+hash = "ATf7BZkNNfEnWlh-mu5tVtqCH8g0kaD7g4GDvkP2bW0"
