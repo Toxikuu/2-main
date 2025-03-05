@@ -2,9 +2,9 @@ repo = "main"
 name = "man-pages"
 version = "6.12"
 description = "A man page database"
-timestamp = "2025-02-24 20:46:32"
+timestamp = "2025-03-05 15:45:49"
 upstream = "https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git"
 
 [source]
-url = "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.11.tar.xz"
+url = "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.12.tar.xz"
 hash = "3aou2i6NKG--wiHRFfEtP_9dNsxQZs3-zI0koljVixk"
