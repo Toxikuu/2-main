@@ -15,18 +15,18 @@ EXTRA=()
 
 2b() {
 
-with cmake
+with cmake ninja
 
 cm
-mk
-mi
+nj
+ni
 
 m32=1
 cd ..
 
 cm
-mk
-mi
+nj
+ni
 
 mkdir -pv "$D/etc/profile.d"
 echo "export VDPAU_DRIVER=va_gl" >> "$D/etc/profile.d/xorg.sh"
