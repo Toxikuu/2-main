@@ -1,0 +1,17 @@
+repo = "main"
+name = "libvdpau-va-gl"
+version = "0.4.2"
+description = "VDPAU driver with OpenGL/VAAPI backend"
+categories = ["graphics"]
+timestamp = "2025-03-05 02:47:13"
+dependencies = [
+    "cmake",
+    "libvdpau",
+    "libva",
+    "mesa",
+]
+upstream = "https://github.com/i-rinat/libvdpau-va-gl.git"
+
+[source]
+url = "https://github.com/i-rinat/libvdpau-va-gl/archive/v0.4.2/libvdpau-va-gl-0.4.2.tar.gz"
+hash = "fZEhVAZY6wJEhZ5j2hcco4aeeEr76vIC9ERxJ1x4SvQ"
