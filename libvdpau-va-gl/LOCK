@@ -3,7 +3,7 @@ name = "libvdpau-va-gl"
 version = "0.4.2"
 description = "VDPAU driver with OpenGL/VAAPI backend"
 categories = ["graphics"]
-timestamp = "2025-03-05 02:52:50"
+timestamp = "2025-03-05 02:55:43"
 dependencies = [
     "cmake",
     "libvdpau",
