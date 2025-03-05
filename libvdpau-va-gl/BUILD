@@ -2,7 +2,7 @@ NAME="libvdpau-va-gl"
 VERS="0.4.2"
 DESC="VDPAU driver with OpenGL/VAAPI backend"
 CATG="graphics"
-UPST="https://github.com/i-rinat/libvdpau-va-gl.git"
+UPST="https://github.com/i-rinat/$NAME.git"
 DEPS=(
     "cmake"
     "libvdpau"
