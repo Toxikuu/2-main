@@ -1,12 +1,12 @@
 repo = "main"
 name = "libcap"
-version = "2.74"
+version = "2.75"
 description = "POSIX 1003.1e capabilities"
 categories = ["core"]
-timestamp = "2025-03-03 02:12:34"
+timestamp = "2025-03-05 01:34:28"
 upstream = "https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
 version_command = "git ls-remote --tags --refs 'https://git.kernel.org/pub/scm/libs/libcap/libcap.git' | sed 's@.*/@@' | grep 'libcap-korg-' | tail -n1 | cut -d- -f3"
 
 [source]
-url = "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.74.tar.xz"
-hash = "64UnHyiTGIZEtkUc7Izpn0VBSY8W_5-Eh3wvyHJxdxQ"
+url = "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.75.tar.xz"
+hash = "3k5-BkybpFHVI03Ubol9fHHJap6_mgxEW8BPR0LYNjI"
