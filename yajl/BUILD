@@ -23,4 +23,6 @@ cm
 nj
 ni
 
+rm -vf "$D"/usr/lib/libyajl_s.a
+
 }
