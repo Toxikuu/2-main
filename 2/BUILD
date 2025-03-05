@@ -50,7 +50,7 @@ if command -v mdbook >/dev/null 2>&1; then
     pushd docs
     mdbook build
     mkdir -pv "$D/usr/share/doc"
-    cp -av docs/book "$D/usr/share/doc/2"
+    cp -av book "$D/usr/share/doc/2"
     popd
 fi
 
