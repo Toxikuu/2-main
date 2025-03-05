@@ -1,0 +1,14 @@
+repo = "main"
+name = "xcb-util"
+version = "0.4.1"
+description = "Utility libraries for XC Binding"
+timestamp = "2025-03-05 03:09:48"
+dependencies = [
+    "libxcb",
+    "xcb-proto",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb-util.git"
+
+[source]
+url = "https://xcb.freedesktop.org/dist/xcb-util-0.4.1.tar.xz"
+hash = "Wr47u9jlTw-j7JRSkbfo-oz9PMzENxj4dYQw-UEm5RI"
