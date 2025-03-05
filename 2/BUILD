@@ -43,10 +43,16 @@ EOF
 chmod +x "$D/usr/bin/2"
 
 install -vDm755 target/release/two "$D/usr/share/2/target/release/two"
-
-mkdir -pv "$D/usr/share/doc"
-cp -av docs/book "$D/usr/share/doc/2"
 cp -av envs "$D/usr/share/2/envs"
+
+# build documentation if mdbook is installed
+if command -v mdbook; do
+    pushd docs
+    mdbook build
+    mkdir -pv "$D/usr/share/doc"
+    cp -av docs/book "$D/usr/share/doc/2"
+    popd
+done
 
 for f in config.toml exclusions.txt repo_priority.txt README.md LICENSE; do
     install -vm644 "$f" "$D/usr/share/2"
