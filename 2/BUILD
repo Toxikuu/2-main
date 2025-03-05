@@ -46,13 +46,13 @@ install -vDm755 target/release/two "$D/usr/share/2/target/release/two"
 cp -av envs "$D/usr/share/2/envs"
 
 # build documentation if mdbook is installed
-if command -v mdbook; do
+if command -v mdbook >/dev/null 2>&1; then
     pushd docs
     mdbook build
     mkdir -pv "$D/usr/share/doc"
     cp -av docs/book "$D/usr/share/doc/2"
     popd
-done
+fi
 
 for f in config.toml exclusions.txt repo_priority.txt README.md LICENSE; do
     install -vm644 "$f" "$D/usr/share/2"
