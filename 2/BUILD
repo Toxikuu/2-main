@@ -42,7 +42,14 @@ EOF
 
 chmod +x "$D/usr/bin/2"
 
-cp -av "$BLD" "$D/usr/share/2"
-rm -rvf "$D/usr/share/2/D"
+install -vDm755 target/release/two "$D/usr/share/2/target/release/two"
+
+mkdir -pv "$D/usr/share/doc"
+cp -av docs/book "$D/usr/share/doc/2"
+cp -av envs "$D/usr/share/2/envs"
+
+for f in config.toml exclusions.txt repo_priority.txt README.md LICENSE; do
+    install -vm644 "$f" "$D/usr/share/2"
+done
 
 }
