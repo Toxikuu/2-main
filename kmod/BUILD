@@ -9,35 +9,34 @@ EXTRA=()
 
 2b() {
 
+with meson ninja
 mkdir -pv "$D"/usr/sbin
 
 _cfg_opts=(
     --prefix=/usr
-    --sysconfdir=/etc
-    --with-openssl
-    --with-xz
-    --with-zstd
-    --with-zlib
-    --disable-manpages
+    --sbindir=/usr/sbin
+    --buildtype=release
+    -D manpages=false
+    -D docs=false
+    -D build-tests=false
+    -D debug-messages=false
+    -D tools=true
+    -D openssl=enabled
+    -D zlib=enabled
+    -D xz=enabled
+    -D zstd=enabled
+    -D moduledir=/lib/modules
 )
 
-cfg "${_cfg_opts[@]}"
-mk
-mi
+ms "${_cfg_opts[@]}"
+nj
+ni
 
-for target in depmod insmod modinfo modprobe rmmod; do
-  ln -sfv ../bin/kmod "$D"/usr/sbin/$target
-  rm -fv "$D"/usr/bin/$target
-done
-
-sed -e "s/^CLEANFILES =.*/CLEANFILES =/" -i man/Makefile
-mk clean
+cd ..
 m32=1
 
-cfg "${_cfg_opts[@]}" \
-    --with-rootlibdir=/usr/lib32
-
-mk
-mi
+ms "${_cfg_opts[@]}"
+ni
+nj
 
 }
