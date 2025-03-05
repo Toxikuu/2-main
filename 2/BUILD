@@ -40,6 +40,9 @@ fi
 "\$S" LOG_LEVEL="\$LOG_LEVEL" /usr/share/2/target/release/two "\$@"
 EOF
 
-cp -av . "$D/usr/share/2"
+chmod +x "$D/usr/bin/2"
+
+cp -av "$BLD" "$D/usr/share/2"
+rm -rvf "$D/usr/share/2/D"
 
 }
