@@ -3,7 +3,7 @@ name = "kmod"
 version = "34"
 description = "Libraries and utilities for loading kernel modules"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:14"
+timestamp = "2025-03-05 17:14:50"
 upstream = "https://kernel.googlesource.com/pub/scm/utils/kernel/kmod/kmod.git"
 
 [source]
