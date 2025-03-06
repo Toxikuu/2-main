@@ -32,7 +32,6 @@ _cfg_opts=(
     -D openssl=disabled # used for apple support
     -D systemd=disabled
     -D valgrind=disabled
-    -D x11=enabled
     -D elogind=enabled
 )
 
@@ -49,4 +48,4 @@ nj
 ni
 
 }
-#d tweaked build options
+#d leave out the x11 build option in case pulseaudio is build before x11
