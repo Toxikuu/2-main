@@ -4,7 +4,10 @@ DESC="Freedesktop.org message bus system"
 UPST="https://gitlab.freedesktop.org/dbus/dbus.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E 'dbus-[0-9]' | sort -V | tail -n1"
 DEPS=(
-    "xorg/@libs" # TODO: Make this work lol
+    "libcap"
+    "glib"
+    "xmlto"
+    # xorg libraries for dbus-launch
 )
 
 SOURCE="https://dbus.freedesktop.org/releases/dbus/dbus-$VERS.tar.xz"
@@ -43,7 +46,7 @@ ni
 chown -v root:messagebus "$D"/usr/libexec/dbus-daemon-launch-helper
 chmod -v      4750       "$D"/usr/libexec/dbus-daemon-launch-helper
 
-dbus-uuidgen --ensure
+"$D"/usr/bin/dbus-uuidgen --ensure
 
 cd ..
 m32=1
@@ -62,3 +65,4 @@ ni
 ln -sfv /var/lib/dbus/machine-id /etc
 
 }
+#d dependencies and bugfix
