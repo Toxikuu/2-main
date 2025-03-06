@@ -1,0 +1,15 @@
+repo = "main"
+name = "rg"
+version = "14.1.1"
+description = "Grep but in rust"
+categories = ["cli"]
+timestamp = "2025-03-06 01:17:41"
+dependencies = [
+    "rust",
+    "pcre2",
+]
+upstream = "https://github.com/BurntSushi/ripgrep.git"
+
+[source]
+url = "https://github.com/BurntSushi/ripgrep/archive/refs/tags/14.1.1.tar.gz"
+hash = "Ta0CovnIw8jYlDTkczeqZUyw4qpQ6AZYkTLxhr9cK2Y"
