@@ -2,8 +2,12 @@ repo = "main"
 name = "dbus"
 version = "1.16.2"
 description = "Freedesktop.org message bus system"
-timestamp = "2025-03-03 02:10:37"
-dependencies = ["xorg/@libs"]
+timestamp = "2025-03-06 17:01:53"
+dependencies = [
+    "libcap",
+    "glib",
+    "xmlto",
+]
 upstream = "https://gitlab.freedesktop.org/dbus/dbus.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/dbus/dbus.git' | sed 's@.*/@@' | grep -E 'dbus-[0-9]' | sort -V | tail -n1"
 
