@@ -2,7 +2,7 @@ repo = "main"
 name = "dbus"
 version = "1.16.2"
 description = "Freedesktop.org message bus system"
-timestamp = "2025-03-06 17:01:53"
+timestamp = "2025-03-06 17:05:31"
 dependencies = [
     "libcap",
     "glib",
