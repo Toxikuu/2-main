@@ -20,6 +20,7 @@ EXTRA=(
 with meson ninja
 
 _cfg_opts=(
+    --wrap-mode=nofallback
     -D localstatedir=/var
     -D runtime_dir=/run
     -D sysconfdir=/etc
@@ -46,8 +47,6 @@ ni
 chown -v root:messagebus "$D"/usr/libexec/dbus-daemon-launch-helper
 chmod -v      4750       "$D"/usr/libexec/dbus-daemon-launch-helper
 
-"$D"/usr/bin/dbus-uuidgen --ensure
-
 cd ..
 m32=1
 
@@ -59,10 +58,4 @@ nj
 ni
 
 }
-
-2z() {
-
-ln -sfv /var/lib/dbus/machine-id /etc
-
-}
-#d dependencies and bugfix
+#d simplified instructions
