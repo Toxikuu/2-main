@@ -5,3 +5,4 @@
 [effb92c6b4b8ccedce0108122e1e208200a16194] [2025-02-21 05:55:47] | Generated pulseaudio=17.0
 [83b7c7362005272381a73714bca50334e64e0dbf] [2025-03-06 04:59:38] | Revised pulseaudio: tweaked build options
 [17c72d9fd2d5dcaba3d440007330d3fbdeffe155] [2025-03-06 04:59:38] | Generated pulseaudio=17.0
+[ed73a867222f19f139adc09b1cab4740358bcab0] [2025-03-06 05:01:18] | Revised pulseaudio: leave out the x11 build option in case pulseaudio is build before x11
