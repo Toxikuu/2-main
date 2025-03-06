@@ -11,10 +11,29 @@ EXTRA=()
 with meson ninja
 
 _cfg_opts=(
-    -D database=gdbm
+    -D daemon=true
+    -D client=true
     -D doxygen=false
+    -D gcov=false
+    -D man=true
+    -D tests=false
+    -D system_user=pulse
+    -D system_group=pulse
+    -D access_group=pulse-access
+    -D database=gdbm
+    -D legacy-database-entry-format=false
+    -D stream-restore-clear-old-devices=false # true is recommended for gnome
+    -D running-from-build-tree=false
+    -D atomic-arm-linux-helpers=true
+    -D atomic-arm-memory-barrier=false
     -D bluez5=disabled
-    -D tests=disabled
+    -D jack=disabled
+    -D lirc=disabled
+    -D openssl=disabled # used for apple support
+    -D systemd=disabled
+    -D valgrind=disabled
+    -D x11=enabled
+    -D elogind=enabled
 )
 
 ms "${_cfg_opts[@]}"
@@ -30,4 +49,4 @@ nj
 ni
 
 }
-# disable tests for pulseaudio, as they aren't run and rope in check
+#d tweaked build options
