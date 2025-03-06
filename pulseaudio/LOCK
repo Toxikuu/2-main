@@ -2,7 +2,7 @@ repo = "main"
 name = "pulseaudio"
 version = "17.0"
 description = "General-purpose sound server"
-timestamp = "2025-03-05 22:59:38"
+timestamp = "2025-03-05 23:01:18"
 upstream = "https://github.com/pulseaudio/pulseaudio.git"
 
 [source]
