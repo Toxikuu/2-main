@@ -1,0 +1,10 @@
+repo = "main"
+name = "libuv"
+version = "1.50.0"
+description = "Multi-platform support library focusing on asyncio"
+timestamp = "2025-03-06 16:36:06"
+upstream = "https://github.com/libuv/libuv.git"
+
+[source]
+url = "https://dist.libuv.org/dist/v1.50.0/libuv-v1.50.0.tar.gz"
+hash = "bcKzmqf6ZsBOLgFb9Hc4uE4ca4a4mH1X3UMtFJ137iU"
