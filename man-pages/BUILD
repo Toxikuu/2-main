@@ -1,5 +1,5 @@
 NAME="man-pages"
-VERS="6.12"
+VERS="6.13"
 DESC="A man page database"
 UPST="https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git"
 
@@ -16,4 +16,3 @@ rm -v man5/nscd.conf.5 man8/nscd.8 # ncsd is dead
 mi GIT=false prefix=/usr -R
 
 }
-#d suppress git warnings
