@@ -17,11 +17,10 @@ mk clean
 m32=1
 
 CC="gcc -m32" mk prefix=/usr
-mk prefix=/usr DESTDIR="$PWD/32DEST" install
-cp -av 32DEST/usr/lib/* "$D"/usr/lib32/ # note lib -> lib32
+mi prefix=/usr
 
 sed -e "/^libdir/s/lib$/lib32/" -i "$D"/usr/lib32/pkgconfig/libzstd.pc
 rm -vf "$D"/usr/lib{,32}/libzstd.a
 
 }
-# bugfix for m32
+#d testing 32DEST/usr/lib fallback
