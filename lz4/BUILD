@@ -12,10 +12,11 @@ EXTRA=()
 mk BUILD_STATIC=no PREFIX=/usr
 mi BUILD_STATIC=no PREFIX=/usr
 
-mkdir -pv "$D"/usr/lib32
+m32=1
 mk clean
 
 CC="gcc -m32" mk BUILD_STATIC=no PREFIX=/usr
 mi BUILD_STATIC=no PREFIX=/usr LIBDIR=/usr/lib32
 
 }
+#d m32 bugfix
