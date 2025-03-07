@@ -1,5 +1,5 @@
 NAME="llvm"
-VERS="19.1.7"
+VERS="20.1.0"
 DESC="A collection of modular and reusable compiler and toolchain technologies"
 UPST="https://github.com/llvm/llvm-project.git"
 VCMD="git ls-remote --tags --refs '$UPST' | cut -d- -f2- | grep -v [a-Z] | sort -V | tail -n1"
@@ -101,4 +101,3 @@ for i in clang clang++; do
 done
 
 }
-#d first draft for llvm=20.1.0
