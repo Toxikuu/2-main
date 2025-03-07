@@ -3,12 +3,13 @@ name = "rg"
 version = "14.1.1"
 description = "Grep but in rust"
 categories = ["cli"]
-timestamp = "2025-03-06 01:17:41"
+timestamp = "2025-03-06 20:44:05"
 dependencies = [
     "rust",
     "pcre2",
 ]
 upstream = "https://github.com/BurntSushi/ripgrep.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/BurntSushi/ripgrep.git' | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 
 [source]
 url = "https://github.com/BurntSushi/ripgrep/archive/refs/tags/14.1.1.tar.gz"
