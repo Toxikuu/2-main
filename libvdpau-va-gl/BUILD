@@ -26,8 +26,7 @@ cd ..
 
 cm
 nj
-ni || true # the below line handles the failure
-cp -av "$BLD"/32DEST/usr/lib/* "$D"/usr/lib32
+ni
 
 mkdir -pv "$D/etc/profile.d"
 echo "export VDPAU_DRIVER=va_gl" >> "$D/etc/profile.d/xorg.sh"
@@ -39,3 +38,4 @@ echo "export VDPAU_DRIVER=va_gl" >> "$D/etc/profile.d/xorg.sh"
 export VDPAU_DRIVER=va_gl
 
 }
+#d rely on m32 lib fallback within ni
