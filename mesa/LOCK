@@ -1,9 +1,9 @@
 repo = "main"
 name = "mesa"
-version = "25.0.0"
+version = "25.0.1"
 description = "Graphics software bundle (OpenGL, Vulkan, etc.)"
 categories = ["graphics"]
-timestamp = "2025-02-24 21:15:47"
+timestamp = "2025-03-06 20:34:04"
 dependencies = [
     "xorg/@lib",
     "libdrm",
@@ -17,5 +17,5 @@ upstream = "https://gitlab.freedesktop.org/mesa/mesa.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/mesa/mesa.git' | sed 's@.*/@@' | grep '^mesa-[0-9]' | grep -Ev 'rc|devel' | sort -V | tail -n1"
 
 [source]
-url = "https://mesa.freedesktop.org/archive/mesa-25.0.0.tar.xz"
-hash = "lqU1Af1ZZ5ZUJzJYxsahBVog41LuFCnwsSNRbHGQ5bA"
+url = "https://mesa.freedesktop.org/archive/mesa-25.0.1.tar.xz"
+hash = "SetVulrMyukd61Zlc6anMUSg85AUvhmC14whxbawuz8"
