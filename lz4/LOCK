@@ -3,7 +3,7 @@ name = "lz4"
 version = "1.10.0"
 description = "The lz4 compression algorithm."
 categories = ["core"]
-timestamp = "2025-02-25 20:14:39"
+timestamp = "2025-03-06 22:49:16"
 upstream = "https://github.com/lz4/lz4.git"
 
 [source]
