@@ -3,6 +3,7 @@ VERS="14.1.1"
 DESC="Grep but in rust"
 CATG="cli"
 UPST="https://github.com/BurntSushi/ripgrep.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 DEPS=(
     "rust"
     "pcre2"
@@ -33,3 +34,4 @@ target/release/rg --generate man >  "$D/usr/share/man/man1/rg.1"
 install -vDm644 "README.md" "$D/usr/share/doc/rg/README.md"
 
 }
+#d fixed vcmd
