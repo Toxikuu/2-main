@@ -20,9 +20,9 @@ with cmake ninja
 tar -xf "$SRC/cmake-$VERS.src.tar.xz"
 tar -xf "$SRC/third-party-$VERS.src.tar.xz"
 
-sed '/LLVM_COMMON_CMAKE_UTILS/s@../cmake@cmake-19.1.7.src@' \
+sed '/LLVM_COMMON_CMAKE_UTILS/s@../cmake@cmake-$VERS.src@' \
     -i CMakeLists.txt &&
-sed '/LLVM_THIRD_PARTY_DIR/s@../third-party@third-party-19.1.7.src@' \
+sed '/LLVM_THIRD_PARTY_DIR/s@../third-party@third-party-$VERS.src@' \
     -i cmake/modules/HandleLLVMOptions.cmake
 
 tar -xf "$SRC/clang-$VERS.src.tar.xz" -C tools
@@ -36,19 +36,38 @@ grep -rl '#!.*python' | xargs sed -i '1s/python$/python3/'
 # install filecheck (needed by some package test suites)
 sed 's/utility/tool/' -i utils/FileCheck/CMakeLists.txt
 
-# BUILD_SHARED_LIBS=ON in the abstraction
-# The shared libs conflict with rustc, but rustup ships its own copy of llvm anyway
-# The options required for rustc with system llvm are commented out
-#
 # The AMDGPU target is included in this build as well
 _cfg_opts=(
-    -D LLVM_ENABLE_FFI=ON
-    # -D LLVM_BUILD_LLVM_DYLIB=ON
-    # -D LLVM_LINK_LLVM_DYLIB=ON
-    -D LLVM_ENABLE_RTTI=ON
-    -D LLVM_TARGETS_TO_BUILD="X86;host;AMDGPU"
-    -D LLVM_BINUTILS_INCDIR=/usr/include
+    # shared libraries
+    -D BUILD_SHARED_LIBS=OFF
+    -D LLVM_BUILD_LLVM_DYLIB=ON
+    -D LLVM_LINK_LLVM_DYLIB=ON
+
+    # tests
     -D LLVM_INCLUDE_BENCHMARKS=OFF
+    -D LLVM_INCLUDE_TESTS=OFF
+    -D LLVM_BUILD_TESTS=OFF
+    -D LLVM_INSTALL_GTEST=OFF
+
+    # docs
+    -D LLVM_BUILD_DOCS=OFF
+    -D LLVM_ENABLE_OCAMLDOC=OFF
+    -D LLVM_ENABLE_SPHINX=OFF
+    -D LLVM_ENABLE_DOXYGEN=OFF
+
+    # general llvm settings
+    -D LLVM_TARGETS_TO_BUILD="" # hack stolen from https://gitweb.gentoo.org/repo/gentoo.git/tree/llvm-core/llvm/llvm-20.1.0.ebuild
+    -D LLVM_EXPERIMENTAL_TARGETS_TO_BUILD="X86;host;AMDGPU"
+    -D LLVM_BINUTILS_INCDIR=/usr/include
+		-D LLVM_APPEND_VC_REV=OFF
+
+    # features
+    -D LLVM_ENABLE_FFI=ON
+    -D LLVM_ENABLE_RTTI=ON
+    -D LLVM_ENABLE_PROJECTS="clang"
+		-D OCAMLFIND=NO
+
+    # clang
     -D CLANG_DEFAULT_PIE_ON_LINUX=ON
     -D CLANG_CONFIG_FILE_SYSTEM_DIR=/etc/clang
 )
@@ -62,14 +81,17 @@ cp bin/FileCheck "$D"/usr/bin
 cd ..
 m32=1
 
-CC=gcc CXX=g++ \
-cm ${_cfg_opts[@]}                                    \
-    -D CMAKE_C_FLAGS:STRING=-m32                      \
-    -D CMAKE_CXX_FLAGS:STRING=-m32                    \
-    -D LLVM_TARGET_ARCH:STRING=i686                   \
-    -D LLVM_LIBDIR_SUFFIX=32                          \
-    -D LLVM_DEFAULT_TARGET_TRIPLE="i686-pc-linux-gnu" \
+_cfg_opts+=(
+    -D CMAKE_C_FLAGS:STRING=-m32
+    -D CMAKE_CXX_FLAGS:STRING=-m32
+    -D LLVM_TARGET_ARCH:STRING=i686
+    -D LLVM_LIBDIR_SUFFIX=32
+    -D LLVM_DEFAULT_TARGET_TRIPLE="i686-pc-linux-gnu"
     -D LLVM_HOST_TRIPLE="x86_64-pc-linux-gnu"
+)
+
+CC=gcc CXX=g++ \
+cm ${_cfg_opts[@]}
 nj
 ni
 
@@ -79,3 +101,4 @@ for i in clang clang++; do
 done
 
 }
+#d first draft for llvm=20.1.0
