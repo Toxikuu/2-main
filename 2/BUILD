@@ -1,5 +1,5 @@
 NAME="2"
-VERS="0.0.84"
+VERS="0.0.86"
 DESC="Source-based LFS package manager"
 CATG="core"
 UPST="https://github.com/Toxikuu/2.git"
