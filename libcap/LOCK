@@ -3,7 +3,7 @@ name = "libcap"
 version = "2.75"
 description = "POSIX 1003.1e capabilities"
 categories = ["core"]
-timestamp = "2025-03-05 01:34:28"
+timestamp = "2025-03-06 22:12:48"
 upstream = "https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
 version_command = "git ls-remote --tags --refs 'https://git.kernel.org/pub/scm/libs/libcap/libcap.git' | sed 's@.*/@@' | grep 'libcap-korg-' | tail -n1 | cut -d- -f3"
 
