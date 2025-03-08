@@ -1,11 +1,11 @@
 repo = "main"
 name = "vulkan-loader"
-version = "1.4.309"
+version = "1.4.310"
 description = "Library providing the Vulkan API and core support for graphics drivers for Vulkan"
-timestamp = "2025-02-24 20:47:52"
+timestamp = "2025-03-07 23:58:18"
 upstream = "https://github.com/KhronosGroup/Vulkan-Loader.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/KhronosGroup/Vulkan-Loader.git' | sed 's@.*/@@' | grep -E '^v[0-9]' | tail -n1"
 
 [source]
-url = "https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.307/Vulkan-Loader-1.4.307.tar.gz"
-hash = "Zh97fRU2U4QgdxNy3YBQ8tIk_POgI_MdZup22K97kR4"
+url = "https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.310/Vulkan-Loader-1.4.310.tar.gz"
+hash = "4btzif7tXCxccp4-88vUJjRvRuuNvthR5dgo-c_3oNI"
