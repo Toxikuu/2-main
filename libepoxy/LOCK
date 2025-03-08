@@ -3,7 +3,7 @@ name = "libepoxy"
 version = "1.5.10"
 description = "OpenGL function pointer management library"
 categories = ["graphics"]
-timestamp = "2025-03-07 18:00:00"
+timestamp = "2025-03-07 18:11:00"
 dependencies = [
     "mesa",
     "libx11",
