@@ -3,13 +3,14 @@ name = "libepoxy"
 version = "1.5.10"
 description = "OpenGL function pointer management library"
 categories = ["graphics"]
-timestamp = "2025-03-07 18:11:00"
+timestamp = "2025-03-08 00:06:46"
 dependencies = [
     "mesa",
     "libx11",
     "o^libglvnd",
 ]
 upstream = "https://github.com/anholt/libepoxy.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/anholt/libepoxy.git' | sed -e 's@.*/@@' -e 's,v,,' | sort -V | tail -n1"
 
 [source]
 url = "https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz"
