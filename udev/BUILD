@@ -22,7 +22,7 @@ sed -i '/systemd-sysctl/s/^/#/' rules.d/99-systemd.rules.in
 sed -e '/NETWORK_DIRS/s/systemd/udev/' \
     -i src/libsystemd/sd-network/network-util.h
 
-_ms_opts=(
+_cfg_opts=(
     -D mode=release
     -D dev-kvm-mode=0660
     -D link-udev-shared=false
@@ -30,7 +30,7 @@ _ms_opts=(
     -D vconsole=false
 )
 
-ms "${_ms_opts[@]}"
+ms "${_cfg_opts[@]}"
 
 export udev_helpers=$(grep "'name' :" ../src/udev/meson.build | \
                       awk '{print $3}' | tr -d ",'" | grep -v 'udevadm')
@@ -69,7 +69,7 @@ cd ..
 m32=1
 
 LANG=en_US.UTF-8 \
-ms "${_ms_opts[@]}"
+ms "${_cfg_opts[@]}"
 
 nj  $(grep -o -E "^build (src/libudev|src/udev)[^:]*" \
       build.ninja | awk '{ print $2 }') \
@@ -86,3 +86,4 @@ sed -e "s@/usr/lib@&32@g" src/libudev/libudev.pc > "$D"/usr/lib32/pkgconfig/libu
 udev-hwdb update
 
 }
+#d use prefer the more standard _cfg_opts
