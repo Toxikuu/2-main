@@ -1,3 +1,4 @@
+# WARNING: This package currently does not build
 NAME="llvm"
 VERS="20.1.0"
 DESC="A collection of modular and reusable compiler and toolchain technologies"
@@ -20,13 +21,16 @@ with cmake ninja
 tar -xf "$SRC/cmake-$VERS.src.tar.xz"
 tar -xf "$SRC/third-party-$VERS.src.tar.xz"
 
-sed "/LLVM_COMMON_CMAKE_UTILS/s@../cmake@cmake-$VERS.src@" \
-    -i CMakeLists.txt &&
-sed "/LLVM_THIRD_PARTY_DIR/s@../third-party@third-party-$VERS.src@" \
-    -i cmake/modules/HandleLLVMOptions.cmake
+sed -e "/LLVM_COMMON_CMAKE_UTILS/s@../cmake@cmake-$VERS.src@" \
+    -e '/PROJ_DIR/s@\.\./@@' \
+    -i CMakeLists.txt
 
-tar -xf "$SRC/clang-$VERS.src.tar.xz" -C tools
-mv -v tools/clang-$VERS.src tools/clang
+# sed "/LLVM_THIRD_PARTY_DIR/s@../third-party@third-party-$VERS.src@" \
+#     -i cmake/modules/HandleLLVMOptions.cmake
+
+tar -xf "$SRC/clang-$VERS.src.tar.xz"
+mv -v clang-$VERS.src clang
+sleep 1
 
 tar -xf "$SRC/compiler-rt-$VERS.src.tar.xz" -C projects
 mv -v projects/compiler-rt-$VERS.src projects/compiler-rt
