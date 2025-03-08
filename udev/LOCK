@@ -3,7 +3,7 @@ name = "udev"
 version = "257.4"
 description = "Programs for dynamic device node creation"
 categories = ["core"]
-timestamp = "2025-03-06 20:37:01"
+timestamp = "2025-03-07 23:57:00"
 upstream = "https://github.com/systemd/systemd.git"
 
 [source]
