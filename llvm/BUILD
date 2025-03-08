@@ -20,9 +20,9 @@ with cmake ninja
 tar -xf "$SRC/cmake-$VERS.src.tar.xz"
 tar -xf "$SRC/third-party-$VERS.src.tar.xz"
 
-sed '/LLVM_COMMON_CMAKE_UTILS/s@../cmake@cmake-$VERS.src@' \
+sed "/LLVM_COMMON_CMAKE_UTILS/s@../cmake@cmake-$VERS.src@" \
     -i CMakeLists.txt &&
-sed '/LLVM_THIRD_PARTY_DIR/s@../third-party@third-party-$VERS.src@' \
+sed "/LLVM_THIRD_PARTY_DIR/s@../third-party@third-party-$VERS.src@" \
     -i cmake/modules/HandleLLVMOptions.cmake
 
 tar -xf "$SRC/clang-$VERS.src.tar.xz" -C tools
