@@ -1,0 +1,10 @@
+repo = "main"
+name = "mtdev"
+version = "1.1.7"
+description = "Normalizes kernel multi-touch events to the slotted type B protocol"
+timestamp = "2025-03-07 18:22:49"
+upstream = "http://bitmath.org/git/mtdev.git"
+
+[source]
+url = "https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2"
+hash = "oQetrSEB_srFSsf58OCg3RVdlUGT2lXCNAyX8v8dgU4"
