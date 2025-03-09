@@ -1,5 +1,5 @@
 NAME="libidn2"
-VERS="2.3.7"
+VERS="2.3.8"
 DESC="Library for working with internationalized domain names"
 UPST="https://gitlab.com/libidn/libidn2.git"
 
