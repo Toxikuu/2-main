@@ -1,10 +1,10 @@
 repo = "main"
 name = "libidn2"
-version = "2.3.7"
+version = "2.3.8"
 description = "Library for working with internationalized domain names"
-timestamp = "2025-02-20 20:23:23"
+timestamp = "2025-03-09 14:00:13"
 upstream = "https://gitlab.com/libidn/libidn2.git"
 
 [source]
-url = "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz"
-hash = "TCGnkbYQuVGbnQ4SuAl78vNZsS-N2SZHYRqSnmv9fWQ"
+url = "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.8.tar.gz"
+hash = "9VeRG_YXFiHh9y_zX1sYJbs1tS7UUyXc3ukx5dPAeHo"
