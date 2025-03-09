@@ -1,12 +1,12 @@
 repo = "main"
 name = "iana-etc"
-version = "20250225"
+version = "20250304"
 description = "The Internet Assigned Numbers Authority's services and protocols"
 categories = ["core"]
-timestamp = "2025-03-09 14:01:46"
+timestamp = "2025-03-09 14:01:50"
 upstream = "https://github.com/Mic92/iana-etc.git"
 version_command = "git ls-remote --tags 'https://github.com/Mic92/iana-etc.git' | sed 's@.*/@@' | sort -V | grep -B1 untagged | head -n1"
 
 [source]
-url = "https://github.com/Mic92/iana-etc/releases/download/20250225/iana-etc-20250225.tar.gz"
-hash = "WllYo5weqUCAqh05g3hLn8r4FSPASxHhRZ4mrVClgpI"
+url = "https://github.com/Mic92/iana-etc/releases/download/20250304/iana-etc-20250304.tar.gz"
+hash = "7PMuIbHIw04YLHJGlpdjT4Nx3kCHlhm59ZeqzpSWUZ0"
