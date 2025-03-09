@@ -3,7 +3,7 @@ name = "iana-etc"
 version = "20250225"
 description = "The Internet Assigned Numbers Authority's services and protocols"
 categories = ["core"]
-timestamp = "2025-03-03 02:12:26"
+timestamp = "2025-03-09 14:01:46"
 upstream = "https://github.com/Mic92/iana-etc.git"
 version_command = "git ls-remote --tags 'https://github.com/Mic92/iana-etc.git' | sed 's@.*/@@' | sort -V | grep -B1 untagged | head -n1"
 
