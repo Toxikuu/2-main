@@ -1,5 +1,5 @@
 NAME="kernel"
-VERS="6.13.5"
+VERS="6.13.6"
 DESC="The Linux kernel"
 VCMD="curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 UPST="https://kernel.org"
