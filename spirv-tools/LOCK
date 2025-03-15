@@ -1,8 +1,8 @@
 repo = "main"
 name = "spirv-tools"
-version = "1.4.304.1"
+version = "1.4.309.0"
 description = "Libraries and utilities for processing SPIR-V modules"
-timestamp = "2025-02-20 20:23:26"
+timestamp = "2025-03-15 15:38:30"
 dependencies = [
     "cmake",
     "spirv-headers",
@@ -11,5 +11,5 @@ upstream = "https://github.com/KhronosGroup/SPIRV-Headers.git"
 version_command = "git ls-remote --tags 'https://github.com/KhronosGroup/SPIRV-Headers.git' | sed 's@.*/@@' | sort -V | tail -n1 | cut  -d- -f3"
 
 [source]
-url = "https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.304.1/SPIRV-Tools-1.4.304.1.tar.gz"
-hash = "n-c2mA1CTATxMDrnG5Sxi8xgRq40iQnDkzRKReG9f_g"
+url = "https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.309.0/SPIRV-Tools-1.4.309.0.tar.gz"
+hash = "a4V3BUxXVXPq061xy2osCzOXtkx0bMPJnkjMXjJMG1U"
