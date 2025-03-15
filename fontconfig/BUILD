@@ -4,7 +4,7 @@ DESC="Library and utilities for configuring fonts"
 UPST="https://gitlab.freedesktop.org/fontconfig/fontconfig.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1"
 
-SOURCE="https://www.freedesktop.org/software/fontconfig/release/fontconfig-$VERS.tar.xz"
+SOURCE="https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/$VERS/fontconfig-$VERS.tar.bz2"
 EXTRA=()
 
 DEPS=(
