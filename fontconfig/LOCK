@@ -1,12 +1,12 @@
 repo = "main"
 name = "fontconfig"
-version = "2.16.0"
+version = "2.16.1"
 description = "Library and utilities for configuring fonts"
-timestamp = "2025-02-20 20:19:48"
+timestamp = "2025-03-15 15:40:34"
 dependencies = ["freetype"]
 upstream = "https://gitlab.freedesktop.org/fontconfig/fontconfig.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/fontconfig/fontconfig.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | sort -V | tail -n1"
 
 [source]
-url = "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz"
-hash = "ajPcVVzJuosQyvdpWHjvE07rNtCvNmBB9jmx2ptu0iA"
+url = "https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/2.16.1/fontconfig-2.16.1.tar.bz2"
+hash = "nF1g8rZucKYhvQmlFa32v3nZ2-VbyLAF87hBpFHCQBU"
