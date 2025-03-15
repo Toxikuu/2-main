@@ -1,5 +1,5 @@
 NAME="spirv-headers"
-VERS="1.4.304.1"
+VERS="1.4.309.0"
 DESC="Machine-readable files for the SPIR-V Registry"
 UPST="https://github.com/KhronosGroup/SPIRV-Headers.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | sort -V | tail -n1 | cut -d- -f3"
