@@ -1,5 +1,5 @@
 NAME="prename"
-VERS="1.16.2"
+VERS="1.16"
 DESC="Perl's rename"
 CATG="utils fs"
 UPST="https://search.cpan.org/~pederst/rename"
