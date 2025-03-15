@@ -1,5 +1,5 @@
 NAME="kernel"
-VERS="6.13.6"
+VERS="6.13.7"
 DESC="The Linux kernel"
 VCMD="curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 UPST="https://kernel.org"
@@ -40,7 +40,6 @@ fresh_build() {
     ln -sfv "/usr/src/linux-$VERS" "/usr/src/linux"
 
     ln -sv "/usr/src/linux" "$BLD/build"
-    sleep 0.1 # fucking why dude
     cd "$BLD/build"
     cp -vf "$PORT"/kernelconfig .config
 
