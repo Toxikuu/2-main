@@ -1,11 +1,11 @@
 repo = "main"
 name = "spirv-headers"
-version = "1.4.304.1"
+version = "1.4.309.0"
 description = "Machine-readable files for the SPIR-V Registry"
-timestamp = "2025-02-20 20:23:25"
+timestamp = "2025-03-15 15:38:41"
 upstream = "https://github.com/KhronosGroup/SPIRV-Headers.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/KhronosGroup/SPIRV-Headers.git' | sed 's@.*/@@' | sort -V | tail -n1 | cut -d- -f3"
 
 [source]
-url = "https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.304.1/SPIRV-Headers-1.4.304.1.tar.gz"
-hash = "ZubOwZ50M_xYrOjN9AQL4NUrtZIOVBCZZ98t2VmKjUg"
+url = "https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.309.0/SPIRV-Headers-1.4.309.0.tar.gz"
+hash = "qW-LTy37GPdDLlxSPiIKsAdTcqlQngwl-_8hx2rw3nw"
