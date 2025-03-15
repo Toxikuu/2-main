@@ -9,3 +9,4 @@ Changelog for fontconfig:
 [86a7308a0af4ab09c965fd0db0a3b361a317355b] [2025-02-19 03:35:44] | Revised fontconfig
 [7b29ee1a6f4943708fe9bc2ed3ea325a8da79bb7] [2025-02-19 03:35:44] | Generated fontconfig=2.16.0
 [5b131ba892e488682d80843db3f12f4eb61b71ca] [2025-02-21 02:19:48] | Generated fontconfig=2.16.0
+[09342014009f5d84404e50b71f756f31acd4b8dd] [2025-03-15 20:38:59] | Updated fontconfig: 2.16.0 -> 2.16.1
