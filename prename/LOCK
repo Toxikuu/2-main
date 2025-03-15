@@ -1,16 +1,16 @@
 repo = "main"
 name = "prename"
-version = "1.15"
+version = "1.16.2"
 description = "Perl's rename"
 categories = [
     "utils",
     "fs",
 ]
-timestamp = "2025-02-24 20:48:35"
+timestamp = "2025-03-15 15:40:52"
 dependencies = ["perl"]
 upstream = "https://search.cpan.org/~pederst/rename"
 version_command = "curl -sL 'https://search.cpan.org/~pederst/rename' | head -n8 | grep rename- | cut -d- -f2"
 
 [source]
-url = "https://search.cpan.org/CPAN/authors/id/P/PE/PEDERST/rename-1.14.tar.gz"
-hash = "TRnly4-wn-Nebfaa4HEyz2IbCyqC9UFJCRvOYwZCrb0"
+url = "https://search.cpan.org/CPAN/authors/id/P/PE/PEDERST/rename-1.16.2.tar.gz"
+hash = "TjMjsTdw6lKcwj58aupkUTcnRfn8zKpv8XGkWOajiWs"
