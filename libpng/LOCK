@@ -1,14 +1,14 @@
 repo = "main"
 name = "libpng"
-version = "1.6.46"
+version = "1.6.47"
 description = "Libraries for reading and writing PNG formats"
-timestamp = "2025-02-20 20:23:23"
+timestamp = "2025-03-15 15:37:42"
 upstream = "https://github.com/pnggroup/libpng.git"
 
 [source]
-url = "https://github.com/pnggroup/libpng/archive/refs/tags/v1.6.46.tar.gz"
-hash = "dnsBk2-WINSrTN9uw0j2Um-GH4JWSLYQsdYEFn3HONI"
+url = "https://github.com/pnggroup/libpng/archive/refs/tags/v1.6.47.tar.gz"
+hash = "YxpMWOpsEMgfFgxLIfqElbcV0lFpjrwlUgd-hFDzBFQ"
 
 [[extra]]
-url = "https://sourceforge.net/projects/libpng-apng/files/libpng16/1.6.46/libpng-1.6.46-apng.patch.gz"
-hash = "Kb7C39BG71HVLz5TIPkfr_yWvge0HZy51D2d9Veg0wM"
+url = "https://sourceforge.net/projects/libpng-apng/files/libpng16/1.6.47/libpng-1.6.47-apng.patch.gz"
+hash = "Wwhvr-fhJ4SyhpPhmlvPaGd6jFKUcRVxKlbD0SOUT28"
