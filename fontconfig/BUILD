@@ -13,6 +13,10 @@ DEPS=(
 
 2b() {
 
+# generate configure
+./autogen.sh
+mk distclean
+
 local _cfg_opts=(
     --sysconfdir=/etc
     --localstatedir=/var
