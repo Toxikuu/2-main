@@ -1,12 +1,12 @@
 repo = "main"
 name = "expat"
-version = "2.6.4"
+version = "2.7.0"
 description = "XML parsing library"
 categories = ["core"]
-timestamp = "2025-02-25 20:16:18"
+timestamp = "2025-03-15 15:38:21"
 upstream = "https://github.com/libexpat/libexpat.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/libexpat/libexpat.git' | sed 's:.*/::' | sort -V | grep -B 1 V1_0 | head -n1 | cut -d_ -f2- | sed 's/_/./g'"
 
 [source]
-url = "https://prdownloads.sourceforge.net/expat/expat-2.6.4.tar.xz"
-hash = "ppVina4EcFWzfVCg_0d20dRdCkyELPTM7hWEQfVf9-4"
+url = "https://prdownloads.sourceforge.net/expat/expat-2.7.0.tar.xz"
+hash = "Jd8T3SgZ6F-yehzgQxdytwR9cq-BrnjcJrTG4IBfSNE"
