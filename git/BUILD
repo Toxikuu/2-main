@@ -1,5 +1,5 @@
 NAME="git"
-VERS="2.48.1"
+VERS="2.49.0"
 DESC="The fast distributed version control system"
 UPST="https://github.com/git/git.git"
 
