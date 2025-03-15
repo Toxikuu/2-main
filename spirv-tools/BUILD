@@ -1,5 +1,5 @@
 NAME="spirv-tools"
-VERS="1.4.304.1"
+VERS="1.4.309.0"
 DESC="Libraries and utilities for processing SPIR-V modules"
 UPST="https://github.com/KhronosGroup/SPIRV-Headers.git"
 VCMD="git ls-remote --tags '$UPST' | sed 's@.*/@@' | sort -V | tail -n1 | cut  -d- -f3"
