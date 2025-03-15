@@ -1,14 +1,14 @@
 repo = "main"
 name = "git"
-version = "2.48.1"
+version = "2.49.0"
 description = "The fast distributed version control system"
-timestamp = "2025-02-20 20:19:49"
+timestamp = "2025-03-15 15:37:57"
 upstream = "https://github.com/git/git.git"
 
 [source]
-url = "https://www.kernel.org/pub/software/scm/git/git-2.48.1.tar.xz"
-hash = "HF1UX13B61HpXSxQ2Y_fiLGja6H6MOmuXVOFxgJPgq0"
+url = "https://www.kernel.org/pub/software/scm/git/git-2.49.0.tar.xz"
+hash = "YYGQz1kLfp9sEfkfI7HSZ82Yw6szuFBBbYdY-LWoVig"
 
 [[extra]]
-url = "https://www.kernel.org/pub/software/scm/git/git-manpages-2.48.1.tar.xz"
-hash = "TA7eevpNbb9gLS8v0VHDarV9MiTmuf0XNC6F8F04aIY"
+url = "https://www.kernel.org/pub/software/scm/git/git-manpages-2.49.0.tar.xz"
+hash = "LkdDFoxPupcppQodflKlyUvBNKVd8uG87pB2LrrCxNc"
