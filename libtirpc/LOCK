@@ -1,0 +1,15 @@
+repo = "main"
+name = "libtirpc"
+version = "1.3.6"
+description = "Linux port of Sun's Transport-independent RPC"
+categories = [
+    "net",
+    "lib",
+]
+timestamp = "2025-03-16 04:24:39"
+dependencies = ["o^krb5"]
+upstream = "git://linux-nfs.org/~steved/libtirpc.git"
+
+[source]
+url = "https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.6.tar.bz2"
+hash = "u9Jqjw31aQpipH9qow95fz740CVg0bxEmoMGa1odNQg"
