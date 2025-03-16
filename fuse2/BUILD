@@ -10,6 +10,11 @@ EXTRA=(
     "https://gitlab.archlinux.org/archlinux/packaging/packages/fuse2/-/raw/main/conditionally-define-closefrom.patch"
 )
 
+KCFG=(
+    "FUSE_FS=*/M",
+    "CUSE=*/M",
+)
+
 2b() {
 
 tpatch "$SRC"/conditionally-define-closefrom.patch
@@ -37,3 +42,4 @@ cat > "$D"/etc/fuse.conf << "EOF"
 EOF
 
 }
+#d added necessary kernel config options
