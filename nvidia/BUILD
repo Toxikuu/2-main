@@ -8,8 +8,7 @@ DEPS=(
     "libglvnd"
 )
 
-SOURCE="https://us.download.nvidia.com/XFree86/Linux-x86_64/$VERS/NVIDIA-Linux-x86_64-$VERS.run"
-EXTRA=()
+EXTRA="https://us.download.nvidia.com/XFree86/Linux-x86_64/$VERS/NVIDIA-Linux-x86_64-$VERS.run"
 
 EXTRACT=1
 
