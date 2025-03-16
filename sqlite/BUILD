@@ -10,17 +10,15 @@ EXTRA=()
 
 2b() {
 
-# required by some applications
-_cpp_flags=(
-    -D SQLITE_ENABLE_COLUMN_METADATA=1
-    -D SQLITE_ENABLE_UNLOCK_NOTIFY=1
-    -D SQLITE_ENABLE_DBSTAT_VTAB=1
-    -D SQLITE_SECURE_DELETE=1
-)
 
 _cfg_opts=(
     --enable-fts{4,5} # support v3,4,5 for FTS
-    CPPFLAGS=${_cpp_flags[@]}
+
+    # required by some applications
+    CPPFLAGS="-D SQLITE_ENABLE_COLUMN_METADATA=1 \
+              -D SQLITE_ENABLE_UNLOCK_NOTIFY=1   \
+              -D SQLITE_ENABLE_DBSTAT_VTAB=1     \
+              -D SQLITE_SECURE_DELETE=1"
 )
 
 cfg ${_cfg_opts[@]}
