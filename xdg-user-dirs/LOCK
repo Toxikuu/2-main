@@ -1,0 +1,11 @@
+repo = "main"
+name = "xdg-user-dirs"
+version = "0.18"
+description = "Manage common user directories"
+categories = ["xdg"]
+timestamp = "2025-03-16 03:43:47"
+upstream = "https://gitlab.freedesktop.org/xdg/xdg-user-dirs.git"
+
+[source]
+url = "https://user-dirs.freedesktop.org/releases/xdg-user-dirs-0.18.tar.gz"
+hash = "7G8G10lc26N6cyA5-bXhV4vLKWV2_eDaQO2y9SIg3zw"
