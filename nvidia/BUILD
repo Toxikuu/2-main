@@ -14,7 +14,7 @@ EXTRACT=1
 
 2b() {
 
-chmod +x "$RIDSOURCES"/NVIDIA-Linux-x86_64-$VERS.run
+chmod +x "$SRC/NVIDIA-Linux-x86_64-$VERS.run"
 kver=$(realpath /usr/src/linux | cut -d- -f2-)
 echo "Detected kernel version '$kver'"
 
@@ -45,6 +45,7 @@ _cfg_opts=(
     --kernel-install-path="$D"/lib/modules/$kver/kernel/drivers/video
 )
 
-$SRC/NVIDIA-Linux-x86_64-$VERS.run ${_cfg_opts[@]}
+"$SRC/NVIDIA-Linux-x86_64-$VERS.run" ${_cfg_opts[@]}
 
 }
+#d variable fix && formatting
