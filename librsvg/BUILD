@@ -19,7 +19,7 @@ EXTRA=()
 
 2b() {
 
-with meson ninja
+with rust meson ninja
 
 ms
 nj
