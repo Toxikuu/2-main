@@ -1,0 +1,20 @@
+repo = "main"
+name = "pango"
+version = "1.56.2"
+description = "Library for text layout and rendering"
+categories = ["lib"]
+timestamp = "2025-03-16 13:58:35"
+dependencies = [
+    "cairo",
+    "fribidi",
+    "fontconfig",
+    "glib",
+    "libx11",
+    "libxrender",
+    "libxft",
+]
+upstream = "https://github.com/GNOME/pango.git"
+
+[source]
+url = "https://github.com/GNOME/pango/archive/refs/tags/1.56.2.tar.gz"
+hash = "dThGRE44Gd-39ufhaZ4Ny4-1i7m4wrUAmims2gQzPAg"
