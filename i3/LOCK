@@ -1,0 +1,22 @@
+repo = "main"
+name = "i3"
+version = "4.24"
+description = "Easy-to-use tiling window manager"
+categories = ["wm"]
+timestamp = "2025-03-16 13:50:40"
+dependencies = [
+    "startup-notification",
+    "xcb-util-keysyms",
+    "xcb-util-cursor",
+    "xcb-util-xrm",
+    "xcb-util-wm",
+    "libxkbcommon",
+    "libev",
+    "pango",
+    "yajl",
+]
+upstream = "https://github.com/i3/i3.git"
+
+[source]
+url = "https://github.com/i3/i3/archive/refs/tags/4.24.tar.gz"
+hash = "ignwLCWDAgiZ7pXf1B0SMAoMHAI5sNdStnZDfL-RbMg"
