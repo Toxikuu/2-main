@@ -6,7 +6,7 @@ categories = [
     "games",
     "gui",
 ]
-timestamp = "2025-03-16 17:42:55"
+timestamp = "2025-03-16 17:46:11"
 dependencies = [
     "alsa-plugins",
     "curl",
