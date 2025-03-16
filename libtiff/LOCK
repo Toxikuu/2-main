@@ -6,7 +6,7 @@ categories = [
     "lib",
     "util",
 ]
-timestamp = "2025-03-16 17:23:07"
+timestamp = "2025-03-16 17:33:43"
 dependencies = [
     "cmake",
     "o^libjpeg-turbo",
