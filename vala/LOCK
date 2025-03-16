@@ -1,0 +1,15 @@
+repo = "main"
+name = "vala"
+version = "0.56.18"
+description = "Compiler for the GObject type system"
+categories = ["lang"]
+timestamp = "2025-03-16 14:32:57"
+dependencies = [
+    "glib",
+    "o^graphviz",
+]
+upstream = "https://github.com/GNOME/vala.git"
+
+[source]
+url = "https://download.gnome.org/sources/vala/0.56/vala-0.56.18.tar.xz"
+hash = "8q_-fUCrY9uOe57MP2vcnC_H4xNMhP8teV9IL-kmo4I"
