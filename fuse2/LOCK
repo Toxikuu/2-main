@@ -1,0 +1,15 @@
+repo = "main"
+name = "fuse2"
+version = "2.9.9"
+description = "Filesystem in userspace"
+categories = ["bin"]
+timestamp = "2025-03-16 13:39:04"
+upstream = "https://github.com/libfuse/libfuse.git"
+
+[source]
+url = "https://github.com/libfuse/libfuse/releases/download/fuse-2.9.9/fuse-2.9.9.tar.gz"
+hash = "0OadXWCMwi_0hDeRrQl_VU3TJUDdyb7XY4zG_qfBtLU"
+
+[[extra]]
+url = "https://gitlab.archlinux.org/archlinux/packaging/packages/fuse2/-/raw/main/conditionally-define-closefrom.patch"
+hash = "HosKGyu6ozXZKjxG4xySjc1Tq-ARIUoMu_p8EaOmjxo"
