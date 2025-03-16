@@ -1,0 +1,14 @@
+repo = "main"
+name = "lsof"
+version = "4.99.0"
+description = "List open files for a given process"
+categories = [
+    "cli",
+    "util",
+]
+timestamp = "2025-03-16 04:16:35"
+upstream = "https://github.com/lsof-org/lsof.git"
+
+[source]
+url = "https://github.com/lsof-org/lsof/releases/download/4.99.0/lsof-4.99.0.tar.gz"
+hash = "GA5ihK_xhNlNJz409yZO3Cr4ScB7HF1qQYPU1AJzQkU"
