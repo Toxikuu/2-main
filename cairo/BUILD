@@ -14,7 +14,7 @@ DEPS=(
     "libxrender"
 )
 
-SOURCE="https://gitlab.freedesktop.org/cairo/cairo/-/archive/$VERS/cairo-$VERS.tar.bz2"
+SOURCE="https://www.cairographics.org/releases/cairo-$VERS.tar.xz"
 EXTRA=()
 
 2b() {
@@ -26,3 +26,4 @@ nj
 ni
 
 }
+#d changed source because of freedesktop's migration
