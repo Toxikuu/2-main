@@ -3,7 +3,7 @@ name = "librsvg"
 version = "2.59.2"
 description = "Rust library for manipulating and viewing SVG images"
 categories = ["lib"]
-timestamp = "2025-03-16 14:30:06"
+timestamp = "2025-03-16 17:39:52"
 dependencies = [
     "cairo",
     "cargo-c",
