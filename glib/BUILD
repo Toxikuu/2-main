@@ -1,6 +1,6 @@
 NAME="glib"
 VERS="2.84.0"
-GOBJV="1.82.0"
+GOBJV="1.84.0"
 DESC="Low level core library"
 UPST="https://github.com/GNOME/glib.git"
 VCMD="git ls-remote --tags --refs '$UPST' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' | head -n1 | sed 's@.*/@@'"
@@ -109,3 +109,4 @@ nj
 ni
 
 }
+#d gobject-introspection: 1.82.0 -> 1.84.0
