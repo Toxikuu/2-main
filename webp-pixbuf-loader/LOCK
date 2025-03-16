@@ -1,0 +1,15 @@
+repo = "main"
+name = "webp-pixbuf-loader"
+version = "0.2.7"
+description = "Library allowing gdk-pixbuf to load and process WebP images"
+categories = ["lib"]
+timestamp = "2025-03-16 14:27:17"
+dependencies = [
+    "gdk-pixbuf",
+    "libwebp",
+]
+upstream = "https://github.com/aruiz/webp-pixbuf-loader.git"
+
+[source]
+url = "https://github.com/aruiz/webp-pixbuf-loader/archive/0.2.7/webp-pixbuf-loader-0.2.7.tar.gz"
+hash = "Yc5ejgNgQ_nQ54wVlqYheI6HnFKu33KrXnioxEhJQRo"
