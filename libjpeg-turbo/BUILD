@@ -18,10 +18,10 @@ with cmake
 _cfg_opts=(
     -D ENABLE_STATIC=FALSE
     -D CMAKE_INSTALL_DEFAULT_LIBDIR=lib
-    -G 'Unix Makefiles' # override cm abstraction's ninja default
 )
 
-cm ${_cfg_opts[@]}
+cm ${_cfg_opts[@]} \
+    -G "Unix Makefiles" # override cm abstraction's ninja default
 mk
 mi
 
