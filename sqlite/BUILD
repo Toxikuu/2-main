@@ -10,18 +10,16 @@ EXTRA=()
 
 2b() {
 
+# no abstraction because sqlite is being not cooperative
+./configure --prefix=/usr     \
+            --disable-static  \
+            --enable-fts{4,5} \
+            CPPFLAGS="-D SQLITE_ENABLE_COLUMN_METADATA=1 \
+                      -D SQLITE_ENABLE_UNLOCK_NOTIFY=1   \
+                      -D SQLITE_ENABLE_DBSTAT_VTAB=1     \
+                      -D SQLITE_SECURE_DELETE=1"        ||
+die "Configure failed"
 
-_cfg_opts=(
-    --enable-fts{4,5} # support v3,4,5 for FTS
-
-    # required by some applications
-    CPPFLAGS="-D SQLITE_ENABLE_COLUMN_METADATA=1 \
-              -D SQLITE_ENABLE_UNLOCK_NOTIFY=1   \
-              -D SQLITE_ENABLE_DBSTAT_VTAB=1     \
-              -D SQLITE_SECURE_DELETE=1"
-)
-
-cfg ${_cfg_opts[@]}
 mk
 mi
 
