@@ -14,10 +14,18 @@ EXTRA=()
 
 2b() {
 
-with cmake ninja
+with ninja
 
-cm
+mkdir -pv $NAME-build
+cd        $NAME-build
+
+cmake \
+    -D CMAKE_INSTALL_PREFIX=/usr \
+    -D tiff-tests=OFF \
+    -G Ninja ..
+
 nj
 ni
 
 }
+#d made it build
