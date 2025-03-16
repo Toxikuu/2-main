@@ -21,9 +21,13 @@ EXTRA=()
 
 with meson ninja
 
-ms \
-  --wrap-mode=nofallback \
-  -D others=enabled # enable other weird image formats
+_cfg_opts=(
+    --wrap-mode=nofallback
+    -D man=false # avoid a dependency
+    -D others=enabled # support weird image formats
+)
+
+ms ${_cfg_opts[@]}
 nj
 ni
 
