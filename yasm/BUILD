@@ -7,7 +7,7 @@ DEPS=(
     "o^cython"
 )
 
-SOURCE="https://github.com/yasm/yasm/archive/refs/tags/v$VERS.tar.gz"
+SOURCE="https://www.tortall.net/projects/yasm/releases/yasm-$VERS.tar.gz"
 EXTRA=()
 
 2b() {
