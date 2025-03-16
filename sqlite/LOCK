@@ -1,0 +1,11 @@
+repo = "main"
+name = "sqlite"
+version = "3.49.1"
+description = "Self-contained, serverless, zero-configuration, transactional SQL database engine"
+categories = ["db"]
+timestamp = "2025-03-16 15:40:24"
+upstream = "https://github.com/sqlite/sqlite.git"
+
+[source]
+url = "https://github.com/sqlite/sqlite/archive/refs/tags/version-3.49.1.tar.gz"
+hash = "vArpLH9xWMYGA3hYLstq6QAaHC6whxnhLgiUDuB2zbg"
