@@ -1,1 +1,2 @@
 [3902820cae1fbc5b7a47f518c2a5f19686b40d54] [2025-03-16 19:02:30] | Added cairo=1.18.4
+[a197b1f7e9f67ce60af0d826006ea740a6813d9b] [2025-03-16 19:04:00] | Revised cairo: changed source because of freedesktop's migration
