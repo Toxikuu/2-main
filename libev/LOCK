@@ -1,0 +1,12 @@
+repo = "main"
+name = "libev"
+version = "4.33"
+description = "Full-featured, high-performance loop/event model"
+categories = ["lib"]
+timestamp = "2025-03-16 13:48:19"
+upstream = "https://github.com/xorangekiller/libev-git.git"
+version_command = "git ls-remote --tags 'https://github.com/xorangekiller/libev-git.git' | sed 's:.*/::' | sort -V | tail -n3 | head -n1 | cut -d- -f2 | sed 's/_/./g'"
+
+[source]
+url = "http://dist.schmorp.de/libev/Attic/libev-4.33.tar.gz"
+hash = "UH63uNEBX77FuTXzTr7RW_NGvtBKEauCuO7oSMQgWuo"
