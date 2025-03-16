@@ -1,0 +1,21 @@
+repo = "main"
+name = "gdk-pixbuf"
+version = "2.42.12"
+description = "Image loading library"
+categories = ["lib"]
+timestamp = "2025-03-16 14:13:46"
+dependencies = [
+    "glib",
+    "libjpeg-turbo",
+    "libpng",
+    "shared-mime-info",
+    "libtiff",
+    "r^librsvg",
+    "r^libavif",
+    "r^webp-pixbuf-loader",
+]
+upstream = "https://github.com/GNOME/gdk-pixbuf.git"
+
+[source]
+url = "https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz"
+hash = "uVBbNEW5p-SM7TR2DDvLc-lm3zrJTJWhSMtmmrdI48c"
