@@ -3,7 +3,7 @@ name = "sqlite"
 version = "3.49.1"
 description = "Self-contained, serverless, zero-configuration, transactional SQL database engine"
 categories = ["db"]
-timestamp = "2025-03-16 15:40:24"
+timestamp = "2025-03-16 15:48:41"
 upstream = "https://github.com/sqlite/sqlite.git"
 
 [source]
