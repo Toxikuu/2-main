@@ -1,0 +1,10 @@
+repo = "main"
+name = "fribidi"
+version = "1.0.16"
+description = "BIDI implementation"
+timestamp = "2025-03-16 13:59:52"
+upstream = "https://github.com/fribidi/fribidi.git"
+
+[source]
+url = "https://github.com/fribidi/fribidi/releases/download/v1.0.16/fribidi-1.0.16.tar.xz"
+hash = "GxzeWyNdQEeekb4vDoijCeMhTIq0cOyKJ0TYKlqeoFw"
