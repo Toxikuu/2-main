@@ -3,7 +3,7 @@ name = "gdk-pixbuf"
 version = "2.42.12"
 description = "Image loading library"
 categories = ["lib"]
-timestamp = "2025-03-16 14:13:46"
+timestamp = "2025-03-16 17:38:25"
 dependencies = [
     "glib",
     "libjpeg-turbo",
