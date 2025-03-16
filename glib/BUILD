@@ -1,5 +1,5 @@
 NAME="glib"
-VERS="2.83.5"
+VERS="2.84.0"
 GOBJV="1.82.0"
 DESC="Low level core library"
 UPST="https://github.com/GNOME/glib.git"
