@@ -2,8 +2,11 @@ repo = "main"
 name = "libaom"
 version = "3.12.0"
 description = "Alliance for Open Media video codec"
-timestamp = "2025-03-16 14:22:42"
-dependencies = ["yasm"]
+timestamp = "2025-03-16 17:10:20"
+dependencies = [
+    "yasm",
+    "make-ca",
+]
 upstream = "https://aomedia.googlesource.com/aom.git"
 
 [source]
