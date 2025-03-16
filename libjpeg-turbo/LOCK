@@ -3,7 +3,7 @@ name = "libjpeg-turbo"
 version = "3.0.1"
 description = "Fast library for handling JPEG images"
 categories = ["lib"]
-timestamp = "2025-03-16 17:18:51"
+timestamp = "2025-03-16 17:20:35"
 dependencies = [
     "cmake",
     "yasm",
