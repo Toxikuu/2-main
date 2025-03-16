@@ -27,6 +27,6 @@ EXTRA=()
 2b() {
 
 ln -sf /usr/bin/true steamdeps # satisfy steam dependency checks
-make install
+mk install
 
 }
