@@ -2,10 +2,10 @@ repo = "main"
 name = "yasm"
 version = "1.3.0"
 description = "NASM rewrite supporting more syntaxes"
-timestamp = "2025-03-16 14:19:01"
+timestamp = "2025-03-16 17:01:43"
 dependencies = ["o^cython"]
 upstream = "https://github.com/yasm/yasm.git"
 
 [source]
-url = "https://github.com/yasm/yasm/archive/refs/tags/v1.3.0.tar.gz"
+url = "https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz"
 hash = "9wi-C3uMWbwdvnE0FTzS8x-u66qO7EhnbBD5cqHxPfM"
