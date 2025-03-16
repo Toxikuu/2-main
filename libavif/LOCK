@@ -1,0 +1,16 @@
+repo = "main"
+name = "libavif"
+version = "1.2.0"
+description = "Library for handling AVIF images"
+categories = ["lib"]
+timestamp = "2025-03-16 14:25:39"
+dependencies = [
+    "libaom",
+    "gdk-pixbuf",
+    "make-ca",
+]
+upstream = "https://github.com/AOMediaCodec/libavif.git"
+
+[source]
+url = "https://github.com/AOMediaCodec/libavif/archive/v1.2.0/libavif-1.2.0.tar.gz"
+hash = "IYL0kA0alhfO6JdGkipY3YJfKjVH8jkHuNeNw2hffYw"
