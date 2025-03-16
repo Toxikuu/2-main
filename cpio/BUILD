@@ -14,7 +14,7 @@ EXTRA=()
 
 _cfg_opts=(
     --enable-mt # build mt (for magnetic tape drive operations)
-    --with-rmt # avoid building rmt as it's provided by tar
+    --with-rmt=/usr/libexec/rmt # avoid building rmt as it's provided by tar
 )
 
 cfg ${_cfg_opts[@]}
@@ -22,3 +22,4 @@ mk
 mi
 
 }
+# oops!
