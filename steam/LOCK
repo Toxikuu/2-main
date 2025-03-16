@@ -1,0 +1,26 @@
+repo = "main"
+name = "steam"
+version = "1.0.0.82"
+description = "Valve's digital software delivery system"
+categories = [
+    "games",
+    "gui",
+]
+timestamp = "2025-03-16 04:12:46"
+dependencies = [
+    "alsa-plugins",
+    "curl",
+    "dbus",
+    "make-ca",
+    "mesa",
+    "vulkan-loader",
+    "pulseaudio",
+    "xdg-user-dirs",
+    "libgpg-error",
+]
+upstream = "https://repo.steampowered.com/steam/pool/steam/s/steam/?C=M&O=D"
+version_command = "curl -s 'https://repo.steampowered.com/steam/pool/steam/s/steam/?C=M&O=D' | grep .tar.gz | head -n1 | cut -d_ -f2 | cut -d. -f1-4"
+
+[source]
+url = "https://repo.steampowered.com/steam/pool/steam/s/steam/steam_1.0.0.82.tar.gz"
+hash = "r6Lx3WJx_StkW6MLjzq0Cv02VONUJBoxy9UQAPfm_Hc"
