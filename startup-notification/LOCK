@@ -1,0 +1,16 @@
+repo = "main"
+name = "startup-notification"
+version = "0.12"
+description = "Libary to monitor and display application startup"
+categories = ["lib"]
+timestamp = "2025-03-16 14:06:26"
+dependencies = [
+    "libx11",
+    "libxcb",
+    "xcb-util",
+]
+upstream = "https://gitlab.freedesktop.org/xdg/startup-notification"
+
+[source]
+url = "https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz"
+hash = "PDkffpMMWDCVBFzS0Q63OmTwhcf96dJg8mUsfLPPvko"
