@@ -1,0 +1,19 @@
+repo = "main"
+name = "libtiff"
+version = "4.7.0"
+description = "Libraries and utilities for handling TIFF images"
+categories = [
+    "lib",
+    "util",
+]
+timestamp = "2025-03-16 17:23:07"
+dependencies = [
+    "cmake",
+    "o^libjpeg-turbo",
+    "o^libwebp",
+]
+upstream = "https://gitlab.com/libtiff/libtiff.git"
+
+[source]
+url = "https://download.osgeo.org/libtiff/tiff-4.7.0.tar.gz"
+hash = "ZxYONFc2WrlsWzKGoJA6pueL3ETEvHN9LkhrzstrqXY"
