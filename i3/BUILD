@@ -3,6 +3,7 @@ VERS="4.24"
 DESC="Easy-to-use tiling window manager"
 CATG="wm"
 UPST="https://github.com/i3/i3.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -v '[a-Z]' | sort -V | tail -n1"
 DEPS=(
     "startup-notification"
     "xcb-util-keysyms"
