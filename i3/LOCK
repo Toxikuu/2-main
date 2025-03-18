@@ -3,7 +3,7 @@ name = "i3"
 version = "4.24"
 description = "Easy-to-use tiling window manager"
 categories = ["wm"]
-timestamp = "2025-03-16 13:50:40"
+timestamp = "2025-03-17 23:56:31"
 dependencies = [
     "startup-notification",
     "xcb-util-keysyms",
@@ -16,6 +16,7 @@ dependencies = [
     "yajl",
 ]
 upstream = "https://github.com/i3/i3.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/i3/i3.git' | sed 's@.*/@@' | grep -v '[a-Z]' | sort -V | tail -n1"
 
 [source]
 url = "https://github.com/i3/i3/archive/refs/tags/4.24.tar.gz"
