@@ -3,6 +3,7 @@ VERS="1.5.0"
 DESC="Library and utilities to handle WebP images"
 CATG="lib"
 UPST="https://chromium.googlesource.com/webm/$NAME.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | cut -dv -f2 | grep -v '[a-Z]' | tail -n1"
 DEPS=(
     "libjpeg-turbo"
     "libpng"
