@@ -3,6 +3,7 @@ VERS="3.49.1"
 DESC="Self-contained, serverless, zero-configuration, transactional SQL database engine"
 CATG="db"
 UPST="https://github.com/sqlite/sqlite.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep 'version-' | sort -V | tail -n1 | cut -d- -f2"
 DEPS=()
 
 SOURCE="https://github.com/sqlite/sqlite/archive/refs/tags/version-$VERS.tar.gz"
