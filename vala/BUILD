@@ -3,7 +3,11 @@ VERS="0.56.18"
 DESC="Compiler for the GObject type system"
 CATG="lang"
 UPST="https://github.com/GNOME/vala.git"
-VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' -e 's@_@.@g' | cut -d. -f2- | sort -V"
+VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' -e 's@_@.@g' | cut -d. -f2- | grep -v '0.57.0' | sort -V"
+# GNOME decided to create a tag for vala called 0.57.0, which hasn't seen any
+# commits in three years. What the fuck GNOME? At time of writing, the latest
+# version of vala is 0.56.18, with commits dating back to two weeks ago.
+# Genuinely, what the fuck is this versioning scheme??? Ok, rant over.
 DEPS=(
     "glib"
     "o^graphviz" # for valadoc
@@ -20,3 +24,4 @@ mk
 mi
 
 }
+#d updated vcmd, and added a rant
