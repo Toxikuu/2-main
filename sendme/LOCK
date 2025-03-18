@@ -1,10 +1,10 @@
 repo = "main"
 name = "sendme"
-version = "0.24.0"
+version = "0.25.0"
 description = "Stupid easy file transferring"
-timestamp = "2025-02-24 20:49:32"
+timestamp = "2025-03-17 23:54:17"
 upstream = "https://github.com/n0-computer/sendme.git"
 
 [source]
-url = "https://github.com/n0-computer/sendme/archive/refs/tags/v0.23.0.tar.gz"
-hash = "L_hXFdTCVA_ePQNHHIKcBX59XyHSbwjF5vDaXPspsWY"
+url = "https://github.com/n0-computer/sendme/archive/refs/tags/v0.25.0.tar.gz"
+hash = "1Qw5y-golHpaz2f0wNHbRgF_-eL-LI53lw3VFbGwJNc"
