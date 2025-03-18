@@ -3,8 +3,9 @@ name = "sqlite"
 version = "3.49.1"
 description = "Self-contained, serverless, zero-configuration, transactional SQL database engine"
 categories = ["db"]
-timestamp = "2025-03-16 15:56:41"
+timestamp = "2025-03-18 00:00:56"
 upstream = "https://github.com/sqlite/sqlite.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/sqlite/sqlite.git' | sed 's@.*/@@' | grep 'version-' | sort -V | tail -n1 | cut -d- -f2"
 
 [source]
 url = "https://github.com/sqlite/sqlite/archive/refs/tags/version-3.49.1.tar.gz"
