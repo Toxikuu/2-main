@@ -2,7 +2,7 @@ repo = "main"
 name = "icu"
 version = "77.1"
 description = "International Components for Unicode"
-timestamp = "2025-03-18 15:37:14"
+timestamp = "2025-03-18 16:12:25"
 upstream = "https://github.com/unicode-org/icu.git"
 version_command = "git ls-remote --tags 'https://github.com/unicode-org/icu.git' | sed 's@.*/@@' | grep release- | grep -Ev 'tools-|-rc|alpha|preview' | tail -n1 | cut -d- -f2- | sed 's@-@.@'"
 
