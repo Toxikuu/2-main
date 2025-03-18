@@ -3,7 +3,7 @@ name = "libwebp"
 version = "1.5.0"
 description = "Library and utilities to handle WebP images"
 categories = ["lib"]
-timestamp = "2025-03-16 14:16:04"
+timestamp = "2025-03-17 23:58:19"
 dependencies = [
     "libjpeg-turbo",
     "libpng",
@@ -11,6 +11,7 @@ dependencies = [
     "sdl2",
 ]
 upstream = "https://chromium.googlesource.com/webm/libwebp.git"
+version_command = "git ls-remote --tags --refs 'https://chromium.googlesource.com/webm/libwebp.git' | sed 's@.*/@@' | cut -dv -f2 | grep -v '[a-Z]' | tail -n1"
 
 [source]
 url = "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.5.0.tar.gz"
