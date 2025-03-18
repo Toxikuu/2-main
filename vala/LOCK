@@ -3,13 +3,13 @@ name = "vala"
 version = "0.56.18"
 description = "Compiler for the GObject type system"
 categories = ["lang"]
-timestamp = "2025-03-18 00:02:30"
+timestamp = "2025-03-18 00:10:21"
 dependencies = [
     "glib",
     "o^graphviz",
 ]
 upstream = "https://github.com/GNOME/vala.git"
-version_command = "git ls-remote --tags --refs 'https://github.com/GNOME/vala.git' | sed -e 's@.*/@@' -e 's@_@.@g' | cut -d. -f2- | sort -V"
+version_command = "git ls-remote --tags --refs 'https://github.com/GNOME/vala.git' | sed -e 's@.*/@@' -e 's@_@.@g' | cut -d. -f2- | grep -v '0.57.0' | sort -V"
 
 [source]
 url = "https://download.gnome.org/sources/vala/0.56/vala-0.56.18.tar.xz"
