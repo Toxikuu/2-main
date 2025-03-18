@@ -1,5 +1,5 @@
 NAME="libavif"
-VERS="1.2.0"
+VERS="1.2.1"
 DESC="Library for handling AVIF images"
 CATG="lib"
 UPST="https://github.com/AOMediaCodec/libavif.git"
