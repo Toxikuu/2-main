@@ -2,7 +2,7 @@ repo = "main"
 name = "glib"
 version = "2.84.0"
 description = "Low level core library"
-timestamp = "2025-03-16 13:08:36"
+timestamp = "2025-03-18 15:45:09"
 upstream = "https://github.com/GNOME/glib.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/GNOME/glib.git' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' | head -n1 | sed 's@.*/@@'"
 
@@ -13,6 +13,10 @@ hash = "-II2AMuFQl4oFc-tguog_apThIKrdOcpPViz9kpa_2o"
 [[extra]]
 url = "https://download.gnome.org/sources/gobject-introspection/1.84/gobject-introspection-1.84.0.tar.xz"
 hash = "lFtX2n7CYuXCZrieCR0UvoAMxCQnfYKgKHK315SoR3k"
+
+[[extra]]
+url = "https://glfs-book.github.io/glfs/patches/glib/glib-2.84.0-upstream_fixes-1.patch"
+hash = "2UCKZUrHVoBRBim4UA0Bx3iL-Fs7Gt2GoKQtsTe0Fjk"
 
 [[extra]]
 url = "https://glfs-book.github.io/glfs/patches/glib/glib-skip_warnings-1.patch"
