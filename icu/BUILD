@@ -1,5 +1,5 @@
 NAME="icu"
-VERS="76.1"
+VERS="77.1"
 DESC="International Components for Unicode"
 UPST="https://github.com/unicode-org/icu.git"
 VCMD="git ls-remote --tags '$UPST' | sed 's@.*/@@' | grep release- | grep -Ev 'tools-|-rc|alpha|preview' | tail -n1 | cut -d- -f2- | sed 's@-@.@'"
