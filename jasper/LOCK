@@ -1,0 +1,15 @@
+repo = "main"
+name = "jasper"
+version = "4.2.4"
+description = "Library for manipulating JPEG-2000 images"
+categories = ["lib"]
+timestamp = "2025-03-18 21:31:16"
+dependencies = [
+    "cmake",
+    "libjpeg-turbo",
+]
+upstream = "https://github.com/jasper-software/jasper.git"
+
+[source]
+url = "https://github.com/jasper-software/jasper/archive/version-4.2.4/jasper-version-4.2.4.tar.gz"
+hash = "I6PVjN6s86vfn6HYHc7-5Y2mqzMJQHkMDycBlwO_0s0"
