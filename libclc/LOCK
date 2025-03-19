@@ -1,9 +1,9 @@
 repo = "main"
 name = "libclc"
-version = "19.1.7"
+version = "20.1.0"
 description = "Library requirements of the OpenCL C programming language"
 categories = ["dev"]
-timestamp = "2025-02-24 21:15:48"
+timestamp = "2025-03-18 21:18:35"
 dependencies = [
     "llvm",
     "spirv-llvm-translator",
@@ -12,5 +12,5 @@ upstream = "https://github.com/llvm/llvm-project.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/llvm/llvm-project.git' | sed 's@.*/@@' | grep -Ev 'init|rc' | sort -V | cut -d- -f2 | tail -n1"
 
 [source]
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/libclc-19.1.7.src.tar.xz"
-hash = "d-LXH1zqHQsQFLqIGGKZ0aCEjrPcIJSLquZJ2552Qcs"
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.0/libclc-20.1.0.src.tar.xz"
+hash = "Au6GTJl0JoUJ03d-jxW7PrssxP_kVtmqeaNSxXiMFag"
