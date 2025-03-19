@@ -1,9 +1,9 @@
 repo = "main"
 name = "docbook-xml4"
-version = ""
+version = "4.5"
 description = "Widely-used XML scheme for writing documentation"
 categories = ["doc"]
-timestamp = "2025-03-18 22:25:03"
+timestamp = "2025-03-18 22:45:43"
 dependencies = [
     "libarchive",
     "libxml2",
