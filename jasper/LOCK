@@ -3,7 +3,7 @@ name = "jasper"
 version = "4.2.4"
 description = "Library for manipulating JPEG-2000 images"
 categories = ["lib"]
-timestamp = "2025-03-18 21:31:16"
+timestamp = "2025-03-18 21:31:29"
 dependencies = [
     "cmake",
     "libjpeg-turbo",
