@@ -1,0 +1,10 @@
+repo = "main"
+name = "gstreamer"
+version = "1.26.0"
+description = "Development framework for multimedia applications"
+timestamp = "2025-03-18 21:51:47"
+upstream = "https://github.com/GStreamer/gstreamer.git"
+
+[source]
+url = "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.0.tar.xz"
+hash = "Gy7kAoAQwlt3bv-nw5bH4-GGG2C5QX5Bb0kUq83_J58"
