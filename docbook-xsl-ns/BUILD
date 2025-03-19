@@ -1,5 +1,5 @@
 NAME="docbook-xsl-ns"
-VERS="$VERS"
+VERS="1.79.2"
 DESC="DocBook XSL Stylesheets (Namespaced)"
 CATG="doc"
 UPST="https://github.com/docbook/xslt10-stylesheets.git"
