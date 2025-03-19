@@ -15,10 +15,14 @@ EXTRA=()
 
 with cmake
 
-cm \
+mkdir -pv BUILD
+cd        BUILD
+
+CP=.. cm \
     -D JAS_ENABLE_DOC=NO         \
     -D ALLOW_IN_SOURCE_BUILD=YES \
     -G "Unix Makefiles"
+
 mk
 mi
 
