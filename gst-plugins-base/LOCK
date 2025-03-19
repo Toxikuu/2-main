@@ -1,0 +1,33 @@
+repo = "main"
+name = "gst-plugins-base"
+version = "1.26.0"
+description = "Base gstreamer plugins and helper libraries"
+categories = ["lib"]
+timestamp = "2025-03-18 22:00:33"
+dependencies = [
+    "gstreamer",
+    "alsa-lib",
+    "glib",
+    "libgudev",
+    "libjpeg-turbo",
+    "libogg",
+    "libpng",
+    "libvorbis",
+    "mesa",
+    "pango",
+    "wayland-protocols",
+    "libx11",
+    "o^libtheora",
+    "o^libvisual",
+    "o^graphene",
+    "o^opus",
+    "o^sdl2",
+    "o^cdparanoia:",
+    "for",
+    "cdda",
+]
+upstream = "https://github.com/GStreamer/gstreamer.git"
+
+[source]
+url = "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.0.tar.xz"
+hash = "4jGJ--0uxIZpA4LRBVwZ7q9arj6V4ldvxMiE2WqQ5p4"
