@@ -26,58 +26,64 @@ cp -v -R VERSION assembly common eclipse epub epub3 extensions fo        \
 
 ln -sv VERSION "$D"/usr/share/xml/docbook/xsl-stylesheets-$VERS/VERSION.xsl
 
+}
+
+2i() {
+
 # create and populate xml catalog file
-install -vdm755  "$D"/etc/xml
-xmlcatalog --noout --create "$D"/etc/xml/catalog
+if [ ! -d /etc/xml ]; then install -vdm755 /etc/xml; fi
+if [ ! -f /etc/xml/catalog ]; then
+    xmlcatalog --noout --create /etc/xml/catalog
+fi
 
 xmlcatalog --noout --add "rewriteSystem" \
            "http://cdn.docbook.org/release/xsl/$VERS" \
            "/usr/share/xml/docbook/xsl-stylesheets-$VERS" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 
 xmlcatalog --noout --add "rewriteSystem" \
            "https://cdn.docbook.org/release/xsl/$VERS" \
            "/usr/share/xml/docbook/xsl-stylesheets-$VERS" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 
 xmlcatalog --noout --add "rewriteURI" \
            "http://cdn.docbook.org/release/xsl/$VERS" \
            "/usr/share/xml/docbook/xsl-stylesheets-$VERS" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 
 xmlcatalog --noout --add "rewriteURI" \
            "https://cdn.docbook.org/release/xsl/$VERS" \
            "/usr/share/xml/docbook/xsl-stylesheets-$VERS" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 
 xmlcatalog --noout --add "rewriteSystem" \
            "http://cdn.docbook.org/release/xsl/current" \
            "/usr/share/xml/docbook/xsl-stylesheets-$VERS" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 
 xmlcatalog --noout --add "rewriteSystem" \
            "https://cdn.docbook.org/release/xsl/current" \
            "/usr/share/xml/docbook/xsl-stylesheets-$VERS" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 
 xmlcatalog --noout --add "rewriteURI" \
            "http://cdn.docbook.org/release/xsl/current" \
            "/usr/share/xml/docbook/xsl-stylesheets-$VERS" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 
 xmlcatalog --noout --add "rewriteURI" \
            "https://cdn.docbook.org/release/xsl/current" \
            "/usr/share/xml/docbook/xsl-stylesheets-$VERS" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 
 xmlcatalog --noout --add "rewriteSystem" \
            "http://docbook.sourceforge.net/release/xsl-ns/current" \
            "/usr/share/xml/docbook/xsl-stylesheets-$VERS" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 
 xmlcatalog --noout --add "rewriteURI" \
            "http://docbook.sourceforge.net/release/xsl-ns/current" \
            "/usr/share/xml/docbook/xsl-stylesheets-$VERS" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 
 }
