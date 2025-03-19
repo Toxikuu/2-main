@@ -1,0 +1,11 @@
+repo = "main"
+name = "libexif"
+version = "0.6.25"
+description = "Library for parsing, editing, and saving EXIF data"
+categories = ["lib"]
+timestamp = "2025-03-18 23:00:35"
+upstream = "https://github.com/libexif/libexif.git"
+
+[source]
+url = "https://github.com/libexif/libexif/releases/download/v0.6.25/libexif-0.6.25.tar.bz2"
+hash = "fJ66ma7T5llNjD6Fhh8caq9FDCGGIVKLyYnTs-eiYwc"
