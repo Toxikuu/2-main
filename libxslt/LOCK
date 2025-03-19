@@ -1,0 +1,16 @@
+repo = "main"
+name = "libxslt"
+version = "1.1.43"
+description = "XSLT libraries extending libxml2"
+categories = ["lib"]
+timestamp = "2025-03-18 22:30:16"
+dependencies = [
+    "libxml2",
+    "r^docbook-xml4",
+    "r^docbook-xsl-nons",
+]
+upstream = "https://github.com/GNOME/libxslt.git"
+
+[source]
+url = "https://github.com/GNOME/libxslt/archive/refs/tags/v1.1.43.tar.gz"
+hash = "5JG7jxG9Q8XaMjxm9pa257WddnxEYFOny9joBSVr2cs"
