@@ -1,0 +1,20 @@
+repo = "main"
+name = "xdg-utils"
+version = "1.2.1"
+description = "Command line tools that assist applications with a variety of desktop integration tasks"
+categories = [
+    "cli",
+    "util",
+]
+timestamp = "2025-03-18 22:14:04"
+dependencies = [
+    "xmlto",
+    "xprop",
+    "xset",
+    "o^dbus",
+]
+upstream = "https://gitlab.freedesktop.org/xdg/xdg-utils.git"
+
+[source]
+url = "https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz"
+hash = "9rZIwGRGTCY2iEwFdG6AQoEQpXb42qz0bvLlVNz9rnU"
