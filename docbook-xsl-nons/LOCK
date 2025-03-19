@@ -1,0 +1,16 @@
+repo = "main"
+name = "docbook-xsl-nons"
+version = "1.79.2"
+description = "DocBook XSL Stylesheets"
+categories = ["doc"]
+timestamp = "2025-03-18 22:41:43"
+dependencies = ["libxml2"]
+upstream = "https://github.com/docbook/xslt10-stylesheets.git"
+
+[source]
+url = "https://github.com/docbook/xslt10-stylesheets/releases/download/release/1.79.2/docbook-xsl-nons-1.79.2.tar.bz2"
+hash = "7oueygt6j4kHWDKi2nU0vOjFR4_I_CZ29RLV2H2DIQI"
+
+[[extra]]
+url = "https://www.linuxfromscratch.org/patches/blfs/svn/docbook-xsl-nons-1.79.2-stack_fix-1.patch"
+hash = "qSw5cVxUlJupNprdGAlSe48VW34qKy4wy0s57nFfLjA"
