@@ -2,9 +2,9 @@ repo = "main"
 name = "xmlto"
 version = "0.0.29"
 description = "Convert XML to another format"
-timestamp = "2025-03-18 22:17:12"
+timestamp = "2025-03-18 22:18:43"
 dependencies = [
-    "docbook-xml",
+    "docbook-xml4",
     "docbook-xsl-nons",
     "libxslt",
     "lynx",
