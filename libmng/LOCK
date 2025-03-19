@@ -1,0 +1,14 @@
+repo = "main"
+name = "libmng"
+version = "2.0.3"
+description = "MNG/JNG reference library"
+categories = ["lib"]
+timestamp = "2025-03-18 21:39:26"
+dependencies = [
+    "libjpeg-turbo",
+    "little-cms",
+]
+
+[source]
+url = "https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz"
+hash = "SkYv3UjUvILB16IRBsihi2L4zABCRUMjBY5toNu1fdM"
