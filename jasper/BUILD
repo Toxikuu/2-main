@@ -13,6 +13,8 @@ EXTRA=()
 
 2b() {
 
+with cmake
+
 cm \
     -D JAS_ENABLE_DOC=NO     \
     -D ALLOW_IN_SOURCE_BUILD \
