@@ -3,7 +3,12 @@ VERS="1.26.0"
 DESC="Development framework for multimedia applications"
 CATG=""
 UPST="https://github.com/GStreamer/gstreamer.git"
-DEPS=()
+DEPS=(
+    "glib"
+    "o^libnsl"
+    "o^libunwind"
+    "o^rust"
+)
 
 SOURCE="https://$NAME.freedesktop.org/src/$NAME/$NAME-$VERS.tar.xz"
 EXTRA=()
@@ -17,3 +22,4 @@ nj
 ni
 
 }
+#d added missing dependencies
