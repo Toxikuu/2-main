@@ -1,0 +1,24 @@
+repo = "main"
+name = "cups"
+version = "2.4.11"
+description = "Common Unix Printing System"
+categories = ["print"]
+timestamp = "2025-03-18 22:57:15"
+dependencies = [
+    "gnutls",
+    "dbus",
+    "libusb",
+    "linux-pam",
+    "xdg-utils",
+    "o^colord",
+    "o^avahi",
+    "o^libpaper",
+    "o^krb5",
+    "o^php",
+    "r^cups-filters",
+]
+upstream = "https://github.com/OpenPrinting/cups.git"
+
+[source]
+url = "https://github.com/OpenPrinting/cups/releases/download/v2.4.11/cups-2.4.11-source.tar.gz"
+hash = "moj-HaOimpF8P8Z85usxeDmdaOGlSMbYbHDZsTZR_XE"
