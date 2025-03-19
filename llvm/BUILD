@@ -1,5 +1,5 @@
 NAME="llvm"
-VERS="19.1.7"
+VERS="20.1.0"
 DESC="A collection of modular and reusable compiler and toolchain technologies"
 UPST="https://github.com/llvm/llvm-project.git"
 VCMD="git ls-remote --tags --refs '$UPST' | cut -d- -f2- | grep -v [a-Z] | sort -V | tail -n1"
@@ -20,9 +20,9 @@ with cmake ninja
 tar -xf "$SRC/cmake-$VERS.src.tar.xz"
 tar -xf "$SRC/third-party-$VERS.src.tar.xz"
 
-sed '/LLVM_COMMON_CMAKE_UTILS/s@../cmake@cmake-19.1.7.src@' \
+sed "/LLVM_COMMON_CMAKE_UTILS/s@../cmake@cmake-$VERS.src@" \
     -i CMakeLists.txt &&
-sed '/LLVM_THIRD_PARTY_DIR/s@../third-party@third-party-19.1.7.src@' \
+sed "/LLVM_THIRD_PARTY_DIR/s@../third-party@third-party-$VERS.src@" \
     -i cmake/modules/HandleLLVMOptions.cmake
 
 tar -xf "$SRC/clang-$VERS.src.tar.xz" -C tools
@@ -38,13 +38,16 @@ sed 's/utility/tool/' -i utils/FileCheck/CMakeLists.txt
 
 _cfg_opts=(
     -D BUILD_SHARED_LIBS=OFF # override abstraction
-    -D LLVM_ENABLE_FFI=ON
     -D LLVM_BUILD_LLVM_DYLIB=ON
     -D LLVM_LINK_LLVM_DYLIB=ON
+
+    -D LLVM_ENABLE_FFI=ON
     -D LLVM_ENABLE_RTTI=ON
+
     -D LLVM_TARGETS_TO_BUILD="X86;host;AMDGPU"
     -D LLVM_BINUTILS_INCDIR=/usr/include
     -D LLVM_INCLUDE_BENCHMARKS=OFF
+
     -D CLANG_DEFAULT_PIE_ON_LINUX=ON
     -D CLANG_CONFIG_FILE_SYSTEM_DIR=/etc/clang
 )
