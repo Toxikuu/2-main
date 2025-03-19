@@ -1,8 +1,8 @@
 NAME="docbook-xml4"
-VERS="$VERS"
+VERS="4.5"
 DESC="Widely-used XML scheme for writing documentation"
 CATG="doc"
-UPST=""
+UPST=""  # dead
 DEPS=(
     "libarchive"
     "libxml2"
@@ -19,77 +19,81 @@ install -vdm755 "$D"/etc/xml
 cp -v -af --no-preserve=ownership docbook.cat *.dtd ent/ *.mod \
     "$D"/usr/share/xml/docbook/xml-dtd-$VERS
 
-# create and populate /etc/xml/docbook
-if [ ! -e "$D"/etc/xml/docbook ]; then
-    xmlcatalog --noout --create "$D"/etc/xml/docbook
+}
+
+2i() {
+
+# create and populate the /etc/xml/docbook catalog file
+if [ ! -e /etc/xml/docbook ]; then
+    xmlcatalog --noout --create /etc/xml/docbook
 fi
 xmlcatalog --noout --add "public" \
-    "-//OASIS//DTD DocBook XML V$VERS//EN" \
-    "http://www.oasis-open.org/docbook/xml/$VERS/docbookx.dtd" \
-    "$D"/etc/xml/docbook
+    "-//OASIS//DTD DocBook XML V4.5//EN" \
+    "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" \
+    /etc/xml/docbook
 xmlcatalog --noout --add "public" \
-    "-//OASIS//DTD DocBook XML CALS Table Model V$VERS//EN" \
-    "file:///usr/share/xml/docbook/xml-dtd-$VERS/calstblx.dtd" \
-    "$D"/etc/xml/docbook
+    "-//OASIS//DTD DocBook XML CALS Table Model V4.5//EN" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5/calstblx.dtd" \
+    /etc/xml/docbook
 xmlcatalog --noout --add "public" \
     "-//OASIS//DTD XML Exchange Table Model 19990315//EN" \
-    "file:///usr/share/xml/docbook/xml-dtd-$VERS/soextblx.dtd" \
-    "$D"/etc/xml/docbook
+    "file:///usr/share/xml/docbook/xml-dtd-4.5/soextblx.dtd" \
+    /etc/xml/docbook
 xmlcatalog --noout --add "public" \
-    "-//OASIS//ELEMENTS DocBook XML Information Pool V$VERS//EN" \
-    "file:///usr/share/xml/docbook/xml-dtd-$VERS/dbpoolx.mod" \
-    "$D"/etc/xml/docbook
+    "-//OASIS//ELEMENTS DocBook XML Information Pool V4.5//EN" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbpoolx.mod" \
+    /etc/xml/docbook
 xmlcatalog --noout --add "public" \
-    "-//OASIS//ELEMENTS DocBook XML Document Hierarchy V$VERS//EN" \
-    "file:///usr/share/xml/docbook/xml-dtd-$VERS/dbhierx.mod" \
-    "$D"/etc/xml/docbook
+    "-//OASIS//ELEMENTS DocBook XML Document Hierarchy V4.5//EN" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbhierx.mod" \
+    /etc/xml/docbook
 xmlcatalog --noout --add "public" \
-    "-//OASIS//ELEMENTS DocBook XML HTML Tables V$VERS//EN" \
-    "file:///usr/share/xml/docbook/xml-dtd-$VERS/htmltblx.mod" \
-    "$D"/etc/xml/docbook
+    "-//OASIS//ELEMENTS DocBook XML HTML Tables V4.5//EN" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5/htmltblx.mod" \
+    /etc/xml/docbook
 xmlcatalog --noout --add "public" \
-    "-//OASIS//ENTITIES DocBook XML Notations V$VERS//EN" \
-    "file:///usr/share/xml/docbook/xml-dtd-$VERS/dbnotnx.mod" \
-    "$D"/etc/xml/docbook
+    "-//OASIS//ENTITIES DocBook XML Notations V4.5//EN" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbnotnx.mod" \
+    /etc/xml/docbook
 xmlcatalog --noout --add "public" \
-    "-//OASIS//ENTITIES DocBook XML Character Entities V$VERS//EN" \
-    "file:///usr/share/xml/docbook/xml-dtd-$VERS/dbcentx.mod" \
-    "$D"/etc/xml/docbook
+    "-//OASIS//ENTITIES DocBook XML Character Entities V4.5//EN" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbcentx.mod" \
+    /etc/xml/docbook
 xmlcatalog --noout --add "public" \
-    "-//OASIS//ENTITIES DocBook XML Additional General Entities V$VERS//EN" \
-    "file:///usr/share/xml/docbook/xml-dtd-$VERS/dbgenent.mod" \
-    "$D"/etc/xml/docbook
+    "-//OASIS//ENTITIES DocBook XML Additional General Entities V4.5//EN" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbgenent.mod" \
+    /etc/xml/docbook
 xmlcatalog --noout --add "rewriteSystem" \
-    "http://www.oasis-open.org/docbook/xml/$VERS" \
-    "file:///usr/share/xml/docbook/xml-dtd-$VERS" \
-    "$D"/etc/xml/docbook
+    "http://www.oasis-open.org/docbook/xml/4.5" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5" \
+    /etc/xml/docbook
 xmlcatalog --noout --add "rewriteURI" \
-    "http://www.oasis-open.org/docbook/xml/$VERS" \
-    "file:///usr/share/xml/docbook/xml-dtd-$VERS" \
-    "$D"/etc/xml/docbook
+    "http://www.oasis-open.org/docbook/xml/4.5" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5" \
+    /etc/xml/docbook
 
-# create and populate /etc/xml/catalog
-if [ ! -e "$D"/etc/xml/catalog ]; then
-    xmlcatalog --noout --create "$D"/etc/xml/catalog
+# create and populate the /etc/xml/catalog catalog file
+if [ ! -e /etc/xml/catalog ]; then
+    xmlcatalog --noout --create /etc/xml/catalog
 fi
 xmlcatalog --noout --add "delegatePublic" \
     "-//OASIS//ENTITIES DocBook XML" \
     "file:///etc/xml/docbook" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 xmlcatalog --noout --add "delegatePublic" \
     "-//OASIS//DTD DocBook XML" \
     "file:///etc/xml/docbook" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 xmlcatalog --noout --add "delegateSystem" \
     "http://www.oasis-open.org/docbook/" \
     "file:///etc/xml/docbook" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 xmlcatalog --noout --add "delegateURI" \
     "http://www.oasis-open.org/docbook/" \
     "file:///etc/xml/docbook" \
-    "$D"/etc/xml/catalog
+    /etc/xml/catalog
 
-# allow use with other versions
+# allow use of other versions
 for DTDVERSION in 4.1.2 4.2 4.3 4.4
 do
   xmlcatalog --noout --add "public" \
@@ -98,11 +102,11 @@ do
     /etc/xml/docbook
   xmlcatalog --noout --add "rewriteSystem" \
     "http://www.oasis-open.org/docbook/xml/$DTDVERSION" \
-    "file:///usr/share/xml/docbook/xml-dtd-$VERS" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5" \
     /etc/xml/docbook
   xmlcatalog --noout --add "rewriteURI" \
     "http://www.oasis-open.org/docbook/xml/$DTDVERSION" \
-    "file:///usr/share/xml/docbook/xml-dtd-$VERS" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5" \
     /etc/xml/docbook
   xmlcatalog --noout --add "delegateSystem" \
     "http://www.oasis-open.org/docbook/xml/$DTDVERSION/" \
