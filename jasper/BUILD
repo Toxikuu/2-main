@@ -13,15 +13,14 @@ EXTRA=()
 
 2b() {
 
-with cmake
-
 mkdir -pv BUILD
 cd        BUILD
 
-CP=.. cm \
-    -D JAS_ENABLE_DOC=NO         \
-    -D ALLOW_IN_SOURCE_BUILD=YES \
-    -G "Unix Makefiles"
+cmake -D CMAKE_INSTALL_PREFIX=/usr    \
+      -D CMAKE_BUILD_TYPE=Release     \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON  \
+      -D JAS_ENABLE_DOC=NO            \
+      -D ALLOW_IN_SOURCE_BUILD=YES
 
 mk
 mi
