@@ -1,9 +1,9 @@
 repo = "main"
 name = "spirv-llvm-translator"
-version = "19.1.5"
+version = "20.1.0"
 description = "Bi-directional translation between SPIR-V and LLVM IR"
 categories = ["dev"]
-timestamp = "2025-03-03 03:25:57"
+timestamp = "2025-03-18 21:18:08"
 dependencies = [
     "cmake",
     "libxml2",
@@ -15,5 +15,5 @@ upstream = "https://github.com/KhronosGroup/SPIRV-LLVM-Translator.git"
 version_command = "git ls-remote 'https://github.com/KhronosGroup/SPIRV-LLVM-Translator.git' | sed 's@.*/@@' | sort -V | tail -n1"
 
 [source]
-url = "https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v19.1.5/SPIRV-LLVM-Translator-19.1.5.tar.gz"
-hash = "bA5XhKD2Ob6AdVvHx-L-2r8OhRHEnlAgi5HEoFpqGbw"
+url = "https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v20.1.0/SPIRV-LLVM-Translator-20.1.0.tar.gz"
+hash = "_8prKqUwdu-FoJZ27wB5h3zOSXfXqmT19bM1lsfR0oU"
