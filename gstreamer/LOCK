@@ -2,7 +2,13 @@ repo = "main"
 name = "gstreamer"
 version = "1.26.0"
 description = "Development framework for multimedia applications"
-timestamp = "2025-03-18 21:51:47"
+timestamp = "2025-03-18 21:52:31"
+dependencies = [
+    "glib",
+    "o^libnsl",
+    "o^libunwind",
+    "o^rust",
+]
 upstream = "https://github.com/GStreamer/gstreamer.git"
 
 [source]
