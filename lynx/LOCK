@@ -1,0 +1,16 @@
+repo = "main"
+name = "lynx"
+version = "2.9.2"
+description = "TUI web browser"
+categories = [
+    "tui",
+    "net",
+]
+timestamp = "2025-03-18 22:10:25"
+dependencies = ["o^gnutls"]
+upstream = "https://lynx.invisible-island.net/"
+version_command = "curl -s 'https://lynx.invisible-island.net/' | grep 'recent stable release is' | cut -d' ' -f9 | tr -d ';'"
+
+[source]
+url = "https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2"
+hash = "c3S4mTbZkWaeEB9Ol_LJWSA24ejNqnuvwlmnerb7B84"
