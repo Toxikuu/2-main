@@ -3,7 +3,7 @@ name = "docbook-xsl-ns"
 version = "1.79.2"
 description = "DocBook XSL Stylesheets (Namespaced)"
 categories = ["doc"]
-timestamp = "2025-03-18 22:37:24"
+timestamp = "2025-03-18 22:42:54"
 dependencies = ["libxml2"]
 upstream = "https://github.com/docbook/xslt10-stylesheets.git"
 
