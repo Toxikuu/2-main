@@ -4,7 +4,7 @@ DESC="Convert XML to another format"
 CATG=""
 UPST=""
 DEPS=(
-    "docbook-xml"
+    "docbook-xml4"
     "docbook-xsl-nons"
     "libxslt"
     "lynx"  # needed for cups
