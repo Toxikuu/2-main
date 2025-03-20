@@ -1,11 +1,11 @@
 repo = "main"
 name = "libusb"
-version = "1.0.27"
+version = "1.0.28"
 description = "Library for USB device access"
 categories = ["lib"]
-timestamp = "2025-03-18 22:50:01"
+timestamp = "2025-03-20 16:44:58"
 upstream = "https://github.com/libusb/libusb.git"
 
 [source]
-url = "https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2"
-hash = "_6pB10Goo77iRKyOVKcuoFvyh5ZjwJjIL8V1eFNEFXU"
+url = "https://github.com/libusb/libusb/releases/download/v1.0.28/libusb-1.0.28.tar.bz2"
+hash = "lmuw0jH5SkdOquLmfaXshE01J6HzhkVjlP9DJYBjSyk"
