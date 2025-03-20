@@ -3,6 +3,7 @@ VERS="1.56.2"
 DESC="Library for text layout and rendering"
 CATG="lib"
 UPST="https://github.com/GNOME/pango.git"
+VCMD="git ls-remote --tags --refs $UPST | sed 's@.*/@@' | grep -Ev '[a-Z]|-|[0-9]\\.9' | tail -n1"
 DEPS=(
     "cairo"
     "fribidi"
