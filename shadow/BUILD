@@ -1,5 +1,5 @@
 NAME="shadow"
-VERS="4.17.3"
+VERS="4.17.4"
 CATG="core security"
 DESC="Secure password handling"
 DEPS="linux-pam"
