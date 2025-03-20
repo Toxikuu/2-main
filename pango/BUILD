@@ -1,5 +1,5 @@
 NAME="pango"
-VERS="1.56.2"
+VERS="1.56.3"
 DESC="Library for text layout and rendering"
 CATG="lib"
 UPST="https://github.com/GNOME/pango.git"
