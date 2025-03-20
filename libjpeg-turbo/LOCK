@@ -1,9 +1,9 @@
 repo = "main"
 name = "libjpeg-turbo"
-version = "3.0.1"
+version = "3.1.0"
 description = "Fast library for handling JPEG images"
 categories = ["lib"]
-timestamp = "2025-03-20 16:40:34"
+timestamp = "2025-03-20 16:43:00"
 dependencies = [
     "cmake",
     "yasm",
@@ -12,5 +12,5 @@ upstream = "https://github.com/libjpeg-turbo/libjpeg-turbo.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/libjpeg-turbo/libjpeg-turbo.git' | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 
 [source]
-url = "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.0.1/libjpeg-turbo-3.0.1.tar.gz"
-hash = "IkKVB3FK4UezrKzSmeggmfzl2fRWiC_CjiUuRXm6KnU"
+url = "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.0/libjpeg-turbo-3.1.0.tar.gz"
+hash = "lWTHKx39HW_mJ0xflajZibWYVFddS77kSt57wXqpvJM"
