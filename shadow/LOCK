@@ -1,16 +1,16 @@
 repo = "main"
 name = "shadow"
-version = "4.17.3"
+version = "4.17.4"
 description = "Secure password handling"
 categories = [
     "core",
     "security",
 ]
-timestamp = "2025-02-25 20:15:52"
+timestamp = "2025-03-20 16:30:46"
 dependencies = ["linux-pam"]
 upstream = "https://github.com/shadow-maint/shadow.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/shadow-maint/shadow.git' | sed 's:.*/::' | grep -v rc | sort -V | grep -B1 19990709 | head -n1"
 
 [source]
-url = "https://github.com/shadow-maint/shadow/releases/download/4.17.3/shadow-4.17.3.tar.xz"
-hash = "ohzw00v_xDFM7eAc_yWGiRdPqzDKSUro9FeE09VsmEk"
+url = "https://github.com/shadow-maint/shadow/releases/download/4.17.4/shadow-4.17.4.tar.xz"
+hash = "VUgBBUaU_32Ker3w1uzjTi8W4RFnPMAbjJ7hJ4RRGB4"
