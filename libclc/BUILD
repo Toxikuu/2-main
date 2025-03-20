@@ -1,5 +1,5 @@
 NAME="libclc"
-VERS="20.1.0"
+VERS="20.1.1"
 DESC="Library requirements of the OpenCL C programming language"
 CATG="dev"
 UPST="https://github.com/llvm/llvm-project.git"
