@@ -1,12 +1,12 @@
 repo = "main"
 name = "util-linux"
-version = "2.40.4"
+version = "2.41"
 description = "Miscellaneous utility prorgrams"
 categories = ["core"]
-timestamp = "2025-02-25 20:20:36"
+timestamp = "2025-03-20 16:15:23"
 upstream = "https://github.com/util-linux/util-linux.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/util-linux/util-linux.git' | sed 's@.*/@@' | grep -Eiv 'start|rc|pre|real' | sort -V | tail -n1"
 
 [source]
-url = "https://www.kernel.org/pub/linux/utils/util-linux/v2.40/util-linux-2.40.4.tar.xz"
-hash = "XB2vczsE6YWa_cO9h8xIEYDuD4i1wJRrFv3skxl1-3k"
+url = "https://github.com/util-linux/util-linux/archive/refs/tags/v2.41.tar.gz"
+hash = "J3QHrPIYFQButLsu6cL6Lqb0-Ev8V0hsRgxryMd6REU"
