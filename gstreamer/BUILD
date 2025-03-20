@@ -3,6 +3,7 @@ VERS="1.26.0"
 DESC="Development framework for multimedia applications"
 CATG=""
 UPST="https://github.com/GStreamer/gstreamer.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -Ev '[a-Z]|-' | sort -V | tail -n1"
 DEPS=(
     "glib"
     "o^libnsl"
@@ -22,4 +23,3 @@ nj
 ni
 
 }
-#d added missing dependencies
