@@ -3,6 +3,7 @@ VERS="2.42.12"
 DESC="Image loading library"
 CATG="lib"
 UPST="https://github.com/GNOME/$NAME.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -v '[a-Z]' | grep -v '[0-9]\\.9' | sort -V | tail -n1"
 DEPS=(
     "glib"
     "libjpeg-turbo"
