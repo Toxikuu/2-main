@@ -3,12 +3,13 @@ name = "socat"
 version = "1.8.0.3"
 description = "Multipurpose relay tool"
 categories = ["util"]
-timestamp = "2025-03-16 15:29:23"
+timestamp = "2025-03-20 16:12:18"
 dependencies = [
     "openssl",
     "readline",
 ]
 upstream = "https://repo.or.cz/socat.git"
+version_command = "git ls-remote --tags --refs 'https://repo.or.cz/socat.git' | sed 's@.*/@@' | cut -d- -f2- | grep -v '[a-Z]' | tail -n1"
 
 [source]
 url = "http://www.dest-unreach.org/socat/download/socat-1.8.0.3.tar.gz"
