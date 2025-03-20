@@ -1,9 +1,9 @@
 NAME="prename"
-VERS="1.16.2"
+VERS="1.16"
 DESC="Perl's rename"
 CATG="utils fs"
 UPST="https://search.cpan.org/~pederst/rename"
-VCMD="curl -sL '$UPST' | head -n8 | grep rename- | cut -d- -f2"
+VCMD="curl -sL '$UPST' | head -n8 | grep rename- | cut -d- -f2 | grep -v '1.16.2'"  # 1.16.2 doesn't build(?)
 DEPS=(
     "perl"
 )
