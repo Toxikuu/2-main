@@ -3,6 +3,7 @@ VERS="1.8.0.3"
 DESC="Multipurpose relay tool"
 CATG="util"
 UPST="https://repo.or.cz/socat.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | cut -d- -f2- | grep -v '[a-Z]' | tail -n1"
 DEPS=(
     "openssl"
     "readline"
