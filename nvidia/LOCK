@@ -1,9 +1,9 @@
 repo = "main"
 name = "nvidia"
-version = "570.124.04"
+version = "570.133.07"
 description = "The NVIDIA drivers"
 categories = ["drivers"]
-timestamp = "2025-03-16 06:07:42"
+timestamp = "2025-03-20 16:46:29"
 dependencies = [
     "kernel",
     "libglvnd",
@@ -11,5 +11,5 @@ dependencies = [
 upstream = "https://github.com/NVIDIA/open-gpu-kernel-modules.git"
 
 [[extra]]
-url = "https://us.download.nvidia.com/XFree86/Linux-x86_64/570.124.04/NVIDIA-Linux-x86_64-570.124.04.run"
-hash = "G3hqS3Ei18QhbFiuQAdoik93jBlsFI2RkWOBXuENU8Q"
+url = "https://us.download.nvidia.com/XFree86/Linux-x86_64/570.133.07/NVIDIA-Linux-x86_64-570.133.07.run"
+hash = "LUPmTFgb5e9VTemIixqpADfvbUX1QoTT2dztwI3E3CY"
