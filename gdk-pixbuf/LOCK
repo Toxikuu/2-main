@@ -3,7 +3,7 @@ name = "gdk-pixbuf"
 version = "2.42.12"
 description = "Image loading library"
 categories = ["lib"]
-timestamp = "2025-03-20 16:12:33"
+timestamp = "2025-03-20 16:14:20"
 dependencies = [
     "glib",
     "libjpeg-turbo",
@@ -15,6 +15,7 @@ dependencies = [
     "r^webp-pixbuf-loader",
 ]
 upstream = "https://github.com/GNOME/gdk-pixbuf.git"
+version_command = '''git ls-remote --tags --refs 'https://github.com/GNOME/gdk-pixbuf.git' | sed 's@.*/@@' | grep -v '[a-Z]' | grep -v '[0-9]\.9' | sort -V | tail -n1'''
 
 [source]
 url = "https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz"
