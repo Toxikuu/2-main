@@ -3,7 +3,7 @@ name = "util-linux"
 version = "2.41"
 description = "Miscellaneous utility prorgrams"
 categories = ["core"]
-timestamp = "2025-03-20 16:15:23"
+timestamp = "2025-03-20 16:17:48"
 upstream = "https://github.com/util-linux/util-linux.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/util-linux/util-linux.git' | sed 's@.*/@@' | grep -Eiv 'start|rc|pre|real' | sort -V | tail -n1"
 
