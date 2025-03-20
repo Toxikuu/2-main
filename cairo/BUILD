@@ -3,6 +3,7 @@ VERS="1.18.4"
 DESC="2D graphics library supporting multiple output devices"
 CATG=""
 UPST="https://gitlab.freedesktop.org/cairo/cairo.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -v '[a-Z]' | sort -V | tail -n1"
 DEPS=(
     "libpng"
     "pixman"
@@ -26,4 +27,3 @@ nj
 ni
 
 }
-#d changed source because of freedesktop's migration
