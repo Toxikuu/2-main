@@ -1,9 +1,9 @@
 repo = "main"
 name = "pango"
-version = "1.56.2"
+version = "1.56.3"
 description = "Library for text layout and rendering"
 categories = ["lib"]
-timestamp = "2025-03-20 16:36:56"
+timestamp = "2025-03-20 16:37:05"
 dependencies = [
     "cairo",
     "fribidi",
@@ -17,5 +17,5 @@ upstream = "https://github.com/GNOME/pango.git"
 version_command = '''git ls-remote --tags --refs https://github.com/GNOME/pango.git | sed 's@.*/@@' | grep -Ev '[a-Z]|-|[0-9]\.9' | tail -n1'''
 
 [source]
-url = "https://github.com/GNOME/pango/archive/refs/tags/1.56.2.tar.gz"
-hash = "dThGRE44Gd-39ufhaZ4Ny4-1i7m4wrUAmims2gQzPAg"
+url = "https://github.com/GNOME/pango/archive/refs/tags/1.56.3.tar.gz"
+hash = "egWWZNzRxReXni2y5x3Jo1UKz1qM92oarbZSbZ1LkPE"
