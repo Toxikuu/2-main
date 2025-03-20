@@ -1,5 +1,5 @@
 NAME="mpfr"
-VERS="4.2.1"
+VERS="4.2.2"
 CATG="critical core"
 DESC="Arbitrary-precision floating-point math library"
 UPST="https://gitlab.inria.fr/mpfr/mpfr.git"
