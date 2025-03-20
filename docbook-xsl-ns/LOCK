@@ -3,9 +3,10 @@ name = "docbook-xsl-ns"
 version = "1.79.2"
 description = "DocBook XSL Stylesheets (Namespaced)"
 categories = ["doc"]
-timestamp = "2025-03-18 22:45:47"
+timestamp = "2025-03-20 16:45:29"
 dependencies = ["libxml2"]
 upstream = "https://github.com/docbook/xslt10-stylesheets.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/docbook/xslt10-stylesheets.git' | sed 's@.*/@@' | grep -Ev '[a-Z]|-' | tail -n1"
 
 [source]
 url = "https://github.com/docbook/xslt10-stylesheets/releases/download/release/1.79.2/docbook-xsl-1.79.2.tar.bz2"
