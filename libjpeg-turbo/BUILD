@@ -1,5 +1,5 @@
 NAME="libjpeg-turbo"
-VERS="3.0.1"
+VERS="3.1.0"
 DESC="Fast library for handling JPEG images"
 CATG="lib"
 UPST="https://github.com/$NAME/$NAME.git"
