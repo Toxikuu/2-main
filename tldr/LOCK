@@ -1,15 +1,15 @@
 repo = "main"
 name = "tldr"
-version = "1.7.1"
+version = "1.7.2"
 description = "A very fast implementation of tldr in Rust"
 categories = [
     "cli",
     "util",
 ]
-timestamp = "2025-03-16 05:02:43"
+timestamp = "2025-03-20 16:32:51"
 dependencies = ["rust"]
 upstream = "https://github.com/tealdeer-rs/tealdeer.git"
 
 [source]
-url = "https://github.com/tealdeer-rs/tealdeer/archive/refs/tags/v1.7.1.tar.gz"
-hash = "KxDhQXdNKlDSWh08o9kR3twOExM2bOCjZAaMemhjANg"
+url = "https://github.com/tealdeer-rs/tealdeer/archive/refs/tags/v1.7.2.tar.gz"
+hash = "0GdbmqSMAOeKuvwxi5v7y36jzOY-WKQsH54jlavP4Og"
