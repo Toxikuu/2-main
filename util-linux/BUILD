@@ -5,7 +5,7 @@ DESC="Miscellaneous utility prorgrams"
 UPST="https://github.com/util-linux/util-linux.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -Eiv 'start|rc|pre|real' | sort -V | tail -n1"
 
-SOURCE="https://www.kernel.org/pub/linux/utils/util-linux/v${VERS%.*}/util-linux-$VERS.tar.xz"
+SOURCE="https://github.com/util-linux/util-linux/archive/refs/tags/v$VERS.tar.gz"
 EXTRA=()
 
 2b() {
