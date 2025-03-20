@@ -3,8 +3,9 @@ name = "xdg-user-dirs"
 version = "0.18"
 description = "Manage common user directories"
 categories = ["xdg"]
-timestamp = "2025-03-16 03:43:47"
+timestamp = "2025-03-20 16:09:39"
 upstream = "https://gitlab.freedesktop.org/xdg/xdg-user-dirs.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xdg/xdg-user-dirs.git' | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 
 [source]
 url = "https://user-dirs.freedesktop.org/releases/xdg-user-dirs-0.18.tar.gz"
