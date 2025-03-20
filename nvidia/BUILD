@@ -1,8 +1,8 @@
 NAME="nvidia"
-VERS="570.124.04"
+VERS="570.133.07"
 DESC="The NVIDIA drivers"
 CATG="drivers"
-UPST="https://github.com/NVIDIA/open-gpu-kernel-modules.git" # often accurate because nvidia
+UPST="https://github.com/NVIDIA/open-gpu-kernel-modules.git" # often inaccurate because nvidia
 DEPS=(
     "kernel" # nvidia must be rebuilt whenever the kernel sources change
     "libglvnd"
@@ -48,4 +48,3 @@ _cfg_opts=(
 "$SRC/NVIDIA-Linux-x86_64-$VERS.run" ${_cfg_opts[@]}
 
 }
-#d variable fix && formatting
