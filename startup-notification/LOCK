@@ -3,13 +3,14 @@ name = "startup-notification"
 version = "0.12"
 description = "Libary to monitor and display application startup"
 categories = ["lib"]
-timestamp = "2025-03-16 14:06:26"
+timestamp = "2025-03-20 16:28:17"
 dependencies = [
     "libx11",
     "libxcb",
     "xcb-util",
 ]
-upstream = "https://gitlab.freedesktop.org/xdg/startup-notification"
+upstream = "https://gitlab.freedesktop.org/xdg/startup-notification/"
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xdg/startup-notification/' | sed -e 's@.*/@@' -e 's@_@.@g' | cut -d. -f3- | sort -V | tail -n1"
 
 [source]
 url = "https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz"
