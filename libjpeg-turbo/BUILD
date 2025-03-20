@@ -3,6 +3,7 @@ VERS="3.0.1"
 DESC="Fast library for handling JPEG images"
 CATG="lib"
 UPST="https://github.com/$NAME/$NAME.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 DEPS=(
     "cmake"
     "yasm"
