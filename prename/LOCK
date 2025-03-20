@@ -6,7 +6,7 @@ categories = [
     "utils",
     "fs",
 ]
-timestamp = "2025-03-20 16:53:59"
+timestamp = "2025-03-20 16:55:06"
 dependencies = ["perl"]
 upstream = "https://search.cpan.org/~pederst/rename"
 version_command = "curl -sL 'https://search.cpan.org/~pederst/rename' | head -n8 | grep rename- | cut -d- -f2 | grep -v '1.16.2'"
