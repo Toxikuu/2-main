@@ -2,7 +2,7 @@ repo = "main"
 name = "libarchive"
 version = "3.7.8"
 description = "Multi-format archive and compression library"
-timestamp = "2025-03-20 16:09:53"
+timestamp = "2025-03-20 18:06:06"
 upstream = "https://github.com/libarchive/libarchive.git"
 
 [source]
