@@ -3,8 +3,9 @@ name = "fuse2"
 version = "2.9.9"
 description = "Filesystem in userspace"
 categories = ["bin"]
-timestamp = "2025-03-16 13:42:02"
+timestamp = "2025-03-20 16:42:26"
 upstream = "https://github.com/libfuse/libfuse.git"
+version_command = '''git ls-remote --tags --refs https://github.com/libfuse/libfuse.git | sed 's@.*/@@' | grep 'fuse-2\.9\.' | tail -n1'''
 
 [source]
 url = "https://github.com/libfuse/libfuse/releases/download/fuse-2.9.9/fuse-2.9.9.tar.gz"
