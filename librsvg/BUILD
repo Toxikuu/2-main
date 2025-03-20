@@ -3,6 +3,7 @@ VERS="2.59.2"
 DESC="Rust library for manipulating and viewing SVG images"
 CATG="lib"
 UPST="https://github.com/GNOME/librsvg.git"
+VCMD="git ls-remote --tags --refs $UPST | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 DEPS=(
     "cairo"
     "cargo-c"
