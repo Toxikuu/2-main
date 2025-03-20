@@ -17,4 +17,8 @@ perl Makefile.PL PREFIX=/usr
 mk
 mi
 
+mv -vf "$D"/usr/bin/{,p}rename
+mv -vf "$D"/usr/share/man/man1/{,p}rename.1
+
 }
+#d call the binary and manpage prename instead of rename
