@@ -1,10 +1,10 @@
 repo = "main"
 name = "libarchive"
-version = "3.7.7"
+version = "3.7.8"
 description = "Multi-format archive and compression library"
-timestamp = "2025-03-06 16:33:15"
+timestamp = "2025-03-20 16:09:53"
 upstream = "https://github.com/libarchive/libarchive.git"
 
 [source]
-url = "https://github.com/libarchive/libarchive/releases/download/v3.7.7/libarchive-3.7.7.tar.xz"
-hash = "h5rNg8M5nHyq7nP-X3QY4GCHqyqvQK8-mbnim-sp-u4"
+url = "https://github.com/libarchive/libarchive/releases/download/v3.7.8/libarchive-3.7.8.tar.xz"
+hash = "MqUXR1J-AfUNDgarrQ_guVtvpAuPwXPEi4vZfQ90MzA"
