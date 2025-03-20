@@ -46,6 +46,8 @@ _cfg_opts=(
     ADJTIME_PATH=/var/lib/hwclock/adjtime
 )
 
+./autogen.sh
+
 cfg --libdir=/usr/lib "${_cfg_opts[@]}"
 mk
 mi
@@ -64,3 +66,4 @@ mk
 mi
 
 }
+#d fixed building with github sources instead of kernel.org
