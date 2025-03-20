@@ -2,7 +2,7 @@ repo = "main"
 name = "cairo"
 version = "1.18.4"
 description = "2D graphics library supporting multiple output devices"
-timestamp = "2025-03-16 14:04:00"
+timestamp = "2025-03-20 16:44:06"
 dependencies = [
     "libpng",
     "pixman",
@@ -14,6 +14,7 @@ dependencies = [
     "libxrender",
 ]
 upstream = "https://gitlab.freedesktop.org/cairo/cairo.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/cairo/cairo.git' | sed 's@.*/@@' | grep -v '[a-Z]' | sort -V | tail -n1"
 
 [source]
 url = "https://www.cairographics.org/releases/cairo-1.18.4.tar.xz"
