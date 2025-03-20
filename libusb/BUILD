@@ -1,5 +1,5 @@
 NAME="libusb"
-VERS="1.0.27"
+VERS="1.0.28"
 DESC="Library for USB device access"
 CATG="lib"
 UPST="https://github.com/libusb/libusb.git"
