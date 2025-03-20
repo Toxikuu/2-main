@@ -3,7 +3,7 @@ name = "librsvg"
 version = "2.59.2"
 description = "Rust library for manipulating and viewing SVG images"
 categories = ["lib"]
-timestamp = "2025-03-16 17:39:52"
+timestamp = "2025-03-20 16:35:14"
 dependencies = [
     "cairo",
     "cargo-c",
@@ -15,6 +15,7 @@ dependencies = [
     "make-ca",
 ]
 upstream = "https://github.com/GNOME/librsvg.git"
+version_command = "git ls-remote --tags --refs https://github.com/GNOME/librsvg.git | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 
 [source]
 url = "https://download.gnome.org/sources/librsvg/2.59/librsvg-2.59.2.tar.xz"
