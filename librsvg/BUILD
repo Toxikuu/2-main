@@ -1,5 +1,5 @@
 NAME="librsvg"
-VERS="2.59.2"
+VERS="2.60.0"
 DESC="Rust library for manipulating and viewing SVG images"
 CATG="lib"
 UPST="https://github.com/GNOME/librsvg.git"
