@@ -14,4 +14,7 @@ cfg
 mk
 mi
 
+# avoid relying on the unmaintained unzip package
+ln -sfv bsdunzip "$D"/usr/bin/unzip
+
 }
