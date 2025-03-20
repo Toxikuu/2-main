@@ -3,7 +3,7 @@ VERS="2.9.9"
 DESC="Filesystem in userspace"
 CATG="bin"
 UPST="https://github.com/libfuse/libfuse.git"
-VCMD="git ls-remote --tags --refs $UPST | sed 's@.*/@@' | grep 'fuse-2\\.9\\.' | tail -n1"  # avoid fuse3
+VCMD="git ls-remote --tags --refs $UPST | sed 's@.*/@@' | grep 'fuse-2\\.9\\.' | tail -n1 | cut -d- -f2"  # avoid fuse3
 DEPS=()
 
 SOURCE="https://github.com/libfuse/libfuse/releases/download/fuse-$VERS/fuse-$VERS.tar.gz"
