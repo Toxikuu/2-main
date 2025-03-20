@@ -16,3 +16,4 @@
 [50228df763b9176ba30ee5adb4e797427600b90d] [2025-03-20 21:14:38] | Updated util-linux: 2.40.4 -> 2.41
 [dd47ace7080c2ae9b4d7589896f68e69461afb3e] [2025-03-20 21:15:23] | Revised util-linux
 [6a5de0618b27900394373b1356df0184d6c44e07] [2025-03-20 21:15:27] | Generated util-linux=2.41
+[e9b2408677929574e38371d9356b3dbdea354f22] [2025-03-20 21:17:48] | Revised util-linux: fixed building with github sources instead of kernel.org
