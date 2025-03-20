@@ -2,12 +2,13 @@ repo = "main"
 name = "little-cms"
 version = "2.17"
 description = "Little color management system supporting ICC profiles"
-timestamp = "2025-03-18 21:41:22"
+timestamp = "2025-03-20 16:07:41"
 dependencies = [
     "o^libjpeg-turbo",
     "o^libtiff",
 ]
 upstream = "https://github.com/mm2/Little-CMS.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/mm2/Little-CMS.git' | sed -e 's@.*/@@' -e 's,lcms,,' | grep -Ev 'rc|-' | sort -V | tail -n1"
 
 [source]
 url = "https://github.com/mm2/Little-CMS/releases/download/lcms2.17/lcms2-2.17.tar.gz"
