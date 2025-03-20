@@ -3,6 +3,7 @@ VERS="1.26.0"
 DESC="Base gstreamer plugins and helper libraries"
 CATG="lib"
 UPST="https://github.com/GStreamer/gstreamer.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -Ev '[a-Z]|-' | sort -V | tail -n1"
 DEPS=(
     "gstreamer"
     "alsa-lib"
