@@ -19,7 +19,7 @@ EXTRA=()
 
 2b() {
 
-with meson ninja
+with meson ninja rust
 
 _cfg_opts=(
     -D osmesa=true
