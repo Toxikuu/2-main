@@ -3,6 +3,7 @@ VERS="4.2.4"
 DESC="Library for manipulating JPEG-2000 images"
 CATG="lib"
 UPST="https://github.com/jasper-software/jasper.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -v 'rc' | grep version- | tail -n1 | cut -d- -f2"
 DEPS=(
     cmake
     libjpeg-turbo
