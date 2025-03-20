@@ -1,5 +1,5 @@
 NAME="tldr"
-VERS="1.7.1"
+VERS="1.7.2"
 DESC="A very fast implementation of tldr in Rust"
 CATG="cli util"
 UPST="https://github.com/tealdeer-rs/tealdeer.git"
