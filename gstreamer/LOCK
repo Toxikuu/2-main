@@ -2,7 +2,7 @@ repo = "main"
 name = "gstreamer"
 version = "1.26.0"
 description = "Development framework for multimedia applications"
-timestamp = "2025-03-18 21:52:31"
+timestamp = "2025-03-20 16:32:42"
 dependencies = [
     "glib",
     "o^libnsl",
@@ -10,6 +10,7 @@ dependencies = [
     "o^rust",
 ]
 upstream = "https://github.com/GStreamer/gstreamer.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/GStreamer/gstreamer.git' | sed 's@.*/@@' | grep -Ev '[a-Z]|-' | sort -V | tail -n1"
 
 [source]
 url = "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.0.tar.xz"
