@@ -1,0 +1,17 @@
+repo = "main"
+name = "libglvnd"
+version = "1.7.0"
+description = "GL Vendor-Neutral Dispatch library"
+categories = [
+    "lib",
+    "graphics",
+]
+timestamp = "2025-03-21 18:59:15"
+dependencies = [
+    "libxext",
+    "libx11",
+    "xorgproto",
+    "meson",
+    "python",
+]
+upstream = "https://gitlab.freedesktop.org/glvnd/libglvnd.git"
