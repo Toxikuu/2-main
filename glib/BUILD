@@ -1,3 +1,5 @@
+# I fucking hate glib. If you're able to make this build script function
+# without touching the host system, please do. I've spent weeks failing.
 NAME="glib"
 VERS="2.84.0"
 GOBJV="1.84.0"
@@ -56,41 +58,16 @@ meson setup ..            \
 die "Meson setup failed"
 
 nj
-ni
-
-# ty @seal331
-spoof_pc() {
-    mkdir -pv "$BLD"/pkgconfigtmp
-    for pc in "$D"/usr/lib/pkgconfig/*.pc; do
-        base="$(basename "$pc")"
-        echo "Copying pkgconfig file: $base" >&2
-        cp -vf "$pc" "$BLD/pkgconfigtmp/$base"
-    done
-    # spoofing the prefix to destdir to satisfy meson
-    echo "Spoofing pkgconfig files..." >&2
-    sed "1s@prefix=@prefix=$D@" -i "$BLD"/pkgconfigtmp/*.pc
-}
-
-# spoof pkgconfig files that are expected to exist at /usr/lib/pkgconfig (but which currently exist in $D)
-spoof_pc
+nj install # YES THIS IS INTENDED; YES THIS FUCKING SUCKS
 
 tar xf "$SRC"/gobject-introspection-$GOBJV.tar.*z*
 
-# build gobject-introspection
-# if pkg_config_libdir is set, glib can't find stuff and tries to vendor its own
-export PKG_CONFIG_PATH="$BLD/pkgconfigtmp" # export is necessary for some fucking reason ???
-export LD_LIBRARY_PATH="$D/usr/lib:$LD_LIBRARY_PATH" # find missing libraries hopefully
 meson setup gobject-introspection-$GOBJV gi-build \
-    --prefix=/usr --buildtype=release
+    --prefix=/usr --buildtype=release -D tests=false
 nj -C gi-build
 ni -C gi-build
+nj install -C gi-build # install g-ir bullshit to the host too
 
-# # done again so that the glib rebuild can find gobject-introspection pc files
-# spoof_pc
-# this is so incredibly fucking stupid but meson refuses to accept the PKG_CONFIG_PATH variable
-cp -vf "$D"/usr/lib/pkgconfig/*.pc /usr/lib/pkgconfig/
-
-# rebuild glib with gobject-introspection
 meson setup ..          \
     --prefix=/usr       \
     --buildtype=release \
@@ -112,3 +89,4 @@ nj
 ni
 
 }
+#d Made it build. Honestly might split this up into two packages in the future because meson refuses to recognize environment variables.
