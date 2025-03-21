@@ -79,6 +79,7 @@ tar xf "$SRC"/gobject-introspection-$GOBJV.tar.*z*
 # build gobject-introspection
 # if pkg_config_libdir is set, glib can't find stuff and tries to vendor its own
 export PKG_CONFIG_PATH="$BLD/pkgconfigtmp" # export is necessary for some fucking reason ???
+export LD_LIBRARY_PATH="$D/usr/lib:$LD_LIBRARY_PATH" # find missing libraries hopefully
 meson setup gobject-introspection-$GOBJV gi-build \
     --prefix=/usr --buildtype=release
 nj -C gi-build
