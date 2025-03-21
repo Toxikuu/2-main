@@ -2,7 +2,7 @@ repo = "main"
 name = "glib"
 version = "2.84.0"
 description = "Low level core library"
-timestamp = "2025-03-18 15:45:09"
+timestamp = "2025-03-20 21:57:07"
 upstream = "https://github.com/GNOME/glib.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/GNOME/glib.git' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' | head -n1 | sed 's@.*/@@'"
 
