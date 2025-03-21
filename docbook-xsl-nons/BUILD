@@ -2,7 +2,7 @@ NAME="docbook-xsl-nons"
 VERS="1.79.2"
 DESC="DocBook XSL Stylesheets"
 CATG="doc"
-UPST=" https://github.com/docbook/xslt10-stylesheets.git"
+UPST="https://github.com/docbook/xslt10-stylesheets.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -Ev '[a-Z]|-' | tail -n1"
 DEPS=(
     "libxml2"
