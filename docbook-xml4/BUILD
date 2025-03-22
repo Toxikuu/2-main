@@ -9,9 +9,14 @@ DEPS=(
 )
 
 SOURCE=""
-EXTRA=()
+EXTRA=(
+    "https://www.docbook.org/xml/$VERS/docbook-xml-$VERS.zip"
+)
 
 2b() {
+
+cp -vf "$SRC"/docbook-xml-$VERS.zip .
+unzip docbook-xml-$VERS.zip
 
 install -vdm755 "$D"/usr/share/xml/docbook/xml-dtd-$VERS
 install -vdm755 "$D"/etc/xml
