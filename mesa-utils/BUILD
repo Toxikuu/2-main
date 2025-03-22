@@ -26,9 +26,6 @@ with meson
 # https://src.fedoraproject.org/rpms/mesa-demos/blob/f42/f/mesa-demos-system-data.patch
 tpatch "$SRC"/mesa-demos-system-data.patch
 
-mkdir -pv build
-cd        build
-
 ms -D gles1=disabled -D with-system-data-files=true
 
 pushd ..
