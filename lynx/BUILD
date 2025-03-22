@@ -27,6 +27,6 @@ cfg ${_cfg_opts[@]}
 mk
 mk DESTDIR="$D" install-full
 
-chgrp -vR root /usr/share/doc/lynx/lynx_doc
+chgrp -vR root "$D"/usr/share/doc/lynx/lynx_doc
 
 }
