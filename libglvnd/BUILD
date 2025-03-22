@@ -11,9 +11,15 @@ DEPS=(
     python
 )
 
-SOURCE=""
+SOURCE="https://gitlab.freedesktop.org/glvnd/libglvnd/-/archive/v$VERS/libglvnd-v$VERS.tar.gz"
 EXTRA=()
 
 2b() {
+
+with meson ninja
+
+ms
+nj
+ni
 
 }
