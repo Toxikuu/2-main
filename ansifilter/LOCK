@@ -1,0 +1,14 @@
+repo = "main"
+name = "ansifilter"
+version = "2.21"
+description = "ANSI sequence filter"
+categories = [
+    "cli",
+    "utils",
+]
+timestamp = "2025-03-21 22:19:16"
+upstream = "https://gitlab.com/saalen/ansifilter.git"
+
+[source]
+url = "https://gitlab.com/saalen/ansifilter/-/archive/2.21/ansifilter-2.21.tar.bz2"
+hash = "XqfP39B1LVoWklnaAFwYuQN2KANv2J2LgmJLrOycE5A"
