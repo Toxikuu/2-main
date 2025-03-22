@@ -21,6 +21,8 @@ EXTRA=(
 
 2b() {
 
+with meson
+
 # https://src.fedoraproject.org/rpms/mesa-demos/blob/f42/f/mesa-demos-system-data.patch
 tpatch "$SRC"/mesa-demos-system-data.patch
 
