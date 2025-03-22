@@ -38,7 +38,7 @@ egltri_x11,peglgears,xeglgears,xeglthreads}     -t "$D/usr/bin/"
 install -vDm755 src/egl/opengles2/\
 {es2_info,es2gears_wayland,es2gears_x11,es2tri} -t "$D/usr/bin/"
 
-install -vDm src/xdemos/{glxinfo,glxgears}      -t "$D/usr/bin/"
-install -vDm src/vulkan/vkgears                 -t "$D/usr/bin/"
+install -vDm755 src/xdemos/{glxinfo,glxgears}      -t "$D/usr/bin/"
+install -vDm755 src/vulkan/vkgears                 -t "$D/usr/bin/"
 
 }
