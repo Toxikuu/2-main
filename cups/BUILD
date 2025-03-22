@@ -53,7 +53,7 @@ EOF
 
 }
 
-2i() {
+2z() {
 
 gtk-update-icon-cache -qtf /usr/share/icons/hicolor
 

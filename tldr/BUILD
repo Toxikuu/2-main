@@ -19,7 +19,7 @@ install -vDm755 target/release/tldr "$D/usr/bin/tldr"
 
 }
 
-2i() {
+2z() {
 
 tldr --update
 

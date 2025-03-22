@@ -34,7 +34,7 @@ ni
 
 }
 
-2i() {
+2z() {
 
 gdk-pixbuf-query-loaders --update-cache
 

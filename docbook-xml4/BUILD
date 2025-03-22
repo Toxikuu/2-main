@@ -26,7 +26,7 @@ cp -v -af --no-preserve=ownership docbook.cat *.dtd ent/ *.mod \
 
 }
 
-2i() {
+2z() {
 
 # create and populate the /etc/xml/docbook catalog file
 if [ ! -e /etc/xml/docbook ]; then

@@ -32,7 +32,7 @@ install -vm644  RELEASE-NOTES* NEWS* \
 
 }
 
-2i() {
+2z() {
 
 # create and populate the xml catalog file
 if [ ! -d /etc/xml ]; then install -vdm755 /etc/xml; fi

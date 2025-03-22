@@ -33,7 +33,7 @@ unset ZONEINFO
 
 }
 
-2i() {
+2z() {
 
 TZ=${TZ:-$(curl -s https://ipinfo.io | grep timezone | cut -d '"' -f4 || echo 'America/New_York')}
 

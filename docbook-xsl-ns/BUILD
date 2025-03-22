@@ -29,7 +29,7 @@ ln -sv VERSION "$D"/usr/share/xml/docbook/xsl-stylesheets-$VERS/VERSION.xsl
 
 }
 
-2i() {
+2z() {
 
 # create and populate xml catalog file
 if [ ! -d /etc/xml ]; then install -vdm755 /etc/xml; fi
