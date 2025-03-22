@@ -6,12 +6,16 @@ categories = [
     "lib",
     "graphics",
 ]
-timestamp = "2025-03-21 18:59:15"
+timestamp = "2025-03-21 19:00:40"
 dependencies = [
-    "libxext",
-    "libx11",
-    "xorgproto",
-    "meson",
-    "python",
+    "libxext,",
+    "libx11,",
+    "xorgproto,",
+    "meson,",
+    "python,",
 ]
 upstream = "https://gitlab.freedesktop.org/glvnd/libglvnd.git"
+
+[source]
+url = "https://gitlab.freedesktop.org/glvnd/libglvnd/-/archive/v1.7.0/libglvnd-v1.7.0.tar.gz"
+hash = "PcvWnLA9BUH7pXzhx-kn9V5Pe-o_ojgJZbFYP3a3j5s"
