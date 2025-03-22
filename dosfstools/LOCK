@@ -1,0 +1,14 @@
+repo = "main"
+name = "dosfstools"
+version = "4.2"
+description = "DOS filesystem utilities"
+categories = [
+    "utils",
+    "fs",
+]
+timestamp = "2025-03-22 00:19:29"
+upstream = "https://github.com/dosfstools/dosfstools.git"
+
+[source]
+url = "https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz"
+hash = "ZJJu6_kAktyiGxQlmlMBt7mOexlD6KIBx9cmCEgJtSc"
