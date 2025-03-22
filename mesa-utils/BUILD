@@ -30,8 +30,11 @@ mkdir -pv build
 cd        build
 
 ms -D gles1=disabled -D with-system-data-files=true
-meson configure --no-pager  # display configuration (may be useful in logs)
-meson compile
+
+pushd ..
+meson configure --no-pager -C build # display configuration (may be useful in logs)
+meson compile -C build
+popd
 
 install -vDm755 src/egl/opengl/\
 {eglinfo,eglgears_wayland,eglgears_x11,eglkms,egltri_wayland,\
