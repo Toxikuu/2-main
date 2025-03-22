@@ -6,7 +6,7 @@ categories = [
     "utils",
     "graphics",
 ]
-timestamp = "2025-03-21 21:39:23"
+timestamp = "2025-03-21 21:39:42"
 dependencies = [
     "libdrm",
     "libx11",
