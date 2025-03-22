@@ -13,7 +13,8 @@ EXTRA=()
 
 with meson ninja
 
-ms  -D udev=true \
+ms  -D udev=true          \
+    -D tests=false        \
     -D valgrind=disabled  \
     -D cairo-tests=disabled
 
@@ -23,10 +24,12 @@ ni
 cd ..
 m32=1
 
-ms  -D udev=true \
+ms  -D udev=true          \
+    -D tests=false        \
     -D valgrind=disabled  \
     -D cairo-tests=disabled
 nj
 ni
 
 }
+#d Disable building tests that are not run
