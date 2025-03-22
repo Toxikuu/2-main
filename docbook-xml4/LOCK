@@ -3,7 +3,7 @@ name = "docbook-xml4"
 version = "4.5"
 description = "Widely-used XML scheme for writing documentation"
 categories = ["doc"]
-timestamp = "2025-03-22 00:23:56"
+timestamp = "2025-03-22 00:31:13"
 dependencies = [
     "libarchive",
     "libxml2",
