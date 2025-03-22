@@ -3,10 +3,10 @@ name = "krb5"
 version = "1.21.3"
 description = "Kerberos network authentication system"
 categories = ["net"]
-timestamp = "2025-03-22 00:12:20"
+timestamp = "2025-03-22 00:13:28"
 upstream = "https://github.com/krb5/krb5.git"
 version_command = '''git ls-remote --tags --refs 'https://github.com/krb5/krb5.git' | sed 's@.*/@@' | grep '^krb5-.\+-final$' | cut -d- -f2 | sort -V | tail -n1'''
 
 [source]
-url = "https://github.com/krb5/krb5/archive/refs/tags/krb5-1.21.3-final.tar.gz"
+url = "https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz"
 hash = "IVfZICDUCO1j682IapLRNGoTg7D5ESOgRztPabSiSGE"
