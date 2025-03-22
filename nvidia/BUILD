@@ -2,10 +2,15 @@ NAME="nvidia"
 VERS="570.133.07"
 DESC="The NVIDIA drivers"
 CATG="drivers"
-UPST="https://github.com/NVIDIA/open-gpu-kernel-modules.git" # often inaccurate because nvidia
+UPST="https://github.com/NVIDIA/open-gpu-kernel-modules.git"  # often inaccurate because nvidia
 DEPS=(
-    "kernel" # nvidia must be rebuilt whenever the kernel sources change
+    "tox/mesa"
+    "kernel"  # nvidia must be rebuilt whenever the kernel sources change
     "libglvnd"
+    "libvdpau"
+    "vulkan-loader"
+    "wayland"
+    "xorg-server"  # sorta circular (nvidia -> xorg-server -> nvidia); only circular because of nvidia-xconfig
 )
 
 EXTRA="https://us.download.nvidia.com/XFree86/Linux-x86_64/$VERS/NVIDIA-Linux-x86_64-$VERS.run"
@@ -48,6 +53,18 @@ _cfg_opts=(
 "$SRC/NVIDIA-Linux-x86_64-$VERS.run" ${_cfg_opts[@]}
 
 # create a dri pkgconfig file for packages expecting one
-install -vDm644 "$PORT"/usr/lib/pkgconfig/dri.pc "$D"/usr/lib/pkgconfig/dri.pc
+mkdir -pv "$D"/usr/lib/pkgconfig
+cat > "$D"/usr/lib/pkgconfig/dri.pc << EOF
+prefix=/usr
+includedir=\${prefix}/include
+
+dridriverdir=/usr/lib/dri
+
+Name: dri
+Description: Direct Rendering Infrastructure
+Version: $VERS
+Requires.private: libdrm >= 2.4.109
+Cflags: -I\${includedir}
+EOF
 
 }
