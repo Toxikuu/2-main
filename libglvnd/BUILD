@@ -22,4 +22,11 @@ ms
 nj
 ni
 
+m32=1
+cd ..
+
+ms
+nj
+ni
+
 }
