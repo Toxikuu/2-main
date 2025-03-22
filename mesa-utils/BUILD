@@ -29,7 +29,7 @@ tpatch "$SRC"/mesa-demos-system-data.patch
 mkdir -pv build
 cd        build
 
-ms -D gles1=disabled -D with-system-data-files
+ms -D gles1=disabled -D with-system-data-files=true
 meson configure --no-pager  # display configuration (may be useful in logs)
 meson compile
 
