@@ -6,7 +6,7 @@ UPST="https://github.com/krb5/krb5.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '^krb5-.\\+-final$' | cut -d- -f2 | sort -V | tail -n1"
 DEPS=()
 
-SOURCE="https://github.com/krb5/krb5/archive/refs/tags/krb5-$VERS-final.tar.gz"
+SOURCE="https://kerberos.org/dist/krb5/${VERS%.*}/krb5-$VERS.tar.gz"
 EXTRA=()
 
 2b() {
