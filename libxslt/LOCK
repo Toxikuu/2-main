@@ -3,7 +3,7 @@ name = "libxslt"
 version = "1.1.43"
 description = "XSLT libraries extending libxml2"
 categories = ["lib"]
-timestamp = "2025-03-22 00:25:11"
+timestamp = "2025-03-22 00:33:55"
 dependencies = [
     "libxml2",
     "r^docbook-xml4",
