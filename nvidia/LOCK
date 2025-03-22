@@ -3,10 +3,15 @@ name = "nvidia"
 version = "570.133.07"
 description = "The NVIDIA drivers"
 categories = ["drivers"]
-timestamp = "2025-03-21 22:51:42"
+timestamp = "2025-03-21 22:56:57"
 dependencies = [
+    "tox/mesa",
     "kernel",
     "libglvnd",
+    "libvdpau",
+    "vulkan-loader",
+    "wayland",
+    "xorg-server",
 ]
 upstream = "https://github.com/NVIDIA/open-gpu-kernel-modules.git"
 
