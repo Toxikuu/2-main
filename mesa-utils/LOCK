@@ -1,0 +1,28 @@
+repo = "main"
+name = "mesa-utils"
+version = "9.0.0"
+description = "Essential Mesa utilities"
+categories = [
+    "utils",
+    "graphics",
+]
+timestamp = "2025-03-21 21:37:33"
+dependencies = [
+    "libdrm",
+    "libx11",
+    "libxcb",
+    "libxkbcommon",
+    "vulkan-loader",
+    "wayland",
+    "wayland-protocols",
+    "o^libglvnd",
+]
+upstream = "https://gitlab.freedesktop.org/mesa/demos.git"
+
+[source]
+url = "https://archive.mesa3d.org/demos/mesa-demos-9.0.0.tar.xz"
+hash = "MEaj0mp7BRr3690lel8jv-sWDK1u2VIynN_x6fHtSWs"
+
+[[extra]]
+url = "https://src.fedoraproject.org/rpms/mesa-demos/raw/f42/f/mesa-demos-system-data.patch"
+hash = "5LqgCtF4GTS6_XSjrywERAHSIH8ZheeZR1StLaB4HeE"
