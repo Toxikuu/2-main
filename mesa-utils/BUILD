@@ -28,10 +28,8 @@ tpatch "$SRC"/mesa-demos-system-data.patch
 
 ms -D gles1=disabled -D with-system-data-files=true
 
-pushd ..
-meson configure --no-pager -C build # display configuration (may be useful in logs)
-meson compile -C build
-popd
+meson configure --no-pager  # display configuration (may be useful in logs)
+meson compile
 
 install -vDm755 src/egl/opengl/\
 {eglinfo,eglgears_wayland,eglgears_x11,eglkms,egltri_wayland,\
