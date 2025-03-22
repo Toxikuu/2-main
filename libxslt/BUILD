@@ -9,7 +9,7 @@ DEPS=(
     "r^docbook-xsl-nons"
 )
 
-SOURCE="https://github.com/GNOME/libxslt/archive/refs/tags/v$VERS.tar.gz"
+SOURCE="https://download.gnome.org/sources/libxslt/${VERS%.*}/libxslt-$VERS.tar.xz"
 EXTRA=()
 
 2b() {
