@@ -23,7 +23,7 @@ cp -v -R VERSION assembly common eclipse epub epub3 extensions fo        \
          xhtml xhtml-1_1 xhtml5                                          \
     "$D"/usr/share/xml/docbook/xsl-stylesheets-nons-$VERS
 
-ln -s VERSION "$D"/usr/share/xml/docbook/xsl-stylesheets-nons-$VERS/VERSION.xsl
+ln -sv VERSION "$D"/usr/share/xml/docbook/xsl-stylesheets-nons-$VERS/VERSION.xsl
 
 install -vDm644 README \
                     "$D"/usr/share/doc/docbook-xsl-nons-$VERS/README.txt
