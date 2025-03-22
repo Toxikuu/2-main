@@ -3,7 +3,7 @@ name = "nvidia"
 version = "570.133.07"
 description = "The NVIDIA drivers"
 categories = ["drivers"]
-timestamp = "2025-03-20 16:46:29"
+timestamp = "2025-03-21 22:51:42"
 dependencies = [
     "kernel",
     "libglvnd",
