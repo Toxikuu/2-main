@@ -47,4 +47,7 @@ _cfg_opts=(
 
 "$SRC/NVIDIA-Linux-x86_64-$VERS.run" ${_cfg_opts[@]}
 
+# create a dri pkgconfig file for packages expecting one
+install -vDm644 "$PORT"/usr/lib/pkgconfig/dri.pc "$D"/usr/lib/pkgconfig/dri.pc
+
 }
