@@ -4,6 +4,7 @@ DESC="Essential Mesa utilities"
 CATG="utils graphics"
 UPST="https://gitlab.freedesktop.org/mesa/demos.git"
 DEPS=(
+    "libdecor"
     "libdrm"
     "libx11"
     "libxcb"
@@ -26,7 +27,7 @@ with meson
 # https://src.fedoraproject.org/rpms/mesa-demos/blob/f42/f/mesa-demos-system-data.patch
 tpatch "$SRC"/mesa-demos-system-data.patch
 
-ms -D gles1=disabled -D with-system-data-files=true
+ms -D gles1=disabled -D with-system-data-files=true --wrap-mode=nofallback
 
 meson configure --no-pager  # display configuration (may be useful in logs)
 meson compile
