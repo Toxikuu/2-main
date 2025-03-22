@@ -4,11 +4,11 @@ DESC="GL Vendor-Neutral Dispatch library"
 CATG="lib graphics"
 UPST="https://gitlab.freedesktop.org/glvnd/libglvnd.git"
 DEPS=(
-    libxext
-    libx11
-    xorgproto
-    meson
-    python
+    "libxext",
+    "libx11",
+    "xorgproto",
+    "meson",
+    "python",
 )
 
 SOURCE="https://gitlab.freedesktop.org/glvnd/libglvnd/-/archive/v$VERS/libglvnd-v$VERS.tar.gz"
