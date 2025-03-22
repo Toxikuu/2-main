@@ -6,7 +6,7 @@ categories = [
     "tui",
     "net",
 ]
-timestamp = "2025-03-18 22:14:23"
+timestamp = "2025-03-22 00:05:14"
 dependencies = ["o^gnutls"]
 upstream = "https://lynx.invisible-island.net/"
 version_command = "curl -s 'https://lynx.invisible-island.net/' | grep 'recent stable release is' | cut -d' ' -f9 | tr -d ';'"
