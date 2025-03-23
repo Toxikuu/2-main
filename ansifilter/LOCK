@@ -6,8 +6,9 @@ categories = [
     "cli",
     "utils",
 ]
-timestamp = "2025-03-21 22:19:16"
+timestamp = "2025-03-23 14:44:19"
 upstream = "https://gitlab.com/saalen/ansifilter.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.com/saalen/ansifilter.git' | sed -e 's@.*/@@' -e 's@v@@' | sort -V | tail -n1"
 
 [source]
 url = "https://gitlab.com/saalen/ansifilter/-/archive/2.21/ansifilter-2.21.tar.bz2"
