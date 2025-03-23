@@ -1,0 +1,12 @@
+repo = "main"
+name = "mdbook"
+version = "0.4.47"
+description = "Create a book from markdown files"
+categories = ["doc"]
+timestamp = "2025-03-23 17:14:59"
+dependencies = ["rust"]
+upstream = "https://github.com/rust-lang/mdBook.git"
+
+[source]
+url = "https://github.com/rust-lang/mdBook/archive/refs/tags/v0.4.47.tar.gz"
+hash = "hGpZyoa80BQyImeZW6MHzWoZcIH0t10IVZbXI92KYz4"
