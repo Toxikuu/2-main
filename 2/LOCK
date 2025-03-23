@@ -3,7 +3,7 @@ name = "2"
 version = "0.0.92"
 description = "Source-based LFS package manager"
 categories = ["core"]
-timestamp = "2025-03-23 17:10:37"
+timestamp = "2025-03-23 17:17:55"
 dependencies = [
     "rust",
     "tar",
