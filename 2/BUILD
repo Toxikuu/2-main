@@ -17,8 +17,9 @@ EXTRA=()
 
 with rust
 
-cfg
+cfg --disable-conf --disable-main
 mk
 mi
 
 }
+#d saner defaults
