@@ -1,0 +1,16 @@
+repo = "main"
+name = "xdotool"
+version = "3.20211022.1"
+description = "Fake keyboard/moouse input and window management for X"
+categories = ["utils"]
+timestamp = "2025-03-23 18:36:17"
+dependencies = [
+    "libxinerama",
+    "libxkbcommon",
+    "libxtst",
+]
+upstream = "https://github.com/jordansissel/xdotool.git"
+
+[source]
+url = "https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz"
+hash = "lvD6z95teOrK01uRsPRv7NCzXkdMA-AOMNo_3TRfmto"
