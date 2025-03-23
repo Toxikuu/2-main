@@ -1,0 +1,26 @@
+repo = "main"
+name = "alacritty"
+version = "0.15.1"
+description = "Cross-platform OpenGL terminal emulator"
+categories = [
+    "gui",
+    "term",
+]
+timestamp = "2025-03-23 18:55:38"
+dependencies = [
+    "rust",
+    "ncurses",
+    "libxcb",
+    "freetype",
+    "fontconfig",
+    "libxi",
+    "libxcursor",
+    "libxkbcommon",
+    "libxrandr",
+    "desktop-file-utils",
+]
+upstream = "https://github.com/alacritty/alacritty.git"
+
+[source]
+url = "https://github.com/alacritty/alacritty/archive/refs/tags/v0.15.1.tar.gz"
+hash = "uBTjDGJxriMVjGbg4jd8NgC7JAQfo4KjboG-Vk7rLjY"
