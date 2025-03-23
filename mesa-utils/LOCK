@@ -6,7 +6,7 @@ categories = [
     "utils",
     "graphics",
 ]
-timestamp = "2025-03-21 21:41:51"
+timestamp = "2025-03-23 14:45:28"
 dependencies = [
     "libdecor",
     "libdrm",
@@ -19,6 +19,7 @@ dependencies = [
     "o^libglvnd",
 ]
 upstream = "https://gitlab.freedesktop.org/mesa/demos.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/mesa/demos.git' | sed 's@.*/@@' | grep mesa-demos | tail -n1 | cut -d- -f3"
 
 [source]
 url = "https://archive.mesa3d.org/demos/mesa-demos-9.0.0.tar.xz"
