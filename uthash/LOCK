@@ -1,0 +1,11 @@
+repo = "main"
+name = "uthash"
+version = "2.3.0"
+description = "C macros for hash tables and more"
+categories = ["lib"]
+timestamp = "2025-03-23 18:41:03"
+upstream = "https://github.com/troydhanson/uthash.git"
+
+[source]
+url = "https://github.com/troydhanson/uthash/archive/refs/tags/v2.3.0.tar.gz"
+hash = "4QOCq3VRi62DGeuSKtBPkHyyDMy0UaOqmAydAF5mGsw"
