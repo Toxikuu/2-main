@@ -3,6 +3,7 @@ VERS="9.0.0"
 DESC="Essential Mesa utilities"
 CATG="utils graphics"
 UPST="https://gitlab.freedesktop.org/mesa/demos.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep mesa-demos | tail -n1 | cut -d- -f3"
 DEPS=(
     "libdecor"
     "libdrm"
