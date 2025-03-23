@@ -1,0 +1,21 @@
+repo = "main"
+name = "picom"
+version = "12.5"
+description = "Lightweight X compositor with animation support"
+timestamp = "2025-03-23 18:42:34"
+dependencies = [
+    "dbus",
+    "libepoxy",
+    "xcb-util-image",
+    "xcb-util-renderutil",
+    "pixman",
+    "libconfig",
+    "pcre2",
+    "libev",
+    "uthash",
+]
+upstream = "https://github.com/yshui/picom.git"
+
+[source]
+url = "https://github.com/yshui/picom/archive/refs/tags/v12.5.tar.gz"
+hash = "Yn-l18WQ3zuo0sQes104WfeCa9KPpJ6SoOBPtg7XeQQ"
