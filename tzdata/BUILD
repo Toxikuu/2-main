@@ -1,5 +1,5 @@
 NAME="tzdata"
-VERS="2025a"
+VERS="2025b"
 DESC="Timezone data"
 UPST="https://data.iana.org/time-zones/releases/?C=M;O=D"
 VCMD="curl -s 'https://data.iana.org/time-zones/releases/?C=M;O=D' | grep tzdb- | head -n1 | cut -d- -f2 | cut -d. -f1"
