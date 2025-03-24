@@ -1,0 +1,18 @@
+repo = "main"
+name = "x265"
+version = "4.1"
+description = "Library for envoding video streams into the H.265/HEVC format"
+categories = [
+    "lib",
+    "video",
+]
+timestamp = "2025-03-24 17:31:56"
+dependencies = [
+    "cmake",
+    "nasm",
+]
+upstream = "https://bitbucket.org/multicoreware/x265_git.git"
+
+[source]
+url = "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz"
+hash = "oxaZxqiYBrdLAVHl5qffZd5LSQUEgv5ev4pDedevjyk"
