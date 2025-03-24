@@ -3,11 +3,12 @@ name = "libass"
 version = "0.17.3"
 description = "Library for the ASS subtitle format"
 categories = ["lib"]
-timestamp = "2025-03-24 16:43:12"
+timestamp = "2025-03-24 18:16:10"
 dependencies = [
     "freetype",
     "fribidi",
     "fontconfig",
+    "nasm",
 ]
 upstream = "https://github.com/libass/libass.git"
 
