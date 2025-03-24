@@ -6,7 +6,7 @@ categories = [
     "gui",
     "term",
 ]
-timestamp = "2025-03-23 19:20:55"
+timestamp = "2025-03-23 19:21:16"
 dependencies = ["libxft"]
 upstream = "git://git.suckless.org/st"
 
