@@ -1,0 +1,19 @@
+repo = "main"
+name = "giflib"
+version = "5.2.2"
+description = "GIF libraries and utilities"
+categories = [
+    "lib",
+    "img",
+]
+timestamp = "2025-03-23 21:30:28"
+dependencies = ["xmlto"]
+upstream = "https://git.code.sf.net/p/giflib/code"
+
+[source]
+url = "https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz"
+hash = "vn_70FfK3r4qoURUL9kMaDjGoIO16KkEi47jtmsp1fs"
+
+[[extra]]
+url = "https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.patch"
+hash = "EyOT34afkcn_YmvDwPu3uO10_JP1Q67FbF7a0h9WdD0"
