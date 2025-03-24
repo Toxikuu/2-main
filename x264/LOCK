@@ -1,0 +1,16 @@
+repo = "main"
+name = "x264"
+version = "fe9e4a7f39d7a9fd208e4592238f9809d5936439"
+description = "Library for encoding video streams into the H.264/MPEG-4 AVC format"
+categories = [
+    "lib",
+    "video",
+]
+timestamp = "2025-03-24 17:00:47"
+dependencies = ["nasm"]
+upstream = "https://code.videolan.org/videolan/x264.git"
+version_command = "git ls-remote 'https://code.videolan.org/videolan/x264.git' HEAD"
+
+[source]
+url = "https://code.videolan.org/videolan/x264/-/archive/master/x264-master.tar.bz2"
+hash = "Hy2QXINXC_3477kWSn84i554MnHXRWN8G--ZWJEYZvY"
