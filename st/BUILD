@@ -38,6 +38,6 @@ done
 # Allow custom config.h
 [[ -e "$PORT"/config.h ]] && cp -vf "$PORT"/config.h .
 
-mi clean  # roughly desugars to ``make DESTDIR="$D" clean install``
+mi CC=gcc clean  # roughly desugars to ``make CC=gcc DESTDIR="$D" clean install``
 
 }
