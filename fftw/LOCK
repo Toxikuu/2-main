@@ -1,0 +1,14 @@
+repo = "main"
+name = "fftw"
+version = "3.3.10"
+description = "Library for computing the discrete Fourier transform"
+categories = [
+    "lib",
+    "math",
+]
+timestamp = "2025-03-24 16:21:42"
+upstream = "https://github.com/FFTW/fftw3.git"
+
+[source]
+url = "http://fftw.org/fftw-3.3.10.tar.gz"
+hash = "VskyVJhSzdz6_as4ILAgDHdCZ1vpIXnlnmIVs0DiZGc"
