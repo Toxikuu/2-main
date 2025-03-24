@@ -1,0 +1,37 @@
+repo = "main"
+name = "ffmpeg"
+version = "7.1.1"
+description = "Play, record, convert, and stream audio and video"
+categories = [
+    "audio",
+    "video",
+    "utils",
+    "cli",
+]
+timestamp = "2025-03-24 18:23:20"
+dependencies = [
+    "libaom",
+    "libass",
+    "fdk-aac",
+    "freetype",
+    "lame",
+    "libvorbis",
+    "libvpx",
+    "opus",
+    "x264",
+    "x265",
+    "yasm",
+    "alsa-lib",
+    "libva",
+    "sdl2",
+    "pulseaudio",
+]
+upstream = "https://git.ffmpeg.org/ffmpeg.git"
+
+[source]
+url = "https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz"
+hash = "czmEOV4Nu-XARqvaLcSaVUTn4OHiNmu6hJIirp46A7E"
+
+[[extra]]
+url = "https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-7.1.1-chromium_method-1.patch"
+hash = "unW-0RIUJbFbSFwK8QZzkAq530jYbmSnBq_z75Ty4Tk"
