@@ -1,0 +1,39 @@
+repo = "main"
+name = "mpv"
+version = "0.39.0"
+description = "Free, open source, cross-platform media player"
+categories = [
+    "audio",
+    "video",
+    "utils",
+]
+timestamp = "2025-03-24 18:41:22"
+dependencies = [
+    "alsa-lib",
+    "ffmpeg",
+    "libass",
+    "libplacebo",
+    "pulseaudio",
+    "libjpeg-turbo",
+    "libva",
+    "libvdpau",
+    "luajit",
+    "uchardet",
+    "vulkan-loader",
+    "o^sdl2",
+    "gtk3:",
+    "for",
+    "the",
+    "icon",
+    "cache",
+    "desktop-file-utils:",
+    "for",
+    "the",
+    "desktop",
+    "cache",
+]
+upstream = "https://github.com/mpv-player/mpv.git"
+
+[source]
+url = "https://github.com/mpv-player/mpv/archive/v0.39.0/mpv-0.39.0.tar.gz"
+hash = "LKkkN6_7YsK1WbRBnqR4XHDQI1kFAOilLpXqOrRVRoM"
