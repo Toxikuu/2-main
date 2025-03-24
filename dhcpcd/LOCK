@@ -3,7 +3,7 @@ name = "dhcpcd"
 version = "10.2.2"
 description = "Fully-featured, lightweight DHCP client"
 categories = ["net"]
-timestamp = "2025-03-24 00:12:46"
+timestamp = "2025-03-24 00:17:11"
 dependencies = [
     "openssl",
     "bash",
