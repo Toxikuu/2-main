@@ -3,7 +3,7 @@ VERS="2.3.3"
 DESC="GD Graphics Library"
 CATG="lib graphics"
 UPST="https://github.com/libgd/libgd.git"
-VCMD="git ls-remote '$UPST' | sed 's@.*/@@' | grep '^gd-[0-9]\\.' | cut -d- -f2 | sort -V | tail -n1"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '^gd-[0-9]\\.' | cut -d- -f2 | sort -V | tail -n1"
 DEPS=(
     "fontconfig"
     "libavif"
