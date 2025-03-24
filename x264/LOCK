@@ -6,10 +6,9 @@ categories = [
     "lib",
     "video",
 ]
-timestamp = "2025-03-24 17:00:47"
+timestamp = "2025-03-24 17:27:35"
 dependencies = ["nasm"]
 upstream = "https://code.videolan.org/videolan/x264.git"
-version_command = "git ls-remote 'https://code.videolan.org/videolan/x264.git' HEAD"
 
 [source]
 url = "https://code.videolan.org/videolan/x264/-/archive/master/x264-master.tar.bz2"
