@@ -28,9 +28,10 @@ rm -rf "$D"/usr/lib/{sysusers,tmpfiles}.d
 
 2z() {
 
-getent group polkitd || groupadd -fg 27 polkitd
+groupadd -fg 27 polkitd
 id polkitd || useradd -c "PolicyKit Daemon Owner" \
     -d /etc/polkit-1 -u 27 \
     -g polkitd -s /bin/false polkitd
 
 }
+#d removed redundacy; groupadd -f exits 0 if group polkitd exists
