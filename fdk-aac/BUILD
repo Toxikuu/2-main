@@ -10,6 +10,8 @@ EXTRA=()
 
 2b() {
 
+./autogen.sh
+
 cfg
 mk
 mi
