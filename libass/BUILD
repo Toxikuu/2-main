@@ -7,7 +7,7 @@ DEPS=(
     "freetype"
     "fribidi"
     "fontconfig"
-    # also nasm
+    "nasm"
 )
 
 SOURCE="https://github.com/libass/libass/releases/download/$VERS/libass-$VERS.tar.xz"
