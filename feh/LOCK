@@ -1,0 +1,20 @@
+repo = "main"
+name = "feh"
+version = "3.10.3"
+description = "Fast, light image viewer"
+categories = [
+    "img",
+    "gui",
+    "utils",
+]
+timestamp = "2025-03-24 16:10:25"
+dependencies = [
+    "imlib2",
+    "libpng",
+    "curl",
+]
+upstream = "https://github.com/derf/feh.git"
+
+[source]
+url = "https://feh.finalrewind.org/feh-3.10.3.tar.bz2"
+hash = "VCbieZdwIXrx4BwujBgtnKhofYRhMyHYq0pm_kBB6cg"
