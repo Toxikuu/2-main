@@ -1,0 +1,11 @@
+repo = "main"
+name = "nasm"
+version = "2.16.03"
+description = "Netwide Assembler"
+categories = ["lang"]
+timestamp = "2025-03-24 18:15:47"
+upstream = "https://github.com/netwide-assembler/nasm.git"
+
+[source]
+url = "https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.xz"
+hash = "FBKhx2C70F2wJrbA0WV6_9ZjHNCmPN229zzG1KphYUg"
