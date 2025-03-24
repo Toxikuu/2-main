@@ -35,4 +35,3 @@ ln -sfv libelogind.pc "$D"/usr/lib32/pkgconfig/libsystemd.pc
 cp -av {"$PORT","$D"}/etc
 
 }
-#d trimmed trailing whitespace
