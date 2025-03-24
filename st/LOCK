@@ -1,0 +1,15 @@
+repo = "main"
+name = "st"
+version = "0.9.2"
+description = "Suckless terminal emulator"
+categories = [
+    "gui",
+    "term",
+]
+timestamp = "2025-03-23 19:20:55"
+dependencies = ["libxft"]
+upstream = "git://git.suckless.org/st"
+
+[source]
+url = "https://dl.suckless.org/st/st-0.9.2.tar.gz"
+hash = "ayFdT0crIdYjLzDyIRF6d34kvP7miVXd77dCZGf5SUs"
