@@ -68,6 +68,7 @@ Cflags: -I\${includedir}
 EOF
 
 # blacklist nouveau
+mkdir -pv "$D"/etc/modprobe.d
 cat >> "$D"/etc/modprobe.d/nvfb.conf << "EOF"
 # Begin /etc/modprobe.d/nvfb.conf
 
@@ -78,4 +79,3 @@ blacklist nouveau
 EOF
 
 }
-#d destdir hotfix
