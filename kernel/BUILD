@@ -5,7 +5,8 @@ VCMD="curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cu
 UPST="https://kernel.org"
 CATG="critical core"
 
-SOURCE="https://cdn.kernel.org/pub/linux/kernel/v${VERS%.*.*}.x/linux-$VERS.tar.gz"
+VER=$(echo "$VERS" | cut -d. -f1)
+SOURCE="https://cdn.kernel.org/pub/linux/kernel/v$VER.x/linux-$VERS.tar.gz"
 EXTRA=()
 
 EXTRACT=1
@@ -64,4 +65,4 @@ fi
 2z() {
     warn "The kernel has been compiled and installed to /boot. You must now specify it in your bootloader or whatever. Also, if you use nvidia drivers, you're gonna wanna rebuild those."
 }
-#d tweaked download link
+#d hopefully made the source link less prone to failure
