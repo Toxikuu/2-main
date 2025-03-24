@@ -2,7 +2,7 @@ repo = "main"
 name = "elogind"
 version = "255.17"
 description = '''Systemd's "logind", extracted to a standalone package'''
-timestamp = "2025-02-20 20:19:48"
+timestamp = "2025-03-24 15:07:48"
 upstream = "https://github.com/elogind/elogind.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/elogind/elogind.git' | sed 's@.*/@@' | grep -Ev 'pre|r|alpha' | sed 's@v@@' | sort -V | tail -n1"
 
