@@ -6,7 +6,7 @@ categories = [
     "gui",
     "term",
 ]
-timestamp = "2025-03-23 18:55:38"
+timestamp = "2025-03-24 16:11:33"
 dependencies = [
     "rust",
     "ncurses",
