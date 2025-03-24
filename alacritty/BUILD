@@ -31,8 +31,9 @@ desktop-file-install -vm644 --dir "$D"/usr/share/applications extra/linux/Alacri
 
 }
 
-2i() {
+2z() {
 
 update-desktop-database
 
 }
+#d typo
