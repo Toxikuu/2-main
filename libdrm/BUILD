@@ -4,7 +4,11 @@ DESC="Userspace interface to kernel DRM services"
 CATG="graphics"
 UPST="https://gitlab.freedesktop.org/mesa/drm.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep 'libdrm-' | grep -v '_' | sort -V | tail -n1"
-DEPS=()
+DEPS=(
+    "libpciaccess"
+    "glibc"
+    "meson"
+)
 
 SOURCE="https://dri.freedesktop.org/libdrm/libdrm-$VERS.tar.xz"
 EXTRA=()
@@ -13,23 +17,22 @@ EXTRA=()
 
 with meson ninja
 
-ms  -D udev=true          \
-    -D tests=false        \
-    -D valgrind=disabled  \
+_cfg_opts=(
+    -D udev=true
+    -D tests=false
+    -D valgrind=disabled
     -D cairo-tests=disabled
+)
 
+ms ${_cfg_opts[@]}
 nj
 ni
 
 cd ..
 m32=1
 
-ms  -D udev=true          \
-    -D tests=false        \
-    -D valgrind=disabled  \
-    -D cairo-tests=disabled
+ms ${_cfg_opts[@]}
 nj
 ni
 
 }
-#d Disable building tests that are not run
