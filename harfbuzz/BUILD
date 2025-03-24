@@ -18,11 +18,11 @@ _cfg_opts=(
     -D glib=enabled
     -D gobject=enabled
     -D icu=enabled
+    -D introspection=enabled
+    -D utilities=enabled
 
     -D tests=disabled
-    -D introspection=enabled
     -D doc_tests=false
-    -D utilities=enabled
 )
 
 ms ${_cfg_opts[@]}
@@ -32,7 +32,13 @@ ni
 cd ..
 m32=1
 
-ms ${_cfg_opts[@]}
+ms ${_cfg_opts[@]}        \
+    -D glib=disabled      \
+    -D gobject=disabled   \
+    -D cairo=disabled     \
+    -D utilities=disabled \
+    -D introspection=disabled
+    
 nj
 ni
 
