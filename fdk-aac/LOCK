@@ -1,0 +1,14 @@
+repo = "main"
+name = "fdk-aac"
+version = "2.0.3"
+description = "Standalone library of Android's Fraunhofer FDK AAC code"
+categories = [
+    "lib",
+    "audio",
+]
+timestamp = "2025-03-24 16:47:07"
+upstream = "https://github.com/mstorsjo/fdk-aac"
+
+[source]
+url = "https://github.com/mstorsjo/fdk-aac/archive/refs/tags/v2.0.3.tar.gz"
+hash = "4lZxzZaxC62JaqQquRppWp5XM5UmK67U5KL_F41qOng"
