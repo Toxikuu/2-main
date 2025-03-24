@@ -30,3 +30,4 @@ mi
 install -vDm754 "$PORT"/dhcpcd-service "$D"/usr/lib/services/dhcpcd
 
 }
+#d added dhcpcd-service
