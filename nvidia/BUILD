@@ -68,7 +68,7 @@ Cflags: -I\${includedir}
 EOF
 
 # blacklist nouveau
-cat >> /etc/modprobe.d/nvfb.conf << "EOF"
+cat >> "$D"/etc/modprobe.d/nvfb.conf << "EOF"
 # Begin /etc/modprobe.d/nvfb.conf
 
 blacklist nvidiafb
@@ -78,3 +78,4 @@ blacklist nouveau
 EOF
 
 }
+#d destdir hotfix
