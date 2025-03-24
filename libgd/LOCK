@@ -6,14 +6,14 @@ categories = [
     "lib",
     "graphics",
 ]
-timestamp = "2025-03-23 22:23:39"
+timestamp = "2025-03-23 22:23:50"
 dependencies = [
     "fontconfig",
     "libavif",
     "libwebp",
 ]
 upstream = "https://github.com/libgd/libgd.git"
-version_command = '''git ls-remote 'https://github.com/libgd/libgd.git' | sed 's@.*/@@' | grep '^gd-[0-9]\.' | cut -d- -f2 | sort -V | tail -n1'''
+version_command = '''git ls-remote --tags --refs 'https://github.com/libgd/libgd.git' | sed 's@.*/@@' | grep '^gd-[0-9]\.' | cut -d- -f2 | sort -V | tail -n1'''
 
 [source]
 url = "https://github.com/libgd/libgd/releases/download/gd-2.3.3/libgd-2.3.3.tar.xz"
