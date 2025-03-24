@@ -1,0 +1,14 @@
+repo = "main"
+name = "imlib2"
+version = "1.12.3"
+description = "Image loading and rendering library"
+categories = [
+    "lib",
+    "img",
+]
+timestamp = "2025-03-23 19:39:36"
+upstream = "https://git.enlightenment.org/old/legacy-imlib2.git"
+
+[source]
+url = "https://downloads.sourceforge.net/project/enlightenment/imlib2-src/1.12.3/imlib2-1.12.3.tar.xz"
+hash = "liRGVldqPgpvWLeOUU3ckZYirGgGcRvCMYN-7mLB3jQ"
