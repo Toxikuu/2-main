@@ -18,6 +18,7 @@ EXTRA=()
 cfg \
     --disable-input-sndio \
     --disable-input-jack  \
+    --disable-input-oss   \
     --disable-input-portaudio
 mk
 mi
