@@ -1,14 +1,14 @@
 repo = "main"
 name = "iproute2"
-version = "6.13.0"
+version = "6.14.0"
 description = "Programs for IPv4 networking"
 categories = [
     "core",
     "net",
 ]
-timestamp = "2025-02-25 20:17:45"
+timestamp = "2025-03-24 13:21:56"
 upstream = "https://github.com/iproute2/iproute2.git"
 
 [source]
-url = "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.13.0.tar.xz"
-hash = "pDqkMzjYgrRNAeVJ8_EFqSrp_uoyqC-uRaiOekkwKBk"
+url = "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.14.0.tar.xz"
+hash = "ptI1iBUAllkcPQD8J6MkqC7nHXoanup4313xetm4Rh8"
