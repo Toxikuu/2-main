@@ -67,4 +67,14 @@ Requires.private: libdrm >= 2.4.109
 Cflags: -I\${includedir}
 EOF
 
+# blacklist nouveau
+cat >> /etc/modprobe.d/nvfb.conf << "EOF"
+# Begin /etc/modprobe.d/nvfb.conf
+
+blacklist nvidiafb
+blacklist nouveau
+
+# End /etc/modprobe.d/nvfb.conf
+EOF
+
 }
