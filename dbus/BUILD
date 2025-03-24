@@ -57,5 +57,18 @@ ms \
 nj
 ni
 
+# install dbus bootscript
+install -vdm755 "$D"/etc/rc.d/rc{0,1,2,3,4,5,6,S}.d
+install -vdm755 "$D"/etc/rc.d/init.d
+
+install -vDm754 "$PORT"/dbus-init "$D"/etc/rc.d/init.d/dbus
+
+ln -sfv ../init.d/dbus "$D"/etc/rc.d/rc0.d/K30dbus
+ln -sfv ../init.d/dbus "$D"/etc/rc.d/rc1.d/K30dbus
+ln -sfv ../init.d/dbus "$D"/etc/rc.d/rc2.d/S29dbus
+ln -sfv ../init.d/dbus "$D"/etc/rc.d/rc3.d/S29dbus
+ln -sfv ../init.d/dbus "$D"/etc/rc.d/rc4.d/S29dbus
+ln -sfv ../init.d/dbus "$D"/etc/rc.d/rc5.d/S29dbus
+ln -sfv ../init.d/dbus "$D"/etc/rc.d/rc6.d/K30dbus
+
 }
-#d simplified instructions
