@@ -1,0 +1,21 @@
+repo = "main"
+name = "rofi"
+version = "1.7.8"
+description = "Application launcher, window switcher, and dmenu replacement"
+categories = [
+    "gui",
+    "utils",
+]
+timestamp = "2025-03-24 16:08:04"
+dependencies = [
+    "pango",
+    "cairo",
+    "xcb-util",
+    "xcb-util-wm",
+    "xcb-util-cursor",
+]
+upstream = "https://github.com/davatorium/rofi.git"
+
+[source]
+url = "https://github.com/davatorium/rofi/releases/download/1.7.8/rofi-1.7.8.tar.xz"
+hash = "KtkKjEkuC2QgIIjniHlb8LMez6pZ_nRBrSYymNFQZV4"
