@@ -40,3 +40,4 @@ done
 mi clean  # roughly desugars to ``make DESTDIR="$D" clean install``
 
 }
+#d Added patches dir
