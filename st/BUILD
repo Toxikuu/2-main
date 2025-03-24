@@ -18,8 +18,8 @@ EXTRA=()
 2b() {
 
 sed -i config.mk \
-    -e '/X11INC = /s@/usr/X11R6/include@/usr/include/X11' \
-    -e '/X11LIB = /s@/usr/X11R6/lib@/usr/lib'             \
+    -e '/X11INC = /s@/usr/X11R6/include@/usr/include/X11@'  \
+    -e '/X11LIB = /s@/usr/X11R6/lib@/usr/lib@'              \
     -e '/PREFIX = /s@/local@@'
 
 # Apply all patches
