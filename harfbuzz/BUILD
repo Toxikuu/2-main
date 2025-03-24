@@ -1,5 +1,5 @@
 NAME="harfbuzz"
-VERS="10.4.0"
+VERS="11.0.0"
 DESC="OpenType text shaping engine"
 UPST="https://github.com/harfbuzz/harfbuzz.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | sort -V | grep -E '[0-9]' | tail -n1"
@@ -13,17 +13,26 @@ DEPS=( "freetype" ) # circular (freetype -> harfbuzz -> freetype)
 
 with meson ninja
 
-ms  -D graphite2=disabled
+_cfg_opts=(
+    -D graphite2=disabled
+    -D glib=enabled
+    -D gobject=enabled
+    -D icu=enabled
+
+    -D tests=disabled
+    -D introspection=enabled
+    -D doc_tests=disabled
+    -D utilities=enabled
+)
+
+ms ${_cfg_opts[@]}
 nj
 ni
 
 cd ..
 m32=1
 
-ms  -D glib=disabled      \
-    -D cairo=disabled     \
-    -D gobject=disabled   \
-    -D graphite2=disabled
+ms ${_cfg_opts[@]}
 nj
 ni
 
