@@ -10,3 +10,4 @@ Changelog for harfbuzz:
 [0144d4d5baf64843cf08aa495e82239b739dd5b8] [2025-03-03 08:10:52] | Updated harfbuzz: 10.3.0 -> 10.4.0
 [8b5bcfcf552d77f528396edb8f8717017c6f7397] [2025-03-03 08:10:54] | Generated harfbuzz=10.4.0
 [dc7c9a56573d8d876881640a1b115171cea3d226] [2025-03-24 18:32:07] | Updated harfbuzz: 10.4.0 -> 11.0.0
+[3555a8e7a23a1da35d000fac141ca75bd5649c84] [2025-03-24 18:32:10] | Generated harfbuzz=11.0.0
