@@ -3,7 +3,12 @@ name = "libdrm"
 version = "2.4.124"
 description = "Userspace interface to kernel DRM services"
 categories = ["graphics"]
-timestamp = "2025-03-21 20:10:49"
+timestamp = "2025-03-24 14:03:28"
+dependencies = [
+    "libpciaccess",
+    "glibc",
+    "meson",
+]
 upstream = "https://gitlab.freedesktop.org/mesa/drm.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/mesa/drm.git' | sed 's@.*/@@' | grep 'libdrm-' | grep -v '_' | sort -V | tail -n1"
 
