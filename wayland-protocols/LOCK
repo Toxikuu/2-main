@@ -1,10 +1,10 @@
 repo = "main"
 name = "wayland-protocols"
-version = "1.41"
+version = "1.42"
 description = "Additional protocols expanding Wayland functionality"
-timestamp = "2025-02-20 20:23:26"
+timestamp = "2025-03-24 13:24:44"
 upstream = "https://gitlab.freedesktop.org/wayland/wayland-protocols.git"
 
 [source]
-url = "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.41/downloads/wayland-protocols-1.41.tar.xz"
-hash = "shcReTJHwsQnY5FDkt-p_LnjcoyktKoRCtuNkV_ABok"
+url = "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.42/downloads/wayland-protocols-1.42.tar.xz"
+hash = "I7qA1BDRIAqG_ilZLBl2bq6PHDULZyiZmenn6hLZ96o"
