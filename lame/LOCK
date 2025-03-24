@@ -1,0 +1,12 @@
+repo = "main"
+name = "lame"
+version = "3.100"
+description = "High quality MP3 encoder"
+categories = ["audio"]
+timestamp = "2025-03-24 16:52:50"
+upstream = "https://sourceforge.net/projects/lame/files/"
+version_command = "curl -s 'https://sourceforge.net/projects/lame/files/' | grep lame- | cut -d- -f6 | cut -d. -f1-2"
+
+[source]
+url = "https://downloads.sourceforge.net/lame/lame-3.100.tar.gz"
+hash = "3f42yrhzeUA4riwSEFV600hXpLa9xRV4XR2p4XWx2h4"
