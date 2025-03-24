@@ -3,7 +3,7 @@ name = "nvidia"
 version = "570.133.07"
 description = "The NVIDIA drivers"
 categories = ["drivers"]
-timestamp = "2025-03-21 22:56:57"
+timestamp = "2025-03-24 15:04:47"
 dependencies = [
     "tox/mesa",
     "kernel",
