@@ -27,6 +27,7 @@ sed -i config.mk \
 # Though you could put them in "$SRC", that runs the risk of applying outdated
 # patches if "$SRC" is not pruned every now and then, so $PORT is used. Feel
 # free to change this though.
+shopt -s nullglob  # glob correctly
 for p in "$PORT"/patches/*; do
     tpatch "$p"
 done
@@ -40,4 +41,3 @@ done
 mi clean  # roughly desugars to ``make DESTDIR="$D" clean install``
 
 }
-#d Added patches dir
