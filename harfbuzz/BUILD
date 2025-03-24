@@ -21,7 +21,7 @@ _cfg_opts=(
 
     -D tests=disabled
     -D introspection=enabled
-    -D doc_tests=disabled
+    -D doc_tests=false
     -D utilities=enabled
 )
 
