@@ -1,0 +1,20 @@
+repo = "main"
+name = "libgd"
+version = "2.3.3"
+description = "GD Graphics Library"
+categories = [
+    "lib",
+    "graphics",
+]
+timestamp = "2025-03-23 22:23:39"
+dependencies = [
+    "fontconfig",
+    "libavif",
+    "libwebp",
+]
+upstream = "https://github.com/libgd/libgd.git"
+version_command = '''git ls-remote 'https://github.com/libgd/libgd.git' | sed 's@.*/@@' | grep '^gd-[0-9]\.' | cut -d- -f2 | sort -V | tail -n1'''
+
+[source]
+url = "https://github.com/libgd/libgd/releases/download/gd-2.3.3/libgd-2.3.3.tar.xz"
+hash = "P-gi7OIHlgYK9jt8YKyxUeWEQgTSidoM4I-P3xMeWmE"
