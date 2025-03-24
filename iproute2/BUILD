@@ -1,5 +1,5 @@
 NAME="iproute2"
-VERS="6.13.0"
+VERS="6.14.0"
 CATG="core net"
 DESC="Programs for IPv4 networking"
 UPST="https://github.com/iproute2/iproute2.git"
