@@ -1,13 +1,13 @@
 repo = "main"
 name = "mpv"
-version = "0.39.0"
+version = "0.40.0"
 description = "Free, open source, cross-platform media player"
 categories = [
     "audio",
     "video",
     "utils",
 ]
-timestamp = "2025-03-24 18:41:22"
+timestamp = "2025-03-25 15:36:23"
 dependencies = [
     "alsa-lib",
     "ffmpeg",
@@ -35,5 +35,5 @@ dependencies = [
 upstream = "https://github.com/mpv-player/mpv.git"
 
 [source]
-url = "https://github.com/mpv-player/mpv/archive/v0.39.0/mpv-0.39.0.tar.gz"
-hash = "LKkkN6_7YsK1WbRBnqR4XHDQI1kFAOilLpXqOrRVRoM"
+url = "https://github.com/mpv-player/mpv/archive/v0.40.0/mpv-0.40.0.tar.gz"
+hash = "EKD0ZU9iFApt1NOA3PC729z25pdVaGPcSZwpYYLwgaM"
