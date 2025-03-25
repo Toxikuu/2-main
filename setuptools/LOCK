@@ -1,11 +1,11 @@
 repo = "main"
 name = "setuptools"
-version = "78.0.1"
+version = "78.0.2"
 description = "Tool for downloading, building, installing, upgrading, and uninstalling Python pacakges"
 categories = ["core"]
-timestamp = "2025-03-24 13:21:45"
+timestamp = "2025-03-25 15:36:58"
 upstream = "https://github.com/pypa/setuptools.git"
 
 [source]
-url = "https://pypi.org/packages/source/s/setuptools/setuptools-78.0.1.tar.gz"
-hash = "QyHS3CFXuXbe4D4QN8nyvF_qUDwMR9PJRY4OjknmWc4"
+url = "https://pypi.org/packages/source/s/setuptools/setuptools-78.0.2.tar.gz"
+hash = "E3Ul5q-5Ai8BnW6ISjGQF_m_h5oNh4OYXTLLyGg8q5M"
