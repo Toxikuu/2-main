@@ -3,7 +3,7 @@ name = "at-spi2-core"
 version = "2.56.0"
 description = "Comprehensive accessibility framework for GNOME's Assistive Technologies"
 categories = ["lib"]
-timestamp = "2025-03-24 22:20:59"
+timestamp = "2025-03-25 15:42:59"
 dependencies = [
     "dbus",
     "glib",
@@ -14,6 +14,7 @@ dependencies = [
     "xprop",
 ]
 upstream = "https://gitlab.gnome.org/GNOME/at-spi2-core.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.gnome.org/GNOME/at-spi2-core.git' | sed -e 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 
 [source]
 url = "https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.0.tar.xz"
