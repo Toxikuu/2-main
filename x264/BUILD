@@ -12,7 +12,7 @@ EXTRA=()
 
 2b() {
 
-cfg --disable-cli
+DONTDISABLESTATIC=1 cfg --disable-cli
 mk
 mi
 
