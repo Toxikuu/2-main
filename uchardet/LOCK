@@ -1,0 +1,12 @@
+repo = "main"
+name = "uchardet"
+version = "0.0.8"
+description = "Encoding detector library"
+categories = ["lib"]
+timestamp = "2025-03-24 21:14:58"
+dependencies = ["cmake"]
+upstream = "https://gitlab.freedesktop.org/uchardet/uchardet.git"
+
+[source]
+url = "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz"
+hash = "6Xpgz8AKHBR6Z0sJe7FCKr2fp4otnOPz_cwueKNKxfA"
