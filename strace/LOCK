@@ -1,15 +1,15 @@
 repo = "main"
 name = "strace"
-version = "6.13"
+version = "6.14"
 description = "Diagnostic, debugging, and instructional userspace utility"
 categories = [
     "cli",
     "util",
 ]
-timestamp = "2025-03-16 15:26:42"
+timestamp = "2025-03-25 15:36:43"
 dependencies = ["libunwind"]
 upstream = "https://github.com/strace/strace.git"
 
 [source]
-url = "https://github.com/strace/strace/releases/download/v6.13/strace-6.13.tar.xz"
-hash = "4gna8O4DjKWtzEwnfpJztNUfRqL_htpXXTZ0KsNQihc"
+url = "https://github.com/strace/strace/releases/download/v6.14/strace-6.14.tar.xz"
+hash = "JE87XCCjKFTKm3yno-4JHdPUvSCTOhcezujbSGx308k"
