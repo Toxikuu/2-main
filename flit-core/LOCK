@@ -1,11 +1,11 @@
 repo = "main"
 name = "flit-core"
-version = "3.11.0"
+version = "3.12.0"
 description = "Tool for building distributable Python modules"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:26"
+timestamp = "2025-03-25 15:36:35"
 upstream = "https://github.com/pypa/flit.git"
 
 [source]
-url = "https://pypi.org/packages/source/f/flit-core/flit_core-3.11.0.tar.gz"
-hash = "ZuW4eHSg1uOWkfDiLwkwZza2M1SGcK08CeydsDxWYvc"
+url = "https://pypi.org/packages/source/f/flit-core/flit_core-3.12.0.tar.gz"
+hash = "GPYxANb5Q4XG7VenIHNEPhpxpKy0M5SRYV0PFtb_AbI"
