@@ -3,6 +3,7 @@ VERS="7.1.1"
 DESC="Play, record, convert, and stream audio and video"
 CATG="audio video utils cli"
 UPST="https://git.ffmpeg.org/ffmpeg.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' | grep '^n[0-9]' | grep -v 'dev' | cut -c2- | tail -n1"
 DEPS=(
     "libaom"
     "libass"
