@@ -7,7 +7,7 @@ categories = [
     "video",
     "utils",
 ]
-timestamp = "2025-03-25 15:36:23"
+timestamp = "2025-03-25 16:15:50"
 dependencies = [
     "alsa-lib",
     "ffmpeg",
