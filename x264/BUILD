@@ -12,7 +12,7 @@ EXTRA=()
 
 2b() {
 
-DONTDISABLESTATIC=1 cfg --disable-cli
+cfg --disable-cli --enable-shared
 mk
 mi
 
