@@ -5,3 +5,4 @@
 [ac7c5a52ed35f35fdc1b938bb84e1f36ba5cca3f] [2025-03-25 01:00:40] | Revised wezterm: use git instead of a tarball; this will:tm: eventually:tm: be supported in a prettier way, but for now this works
 [1ec0c0703e84e549595debb97b30c658190bb518] [2025-03-25 01:00:40] | Generated wezterm=ddd60384f3be83bbc6520d4cc1e2e891ab0e0c74
 [4a02cfdbd5b0286efa7d0be3cd28a8dfa1db69eb] [2025-03-25 01:00:57] | Updated wezterm: ddd60384f3be83bbc6520d4cc1e2e891ab0e0c74 -> a87358516004a652ad840bc1661bdf65ffc89b43
+[b79c1362227d178c4be43f3b770e42171ff4de6a] [2025-03-25 01:00:57] | Generated wezterm=a87358516004a652ad840bc1661bdf65ffc89b43
