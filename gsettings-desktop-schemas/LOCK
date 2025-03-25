@@ -1,0 +1,12 @@
+repo = "main"
+name = "gsettings-desktop-schemas"
+version = "48.0"
+description = "Collection of GSettings schemas"
+categories = ["lib"]
+timestamp = "2025-03-24 21:44:56"
+dependencies = ["glib"]
+upstream = "https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas.git"
+
+[source]
+url = "https://download.gnome.org/sources/gsettings-desktop-schemas/48/gsettings-desktop-schemas-48.0.tar.xz"
+hash = "5o8VWBO_GPhlqLLI6dRzWItsytyvu2Zqt4iFfGwtG9M"
