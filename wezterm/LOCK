@@ -6,7 +6,7 @@ categories = [
     "term",
     "gui",
 ]
-timestamp = "2025-03-24 20:02:22"
+timestamp = "2025-03-24 22:31:02"
 dependencies = [
     "bash",
     "fontconfig",
