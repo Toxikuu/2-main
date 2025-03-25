@@ -6,7 +6,7 @@ categories = [
     "term",
     "gui",
 ]
-timestamp = "2025-03-24 19:54:58"
+timestamp = "2025-03-24 20:00:40"
 dependencies = [
     "bash",
     "fontconfig",
@@ -26,7 +26,3 @@ dependencies = [
     "rust",
 ]
 upstream = "https://github.com/wez/wezterm.git"
-
-[source]
-url = "https://github.com/wez/wezterm/archive/ddd60384f3be83bbc6520d4cc1e2e891ab0e0c74.tar.gz"
-hash = "sd2qB0m9GVoXLPPXz-m_6X2Wz-S2-SB97mVeMxw3oXE"
