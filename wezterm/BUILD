@@ -1,5 +1,5 @@
 NAME="wezterm"
-VERS="ddd60384f3be83bbc6520d4cc1e2e891ab0e0c74"
+VERS="a87358516004a652ad840bc1661bdf65ffc89b43"
 DESC="Wez's GPU-accelerated, cross-platform terminal emulator and multiplexer"
 CATG="term gui"
 UPST="https://github.com/wez/wezterm.git"
@@ -59,4 +59,3 @@ install -vDm644 assets/shell-completion/zsh           "$D"/usr/share/zsh/site-fu
 install -vDm644 assets/shell-integration/$NAME.sh -t  "$D"/etc/profile.d
 
 }
-#d use git instead of a tarball; this will:tm: eventually:tm: be supported in a prettier way, but for now this works
