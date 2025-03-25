@@ -6,7 +6,7 @@ categories = [
     "lib",
     "graphics",
 ]
-timestamp = "2025-03-24 20:37:23"
+timestamp = "2025-03-24 20:38:05"
 upstream = "https://github.com/Dav1dde/glad.git"
 
 [source]
