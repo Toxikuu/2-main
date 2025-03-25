@@ -1,0 +1,24 @@
+repo = "main"
+name = "libplacebo"
+version = "7.349.0"
+description = "Reusable library for GPU-accelerated video/image rendering primitives"
+categories = [
+    "lib",
+    "img",
+    "video",
+]
+timestamp = "2025-03-24 20:29:48"
+dependencies = [
+    "ffmpeg",
+    "glad",
+    "glslang",
+    "vulkan-loader",
+    "o^little-cms",
+    "o^libunwind",
+    "o^xxhash",
+]
+upstream = "https://github.com/haasn/libplacebo.git"
+
+[source]
+url = "https://github.com/haasn/libplacebo/archive/v7.349.0/libplacebo-7.349.0.tar.gz"
+hash = "Yn4yQ5oLPSuQNo6tfpGfRw7nRGyHzA94QbvjGbI6qLE"
