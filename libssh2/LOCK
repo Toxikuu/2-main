@@ -1,0 +1,11 @@
+repo = "main"
+name = "libssh2"
+version = "1.11.1"
+description = "Client-side SSH2 library"
+categories = ["lib"]
+timestamp = "2025-03-24 20:05:27"
+upstream = "https://github.com/libssh2/libssh2.git"
+
+[source]
+url = "https://github.com/libssh2/libssh2/releases/download/libssh2-1.11.1/libssh2-1.11.1.tar.xz"
+hash = "mVTLVMT1SBmKfL660ki9yH3WS9JhhXCKKUsrUHceN2k"
