@@ -1,5 +1,5 @@
 NAME="mpv"
-VERS="0.39.0"
+VERS="0.40.0"
 DESC="Free, open source, cross-platform media player"
 CATG="audio video utils"
 UPST="https://github.com/mpv-player/mpv.git"
