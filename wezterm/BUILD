@@ -16,6 +16,8 @@ DEPS=(
     "wayland"
     "xcb-util"
     "xcb-util-image"
+    "xcb-util-keysyms"
+    "xcb-util-wm"
     "zlib"
     "rust"
 )
