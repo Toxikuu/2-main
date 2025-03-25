@@ -1,7 +1,7 @@
 NAME="xz"
-VERS="5.6.4"
-CATG="core"
-DESC="The xz compression algorithm"
+VERS="5.8.0"
+CATG="core utils cli lib"
+DESC="The xz and lzma compression algorithms"
 UPST="https://github.com/tukaani-project/xz.git"
 
 SOURCE="https://github.com/tukaani-project/xz/releases/download/v$VERS/xz-$VERS.tar.xz"
@@ -9,7 +9,7 @@ EXTRA=()
 
 2b() {
 
-cfg --disable-doc
+cfg
 mk
 mi
 
