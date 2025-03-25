@@ -6,6 +6,7 @@ UPST="https://github.com/wez/wezterm.git"
 DEPS=(
     "bash"
     "fontconfig"
+    "git"
     "glib"
     "glibc"
     "libssh2"
@@ -32,10 +33,11 @@ with rust
 if [[ -d .git ]]; then
     git pull
 else
-    git clone --depth=1 --single-branch --branch=main --recursive "$UPST"
+    git clone --depth=1 --single-branch --branch=main --recursive "$UPST" .
 fi
 
 git submodule update --init --recursive
+
 LIBSSH2_SYS_USE_PKG_CONFIG=1 cbr --features distro-defaults
 
 # install all the things
