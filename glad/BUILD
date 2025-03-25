@@ -13,6 +13,6 @@ EXTRA=()
 with pip
 
 pipb
-pipi glad2
+NAME=glad2 pipi
 
 }
