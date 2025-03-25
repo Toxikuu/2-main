@@ -44,7 +44,6 @@ _cfg_opts=(
     -D tests=false
     -D build-date=false
     -D fuzzers=false
-    -D ta-leak-report=false
 
     -D dvbin=disabled
     -D libbluray=disabled
