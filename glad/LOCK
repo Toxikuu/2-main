@@ -1,0 +1,14 @@
+repo = "main"
+name = "glad"
+version = "2.0.8"
+description = "Generator for loading Vulkan, OpenGL, EGL, GLES, and GLX contexts"
+categories = [
+    "lib",
+    "graphics",
+]
+timestamp = "2025-03-24 20:37:23"
+upstream = "https://github.com/Dav1dde/glad.git"
+
+[source]
+url = "https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz"
+hash = "RPBvkZVCfHAX9QKNCJT1frIWsKj3xO2nzog3Mq6y0Pw"
