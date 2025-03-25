@@ -8,7 +8,7 @@ categories = [
     "utils",
     "cli",
 ]
-timestamp = "2025-03-24 18:23:20"
+timestamp = "2025-03-25 15:45:47"
 dependencies = [
     "libaom",
     "libass",
@@ -27,6 +27,7 @@ dependencies = [
     "pulseaudio",
 ]
 upstream = "https://git.ffmpeg.org/ffmpeg.git"
+version_command = "git ls-remote --tags --refs 'https://git.ffmpeg.org/ffmpeg.git' | sed -e 's@.*/@@' | grep '^n[0-9]' | grep -v 'dev' | cut -c2- | tail -n1"
 
 [source]
 url = "https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz"
