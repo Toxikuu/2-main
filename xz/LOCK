@@ -1,11 +1,16 @@
 repo = "main"
 name = "xz"
-version = "5.6.4"
-description = "The xz compression algorithm"
-categories = ["core"]
-timestamp = "2025-02-25 20:14:35"
+version = "5.8.0"
+description = "The xz and lzma compression algorithms"
+categories = [
+    "core",
+    "utils",
+    "cli",
+    "lib",
+]
+timestamp = "2025-03-25 15:30:27"
 upstream = "https://github.com/tukaani-project/xz.git"
 
 [source]
-url = "https://github.com/tukaani-project/xz/releases/download/v5.6.4/xz-5.6.4.tar.xz"
-hash = "gpzP5512l0j3VX56RCmmTQaFjifh42LiXQGre5MdnJU"
+url = "https://github.com/tukaani-project/xz/releases/download/v5.8.0/xz-5.8.0.tar.xz"
+hash = "BeytnnGRn0_Knxn7vJeeoo4jAYjtEj3G8GuYAx6hRUI"
