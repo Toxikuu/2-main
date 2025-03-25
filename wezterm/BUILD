@@ -36,6 +36,7 @@ else
     git clone --depth=1 --single-branch --branch=main --recursive "$UPST" .
 fi
 
+git checkout $VERS
 git submodule update --init --recursive
 
 LIBSSH2_SYS_USE_PKG_CONFIG=1 cbr --features distro-defaults
@@ -44,7 +45,7 @@ LIBSSH2_SYS_USE_PKG_CONFIG=1 cbr --features distro-defaults
 install -vDm755 target/release/$NAME              -t  "$D"/usr/bin
 install -vDm755 target/release/$NAME-gui          -t  "$D"/usr/bin
 install -vDm755 target/release/$NAME-mux-server   -t  "$D"/usr/bin
-install -vdm755 target/release/strip-ansi-escapes -t  "$D"/usr/bin
+install -vDm755 target/release/strip-ansi-escapes -t  "$D"/usr/bin
 
 
 install -vDm644 assets/icon/terminal.png              "$D"/usr/share/icons/hicolor/128x128/apps/org.wezfurlong.$NAME.png
@@ -61,3 +62,4 @@ install -vDm644 assets/shell-completion/zsh           "$D"/usr/share/zsh/site-fu
 install -vDm644 assets/shell-integration/$NAME.sh -t  "$D"/etc/profile.d
 
 }
+#d typo and checkout
