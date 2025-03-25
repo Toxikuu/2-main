@@ -6,7 +6,7 @@ categories = [
     "term",
     "gui",
 ]
-timestamp = "2025-03-24 19:22:15"
+timestamp = "2025-03-24 19:54:58"
 dependencies = [
     "bash",
     "fontconfig",
@@ -20,6 +20,8 @@ dependencies = [
     "wayland",
     "xcb-util",
     "xcb-util-image",
+    "xcb-util-keysyms",
+    "xcb-util-wm",
     "zlib",
     "rust",
 ]
