@@ -1,0 +1,30 @@
+repo = "main"
+name = "wezterm"
+version = "ddd60384f3be83bbc6520d4cc1e2e891ab0e0c74"
+description = "Wez's GPU-accelerated, cross-platform terminal emulator and multiplexer"
+categories = [
+    "term",
+    "gui",
+]
+timestamp = "2025-03-24 19:22:15"
+dependencies = [
+    "bash",
+    "fontconfig",
+    "glib",
+    "glibc",
+    "libssh2",
+    "libx11",
+    "libxcb",
+    "libxkbcommon",
+    "openssl",
+    "wayland",
+    "xcb-util",
+    "xcb-util-image",
+    "zlib",
+    "rust",
+]
+upstream = "https://github.com/wez/wezterm.git"
+
+[source]
+url = "https://github.com/wez/wezterm/archive/ddd60384f3be83bbc6520d4cc1e2e891ab0e0c74.tar.gz"
+hash = "sd2qB0m9GVoXLPPXz-m_6X2Wz-S2-SB97mVeMxw3oXE"
