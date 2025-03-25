@@ -22,13 +22,20 @@ DEPS=(
     "rust"
 )
 
-SOURCE="https://github.com/wez/wezterm/archive/$VERS.tar.gz"
+SOURCE=""
 EXTRA=()
 
 2b() {
 
 with rust
 
+if [[ -d .git ]]; then
+    git pull
+else
+    git clone --depth=1 --single-branch --branch=main --recursive "$UPST"
+fi
+
+git submodule update --init --recursive
 LIBSSH2_SYS_USE_PKG_CONFIG=1 cbr --features distro-defaults
 
 # install all the things
@@ -52,3 +59,4 @@ install -vDm644 assets/shell-completion/zsh           "$D"/usr/share/zsh/site-fu
 install -vDm644 assets/shell-integration/$NAME.sh -t  "$D"/etc/profile.d
 
 }
+#d use git instead of a tarball; this will:tm: eventually:tm: be supported in a prettier way, but for now this works
