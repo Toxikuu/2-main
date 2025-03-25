@@ -2,7 +2,7 @@ repo = "main"
 name = "picom"
 version = "12.5"
 description = "Lightweight X compositor with animation support"
-timestamp = "2025-03-23 18:42:34"
+timestamp = "2025-03-25 15:40:11"
 dependencies = [
     "dbus",
     "libepoxy",
@@ -15,6 +15,7 @@ dependencies = [
     "uthash",
 ]
 upstream = "https://github.com/yshui/picom.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/yshui/picom.git' | sed -e 's@.*/@@' -e 's,v,,' | grep -v '[a-Z]' | sort -V | tail -n1"
 
 [source]
 url = "https://github.com/yshui/picom/archive/refs/tags/v12.5.tar.gz"
