@@ -1,0 +1,20 @@
+repo = "main"
+name = "at-spi2-core"
+version = "2.56.0"
+description = "Comprehensive accessibility framework for GNOME's Assistive Technologies"
+categories = ["lib"]
+timestamp = "2025-03-24 22:20:59"
+dependencies = [
+    "dbus",
+    "glib",
+    "gsettings-desktop-schemas",
+    "libx11",
+    "libxi",
+    "libxtst",
+    "xprop",
+]
+upstream = "https://gitlab.gnome.org/GNOME/at-spi2-core.git"
+
+[source]
+url = "https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.0.tar.xz"
+hash = "gNfo6gvpJOBFUlNn-QnWZo390-h81AeSxs_QjmtY6Vw"
