@@ -1,0 +1,11 @@
+repo = "main"
+name = "iso-codes"
+version = "4.17.0"
+description = "Database of country, language, and currency names"
+categories = ["lib"]
+timestamp = "2025-03-24 21:21:51"
+upstream = "https://salsa.debian.org/iso-codes-team/iso-codes.git"
+
+[source]
+url = "https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.17.0/iso-codes-v4.17.0.tar.gz"
+hash = "3VyhPbd-xt0cwl9cAYQpCocOwf7SRdjjmgT_NPWQdsM"
