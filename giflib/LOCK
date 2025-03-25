@@ -6,9 +6,10 @@ categories = [
     "lib",
     "img",
 ]
-timestamp = "2025-03-23 21:30:28"
+timestamp = "2025-03-25 15:46:01"
 dependencies = ["xmlto"]
 upstream = "https://git.code.sf.net/p/giflib/code"
+version_command = "git ls-remote --tags --refs 'https://git.code.sf.net/p/giflib/code' | sed -e 's@.*/@@' | grep -v '[a-Z]'"
 
 [source]
 url = "https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz"
