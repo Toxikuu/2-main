@@ -3,6 +3,7 @@ VERS="2.56.0"
 DESC="Comprehensive accessibility framework for GNOME's Assistive Technologies"
 CATG="lib"
 UPST="https://gitlab.gnome.org/GNOME/$NAME.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 DEPS=(
     "dbus"
     "glib"
