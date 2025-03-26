@@ -1,5 +1,5 @@
 NAME="nvim"
-VERS="0.10.4"
+VERS="0.11.0"
 DESC="Continuation and extension of Vim"
 UPST="https://github.com/neovim/neovim.git"
 
