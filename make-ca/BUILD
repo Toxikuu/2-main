@@ -3,7 +3,7 @@ VERS="1.15"
 DESC="PKI setup script for LFS"
 UPST="https://github.com/lfs-book/make-ca.git"
 
-SOURCE="https://github.com/lfs-book/make-ca/archive/v1.14/make-ca-1.14.tar.gz"
+SOURCE="https://github.com/lfs-book/$NAME/archive/v$VERS/$NAME-$VERS.tar.gz"
 EXTRA=()
 
 2b() {
