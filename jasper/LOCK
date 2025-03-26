@@ -1,9 +1,9 @@
 repo = "main"
 name = "jasper"
-version = "4.2.4"
+version = "4.2.5"
 description = "Library for manipulating JPEG-2000 images"
 categories = ["lib"]
-timestamp = "2025-03-20 16:11:15"
+timestamp = "2025-03-26 17:08:28"
 dependencies = [
     "cmake",
     "libjpeg-turbo",
@@ -12,5 +12,5 @@ upstream = "https://github.com/jasper-software/jasper.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/jasper-software/jasper.git' | sed 's@.*/@@' | grep -v 'rc' | grep version- | tail -n1 | cut -d- -f2"
 
 [source]
-url = "https://github.com/jasper-software/jasper/archive/version-4.2.4/jasper-version-4.2.4.tar.gz"
-hash = "I6PVjN6s86vfn6HYHc7-5Y2mqzMJQHkMDycBlwO_0s0"
+url = "https://github.com/jasper-software/jasper/archive/version-4.2.5/jasper-version-4.2.5.tar.gz"
+hash = "P0sd98q3o8xnufbijHMDcvAwtUsPqoVIqe4EroP__UQ"
