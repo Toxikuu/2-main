@@ -1,5 +1,5 @@
 NAME="jasper"
-VERS="4.2.4"
+VERS="4.2.5"
 DESC="Library for manipulating JPEG-2000 images"
 CATG="lib"
 UPST="https://github.com/jasper-software/jasper.git"
