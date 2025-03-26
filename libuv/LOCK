@@ -2,7 +2,8 @@ repo = "main"
 name = "libuv"
 version = "1.50.0"
 description = "Multi-platform support library focusing on asyncio"
-timestamp = "2025-03-06 16:36:06"
+categories = ["lib"]
+timestamp = "2025-03-26 17:49:05"
 upstream = "https://github.com/libuv/libuv.git"
 
 [source]
