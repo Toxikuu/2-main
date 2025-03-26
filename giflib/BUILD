@@ -3,7 +3,7 @@ VERS="5.2.2"
 DESC="GIF libraries and utilities"
 CATG="lib img"
 UPST="https://git.code.sf.net/p/giflib/code"
-VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' | grep -v '[a-Z]'"
+VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 DEPS=(
     "xmlto"
 )
