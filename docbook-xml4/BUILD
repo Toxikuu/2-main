@@ -2,16 +2,13 @@ NAME="docbook-xml4"
 VERS="4.5"
 DESC="Widely-used XML scheme for writing documentation"
 CATG="doc"
-UPST=""  # dead
+# Not bothering with UPST
 DEPS=(
     "libarchive"
     "libxml2"
 )
 
-SOURCE=""
-EXTRA=(
-    "https://www.docbook.org/xml/$VERS/docbook-xml-$VERS.zip"
-)
+EXTRA="https://www.docbook.org/xml/$VERS/docbook-xml-$VERS.zip"
 
 2b() {
 
