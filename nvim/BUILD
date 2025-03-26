@@ -8,7 +8,14 @@ EXTRA=()
 
 2b() {
 
-mk CMAKE_BUILD_TYPE=Release CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=/usr"
-mi
+with cmake ninja
+
+# build bundled dependencies
+cmake -S cmake.deps -B .deps -G Ninja -D CMAKE_BUILD_TYPE=Release
+cmake --build .deps
+
+cm
+nj
+ni
 
 }
