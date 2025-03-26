@@ -3,7 +3,7 @@ VERS="0.11.0"
 DESC="Continuation and extension of Vim"
 UPST="https://github.com/neovim/neovim.git"
 
-SOURCE="https://github.com/neovim/neovim/archive/refs/tags/v0.10.3.tar.gz"
+SOURCE="https://github.com/neovim/neovim/archive/refs/tags/v$VERS.tar.gz"
 EXTRA=()
 
 2b() {
