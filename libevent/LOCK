@@ -1,0 +1,11 @@
+repo = "main"
+name = "libevent"
+version = "2.1.12"
+description = "Asynchronous event library"
+categories = ["lib"]
+timestamp = "2025-03-26 16:56:12"
+upstream = "https://github.com/libevent/libevent.git"
+
+[source]
+url = "https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz"
+hash = "kubeG-nsF2Qo_SNnZ35hzv_C7hyxGQNQN6J9NGsEA7s"
