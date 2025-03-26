@@ -3,8 +3,9 @@ name = "libevent"
 version = "2.1.12"
 description = "Asynchronous event library"
 categories = ["lib"]
-timestamp = "2025-03-26 16:56:12"
+timestamp = "2025-03-26 17:09:57"
 upstream = "https://github.com/libevent/libevent.git"
+version_command = '''git ls-remote --tags --refs https://github.com/libevent/libevent.git | sed 's@.*/@@' | grep 'release-.\+-stable' | cut -d- -f2 | sort -V | tail -n1'''
 
 [source]
 url = "https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz"
