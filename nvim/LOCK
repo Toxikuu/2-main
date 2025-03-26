@@ -2,9 +2,9 @@ repo = "main"
 name = "nvim"
 version = "0.11.0"
 description = "Continuation and extension of Vim"
-timestamp = "2025-03-26 17:10:26"
+timestamp = "2025-03-26 17:41:48"
 upstream = "https://github.com/neovim/neovim.git"
 
 [source]
-url = "https://github.com/neovim/neovim/archive/refs/tags/v0.10.3.tar.gz"
+url = "https://github.com/neovim/neovim/archive/refs/tags/v0.11.0.tar.gz"
 hash = "Ofq0fSQdp7lBiCPMVjxonVIsHEst7wQDY5ODTz8cqUw"
