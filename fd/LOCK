@@ -1,0 +1,18 @@
+repo = "main"
+name = "fd"
+version = "10.2.0"
+description = "Simple, fast, user-friendly find alternative"
+categories = [
+    "utils",
+    "cli",
+]
+timestamp = "2025-03-26 22:04:05"
+dependencies = [
+    "rust",
+    "make",
+]
+upstream = "https://github.com/sharkdp/fd.git"
+
+[source]
+url = "https://github.com/sharkdp/fd/archive/refs/tags/v10.2.0.tar.gz"
+hash = "czKf4kxT8MpHzQk5JWylxGRHQst8FM9BFMjJhxM200I"
