@@ -1,0 +1,36 @@
+repo = "main"
+name = "gpu-screen-recorder"
+version = "5.3.3"
+description = "Fastest screen recorder for Linux"
+categories = [
+    "rec",
+    "cli",
+]
+timestamp = "2025-03-29 14:54:36"
+dependencies = [
+    "ffmpeg",
+    "libglvnd",
+    "libxcomposite",
+    "libxrandr",
+    "libxfixes",
+    "libxdamage",
+    "libx11",
+    "pulseaudio",
+    "libva",
+    "libdrm",
+    "libcap",
+    "wayland",
+    "vulkan-headers",
+    "o^mesa",
+    "o^dbus",
+    "o^libpipewire",
+    "o^nvidia",
+    "o^nvenc",
+    "o^cuda",
+    "o^nvfbc",
+]
+upstream = "https://repo.dec05eba.com/gpu-screen-recorder"
+
+[[extra]]
+url = "https://dec05eba.com/snapshot/gpu-screen-recorder.git.5.3.3.tar.gz"
+hash = "WU7dSlYIE3_0YvxIjyDPi1nyt-kgsKPNUKCLF6xarhI"
