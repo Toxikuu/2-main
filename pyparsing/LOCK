@@ -3,7 +3,7 @@ name = "pyparsing"
 version = "3.2.3"
 description = "General parsing module for Python"
 categories = ["lib"]
-timestamp = "2025-03-29 18:34:57"
+timestamp = "2025-03-29 18:35:11"
 dependencies = ["python"]
 upstream = "https://github.com/pyparsing/pyparsing.git"
 
