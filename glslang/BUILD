@@ -1,5 +1,5 @@
 NAME="glslang"
-VERS="15.1.0"
+VERS="15.2.0"
 DESC="Frontend and validator for OpenGL and Vulkan shaders"
 UPST="https://github.com/KhronosGroup/glslang.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -v [a-Z] | sort -V | tail -n1"
