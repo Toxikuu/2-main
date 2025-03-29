@@ -1,0 +1,12 @@
+repo = "main"
+name = "json-glib"
+version = "1.10.6"
+description = "Library providing (de)serialization support for JSON"
+categories = ["lib"]
+timestamp = "2025-03-29 18:32:43"
+dependencies = ["glib"]
+upstream = "https://gitlab.gnome.org/GNOME/json-glib.git"
+
+[source]
+url = "https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.6.tar.xz"
+hash = "d_S8v5M5Uo8Wa4BzRYaT8KILd7cFnbwtthdGoZKLApM"
