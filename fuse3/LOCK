@@ -3,7 +3,7 @@ name = "fuse3"
 version = "3.16.2"
 description = "Filesystem in userspace"
 categories = ["lib"]
-timestamp = "2025-03-29 15:55:40"
+timestamp = "2025-03-29 15:57:48"
 upstream = "https://github.com/libfuse/libfuse.git"
 
 [source]
