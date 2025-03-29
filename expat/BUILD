@@ -1,5 +1,5 @@
 NAME="expat"
-VERS="2.7.0"
+VERS="2.7.1"
 CATG="core"
 DESC="XML parsing library"
 UPST="https://github.com/libexpat/libexpat.git"
