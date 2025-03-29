@@ -10,7 +10,6 @@ DEPS=(
     "libvdpau"
     "vulkan-loader"
     "wayland"
-    "xorg-server"  # sorta circular (nvidia -> xorg-server -> nvidia); only circular because of nvidia-xconfig
 )
 
 EXTRA="https://us.download.nvidia.com/XFree86/Linux-x86_64/$VERS/NVIDIA-Linux-x86_64-$VERS.run"
@@ -39,7 +38,7 @@ _cfg_opts=(
     --no-ncurses-color
     --force-selinux=no
     --kernel-name=$kver
-    --run-nvidia-xconfig
+    $([[ -e /var/ports/xorg/xorg-server/.data/INSTALLED ]] && echo --run-nvidia-xconfig)
     --no-install-libglvnd
     --no-rebuild-initramfs
     --install-compat32-libs
@@ -79,3 +78,8 @@ blacklist nouveau
 EOF
 
 }
+
+2i() {
+    depmod -a
+}
+#d small improvements
