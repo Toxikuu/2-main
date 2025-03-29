@@ -1,0 +1,10 @@
+repo = "main"
+name = "bubblewrap"
+version = "0.11.0"
+description = "Unprivileged sandboxing tool"
+timestamp = "2025-03-29 18:42:12"
+upstream = "https://github.com/containers/bubblewrap.git"
+
+[source]
+url = "https://github.com/containers/bubblewrap/releases/download/v0.11.0/bubblewrap-0.11.0.tar.xz"
+hash = "mI_WsjLa-gS4uBmHI-_qzNs8aqnBx5NiGdV5Got6hkY"
