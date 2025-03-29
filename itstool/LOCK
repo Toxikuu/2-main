@@ -2,7 +2,8 @@ repo = "main"
 name = "itstool"
 version = "2.0.7"
 description = "Translate XML with PO files"
-timestamp = "2025-03-29 17:08:24"
+timestamp = "2025-03-29 17:09:41"
+dependencies = ["docbook-xml"]
 upstream = "https://github.com/itstool/itstool.git"
 
 [source]
