@@ -38,7 +38,13 @@ with meson ninja
 
 tar xf "$SRC"/$NAME.git.$VERS.tar.gz
 
-ms -D systemd=false -D portal=false
+_cfg_opts=(
+    -D systemd=false
+    $([[ -e /var/ports/main/pipewire/.data/INSTALLED ]] || echo -D portal=false)
+    $([[ -e /var/ports/main/pipewire/.data/INSTALLED ]] || echo -D app_audio=false)
+)
+
+ms ${_cfg_opts[@]}
 nj
 ni
 
