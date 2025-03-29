@@ -1,0 +1,22 @@
+repo = "main"
+name = "libsoup3"
+version = "3.6.5"
+description = "HTTP client/server library for GNOME"
+categories = [
+    "lib",
+    "net",
+]
+timestamp = "2025-03-29 18:28:34"
+dependencies = [
+    "glib-networking",
+    "libpsl",
+    "libxml2",
+    "nghttp2",
+    "sqlite",
+    "glib",
+]
+upstream = "https://gitlab.gnome.org/GNOME/libsoup.git"
+
+[source]
+url = "https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz"
+hash = "aJF2Wqw-lJAXlFw-rr2MyCFt93JFbcn0YJdvvbetojQ"
