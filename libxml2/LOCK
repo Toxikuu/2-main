@@ -1,10 +1,10 @@
 repo = "main"
 name = "libxml2"
-version = "2.14.0"
+version = "2.13.6"
 description = "Libraries and utilities for XML parsing"
-timestamp = "2025-03-29 12:10:07"
+timestamp = "2025-03-29 12:24:15"
 upstream = "https://github.com/GNOME/libxml2.git"
 
 [source]
-url = "https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.0.tar.xz"
-hash = "Pi7YnYHSEDItcLNUYBZtTqKF5bsBdXaXKh12oJYxmFw"
+url = "https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.6.tar.xz"
+hash = "dPwWMhejlkJX0745r5Q-CIYSY8QjH571tJa29tTHsrY"
