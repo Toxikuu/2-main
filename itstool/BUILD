@@ -3,7 +3,9 @@ VERS="2.0.7"
 DESC="Translate XML with PO files"
 CATG=""
 UPST="https://github.com/itstool/itstool.git"
-DEPS=()
+DEPS=(
+    "docbook-xml"
+)
 
 SOURCE="https://files.itstool.org/itstool/itstool-$VERS.tar.bz2"
 EXTRA=()
