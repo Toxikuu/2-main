@@ -1,0 +1,22 @@
+repo = "main"
+name = "appstream-glib"
+version = "0.8.3"
+description = "Objects and methods for reading and writing AppStream metadata"
+categories = ["lib"]
+timestamp = "2025-03-29 18:38:29"
+dependencies = [
+    "curl",
+    "gdk-pixbuf",
+    "gtk3",
+    "libarchive",
+    "o^docbook-xml4",
+    "o^docbook-xsl-nons",
+    "o^gtk-doc",
+    "o^libxslt",
+    "o^libyaml",
+]
+upstream = "https://github.com/hughsie/appstream-glib.git"
+
+[source]
+url = "http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz"
+hash = "hHVAZMVg_KbhqxUdxkNU_CNaV5jwFrkbOMlhclOozxE"
