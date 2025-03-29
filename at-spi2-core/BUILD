@@ -1,5 +1,5 @@
 NAME="at-spi2-core"
-VERS="2.56.0"
+VERS="2.56.1"
 DESC="Comprehensive accessibility framework for GNOME's Assistive Technologies"
 CATG="lib"
 UPST="https://gitlab.gnome.org/GNOME/$NAME.git"
