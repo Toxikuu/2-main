@@ -18,7 +18,7 @@ with meson ninja
 
 sed -i '/^udev/,$ s/^/#/' util/meson.build
 
-ms
+ms -D tests=false -D examples=false
 nj
 ni
 
