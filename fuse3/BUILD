@@ -24,7 +24,8 @@ ni
 
 chmod u+s "$D"/usr/bin/fusermount3
 
-install -vDm644 ../doc/{README.NFS,kernel.txt} -t "$D"/usr/share/doc/fuse
-cp -Rv ../doc/html -T "$D"/usr/share/doc/fuse
+# The documentation is over 100mb, so I've elected to exclude it.
+# install -vDm644 ../doc/{README.NFS,kernel.txt} -t "$D"/usr/share/doc/fuse
+# cp -Rv ../doc/html -T "$D"/usr/share/doc/fuse
 
 }
