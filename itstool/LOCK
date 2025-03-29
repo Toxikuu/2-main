@@ -1,0 +1,10 @@
+repo = "main"
+name = "itstool"
+version = "2.0.7"
+description = "Translate XML with PO files"
+timestamp = "2025-03-29 17:08:24"
+upstream = "https://github.com/itstool/itstool.git"
+
+[source]
+url = "https://files.itstool.org/itstool/itstool-2.0.7.tar.bz2"
+hash = "a5p80poSu5VZj1dQ6HY87niDahogf4W3TYsydbJ-h8o"
