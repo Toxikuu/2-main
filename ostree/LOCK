@@ -1,0 +1,18 @@
+repo = "main"
+name = "ostree"
+version = "2025.1"
+description = "Library for container deployment and such"
+categories = ["lib"]
+timestamp = "2025-03-29 18:22:04"
+dependencies = [
+    "fuse3",
+    "glib",
+    "libsoup2",
+    "libsoup3",
+    "elogind",
+]
+upstream = "https://github.com/ostreedev/ostree.git"
+
+[source]
+url = "https://github.com/ostreedev/ostree/releases/download/v2025.1/libostree-2025.1.tar.xz"
+hash = "8sMSNE_WmuQoafmBfn60YLja7IElag1Ir9xODsLxg1E"
