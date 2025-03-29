@@ -1,0 +1,22 @@
+repo = "main"
+name = "libsoup2"
+version = "2.74.3"
+description = "HTTP client/server library for GNOME"
+categories = [
+    "lib",
+    "net",
+]
+timestamp = "2025-03-29 18:26:03"
+dependencies = [
+    "glib-networking",
+    "libpsl",
+    "libxml2",
+    "sqlite",
+    "glib",
+    "o^vala",
+]
+upstream = "https://gitlab.gnome.org/GNOME/libsoup.git"
+
+[source]
+url = "https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.3.tar.xz"
+hash = "5Ld8Qc_EyMWgNfzcMgx7xs-3XvfFoDQVPfFBP6HZLxM"
