@@ -1,7 +1,7 @@
 NAME="nvidia"
 VERS="570.133.07"
 DESC="The NVIDIA drivers"
-CATG="drivers"
+CATG="drivers graphics"
 UPST="https://github.com/NVIDIA/open-gpu-kernel-modules.git"  # often inaccurate because nvidia
 DEPS=(
     "tox/mesa"
@@ -9,7 +9,6 @@ DEPS=(
     "libglvnd"
     "libvdpau"
     "vulkan-loader"
-    "wayland"
 )
 
 EXTRA="https://us.download.nvidia.com/XFree86/Linux-x86_64/$VERS/NVIDIA-Linux-x86_64-$VERS.run"
@@ -82,4 +81,3 @@ EOF
 2i() {
     depmod -a
 }
-#d small improvements
