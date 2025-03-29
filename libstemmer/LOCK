@@ -1,0 +1,15 @@
+repo = "main"
+name = "libstemmer"
+version = "2.2.0"
+description = "Stemming algorithm processing language"
+categories = ["lib"]
+timestamp = "2025-03-29 18:13:42"
+upstream = "https://github.com/snowballstem/snowball.git"
+
+[source]
+url = "https://github.com/snowballstem/snowball/archive/refs/tags/v2.2.0.tar.gz"
+hash = "QlzbX7oToB21mhcTeA8GYumEIE9ALT2uFSW9qebTDxo"
+
+[[extra]]
+url = "https://gitlab.archlinux.org/archlinux/packaging/packages/snowball/-/raw/main/dynamiclib.diff"
+hash = "wDHaWhG6-ged9sM7OLh5W2XPLJHMa0UtzysQYSKIo-Y"
