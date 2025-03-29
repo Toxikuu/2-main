@@ -1,0 +1,12 @@
+repo = "main"
+name = "libxmlb"
+version = "0.3.22"
+description = "Library for binary XML blobs"
+categories = ["lib"]
+timestamp = "2025-03-29 17:30:11"
+dependencies = ["glib"]
+upstream = "https://github.com/hughsie/libxmlb.git"
+
+[source]
+url = "https://github.com/hughsie/libxmlb/releases/download/0.3.22/libxmlb-0.3.22.tar.xz"
+hash = "88RuhViBRaGoZzHHeCTsNDREJlpFdkcYmkO3GUGyD6A"
