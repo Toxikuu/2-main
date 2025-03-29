@@ -1,0 +1,19 @@
+repo = "main"
+name = "appstream"
+version = "1.0.4"
+description = "Tools and libraries to work with AppStream metadata"
+categories = ["lib"]
+timestamp = "2025-03-29 17:36:23"
+dependencies = [
+    "curl",
+    "elogind",
+    "itstool",
+    "libxml2",
+    "libyaml",
+    "libstemmer",
+]
+upstream = "https://github.com/ximion/appstream.git"
+
+[source]
+url = "https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.4.tar.xz"
+hash = "LSGDSAZ_mMTzSj_-LYIZrZ9QSxskgfGHLexmx3vzdQk"
