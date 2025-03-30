@@ -3,8 +3,9 @@ name = "fuse3"
 version = "3.16.2"
 description = "Filesystem in userspace"
 categories = ["lib"]
-timestamp = "2025-03-29 16:00:13"
+timestamp = "2025-03-30 15:02:31"
 upstream = "https://github.com/libfuse/libfuse.git"
+version_command = "git ls-remote --tags --refs https://github.com/libfuse/libfuse.git | sed -e 's@.*/@@' -e 's,fuse-,,' | grep -v '[a-Z]' | grep '^3' | sort -V | tail -n1"
 
 [source]
 url = "https://github.com/libfuse/libfuse/releases/download/fuse-3.16.2/fuse-3.16.2.tar.gz"
