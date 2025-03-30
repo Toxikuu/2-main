@@ -3,6 +3,7 @@ VERS="0.103.0"
 DESC="A new type of shell"
 CATG="shells"
 UPST="https://github.com/$NAME/$NAME.git"
+VCMD="git ls-remote --tags --refs $UPST | sed -e 's@.*/@@' -e 's,_,.,g' | sort -V | tail -n1"
 DEPS=(
     "openssl"
     "zlib"
