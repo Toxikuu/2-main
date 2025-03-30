@@ -12,6 +12,7 @@ DEPS=(
     "lame"
     "libvorbis"
     "libvpx"
+    "libdrm"
     "opus"
     "x264"
     "x265"
@@ -30,6 +31,10 @@ EXTRA=(
 2b() {
 
 tpatch "$SRC"/ffmpeg-$VERS-chromium_method-1.patch
+
+# fix an issue with x265=4.1
+sed -e 's/X265_BUILD >= 210/(&) \&\& (X265_BUILD < 213)/' \
+    -i libavcodec/libx265.c
 
 _cfg_opts=(
     --enable-gpl
@@ -65,5 +70,7 @@ mi
 # quicktime utility not qt
 gcc tools/qt-faststart.c -o tools/qt-faststart
 install -vDm755 tools/qt-faststart -t "$D"/usr/bin
+
+install -vDm644 doc/*.txt "$D"/usr/share/doc/ffmpeg
 
 }
