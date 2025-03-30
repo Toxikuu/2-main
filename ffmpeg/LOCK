@@ -8,7 +8,7 @@ categories = [
     "utils",
     "cli",
 ]
-timestamp = "2025-03-30 14:52:25"
+timestamp = "2025-03-30 14:59:46"
 dependencies = [
     "libaom",
     "libass",
