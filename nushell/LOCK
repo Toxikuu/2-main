@@ -3,13 +3,14 @@ name = "nushell"
 version = "0.103.0"
 description = "A new type of shell"
 categories = ["shells"]
-timestamp = "2025-03-29 18:54:01"
+timestamp = "2025-03-30 15:09:36"
 dependencies = [
     "openssl",
     "zlib",
     "rust",
 ]
 upstream = "https://github.com/nushell/nushell.git"
+version_command = "git ls-remote --tags --refs https://github.com/nushell/nushell.git | sed -e 's@.*/@@' -e 's,_,.,g' | sort -V | tail -n1"
 
 [source]
 url = "https://github.com/nushell/nushell/archive/refs/tags/0.103.0.tar.gz"
