@@ -3,7 +3,7 @@ name = "appstream-glib"
 version = "0.8.3"
 description = "Objects and methods for reading and writing AppStream metadata"
 categories = ["lib"]
-timestamp = "2025-03-29 18:38:29"
+timestamp = "2025-03-30 15:08:11"
 dependencies = [
     "curl",
     "gdk-pixbuf",
@@ -16,6 +16,7 @@ dependencies = [
     "o^libyaml",
 ]
 upstream = "https://github.com/hughsie/appstream-glib.git"
+version_command = "git ls-remote --tags --refs https://github.com/hughsie/appstream-glib.git | sed -e 's@.*/@@' -e 's,_,.,g' | cut -d. -f3- | tail -n1"
 
 [source]
 url = "http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz"
