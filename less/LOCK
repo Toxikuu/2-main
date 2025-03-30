@@ -1,10 +1,10 @@
 repo = "main"
 name = "less"
-version = "673"
+version = "674"
 description = "Text pager"
-timestamp = "2025-03-15 15:38:06"
+timestamp = "2025-03-30 14:46:12"
 upstream = "https://github.com/gwsw/less.git"
 
 [source]
-url = "https://github.com/gwsw/less/archive/refs/tags/v673.tar.gz"
-hash = "wqNxhsgElYlFJqigGZuV41c_-ZBlObZ8oSpwkNY67Dk"
+url = "https://github.com/gwsw/less/archive/refs/tags/v674.tar.gz"
+hash = "JLrZ3qCbVbeH0OeptziHpPg7eFhbPJYjhJH4Q-OWFNc"
