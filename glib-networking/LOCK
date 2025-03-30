@@ -6,7 +6,7 @@ categories = [
     "lib",
     "net",
 ]
-timestamp = "2025-03-29 18:30:44"
+timestamp = "2025-03-30 15:12:40"
 dependencies = [
     "glib",
     "gnutls",
@@ -14,6 +14,7 @@ dependencies = [
     "make-ca",
 ]
 upstream = "https://gitlab.gnome.org/GNOME/glib-networking.git"
+version_command = '''git ls-remote --tags --refs https://gitlab.gnome.org/GNOME/glib-networking.git | sed 's@.*/@@' | grep -Ev '[a-Z]|\.9[0-9]' | tail -n1'''
 
 [source]
 url = "https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz"
