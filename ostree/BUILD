@@ -1,5 +1,5 @@
 NAME="ostree"
-VERS="2025.1"
+VERS="2025.2"
 DESC="Library for container deployment and such"
 CATG="lib"
 UPST="https://github.com/ostreedev/ostree.git"
