@@ -6,7 +6,7 @@ categories = [
     "lib",
     "net",
 ]
-timestamp = "2025-03-29 18:28:34"
+timestamp = "2025-03-30 15:03:37"
 dependencies = [
     "glib-networking",
     "libpsl",
@@ -16,6 +16,7 @@ dependencies = [
     "glib",
 ]
 upstream = "https://gitlab.gnome.org/GNOME/libsoup.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.gnome.org/GNOME/libsoup.git' | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 
 [source]
 url = "https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz"
