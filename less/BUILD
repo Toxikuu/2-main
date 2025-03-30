@@ -1,5 +1,5 @@
 NAME="less"
-VERS="673"
+VERS="674"
 DESC="Text pager"
 UPST="https://github.com/gwsw/less.git"
 
