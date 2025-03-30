@@ -3,9 +3,10 @@ name = "pyparsing"
 version = "3.2.3"
 description = "General parsing module for Python"
 categories = ["lib"]
-timestamp = "2025-03-29 18:35:11"
+timestamp = "2025-03-30 15:10:56"
 dependencies = ["python"]
 upstream = "https://github.com/pyparsing/pyparsing.git"
+version_command = "git ls-remote --tags --refs https://github.com/pyparsing/pyparsing.git | sed 's@.*/@@' | cut -d_ -f2- | grep -v '[a-Z]' | sort -V | tail -n1"
 
 [source]
 url = "https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.2.3.tar.gz"
