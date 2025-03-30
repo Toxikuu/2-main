@@ -8,7 +8,7 @@ categories = [
     "utils",
     "cli",
 ]
-timestamp = "2025-03-25 15:45:47"
+timestamp = "2025-03-30 14:52:25"
 dependencies = [
     "libaom",
     "libass",
@@ -17,6 +17,7 @@ dependencies = [
     "lame",
     "libvorbis",
     "libvpx",
+    "libdrm",
     "opus",
     "x264",
     "x265",
