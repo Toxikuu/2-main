@@ -6,7 +6,7 @@ categories = [
     "lib",
     "net",
 ]
-timestamp = "2025-03-29 18:26:03"
+timestamp = "2025-03-30 15:07:01"
 dependencies = [
     "glib-networking",
     "libpsl",
@@ -16,6 +16,7 @@ dependencies = [
     "o^vala",
 ]
 upstream = "https://gitlab.gnome.org/GNOME/libsoup.git"
+version_command = '''git ls-remote --tags --refs https://gitlab.gnome.org/GNOME/libsoup.git | sed 's@.*/@@' | grep -Ev '[a-Z]|\.99\.' | grep '^2' | tail -n1'''
 
 [source]
 url = "https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.3.tar.xz"
