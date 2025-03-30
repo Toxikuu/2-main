@@ -3,6 +3,7 @@ VERS="0.8.3"
 DESC="Objects and methods for reading and writing AppStream metadata"
 CATG="lib"
 UPST="https://github.com/hughsie/$NAME.git"
+VCMD="git ls-remote --tags --refs $UPST | sed -e 's@.*/@@' -e 's,_,.,g' | cut -d. -f3- | tail -n1"
 DEPS=(
     "curl"
     "gdk-pixbuf"
