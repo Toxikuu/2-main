@@ -3,6 +3,7 @@ VERS="2.74.3"
 DESC="HTTP client/server library for GNOME"
 CATG="lib net"
 UPST="https://gitlab.gnome.org/GNOME/libsoup.git"
+VCMD="git ls-remote --tags --refs $UPST | sed 's@.*/@@' | grep -Ev '[a-Z]|\\.99\\.' | grep '^2' | tail -n1"
 DEPS=(
     "glib-networking"
     "libpsl"
