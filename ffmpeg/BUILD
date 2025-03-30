@@ -71,6 +71,6 @@ mi
 gcc tools/qt-faststart.c -o tools/qt-faststart
 install -vDm755 tools/qt-faststart -t "$D"/usr/bin
 
-install -vDm644 doc/*.txt "$D"/usr/share/doc/ffmpeg
+install -vDm644 doc/*.txt -t "$D"/usr/share/doc/ffmpeg
 
 }
