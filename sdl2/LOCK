@@ -1,8 +1,8 @@
 repo = "main"
 name = "sdl2"
-version = "2.32.2"
+version = "2.32.4"
 description = "A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard"
-timestamp = "2025-03-03 03:30:50"
+timestamp = "2025-03-31 22:35:46"
 dependencies = [
     "libxkbcommon",
     "wayland-protocols",
@@ -19,5 +19,5 @@ upstream = "https://github.com/libsdl-org/SDL.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/libsdl-org/SDL.git' | sed 's@.*/@@' | grep '^release-2' | cut -d- -f2 | sort -V | tail -n1"
 
 [source]
-url = "https://www.libsdl.org/release/SDL2-2.32.2.tar.gz"
-hash = "xfMMQn_YEH7kpADITURH3SETUlEurwtuicxqUKKCGSI"
+url = "https://www.libsdl.org/release/SDL2-2.32.4.tar.gz"
+hash = "8VtHglPh_22sYiV97SJf9OfQxSMCBKw0UPEUTugG-TQ"
