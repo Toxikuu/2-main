@@ -2,7 +2,7 @@ repo = "main"
 name = "git"
 version = "2.49.0"
 description = "The fast distributed version control system"
-timestamp = "2025-03-15 15:37:57"
+timestamp = "2025-03-31 21:34:35"
 upstream = "https://github.com/git/git.git"
 
 [source]
