@@ -2,7 +2,11 @@ repo = "main"
 name = "tree"
 version = "2.2.1"
 description = "A cli utility for viewing file trees"
-timestamp = "2025-02-20 20:23:26"
+categories = [
+    "utils",
+    "cli",
+]
+timestamp = "2025-03-31 20:32:11"
 upstream = "https://github.com/Old-Man-Programmer/tree"
 
 [source]
