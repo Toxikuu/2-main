@@ -39,6 +39,7 @@ mi
 ln -svnf ../cups/doc "$D"/usr/share/doc/cups
 rm -rf "$D"/tmp/cupsinit
 
+mkdir -pv "$D"/etc/{cups,pam.d}
 echo "ServerName /run/cups/cups.sock" > "$D"/etc/cups/client.conf
 
 cat > "$D"/etc/pam.d/cups << "EOF"
