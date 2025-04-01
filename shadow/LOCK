@@ -6,10 +6,16 @@ categories = [
     "core",
     "security",
 ]
-timestamp = "2025-03-20 16:30:46"
-dependencies = ["linux-pam"]
+timestamp = "2025-03-31 22:30:54"
+dependencies = [
+    "libcap",
+    "libxcrypt",
+    "linux-pam",
+    "acl",
+    "attr",
+]
 upstream = "https://github.com/shadow-maint/shadow.git"
-version_command = "git ls-remote --tags --refs 'https://github.com/shadow-maint/shadow.git' | sed 's:.*/::' | grep -v rc | sort -V | grep -B1 19990709 | head -n1"
+version_command = '''git ls-remote --tags --refs 'https://github.com/shadow-maint/shadow.git' | sed -e 's@.*/@@' -e 's,v,,' | grep '\.' | grep -v '[a-Z]' | sort -V | tail -n1'''
 
 [source]
 url = "https://github.com/shadow-maint/shadow/releases/download/4.17.4/shadow-4.17.4.tar.xz"
