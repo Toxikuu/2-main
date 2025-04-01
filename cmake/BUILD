@@ -1,5 +1,5 @@
 NAME="cmake"
-VERS="3.31.6"
+VERS="4.0.0"
 DESC="Build system succeeding configure scripts"
 UPST="https://gitlab.kitware.com/cmake/cmake.git"
 DEPS=(
@@ -22,8 +22,7 @@ sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
             --mandir=/share/man    \
             --no-system-jsoncpp    \
             --no-system-cppdap     \
-            --no-system-librhash   \
-            --docdir=/share/doc/cmake-$VERS
+            --no-system-librhash
 mk
 mi
 
