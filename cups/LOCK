@@ -3,7 +3,7 @@ name = "cups"
 version = "2.4.11"
 description = "Common Unix Printing System"
 categories = ["print"]
-timestamp = "2025-04-01 14:33:55"
+timestamp = "2025-04-01 14:36:00"
 dependencies = [
     "gnutls",
     "dbus",
