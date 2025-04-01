@@ -22,8 +22,10 @@ EXTRA=()
 
 2b() {
 
-useradd -c "Print Service User" -d /var/spool/cups -g lp -s /bin/false -u 9 lp
-groupadd -g 19 lpadmin
+id lp || useradd -c "Print Service User" \
+    -d /var/spool/cups -u 9 \
+    -g lp -s /bin/false lp
+groupadd -fg 19 lpadmin
 
 _cfg_opts=(
     --libdir=/usr/lib
@@ -62,3 +64,4 @@ msg "You may want to add a user to the cups administrative group:"
 msg " $ usermod -a -G lpadmin <user>"
 
 }
+#d fixed user- and group-extant failures
