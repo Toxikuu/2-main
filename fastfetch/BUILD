@@ -10,8 +10,8 @@ EXTRA=()
 
 with cmake
 
-cm
-cmake --build . --target fastfetch
-install -vDm755 fastfetch "$D"/usr/bin/fastfetch
+cm -D BUILD_FLASHFETCH=OFF -G "Unix Makefiles"
+mk
+mi
 
 }
