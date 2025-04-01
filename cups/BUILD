@@ -28,7 +28,7 @@ groupadd -g 19 lpadmin
 _cfg_opts=(
     --libdir=/usr/lib
     --with-rcdir=/tmp/cupsinit
-    --withrundir=/run/cups
+    --with-rundir=/run/cups
     --with-system-groups=lpadmin
 )
 
