@@ -1,11 +1,11 @@
 repo = "main"
 name = "sysklogd"
-version = "2.7.1"
+version = "2.7.2"
 description = "Programs for logging system messages"
 categories = ["core"]
-timestamp = "2025-03-03 02:12:06"
+timestamp = "2025-03-31 22:38:56"
 upstream = "https://github.com/troglobit/sysklogd.git"
 
 [source]
-url = "https://github.com/troglobit/sysklogd/releases/download/v2.7.1/sysklogd-2.7.1.tar.gz"
-hash = "aZRLIidke_R-4ByfSC0Zp52_K1O4zo3tBIawjbjGjEA"
+url = "https://github.com/troglobit/sysklogd/releases/download/v2.7.2/sysklogd-2.7.2.tar.gz"
+hash = "vEEMpkVRoR-sZRi0GPtrivvYiKcK8sXrNTM0pwZye8o"
