@@ -2,7 +2,7 @@ repo = "main"
 name = "yajl"
 version = "2.1.0"
 description = "Yet another json library"
-timestamp = "2025-03-05 14:01:23"
+timestamp = "2025-03-31 23:45:22"
 dependencies = ["cmake"]
 upstream = "https://github.com/lloyd/yajl.git"
 
@@ -21,3 +21,7 @@ hash = "pY9RhxqevYCEnIvHQY329Y1m-P5wH14RpkKf0PMtns8"
 [[extra]]
 url = "https://gitlab.archlinux.org/archlinux/packaging/packages/yajl/-/raw/main/yajl-2.1.0-memory_leak.patch"
 hash = "zTb39RUguqwr2EZ9e7sE8sbiYZaJgaHowQ_07XoK_2k"
+
+[[extra]]
+url = "https://github.com/lloyd/yajl/commit/6fe59ca50dfd65bdb3d1c87a27245b2dd1a072f9.patch"
+hash = "2RsW5WoibbYW1Ktu9cEThMEUON1vaq2TO7p06Sch3Vs"
