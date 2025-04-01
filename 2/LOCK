@@ -1,9 +1,9 @@
 repo = "main"
 name = "2"
-version = "0.0.94"
+version = "0.0.95"
 description = "Source-based LFS package manager"
 categories = ["core"]
-timestamp = "2025-03-29 12:13:13"
+timestamp = "2025-04-01 15:14:54"
 dependencies = [
     "rust",
     "tar",
@@ -13,5 +13,5 @@ dependencies = [
 upstream = "https://github.com/Toxikuu/2.git"
 
 [source]
-url = "https://github.com/Toxikuu/2/archive/refs/tags/v0.0.94.tar.gz"
-hash = "lTC17syHDxKqhm9heRvsq1RNg4Nto-OTFRklKvRC7-o"
+url = "https://github.com/Toxikuu/2/archive/refs/tags/v0.0.95.tar.gz"
+hash = "DV9uVQ6JIRtbK-cPg1p9XSufWaL2NluTvLb1rblOl0Y"
