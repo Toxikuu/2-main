@@ -10,8 +10,8 @@ EXTRA=(
 
 2b() {
 
-PV=$(cat "$PORT"/../perl/.data/INSTALLED)
-[ -z "$PV" ] && die "git depends on perl"
+PV=$(gv perl)
+[[ -z "$PV" ]] && die "Couldn't resolve perl version"
 
 cfg \
     --with-python=python3 \
