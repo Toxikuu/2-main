@@ -1,5 +1,5 @@
 NAME="libarchive"
-VERS="3.7.8"
+VERS="3.7.9"
 DESC="Multi-format archive and compression library"
 CATG=""
 UPST="https://github.com/$NAME/$NAME.git"
