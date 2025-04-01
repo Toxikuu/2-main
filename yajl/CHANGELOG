@@ -8,3 +8,4 @@ Changelog for yajl:
 [68153ec8ebc68a515afe8ead43be14fddb77db22] [2025-03-05 20:01:23] | Revised yajl
 [6df44e9926851eb0bc5551cde236a0b0facb21e1] [2025-03-05 20:01:23] | Generated yajl=2.1.0
 [3da65e7e086d977b30d14489793593d21045562c] [2025-04-01 04:45:22] | Revised yajl: fixed a build issue with cmake=4.0.0
+[76d39203bb24e7cad59404213f8bf2349dcbdade] [2025-04-01 04:45:23] | Generated yajl=2.1.0
