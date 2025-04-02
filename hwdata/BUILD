@@ -1,5 +1,5 @@
 NAME="hwdata"
-VERS="0.393"
+VERS="0.394"
 DESC="Hardware PCI and vendor ID databases"
 UPST="https://github.com/vcrhonek/$NAME.git"
 
