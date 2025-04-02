@@ -1,10 +1,10 @@
 repo = "main"
 name = "eza"
-version = "0.20.24"
+version = "0.21.0"
 description = "Very nice replacement for ls"
-timestamp = "2025-03-16 02:55:53"
+timestamp = "2025-04-02 17:36:22"
 upstream = "https://github.com/eza-community/eza.git"
 
 [source]
-url = "https://github.com/eza-community/eza/archive/refs/tags/v0.20.24.tar.gz"
-hash = "5aF2HwWtx0uA1ZA2gZ52gGCXHG9RB-IIAkx1KirwLMw"
+url = "https://github.com/eza-community/eza/archive/refs/tags/v0.21.0.tar.gz"
+hash = "iFrnoSx-1o3Tp8ynbU6L6qEAyenWt60Ta1u2eF4Wsos"
