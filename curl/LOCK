@@ -1,11 +1,11 @@
 repo = "main"
 name = "curl"
-version = "8.12.1"
+version = "8.13.0"
 description = "Tool and library for transferring data with URLs"
-timestamp = "2025-02-20 20:19:48"
+timestamp = "2025-04-02 17:35:06"
 upstream = "https://github.com/curl/curl.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/curl/curl.git' | sed 's@.*/@@' | grep -E '^curl-[0-9]+' | grep -Ev 'pre|alpha' | sed 's@_@.@g' | cut -d- -f2 | sort -V | tail -n1"
 
 [source]
-url = "https://curl.se/download/curl-8.12.1.tar.xz"
-hash = "mkYox2S-axqZCVZ8E-jncQQWCd9DshWPysTgXqcJfl0"
+url = "https://curl.se/download/curl-8.13.0.tar.xz"
+hash = "Sgk5eaPC0C3i-8AFSaMncQB_LngDLG-qXs0vep4VICU"
