@@ -1,27 +1,27 @@
 repo = "main"
 name = "llvm"
-version = "20.1.1"
+version = "20.1.2"
 description = "A collection of modular and reusable compiler and toolchain technologies"
-timestamp = "2025-03-20 16:28:59"
+timestamp = "2025-04-02 17:35:49"
 upstream = "https://github.com/llvm/llvm-project.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/llvm/llvm-project.git' | cut -d- -f2- | grep -v [a-Z] | sort -V | tail -n1"
 
 [source]
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.1/llvm-20.1.1.src.tar.xz"
-hash = "PppIlyasIWZDMb9-K3GasSVFa_2jZQlVQik8msm-s90"
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/llvm-20.1.2.src.tar.xz"
+hash = "YobFJts7hM55KS-AEY5-bT-9W1zj5KDrsystIFIzvYY"
 
 [[extra]]
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.1/cmake-20.1.1.src.tar.xz"
-hash = "tZiMnj3zphJJ-oLbVAYfczdW509z37KZ_2MUhzpzLWE"
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/cmake-20.1.2.src.tar.xz"
+hash = "ikjV_1mgeLepQ5WzT31adp9DWjIRiG4si_g6opgWMbw"
 
 [[extra]]
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.1/third-party-20.1.1.src.tar.xz"
-hash = "DtOnje2w5lkeH5VB1qLmhKRIhtaBHUnzoU3bU1afeaU"
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/third-party-20.1.2.src.tar.xz"
+hash = "Dqqr_0vmIYlZkCYBnyMq3vwD09sl1B8aCQrY6AbcXc4"
 
 [[extra]]
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.1/clang-20.1.1.src.tar.xz"
-hash = "fU6DjP2XpjIt83ap5UiJr8S65Oe7dja0UvWBblxx3Is"
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/clang-20.1.2.src.tar.xz"
+hash = "ZQMSB9CIk30P_fTX3XFnyuZAt8kYj8C-PX4oaom3eHw"
 
 [[extra]]
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.1/compiler-rt-20.1.1.src.tar.xz"
-hash = "xPdTEXzb_-Watd86rUknk-awKaJZGYyEO7C5yCxZ700"
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/compiler-rt-20.1.2.src.tar.xz"
+hash = "60vsVYPij2muNXFbziX2CmehRihs7-_h9G504a7mq6Q"
