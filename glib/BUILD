@@ -10,7 +10,7 @@ VCMD="git ls-remote --tags --refs '$UPST' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' |
 SOURCE="https://download.gnome.org/sources/glib/${VERS%.*}/glib-$VERS.tar.xz"
 EXTRA=(
     "https://download.gnome.org/sources/gobject-introspection/${GOBJV%.*}/gobject-introspection-$GOBJV.tar.xz"
-    "https://glfs-book.github.io/glfs/patches/glib/glib-$VERS-upstream_fixes-1.patch"
+    "https://glfs-book.github.io/glfs/patches/glib/glib-2.84.0-upstream_fixes-1.patch"
     "https://glfs-book.github.io/glfs/patches/glib/glib-skip_warnings-1.patch"
 )
 
