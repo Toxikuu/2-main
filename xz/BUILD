@@ -1,5 +1,5 @@
 NAME="xz"
-VERS="5.8.0"
+VERS="5.8.1"
 CATG="core utils cli lib"
 DESC="The xz and lzma compression algorithms"
 UPST="https://github.com/tukaani-project/xz.git"
