@@ -19,7 +19,7 @@ EXTRA=(
 with meson ninja
 
 # optional log level selection patch
-tpatch "$SRC"/glib-$VERS-upstream_fixes-1.patch
+tpatch "$SRC"/glib-2.84.0-upstream_fixes-1.patch
 tpatch "$SRC"/glib-skip_warnings-1.patch
 
 restore() {
