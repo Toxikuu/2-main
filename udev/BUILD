@@ -1,5 +1,5 @@
 NAME="udev"
-VERS="257.4"
+VERS="257.5"
 CATG="core"
 DESC="Programs for dynamic device node creation"
 UPST="https://github.com/systemd/systemd.git"
@@ -86,4 +86,3 @@ sed -e "s@/usr/lib@&32@g" src/libudev/libudev.pc > "$D"/usr/lib32/pkgconfig/libu
 udev-hwdb update
 
 }
-#d use prefer the more standard _cfg_opts
