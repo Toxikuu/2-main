@@ -24,13 +24,6 @@ ms -D trust_paths=/etc/pki/anchors
 nj
 ni
 
-cd ..
-m32=1
-
-ms -D trust_paths=/etc/pki/anchors
-nj
-ni
-
 ln -sfv ./pkcs11/p11-kit-trust.so "$D"/usr/lib/libnssckbi.so
 ln -sfv ./pkcs11/p11-kit-trust.so "$D"/usr/lib32/libnssckbi.so
 
@@ -42,3 +35,4 @@ ln -sfv /usr/libexec/p11-kit/trust-extract-compat \
         /usr/bin/update-ca-certificates
 
 }
+#d test skipping m32
