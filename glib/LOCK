@@ -1,14 +1,14 @@
 repo = "main"
 name = "glib"
-version = "2.84.0"
+version = "2.84.1"
 description = "Low level core library"
-timestamp = "2025-03-20 22:24:56"
+timestamp = "2025-04-03 22:16:16"
 upstream = "https://github.com/GNOME/glib.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/GNOME/glib.git' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' | head -n1 | sed 's@.*/@@'"
 
 [source]
-url = "https://download.gnome.org/sources/glib/2.84/glib-2.84.0.tar.xz"
-hash = "-II2AMuFQl4oFc-tguog_apThIKrdOcpPViz9kpa_2o"
+url = "https://download.gnome.org/sources/glib/2.84/glib-2.84.1.tar.xz"
+hash = "K0vC7ElhGl_DX4asqFXy7QGW5p5TCSura7czlr8weJo"
 
 [[extra]]
 url = "https://download.gnome.org/sources/gobject-introspection/1.84/gobject-introspection-1.84.0.tar.xz"
