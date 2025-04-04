@@ -1,7 +1,7 @@
 # I fucking hate glib. If you're able to make this build script function
 # without touching the host system, please do. I've spent weeks failing.
 NAME="glib"
-VERS="2.84.0"
+VERS="2.84.1"
 GOBJV="1.84.0"
 DESC="Low level core library"
 UPST="https://github.com/GNOME/glib.git"
@@ -89,4 +89,3 @@ nj
 ni
 
 }
-#d Made it build. Honestly might split this up into two packages in the future because meson refuses to recognize environment variables.
