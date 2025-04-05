@@ -11,9 +11,6 @@ readline
 m4
 bc
 flex
-tcl
-expect
-dejagnu
 pkgconf
 binutils
 gmp
@@ -46,6 +43,7 @@ openssl
 kmod
 libelf
 libffi
+mpdecimal
 python
 flit-core
 wheel
@@ -53,7 +51,6 @@ setuptools
 ninja
 meson
 coreutils
-check
 diffutils
 gawk
 findutils
