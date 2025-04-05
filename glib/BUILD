@@ -1,8 +1,5 @@
 # I fucking hate glib. If you're able to make this build script function
 # without touching the host system, please do. I've spent weeks failing.
-#
-# NOTE: As of 2025-04-03 22:17, the upstream fixes patch is outdated, breaking
-# this build.
 NAME="glib"
 VERS="2.84.1"
 GOBJV="1.84.0"
@@ -13,7 +10,6 @@ VCMD="git ls-remote --tags --refs '$UPST' | grep -B1 'EAZEL-NAUTILUS-MS-AUG07' |
 SOURCE="https://download.gnome.org/sources/glib/${VERS%.*}/glib-$VERS.tar.xz"
 EXTRA=(
     "https://download.gnome.org/sources/gobject-introspection/${GOBJV%.*}/gobject-introspection-$GOBJV.tar.xz"
-    "https://glfs-book.github.io/glfs/patches/glib/glib-$VERS-upstream_fixes-1.patch"
     "https://glfs-book.github.io/glfs/patches/glib/glib-skip_warnings-1.patch"
 )
 
@@ -22,7 +18,6 @@ EXTRA=(
 with meson ninja
 
 # optional log level selection patch
-tpatch "$SRC"/glib-$VERS-upstream_fixes-1.patch
 tpatch "$SRC"/glib-skip_warnings-1.patch
 
 restore() {
