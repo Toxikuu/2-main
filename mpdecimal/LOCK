@@ -3,9 +3,9 @@ name = "mpdecimal"
 version = "4.0.0"
 description = "Arbitrary-precision decimal floating point arithmetic library"
 categories = ["lib"]
-timestamp = "2025-04-04 21:42:52"
-upstream = "https://www.bytereef.org/mpdecimal/index.html"
-version_command = "curl -s 'https://www.bytereef.org/mpdecimal/index.html' | grep 'mpdecimal-[0-9]' | cut -d- -f2 | cut -d. -f1-3"
+timestamp = "2025-04-04 21:44:19"
+upstream = "https://www.bytereef.org/mpdecimal/download.html"
+version_command = "curl -s 'https://www.bytereef.org/mpdecimal/download.html' | grep 'mpdecimal-[0-9]' | head -n1 | cut -d- -f2 | cut -d. -f1-3"
 
 [source]
 url = "https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-4.0.0.tar.gz"
