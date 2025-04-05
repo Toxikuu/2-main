@@ -1,11 +1,11 @@
 repo = "main"
 name = "meson"
-version = "1.7.1"
+version = "1.7.2"
 description = "Fast, user-friendly build system"
 categories = ["core"]
-timestamp = "2025-04-01 16:49:21"
+timestamp = "2025-04-05 14:21:47"
 upstream = "https://github.com/mesonbuild/meson.git"
 
 [source]
-url = "https://github.com/mesonbuild/meson/releases/download/1.7.1/meson-1.7.1.tar.gz"
-hash = "FVeApb6H9t1_QnrYvL8PKyxfYu5f2synyqnehDmiS4k"
+url = "https://github.com/mesonbuild/meson/releases/download/1.7.2/meson-1.7.2.tar.gz"
+hash = "TUDWOqdIqcE5zEGrm__kPt0RPFY514vegVRMqVWuqJA"
