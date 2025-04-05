@@ -1,5 +1,5 @@
 NAME="cargo-c"
-VERS="0.10.11"
+VERS="0.10.12"
 DESC="A cargo subcommand to build and install C-ABI compatibile dynamic and static libraries"
 UPST="https://github.com/lu-zero/cargo-c.git"
 
