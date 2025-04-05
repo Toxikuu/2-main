@@ -1,12 +1,12 @@
 repo = "main"
 name = "harfbuzz"
-version = "11.0.0"
+version = "11.0.1"
 description = "OpenType text shaping engine"
-timestamp = "2025-03-24 13:36:01"
+timestamp = "2025-04-05 14:25:59"
 dependencies = ["freetype"]
 upstream = "https://github.com/harfbuzz/harfbuzz.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/harfbuzz/harfbuzz.git' | sed 's@.*/@@' | sort -V | grep -E '[0-9]' | tail -n1"
 
 [source]
-url = "https://github.com/harfbuzz/harfbuzz/releases/download/11.0.0/harfbuzz-11.0.0.tar.xz"
-hash = "8WNRuv4hRyX-LB1bWfDZPkmQWkskeJn7kNcM_5U6K5s"
+url = "https://github.com/harfbuzz/harfbuzz/releases/download/11.0.1/harfbuzz-11.0.1.tar.xz"
+hash = "SniQCQU4E222R0IHOvS013ari1DmhVZ2qBZeuLf2C3o"
