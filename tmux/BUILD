@@ -1,5 +1,5 @@
 NAME="tmux"
-VERS="dfdced2ab127cad503f12895438ac9f2c9df513e"
+VERS="d3c39375d5e9f4a0dcb5bd210c912d70ceca5de9"
 DESC="Terminal multiplexer"
 CATG="tui"
 UPST="https://github.com/tmux/tmux.git"
