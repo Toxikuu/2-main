@@ -6,7 +6,17 @@ categories = [
     "core",
     "lang",
 ]
-timestamp = "2025-02-25 20:17:24"
+timestamp = "2025-04-04 22:08:37"
+dependencies = [
+    "mpdecimal",
+    "expat",
+    "libffi",
+    "gdbm",
+    "libxcrypt",
+    "openssl",
+    "zlib",
+    "bzip2",
+]
 upstream = "https://github.com/python/cpython.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/python/cpython.git' | sed 's@.*/@@' | grep -Ev 'a|b|rc' | sort -V | tail -n1"
 
