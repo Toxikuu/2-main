@@ -1,5 +1,5 @@
 NAME="harfbuzz"
-VERS="11.0.0"
+VERS="11.0.1"
 DESC="OpenType text shaping engine"
 UPST="https://github.com/harfbuzz/harfbuzz.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | sort -V | grep -E '[0-9]' | tail -n1"
