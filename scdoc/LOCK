@@ -1,0 +1,11 @@
+repo = "main"
+name = "scdoc"
+version = "1.11.3"
+description = "Small man page generator"
+categories = ["doc"]
+timestamp = "2025-04-06 12:45:38"
+upstream = "https://git.sr.ht/~sircmpwn/scdoc"
+
+[source]
+url = "https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.3.tar.gz"
+hash = "TFxhNlQDhOVFWyUPdo58oRsD_boajvwjQe4PERHldhI"
