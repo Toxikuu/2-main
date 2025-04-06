@@ -1,5 +1,5 @@
 NAME="iana-etc"
-VERS="20250328"
+VERS="20250403"
 CATG="core"
 DESC="The Internet Assigned Numbers Authority's services and protocols"
 UPST="https://github.com/Mic92/iana-etc.git"
