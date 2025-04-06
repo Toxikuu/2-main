@@ -6,7 +6,7 @@ categories = [
     "cli",
     "util",
 ]
-timestamp = "2025-03-20 16:32:51"
+timestamp = "2025-04-06 03:46:09"
 dependencies = ["rust"]
 upstream = "https://github.com/tealdeer-rs/tealdeer.git"
 
