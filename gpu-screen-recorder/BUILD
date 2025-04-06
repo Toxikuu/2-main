@@ -53,4 +53,4 @@ nj
 ni
 
 }
-#d cqp patch
+#d Added some comments to cqp.patch

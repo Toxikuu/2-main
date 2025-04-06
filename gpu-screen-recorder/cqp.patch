@@ -1,3 +1,9 @@
+# Author:       Toxikuu
+# Timestamp:    2025-04-06 02:59
+# Version:      5.3.7
+# License:      Upstream's
+# Description:  Make CQP levels configurable at compile time
+
 diff --git a/meson_options.txt b/meson_options.txt
 index b1023c2..2f7d1b4 100644
 --- a/meson_options.txt
