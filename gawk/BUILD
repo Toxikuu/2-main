@@ -1,5 +1,5 @@
 NAME="gawk"
-VERS="5.3.1"
+VERS="5.3.2"
 CATG="core"
 DESC="Programs for manipulating text files"
 UPST="https://git.savannah.gnu.org/git/gawk.git"
