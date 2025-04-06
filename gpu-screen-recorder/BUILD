@@ -37,11 +37,15 @@ EXTRA="https://dec05eba.com/snapshot/$NAME.git.$VERS.tar.gz" # messy extraction
 with meson ninja
 
 tar xf "$SRC"/$NAME.git.$VERS.tar.gz
+tpatch "$PORT"/cqp.patch
 
 _cfg_opts=(
     -D systemd=false
-    $([[ -e /var/ports/main/pipewire/.data/INSTALLED ]] || echo -D portal=false)
-    $([[ -e /var/ports/main/pipewire/.data/INSTALLED ]] || echo -D app_audio=false)
+    -D cqp_ultra=15
+    -D cqp_vhigh=20
+    -D cqp_high=25
+    -D cqp_med=30
+    $([[ -e /var/ports/main/pipewire/.data/INSTALLED ]] || echo -D portal=false -D app_audio=false)
 )
 
 ms ${_cfg_opts[@]}
@@ -49,3 +53,4 @@ nj
 ni
 
 }
+#d cqp patch

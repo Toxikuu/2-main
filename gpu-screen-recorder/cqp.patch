@@ -1,0 +1,333 @@
+diff --git a/meson_options.txt b/meson_options.txt
+index b1023c2..2f7d1b4 100644
+--- a/meson_options.txt
++++ b/meson_options.txt
+@@ -1,5 +1,11 @@
+-option('systemd', type : 'boolean', value : true, description : 'Install systemd service file')
+-option('capabilities', type : 'boolean', value : true, description : 'Set binary admin capability on gsr-kms-server binary to remove password prompt when recording monitor (without desktop portal option) on amd/intel or nvidia wayland')
++option('systemd',            type : 'boolean', value : true, description : 'Install systemd service file')
++option('capabilities',       type : 'boolean', value : true, description : 'Set binary admin capability on gsr-kms-server binary to remove password prompt when recording monitor (without desktop portal option) on amd/intel or nvidia wayland')
+ option('nvidia_suspend_fix', type : 'boolean', value : true, description : 'Install nvidia modprobe config file to tell nvidia driver to preserve video memory on suspend. This is a workaround for an nvidia driver bug that breaks cuda (and gpu screen recorder) on suspend')
+-option('portal', type : 'boolean', value : true, description : 'Build with support for xdg desktop portal ScreenCast capture (wayland only) (-w portal option). Requires pipewire')
+-option('app_audio', type : 'boolean', value : true, description : 'Build with support for recording a single audio source (-a app: option). Requires pipewire')
++option('portal',             type : 'boolean', value : true, description : 'Build with support for xdg desktop portal ScreenCast capture (wayland only) (-w portal option). Requires pipewire')
++option('app_audio',          type : 'boolean', value : true, description : 'Build with support for recording a single audio source (-a app: option). Requires pipewire')
++
++# CQP Level presets
++option('cqp_ultra',          type : 'integer', value : 18,   description : 'CQP value for ultra quality')
++option('cqp_vhigh',          type : 'integer', value : 22,   description : 'CQP value for very high quality')
++option('cqp_high',           type : 'integer', value : 26,   description : 'CQP value for high quality')
++option('cqp_med',            type : 'integer', value : 30,   description : 'CQP value for medium quality')
+diff --git a/src/main.cpp b/src/main.cpp
+index 6b3683a..b516134 100644
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -73,6 +73,23 @@ static const int AUDIO_SAMPLE_RATE = 48000;
+ 
+ static const int VIDEO_STREAM_INDEX = 0;
+ 
++// Make CQP levels configurable
++#ifndef CQP_ULTRA
++#define CQP_ULTRA 18
++#endif
++
++#ifndef CQP_VHIGH
++#define CQP_VHIGH 22
++#endif
++
++#ifndef CQP_HIGH
++#define CQP_HIGH 26
++#endif
++
++#ifndef CQP_MED
++#define CQP_MED 30
++#endif
++
+ static thread_local char av_error_buffer[AV_ERROR_MAX_STRING_SIZE];
+ 
+ typedef struct {
+@@ -504,39 +521,39 @@ static int vbr_get_quality_parameter(AVCodecContext *codec_context, VideoQuality
+     } else if(codec_context->codec_id == AV_CODEC_ID_H264) {
+         switch(video_quality) {
+             case VideoQuality::MEDIUM:
+-                return 35 * qp_multiply;
++                return CQP_MED * qp_multiply;
+             case VideoQuality::HIGH:
+-                return 30 * qp_multiply;
++                return CQP_HIGH * qp_multiply;
+             case VideoQuality::VERY_HIGH:
+-                return 25 * qp_multiply;
++                return CQP_VHIGH * qp_multiply;
+             case VideoQuality::ULTRA:
+-                return 22 * qp_multiply;
++                return CQP_ULTRA * qp_multiply;
+         }
+     } else if(codec_context->codec_id == AV_CODEC_ID_HEVC) {
+         switch(video_quality) {
+             case VideoQuality::MEDIUM:
+-                return 35 * qp_multiply;
++                return CQP_MED * qp_multiply;
+             case VideoQuality::HIGH:
+-                return 30 * qp_multiply;
++                return CQP_HIGH * qp_multiply;
+             case VideoQuality::VERY_HIGH:
+-                return 25 * qp_multiply;
++                return CQP_VHIGH * qp_multiply;
+             case VideoQuality::ULTRA:
+-                return 22 * qp_multiply;
++                return CQP_ULTRA * qp_multiply;
+         }
+     } else if(codec_context->codec_id == AV_CODEC_ID_VP8 || codec_context->codec_id == AV_CODEC_ID_VP9) {
+         switch(video_quality) {
+             case VideoQuality::MEDIUM:
+-                return 35 * qp_multiply;
++                return CQP_MED * qp_multiply;
+             case VideoQuality::HIGH:
+-                return 30 * qp_multiply;
++                return CQP_HIGH * qp_multiply;
+             case VideoQuality::VERY_HIGH:
+-                return 25 * qp_multiply;
++                return CQP_VHIGH * qp_multiply;
+             case VideoQuality::ULTRA:
+-                return 22 * qp_multiply;
++                return CQP_ULTRA * qp_multiply;
+         }
+     }
+     assert(false);
+-    return 22 * qp_multiply;
++    return CQP_ULTRA * qp_multiply;
+ }
+ 
+ static AVCodecContext *create_video_codec_context(AVPixelFormat pix_fmt,
+@@ -682,6 +699,8 @@ static AVCodecContext *create_video_codec_context(AVPixelFormat pix_fmt,
+     av_opt_set_int(codec_context->priv_data, "b_ref_mode", 0, 0);
+     //av_opt_set_int(codec_context->priv_data, "cbr", true, 0);
+ 
++    // FIXME: Bug the author about unreachable code in this if statement
++    // Specifically the vendor == NVIDIA checks
+     if(vendor != GSR_GPU_VENDOR_NVIDIA) {
+         // TODO: More options, better options
+         //codec_context->bit_rate = codec_context->width * codec_context->height;
+@@ -689,7 +708,7 @@ static AVCodecContext *create_video_codec_context(AVPixelFormat pix_fmt,
+             case BitrateMode::QP: {
+                 if(video_codec_is_vulkan(video_codec))
+                     av_opt_set(codec_context->priv_data, "rc_mode", "cqp", 0);
+-                else if(vendor == GSR_GPU_VENDOR_NVIDIA)
++                else if(vendor == GSR_GPU_VENDOR_NVIDIA) // here
+                     av_opt_set(codec_context->priv_data, "rc", "constqp", 0);
+                 else
+                     av_opt_set(codec_context->priv_data, "rc_mode", "CQP", 0);
+@@ -698,7 +717,7 @@ static AVCodecContext *create_video_codec_context(AVPixelFormat pix_fmt,
+             case BitrateMode::VBR: {
+                 if(video_codec_is_vulkan(video_codec))
+                     av_opt_set(codec_context->priv_data, "rc_mode", "vbr", 0);
+-                else if(vendor == GSR_GPU_VENDOR_NVIDIA)
++                else if(vendor == GSR_GPU_VENDOR_NVIDIA) // here
+                     av_opt_set(codec_context->priv_data, "rc", "vbr", 0);
+                 else
+                     av_opt_set(codec_context->priv_data, "rc_mode", "VBR", 0);
+@@ -707,7 +726,7 @@ static AVCodecContext *create_video_codec_context(AVPixelFormat pix_fmt,
+             case BitrateMode::CBR: {
+                 if(video_codec_is_vulkan(video_codec))
+                     av_opt_set(codec_context->priv_data, "rc_mode", "cbr", 0);
+-                else if(vendor == GSR_GPU_VENDOR_NVIDIA)
++                else if(vendor == GSR_GPU_VENDOR_NVIDIA) // and here
+                     av_opt_set(codec_context->priv_data, "rc", "cbr", 0);
+                 else
+                     av_opt_set(codec_context->priv_data, "rc_mode", "CBR", 0);
+@@ -813,46 +832,46 @@ static void video_software_set_qp(AVCodecContext *codec_context, VideoQuality vi
+     if(codec_context->codec_id == AV_CODEC_ID_AV1) {
+         switch(video_quality) {
+             case VideoQuality::MEDIUM:
+-                av_dict_set_int(options, "qp", 35 * qp_multiply, 0);
++                av_dict_set_int(options, "qp", CQP_MED * qp_multiply, 0);
+                 break;
+             case VideoQuality::HIGH:
+-                av_dict_set_int(options, "qp", 30 * qp_multiply, 0);
++                av_dict_set_int(options, "qp", CQP_HIGH * qp_multiply, 0);
+                 break;
+             case VideoQuality::VERY_HIGH:
+-                av_dict_set_int(options, "qp", 25 * qp_multiply, 0);
++                av_dict_set_int(options, "qp", CQP_VHIGH * qp_multiply, 0);
+                 break;
+             case VideoQuality::ULTRA:
+-                av_dict_set_int(options, "qp", 22 * qp_multiply, 0);
++                av_dict_set_int(options, "qp", CQP_ULTRA * qp_multiply, 0);
+                 break;
+         }
+     } else if(codec_context->codec_id == AV_CODEC_ID_H264) {
+         switch(video_quality) {
+             case VideoQuality::MEDIUM:
+-                av_dict_set_int(options, "qp", 34 * qp_multiply, 0);
++                av_dict_set_int(options, "qp", CQP_MED * qp_multiply, 0);
+                 break;
+             case VideoQuality::HIGH:
+-                av_dict_set_int(options, "qp", 30 * qp_multiply, 0);
++                av_dict_set_int(options, "qp", CQP_HIGH * qp_multiply, 0);
+                 break;
+             case VideoQuality::VERY_HIGH:
+-                av_dict_set_int(options, "qp", 25 * qp_multiply, 0);
++                av_dict_set_int(options, "qp", CQP_VHIGH * qp_multiply, 0);
+                 break;
+             case VideoQuality::ULTRA:
+-                av_dict_set_int(options, "qp", 22 * qp_multiply, 0);
++                av_dict_set_int(options, "qp", CQP_ULTRA * qp_multiply, 0);
+                 break;
+         }
+     } else {
+         switch(video_quality) {
+             case VideoQuality::MEDIUM:
+-                av_dict_set_int(options, "qp", 35 * qp_multiply, 0);
++                av_dict_set_int(options, "qp", CQP_MED * qp_multiply, 0);
+                 break;
+             case VideoQuality::HIGH:
+-                av_dict_set_int(options, "qp", 30 * qp_multiply, 0);
++                av_dict_set_int(options, "qp", CQP_HIGH * qp_multiply, 0);
+                 break;
+             case VideoQuality::VERY_HIGH:
+-                av_dict_set_int(options, "qp", 25 * qp_multiply, 0);
++                av_dict_set_int(options, "qp", CQP_VHIGH * qp_multiply, 0);
+                 break;
+             case VideoQuality::ULTRA:
+-                av_dict_set_int(options, "qp", 22 * qp_multiply, 0);
++                av_dict_set_int(options, "qp", CQP_ULTRA * qp_multiply, 0);
+                 break;
+         }
+     }
+@@ -922,61 +941,61 @@ static void video_hardware_set_qp(AVCodecContext *codec_context, VideoQuality vi
+         if(codec_context->codec_id == AV_CODEC_ID_AV1) {
+             switch(video_quality) {
+                 case VideoQuality::MEDIUM:
+-                    av_dict_set_int(options, "qp", 35 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_MED * qp_multiply, 0);
+                     break;
+                 case VideoQuality::HIGH:
+-                    av_dict_set_int(options, "qp", 30 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_HIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::VERY_HIGH:
+-                    av_dict_set_int(options, "qp", 25 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_VHIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::ULTRA:
+-                    av_dict_set_int(options, "qp", 22 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_ULTRA * qp_multiply, 0);
+                     break;
+             }
+         } else if(codec_context->codec_id == AV_CODEC_ID_H264) {
+             switch(video_quality) {
+                 case VideoQuality::MEDIUM:
+-                    av_dict_set_int(options, "qp", 35 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_MED * qp_multiply, 0);
+                     break;
+                 case VideoQuality::HIGH:
+-                    av_dict_set_int(options, "qp", 30 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_HIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::VERY_HIGH:
+-                    av_dict_set_int(options, "qp", 25 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_VHIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::ULTRA:
+-                    av_dict_set_int(options, "qp", 22 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_ULTRA * qp_multiply, 0);
+                     break;
+             }
+         } else if(codec_context->codec_id == AV_CODEC_ID_HEVC) {
+             switch(video_quality) {
+                 case VideoQuality::MEDIUM:
+-                    av_dict_set_int(options, "qp", 35 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_MED * qp_multiply, 0);
+                     break;
+                 case VideoQuality::HIGH:
+-                    av_dict_set_int(options, "qp", 30 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_HIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::VERY_HIGH:
+-                    av_dict_set_int(options, "qp", 25 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_VHIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::ULTRA:
+-                    av_dict_set_int(options, "qp", 22 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_ULTRA * qp_multiply, 0);
+                     break;
+             }
+         } else if(codec_context->codec_id == AV_CODEC_ID_VP8 || codec_context->codec_id == AV_CODEC_ID_VP9) {
+             switch(video_quality) {
+                 case VideoQuality::MEDIUM:
+-                    av_dict_set_int(options, "qp", 35 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_MED * qp_multiply, 0);
+                     break;
+                 case VideoQuality::HIGH:
+-                    av_dict_set_int(options, "qp", 30 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_HIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::VERY_HIGH:
+-                    av_dict_set_int(options, "qp", 25 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_VHIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::ULTRA:
+-                    av_dict_set_int(options, "qp", 22 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_ULTRA * qp_multiply, 0);
+                     break;
+             }
+         }
+@@ -986,46 +1005,46 @@ static void video_hardware_set_qp(AVCodecContext *codec_context, VideoQuality vi
+         } else if(codec_context->codec_id == AV_CODEC_ID_H264) {
+             switch(video_quality) {
+                 case VideoQuality::MEDIUM:
+-                    av_dict_set_int(options, "qp", 35 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_MED * qp_multiply, 0);
+                     break;
+                 case VideoQuality::HIGH:
+-                    av_dict_set_int(options, "qp", 30 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_HIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::VERY_HIGH:
+-                    av_dict_set_int(options, "qp", 25 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_VHIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::ULTRA:
+-                    av_dict_set_int(options, "qp", 22 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_ULTRA * qp_multiply, 0);
+                     break;
+             }
+         } else if(codec_context->codec_id == AV_CODEC_ID_HEVC) {
+             switch(video_quality) {
+                 case VideoQuality::MEDIUM:
+-                    av_dict_set_int(options, "qp", 35 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_MED * qp_multiply, 0);
+                     break;
+                 case VideoQuality::HIGH:
+-                    av_dict_set_int(options, "qp", 30 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_HIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::VERY_HIGH:
+-                    av_dict_set_int(options, "qp", 25 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_VHIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::ULTRA:
+-                    av_dict_set_int(options, "qp", 22 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_ULTRA * qp_multiply, 0);
+                     break;
+             }
+         } else if(codec_context->codec_id == AV_CODEC_ID_VP8 || codec_context->codec_id == AV_CODEC_ID_VP9) {
+             switch(video_quality) {
+                 case VideoQuality::MEDIUM:
+-                    av_dict_set_int(options, "qp", 35 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_MED * qp_multiply, 0);
+                     break;
+                 case VideoQuality::HIGH:
+-                    av_dict_set_int(options, "qp", 30 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_HIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::VERY_HIGH:
+-                    av_dict_set_int(options, "qp", 25 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_VHIGH * qp_multiply, 0);
+                     break;
+                 case VideoQuality::ULTRA:
+-                    av_dict_set_int(options, "qp", 22 * qp_multiply, 0);
++                    av_dict_set_int(options, "qp", CQP_ULTRA * qp_multiply, 0);
+                     break;
+             }
+         }
