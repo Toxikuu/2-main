@@ -1,11 +1,11 @@
 repo = "main"
 name = "gawk"
-version = "5.3.1"
+version = "5.3.2"
 description = "Programs for manipulating text files"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:37"
+timestamp = "2025-04-06 03:10:36"
 upstream = "https://git.savannah.gnu.org/git/gawk.git"
 
 [source]
-url = "https://ftp.gnu.org/gnu/gawk/gawk-5.3.1.tar.xz"
-hash = "aU23ZIEqYjZCPU_0DOt7bExEEwG3KtUCu1wn4AzVb3g"
+url = "https://ftp.gnu.org/gnu/gawk/gawk-5.3.2.tar.xz"
+hash = "-MNIZQnecFGSE4sA7ywAu73Q6Eww1cB9I_xzqdxMycw"
