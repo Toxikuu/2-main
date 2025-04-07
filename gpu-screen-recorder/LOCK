@@ -6,7 +6,7 @@ categories = [
     "rec",
     "cli",
 ]
-timestamp = "2025-04-06 19:00:02"
+timestamp = "2025-04-06 19:00:29"
 dependencies = [
     "ffmpeg",
     "libglvnd",
