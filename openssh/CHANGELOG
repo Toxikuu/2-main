@@ -1,2 +1,3 @@
 [f9518793b97c5fa1af12fe679f65d16c18dcce2e] [2025-04-07 03:05:12] | Added openssh=9.9.p2
 [645a78eb9649fb1c6faab3e8bbb2e5738d5e5318] [2025-04-07 03:05:13] | Generated openssh=9.9.p2
+[0f7a0a3bc7c0aa82a61a6baeff4c7b2ead1472ef] [2025-04-07 03:05:49] | Updated openssh: 9.9.p2 -> 9.9p2: typo in the version oops!
