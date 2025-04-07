@@ -40,7 +40,6 @@ intltool
 autoconf
 automake
 openssl
-kmod
 libelf
 libffi
 mpdecimal
@@ -50,6 +49,7 @@ wheel
 setuptools
 ninja
 meson
+kmod
 coreutils
 diffutils
 gawk
