@@ -1,5 +1,5 @@
 NAME="openssh"
-VERS="9.9.p2"
+VERS="9.9p2"
 DESC="Premier connectivity tool for remote login with the SSH protocol"
 CATG="sec cli utils net"
 UPST="https://github.com/openssh/openssh-portable.git"
@@ -11,7 +11,7 @@ DEPS=(
     "o^sysstat"     # entropy
 )
 
-SOURCE="https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.9p2.tar.gz"
+SOURCE="https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-$VERS.tar.gz"
 EXTRA=()
 
 2b() {
@@ -44,3 +44,4 @@ id sshd || useradd -c 'sshd PrivSep' \
     -g sshd -s /bin/false sshd
 
 }
+#d typo in the version oops!
