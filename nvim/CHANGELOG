@@ -13,3 +13,4 @@ nothing to commit, working tree clean] [2025-03-09 06:35:52] | Added alias main/
 [29842744b12e116809495221ad3a5031136fedcb] [2025-03-26 22:41:48] | Generated nvim=0.11.0
 [c04bbf67a4ebf85356ec5ef9981d2df4dadbca33] [2025-03-26 23:02:31] | Revised neovim
 [f0abdd2cf9056518f050cf8f1294f8876b8b1cda] [2025-03-26 23:02:36] | Generated neovim=0.11.0
+[ceaa591289ca021ce4549733cc4b0b0aa96fbb21] [2025-04-07 01:51:28] | Revised nvim: Add dependencies
