@@ -32,7 +32,7 @@ mi
 
 install -vDm755 "contrib/ssh-copy-id" -t "$D/usr/bin/"
 install -vDm755 "contrib/ssh-copy-id.1" -t "$D/usr/share/man/man1/"
-isntall -vDm755 INSTALL LICENSE OVERVIEW README* -t "$D/usr/share/doc/openssh/"
+install -vDm755 INSTALL LICENSE OVERVIEW README* -t "$D/usr/share/doc/openssh/"
 
 }
 
@@ -44,4 +44,3 @@ id sshd || useradd -c 'sshd PrivSep' \
     -g sshd -s /bin/false sshd
 
 }
-#d typo in the version oops!
