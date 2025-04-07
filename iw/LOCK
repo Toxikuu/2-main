@@ -1,0 +1,15 @@
+repo = "main"
+name = "iw"
+version = "6.9"
+description = "Configuration utility for wireless devices"
+categories = [
+    "net",
+    "utils",
+]
+timestamp = "2025-04-06 22:45:42"
+dependencies = ["libnl"]
+upstream = "https://git.kernel.org/pub/scm/linux/kernel/git/jberg/iw.git"
+
+[source]
+url = "https://www.kernel.org/pub/software/network/iw/iw-6.9.tar.xz"
+hash = "Py2yKtQcZ1JCuYrjlC2_MRJUjGCkL_c5IQ8t5OmOSJQ"
