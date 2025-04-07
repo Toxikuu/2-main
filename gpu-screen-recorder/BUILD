@@ -1,5 +1,5 @@
 NAME="gpu-screen-recorder"
-VERS="5.3.7"
+VERS="5.3.8"
 DESC="Fastest screen recorder for Linux"
 CATG="rec cli"
 UPST="https://repo.dec05eba.com/gpu-screen-recorder"
@@ -53,4 +53,3 @@ nj
 ni
 
 }
-#d Added some comments to cqp.patch
