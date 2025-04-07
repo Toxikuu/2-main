@@ -36,3 +36,8 @@
 [6ffaa9d766587f90b27623c9bc56fb870da3bfa1] [2025-03-15 20:56:36] | Generated kernel=6.13.7
 [6bf7128b8237d113d7d4ebe8f04624d1f4f66c03] [2025-03-24 18:24:27] | Revised kernel: hopefully made the source link less prone to failure
 [40e51c25f5ad3cdbb23eba06c64f457f559e8de3] [2025-03-24 18:24:29] | Generated kernel=6.13.7
+[On branch master
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean] [2025-04-07 02:46:18] | Added alias main/linux for main/kernel
