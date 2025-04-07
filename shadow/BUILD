@@ -77,7 +77,7 @@ for FUNCTION in FAIL_DELAY               \
                 CHFN_AUTH ENCRYPT_METHOD \
                 ENVIRON_FILE
 do
-    sed -i "s/^${FUNCTION}/# &/" /etc/login.defs
+    sed -i "s/^${FUNCTION}/# &/" "$D"/etc/login.defs
 done
 
 for FILE in login passwd su chpasswd newusers chage
@@ -106,4 +106,4 @@ rm -vf /etc/limits{,.NOUSE}
 pwconv
 
 }
-#d Reworked shadow build script
+#d bugfix
