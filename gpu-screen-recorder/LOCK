@@ -1,12 +1,12 @@
 repo = "main"
 name = "gsr"
-version = "5.3.7"
+version = "5.3.8"
 description = "Fastest screen recorder for Linux"
 categories = [
     "rec",
     "cli",
 ]
-timestamp = "2025-04-06 03:04:28"
+timestamp = "2025-04-06 19:00:02"
 dependencies = [
     "ffmpeg",
     "libglvnd",
@@ -32,5 +32,5 @@ dependencies = [
 upstream = "https://repo.dec05eba.com/gpu-screen-recorder"
 
 [[extra]]
-url = "https://dec05eba.com/snapshot/gpu-screen-recorder.git.5.3.7.tar.gz"
-hash = "95BP2e39eiUEnPamgwwoWowXU_aaZtcu8pH8CO6cQLM"
+url = "https://dec05eba.com/snapshot/gpu-screen-recorder.git.5.3.8.tar.gz"
+hash = "SBW-B57bSKqQFuF7TK3PiRT-zODVlAnq0-sjv3_rsP0"
