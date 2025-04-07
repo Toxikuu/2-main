@@ -17,3 +17,4 @@ Your branch is ahead of 'origin/master' by 5 commits.
 nothing to commit, working tree clean] [2025-04-06 07:58:05] | Added alias main/gsr for main/gpu-screen-recorder
 [b5b4bdbd44eaffe38676e6d7a58c728d11ab3256] [2025-04-06 08:04:28] | Revised gsr: Added some comments to cqp.patch
 [ea5d95996a9912f7c20fb666fe8e0c9316668b41] [2025-04-06 08:04:28] | Generated gsr=5.3.7
+[bedf269774e1567aaf298f2bcfb2175ef40539c8] [2025-04-07 00:00:02] | Updated gsr: 5.3.7 -> 5.3.8
