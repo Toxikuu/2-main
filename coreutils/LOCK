@@ -3,7 +3,16 @@ name = "coreutils"
 version = "9.6"
 description = "Basic utility programs needed by every OS"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:34"
+timestamp = "2025-04-06 20:38:03"
+dependencies = [
+    "acl",
+    "attr",
+    "glibc",
+    "gmp",
+    "libcap",
+    "openssl",
+    "python",
+]
 upstream = "git://git.savannah.gnu.org/coreutils.git"
 
 [source]
