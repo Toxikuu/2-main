@@ -1,6 +1,6 @@
 repo = "main"
 name = "openssh"
-version = "9.9.p2"
+version = "9.9p2"
 description = "Premier connectivity tool for remote login with the SSH protocol"
 categories = [
     "sec",
@@ -8,7 +8,7 @@ categories = [
     "utils",
     "net",
 ]
-timestamp = "2025-04-06 22:05:12"
+timestamp = "2025-04-06 22:05:49"
 dependencies = [
     "o^linux-pam",
     "o^shadow",
