@@ -1,0 +1,15 @@
+repo = "main"
+name = "libnl"
+version = "3.11.0"
+description = "Netlink protocol libraries"
+categories = [
+    "net",
+    "lib",
+]
+timestamp = "2025-04-06 22:42:43"
+upstream = "https://github.com/thom311/libnl.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/thom311/libnl.git' | sed -e 's@.*/@@' -e 's,_,.,g' -e 's,libnl,,' | grep -v '[a-Z]' | sort -V | tail -n1"
+
+[source]
+url = "https://github.com/thom311/libnl/releases/download/libnl3_11_0/libnl-3.11.0.tar.gz"
+hash = "Klbh7e-j5op8AIeUlnNv2_YvyU7TIywLq6En7Pp2h00"
