@@ -1,0 +1,23 @@
+repo = "main"
+name = "openssh"
+version = "9.9.p2"
+description = "Premier connectivity tool for remote login with the SSH protocol"
+categories = [
+    "sec",
+    "cli",
+    "utils",
+    "net",
+]
+timestamp = "2025-04-06 22:05:12"
+dependencies = [
+    "o^linux-pam",
+    "o^shadow",
+    "o^net-tools",
+    "o^sysstat",
+]
+upstream = "https://github.com/openssh/openssh-portable.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/openssh/openssh-portable.git' | sed 's@.*/@@' | grep 'V_[0-9]_' | tail -n1 | cut -d_ -f2- | sed -e 's,_,.,' -e 's,_,,' | tr P p"
+
+[source]
+url = "https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.9p2.tar.gz"
+hash = "karbYD4IzChe3fll4RmdAlhfqU2ZTWyuW0Hhch4hVnM"
