@@ -1,12 +1,12 @@
 repo = "main"
 name = "python"
-version = "3.13.2"
+version = "3.13.3"
 description = "The Python programming language"
 categories = [
     "core",
     "lang",
 ]
-timestamp = "2025-04-04 22:08:37"
+timestamp = "2025-04-08 15:34:35"
 dependencies = [
     "mpdecimal",
     "expat",
@@ -21,5 +21,5 @@ upstream = "https://github.com/python/cpython.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/python/cpython.git' | sed 's@.*/@@' | grep -Ev 'a|b|rc' | sort -V | tail -n1"
 
 [source]
-url = "https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz"
-hash = "2YS8xXzWfKqyb33vQuUjscAVu8XcB4Ns9PC2P6FZ61Y"
+url = "https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz"
+hash = "QPhovL3rgUmjFJWAu5v9QHszIc1I8L5jGvlVrJLA4EE"
