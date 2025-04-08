@@ -1,5 +1,5 @@
 NAME="wayland-protocols"
-VERS="1.42"
+VERS="1.43"
 DESC="Additional protocols expanding Wayland functionality"
 UPST="https://gitlab.freedesktop.org/wayland/wayland-protocols.git"
 
