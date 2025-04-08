@@ -1,11 +1,11 @@
 repo = "main"
 name = "luajit"
-version = "538a82133ad6fddfd0ca64de167c4aca3bc1a2da"
+version = "e0a7ea8a924d8137e6950b97c3e36f17264f6c79"
 description = "Just-In-Time Lua compiler"
 categories = ["lang"]
-timestamp = "2025-03-24 20:54:17"
+timestamp = "2025-04-07 20:46:34"
 upstream = "https://github.com/LuaJIT/LuaJIT.git"
 
 [source]
-url = "https://github.com/LuaJIT/LuaJIT/archive/538a82133ad6fddfd0ca64de167c4aca3bc1a2da.tar.gz"
-hash = "esvDa-jyEHJCLrml5fxGjQ6qVb7BtwJg1lHoRWhGIeI"
+url = "https://github.com/LuaJIT/LuaJIT/archive/e0a7ea8a924d8137e6950b97c3e36f17264f6c79.tar.gz"
+hash = "fjGyFR3GbWJ9Iy1-B6y4m5xfJ0LX4t10VC-kHMr0tBM"
