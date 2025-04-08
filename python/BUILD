@@ -1,5 +1,5 @@
 NAME="python"
-VERS="3.13.2"
+VERS="3.13.3"
 CATG="core lang"
 DESC="The Python programming language"
 UPST="https://github.com/python/cpython.git"
