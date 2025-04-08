@@ -4,7 +4,7 @@ VERS="2.11"
 DESC="Utility providing key negotiation for WPA wireless networks"
 CATG="utils net"
 UPST="git://w1.fi/hostap.git"
-VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' -e 's,_,.,g' | cut -d. -f2- | sort -V | tail -n1"
+VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' -e 's,_,.,g' | cut -d. -f2- | grep -v '[a-Z]' | sort -V | tail -n1"
 DEPS=(
     "libnl"
     "o^libxml2"
