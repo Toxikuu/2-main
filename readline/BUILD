@@ -1,5 +1,5 @@
 NAME="readline"
-VERS="8.2.13"
+VERS="8.3"
 CATG="core"
 DESC="Libraries for command-line editing and history"
 UPST="https://ftp.gnu.org/gnu/readline/?C=M;O=D"
