@@ -1,11 +1,11 @@
 repo = "main"
 name = "gperf"
-version = "3.1"
+version = "3.2"
 description = "Perfect hash function generator"
 categories = ["core"]
-timestamp = "2025-02-25 20:16:16"
+timestamp = "2025-04-07 20:42:30"
 upstream = "https://git.savannah.gnu.org/git/gperf.git"
 
 [source]
-url = "https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz"
-hash = "WIVGuUW7pLcLajphboC0q0ZuPzMCSjUvwhmBEs27OuI"
+url = "https://ftp.gnu.org/gnu/gperf/gperf-3.2.tar.gz"
+hash = "4N2t67OWkGo-PkysL2l8jWq5Lf-l02WlvCPH1B0w72I"
