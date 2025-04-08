@@ -3,7 +3,7 @@ name = "readline"
 version = "8.2.13"
 description = "Libraries for command-line editing and history"
 categories = ["core"]
-timestamp = "2025-02-25 20:14:47"
+timestamp = "2025-04-07 20:44:26"
 upstream = "https://ftp.gnu.org/gnu/readline/?C=M;O=D"
 version_command = "curl -s 'https://ftp.gnu.org/gnu/readline/?C=M;O=D' | grep readline- | grep -Ev 'beta|alpha' | head -n2 | tail -n1 | cut -d- -f2 | cut -d. -f1-3"
 
