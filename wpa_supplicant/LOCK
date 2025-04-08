@@ -6,14 +6,14 @@ categories = [
     "utils",
     "net",
 ]
-timestamp = "2025-04-06 22:51:16"
+timestamp = "2025-04-08 15:36:02"
 dependencies = [
     "libnl",
     "o^libxml2",
     "o^dbus",
 ]
 upstream = "git://w1.fi/hostap.git"
-version_command = "git ls-remote --tags --refs 'git://w1.fi/hostap.git' | sed -e 's@.*/@@' -e 's,_,.,g' | cut -d. -f2- | tail -n1"
+version_command = "git ls-remote --tags --refs 'git://w1.fi/hostap.git' | sed -e 's@.*/@@' -e 's,_,.,g' | cut -d. -f2- | sort -V | tail -n1"
 
 [source]
 url = "https://w1.fi/releases/wpa_supplicant-2.11.tar.gz"
