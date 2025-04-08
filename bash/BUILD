@@ -1,5 +1,5 @@
 NAME="bash"
-VERS="5.3"
+VERS="5.2.37"
 CATG="core"
 DESC="The Bourne-Again Shell"
 UPST="https://ftp.gnu.org/gnu/bash/?C=M;O=D"
