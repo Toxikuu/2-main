@@ -1,9 +1,9 @@
 repo = "main"
 name = "cups"
-version = "2.4.11"
+version = "2.4.12"
 description = "Common Unix Printing System"
 categories = ["print"]
-timestamp = "2025-04-01 14:37:49"
+timestamp = "2025-04-08 15:35:09"
 dependencies = [
     "gnutls",
     "dbus",
@@ -20,5 +20,5 @@ dependencies = [
 upstream = "https://github.com/OpenPrinting/cups.git"
 
 [source]
-url = "https://github.com/OpenPrinting/cups/releases/download/v2.4.11/cups-2.4.11-source.tar.gz"
-hash = "moj-HaOimpF8P8Z85usxeDmdaOGlSMbYbHDZsTZR_XE"
+url = "https://github.com/OpenPrinting/cups/releases/download/v2.4.12/cups-2.4.12-source.tar.gz"
+hash = "sd3hkaSuJ2DEciDILKYVWijDgnAebBoBWdEFSZAjHVk"
