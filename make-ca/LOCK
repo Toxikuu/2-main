@@ -1,10 +1,10 @@
 repo = "main"
 name = "make-ca"
-version = "1.15"
+version = "1.16"
 description = "PKI setup script for LFS"
-timestamp = "2025-03-26 17:43:13"
+timestamp = "2025-04-08 14:42:38"
 upstream = "https://github.com/lfs-book/make-ca.git"
 
 [source]
-url = "https://github.com/lfs-book/make-ca/archive/v1.15/make-ca-1.15.tar.gz"
-hash = "Y5Fpj-bbFusZDaGrqAK8kMCci6pMEW2cZWR76ofxkNs"
+url = "https://github.com/lfs-book/make-ca/archive/v1.16/make-ca-1.16.tar.gz"
+hash = "RPEA4uEPkg31Mj4NpjkxYMuvGFRUqHVI7KYTNnh7IIg"
