@@ -1,15 +1,15 @@
 repo = "main"
 name = "openssl"
-version = "3.4.1"
+version = "3.5.0"
 description = "Cryptography tools and libraries"
 categories = [
     "core",
     "security",
 ]
-timestamp = "2025-02-25 20:17:11"
+timestamp = "2025-04-08 15:47:33"
 upstream = "https://github.com/openssl/openssl.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/openssl/openssl.git' | sed 's@.*/@@' | grep -Ev 'alpha|beta' | grep 'openssl-' | tail -n1"
 
 [source]
-url = "https://github.com/openssl/openssl/releases/download/openssl-3.4.1/openssl-3.4.1.tar.gz"
-hash = "ACotazC1i_S-pGxDvdljZar42qbEKHgqpP7uBtoZffM"
+url = "https://github.com/openssl/openssl/releases/download/openssl-3.5.0/openssl-3.5.0.tar.gz"
+hash = "NE0KefGpsIApsHROLMQBpD-ckKzRBE0JpTC0iFqOn8A"
