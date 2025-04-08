@@ -3,9 +3,9 @@ name = "bash"
 version = "5.2.37"
 description = "The Bourne-Again Shell"
 categories = ["core"]
-timestamp = "2025-04-07 20:44:42"
+timestamp = "2025-04-08 15:47:04"
 upstream = "https://ftp.gnu.org/gnu/bash/?C=M;O=D"
-version_command = '''curl -s 'https://ftp.gnu.org/gnu/bash/?C=M;O=D' | grep bash- | grep -Ev 'beta|alpha' | head -n1 | cut -d '"' -f8 | cut -d- -f2 | cut -d. -f1-3'''
+version_command = '''curl -s 'https://ftp.gnu.org/gnu/bash/?C=M;O=D' | grep bash- | grep -Ev 'beta|alpha|rc' | head -n1 | cut -d '"' -f8 | cut -d- -f2 | cut -d. -f1-3'''
 
 [source]
 url = "https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz"
