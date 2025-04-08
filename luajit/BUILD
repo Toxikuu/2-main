@@ -1,5 +1,5 @@
 NAME="luajit"
-VERS="538a82133ad6fddfd0ca64de167c4aca3bc1a2da"
+VERS="e0a7ea8a924d8137e6950b97c3e36f17264f6c79"
 DESC="Just-In-Time Lua compiler"
 CATG="lang"
 UPST="https://github.com/LuaJIT/LuaJIT.git"
