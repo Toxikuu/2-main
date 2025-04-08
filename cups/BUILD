@@ -1,5 +1,5 @@
 NAME="cups"
-VERS="2.4.11"
+VERS="2.4.12"
 DESC="Common Unix Printing System"
 CATG="print"
 UPST="https://github.com/OpenPrinting/cups.git"
@@ -64,4 +64,3 @@ msg "You may want to add a user to the cups administrative group:"
 msg " $ usermod -a -G lpadmin <user>"
 
 }
-#d fixed user- and group-extant failures
