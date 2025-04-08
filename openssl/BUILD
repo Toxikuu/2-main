@@ -1,5 +1,5 @@
 NAME="openssl"
-VERS="3.4.1"
+VERS="3.5.0"
 CATG="core security"
 DESC="Cryptography tools and libraries"
 UPST="https://github.com/openssl/openssl.git"
