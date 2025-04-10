@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Name=Pipewire
+Comment=Starts the Pipewire and Wireplumber daemons
+Exec=/usr/bin/pipewire-launcher.sh
+Terminal=false
+Type=Application
