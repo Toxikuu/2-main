@@ -1,5 +1,5 @@
 NAME="coreutils"
-VERS="9.6"
+VERS="9.7"
 CATG="core"
 DESC="Basic utility programs needed by every OS"
 UPST="git://git.savannah.gnu.org/coreutils.git"
