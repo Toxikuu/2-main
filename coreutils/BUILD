@@ -2,7 +2,7 @@ NAME="coreutils"
 VERS="9.7"
 CATG="core"
 DESC="Basic utility programs needed by every OS"
-UPST="git://git.savannah.gnu.org/coreutils.git"
+UPST="https://github.com/coreutils/coreutils.git"
 DEPS=(
     "acl"
     "attr"
@@ -34,3 +34,4 @@ mv -v "$D"/usr/share/man/man1/chroot.1 "$D"/usr/share/man/man8/chroot.8
 sed -i 's@"1"@"8"@' "$D"/usr/share/man/man8/chroot.8
 
 }
+#d use an upstream with acceptable uptime
