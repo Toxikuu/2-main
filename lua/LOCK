@@ -1,0 +1,18 @@
+repo = "main"
+name = "lua"
+version = "5.4.7"
+description = "Powerful lightweight programming language designed for extending applications"
+categories = [
+    "lang",
+    "dev",
+]
+timestamp = "2025-04-10 16:02:02"
+upstream = "https://github.com/lua/lua.git"
+
+[source]
+url = "https://www.lua.org/ftp/lua-5.4.7.tar.gz"
+hash = "n79eKO-GxphY9tPTTszDLpEcGii0Eg_z6EqqcM-_HjA"
+
+[[extra]]
+url = "https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.7-shared_library-1.patch"
+hash = "RDJKgCgi8KNdCVqq0vX1j6exghroeuRNvPyKI_zS5n4"
