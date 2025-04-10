@@ -1,5 +1,5 @@
 NAME="libgpg-error"
-VERS="1.51"
+VERS="1.53"
 DESC="Library defining common error values for GPG components"
 CATG=""
 UPST="https://github.com/gpg/libgpg-error.git"
