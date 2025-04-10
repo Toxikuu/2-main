@@ -3,9 +3,9 @@ name = "readline"
 version = "8.2.13"
 description = "Libraries for command-line editing and history"
 categories = ["core"]
-timestamp = "2025-04-08 15:46:43"
+timestamp = "2025-04-10 18:03:22"
 upstream = "https://ftp.gnu.org/gnu/readline/?C=M;O=D"
-version_command = "curl -s 'https://ftp.gnu.org/gnu/readline/?C=M;O=D' | grep readline- | grep -Ev 'beta|alpha|rc' | head -n2 | tail -n1 | cut -d- -f2 | cut -d. -f1-3"
+version_command = "curl -s 'https://ftp.gnu.org/gnu/readline/?C=M;O=D' | grep readline- | grep -Ev -- '-beta|-alpha|-rc|diff|doc|\\.sig|patches' | head -n1 | cut -d- -f2 | cut -dt -f1 | sed 's,.$,,'"
 
 [source]
 url = "https://ftp.gnu.org/gnu/readline/readline-8.2.13.tar.gz"
