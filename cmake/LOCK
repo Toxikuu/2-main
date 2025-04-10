@@ -1,8 +1,8 @@
 repo = "main"
 name = "cmake"
-version = "4.0.0"
+version = "4.0.1"
 description = "Build system succeeding configure scripts"
-timestamp = "2025-03-31 22:45:34"
+timestamp = "2025-04-10 17:27:25"
 dependencies = [
     "curl",
     "libarchive",
@@ -12,5 +12,5 @@ dependencies = [
 upstream = "https://gitlab.kitware.com/cmake/cmake.git"
 
 [source]
-url = "https://cmake.org/files/v4.0/cmake-4.0.0.tar.gz"
-hash = "3cVK1juH4VPPUL5FCmWA8bF7SIHeiUHalj_1aZGkCDs"
+url = "https://cmake.org/files/v4.0/cmake-4.0.1.tar.gz"
+hash = "1jCn4A5j5SCyUln4PUJe94O0Zhvcj0fiHH8j83gKIeE"
