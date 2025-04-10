@@ -1,9 +1,9 @@
 repo = "main"
 name = "coreutils"
-version = "9.6"
+version = "9.7"
 description = "Basic utility programs needed by every OS"
 categories = ["core"]
-timestamp = "2025-04-06 20:38:03"
+timestamp = "2025-04-10 17:29:00"
 dependencies = [
     "acl",
     "attr",
@@ -16,5 +16,5 @@ dependencies = [
 upstream = "git://git.savannah.gnu.org/coreutils.git"
 
 [source]
-url = "https://ftp.gnu.org/gnu/coreutils/coreutils-9.6.tar.xz"
-hash = "egEkMns5j9nrGmq95YM4mCFCLHRP-hBzSyT1V2ENMoM"
+url = "https://ftp.gnu.org/gnu/coreutils/coreutils-9.7.tar.xz"
+hash = "6LsmrQKT-bWh_EP7QrqXDjEsZs6SwbCxZxPXUA2yUb8"
