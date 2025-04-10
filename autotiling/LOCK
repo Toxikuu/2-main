@@ -1,0 +1,17 @@
+repo = "main"
+name = "autotiling"
+version = "1.9.3"
+description = "Script for sway and i3 to autotile"
+categories = ["wm"]
+timestamp = "2025-04-10 16:52:47"
+dependencies = [
+    "python",
+    "i3",
+    "setuptools",
+    "i3ipc",
+]
+upstream = "https://github.com/nwg-piotr/autotiling.git"
+
+[source]
+url = "https://github.com/nwg-piotr/autotiling/archive/refs/tags/v1.9.3.tar.gz"
+hash = "MnCijel383XICYTvUPdDPLA8_fGYsHmunIDRUT8OkXY"
