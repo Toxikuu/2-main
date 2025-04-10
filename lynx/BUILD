@@ -2,8 +2,8 @@ NAME="lynx"
 VERS="2.9.2"
 DESC="TUI web browser"
 CATG="tui net"
-UPST="https://lynx.invisible-island.net/"
-VCMD="curl -s '$UPST' | grep 'recent stable release is' | cut -d' ' -f9 | tr -d ';'"
+UPST="https://invisible-mirror.net/archives/lynx/tarballs/?C=N;O=D"
+VCMD="curl -s '$UPST' | grep 'lynx[0-9].\\+.tar.bz2' | grep -v 'rel|dev' | head -n1 | cut -dx -f2 | cut -d. -f1-3"
 DEPS=(
     "o^gnutls"
 )
@@ -30,3 +30,4 @@ mk DESTDIR="$D" install-full
 chgrp -vR root "$D"/usr/share/doc/lynx/lynx_doc
 
 }
+#d fixed vcmd i think
