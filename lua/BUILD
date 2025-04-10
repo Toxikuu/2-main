@@ -47,4 +47,10 @@ mi "${_install_opts[@]}"
 install -vDm644 doc/*.{html,css,gif,png} -t "$D"/usr/share/doc/lua/
 install -vDm644 lua.pc -t "$D"/usr/lib/pkgconfig/
 
+# fix some shenanigans involving shared library symlinks
+pushd "$D/usr/lib"
+ln -svf liblua.so.$VERS liblua.so.${VERS%.*}
+ln -svf liblua.so.$VERS liblua.so
+popd
+
 }
