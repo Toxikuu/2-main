@@ -1,10 +1,10 @@
 repo = "main"
 name = "libgpg-error"
-version = "1.51"
+version = "1.53"
 description = "Library defining common error values for GPG components"
-timestamp = "2025-03-16 03:45:55"
+timestamp = "2025-04-10 17:30:06"
 upstream = "https://github.com/gpg/libgpg-error.git"
 
 [source]
-url = "https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.51.tar.gz"
-hash = "KjyoVowfdn65qAOAFFotNdcttEzw47hTfZCuFRZNIKk"
+url = "https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.53.tar.gz"
+hash = "Pq_MZSGrC7ViD6hGlnj5-XFOdjWQo5kIUITvST10W6M"
