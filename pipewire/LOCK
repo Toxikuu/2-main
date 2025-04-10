@@ -1,0 +1,36 @@
+repo = "main"
+name = "pipewire"
+version = "1.4.1"
+description = "Low-latency audio/video router and processor"
+categories = [
+    "audio",
+    "video",
+]
+timestamp = "2025-04-10 16:07:38"
+dependencies = [
+    "o^bluez",
+    "o^sbc",
+    "o^v4l-utils",
+    "o^alsa-lib",
+    "o^avahi",
+    "o^fdk-aac",
+    "o^ffmpeg",
+    "o^libcanberra",
+    "o^libdrm",
+    "o^libxcb",
+    "o^libsndfile",
+    "o^libusb",
+    "o^opus",
+    "o^sdl2",
+    "o^vulkan-loader",
+    "pulseaudio",
+    "gstreamer",
+    "gst-plugins-base",
+    "dbus",
+    "run^wireplumber",
+]
+upstream = "https://gitlab.freedesktop.org/pipewire/pipewire.git"
+
+[source]
+url = "https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.1/pipewire-1.4.1.tar.bz2"
+hash = "d_Hb8ZDCleGwji3QauU9J6_ddovnOAAC43KS9Gq0GVo"
