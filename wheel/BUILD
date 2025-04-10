@@ -1,5 +1,5 @@
 NAME="wheel"
-VERS="0.46.0"
+VERS="0.46.1"
 CATG="core"
 DESC="Python library for the Python wheel packaging standard"
 UPST="https://github.com/pypa/wheel.git"
