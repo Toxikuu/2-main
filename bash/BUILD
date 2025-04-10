@@ -1,9 +1,9 @@
 NAME="bash"
 VERS="5.2.37"
-CATG="core"
+CATG="core shell"
 DESC="The Bourne-Again Shell"
 UPST="https://ftp.gnu.org/gnu/bash/?C=M;O=D"
-VCMD=$(printf "curl -s '%s' | grep bash- | grep -Ev 'beta|alpha|rc' | head -n1 | cut -d '\"' -f8 | cut -d- -f2 | cut -d. -f1-3" "$UPST")
+VCMD="curl -s '$UPST' | grep bash- | grep -Ev -- '-beta|-alpha|-rc|diff|doc|\.sig|patches' | head -n1 | cut -d- -f2 | cut -dt -f1 | sed 's,.$,,'"
 
 SOURCE="https://ftp.gnu.org/gnu/bash/bash-$VERS.tar.gz"
 EXTRA=()
