@@ -1,5 +1,5 @@
 NAME="libvpx"
-VERS="1.15.0"
+VERS="1.15.1"
 DESC="VP8/9 video codec"
 CATG="lib video"
 UPST="https://github.com/webmproject/libvpx.git"
