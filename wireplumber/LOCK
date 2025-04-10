@@ -1,0 +1,20 @@
+repo = "main"
+name = "wireplumber"
+version = "0.5.8"
+description = "Pipewire session and policy manager"
+categories = [
+    "audio",
+    "video",
+]
+timestamp = "2025-04-10 16:14:53"
+dependencies = [
+    "elogind",
+    "glib",
+    "pipewire",
+    "lua",
+]
+upstream = "https://gitlab.freedesktop.org/pipewire/wireplumber.git"
+
+[source]
+url = "https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.8/wireplumber-0.5.8.tar.bz2"
+hash = "robb4BQs8ByX5rSehIkHArk8iz5kAsYxbPDxF7YnQKg"
