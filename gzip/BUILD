@@ -1,5 +1,5 @@
 NAME="gzip"
-VERS="1.13"
+VERS="1.14"
 CATG="core"
 DESC="Programs for (de)compressing files"
 UPST="https://git.savannah.gnu.org/git/gzip.git"
