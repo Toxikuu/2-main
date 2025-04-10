@@ -1,5 +1,5 @@
 NAME="fastfetch"
-VERS="2.40.3"
+VERS="2.40.4"
 DESC="Well-maintained, feature-rich, performance-oriented fetch script"
 UPST="https://github.com/fastfetch-cli/fastfetch.git"
 
