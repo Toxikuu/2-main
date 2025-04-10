@@ -36,9 +36,9 @@ tpatch "$SRC"/lua-$VERS-shared_library-1.patch
 mk linux
 
 _install_opts=(
-    INSTALL_TOP=/usr
+    INSTALL_TOP="$D/usr"
     INSTALL_DAT="cp -d"
-    INSTALL_MAN=/usr/share/man/man1
+    INSTALL_MAN="$D/usr/share/man/man1"
     TO_LIB="liblua.so liblua.so.${VERS%.*} liblua.so.${VERS}"
 )
 
