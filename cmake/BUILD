@@ -1,5 +1,5 @@
 NAME="cmake"
-VERS="4.0.0"
+VERS="4.0.1"
 DESC="Build system succeeding configure scripts"
 UPST="https://gitlab.kitware.com/cmake/cmake.git"
 DEPS=(
