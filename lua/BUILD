@@ -44,7 +44,7 @@ _install_opts=(
 
 mi "${_install_opts[@]}"
 
-install -vDm644 doc/*.{html,css,gif,png} "$D"/usr/share/doc/lua
-install -vDm644 lua.pc "$D"/usr/lib/pkgconfig/lua.pc
+install -vDm644 doc/*.{html,css,gif,png} -t "$D"/usr/share/doc/lua/
+install -vDm644 lua.pc -t "$D"/usr/lib/pkgconfig/
 
 }
