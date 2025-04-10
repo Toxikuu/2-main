@@ -6,7 +6,7 @@ categories = [
     "lang",
     "dev",
 ]
-timestamp = "2025-04-10 16:02:02"
+timestamp = "2025-04-10 16:02:29"
 upstream = "https://github.com/lua/lua.git"
 
 [source]
