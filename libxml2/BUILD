@@ -1,7 +1,11 @@
 NAME="libxml2"
 VERS="2.14.1"
 DESC="Libraries and utilities for XML parsing"
+CATG="lib"
 UPST="https://github.com/GNOME/libxml2.git"
+DEPS=(
+    "icu"
+)
 
 SOURCE="https://download.gnome.org/sources/libxml2/${VERS%.*}/libxml2-$VERS.tar.xz"
 EXTRA=()
