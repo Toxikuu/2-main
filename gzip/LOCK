@@ -1,11 +1,11 @@
 repo = "main"
 name = "gzip"
-version = "1.13"
+version = "1.14"
 description = "Programs for (de)compressing files"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:41"
+timestamp = "2025-04-10 17:30:26"
 upstream = "https://git.savannah.gnu.org/git/gzip.git"
 
 [source]
-url = "https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz"
-hash = "dFTraTXbF8ZlVXbC4bD6vv04tNCTbg-H9IzQYs6RoFc"
+url = "https://ftp.gnu.org/gnu/gzip/gzip-1.14.tar.xz"
+hash = "Aae4gb0iC_32Ffl7hxj4C9_T9q3ThbmT3Pbv0U6MCsY"
