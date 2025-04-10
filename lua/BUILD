@@ -37,7 +37,7 @@ mk linux
 
 _install_opts=(
     INSTALL_TOP=/usr
-    INSTALL_DAT="cp -a"
+    INSTALL_DAT="cp -d"
     INSTALL_MAN=/usr/share/man/man1
     TO_LIB="liblua.so liblua.so.${VERS%.*} liblua.so.${VERS}"
 )
