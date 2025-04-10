@@ -6,10 +6,10 @@ categories = [
     "tui",
     "net",
 ]
-timestamp = "2025-03-22 00:05:14"
+timestamp = "2025-04-10 17:38:31"
 dependencies = ["o^gnutls"]
-upstream = "https://lynx.invisible-island.net/"
-version_command = "curl -s 'https://lynx.invisible-island.net/' | grep 'recent stable release is' | cut -d' ' -f9 | tr -d ';'"
+upstream = "https://invisible-mirror.net/archives/lynx/tarballs/?C=N;O=D"
+version_command = '''curl -s 'https://invisible-mirror.net/archives/lynx/tarballs/?C=N;O=D' | grep 'lynx[0-9].\+.tar.bz2' | grep -v 'rel|dev' | head -n1 | cut -dx -f2 | cut -d. -f1-3'''
 
 [source]
 url = "https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2"
