@@ -1,0 +1,19 @@
+repo = "main"
+name = "i3ipc"
+version = "2.2.1"
+description = "i3 IPC library"
+categories = [
+    "lib",
+    "wm",
+]
+timestamp = "2025-04-10 16:54:43"
+dependencies = [
+    "setuptools",
+    "python",
+    "i3",
+]
+upstream = "https://github.com/altdesktop/i3ipc-python.git"
+
+[source]
+url = "https://github.com/altdesktop/i3ipc-python/archive/refs/tags/v2.2.1.tar.gz"
+hash = "VK8YD6xuPhbGV0eISuRHnw3wNMRe0CUj-DAPmMmesp4"
