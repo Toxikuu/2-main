@@ -1,8 +1,16 @@
 repo = "main"
 name = "libpsl"
 version = "0.21.5"
-description = "Library for accessing and resolving information from the Public Suffix List"
-timestamp = "2025-04-11 14:51:13"
+description = "Public Suffix List library"
+categories = [
+    "lib",
+    "net",
+]
+timestamp = "2025-04-11 14:54:14"
+dependencies = [
+    "libidn2",
+    "libunistring",
+]
 upstream = "https://github.com/rockdaboot/libpsl.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/rockdaboot/libpsl.git' | sed -e 's@.*/@@' -e 's@libpsl-@@' | grep -v -- - | sort -V | tail -n1"
 
