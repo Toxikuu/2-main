@@ -2,7 +2,17 @@ repo = "main"
 name = "libarchive"
 version = "3.7.9"
 description = "Multi-format archive and compression library"
-timestamp = "2025-03-31 22:39:16"
+categories = [
+    "libb",
+    "utils",
+]
+timestamp = "2025-04-10 19:18:01"
+dependencies = [
+    "o^libxml2",
+    "o^lzo",
+    "o^nettle",
+    "o^pcre2",
+]
 upstream = "https://github.com/libarchive/libarchive.git"
 
 [source]
