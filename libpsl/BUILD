@@ -11,15 +11,22 @@ EXTRA=()
 
 with meson ninja
 
-ms
+_cfg_opts=(
+    -D tests=false
+    -D docs=false
+    -D runtime=libidn2
+)
+
+ms ${_cfg_opts[@]}
 nj
 ni
 
 cd ..
 m32=1
 
-ms
+ms ${_cfg_opts[@]}
 nj
 ni
 
 }
+#d tweaked cfg opts
