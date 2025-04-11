@@ -3,7 +3,7 @@ name = "dex"
 version = "0.10.1"
 description = "Desktop entry execution utility"
 categories = ["utils"]
-timestamp = "2025-04-10 21:33:07"
+timestamp = "2025-04-10 21:34:21"
 dependencies = ["python"]
 upstream = "https://github.com/jceb/dex.git"
 
