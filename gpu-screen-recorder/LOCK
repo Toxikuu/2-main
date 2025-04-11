@@ -1,12 +1,12 @@
 repo = "main"
-name = "gsr"
+name = "gpu-screen-recorder"
 version = "5.3.8"
 description = "Fastest screen recorder for Linux"
 categories = [
     "rec",
     "cli",
 ]
-timestamp = "2025-04-06 19:00:29"
+timestamp = "2025-04-10 19:37:19"
 dependencies = [
     "ffmpeg",
     "libglvnd",
