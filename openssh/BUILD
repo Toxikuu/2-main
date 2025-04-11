@@ -11,8 +11,8 @@ DEPS=(
     "o^sysstat"     # entropy
 )
 
-TAGV=${VERS//./_}       # Replace dots with underscores: 10_0p2
-TAGV=${FORMATTED//p/_P}  # Replace 'p' with 'P': 10_0P2
+TAGV=${VERS//./_}
+TAGV=${TAGV//p/_P}
 SOURCE="https://github.com/openssh/openssh-portable/archive/refs/tags/V_$TAGV.tar.gz"
 EXTRA=()
 
