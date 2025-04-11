@@ -1,10 +1,16 @@
 NAME="libpsl"
 VERS="0.21.5"
-DESC="Library for accessing and resolving information from the Public Suffix List"
+DESC="Public Suffix List library"
+CATG="lib net"
 UPST="https://github.com/rockdaboot/libpsl.git"
-VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' -e 's@libpsl-@@' | grep -v -- - | sort -V | tail -n1"
+VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' -e 's@$NAME-@@' | grep -v -- - | sort -V | tail -n1"
+DEPS=(
+    "libidn2"
+    "libunistring"
+    # icu is not used
+)
 
-SOURCE="https://github.com/rockdaboot/libpsl/releases/download/$VERS/libpsl-$VERS.tar.gz"
+SOURCE="https://github.com/rockdaboot/$NAME/releases/download/$VERS/$NAME-$VERS.tar.gz"
 EXTRA=()
 
 2b() {
@@ -29,4 +35,4 @@ nj
 ni
 
 }
-#d tweaked cfg opts
+#d tweaked metadata
