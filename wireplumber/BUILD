@@ -7,6 +7,7 @@ DEPS=(
     "elogind"
     "glib"
     "pipewire"
+    "pulseaudio"
     "lua"
 )
 
@@ -33,3 +34,4 @@ rm -vf /etc/xdg/Xwayland-session.d/00-pulseaudio-x11
 sed -e '$a autospawn = no' -i /etc/pulse/client.conf
 
 }
+#d tweaked pipewire-launcher.sh
