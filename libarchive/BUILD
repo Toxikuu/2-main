@@ -1,16 +1,25 @@
 NAME="libarchive"
 VERS="3.7.9"
 DESC="Multi-format archive and compression library"
-CATG=""
+CATG="libb utils"
 UPST="https://github.com/$NAME/$NAME.git"
-DEPS=()
+DEPS=(
+    "o^libxml2"
+    "o^lzo"
+    "o^nettle"
+    "o^pcre2"
+)
 
 SOURCE="https://github.com/$NAME/$NAME/releases/download/v$VERS/$NAME-$VERS.tar.xz"
 EXTRA=()
 
 2b() {
 
-cfg
+_cfg_opts=(
+    --without-xml2 # avoid abi breakage
+)
+
+cfg ${_cfg_opts[@]}
 mk
 mi
 
