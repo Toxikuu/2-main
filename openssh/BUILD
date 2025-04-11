@@ -11,7 +11,9 @@ DEPS=(
     "o^sysstat"     # entropy
 )
 
-SOURCE="https://github.com/openssh/openssh-portable/archive/refs/tags/V_$(sed -e 's/./_' -e 's/p/_P' $VERS).tar.gz"
+TAGV=${VERS//./_}       # Replace dots with underscores: 10_0p2
+TAGV=${FORMATTED//p/_P}  # Replace 'p' with 'P': 10_0P2
+SOURCE="https://github.com/openssh/openssh-portable/archive/refs/tags/V_$TAGV.tar.gz"
 EXTRA=()
 
 2b() {
