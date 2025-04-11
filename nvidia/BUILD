@@ -37,7 +37,7 @@ _cfg_opts=(
     --no-ncurses-color
     --force-selinux=no
     --kernel-name=$kver
-    $([[ -e /var/ports/xorg/xorg-server/.data/INSTALLED ]] && echo --run-nvidia-xconfig)
+    $(ii xorg-server &>/dev/null && echo --run-nvidia-xconfig)
     --no-install-libglvnd
     --no-rebuild-initramfs
     --install-compat32-libs
