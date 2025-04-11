@@ -45,7 +45,7 @@ _cfg_opts=(
     -D cqp_vhigh=20
     -D cqp_high=25
     -D cqp_med=30
-    $([[ -e /var/ports/main/pipewire/.data/INSTALLED ]] || echo -D portal=false -D app_audio=false)
+    $(ii pipewire &>/dev/null || echo -D portal=false -D app_audio=false)
 )
 
 ms ${_cfg_opts[@]}
