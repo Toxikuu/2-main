@@ -3,10 +3,10 @@ name = "libarchive"
 version = "3.7.9"
 description = "Multi-format archive and compression library"
 categories = [
-    "libb",
+    "lib",
     "utils",
 ]
-timestamp = "2025-04-10 19:18:01"
+timestamp = "2025-04-10 22:09:12"
 dependencies = [
     "o^libxml2",
     "o^lzo",
