@@ -1,5 +1,5 @@
 NAME="openssh"
-VERS="9.9p2"
+VERS="10.0p2"
 DESC="Premier connectivity tool for remote login with the SSH protocol"
 CATG="sec cli utils net"
 UPST="https://github.com/openssh/openssh-portable.git"
@@ -44,4 +44,3 @@ id sshd || useradd -c 'sshd PrivSep' \
     -g sshd -s /bin/false sshd
 
 }
-#d update vcmd
