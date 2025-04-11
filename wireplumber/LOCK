@@ -6,11 +6,12 @@ categories = [
     "audio",
     "video",
 ]
-timestamp = "2025-04-10 16:14:53"
+timestamp = "2025-04-10 21:44:40"
 dependencies = [
     "elogind",
     "glib",
     "pipewire",
+    "pulseaudio",
     "lua",
 ]
 upstream = "https://gitlab.freedesktop.org/pipewire/wireplumber.git"
