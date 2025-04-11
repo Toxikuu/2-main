@@ -8,7 +8,7 @@ categories = [
     "utils",
     "net",
 ]
-timestamp = "2025-04-06 22:08:38"
+timestamp = "2025-04-11 15:14:55"
 dependencies = [
     "o^linux-pam",
     "o^shadow",
@@ -16,7 +16,7 @@ dependencies = [
     "o^sysstat",
 ]
 upstream = "https://github.com/openssh/openssh-portable.git"
-version_command = "git ls-remote --tags --refs 'https://github.com/openssh/openssh-portable.git' | sed 's@.*/@@' | grep 'V_[0-9]_' | tail -n1 | cut -d_ -f2- | sed -e 's,_,.,' -e 's,_,,' | tr P p"
+version_command = '''git ls-remote --tags --refs 'https://github.com/openssh/openssh-portable.git' | sed 's@.*/@@' | grep 'V_[0-9]\+_' | tail -n1 | cut -d_ -f2- | sed -e 's,_,.,' -e 's,_,,' | tr P p'''
 
 [source]
 url = "https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.9p2.tar.gz"
