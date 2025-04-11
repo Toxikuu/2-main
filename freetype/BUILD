@@ -12,18 +12,22 @@ EXTRA=()
 sed -ri "s:.*(AUX_MODULES.*valid):\1:" modules.cfg
 sed -ri "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" include/freetype/config/ftoption.h
 
-[ -e "$PORT/../harfbuzz/.data/INSTALLED" ] || HB="--with-harfbuzz=no"
+_cfg_opts=(
+    --with-brotli=no
+    --enable-freetype-config
+    $(ii harfbuzz &>/dev/null || echo --with-harfbuzz=no)
+)
 
-cfg --enable-freetype-config $HB
+cfg ${_cfg_opts[@]}
 mk
 mi
 
 mk distclean
 m32=1
 
-cfg --enable-freetype-config $HB \
-        --with-brotli=no
+cfg ${_cfg_opts[@]}
 mk
 mi
 
 }
+#d used ii
