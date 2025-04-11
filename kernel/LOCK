@@ -1,15 +1,15 @@
 repo = "main"
 name = "kernel"
-version = "6.13.7"
+version = "6.13.11"
 description = "The Linux kernel"
 categories = [
     "critical",
     "core",
 ]
-timestamp = "2025-03-24 13:24:27"
+timestamp = "2025-04-10 22:36:33"
 upstream = "https://kernel.org"
 version_command = "curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 
 [source]
-url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.7.tar.gz"
-hash = "SycfAgm9rBLfRBGIdNDMrrZpqdnL_gsEPeRSd1vMGWk"
+url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.11.tar.gz"
+hash = "PVq_vgCGrftP0KGlIB6UVWDqvLD4XWTYj84Dgygv1HE"
