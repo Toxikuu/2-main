@@ -3,7 +3,7 @@ VERS="9.9p2"
 DESC="Premier connectivity tool for remote login with the SSH protocol"
 CATG="sec cli utils net"
 UPST="https://github.com/openssh/openssh-portable.git"
-VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep 'V_[0-9]_' | tail -n1 | cut -d_ -f2- | sed -e 's,_,.,' -e 's,_,,' | tr P p"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep 'V_[0-9]\+_' | tail -n1 | cut -d_ -f2- | sed -e 's,_,.,' -e 's,_,,' | tr P p"
 DEPS=(
     "o^linux-pam"   # pam configuration files
     "o^shadow"      # pam configuration files
@@ -44,4 +44,3 @@ id sshd || useradd -c 'sshd PrivSep' \
     -g sshd -s /bin/false sshd
 
 }
-#d Pesky spelling inconsistencies in the English language!
