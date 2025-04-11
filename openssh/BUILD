@@ -11,7 +11,8 @@ DEPS=(
     "o^sysstat"     # entropy
 )
 
-SOURCE="https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-$VERS.tar.gz"
+TAGV="$(sed -e 's/./_' -e 's/p/_P' $VERS)"
+SOURCE="https://github.com/openssh/openssh-portable/archive/refs/tags/V_$TAGV.tar.gz"
 EXTRA=()
 
 2b() {
