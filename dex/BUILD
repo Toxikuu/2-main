@@ -13,9 +13,9 @@ EXTRA=()
 2b() {
 
 # don't built man pages since i don't package sphinx atm
-sed '/sphinx-build/d' -i Makefile
+sed '/man/d' -i Makefile
 
-mi PREFIX=/usr MANPREFIX=/usr/share/man
+mi PREFIX=/usr
 rm -vf "$D"/usr/share/doc/dex/LICENSE
 
 }
