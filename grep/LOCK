@@ -1,11 +1,11 @@
 repo = "main"
 name = "grep"
-version = "3.11"
+version = "3.12"
 description = "String search utility"
 categories = ["core"]
-timestamp = "2025-02-25 20:16:10"
+timestamp = "2025-04-11 12:58:19"
 upstream = "https://git.savannah.gnu.org/git/grep.git"
 
 [source]
-url = "https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz"
-hash = "HbKu3eidDepCsW2VKPiUyNFdrk4ZC1muzHj1qVEnbqs"
+url = "https://ftp.gnu.org/gnu/grep/grep-3.12.tar.xz"
+hash = "JkmyfA6Q5jLq3NdXvgbG6aT0jZQd5R58D4P_dkCKB7k"
