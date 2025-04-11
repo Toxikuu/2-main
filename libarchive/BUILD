@@ -1,7 +1,7 @@
 NAME="libarchive"
 VERS="3.7.9"
 DESC="Multi-format archive and compression library"
-CATG="libb utils"
+CATG="lib utils"
 UPST="https://github.com/$NAME/$NAME.git"
 DEPS=(
     "o^libxml2"
@@ -27,3 +27,4 @@ mi
 ln -sfv bsdunzip "$D"/usr/bin/unzip
 
 }
+#d typo
