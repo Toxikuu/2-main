@@ -12,10 +12,7 @@ EXTRA=()
 
 2b() {
 
-# don't built man pages since i don't package sphinx atm
-sed '/man/d' -i Makefile
-
-mi PREFIX=/usr
-rm -vf "$D"/usr/share/doc/dex/LICENSE
+install -vDm755 dex -t "$D/usr/bin/"
 
 }
+#d avoid the makefile altogether
