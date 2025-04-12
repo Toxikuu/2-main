@@ -1,8 +1,13 @@
 repo = "main"
 name = "man-db"
 version = "2.13.0"
-description = "Programs for finding and viewing man pages"
-timestamp = "2025-02-20 20:23:24"
+description = "Utility for reading man pages"
+categories = [
+    "doc",
+    "utils",
+    "tui",
+]
+timestamp = "2025-04-12 13:35:10"
 upstream = "https://gitlab.com/man-db/man-db.git"
 
 [source]
