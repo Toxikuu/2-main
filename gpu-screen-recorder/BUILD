@@ -53,3 +53,4 @@ nj
 ni
 
 }
+#d added package field to cqp.patch
