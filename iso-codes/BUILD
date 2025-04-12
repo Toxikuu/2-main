@@ -1,5 +1,5 @@
 NAME="iso-codes"
-VERS="4.17.0"
+VERS="4.18.0"
 DESC="Database of country, language, and currency names"
 CATG="lib"
 UPST="https://salsa.debian.org/iso-codes-team/iso-codes.git"
