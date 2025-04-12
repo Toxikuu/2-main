@@ -8,7 +8,7 @@ DEPS=(
     "ncurses"
 )
 
-SOURCE="${UPST/.git//}/archive/$VERS.tar.gz"
+SOURCE="${UPST%.git}/archive/$VERS.tar.gz"
 EXTRA=()
 
 2b() {
@@ -20,3 +20,4 @@ mk
 mi
 
 }
+#d tweak
