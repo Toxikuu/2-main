@@ -1,5 +1,5 @@
 NAME="eza"
-VERS="0.21.0"
+VERS="5fdeb19d45d0763e41b2d843b438ef4709d14ad9"
 DESC="Very nice replacement for ls"
 UPST="https://github.com/eza-community/eza.git"
 
@@ -16,3 +16,4 @@ cbr
 install -vDm755 target/release/eza "$D/usr/bin/eza"
 
 }
+#d use HEAD for icons.patch
