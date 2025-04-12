@@ -30,3 +30,4 @@ nothing to commit, working tree clean] [2025-02-06 01:47:50] | Updated eza: 0.20
 [98c7a5ed6b8b4d470ef83b7956552c5ef0c4e196] [2025-04-12 20:10:37] | Revised eza: actually fix the source link
 [5690ec0089806701c757e517be6a6d65ba632d60] [2025-04-12 20:10:38] | Generated eza=5fdeb19d45d0763e41b2d843b438ef4709d14ad9
 [f96dbbc64675652cbf7f4889bd026bce89815c9f] [2025-04-12 20:26:28] | Revised eza: added icons.patch to --version
+[bad0cf71aa76e0344f622bee28a509cf4084be87] [2025-04-12 20:26:28] | Generated eza=5fdeb19d45d0763e41b2d843b438ef4709d14ad9
