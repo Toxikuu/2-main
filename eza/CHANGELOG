@@ -27,3 +27,4 @@ nothing to commit, working tree clean] [2025-02-06 01:47:50] | Updated eza: 0.20
 [40309a6e00591ebbdad5a751518ef399508d0c2d] [2025-04-12 20:04:22] | Generated eza=0.21.0
 [9a69a25b2bc666ee5e0d73109cd5c053f3fea53c] [2025-04-12 20:06:34] | Updated eza: 0.21.0 -> 5fdeb19d45d0763e41b2d843b438ef4709d14ad9: use HEAD for icons.patch
 [088a461a3549ce797bd0a37e572d01633902f0d4] [2025-04-12 20:07:27] | Revised eza: fix source link
+[98c7a5ed6b8b4d470ef83b7956552c5ef0c4e196] [2025-04-12 20:10:37] | Revised eza: actually fix the source link
