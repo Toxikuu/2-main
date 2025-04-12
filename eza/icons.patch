@@ -5,6 +5,19 @@
 # License:      Upstream's
 # Description:  Tweak and add icons to eza
 
+diff --git a/build.rs b/build.rs
+index 201d495f..c3e17457 100644
+--- a/build.rs
++++ b/build.rs
+@@ -131,6 +131,8 @@ fn nonstandard_features_string() -> String {
+         s.push("-git");
+     }
+
++    s.push("+tox_icons_patch");
++
+     s.join(", ")
+ }
+
 diff --git a/src/output/icons.rs b/src/output/icons.rs
 index 27336efb..98d54fac 100644
 --- a/src/output/icons.rs
