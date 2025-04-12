@@ -17,4 +17,4 @@ cbr
 install -vDm755 target/release/eza "$D/usr/bin/eza"
 
 }
-#d added icons.patch to --version
+#d tweaked patch description

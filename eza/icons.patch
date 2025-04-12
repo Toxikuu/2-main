@@ -3,7 +3,7 @@
 # Version:      0.21.0
 # Package:      eza
 # License:      Upstream's
-# Description:  Tweak and add icons to eza
+# Description:  Tweak and add icons
 
 diff --git a/build.rs b/build.rs
 index 201d495f..c3e17457 100644
