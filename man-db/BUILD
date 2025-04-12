@@ -1,25 +1,29 @@
 NAME="man-db"
 VERS="2.13.0"
-DESC="Programs for finding and viewing man pages"
-UPST="https://gitlab.com/man-db/man-db.git"
+DESC="Utility for reading man pages"
+CATG="doc utils tui"
+UPST="https://gitlab.com/$NAME/$NAME.git"
 
-SOURCE="https://download.savannah.gnu.org/releases/man-db/man-db-$VERS.tar.xz"
+SOURCE="https://download.savannah.gnu.org/releases/$NAME/$NAME-$VERS.tar.xz"
 EXTRA=()
 
 2b() {
 
-cfg \
-    --docdir=/usr/share/doc/man-db-$VERS  \
-    --sysconfdir=/etc                     \
-    --disable-setuid                      \
-    --enable-cache-owner=bin              \
-    --with-browser=/usr/bin/lynx          \
-    --with-vgrind=/usr/bin/vgrind         \
-    --with-grap=/usr/bin/grap             \
-    --with-systemdtmpfilesdir=            \
+_cfg_opts=(
+    --sysconfdir=/etc
+    --disable-setuid
+    --enable-cache-owner=bin
+    --with-db=gdbm
+    --with-browser=/usr/bin/lynx
+    --with-vgrind=/usr/bin/vgrind
+    --with-grap=/usr/bin/grap
+    --with-systemdtmpfilesdir=
     --with-systemdsystemunitdir=
+)
 
+cfg ${_cfg_opts[@]}
 mk
 mi
 
 }
+#d tweaks
