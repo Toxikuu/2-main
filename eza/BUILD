@@ -10,6 +10,8 @@ EXTRA=()
 
 with rust
 
+tpatch "$PORT/icons.patch"
+
 cbr
 install -vDm755 target/release/eza "$D/usr/bin/eza"
 
