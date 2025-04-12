@@ -61,5 +61,7 @@ install -vDm644 assets/shell-completion/fish          "$D"/usr/share/fish/vendor
 install -vDm644 assets/shell-completion/zsh           "$D"/usr/share/zsh/site-functions/_$pkgname
 install -vDm644 assets/shell-integration/$NAME.sh -t  "$D"/etc/profile.d
 
+mv -vf "$D/etc/profile.d/"{,33-}wezterm.sh
+
 }
-#d typo and checkout
+#d conform to my /etc/profile.d standard
