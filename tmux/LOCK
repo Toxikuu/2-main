@@ -3,7 +3,7 @@ name = "tmux"
 version = "ac2779f4d8e56531ed076e57c738ebd28737cc42"
 description = "Terminal multiplexer"
 categories = ["tui"]
-timestamp = "2025-04-10 22:41:08"
+timestamp = "2025-04-12 15:09:26"
 dependencies = [
     "libevent",
     "ncurses",
@@ -11,5 +11,5 @@ dependencies = [
 upstream = "https://github.com/tmux/tmux.git"
 
 [source]
-url = "https://github.com/tmux/tmux//archive/ac2779f4d8e56531ed076e57c738ebd28737cc42.tar.gz"
+url = "https://github.com/tmux/tmux/archive/ac2779f4d8e56531ed076e57c738ebd28737cc42.tar.gz"
 hash = "rDV3Yonv5SH9JgkghrVpjl0KqfbacD2isPBmHI49BdA"
