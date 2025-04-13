@@ -4,7 +4,9 @@ DESC="Filesystem in userspace"
 CATG="lib"
 UPST="https://github.com/libfuse/libfuse.git"
 VCMD="git ls-remote --tags --refs $UPST | sed -e 's@.*/@@' -e 's,fuse-,,' | grep -v '[a-Z]' | grep '^3' | sort -V | tail -n1"
-DEPS=()
+DEPS=(
+    "udev"
+)
 
 SOURCE="https://github.com/libfuse/libfuse/releases/download/fuse-$VERS/fuse-$VERS.tar.gz"
 EXTRA=()
