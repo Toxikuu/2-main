@@ -8,7 +8,7 @@ VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E 'v[0-9]+\\.(
 MINOR="${VERS%.*}"
 MAJOR="${MINOR%.*}"
 
-SOURCE="https://www.cpan.org/src/${MAJOR}.0/perl-${VERS}.tar.gz"
+SOURCE="https://github.com/Perl/perl5/archive/refs/tags/v$VERS.tar.gz"
 EXTRA=()
 
 2b() {
