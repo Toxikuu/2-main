@@ -1,5 +1,5 @@
 NAME="libcap"
-VERS="2.75"
+VERS="2.76"
 CATG="core"
 DESC="POSIX 1003.1e capabilities"
 UPST="https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
@@ -31,4 +31,3 @@ sed -e "s@^libdir=.*@libdir=/usr/lib32@" -i "$D"/usr/lib32/pkgconfig/lib{cap,psx
 chmod -v 755 "$D"/usr/lib32/libcap.so.$VERS
 
 }
-#d cleaned up comments
