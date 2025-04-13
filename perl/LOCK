@@ -1,15 +1,15 @@
 repo = "main"
 name = "perl"
-version = "5.40.1"
+version = "5.40.2"
 description = "The Practical Extraction and Report Language"
 categories = [
     "core",
     "lang",
 ]
-timestamp = "2025-02-25 20:16:57"
+timestamp = "2025-04-13 10:02:44"
 upstream = "https://github.com/Perl/perl5.git"
 version_command = '''git ls-remote --tags --refs 'https://github.com/Perl/perl5.git' | sed 's@.*/@@' | grep -E 'v[0-9]+\.([0-9]*[02468])\.[0-9]+' | grep -v RC | tail -n1'''
 
 [source]
-url = "https://www.cpan.org/src/5.0/perl-5.40.1.tar.gz"
-hash = "AvjEW7N57Qw951FPrUjHFP1Gvo8LU2v9UyAFAWWh7iY"
+url = "https://github.com/Perl/perl5/archive/refs/tags/v5.40.2.tar.gz"
+hash = "o-T63h5sy8RBHTCdLxG9pdh7qmHA04XjyI50iUw6Kvs"
