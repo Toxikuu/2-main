@@ -1,12 +1,12 @@
 repo = "main"
 name = "wezterm"
-version = "a87358516004a652ad840bc1661bdf65ffc89b43"
+version = "d2df5b755f9ed3f017472bbe66ff1eb762c36e18"
 description = "Wez's GPU-accelerated, cross-platform terminal emulator and multiplexer"
 categories = [
     "term",
     "gui",
 ]
-timestamp = "2025-04-12 13:41:27"
+timestamp = "2025-04-13 10:14:13"
 dependencies = [
     "bash",
     "fontconfig",
