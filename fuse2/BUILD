@@ -4,7 +4,9 @@ DESC="Filesystem in userspace"
 CATG="bin"
 UPST="https://github.com/libfuse/libfuse.git"
 VCMD="git ls-remote --tags --refs $UPST | sed 's@.*/@@' | grep 'fuse-2\\.9\\.' | tail -n1 | cut -d- -f2"  # avoid fuse3
-DEPS=()
+DEPS=(
+    "udev"
+)
 
 SOURCE="https://github.com/libfuse/libfuse/releases/download/fuse-$VERS/fuse-$VERS.tar.gz"
 EXTRA=(
@@ -12,8 +14,8 @@ EXTRA=(
 )
 
 KCFG=(
-    "FUSE_FS=*/M",
-    "CUSE=*/M",
+    "FUSE_FS=*/M"
+    "CUSE=*/M"
 )
 
 2b() {
@@ -43,3 +45,4 @@ cat > "$D"/etc/fuse.conf << "EOF"
 EOF
 
 }
+#d syntax && deps
