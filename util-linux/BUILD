@@ -26,6 +26,7 @@ _cfg_opts=(
     --disable-chfn-chsh
     --disable-login
     --disable-nologin
+    --disable-bfs
     --disable-su
     --disable-setpriv
     --disable-runuser
@@ -66,4 +67,4 @@ mk
 mi
 
 }
-#d fixed building with github sources instead of kernel.org
+#d don't build mkfs.bfs because who tf uses bfs
