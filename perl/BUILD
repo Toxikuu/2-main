@@ -1,5 +1,5 @@
 NAME="perl"
-VERS="5.40.1"
+VERS="5.40.2"
 CATG="core lang"
 DESC="The Practical Extraction and Report Language"
 UPST="https://github.com/Perl/perl5.git"
