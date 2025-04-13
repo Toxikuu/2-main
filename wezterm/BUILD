@@ -1,5 +1,5 @@
 NAME="wezterm"
-VERS="a87358516004a652ad840bc1661bdf65ffc89b43"
+VERS="d2df5b755f9ed3f017472bbe66ff1eb762c36e18"
 DESC="Wez's GPU-accelerated, cross-platform terminal emulator and multiplexer"
 CATG="term gui"
 UPST="https://github.com/wez/wezterm.git"
@@ -64,4 +64,3 @@ install -vDm644 assets/shell-integration/$NAME.sh -t  "$D"/etc/profile.d
 mv -vf "$D/etc/profile.d/"{,33-}wezterm.sh
 
 }
-#d conform to my /etc/profile.d standard
