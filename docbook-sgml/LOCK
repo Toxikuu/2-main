@@ -1,0 +1,14 @@
+repo = "main"
+name = "docbook-sgml"
+version = "4.5"
+description = "Document type definitions for verification of SGML data files against the DocBook rule set"
+categories = ["doc"]
+timestamp = "2025-04-13 21:40:45"
+dependencies = [
+    "libarchive",
+    "sgml-common",
+]
+
+[[extra]]
+url = "https://www.docbook.org/sgml/4.5/docbook-4.5.zip"
+hash = "gEPlFOgMbBnLFGtdN5N9EwW_Or-bAJfDbff3D2Ec30M"
