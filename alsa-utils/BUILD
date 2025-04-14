@@ -1,5 +1,5 @@
 NAME="alsa-utils"
-VERS="1.2.13"
+VERS="1.2.14"
 DESC="ALSA utilities"
 UPST="https://github.com/alsa-project/alsa-utils.git"
 
