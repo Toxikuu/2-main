@@ -1,5 +1,5 @@
 NAME="alsa-lib"
-VERS="1.2.13"
+VERS="1.2.14"
 DESC="ALSA library"
 UPST="https://github.com/alsa-project/alsa-lib.git"
 
