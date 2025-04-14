@@ -1,5 +1,5 @@
 NAME="libaom"
-VERS="3.12.0"
+VERS="3.12.1"
 DESC="Alliance for Open Media video codec"
 CATG=""
 UPST="https://aomedia.googlesource.com/aom.git"
