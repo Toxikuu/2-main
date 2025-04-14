@@ -1,8 +1,8 @@
 repo = "main"
 name = "libaom"
-version = "3.12.0"
+version = "3.12.1"
 description = "Alliance for Open Media video codec"
-timestamp = "2025-03-16 17:10:20"
+timestamp = "2025-04-14 17:10:03"
 dependencies = [
     "yasm",
     "make-ca",
@@ -10,5 +10,5 @@ dependencies = [
 upstream = "https://aomedia.googlesource.com/aom.git"
 
 [source]
-url = "https://storage.googleapis.com/aom-releases/libaom-3.12.0.tar.gz"
-hash = "2J2qFgoOoUCcQZO-WxfJWRAkxPWg5UXcudGXU1xmg24"
+url = "https://storage.googleapis.com/aom-releases/libaom-3.12.1.tar.gz"
+hash = "npd1GA3sff1hp54AvaOAnUOJGu5rLjMf9_JphiB-oi4"
