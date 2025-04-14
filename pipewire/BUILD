@@ -1,5 +1,5 @@
 NAME="pipewire"
-VERS="1.4.1"
+VERS="1.4.2"
 DESC="Low-latency audio/video router and processor"
 CATG="audio video"
 UPST="https://gitlab.freedesktop.org/$NAME/$NAME.git"
