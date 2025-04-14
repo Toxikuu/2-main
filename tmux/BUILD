@@ -1,5 +1,5 @@
 NAME="tmux"
-VERS="ac2779f4d8e56531ed076e57c738ebd28737cc42"
+VERS="f0a85d04695bcdc84d6dfbf5f9d3f9757a148365"
 DESC="Terminal multiplexer"
 CATG="tui"
 UPST="https://github.com/tmux/tmux.git"
@@ -20,4 +20,3 @@ mk
 mi
 
 }
-#d tweak
