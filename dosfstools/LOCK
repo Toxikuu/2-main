@@ -1,7 +1,7 @@
 repo = "main"
 name = "dosfstools"
 version = "4.2"
-timestamp = "2025-04-16 17:11:45"
+timestamp = "2025-04-16 17:12:57"
 categories = [
     "utils",
     "fs",
