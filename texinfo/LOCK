@@ -1,7 +1,7 @@
 repo = "main"
 name = "texinfo"
 version = "7.2"
-timestamp = "2025-04-16 16:48:11"
+timestamp = "2025-04-16 16:48:39"
 description = "Programs for reading, writing, and converting info pages"
 upstream = "https://git.savannah.gnu.org/git/texinfo.git"
 
