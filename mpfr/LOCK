@@ -1,7 +1,7 @@
 repo = "main"
 name = "mpfr"
 version = "4.2.2"
-timestamp = "2025-04-16 16:35:38"
+timestamp = "2025-04-16 16:36:47"
 categories = [
     "critical",
     "core",
