@@ -4,7 +4,8 @@ DESC="The NVIDIA drivers"
 CATG="drivers graphics"
 UPST="https://github.com/NVIDIA/open-gpu-kernel-modules.git"  # often inaccurate because nvidia
 DEPS=(
-    "tox/mesa"
+    # "tox/mesa"
+    "mesa"
     "kernel"  # nvidia must be rebuilt whenever the kernel sources change
     "libglvnd"
     "libvdpau"
