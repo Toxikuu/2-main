@@ -1,36 +1,96 @@
 repo = "main"
-name = "gsr"
+name = "gpu-screen-recorder"
 version = "5.3.8"
-description = "Fastest screen recorder for Linux"
+timestamp = "2025-04-16 16:37:30"
 categories = [
     "rec",
     "cli",
 ]
-timestamp = "2025-04-12 15:05:34"
-dependencies = [
-    "ffmpeg",
-    "libglvnd",
-    "libxcomposite",
-    "libxrandr",
-    "libxfixes",
-    "libxdamage",
-    "libx11",
-    "pulseaudio",
-    "libva",
-    "libdrm",
-    "libcap",
-    "wayland",
-    "vulkan-headers",
-    "o^mesa",
-    "o^dbus",
-    "o^libpipewire",
-    "o^nvidia",
-    "o^nvenc",
-    "o^cuda",
-    "o^nvfbc",
-]
+description = "Fastest screen recorder for Linux"
+extra = ["https://dec05eba.com/snapshot/gpu-screen-recorder.git.5.3.8.tar.gz"]
 upstream = "https://repo.dec05eba.com/gpu-screen-recorder"
 
-[[extra]]
-url = "https://dec05eba.com/snapshot/gpu-screen-recorder.git.5.3.8.tar.gz"
-hash = "SBW-B57bSKqQFuF7TK3PiRT-zODVlAnq0-sjv3_rsP0"
+[[dependencies]]
+relpath = "main/ffmpeg"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libglvnd"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxcomposite"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxrandr"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxfixes"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxdamage"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pulseaudio"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libva"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libdrm"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libcap"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/wayland"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/vulkan-headers"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "tox/mesa"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/dbus"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/pipewire"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/nvidia"
+optional = true
+runtime = false
