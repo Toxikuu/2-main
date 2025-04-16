@@ -1,7 +1,7 @@
 repo = "main"
 name = "spirv-llvm-translator"
 version = "20.1.1"
-timestamp = "2025-04-16 16:47:05"
+timestamp = "2025-04-16 16:48:11"
 categories = ["dev"]
 description = "Bi-directional translation between SPIR-V and LLVM IR"
 upstream = "https://github.com/KhronosGroup/SPIRV-LLVM-Translator.git"
