@@ -1,7 +1,7 @@
 repo = "main"
 name = "bc"
 version = "7.0.3"
-timestamp = "2025-04-16 16:44:22"
+timestamp = "2025-04-16 16:44:41"
 categories = ["core"]
 description = "Arbitrary precision numeric processing language"
 upstream = "https://github.com/gavinhoward/bc.git"
