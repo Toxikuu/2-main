@@ -1,7 +1,7 @@
 repo = "main"
 name = "docbook-sgml"
 version = "4.5"
-timestamp = "2025-04-16 16:46:43"
+timestamp = "2025-04-16 16:47:02"
 categories = ["doc"]
 description = "Document type definitions for verification of SGML data files against the DocBook rule set"
 extra = ["https://www.docbook.org/sgml/4.5/docbook-4.5.zip"]
