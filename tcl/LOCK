@@ -1,11 +1,11 @@
 repo = "main"
 name = "tcl"
 version = "8.6.16"
+timestamp = "2025-04-16 16:37:32"
 description = "Tool Command Language"
-timestamp = "2025-02-22 19:46:50"
 upstream = "https://github.com/tcltk/tcl.git"
 version_command = '''git ls-remote --tags --refs 'https://github.com/tcltk/tcl.git' | sed -e 's@.*/@@' -e 's@^core-@@' -e 's@-@.@g' | grep -Ev '[a-z]' | grep '\.' | tail -n1'''
 
 [source]
+kind = "Tarball"
 url = "https://downloads.sourceforge.net/tcl/tcl8.6.16-src.tar.gz"
-hash = "kcuPphdxxjwmLvtVMFm3x61nV6-lhXr2Jl5LC9wqFKU"
