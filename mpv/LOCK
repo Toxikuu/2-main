@@ -1,7 +1,7 @@
 repo = "main"
 name = "mpv"
 version = "0.40.0"
-timestamp = "2025-04-16 16:46:25"
+timestamp = "2025-04-16 16:46:45"
 categories = [
     "audio",
     "video",
