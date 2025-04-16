@@ -1,17 +1,35 @@
 repo = "main"
-name = "nvim"
+name = "neovim"
 version = "0.11.0"
+timestamp = "2025-04-15 23:43:01"
 description = "Continuation and extension of Vim"
-timestamp = "2025-04-06 20:51:28"
-dependencies = [
-    "libuv",
-    "luajit",
-    "git",
-    "ninja",
-    "cmake",
-]
 upstream = "https://github.com/neovim/neovim.git"
 
+[[dependencies]]
+relpath = "main/libuv"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/luajit"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/git"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/ninja"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/cmake"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/neovim/neovim/archive/refs/tags/v0.11.0.tar.gz"
-hash = "aCbEgS6WmV0pqYWG1E--58myBFSF1Q0XS-zW1SQrMxk"
