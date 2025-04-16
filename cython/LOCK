@@ -1,18 +1,32 @@
 repo = "main"
 name = "cython"
 version = "3.0.12"
-description = "C-Extensions for Python"
+timestamp = "2025-04-16 17:10:52"
 categories = ["dev"]
-timestamp = "2025-02-24 21:15:47"
-dependencies = [
-    "python",
-    "glibc",
-    "setuptools",
-    "wheel",
-]
+description = "C-Extensions for Python"
 upstream = "https://github.com/cython/cython.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/cython/cython.git' | sed 's@.*/@@' | grep -Ev '[a-z]|-' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/python"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/setuptools"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/wheel"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/cython/cython/releases/download/3.0.12/cython-3.0.12.tar.gz"
-hash = "uYi7KXznbGceKMl9AXuVQRAQ98d_pmI90LtH7tGu4bw"
