@@ -1,7 +1,7 @@
 repo = "main"
 name = "glib"
 version = "2.84.1"
-timestamp = "2025-04-16 16:37:31"
+timestamp = "2025-04-16 16:44:21"
 description = "Low level core library"
 extra = [
     "https://download.gnome.org/sources/gobject-introspection/1.84/gobject-introspection-1.84.0.tar.xz",
