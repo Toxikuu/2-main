@@ -1,11 +1,11 @@
 repo = "main"
 name = "tar"
 version = "1.35"
-description = "Archive utility"
+timestamp = "2025-04-16 16:48:11"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:55"
+description = "Archive utility"
 upstream = "https://git.savannah.gnu.org/git/tar.git"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz"
-hash = "TWL_NzQux67XSFNTI5MMfPlKz3HDWRiCsmp-pQ8-3BY"
