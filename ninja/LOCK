@@ -1,11 +1,11 @@
 repo = "main"
 name = "ninja"
 version = "1.12.1"
-description = "A small build system with a focus on speed"
+timestamp = "2025-04-16 16:31:05"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:31"
+description = "A small build system with a focus on speed"
 upstream = "https://github.com/ninja-build/ninja.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/ninja-build/ninja/archive/v1.12.1/ninja-1.12.1.tar.gz"
-hash = "ghvf9Io_aDvEuztvC1_nstZHz2XVKutjMoyRpsbfKFo"
