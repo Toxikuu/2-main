@@ -1,12 +1,12 @@
 repo = "main"
 name = "bc"
 version = "7.0.3"
-description = "Arbitrary precision numeric processing language"
+timestamp = "2025-04-16 16:37:32"
 categories = ["core"]
-timestamp = "2025-02-25 20:14:50"
+description = "Arbitrary precision numeric processing language"
 upstream = "https://github.com/gavinhoward/bc.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/gavinhoward/bc.git' | sed 's@.*/@@' | grep -Ev '[a-z]+' | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/gavinhoward/bc/releases/download/7.0.3/bc-7.0.3.tar.xz"
-hash = "ket0yu0O5mVbZpcRpPNQwlV5d4aU3ySOKDYzGOA8f8Q"
