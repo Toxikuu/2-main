@@ -1,10 +1,10 @@
 repo = "main"
 name = "pulseaudio"
 version = "17.0"
+timestamp = "2025-04-16 16:47:06"
 description = "General-purpose sound server"
-timestamp = "2025-03-05 23:01:18"
 upstream = "https://github.com/pulseaudio/pulseaudio.git"
 
 [source]
+kind = "Tarball"
 url = "https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz"
-hash = "BTeU1mcaPjl9hJ5HioC4KmPLnYyilr01tzMXu1zrh7U"
