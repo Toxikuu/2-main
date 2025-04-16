@@ -1,7 +1,7 @@
 repo = "main"
 name = "gsettings-desktop-schemas"
 version = "48.0"
-timestamp = "2025-04-16 17:10:54"
+timestamp = "2025-04-16 17:11:25"
 categories = ["lib"]
 description = "Collection of GSettings schemas"
 upstream = "https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas.git"
