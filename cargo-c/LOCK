@@ -1,7 +1,7 @@
 repo = "main"
 name = "cargo-c"
 version = "0.10.12"
-timestamp = "2025-04-16 17:10:52"
+timestamp = "2025-04-16 17:11:23"
 description = "A cargo subcommand to build and install C-ABI compatibile dynamic and static libraries"
 upstream = "https://github.com/lu-zero/cargo-c.git"
 
