@@ -1,20 +1,27 @@
 repo = "main"
 name = "dbus"
 version = "1.16.2"
+timestamp = "2025-04-16 17:10:52"
 description = "Freedesktop.org message bus system"
-timestamp = "2025-03-24 14:42:15"
-dependencies = [
-    "libcap",
-    "glib",
-    "xmlto",
-]
+extra = ["https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20240913.tar.xz"]
 upstream = "https://gitlab.freedesktop.org/dbus/dbus.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/dbus/dbus.git' | sed 's@.*/@@' | grep -E 'dbus-[0-9]' | sort -V | tail -n1"
 
-[source]
-url = "https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz"
-hash = "C6KhpLFq_nvOssB-nOmajCw1COXewpDbtkM4S9a-t-I"
+[[dependencies]]
+relpath = "main/libcap"
+optional = false
+runtime = false
 
-[[extra]]
-url = "https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20240913.tar.xz"
-hash = "bwEU5cPSdYnN8HY8tPAVodVmJtbJYG25qDWXhCh7XTs"
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/xmlto"
+optional = false
+runtime = false
+
+[source]
+kind = "Tarball"
+url = "https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz"
