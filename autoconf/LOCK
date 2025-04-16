@@ -1,7 +1,7 @@
 repo = "main"
 name = "autoconf"
 version = "2.72"
-timestamp = "2025-04-16 16:47:06"
+timestamp = "2025-04-16 17:10:23"
 categories = ["core"]
 description = "Programs to produce shell scripts to automatically configure source code"
 upstream = "https://git.savannah.gnu.org/git/autoconf.git"
