@@ -1,11 +1,11 @@
 repo = "main"
 name = "libtool"
 version = "2.5.4"
-description = "The GNU generic library support script"
+timestamp = "2025-04-16 16:37:31"
 categories = ["core"]
-timestamp = "2025-02-25 20:16:13"
+description = "The GNU generic library support script"
 upstream = "git://git.savannah.gnu.org/libtool.git"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/libtool/libtool-2.5.4.tar.xz"
-hash = "-B9YYGZrC8fYS63e-mDRy5-m_OsjmMw7rKavqmAmZnU"
