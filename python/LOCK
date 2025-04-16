@@ -1,25 +1,55 @@
 repo = "main"
 name = "python"
 version = "3.13.3"
-description = "The Python programming language"
+timestamp = "2025-04-16 16:46:25"
 categories = [
     "core",
     "lang",
 ]
-timestamp = "2025-04-08 15:34:35"
-dependencies = [
-    "mpdecimal",
-    "expat",
-    "libffi",
-    "gdbm",
-    "libxcrypt",
-    "openssl",
-    "zlib",
-    "bzip2",
-]
+description = "The Python programming language"
 upstream = "https://github.com/python/cpython.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/python/cpython.git' | sed 's@.*/@@' | grep -Ev 'a|b|rc' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/mpdecimal"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/expat"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libffi"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/gdbm"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libxcrypt"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/openssl"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/zlib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/bzip2"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz"
-hash = "QPhovL3rgUmjFJWAu5v9QHszIc1I8L5jGvlVrJLA4EE"
