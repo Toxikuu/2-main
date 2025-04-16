@@ -1,12 +1,12 @@
 repo = "main"
 name = "groff"
 version = "1.23.0"
-description = "Programs for processing and formatting text and images"
+timestamp = "2025-04-16 16:46:46"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:40"
+description = "Programs for processing and formatting text and images"
 upstream = "https://git.savannah.gnu.org/git/groff.git"
 version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/groff.git' | sed 's@.*/@@' | grep -E '^[0-9]+' | grep -Ev '[a-z]+' | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz"
-hash = "a5dX9ZK3UYtJAutq9-VFcL3Mujeocf3bLTCuOGNRHBM"
