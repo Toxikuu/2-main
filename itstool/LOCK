@@ -1,11 +1,15 @@
 repo = "main"
 name = "itstool"
 version = "2.0.7"
+timestamp = "2025-04-16 16:36:36"
 description = "Translate XML with PO files"
-timestamp = "2025-03-29 18:14:09"
-dependencies = ["docbook-xml"]
 upstream = "https://github.com/itstool/itstool.git"
 
+[[dependencies]]
+relpath = "main/docbook-xml4"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://files.itstool.org/itstool/itstool-2.0.7.tar.bz2"
-hash = "a5p80poSu5VZj1dQ6HY87niDahogf4W3TYsydbJ-h8o"
