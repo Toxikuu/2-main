@@ -1,7 +1,7 @@
 repo = "main"
 name = "btop"
 version = "1.4.0"
-timestamp = "2025-04-16 17:11:44"
+timestamp = "2025-04-16 17:12:57"
 categories = [
     "tui",
     "utils",
