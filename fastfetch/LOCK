@@ -1,7 +1,7 @@
 repo = "main"
 name = "fastfetch"
 version = "2.40.4"
-timestamp = "2025-04-16 16:46:46"
+timestamp = "2025-04-16 16:47:05"
 description = "Well-maintained, feature-rich, performance-oriented fetch script"
 upstream = "https://github.com/fastfetch-cli/fastfetch.git"
 
