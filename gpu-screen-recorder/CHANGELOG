@@ -30,3 +30,4 @@ nothing to commit, working tree clean] [2025-04-07 00:00:29] | Updated gsr: 5.3.
 [00e21d69a58c40cab210870af7fbc25769b37c89] [2025-04-12 20:05:34] | Revised gsr: added package field to cqp.patch
 [c45783b1dc4a2a5eca7d3bd060b920872231fb38] [2025-04-12 20:05:34] | Generated gsr=5.3.8
 [90db2511c0d3b7e49e14329f18f21de66e6d61f8] [2025-04-16 21:37:30] | Generated gpu-screen-recorder=5.3.8
+[d713ff0d4620ca66a500eaa7015aa98449d3733f] [2025-04-16 21:39:22] | Revised gsr
