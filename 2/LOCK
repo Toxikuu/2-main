@@ -1,7 +1,7 @@
 repo = "main"
 name = "2"
 version = "0.1.0"
-timestamp = "2025-04-16 17:10:51"
+timestamp = "2025-04-16 17:11:22"
 categories = ["core"]
 description = "Source-based LFS package manager"
 upstream = "https://github.com/Toxikuu/2.git"
