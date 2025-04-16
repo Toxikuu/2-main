@@ -1,11 +1,11 @@
 repo = "main"
 name = "procps-ng"
 version = "4.0.5"
-description = "Programs for monitoring processes"
+timestamp = "2025-04-16 16:47:06"
 categories = ["core"]
-timestamp = "2025-02-25 20:20:35"
+description = "Programs for monitoring processes"
 upstream = "https://gitlab.com/procps-ng/procps.git"
 
 [source]
+kind = "Tarball"
 url = "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.5.tar.xz"
-hash = "wubRk8x4-EzW3bcqr21capFi8EcOWZIJIFf1_1GFYvo"
