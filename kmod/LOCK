@@ -1,7 +1,7 @@
 repo = "main"
 name = "kmod"
 version = "34.2"
-timestamp = "2025-04-16 17:11:47"
+timestamp = "2025-04-16 17:12:57"
 categories = ["core"]
 description = "Libraries and utilities for loading kernel modules"
 upstream = "https://kernel.googlesource.com/pub/scm/utils/kernel/kmod/kmod.git"
