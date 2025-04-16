@@ -1,7 +1,7 @@
 repo = "main"
 name = "libpng"
 version = "1.6.47"
-timestamp = "2025-04-16 16:46:26"
+timestamp = "2025-04-16 16:46:46"
 description = "Libraries for reading and writing PNG formats"
 extra = ["https://sourceforge.net/projects/libpng-apng/files/libpng16/1.6.47/libpng-1.6.47-apng.patch.gz"]
 upstream = "https://github.com/pnggroup/libpng.git"
