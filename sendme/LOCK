@@ -1,7 +1,7 @@
 repo = "main"
 name = "sendme"
 version = "0.25.0"
-timestamp = "2025-04-16 16:48:11"
+timestamp = "2025-04-16 16:48:39"
 description = "Stupid easy file transferring"
 upstream = "https://github.com/n0-computer/sendme.git"
 
