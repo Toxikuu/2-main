@@ -1,7 +1,7 @@
 repo = "main"
 name = "socat"
 version = "1.8.0.3"
-timestamp = "2025-04-16 16:48:11"
+timestamp = "2025-04-16 16:48:39"
 categories = ["util"]
 description = "Multipurpose relay tool"
 upstream = "https://repo.or.cz/socat.git"
