@@ -1,7 +1,7 @@
 repo = "main"
-name = "neovim"
+name = "nvim"
 version = "0.11.0"
-timestamp = "2025-04-15 23:43:01"
+timestamp = "2025-04-16 16:48:40"
 description = "Continuation and extension of Vim"
 upstream = "https://github.com/neovim/neovim.git"
 
