@@ -1,7 +1,7 @@
 repo = "main"
 name = "i3ipc"
 version = "2.2.1"
-timestamp = "2025-04-16 16:47:02"
+timestamp = "2025-04-16 17:11:25"
 categories = [
     "lib",
     "wm",
