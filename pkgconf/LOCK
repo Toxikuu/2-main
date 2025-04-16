@@ -1,7 +1,7 @@
 repo = "main"
 name = "pkgconf"
 version = "2.4.3"
-timestamp = "2025-04-16 17:12:30"
+timestamp = "2025-04-16 17:12:56"
 categories = ["core"]
 description = "Package compiler and linker metadata toolkit"
 upstream = "https://github.com/pkgconf/pkgconf.git"
