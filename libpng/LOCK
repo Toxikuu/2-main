@@ -1,14 +1,11 @@
 repo = "main"
 name = "libpng"
 version = "1.6.47"
+timestamp = "2025-04-16 16:46:26"
 description = "Libraries for reading and writing PNG formats"
-timestamp = "2025-03-15 15:37:42"
+extra = ["https://sourceforge.net/projects/libpng-apng/files/libpng16/1.6.47/libpng-1.6.47-apng.patch.gz"]
 upstream = "https://github.com/pnggroup/libpng.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/pnggroup/libpng/archive/refs/tags/v1.6.47.tar.gz"
-hash = "YxpMWOpsEMgfFgxLIfqElbcV0lFpjrwlUgd-hFDzBFQ"
-
-[[extra]]
-url = "https://sourceforge.net/projects/libpng-apng/files/libpng16/1.6.47/libpng-1.6.47-apng.patch.gz"
-hash = "Wwhvr-fhJ4SyhpPhmlvPaGd6jFKUcRVxKlbD0SOUT28"
