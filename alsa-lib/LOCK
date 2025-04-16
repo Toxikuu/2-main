@@ -1,10 +1,10 @@
 repo = "main"
-name = "alsa-lib"
+name = "alsa-lib/"
 version = "1.2.14"
+timestamp = "2025-04-16 17:09:10"
 description = "ALSA library"
-timestamp = "2025-04-14 17:09:30"
 upstream = "https://github.com/alsa-project/alsa-lib.git"
 
 [source]
+kind = "Tarball"
 url = "https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.14.tar.bz2"
-hash = "vpyIoLNgQ2fddBZ6K3VKNeFC9nApKuR6L97yei7pejI"
