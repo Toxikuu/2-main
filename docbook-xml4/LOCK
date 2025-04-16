@@ -1,7 +1,7 @@
 repo = "main"
 name = "docbook-xml4"
 version = "4.5"
-timestamp = "2025-04-16 17:10:52"
+timestamp = "2025-04-16 17:11:23"
 categories = ["doc"]
 description = "Widely-used XML scheme for writing documentation"
 extra = ["https://www.docbook.org/xml/4.5/docbook-xml-4.5.zip"]
