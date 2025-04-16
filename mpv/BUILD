@@ -17,8 +17,8 @@ DEPS=(
     "vulkan-loader"
     "o^sdl2"
 
-    "gtk3: for the icon cache"
-    "desktop-file-utils: for the desktop cache"
+    # "gtk3: for the icon cache"
+    # "desktop-file-utils: for the desktop cache"
 )
 
 SOURCE="https://github.com/mpv-player/mpv/archive/v$VERS/mpv-$VERS.tar.gz"
