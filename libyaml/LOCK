@@ -1,7 +1,7 @@
 repo = "main"
 name = "libyaml"
 version = "0.2.5"
-timestamp = "2025-04-16 17:11:48"
+timestamp = "2025-04-16 17:12:57"
 categories = ["dev"]
 description = "C library for parsing and emitting YAML"
 upstream = "https://github.com/yaml/libyaml.git"
