@@ -1,34 +1,82 @@
 repo = "main"
 name = "gst-plugins-base"
 version = "1.26.0"
-description = "Base gstreamer plugins and helper libraries"
+timestamp = "2025-04-16 17:11:19"
 categories = ["lib"]
-timestamp = "2025-03-20 16:33:44"
-dependencies = [
-    "gstreamer",
-    "alsa-lib",
-    "glib",
-    "libgudev",
-    "libjpeg-turbo",
-    "libogg",
-    "libpng",
-    "libvorbis",
-    "mesa",
-    "pango",
-    "wayland-protocols",
-    "libx11",
-    "o^libtheora",
-    "o^libvisual",
-    "o^graphene",
-    "o^opus",
-    "o^sdl2",
-    "o^cdparanoia:",
-    "for",
-    "cdda",
-]
+description = "Base gstreamer plugins and helper libraries"
 upstream = "https://github.com/GStreamer/gstreamer.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/GStreamer/gstreamer.git' | sed 's@.*/@@' | grep -Ev '[a-Z]|-' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/gstreamer"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/alsa-lib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libgudev"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libjpeg-turbo"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libogg"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libpng"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libvorbis"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "tox/mesa"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pango"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/wayland-protocols"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/opus"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/sdl2"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.0.tar.xz"
-hash = "4jGJ--0uxIZpA4LRBVwZ7q9arj6V4ldvxMiE2WqQ5p4"
