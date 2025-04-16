@@ -1,11 +1,15 @@
 repo = "main"
 name = "cargo-c"
 version = "0.10.12"
+timestamp = "2025-04-16 16:46:46"
 description = "A cargo subcommand to build and install C-ABI compatibile dynamic and static libraries"
-timestamp = "2025-04-05 14:25:07"
-dependencies = ["rust"]
 upstream = "https://github.com/lu-zero/cargo-c.git"
 
+[[dependencies]]
+relpath = "tox/rust"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/lu-zero/cargo-c/archive/v0.10.12/cargo-c-0.10.12.tar.gz"
-hash = "rhGIggZ-Hn3NgQaTMynPAY3cbqVsq_6nZCp2mdbOcA8"
