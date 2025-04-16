@@ -1,7 +1,7 @@
 repo = "main"
 name = "gpu-screen-recorder"
 version = "5.3.8"
-timestamp = "2025-04-16 16:47:02"
+timestamp = "2025-04-16 17:10:54"
 categories = [
     "rec",
     "cli",
