@@ -1,11 +1,11 @@
 repo = "main"
 name = "zstd"
 version = "1.5.7"
+timestamp = "2025-04-16 16:45:19"
 description = "The zstandard compression algorithm"
-timestamp = "2025-03-06 22:03:40"
 upstream = "https://github.com/facebook/zstd.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/facebook/zstd.git' | sed 's@.*/@@' | grep -E '^v[0-9]+' | grep -v -- -kernel | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz"
-hash = "jCngbPQqrMHq_EB3ri7Gxvy5amJhV-BZPV6Co0_UA8E"
