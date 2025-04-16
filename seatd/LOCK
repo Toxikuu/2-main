@@ -1,10 +1,10 @@
 repo = "main"
 name = "seatd"
 version = "0.9.1"
+timestamp = "2025-04-16 16:37:32"
 description = "Universal seat management library"
-timestamp = "2025-02-20 20:23:25"
 upstream = "https://github.com/kennylevinsen/seatd.git"
 
 [source]
+kind = "Tarball"
 url = "https://git.sr.ht/~kennylevinsen/seatd/archive/0.9.1.tar.gz"
-hash = "gZl5ySKgviWK7RM9k5ILzmo9NWWmBYjW03LOnbJxLNM"
