@@ -4,7 +4,7 @@ DESC="Translate XML with PO files"
 CATG=""
 UPST="https://github.com/itstool/itstool.git"
 DEPS=(
-    "docbook-xml"
+    "docbook-xml4"
 )
 
 SOURCE="https://files.itstool.org/itstool/itstool-$VERS.tar.bz2"
