@@ -1,10 +1,10 @@
 repo = "main"
 name = "pfetch"
 version = "0.6.0"
+timestamp = "2025-04-16 16:46:25"
 description = "Pretty (and unmaintained) fetch script written in POSIX sh"
-timestamp = "2025-02-20 20:23:25"
 upstream = "https://github.com/dylanaraps/pfetch.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/dylanaraps/pfetch/archive/refs/tags/0.6.0.tar.gz"
-hash = "0fYR5hwfiuVb0U-PYFTQb8uaLZcwlTZ8FiaELbZrMYI"
