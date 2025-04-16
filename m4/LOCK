@@ -1,12 +1,12 @@
 repo = "main"
 name = "m4"
 version = "1.4.19"
-description = "Macro processor"
+timestamp = "2025-04-16 16:37:31"
 categories = ["core"]
-timestamp = "2025-02-25 20:14:48"
+description = "Macro processor"
 upstream = "https://git.savannah.gnu.org/git/m4.git"
 version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/m4.git' | sed 's:.*/::' | sort -V | grep -B1 v1.5.89a | head -n1"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz"
-hash = "Y67eXG0zttmxNRHNC-LKwEby5w_QoHqpVzoEqCeDr5Y"
