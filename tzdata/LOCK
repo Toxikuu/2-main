@@ -1,12 +1,16 @@
 repo = "main"
 name = "tzdata"
 version = "2025b"
+timestamp = "2025-04-16 16:36:47"
 description = "Timezone data"
-timestamp = "2025-03-23 14:36:03"
-dependencies = ["glibc"]
 upstream = "https://data.iana.org/time-zones/releases/?C=M;O=D"
 version_command = "curl -s 'https://data.iana.org/time-zones/releases/?C=M;O=D' | grep tzdb- | head -n1 | cut -d- -f2 | cut -d. -f1"
 
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://data.iana.org/time-zones/releases/tzdata2025b.tar.gz"
-hash = "EYEEEzRfx4BQF-J-qfpIhf10zWGykRcRrQOPXSjXFHQ"
