@@ -1,7 +1,7 @@
 repo = "main"
 name = "flac"
 version = "1.5.0"
-timestamp = "2025-04-16 16:46:44"
+timestamp = "2025-04-16 16:47:02"
 description = "Free lossless audio codec"
 upstream = "https://github.com/xiph/flac.git"
 
