@@ -9,12 +9,12 @@ DEPS=(
     "libusb"
     "linux-pam"
     "xdg-utils"
-    "o^colord"
-    "o^avahi"
-    "o^libpaper"
+    # "o^colord"
+    # "o^avahi"
+    # "o^libpaper"
     "o^krb5"
-    "o^php"
-    "r^cups-filters"
+    # "o^php"
+    # "r^cups-filters"
 )
 
 SOURCE="https://github.com/OpenPrinting/cups/releases/download/v$VERS/cups-$VERS-source.tar.gz"
