@@ -1,7 +1,7 @@
 repo = "main"
 name = "xdotool"
 version = "3.20211022.1"
-timestamp = "2025-04-16 16:38:44"
+timestamp = "2025-04-16 16:43:14"
 categories = ["utils"]
 description = "Fake keyboard/moouse input and window management for X"
 upstream = "https://github.com/jordansissel/xdotool.git"
