@@ -1,7 +1,7 @@
 repo = "main"
 name = "git"
 version = "2.49.0"
-timestamp = "2025-04-16 16:46:42"
+timestamp = "2025-04-16 16:47:00"
 description = "The fast distributed version control system"
 extra = ["https://www.kernel.org/pub/software/scm/git/git-manpages-2.49.0.tar.xz"]
 upstream = "https://github.com/git/git.git"
