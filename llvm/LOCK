@@ -1,27 +1,17 @@
 repo = "main"
 name = "llvm"
 version = "20.1.2"
+timestamp = "2025-04-16 17:12:57"
 description = "A collection of modular and reusable compiler and toolchain technologies"
-timestamp = "2025-04-02 17:35:49"
+extra = [
+    "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/cmake-20.1.2.src.tar.xz",
+    "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/third-party-20.1.2.src.tar.xz",
+    "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/clang-20.1.2.src.tar.xz",
+    "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/compiler-rt-20.1.2.src.tar.xz",
+]
 upstream = "https://github.com/llvm/llvm-project.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/llvm/llvm-project.git' | cut -d- -f2- | grep -v [a-Z] | sort -V | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/llvm-20.1.2.src.tar.xz"
-hash = "YobFJts7hM55KS-AEY5-bT-9W1zj5KDrsystIFIzvYY"
-
-[[extra]]
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/cmake-20.1.2.src.tar.xz"
-hash = "ikjV_1mgeLepQ5WzT31adp9DWjIRiG4si_g6opgWMbw"
-
-[[extra]]
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/third-party-20.1.2.src.tar.xz"
-hash = "Dqqr_0vmIYlZkCYBnyMq3vwD09sl1B8aCQrY6AbcXc4"
-
-[[extra]]
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/clang-20.1.2.src.tar.xz"
-hash = "ZQMSB9CIk30P_fTX3XFnyuZAt8kYj8C-PX4oaom3eHw"
-
-[[extra]]
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/compiler-rt-20.1.2.src.tar.xz"
-hash = "60vsVYPij2muNXFbziX2CmehRihs7-_h9G504a7mq6Q"
