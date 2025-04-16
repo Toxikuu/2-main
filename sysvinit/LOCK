@@ -1,7 +1,7 @@
 repo = "main"
 name = "sysvinit"
 version = "3.14"
-timestamp = "2025-04-16 16:46:25"
+timestamp = "2025-04-16 16:46:45"
 categories = ["core"]
 description = "A simple init system"
 upstream = "https://github.com/slicer69/sysvinit.git"
