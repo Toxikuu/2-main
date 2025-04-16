@@ -1,18 +1,24 @@
 repo = "main"
 name = "cava"
 version = "0.10.4"
-description = "Cross-platform Audio Visualizer"
+timestamp = "2025-04-16 16:37:31"
 categories = [
     "tui",
     "audio",
 ]
-timestamp = "2025-03-24 16:39:32"
-dependencies = [
-    "fftw",
-    "iniparser",
-]
+description = "Cross-platform Audio Visualizer"
 upstream = "https://github.com/karlstav/cava.git"
 
+[[dependencies]]
+relpath = "main/fftw"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/iniparser"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/karlstav/cava/archive/refs/tags/0.10.4.tar.gz"
-hash = "Wi7-3y2AnXB3D0k0nyilwFbxups_VHbnh0QpGkaOIGo"
