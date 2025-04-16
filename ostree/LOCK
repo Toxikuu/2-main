@@ -1,7 +1,7 @@
 repo = "main"
 name = "ostree"
 version = "2025.2"
-timestamp = "2025-04-16 16:46:43"
+timestamp = "2025-04-16 16:47:01"
 categories = ["lib"]
 description = "Library for container deployment and such"
 upstream = "https://github.com/ostreedev/ostree.git"
