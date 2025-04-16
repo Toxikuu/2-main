@@ -1,23 +1,45 @@
 repo = "main"
 name = "libsoup2"
 version = "2.74.3"
-description = "HTTP client/server library for GNOME"
+timestamp = "2025-04-16 17:11:48"
 categories = [
     "lib",
     "net",
 ]
-timestamp = "2025-03-30 15:07:01"
-dependencies = [
-    "glib-networking",
-    "libpsl",
-    "libxml2",
-    "sqlite",
-    "glib",
-    "o^vala",
-]
+description = "HTTP client/server library for GNOME"
 upstream = "https://gitlab.gnome.org/GNOME/libsoup.git"
 version_command = '''git ls-remote --tags --refs https://gitlab.gnome.org/GNOME/libsoup.git | sed 's@.*/@@' | grep -Ev '[a-Z]|\.99\.' | grep '^2' | tail -n1'''
 
+[[dependencies]]
+relpath = "main/glib-networking"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libpsl"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libxml2"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/sqlite"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/vala"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.3.tar.xz"
-hash = "5Ld8Qc_EyMWgNfzcMgx7xs-3XvfFoDQVPfFBP6HZLxM"
