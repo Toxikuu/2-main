@@ -1,7 +1,7 @@
 repo = "main"
 name = "jasper"
 version = "4.2.5"
-timestamp = "2025-04-16 16:44:20"
+timestamp = "2025-04-16 16:44:38"
 categories = ["lib"]
 description = "Library for manipulating JPEG-2000 images"
 upstream = "https://github.com/jasper-software/jasper.git"
