@@ -1,7 +1,7 @@
 repo = "main"
 name = "libpsl"
 version = "0.21.5"
-timestamp = "2025-04-16 16:46:46"
+timestamp = "2025-04-16 16:47:05"
 categories = [
     "lib",
     "net",
