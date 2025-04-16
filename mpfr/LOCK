@@ -1,15 +1,15 @@
 repo = "main"
 name = "mpfr"
 version = "4.2.2"
-description = "Arbitrary-precision floating-point math library"
+timestamp = "2025-04-16 16:35:38"
 categories = [
     "critical",
     "core",
 ]
-timestamp = "2025-03-20 16:28:36"
+description = "Arbitrary-precision floating-point math library"
 upstream = "https://gitlab.inria.fr/mpfr/mpfr.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.inria.fr/mpfr/mpfr.git' | grep -Ev 'emptycommit|deleted|-rc|-root' | tail -n1 | sed 's@.*/@@'"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz"
-hash = "tnugOD736KhWNzTi6InvXsPDuJigHQD6CmhprYHGzgE"
