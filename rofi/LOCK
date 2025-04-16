@@ -1,21 +1,39 @@
 repo = "main"
 name = "rofi"
 version = "1.7.8"
-description = "Application launcher, window switcher, and dmenu replacement"
+timestamp = "2025-04-16 16:37:30"
 categories = [
     "gui",
     "utils",
 ]
-timestamp = "2025-03-24 16:08:04"
-dependencies = [
-    "pango",
-    "cairo",
-    "xcb-util",
-    "xcb-util-wm",
-    "xcb-util-cursor",
-]
+description = "Application launcher, window switcher, and dmenu replacement"
 upstream = "https://github.com/davatorium/rofi.git"
 
+[[dependencies]]
+relpath = "main/pango"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/cairo"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-util"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-util-wm"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-util-cursor"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/davatorium/rofi/releases/download/1.7.8/rofi-1.7.8.tar.xz"
-hash = "KtkKjEkuC2QgIIjniHlb8LMez6pZ_nRBrSYymNFQZV4"
