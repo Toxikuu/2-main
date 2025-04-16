@@ -1,15 +1,21 @@
 repo = "main"
 name = "dhcpcd"
 version = "10.2.2"
-description = "Fully-featured, lightweight DHCP client"
+timestamp = "2025-04-16 16:45:19"
 categories = ["net"]
-timestamp = "2025-03-24 00:17:11"
-dependencies = [
-    "openssl",
-    "bash",
-]
+description = "Fully-featured, lightweight DHCP client"
 upstream = "https://github.com/NetworkConfiguration/dhcpcd.git"
 
+[[dependencies]]
+relpath = "main/openssl"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/bash"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.2.2/dhcpcd-10.2.2.tar.xz"
-hash = "XyV7Avh0s7jLAx5b55yZz5y9T2Xq4qUMmxvt2vs_Ubw"
