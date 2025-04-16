@@ -1,7 +1,7 @@
 repo = "main"
 name = "automake"
 version = "1.17"
-timestamp = "2025-04-16 17:10:52"
+timestamp = "2025-04-16 17:11:23"
 categories = ["core"]
 description = "Programs for generating Makefiles for use with Autoconf"
 upstream = "https://git.savannah.gnu.org/git/automake.git"
