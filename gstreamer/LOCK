@@ -1,7 +1,7 @@
 repo = "main"
 name = "gstreamer"
 version = "1.26.0"
-timestamp = "2025-04-16 17:11:25"
+timestamp = "2025-04-16 17:11:46"
 description = "Development framework for multimedia applications"
 upstream = "https://github.com/GStreamer/gstreamer.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/GStreamer/gstreamer.git' | sed 's@.*/@@' | grep -Ev '[a-Z]|-' | sort -V | tail -n1"
