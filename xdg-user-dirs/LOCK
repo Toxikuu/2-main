@@ -1,7 +1,7 @@
 repo = "main"
 name = "xdg-user-dirs"
 version = "0.18"
-timestamp = "2025-04-16 16:44:40"
+timestamp = "2025-04-16 16:45:18"
 categories = ["xdg"]
 description = "Manage common user directories"
 upstream = "https://gitlab.freedesktop.org/xdg/xdg-user-dirs.git"
