@@ -1,11 +1,11 @@
 repo = "main"
 name = "flex"
 version = "2.6.4"
-description = "Tool for generating text-scanning programs"
+timestamp = "2025-04-16 17:10:53"
 categories = ["core"]
-timestamp = "2025-02-25 20:14:51"
+description = "Tool for generating text-scanning programs"
 upstream = "https://github.com/westes/flex.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz"
-hash = "6HquAyvwfCb4WsDtMlCZjDdiHZX4vXSLMfFbM8Re6ZU"
