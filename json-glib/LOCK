@@ -1,7 +1,7 @@
 repo = "main"
 name = "json-glib"
 version = "1.10.6"
-timestamp = "2025-04-16 17:11:47"
+timestamp = "2025-04-16 17:12:28"
 categories = ["lib"]
 description = "Library providing (de)serialization support for JSON"
 upstream = "https://gitlab.gnome.org/GNOME/json-glib.git"
