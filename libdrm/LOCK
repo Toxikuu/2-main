@@ -1,17 +1,27 @@
 repo = "main"
 name = "libdrm"
 version = "2.4.124"
-description = "Userspace interface to kernel DRM services"
+timestamp = "2025-04-16 16:37:30"
 categories = ["graphics"]
-timestamp = "2025-03-24 14:03:28"
-dependencies = [
-    "libpciaccess",
-    "glibc",
-    "meson",
-]
+description = "Userspace interface to kernel DRM services"
 upstream = "https://gitlab.freedesktop.org/mesa/drm.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/mesa/drm.git' | sed 's@.*/@@' | grep 'libdrm-' | grep -v '_' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libpciaccess"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/meson"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz"
-hash = "rDYpP2HKSq-vSxaip6__MSqk9cN8n715fenjwIY8o3k"
