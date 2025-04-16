@@ -1,7 +1,7 @@
 repo = "main"
 name = "libusb"
 version = "1.0.28"
-timestamp = "2025-04-16 16:47:05"
+timestamp = "2025-04-16 17:11:48"
 categories = ["lib"]
 description = "Library for USB device access"
 upstream = "https://github.com/libusb/libusb.git"
