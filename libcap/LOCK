@@ -1,12 +1,12 @@
 repo = "main"
 name = "libcap"
 version = "2.76"
-description = "POSIX 1003.1e capabilities"
+timestamp = "2025-04-16 16:46:26"
 categories = ["core"]
-timestamp = "2025-04-13 16:36:56"
+description = "POSIX 1003.1e capabilities"
 upstream = "https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
 version_command = "git ls-remote --tags --refs 'https://git.kernel.org/pub/scm/libs/libcap/libcap.git' | sed 's@.*/@@' | grep 'libcap-korg-' | tail -n1 | cut -d- -f3"
 
 [source]
+kind = "Tarball"
 url = "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.76.tar.xz"
-hash = "Yp2kqymQDQ9_zDYicHN0MRmSX9cRyZoWibv1ybQMjm8"
