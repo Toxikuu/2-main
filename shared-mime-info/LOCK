@@ -1,15 +1,21 @@
 repo = "main"
 name = "shared-mime-info"
 version = "2.4"
+timestamp = "2025-04-16 16:46:46"
 description = "MIME type database"
-timestamp = "2025-02-20 20:23:25"
-dependencies = [
-    "glib",
-    "libxml2",
-]
 upstream = "https://gitlab.freedesktop.org/xdg/shared-mime-info.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xdg/shared-mime-info.git' | sed 's@.*/@@' | grep -v Release- | tail -n1"
 
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libxml2"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.4/shared-mime-info-2.4.tar.gz"
-hash = "UxKR0Dh-uU4W53XX5zeI0G0rL92M0qxraxUodZO2ot4"
