@@ -1,7 +1,7 @@
 repo = "main"
 name = "vala"
 version = "0.56.18"
-timestamp = "2025-04-16 16:48:10"
+timestamp = "2025-04-16 16:48:38"
 categories = ["lang"]
 description = "Compiler for the GObject type system"
 upstream = "https://github.com/GNOME/vala.git"
