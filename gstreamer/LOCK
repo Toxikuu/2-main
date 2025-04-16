@@ -1,17 +1,31 @@
 repo = "main"
 name = "gstreamer"
 version = "1.26.0"
+timestamp = "2025-04-16 17:11:25"
 description = "Development framework for multimedia applications"
-timestamp = "2025-03-20 16:32:42"
-dependencies = [
-    "glib",
-    "o^libnsl",
-    "o^libunwind",
-    "o^rust",
-]
 upstream = "https://github.com/GStreamer/gstreamer.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/GStreamer/gstreamer.git' | sed 's@.*/@@' | grep -Ev '[a-Z]|-' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libnsl"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/libunwind"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "tox/rust"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.0.tar.xz"
-hash = "Gy7kAoAQwlt3bv-nw5bH4-GGG2C5QX5Bb0kUq83_J58"
