@@ -1,11 +1,11 @@
 repo = "main"
 name = "luajit"
 version = "eec7a8016c3381b949b5d84583800d05897fa960"
-description = "Just-In-Time Lua compiler"
+timestamp = "2025-04-15 23:43:01"
 categories = ["lang"]
-timestamp = "2025-04-10 17:31:42"
+description = "Just-In-Time Lua compiler"
 upstream = "https://github.com/LuaJIT/LuaJIT.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/LuaJIT/LuaJIT/archive/eec7a8016c3381b949b5d84583800d05897fa960.tar.gz"
-hash = "Ig4v1J86UKvah0uIisMebPht1-0_Ih67R1FTFdmBXus"
