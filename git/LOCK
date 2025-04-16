@@ -1,14 +1,11 @@
 repo = "main"
 name = "git"
 version = "2.49.0"
+timestamp = "2025-04-16 16:31:05"
 description = "The fast distributed version control system"
-timestamp = "2025-03-31 21:34:35"
+extra = ["https://www.kernel.org/pub/software/scm/git/git-manpages-2.49.0.tar.xz"]
 upstream = "https://github.com/git/git.git"
 
 [source]
+kind = "Tarball"
 url = "https://www.kernel.org/pub/software/scm/git/git-2.49.0.tar.xz"
-hash = "YYGQz1kLfp9sEfkfI7HSZ82Yw6szuFBBbYdY-LWoVig"
-
-[[extra]]
-url = "https://www.kernel.org/pub/software/scm/git/git-manpages-2.49.0.tar.xz"
-hash = "LkdDFoxPupcppQodflKlyUvBNKVd8uG87pB2LrrCxNc"
