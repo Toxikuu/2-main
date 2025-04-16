@@ -1,26 +1,64 @@
 repo = "main"
 name = "alacritty"
 version = "0.15.1"
-description = "Cross-platform OpenGL terminal emulator"
+timestamp = "2025-04-16 16:37:31"
 categories = [
     "gui",
     "term",
 ]
-timestamp = "2025-03-24 16:11:33"
-dependencies = [
-    "rust",
-    "ncurses",
-    "libxcb",
-    "freetype",
-    "fontconfig",
-    "libxi",
-    "libxcursor",
-    "libxkbcommon",
-    "libxrandr",
-    "desktop-file-utils",
-]
+description = "Cross-platform OpenGL terminal emulator"
 upstream = "https://github.com/alacritty/alacritty.git"
 
+[[dependencies]]
+relpath = "tox/rust"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/ncurses"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxcb"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/freetype"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/fontconfig"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxi"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxcursor"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxkbcommon"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxrandr"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/desktop-file-utils"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/alacritty/alacritty/archive/refs/tags/v0.15.1.tar.gz"
-hash = "uBTjDGJxriMVjGbg4jd8NgC7JAQfo4KjboG-Vk7rLjY"
