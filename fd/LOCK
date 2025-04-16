@@ -1,18 +1,24 @@
 repo = "main"
 name = "fd"
 version = "10.2.0"
-description = "Simple, fast, user-friendly find alternative"
+timestamp = "2025-04-16 16:31:05"
 categories = [
     "utils",
     "cli",
 ]
-timestamp = "2025-03-26 22:04:05"
-dependencies = [
-    "rust",
-    "make",
-]
+description = "Simple, fast, user-friendly find alternative"
 upstream = "https://github.com/sharkdp/fd.git"
 
+[[dependencies]]
+relpath = "tox/rust"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/make"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/sharkdp/fd/archive/refs/tags/v10.2.0.tar.gz"
-hash = "czKf4kxT8MpHzQk5JWylxGRHQst8FM9BFMjJhxM200I"
