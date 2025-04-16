@@ -1,15 +1,19 @@
 repo = "main"
 name = "x264"
 version = "32c3b801191522961102d4bea292cdb61068d0dd"
-description = "Library for encoding video streams into the H.264/MPEG-4 AVC format"
+timestamp = "2025-04-16 16:37:30"
 categories = [
     "lib",
     "video",
 ]
-timestamp = "2025-04-05 14:32:13"
-dependencies = ["nasm"]
+description = "Library for encoding video streams into the H.264/MPEG-4 AVC format"
 upstream = "https://code.videolan.org/videolan/x264.git"
 
+[[dependencies]]
+relpath = "main/nasm"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://code.videolan.org/videolan/x264/-/archive/master/x264-master.tar.bz2"
-hash = "1lwwKqP24bQ4HcVJv835YSxP-WLO90Gp9UNBouRD_SM"
