@@ -1,7 +1,7 @@
 repo = "main"
 name = "glad"
 version = "2.0.8"
-timestamp = "2025-04-16 16:31:05"
+timestamp = "2025-04-16 16:32:13"
 categories = [
     "lib",
     "graphics",
