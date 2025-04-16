@@ -1,15 +1,21 @@
 repo = "main"
 name = "libxmlb"
 version = "0.3.22"
-description = "Library for binary XML blobs"
+timestamp = "2025-04-16 16:47:06"
 categories = ["lib"]
-timestamp = "2025-03-29 18:14:52"
-dependencies = [
-    "glib",
-    "libstemmer",
-]
+description = "Library for binary XML blobs"
 upstream = "https://github.com/hughsie/libxmlb.git"
 
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libstemmer"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/hughsie/libxmlb/releases/download/0.3.22/libxmlb-0.3.22.tar.xz"
-hash = "88RuhViBRaGoZzHHeCTsNDREJlpFdkcYmkO3GUGyD6A"
