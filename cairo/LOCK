@@ -1,7 +1,7 @@
 repo = "main"
 name = "cairo"
 version = "1.18.4"
-timestamp = "2025-04-16 17:10:23"
+timestamp = "2025-04-16 17:10:52"
 description = "2D graphics library supporting multiple output devices"
 upstream = "https://gitlab.freedesktop.org/cairo/cairo.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/cairo/cairo.git' | sed 's@.*/@@' | grep -v '[a-Z]' | sort -V | tail -n1"
