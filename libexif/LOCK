@@ -1,7 +1,7 @@
 repo = "main"
 name = "libexif"
 version = "0.6.25"
-timestamp = "2025-04-16 17:11:26"
+timestamp = "2025-04-16 17:11:47"
 categories = ["lib"]
 description = "Library for parsing, editing, and saving EXIF data"
 upstream = "https://github.com/libexif/libexif.git"
