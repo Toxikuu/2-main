@@ -1,14 +1,17 @@
 repo = "main"
 name = "docbook-xml4"
 version = "4.5"
-description = "Widely-used XML scheme for writing documentation"
+timestamp = "2025-04-16 17:10:52"
 categories = ["doc"]
-timestamp = "2025-03-26 17:45:09"
-dependencies = [
-    "libarchive",
-    "libxml2",
-]
+description = "Widely-used XML scheme for writing documentation"
+extra = ["https://www.docbook.org/xml/4.5/docbook-xml-4.5.zip"]
 
-[[extra]]
-url = "https://www.docbook.org/xml/4.5/docbook-xml-4.5.zip"
-hash = "Tk4DeiuDyYxslIGDkNS90_bhD27GLdeRiFlOJhkNx7Q"
+[[dependencies]]
+relpath = "main/libarchive"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libxml2"
+optional = false
+runtime = false
