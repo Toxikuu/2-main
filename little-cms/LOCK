@@ -1,7 +1,7 @@
 repo = "main"
 name = "little-cms"
 version = "2.17"
-timestamp = "2025-04-16 16:45:16"
+timestamp = "2025-04-16 16:46:22"
 description = "Little color management system supporting ICC profiles"
 upstream = "https://github.com/mm2/Little-CMS.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/mm2/Little-CMS.git' | sed -e 's@.*/@@' -e 's,lcms,,' | grep -Ev 'rc|-' | sort -V | tail -n1"
