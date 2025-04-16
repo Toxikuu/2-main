@@ -1,7 +1,7 @@
 repo = "main"
 name = "bash"
 version = "5.2.37"
-timestamp = "2025-04-16 16:46:46"
+timestamp = "2025-04-16 16:47:05"
 categories = [
     "core",
     "shell",
