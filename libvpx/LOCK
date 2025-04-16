@@ -1,7 +1,7 @@
 repo = "main"
 name = "libvpx"
 version = "1.15.1"
-timestamp = "2025-04-16 17:11:48"
+timestamp = "2025-04-16 17:12:30"
 categories = [
     "lib",
     "video",
