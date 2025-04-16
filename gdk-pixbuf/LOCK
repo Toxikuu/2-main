@@ -1,22 +1,52 @@
 repo = "main"
 name = "gdk-pixbuf"
 version = "2.42.12"
-description = "Image loading library"
+timestamp = "2025-04-16 16:35:38"
 categories = ["lib"]
-timestamp = "2025-03-20 16:14:20"
-dependencies = [
-    "glib",
-    "libjpeg-turbo",
-    "libpng",
-    "shared-mime-info",
-    "libtiff",
-    "r^librsvg",
-    "r^libavif",
-    "r^webp-pixbuf-loader",
-]
+description = "Image loading library"
 upstream = "https://github.com/GNOME/gdk-pixbuf.git"
 version_command = '''git ls-remote --tags --refs 'https://github.com/GNOME/gdk-pixbuf.git' | sed 's@.*/@@' | grep -v '[a-Z]' | grep -v '[0-9]\.9' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libjpeg-turbo"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libpng"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/shared-mime-info"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libtiff"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/librsvg"
+optional = false
+runtime = true
+
+[[dependencies]]
+relpath = "main/libavif"
+optional = false
+runtime = true
+
+[[dependencies]]
+relpath = "main/webp-pixbuf-loader"
+optional = false
+runtime = true
+
 [source]
+kind = "Tarball"
 url = "https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz"
-hash = "uVBbNEW5p-SM7TR2DDvLc-lm3zrJTJWhSMtmmrdI48c"
