@@ -1,16 +1,22 @@
 repo = "main"
 name = "vala"
 version = "0.56.18"
-description = "Compiler for the GObject type system"
+timestamp = "2025-04-16 16:48:10"
 categories = ["lang"]
-timestamp = "2025-03-18 00:12:38"
-dependencies = [
-    "glib",
-    "o^graphviz",
-]
+description = "Compiler for the GObject type system"
 upstream = "https://github.com/GNOME/vala.git"
 version_command = "git ls-remote --tags --refs https://github.com/GNOME/vala.git | sed -e 's@.*/@@' -e 's@_@.@g' | cut -d. -f1- | grep -Ev '[a-Z]|0.57.0' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/graphviz"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://download.gnome.org/sources/vala/0.56/vala-0.56.18.tar.xz"
-hash = "8q_-fUCrY9uOe57MP2vcnC_H4xNMhP8teV9IL-kmo4I"
