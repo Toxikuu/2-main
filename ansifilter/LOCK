@@ -1,7 +1,7 @@
 repo = "main"
 name = "ansifilter"
 version = "2.21"
-timestamp = "2025-04-16 17:10:52"
+timestamp = "2025-04-16 17:11:22"
 categories = [
     "cli",
     "utils",
