@@ -1,11 +1,11 @@
 repo = "main"
 name = "glslang"
 version = "15.2.0"
+timestamp = "2025-04-16 16:46:25"
 description = "Frontend and validator for OpenGL and Vulkan shaders"
-timestamp = "2025-03-29 12:09:57"
 upstream = "https://github.com/KhronosGroup/glslang.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/KhronosGroup/glslang.git' | sed 's@.*/@@' | grep -v [a-Z] | sort -V | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/KhronosGroup/glslang/archive/15.2.0/glslang-15.2.0.tar.gz"
-hash = "ReOSDSZNXCzDv67A5du2bP_VSSVeCqrzjNKDkY41yLo"
