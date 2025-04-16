@@ -1,7 +1,7 @@
 repo = "main"
 name = "spirv-headers"
 version = "1.4.309.0"
-timestamp = "2025-04-16 16:46:24"
+timestamp = "2025-04-16 16:46:44"
 description = "Machine-readable files for the SPIR-V Registry"
 upstream = "https://github.com/KhronosGroup/SPIRV-Headers.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/KhronosGroup/SPIRV-Headers.git' | sed 's@.*/@@' | sort -V | tail -n1 | cut -d- -f3"
