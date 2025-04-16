@@ -1,15 +1,19 @@
 repo = "main"
 name = "glu"
 version = "9.0.3"
-description = "Mesa OpenGL Utility library"
+timestamp = "2025-04-16 16:37:31"
 categories = [
     "lib",
     "graphics",
 ]
-timestamp = "2025-03-21 21:48:06"
-dependencies = ["mesa"]
+description = "Mesa OpenGL Utility library"
 upstream = "https://gitlab.freedesktop.org/mesa/glu.git"
 
+[[dependencies]]
+relpath = "tox/mesa"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz"
-hash = "vUP-EvN0sRkusV_iDkX_RWubwmq1fw7ukZ-Wyg-KMw8"
