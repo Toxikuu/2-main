@@ -1,12 +1,12 @@
 repo = "main"
 name = "xdg-user-dirs"
 version = "0.18"
-description = "Manage common user directories"
+timestamp = "2025-04-16 16:37:30"
 categories = ["xdg"]
-timestamp = "2025-03-20 16:09:39"
+description = "Manage common user directories"
 upstream = "https://gitlab.freedesktop.org/xdg/xdg-user-dirs.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xdg/xdg-user-dirs.git' | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://user-dirs.freedesktop.org/releases/xdg-user-dirs-0.18.tar.gz"
-hash = "7G8G10lc26N6cyA5-bXhV4vLKWV2_eDaQO2y9SIg3zw"
