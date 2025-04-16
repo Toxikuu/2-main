@@ -1,18 +1,24 @@
 repo = "main"
 name = "libvpx"
 version = "1.15.1"
-description = "VP8/9 video codec"
+timestamp = "2025-04-16 16:47:06"
 categories = [
     "lib",
     "video",
 ]
-timestamp = "2025-04-10 17:27:44"
-dependencies = [
-    "yasm",
-    "which",
-]
+description = "VP8/9 video codec"
 upstream = "https://github.com/webmproject/libvpx.git"
 
+[[dependencies]]
+relpath = "main/yasm"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/which"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/webmproject/libvpx/archive/v1.15.1/libvpx-1.15.1.tar.gz"
-hash = "bLpmGyKlUrrXKb0rUt9fDVfRS5eJIZ1G049zyCHTqZA"
