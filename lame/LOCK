@@ -1,7 +1,7 @@
 repo = "main"
 name = "lame"
 version = "3.100"
-timestamp = "2025-04-16 16:32:13"
+timestamp = "2025-04-16 16:35:37"
 categories = ["audio"]
 description = "High quality MP3 encoder"
 upstream = "https://sourceforge.net/projects/lame/files/"
