@@ -1,10 +1,10 @@
 repo = "main"
 name = "entr"
 version = "5.7"
+timestamp = "2025-04-16 17:10:53"
 description = "Run arbitrary commands on file change"
-timestamp = "2025-02-20 20:19:48"
 upstream = "https://github.com/eradman/entr.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/eradman/entr/archive/refs/tags/5.7.tar.gz"
-hash = "kMXZQ4IMcM7zfrQaOCpupPXdf9le_vE7K1Ug0yD10Gc"
