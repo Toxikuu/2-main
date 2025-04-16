@@ -1,7 +1,7 @@
 repo = "main"
 name = "libpipeline"
 version = "1.5.8"
-timestamp = "2025-04-16 16:46:23"
+timestamp = "2025-04-16 16:46:43"
 categories = ["core"]
 description = "Library for manipulating subprocess pipelines"
 upstream = "https://gitlab.com/libpipeline/libpipeline.git"
