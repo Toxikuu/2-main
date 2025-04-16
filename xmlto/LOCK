@@ -1,7 +1,7 @@
 repo = "main"
 name = "xmlto"
 version = "0.0.29"
-timestamp = "2025-04-16 16:38:43"
+timestamp = "2025-04-16 16:43:13"
 description = "Convert XML to another format"
 
 [[dependencies]]
