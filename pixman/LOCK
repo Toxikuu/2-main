@@ -1,7 +1,7 @@
 repo = "main"
 name = "pixman"
 version = "0.44.2"
-timestamp = "2025-04-16 16:48:12"
+timestamp = "2025-04-16 16:48:40"
 description = "Pixel manipulation library for X and cairo"
 upstream = "https://gitlab.freedesktop.org/pixman/pixman.git"
 
