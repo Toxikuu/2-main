@@ -1,20 +1,34 @@
 repo = "main"
 name = "xdg-utils"
 version = "1.2.1"
-description = "Command line tools that assist applications with a variety of desktop integration tasks"
+timestamp = "2025-04-16 16:47:06"
 categories = [
     "cli",
     "util",
 ]
-timestamp = "2025-03-18 22:14:04"
-dependencies = [
-    "xmlto",
-    "xprop",
-    "xset",
-    "o^dbus",
-]
+description = "Command line tools that assist applications with a variety of desktop integration tasks"
 upstream = "https://gitlab.freedesktop.org/xdg/xdg-utils.git"
 
+[[dependencies]]
+relpath = "main/xmlto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xprop"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xset"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/dbus"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz"
-hash = "9rZIwGRGTCY2iEwFdG6AQoEQpXb42qz0bvLlVNz9rnU"
