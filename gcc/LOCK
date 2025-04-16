@@ -1,15 +1,15 @@
 repo = "main"
 name = "gcc"
 version = "14.2.0"
-description = "The GNU compiler collection"
+timestamp = "2025-04-16 17:10:53"
 categories = [
     "critical",
     "core",
 ]
-timestamp = "2025-02-25 20:15:56"
+description = "The GNU compiler collection"
 upstream = "https://gcc.gnu.org/git/gcc.git"
 version_command = "git ls-remote --tags --refs 'https://gcc.gnu.org/git/gcc.git' | sed 's:.*/::' | sort -V | grep gcc- | tail -n1 | cut -d- -f2"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz"
-hash = "p7Obxpy_niWCbFpgqyZHcAH3wI2FzsBLwOKcq-1vPMk"
