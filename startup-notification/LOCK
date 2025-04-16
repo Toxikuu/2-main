@@ -1,7 +1,7 @@
 repo = "main"
 name = "startup-notification"
 version = "0.12"
-timestamp = "2025-04-16 16:47:05"
+timestamp = "2025-04-16 16:48:11"
 categories = ["lib"]
 description = "Libary to monitor and display application startup"
 upstream = "https://gitlab.freedesktop.org/xdg/startup-notification/"
