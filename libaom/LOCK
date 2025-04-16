@@ -1,7 +1,7 @@
 repo = "main"
 name = "libaom"
 version = "3.12.1"
-timestamp = "2025-04-16 16:44:40"
+timestamp = "2025-04-16 16:45:18"
 description = "Alliance for Open Media video codec"
 upstream = "https://aomedia.googlesource.com/aom.git"
 
