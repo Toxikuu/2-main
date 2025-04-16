@@ -1,21 +1,47 @@
 repo = "main"
 name = "pango"
 version = "1.56.3"
-description = "Library for text layout and rendering"
+timestamp = "2025-04-16 16:37:31"
 categories = ["lib"]
-timestamp = "2025-03-20 16:37:05"
-dependencies = [
-    "cairo",
-    "fribidi",
-    "fontconfig",
-    "glib",
-    "libx11",
-    "libxrender",
-    "libxft",
-]
+description = "Library for text layout and rendering"
 upstream = "https://github.com/GNOME/pango.git"
 version_command = '''git ls-remote --tags --refs https://github.com/GNOME/pango.git | sed 's@.*/@@' | grep -Ev '[a-Z]|-|[0-9]\.9' | tail -n1'''
 
+[[dependencies]]
+relpath = "main/cairo"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/fribidi"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/fontconfig"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxrender"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxft"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/GNOME/pango/archive/refs/tags/1.56.3.tar.gz"
-hash = "egWWZNzRxReXni2y5x3Jo1UKz1qM92oarbZSbZ1LkPE"
