@@ -1,7 +1,7 @@
 repo = "main"
 name = "appstream"
 version = "1.0.4"
-timestamp = "2025-04-16 16:37:30"
+timestamp = "2025-04-16 16:44:20"
 categories = ["lib"]
 description = "Tools and libraries to work with AppStream metadata"
 upstream = "https://github.com/ximion/appstream.git"
