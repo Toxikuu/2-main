@@ -1,7 +1,7 @@
 repo = "main"
 name = "pciutils"
 version = "3.13.0"
-timestamp = "2025-04-16 16:46:44"
+timestamp = "2025-04-16 16:47:02"
 description = "PCI bus configuration space access library and tools"
 upstream = "https://github.com/pciutils/pciutils.git"
 
