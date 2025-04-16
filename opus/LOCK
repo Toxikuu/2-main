@@ -1,10 +1,10 @@
 repo = "main"
 name = "opus"
 version = "1.5.2"
+timestamp = "2025-04-16 16:48:40"
 description = "Lossy audio compression format, well suited to transmission"
-timestamp = "2025-02-20 20:23:25"
 upstream = "https://github.com/xiph/opus.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/xiph/opus/releases/download/v1.5.2/opus-1.5.2.tar.gz"
-hash = "ZcHS94ufL7IAgsOMvkfJUa1YOTRYduRpQWEu6H-afOE"
