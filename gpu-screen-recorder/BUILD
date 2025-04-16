@@ -21,13 +21,13 @@ DEPS=(
 
     # for -D portal=true
     "o^dbus"
-    "o^libpipewire"
+    "o^pipewire"
 
     # nvidia (runtime)
     "o^nvidia"
-    "o^nvenc"
-    "o^cuda"
-    "o^nvfbc"
+    # "o^nvenc"
+    # "o^cuda"
+    # "o^nvfbc"
 )
 
 EXTRA="https://dec05eba.com/snapshot/$NAME.git.$VERS.tar.gz" # messy extraction
@@ -53,4 +53,3 @@ nj
 ni
 
 }
-#d added package field to cqp.patch
