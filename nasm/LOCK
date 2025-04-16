@@ -1,12 +1,12 @@
 repo = "main"
 name = "nasm"
 version = "2.16.03"
-description = "Netwide Assembler"
+timestamp = "2025-04-16 16:46:26"
 categories = ["lang"]
-timestamp = "2025-03-25 15:41:43"
+description = "Netwide Assembler"
 upstream = "https://github.com/netwide-assembler/nasm.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/netwide-assembler/nasm.git' | sed -e 's@.*/@@' | grep '^nasm-' | grep -v 'rc' | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.xz"
-hash = "FBKhx2C70F2wJrbA0WV6_9ZjHNCmPN229zzG1KphYUg"
