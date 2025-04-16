@@ -1,21 +1,39 @@
 repo = "main"
 name = "libglvnd"
 version = "1.7.0"
-description = "GL Vendor-Neutral Dispatch library"
+timestamp = "2025-04-16 17:11:47"
 categories = [
     "lib",
     "graphics",
 ]
-timestamp = "2025-03-21 19:17:38"
-dependencies = [
-    "libxext,",
-    "libx11,",
-    "xorgproto,",
-    "meson,",
-    "python,",
-]
+description = "GL Vendor-Neutral Dispatch library"
 upstream = "https://gitlab.freedesktop.org/glvnd/libglvnd.git"
 
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/meson"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/python"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://gitlab.freedesktop.org/glvnd/libglvnd/-/archive/v1.7.0/libglvnd-v1.7.0.tar.gz"
-hash = "PcvWnLA9BUH7pXzhx-kn9V5Pe-o_ojgJZbFYP3a3j5s"
