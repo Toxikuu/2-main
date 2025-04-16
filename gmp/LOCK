@@ -1,15 +1,15 @@
 repo = "main"
 name = "gmp"
 version = "6.3.0"
-description = "Arbitrary precision math libraries"
+timestamp = "2025-04-16 16:37:32"
 categories = [
     "critical",
     "core",
 ]
-timestamp = "2025-02-25 20:15:04"
+description = "Arbitrary precision math libraries"
 upstream = "https://ftp.gnu.org/gnu/gmp/?C=M;O=D"
 version_command = '''curl -s 'https://ftp.gnu.org/gnu/gmp/?C=M;O=D' | grep gmp- | head -n1 | cut -d'"' -f8 | cut -d- -f2 | cut -d. -f1-3'''
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz"
-hash = "o8K4AgG4nmhhb0rTC8Zq7kknw85Q4zkpyoGdXENTiJg"
