@@ -1,22 +1,56 @@
 repo = "main"
 name = "picom"
 version = "12.5"
+timestamp = "2025-04-16 16:37:31"
 description = "Lightweight X compositor with animation support"
-timestamp = "2025-03-25 15:40:11"
-dependencies = [
-    "dbus",
-    "libepoxy",
-    "xcb-util-image",
-    "xcb-util-renderutil",
-    "pixman",
-    "libconfig",
-    "pcre2",
-    "libev",
-    "uthash",
-]
 upstream = "https://github.com/yshui/picom.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/yshui/picom.git' | sed -e 's@.*/@@' -e 's,v,,' | grep -v '[a-Z]' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/dbus"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libepoxy"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-util-image"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-util-renderutil"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pixman"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libconfig"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pcre2"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libev"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/uthash"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/yshui/picom/archive/refs/tags/v12.5.tar.gz"
-hash = "Yn-l18WQ3zuo0sQes104WfeCa9KPpJ6SoOBPtg7XeQQ"
