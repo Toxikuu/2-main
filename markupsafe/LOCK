@@ -1,7 +1,7 @@
 repo = "main"
 name = "markupsafe"
 version = "3.0.2"
-timestamp = "2025-04-16 16:46:45"
+timestamp = "2025-04-16 16:47:03"
 categories = ["core"]
 description = "Python module implementing an XML/HTML/XHTML Markup safe string"
 upstream = "https://github.com/pallets/markupsafe.git"
