@@ -1,7 +1,7 @@
 repo = "main"
 name = "uchardet"
 version = "0.0.8"
-timestamp = "2025-04-16 16:48:11"
+timestamp = "2025-04-16 16:48:39"
 categories = ["lib"]
 description = "Encoding detector library"
 upstream = "https://gitlab.freedesktop.org/uchardet/uchardet.git"
