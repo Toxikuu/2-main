@@ -1,21 +1,39 @@
 repo = "main"
 name = "wireplumber"
 version = "0.5.8"
-description = "Pipewire session and policy manager"
+timestamp = "2025-04-16 16:31:05"
 categories = [
     "audio",
     "video",
 ]
-timestamp = "2025-04-10 21:44:40"
-dependencies = [
-    "elogind",
-    "glib",
-    "pipewire",
-    "pulseaudio",
-    "lua",
-]
+description = "Pipewire session and policy manager"
 upstream = "https://gitlab.freedesktop.org/pipewire/wireplumber.git"
 
+[[dependencies]]
+relpath = "main/elogind"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pipewire"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pulseaudio"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/lua"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.8/wireplumber-0.5.8.tar.bz2"
-hash = "robb4BQs8ByX5rSehIkHArk8iz5kAsYxbPDxF7YnQKg"
