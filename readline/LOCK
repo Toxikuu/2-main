@@ -1,12 +1,12 @@
 repo = "main"
 name = "readline"
 version = "8.2.13"
-description = "Libraries for command-line editing and history"
+timestamp = "2025-04-16 16:47:06"
 categories = ["core"]
-timestamp = "2025-04-10 18:03:22"
+description = "Libraries for command-line editing and history"
 upstream = "https://ftp.gnu.org/gnu/readline/?C=M;O=D"
 version_command = "curl -s 'https://ftp.gnu.org/gnu/readline/?C=M;O=D' | grep readline- | grep -Ev -- '-beta|-alpha|-rc|diff|doc|\\.sig|patches' | head -n1 | cut -d- -f2 | cut -dt -f1 | sed 's,.$,,'"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/readline/readline-8.2.13.tar.gz"
-hash = "Dlvk0pN-i9m3zWDUZyHOefiKM0Fd1owtc4-1kkY49lY"
