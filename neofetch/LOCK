@@ -1,7 +1,7 @@
 repo = "main"
 name = "neofetch"
 version = "7.1.0"
-timestamp = "2025-04-16 16:38:44"
+timestamp = "2025-04-16 16:43:15"
 description = "Famous (and unmaintained) fetch script written in bash"
 upstream = "https://github.com/dylanaraps/neofetch.git"
 
