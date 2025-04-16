@@ -1,7 +1,7 @@
 repo = "main"
 name = "entr"
 version = "5.7"
-timestamp = "2025-04-16 17:10:53"
+timestamp = "2025-04-16 17:11:24"
 description = "Run arbitrary commands on file change"
 upstream = "https://github.com/eradman/entr.git"
 
