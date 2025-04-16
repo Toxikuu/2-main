@@ -1,7 +1,7 @@
 repo = "main"
 name = "gtk3"
 version = "3.24.49"
-timestamp = "2025-04-16 17:11:46"
+timestamp = "2025-04-16 17:12:58"
 categories = [
     "gui",
     "lib",
