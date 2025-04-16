@@ -1,7 +1,7 @@
 repo = "main"
 name = "pcre2"
 version = "10.45"
-timestamp = "2025-04-16 16:48:40"
+timestamp = "2025-04-16 17:12:59"
 description = "A new generation of the Perl Compatible Regular Expression libraries"
 upstream = "https://github.com/PCRE2Project/pcre2.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/PCRE2Project/pcre2.git' | sed 's@.*/@@' | grep -v RC | tail -n1"
