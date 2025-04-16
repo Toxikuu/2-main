@@ -1,7 +1,7 @@
 repo = "main"
 name = "libva"
 version = "2.22.0"
-timestamp = "2025-04-16 16:46:46"
+timestamp = "2025-04-16 16:47:05"
 categories = ["graphics"]
 description = "Video Acceleration (VA) API for Linux"
 upstream = "https://github.com/intel/libva.git"
