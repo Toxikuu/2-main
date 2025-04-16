@@ -1,30 +1,61 @@
 repo = "main"
 name = "mesa-utils"
 version = "9.0.0"
-description = "Essential Mesa utilities"
+timestamp = "2025-04-16 16:37:31"
 categories = [
     "utils",
     "graphics",
 ]
-timestamp = "2025-03-23 14:45:28"
-dependencies = [
-    "libdecor",
-    "libdrm",
-    "libx11",
-    "libxcb",
-    "libxkbcommon",
-    "vulkan-loader",
-    "wayland",
-    "wayland-protocols",
-    "o^libglvnd",
-]
+description = "Essential Mesa utilities"
+extra = ["https://src.fedoraproject.org/rpms/mesa-demos/raw/f42/f/mesa-demos-system-data.patch"]
 upstream = "https://gitlab.freedesktop.org/mesa/demos.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/mesa/demos.git' | sed 's@.*/@@' | grep mesa-demos | tail -n1 | cut -d- -f3"
 
-[source]
-url = "https://archive.mesa3d.org/demos/mesa-demos-9.0.0.tar.xz"
-hash = "MEaj0mp7BRr3690lel8jv-sWDK1u2VIynN_x6fHtSWs"
+[[dependencies]]
+relpath = "main/libdecor"
+optional = false
+runtime = false
 
-[[extra]]
-url = "https://src.fedoraproject.org/rpms/mesa-demos/raw/f42/f/mesa-demos-system-data.patch"
-hash = "5LqgCtF4GTS6_XSjrywERAHSIH8ZheeZR1StLaB4HeE"
+[[dependencies]]
+relpath = "main/libdrm"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxcb"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxkbcommon"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/vulkan-loader"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/wayland"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/wayland-protocols"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libglvnd"
+optional = true
+runtime = false
+
+[source]
+kind = "Tarball"
+url = "https://archive.mesa3d.org/demos/mesa-demos-9.0.0.tar.xz"
