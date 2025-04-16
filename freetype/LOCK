@@ -1,7 +1,7 @@
 repo = "main"
 name = "freetype"
 version = "2.13.3"
-timestamp = "2025-04-16 17:12:29"
+timestamp = "2025-04-16 17:12:55"
 description = "A library for rendering TTFs"
 upstream = "https://gitlab.freedesktop.org/freetype/freetype.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/freetype/freetype.git' | sed -e 's@.*/@@' -e 's@VER-@@' -e 's@-@.@g' | grep -Ev '[a-Z]+' | sort -V | tail -n1"
