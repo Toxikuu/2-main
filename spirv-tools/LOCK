@@ -1,7 +1,7 @@
 repo = "main"
 name = "spirv-tools"
 version = "1.4.309.0"
-timestamp = "2025-04-16 17:12:30"
+timestamp = "2025-04-16 17:12:56"
 description = "Libraries and utilities for processing SPIR-V modules"
 upstream = "https://github.com/KhronosGroup/SPIRV-Headers.git"
 version_command = "git ls-remote --tags 'https://github.com/KhronosGroup/SPIRV-Headers.git' | sed 's@.*/@@' | sort -V | tail -n1 | cut  -d- -f3"
