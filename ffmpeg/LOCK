@@ -1,39 +1,98 @@
 repo = "main"
 name = "ffmpeg"
 version = "7.1.1"
-description = "Play, record, convert, and stream audio and video"
+timestamp = "2025-04-16 17:10:53"
 categories = [
     "audio",
     "video",
     "utils",
     "cli",
 ]
-timestamp = "2025-03-30 14:59:46"
-dependencies = [
-    "libaom",
-    "libass",
-    "fdk-aac",
-    "freetype",
-    "lame",
-    "libvorbis",
-    "libvpx",
-    "libdrm",
-    "opus",
-    "x264",
-    "x265",
-    "yasm",
-    "alsa-lib",
-    "libva",
-    "sdl2",
-    "pulseaudio",
-]
+description = "Play, record, convert, and stream audio and video"
+extra = ["https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-7.1.1-chromium_method-1.patch"]
 upstream = "https://git.ffmpeg.org/ffmpeg.git"
 version_command = "git ls-remote --tags --refs 'https://git.ffmpeg.org/ffmpeg.git' | sed -e 's@.*/@@' | grep '^n[0-9]' | grep -v 'dev' | cut -c2- | tail -n1"
 
-[source]
-url = "https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz"
-hash = "czmEOV4Nu-XARqvaLcSaVUTn4OHiNmu6hJIirp46A7E"
+[[dependencies]]
+relpath = "main/libaom"
+optional = false
+runtime = false
 
-[[extra]]
-url = "https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-7.1.1-chromium_method-1.patch"
-hash = "unW-0RIUJbFbSFwK8QZzkAq530jYbmSnBq_z75Ty4Tk"
+[[dependencies]]
+relpath = "main/libass"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/fdk-aac"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/freetype"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/lame"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libvorbis"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libvpx"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libdrm"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/opus"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/x264"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/x265"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/yasm"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/alsa-lib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libva"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/sdl2"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pulseaudio"
+optional = false
+runtime = false
+
+[source]
+kind = "Tarball"
+url = "https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz"
