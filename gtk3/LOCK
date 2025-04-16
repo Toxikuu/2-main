@@ -1,25 +1,55 @@
 repo = "main"
 name = "gtk3"
 version = "3.24.49"
-description = "Multi-platform GUI toolkit"
+timestamp = "2025-04-16 16:44:31"
 categories = [
     "gui",
     "lib",
 ]
-timestamp = "2025-03-21 22:01:04"
-dependencies = [
-    "glib",
-    "at-spi2-core",
-    "gdk-pixbuf",
-    "libepoxy",
-    "pango",
-    "wayland",
-    "wayland-protocols",
-    "libxkbcommon",
-]
+description = "Multi-platform GUI toolkit"
 upstream = "https://gitlab.gnome.org/GNOME/gtk.git"
 version_command = '''git ls-remote --refs --tags 'https://gitlab.gnome.org/GNOME/gtk.git' | sed 's@.*/@@' | grep -Ev '[a-Z]|^3\.[8-9][0-9]|^4|^2' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/at-spi2-core"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/gdk-pixbuf"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libepoxy"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pango"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/wayland"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/wayland-protocols"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxkbcommon"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://download.gnome.org/sources/gtk/3.24/gtk-3.24.49.tar.xz"
-hash = "XqUsaijw5ezy6aPC-suzDQQLc4cfzV8zzRMX6QGKFG4"
