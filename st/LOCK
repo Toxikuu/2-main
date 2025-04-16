@@ -1,7 +1,7 @@
 repo = "main"
 name = "st"
 version = "0.9.2"
-timestamp = "2025-04-16 16:47:06"
+timestamp = "2025-04-16 16:48:11"
 categories = [
     "gui",
     "term",
