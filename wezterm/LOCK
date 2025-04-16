@@ -1,29 +1,95 @@
 repo = "main"
 name = "wezterm"
 version = "d2df5b755f9ed3f017472bbe66ff1eb762c36e18"
-description = "Wez's GPU-accelerated, cross-platform terminal emulator and multiplexer"
+timestamp = "2025-04-16 16:35:38"
 categories = [
     "term",
     "gui",
 ]
-timestamp = "2025-04-13 10:14:13"
-dependencies = [
-    "bash",
-    "fontconfig",
-    "git",
-    "glib",
-    "glibc",
-    "libssh2",
-    "libx11",
-    "libxcb",
-    "libxkbcommon",
-    "openssl",
-    "wayland",
-    "xcb-util",
-    "xcb-util-image",
-    "xcb-util-keysyms",
-    "xcb-util-wm",
-    "zlib",
-    "rust",
-]
+description = "Wez's GPU-accelerated, cross-platform terminal emulator and multiplexer"
 upstream = "https://github.com/wez/wezterm.git"
+
+[[dependencies]]
+relpath = "main/bash"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/fontconfig"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/git"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libssh2"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxcb"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxkbcommon"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/openssl"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/wayland"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-util"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-util-image"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-util-keysyms"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-util-wm"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/zlib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "tox/rust"
+optional = false
+runtime = false
