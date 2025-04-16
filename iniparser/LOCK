@@ -1,7 +1,7 @@
 repo = "main"
 name = "iniparser"
 version = "4.2.6"
-timestamp = "2025-04-16 16:37:31"
+timestamp = "2025-04-16 16:38:44"
 description = "Parser for ini files"
 upstream = "https://github.com/ndevilla/iniparser.git"
 
