@@ -1,7 +1,7 @@
 repo = "main"
 name = "libsoup3"
 version = "3.6.5"
-timestamp = "2025-04-16 16:44:37"
+timestamp = "2025-04-16 16:45:16"
 categories = [
     "lib",
     "net",
