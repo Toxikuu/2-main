@@ -1,15 +1,15 @@
 repo = "main"
 name = "ansifilter"
 version = "2.21"
-description = "ANSI sequence filter"
+timestamp = "2025-04-16 16:47:06"
 categories = [
     "cli",
     "utils",
 ]
-timestamp = "2025-03-23 14:44:19"
+description = "ANSI sequence filter"
 upstream = "https://gitlab.com/saalen/ansifilter.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.com/saalen/ansifilter.git' | sed -e 's@.*/@@' -e 's@v@@' | sort -V | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://gitlab.com/saalen/ansifilter/-/archive/2.21/ansifilter-2.21.tar.bz2"
-hash = "XqfP39B1LVoWklnaAFwYuQN2KANv2J2LgmJLrOycE5A"
