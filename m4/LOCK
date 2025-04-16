@@ -1,7 +1,7 @@
 repo = "main"
 name = "m4"
 version = "1.4.19"
-timestamp = "2025-04-16 16:44:21"
+timestamp = "2025-04-16 16:44:41"
 categories = ["core"]
 description = "Macro processor"
 upstream = "https://git.savannah.gnu.org/git/m4.git"
