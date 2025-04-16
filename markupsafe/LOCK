@@ -1,11 +1,11 @@
 repo = "main"
 name = "markupsafe"
 version = "3.0.2"
-description = "Python module implementing an XML/HTML/XHTML Markup safe string"
+timestamp = "2025-04-16 16:37:32"
 categories = ["core"]
-timestamp = "2025-02-25 20:20:28"
+description = "Python module implementing an XML/HTML/XHTML Markup safe string"
 upstream = "https://github.com/pallets/markupsafe.git"
 
 [source]
+kind = "Tarball"
 url = "https://pypi.org/packages/source/M/MarkupSafe/markupsafe-3.0.2.tar.gz"
-hash = "7lXT7fgBZ-SOoRqSPHOG9Gad9n15lFVDh_hOfYsKK_A"
