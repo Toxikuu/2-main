@@ -1,7 +1,7 @@
 repo = "main"
 name = "libidn2"
 version = "2.3.8"
-timestamp = "2025-04-16 17:12:28"
+timestamp = "2025-04-16 17:12:54"
 description = "Library for working with internationalized domain names"
 upstream = "https://gitlab.com/libidn/libidn2.git"
 
