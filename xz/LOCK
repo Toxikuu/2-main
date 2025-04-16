@@ -1,7 +1,7 @@
 repo = "main"
 name = "xz"
 version = "5.8.1"
-timestamp = "2025-04-16 16:46:46"
+timestamp = "2025-04-16 16:47:05"
 categories = [
     "core",
     "utils",
