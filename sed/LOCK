@@ -1,11 +1,11 @@
 repo = "main"
 name = "sed"
 version = "4.9"
-description = "Stream editor"
+timestamp = "2025-04-16 16:45:19"
 categories = ["core"]
-timestamp = "2025-02-25 20:16:01"
+description = "Stream editor"
 upstream = "git://git.savannah.gnu.org/sed.git"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz"
-hash = "biJrcy4c1zlGStaGK9Ghq6QteYKSLaelNRljHSSXUYE"
