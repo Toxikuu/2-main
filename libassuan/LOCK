@@ -1,12 +1,16 @@
 repo = "main"
 name = "libassuan"
 version = "3.0.2"
-description = "Assuan IPC library"
+timestamp = "2025-04-16 16:45:19"
 categories = ["lib"]
-timestamp = "2025-03-21 22:41:33"
-dependencies = ["libgpg-error"]
+description = "Assuan IPC library"
 upstream = "https://github.com/gpg/libassuan.git"
 
+[[dependencies]]
+relpath = "main/libgpg-error"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2"
-hash = "0pMc2tJm5jNRD5lw4aLzRgVeNRuxn5t4kSR1uAdMNvY"
