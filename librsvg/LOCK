@@ -1,22 +1,52 @@
 repo = "main"
 name = "librsvg"
 version = "2.60.0"
-description = "Rust library for manipulating and viewing SVG images"
+timestamp = "2025-04-16 16:46:26"
 categories = ["lib"]
-timestamp = "2025-03-20 16:38:03"
-dependencies = [
-    "cairo",
-    "cargo-c",
-    "gdk-pixbuf",
-    "pango",
-    "rust",
-    "glib",
-    "vala",
-    "make-ca",
-]
+description = "Rust library for manipulating and viewing SVG images"
 upstream = "https://github.com/GNOME/librsvg.git"
 version_command = "git ls-remote --tags --refs https://github.com/GNOME/librsvg.git | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 
+[[dependencies]]
+relpath = "main/cairo"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/cargo-c"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/gdk-pixbuf"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pango"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "tox/rust"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/vala"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/make-ca"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://download.gnome.org/sources/librsvg/2.60/librsvg-2.60.0.tar.xz"
-hash = "C2_8zfbnCvyYdogvXSzp_88scTy6rxrZAXDap1Lh7sM"
