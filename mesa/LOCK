@@ -1,21 +1,42 @@
 repo = "main"
 name = "mesa"
 version = "25.0.3"
-description = "Graphics software bundle (OpenGL, Vulkan, etc.)"
+timestamp = "2025-04-16 16:47:06"
 categories = ["graphics"]
-timestamp = "2025-04-02 17:36:30"
-dependencies = [
-    "xorg/@lib",
-    "libdrm",
-    "mako",
-    "pyyaml",
-    "glslang",
-    "meson",
-    "wayland-protocols",
-]
+description = "Graphics software bundle (OpenGL, Vulkan, etc.)"
 upstream = "https://gitlab.freedesktop.org/mesa/mesa.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/mesa/mesa.git' | sed 's@.*/@@' | grep '^mesa-[0-9]' | grep -Ev 'rc|devel' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/libdrm"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/mako"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pyyaml"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glslang"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/meson"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/wayland-protocols"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://mesa.freedesktop.org/archive/mesa-25.0.3.tar.xz"
-hash = "X_Qm7WzgWI_ZbRiXW9_0Ua4qsv6YtdFSiELucexmcRs"
