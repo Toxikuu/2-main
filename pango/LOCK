@@ -1,7 +1,7 @@
 repo = "main"
 name = "pango"
 version = "1.56.3"
-timestamp = "2025-04-16 16:43:15"
+timestamp = "2025-04-16 16:44:22"
 categories = ["lib"]
 description = "Library for text layout and rendering"
 upstream = "https://github.com/GNOME/pango.git"
