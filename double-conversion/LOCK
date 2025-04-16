@@ -1,7 +1,7 @@
 repo = "main"
 name = "double-conversion"
 version = "3.3.1"
-timestamp = "2025-04-16 17:11:23"
+timestamp = "2025-04-16 17:11:45"
 categories = ["lib"]
 description = "Binary-decimal and decimal-binary routines for IEEE doubles"
 upstream = "https://github.com/google/double-conversion.git"
