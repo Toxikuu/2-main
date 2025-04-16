@@ -1,21 +1,35 @@
 repo = "main"
 name = "glib-networking"
 version = "2.80.1"
-description = "Network-related gio modules for GLib"
+timestamp = "2025-04-16 16:37:31"
 categories = [
     "lib",
     "net",
 ]
-timestamp = "2025-03-30 15:12:40"
-dependencies = [
-    "glib",
-    "gnutls",
-    "gsettings-desktop-schemas",
-    "make-ca",
-]
+description = "Network-related gio modules for GLib"
 upstream = "https://gitlab.gnome.org/GNOME/glib-networking.git"
 version_command = '''git ls-remote --tags --refs https://gitlab.gnome.org/GNOME/glib-networking.git | sed 's@.*/@@' | grep -Ev '[a-Z]|\.9[0-9]' | tail -n1'''
 
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/gnutls"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/gsettings-desktop-schemas"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/make-ca"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz"
-hash = "uA4odBV81VBx8bZxD6C5EdWsXeEGqe4qTJx77mF4L44"
