@@ -1,12 +1,12 @@
 repo = "main"
 name = "krb5"
 version = "1.21.3"
-description = "Kerberos network authentication system"
+timestamp = "2025-04-16 16:37:30"
 categories = ["net"]
-timestamp = "2025-03-22 00:13:28"
+description = "Kerberos network authentication system"
 upstream = "https://github.com/krb5/krb5.git"
 version_command = '''git ls-remote --tags --refs 'https://github.com/krb5/krb5.git' | sed 's@.*/@@' | grep '^krb5-.\+-final$' | cut -d- -f2 | sort -V | tail -n1'''
 
 [source]
+kind = "Tarball"
 url = "https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz"
-hash = "IVfZICDUCO1j682IapLRNGoTg7D5ESOgRztPabSiSGE"
