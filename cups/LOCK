@@ -1,7 +1,7 @@
 repo = "main"
 name = "cups"
 version = "2.4.12"
-timestamp = "2025-04-16 17:11:23"
+timestamp = "2025-04-16 17:11:45"
 categories = ["print"]
 description = "Common Unix Printing System"
 upstream = "https://github.com/OpenPrinting/cups.git"
