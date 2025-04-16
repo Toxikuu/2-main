@@ -1,11 +1,11 @@
 repo = "main"
 name = "iso-codes"
 version = "4.18.0"
-description = "Database of country, language, and currency names"
+timestamp = "2025-04-16 17:11:25"
 categories = ["lib"]
-timestamp = "2025-04-12 13:14:01"
+description = "Database of country, language, and currency names"
 upstream = "https://salsa.debian.org/iso-codes-team/iso-codes.git"
 
 [source]
+kind = "Tarball"
 url = "https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.18.0/iso-codes-v4.18.0.tar.gz"
-hash = "UR9nv0tRqnfxfEWtv_UzJCtQ8eNw_kmlcGtjQZAvrIc"
