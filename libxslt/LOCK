@@ -1,16 +1,26 @@
 repo = "main"
 name = "libxslt"
 version = "1.1.43"
-description = "XSLT libraries extending libxml2"
+timestamp = "2025-04-16 16:46:25"
 categories = ["lib"]
-timestamp = "2025-03-22 00:33:55"
-dependencies = [
-    "libxml2",
-    "r^docbook-xml4",
-    "r^docbook-xsl-nons",
-]
+description = "XSLT libraries extending libxml2"
 upstream = "https://github.com/GNOME/libxslt.git"
 
+[[dependencies]]
+relpath = "main/libxml2"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/docbook-xml4"
+optional = false
+runtime = true
+
+[[dependencies]]
+relpath = "main/docbook-xsl-nons"
+optional = false
+runtime = true
+
 [source]
+kind = "Tarball"
 url = "https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.43.tar.xz"
-hash = "Wj1rODylr8I1sXERjpD1_2qifp_qMwMGUjGm1APwGDo"
