@@ -1,12 +1,12 @@
 repo = "main"
 name = "libpipeline"
 version = "1.5.8"
-description = "Library for manipulating subprocess pipelines"
+timestamp = "2025-04-16 16:37:30"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:51"
+description = "Library for manipulating subprocess pipelines"
 upstream = "https://gitlab.com/libpipeline/libpipeline.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.com/libpipeline/libpipeline.git' | sed 's@.*/@@' | grep -Ev '^2.+' | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.8.tar.gz"
-hash = "GxIDyhUszWOYPD8hEvf-b6Wv1FMhjt5RU9GzHhG7hAU"
