@@ -1,11 +1,11 @@
 repo = "main"
 name = "intltool"
 version = "0.51.0"
+timestamp = "2025-04-16 16:46:46"
 description = "Internationalization tool for extracting translatable strings from source files"
-timestamp = "2025-02-20 20:19:50"
 upstream = "https://salsa.debian.org/gnome-team/intltool.git"
 version_command = "git ls-remote --tags --refs 'https://salsa.debian.org/gnome-team/intltool.git' | sed 's@.*/@@' | cut -d- -f1 | uniq | tail -n1"
 
 [source]
-url = "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz"
-hash = "Z8dNlBlrFTt3Srn4my-mxrp5NSQHA3yMFNWuszTpWc0"
+kind = "Tarball"
+url = "download/intltool-0.51.0.tar.gz"
