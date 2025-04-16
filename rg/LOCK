@@ -1,7 +1,7 @@
 repo = "main"
 name = "rg"
 version = "14.1.1"
-timestamp = "2025-04-16 16:48:11"
+timestamp = "2025-04-16 16:48:40"
 categories = ["cli"]
 description = "Grep but in rust"
 upstream = "https://github.com/BurntSushi/ripgrep.git"
