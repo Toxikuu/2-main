@@ -1,7 +1,7 @@
 repo = "main"
 name = "libxcrypt"
 version = "4.4.38"
-timestamp = "2025-04-16 17:12:30"
+timestamp = "2025-04-16 17:12:56"
 categories = [
     "core",
     "security",
