@@ -1,7 +1,7 @@
 repo = "main"
 name = "iana-etc"
 version = "20250407"
-timestamp = "2025-04-16 16:46:23"
+timestamp = "2025-04-16 16:46:43"
 categories = ["core"]
 description = "The Internet Assigned Numbers Authority's services and protocols"
 upstream = "https://github.com/Mic92/iana-etc.git"
