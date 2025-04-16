@@ -1,13 +1,17 @@
 repo = "main"
 name = "libva"
 version = "2.22.0"
-description = "Video Acceleration (VA) API for Linux"
+timestamp = "2025-04-16 16:46:26"
 categories = ["graphics"]
-timestamp = "2025-02-24 20:53:43"
-dependencies = ["libdrm"]
+description = "Video Acceleration (VA) API for Linux"
 upstream = "https://github.com/intel/libva.git"
 version_command = '''git ls-remote --tags --refs 'https://github.com/intel/libva.git' | sed 's@.*/@@' | grep '^[0-9]\.' | grep -v '[a-z]' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "main/libdrm"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/intel/libva/archive/2.22.0/libva-2.22.0.tar.gz"
-hash = "RnxBjCZAoXjGuq1b4uANVphCEjdjuAUHchq4frevhzU"
