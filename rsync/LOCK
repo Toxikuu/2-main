@@ -1,18 +1,24 @@
 repo = "main"
 name = "rsync"
 version = "3.4.1"
-description = "Fast incremental file transfer"
+timestamp = "2025-04-16 16:37:30"
 categories = [
     "utils",
     "cli",
 ]
-timestamp = "2025-04-03 21:52:23"
-dependencies = [
-    "popt",
-    "o^xxhash",
-]
+description = "Fast incremental file transfer"
 upstream = "https://github.com/RsyncProject/rsync.git"
 
+[[dependencies]]
+relpath = "main/popt"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/xxhash"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.samba.org/ftp/rsync/src/rsync-3.4.1.tar.gz"
-hash = "KSS8s6Hti1UfwQH3QLnw_gogKxFQJ2R89phQ1l_YjFI"
