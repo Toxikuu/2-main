@@ -1,7 +1,7 @@
 repo = "main"
 name = "picom"
 version = "12.5"
-timestamp = "2025-04-16 16:37:31"
+timestamp = "2025-04-16 16:38:44"
 description = "Lightweight X compositor with animation support"
 upstream = "https://github.com/yshui/picom.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/yshui/picom.git' | sed -e 's@.*/@@' -e 's,v,,' | grep -v '[a-Z]' | sort -V | tail -n1"
