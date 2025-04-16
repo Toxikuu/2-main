@@ -1,18 +1,36 @@
 repo = "main"
 name = "2"
 version = "0.1.0"
-description = "Source-based LFS package manager"
+timestamp = "2025-04-16 16:45:19"
 categories = ["core"]
-timestamp = "2025-04-12 13:17:37"
-dependencies = [
-    "rust",
-    "tar",
-    "zstd",
-    "bash",
-    "o^mdbook",
-]
+description = "Source-based LFS package manager"
 upstream = "https://github.com/Toxikuu/2.git"
 
+[[dependencies]]
+relpath = "tox/rust"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/tar"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/zstd"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/bash"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/mdbook"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/Toxikuu/2/archive/refs/tags/v0.1.0.tar.gz"
-hash = "-V5RmZVgfkf_q9Mxs1uRi7rV3QtKCxDSfDDyw3OPl_k"
