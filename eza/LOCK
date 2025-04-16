@@ -1,7 +1,7 @@
 repo = "main"
 name = "eza"
 version = "5fdeb19d45d0763e41b2d843b438ef4709d14ad9"
-timestamp = "2025-04-16 17:10:53"
+timestamp = "2025-04-16 17:11:24"
 description = "Very nice replacement for ls"
 upstream = "https://github.com/eza-community/eza.git"
 
