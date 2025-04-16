@@ -1,10 +1,10 @@
 repo = "main"
 name = "eza"
 version = "5fdeb19d45d0763e41b2d843b438ef4709d14ad9"
+timestamp = "2025-04-16 16:46:47"
 description = "Very nice replacement for ls"
-timestamp = "2025-04-12 15:29:45"
 upstream = "https://github.com/eza-community/eza.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/eza-community/eza/archive/5fdeb19d45d0763e41b2d843b438ef4709d14ad9.tar.gz"
-hash = "fhjbD-cUaHRre0s1X7XTOfSKVi4uMVvcIY1QZo8A5K0"
