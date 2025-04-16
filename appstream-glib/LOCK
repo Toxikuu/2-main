@@ -1,7 +1,7 @@
 repo = "main"
 name = "appstream-glib"
 version = "0.8.3"
-timestamp = "2025-04-16 17:10:23"
+timestamp = "2025-04-16 17:10:52"
 categories = ["lib"]
 description = "Objects and methods for reading and writing AppStream metadata"
 upstream = "https://github.com/hughsie/appstream-glib.git"
