@@ -1,7 +1,7 @@
 repo = "main"
 name = "strace"
 version = "6.14"
-timestamp = "2025-04-16 16:47:06"
+timestamp = "2025-04-16 16:48:11"
 categories = [
     "cli",
     "util",
