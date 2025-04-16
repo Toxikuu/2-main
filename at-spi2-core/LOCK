@@ -1,7 +1,7 @@
 repo = "main"
 name = "at-spi2-core"
 version = "2.56.1"
-timestamp = "2025-04-16 17:10:23"
+timestamp = "2025-04-16 17:10:52"
 categories = ["lib"]
 description = "Comprehensive accessibility framework for GNOME's Assistive Technologies"
 upstream = "https://gitlab.gnome.org/GNOME/at-spi2-core.git"
