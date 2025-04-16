@@ -1,7 +1,7 @@
 repo = "main"
 name = "libglvnd"
 version = "1.7.0"
-timestamp = "2025-04-16 17:12:57"
+timestamp = "2025-04-16 17:14:04"
 categories = [
     "lib",
     "graphics",
