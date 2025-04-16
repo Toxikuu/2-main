@@ -1,7 +1,7 @@
 repo = "main"
 name = "vulkan-headers"
 version = "1.4.312"
-timestamp = "2025-04-16 16:48:10"
+timestamp = "2025-04-16 16:48:38"
 description = "Header files needed to build and link applications against the Vulkan API"
 upstream = "https://github.com/KhronosGroup/Vulkan-Headers.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/KhronosGroup/Vulkan-Headers.git' | sed 's@.*/@@' | grep -E '^v[0-9]' | tail -n1"
