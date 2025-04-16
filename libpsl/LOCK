@@ -1,19 +1,25 @@
 repo = "main"
 name = "libpsl"
 version = "0.21.5"
-description = "Public Suffix List library"
+timestamp = "2025-04-16 16:46:26"
 categories = [
     "lib",
     "net",
 ]
-timestamp = "2025-04-11 14:54:14"
-dependencies = [
-    "libidn2",
-    "libunistring",
-]
+description = "Public Suffix List library"
 upstream = "https://github.com/rockdaboot/libpsl.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/rockdaboot/libpsl.git' | sed -e 's@.*/@@' -e 's@libpsl-@@' | grep -v -- - | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/libidn2"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libunistring"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz"
-hash = "Hcyc6uixKPPAs_ZU3s0OHoka_G_4EJjyJ-8mBEna4gg"
