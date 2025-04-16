@@ -1,7 +1,7 @@
 repo = "main"
 name = "webp-pixbuf-loader"
 version = "0.2.7"
-timestamp = "2025-04-16 16:48:38"
+timestamp = "2025-04-16 17:12:27"
 categories = ["lib"]
 description = "Library allowing gdk-pixbuf to load and process WebP images"
 upstream = "https://github.com/aruiz/webp-pixbuf-loader.git"
