@@ -1,7 +1,7 @@
 repo = "main"
 name = "libevent"
 version = "2.1.12"
-timestamp = "2025-04-16 16:46:46"
+timestamp = "2025-04-16 16:47:05"
 categories = ["lib"]
 description = "Asynchronous event library"
 upstream = "https://github.com/libevent/libevent.git"
