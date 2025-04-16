@@ -1,7 +1,7 @@
 repo = "main"
 name = "p11-kit"
 version = "0.25.5"
-timestamp = "2025-04-16 16:48:40"
+timestamp = "2025-04-16 17:12:57"
 description = "Loads and enumerates PKCS#11 modules"
 upstream = "https://github.com/p11-glue/p11-kit.git"
 
