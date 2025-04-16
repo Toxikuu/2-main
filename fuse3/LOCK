@@ -1,13 +1,17 @@
 repo = "main"
 name = "fuse3"
 version = "3.17.1"
-description = "Filesystem in userspace"
+timestamp = "2025-04-16 16:47:06"
 categories = ["lib"]
-timestamp = "2025-04-13 17:17:26"
-dependencies = ["udev"]
+description = "Filesystem in userspace"
 upstream = "https://github.com/libfuse/libfuse.git"
 version_command = "git ls-remote --tags --refs https://github.com/libfuse/libfuse.git | sed -e 's@.*/@@' -e 's,fuse-,,' | grep -v '[a-Z]' | grep '^3' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/udev"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/libfuse/libfuse/releases/download/fuse-3.17.1/fuse-3.17.1.tar.gz"
-hash = "LYroekUl-_odteXrAQ_284FAYnpwBFVO2IQRwYQ9UbI"
