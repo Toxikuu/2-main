@@ -1,20 +1,46 @@
 repo = "main"
 name = "coreutils"
 version = "9.7"
-description = "Basic utility programs needed by every OS"
+timestamp = "2025-04-16 17:10:23"
 categories = ["core"]
-timestamp = "2025-04-10 17:40:34"
-dependencies = [
-    "acl",
-    "attr",
-    "glibc",
-    "gmp",
-    "libcap",
-    "openssl",
-    "python",
-]
+description = "Basic utility programs needed by every OS"
 upstream = "https://github.com/coreutils/coreutils.git"
 
+[[dependencies]]
+relpath = "main/acl"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/attr"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/gmp"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libcap"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/openssl"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/python"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/coreutils/coreutils-9.7.tar.xz"
-hash = "6LsmrQKT-bWh_EP7QrqXDjEsZs6SwbCxZxPXUA2yUb8"
