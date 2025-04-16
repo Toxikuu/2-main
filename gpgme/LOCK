@@ -1,13 +1,17 @@
 repo = "main"
 name = "gpgme"
 version = "1.24.2"
-description = "C wrapper library for GnuPG"
+timestamp = "2025-04-16 16:37:32"
 categories = ["lib"]
-timestamp = "2025-03-23 14:43:23"
-dependencies = ["libassuan"]
+description = "C wrapper library for GnuPG"
 upstream = "https://www.gnupg.org/software/gpgme/index.html"
 version_command = "curl -s 'https://www.gnupg.org/software/gpgme/index.html' | grep 'The current version is ' | rev | cut -d' ' -f1 | rev | cut -d. -f1-3"
 
+[[dependencies]]
+relpath = "main/libassuan"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.2.tar.bz2"
-hash = "4RsaDjYXd-nlX0igPYkJbiq_CMY9hLcBfP4dzgZjlYE"
