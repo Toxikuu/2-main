@@ -1,7 +1,7 @@
 repo = "main"
 name = "cython"
 version = "3.0.12"
-timestamp = "2025-04-16 17:11:23"
+timestamp = "2025-04-16 17:11:45"
 categories = ["dev"]
 description = "C-Extensions for Python"
 upstream = "https://github.com/cython/cython.git"
