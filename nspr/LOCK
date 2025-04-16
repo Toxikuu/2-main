@@ -1,7 +1,7 @@
 repo = "main"
 name = "nspr"
 version = "4.36"
-timestamp = "2025-04-16 17:12:30"
+timestamp = "2025-04-16 17:12:56"
 description = "Netscape Portable Runtime"
 upstream = "https://gitlab.archlinux.org/archlinux/packaging/packages/nspr.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.archlinux.org/archlinux/packaging/packages/nspr.git' | sed 's@.*/@@' | sort -V | cut -d- -f1 | tail -n1"
