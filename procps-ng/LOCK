@@ -1,7 +1,7 @@
 repo = "main"
 name = "procps-ng"
 version = "4.0.5"
-timestamp = "2025-04-16 16:47:06"
+timestamp = "2025-04-16 16:48:12"
 categories = ["core"]
 description = "Programs for monitoring processes"
 upstream = "https://gitlab.com/procps-ng/procps.git"
