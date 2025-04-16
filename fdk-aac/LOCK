@@ -1,7 +1,7 @@
 repo = "main"
 name = "fdk-aac"
 version = "2.0.3"
-timestamp = "2025-04-16 17:11:45"
+timestamp = "2025-04-16 17:12:58"
 categories = [
     "lib",
     "audio",
