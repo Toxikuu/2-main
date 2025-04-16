@@ -1,7 +1,7 @@
 repo = "main"
 name = "coreutils"
 version = "9.7"
-timestamp = "2025-04-16 17:10:52"
+timestamp = "2025-04-16 17:11:23"
 categories = ["core"]
 description = "Basic utility programs needed by every OS"
 upstream = "https://github.com/coreutils/coreutils.git"
