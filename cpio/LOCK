@@ -1,14 +1,14 @@
 repo = "main"
 name = "cpio"
 version = "2.15"
-description = "Archiving tools"
+timestamp = "2025-04-16 16:37:30"
 categories = [
     "util",
     "cli",
 ]
-timestamp = "2025-03-16 14:42:04"
+description = "Archiving tools"
 upstream = "https://git.savannah.gnu.org/git/cpio.git"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/cpio/cpio-2.15.tar.bz2"
-hash = "k3YQuXwymh7JJoVT-3gAN7z_8Nz_6XJevE_ZwaqQdds"
