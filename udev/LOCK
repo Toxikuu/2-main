@@ -1,7 +1,7 @@
 repo = "main"
 name = "udev"
 version = "257.5"
-timestamp = "2025-04-16 16:48:11"
+timestamp = "2025-04-16 16:48:39"
 categories = ["core"]
 description = "Programs for dynamic device node creation"
 extra = ["https://anduin.linuxfromscratch.org/LFS/udev-lfs-20230818.tar.xz"]
