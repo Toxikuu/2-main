@@ -1,12 +1,16 @@
 repo = "main"
 name = "uchardet"
 version = "0.0.8"
-description = "Encoding detector library"
+timestamp = "2025-04-16 16:48:11"
 categories = ["lib"]
-timestamp = "2025-03-24 21:14:58"
-dependencies = ["cmake"]
+description = "Encoding detector library"
 upstream = "https://gitlab.freedesktop.org/uchardet/uchardet.git"
 
+[[dependencies]]
+relpath = "main/cmake"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz"
-hash = "6Xpgz8AKHBR6Z0sJe7FCKr2fp4otnOPz_cwueKNKxfA"
