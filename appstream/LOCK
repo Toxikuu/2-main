@@ -1,19 +1,41 @@
 repo = "main"
 name = "appstream"
 version = "1.0.4"
-description = "Tools and libraries to work with AppStream metadata"
+timestamp = "2025-04-16 16:36:47"
 categories = ["lib"]
-timestamp = "2025-03-29 17:36:23"
-dependencies = [
-    "curl",
-    "elogind",
-    "itstool",
-    "libxml2",
-    "libyaml",
-    "libstemmer",
-]
+description = "Tools and libraries to work with AppStream metadata"
 upstream = "https://github.com/ximion/appstream.git"
 
+[[dependencies]]
+relpath = "main/curl"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/elogind"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/itstool"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libxml2"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libyaml"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libstemmer"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.4.tar.xz"
-hash = "LSGDSAZ_mMTzSj_-LYIZrZ9QSxskgfGHLexmx3vzdQk"
