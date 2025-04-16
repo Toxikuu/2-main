@@ -1,7 +1,7 @@
 repo = "main"
 name = "wayland-protocols"
 version = "1.43"
-timestamp = "2025-04-16 16:48:38"
+timestamp = "2025-04-16 17:12:29"
 description = "Additional protocols expanding Wayland functionality"
 upstream = "https://gitlab.freedesktop.org/wayland/wayland-protocols.git"
 
