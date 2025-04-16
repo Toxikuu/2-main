@@ -1,11 +1,11 @@
 repo = "main"
 name = "diffutils"
 version = "3.12"
-description = "Programs to show the differences between files or directories"
+timestamp = "2025-04-16 17:10:52"
 categories = ["core"]
-timestamp = "2025-04-10 17:27:07"
+description = "Programs to show the differences between files or directories"
 upstream = "https://git.savannah.gnu.org/git/diffutils.git"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/diffutils/diffutils-3.12.tar.xz"
-hash = "fIt_n8hgkUH96pzs6FJJ0whiQ5H_Yd7a9Sj8szdyff0"
