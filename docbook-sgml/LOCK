@@ -1,14 +1,17 @@
 repo = "main"
 name = "docbook-sgml"
 version = "4.5"
-description = "Document type definitions for verification of SGML data files against the DocBook rule set"
+timestamp = "2025-04-16 16:36:47"
 categories = ["doc"]
-timestamp = "2025-04-13 21:40:45"
-dependencies = [
-    "libarchive",
-    "sgml-common",
-]
+description = "Document type definitions for verification of SGML data files against the DocBook rule set"
+extra = ["https://www.docbook.org/sgml/4.5/docbook-4.5.zip"]
 
-[[extra]]
-url = "https://www.docbook.org/sgml/4.5/docbook-4.5.zip"
-hash = "gEPlFOgMbBnLFGtdN5N9EwW_Or-bAJfDbff3D2Ec30M"
+[[dependencies]]
+relpath = "main/libarchive"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "testing/sgml-common"
+optional = false
+runtime = false
