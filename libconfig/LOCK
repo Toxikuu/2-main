@@ -1,7 +1,7 @@
 repo = "main"
 name = "libconfig"
 version = "1.7.3"
-timestamp = "2025-04-16 16:47:05"
+timestamp = "2025-04-16 17:11:25"
 categories = ["lib"]
 description = "C library for processing configuration files"
 upstream = "https://github.com/hyperrealm/libconfig.git"
