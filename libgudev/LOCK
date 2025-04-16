@@ -1,12 +1,16 @@
 repo = "main"
 name = "libgudev"
 version = "238"
-description = "GObject bindings for libudev"
+timestamp = "2025-04-16 16:45:19"
 categories = ["lib"]
-timestamp = "2025-03-18 21:45:39"
-dependencies = ["glib"]
+description = "GObject bindings for libudev"
 upstream = "https://github.com/GNOME/libgudev.git"
 
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz"
-hash = "YSZqsa_J1z28YKiyr3PpnS_f9H2ZVE0IV2Dk-mZ7XdE"
