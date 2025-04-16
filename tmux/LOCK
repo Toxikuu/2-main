@@ -1,15 +1,21 @@
 repo = "main"
 name = "tmux"
 version = "f0a85d04695bcdc84d6dfbf5f9d3f9757a148365"
-description = "Terminal multiplexer"
+timestamp = "2025-04-16 16:46:26"
 categories = ["tui"]
-timestamp = "2025-04-14 17:10:59"
-dependencies = [
-    "libevent",
-    "ncurses",
-]
+description = "Terminal multiplexer"
 upstream = "https://github.com/tmux/tmux.git"
 
+[[dependencies]]
+relpath = "main/libevent"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/ncurses"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/tmux/tmux/archive/f0a85d04695bcdc84d6dfbf5f9d3f9757a148365.tar.gz"
-hash = "pGFpR7CmK0p2zdVMhIlI7F3pGC6yHiVnsnOKf1hTz6s"
