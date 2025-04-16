@@ -11,7 +11,7 @@ DEPS=(
     "libarchive"
     "o^docbook-xml4"
     "o^docbook-xsl-nons"
-    "o^gtk-doc"
+    # "o^gtk-doc"
     "o^libxslt"
     "o^libyaml"
 )
