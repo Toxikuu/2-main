@@ -1,14 +1,14 @@
 repo = "main"
 name = "btop"
 version = "1.4.0"
-description = "System resource monitor"
+timestamp = "2025-04-16 17:10:23"
 categories = [
     "tui",
     "utils",
 ]
-timestamp = "2025-03-29 14:29:37"
+description = "System resource monitor"
 upstream = "https://github.com/aristocratos/btop.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/aristocratos/btop/archive/v1.4.0/btop-1.4.0.tar.gz"
-hash = "rA0jcb9p1RNt5-lHDG-yhsvuLha0x6bSzUihR5boZlA"
