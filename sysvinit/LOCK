@@ -1,11 +1,11 @@
 repo = "main"
 name = "sysvinit"
 version = "3.14"
-description = "A simple init system"
+timestamp = "2025-04-16 16:46:25"
 categories = ["core"]
-timestamp = "2025-02-25 20:20:40"
+description = "A simple init system"
 upstream = "https://github.com/slicer69/sysvinit.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/slicer69/sysvinit/releases/download/3.14/sysvinit-3.14.tar.xz"
-hash = "yQh0uMBUo1mR-4xNMMRD7R6bGBX_YWXHtIP1WL5OS1M"
