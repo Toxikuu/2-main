@@ -1,7 +1,7 @@
 repo = "main"
 name = "fd"
 version = "10.2.0"
-timestamp = "2025-04-16 16:35:37"
+timestamp = "2025-04-16 16:36:46"
 categories = [
     "utils",
     "cli",
