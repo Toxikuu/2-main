@@ -1,7 +1,7 @@
 repo = "main"
 name = "file"
 version = "5.46"
-timestamp = "2025-04-16 17:11:24"
+timestamp = "2025-04-16 17:11:45"
 categories = ["core"]
 description = "Utility for determining file type"
 upstream = "https://github.com/file/file.git"
