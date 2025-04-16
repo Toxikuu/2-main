@@ -1,7 +1,7 @@
 repo = "main"
 name = "gdk-pixbuf"
 version = "2.42.12"
-timestamp = "2025-04-16 16:46:43"
+timestamp = "2025-04-16 16:47:01"
 categories = ["lib"]
 description = "Image loading library"
 upstream = "https://github.com/GNOME/gdk-pixbuf.git"
