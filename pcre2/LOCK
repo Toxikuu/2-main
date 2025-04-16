@@ -1,11 +1,11 @@
 repo = "main"
 name = "pcre2"
 version = "10.45"
+timestamp = "2025-04-16 16:48:40"
 description = "A new generation of the Perl Compatible Regular Expression libraries"
-timestamp = "2025-02-20 20:23:25"
 upstream = "https://github.com/PCRE2Project/pcre2.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/PCRE2Project/pcre2.git' | sed 's@.*/@@' | grep -v RC | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.bz2"
-hash = "IVR_NRYSDHVZflswqZLielkqMZULUUDnuL_ePxkgM8Q"
