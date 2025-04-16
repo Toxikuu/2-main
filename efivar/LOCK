@@ -1,11 +1,11 @@
 repo = "main"
 name = "efivar"
 version = "39"
+timestamp = "2025-04-16 17:10:53"
 description = "Tools and libraries for EFI variable manipulation"
-timestamp = "2025-03-26 17:43:42"
 upstream = "https://github.com/rhboot/efivar.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/rhboot/efivar.git' | grep -B1 'refs/tags/4$' | head -n1 | cut -d/ -f3"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz"
-hash = "ye3RXy7u6mMjLz5mmkjpkse-mv9X7iJnKsMfXsoWCaY"
