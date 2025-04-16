@@ -1,20 +1,46 @@
 repo = "main"
 name = "libdecor"
 version = "0.2.2"
-description = "Wayland client-side decorations library"
+timestamp = "2025-04-16 17:11:26"
 categories = ["lib"]
-timestamp = "2025-03-21 21:45:27"
-dependencies = [
-    "wayland",
-    "pango",
-    "dbus",
-    "cmake",
-    "ninja",
-    "meson",
-    "wayland-protocols",
-]
+description = "Wayland client-side decorations library"
 upstream = "https://gitlab.freedesktop.org/libdecor/libdecor.git"
 
+[[dependencies]]
+relpath = "main/wayland"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pango"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/dbus"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/cmake"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/ninja"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/meson"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/wayland-protocols"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.2/libdecor-0.2.2.tar.bz2"
-hash = "lD5pMxYwCo3rUMpYeWVqw8ZC57dp28LQk-mRm3IHa8Y"
