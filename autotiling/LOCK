@@ -1,7 +1,7 @@
 repo = "main"
 name = "autotiling"
 version = "1.9.3"
-timestamp = "2025-04-16 16:46:25"
+timestamp = "2025-04-16 16:46:45"
 categories = ["wm"]
 description = "Script for sway and i3 to autotile"
 upstream = "https://github.com/nwg-piotr/autotiling.git"
