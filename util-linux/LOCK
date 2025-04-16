@@ -1,7 +1,7 @@
 repo = "main"
 name = "util-linux"
 version = "2.41"
-timestamp = "2025-04-16 16:48:10"
+timestamp = "2025-04-16 16:48:38"
 categories = ["core"]
 description = "Miscellaneous utility prorgrams"
 upstream = "https://github.com/util-linux/util-linux.git"
