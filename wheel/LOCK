@@ -1,11 +1,11 @@
 repo = "main"
 name = "wheel"
 version = "0.46.1"
-description = "Python library for the Python wheel packaging standard"
+timestamp = "2025-04-16 16:37:31"
 categories = ["core"]
-timestamp = "2025-04-10 17:30:36"
+description = "Python library for the Python wheel packaging standard"
 upstream = "https://github.com/pypa/wheel.git"
 
 [source]
+kind = "Tarball"
 url = "https://pypi.org/packages/source/w/wheel/wheel-0.46.1.tar.gz"
-hash = "_Ud--12g998dPHbHPBQ5QALIREUb1jIp2FcPN29eajg"
