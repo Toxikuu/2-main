@@ -1,18 +1,36 @@
 repo = "main"
 name = "ostree"
 version = "2025.2"
-description = "Library for container deployment and such"
+timestamp = "2025-04-16 16:35:38"
 categories = ["lib"]
-timestamp = "2025-03-30 15:03:49"
-dependencies = [
-    "fuse3",
-    "glib",
-    "libsoup2",
-    "libsoup3",
-    "elogind",
-]
+description = "Library for container deployment and such"
 upstream = "https://github.com/ostreedev/ostree.git"
 
+[[dependencies]]
+relpath = "main/fuse3"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libsoup2"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libsoup3"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/elogind"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/ostreedev/ostree/releases/download/v2025.2/libostree-2025.2.tar.xz"
-hash = "8kSkCMkJmYp3jhJ_zCLBtQK00BPxXyaUj0fMcv_i7vQ"
