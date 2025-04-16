@@ -1,7 +1,7 @@
 repo = "main"
 name = "krb5"
 version = "1.21.3"
-timestamp = "2025-04-16 17:12:27"
+timestamp = "2025-04-16 17:12:53"
 categories = ["net"]
 description = "Kerberos network authentication system"
 upstream = "https://github.com/krb5/krb5.git"
