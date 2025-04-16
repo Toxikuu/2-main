@@ -1,11 +1,11 @@
 repo = "main"
 name = "gettext"
 version = "0.24"
-description = "Internationalization and localization utilities"
+timestamp = "2025-04-16 17:10:53"
 categories = ["core"]
-timestamp = "2025-02-25 21:06:46"
+description = "Internationalization and localization utilities"
 upstream = "https://git.savannah.gnu.org/git/gettext.git"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/gettext/gettext-0.24.tar.xz"
-hash = "4WINUYsm19OxasVw5QGCBuiw1yX7ZcAtBIOXcYtc8xg"
