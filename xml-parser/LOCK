@@ -1,12 +1,12 @@
 repo = "main"
 name = "xml-parser"
 version = "2.47"
-description = "A Perl interfact to Expat"
+timestamp = "2025-04-16 16:46:25"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:01"
+description = "A Perl interfact to Expat"
 upstream = "https://github.com/cpan-authors/XML-Parser.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/cpan-authors/XML-Parser.git' | sed -e 's@.*/@@' -e 's@^v@@' -e 's@_@.@g' | sort -V | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.47.tar.gz"
-hash = "rUquZD7HhPSJuVar6VJDKHGmItTitcYZ6IVazL_E0dg"
