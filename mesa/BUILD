@@ -5,7 +5,7 @@ CATG="graphics"
 UPST="https://gitlab.freedesktop.org/mesa/mesa.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '^mesa-[0-9]' | grep -Ev 'rc|devel' | sort -V | tail -n1"
 DEPS=(
-    "xorg/@lib"
+    # "xorg/@lib"
     "libdrm"
     "mako"
     "pyyaml"
