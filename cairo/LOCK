@@ -1,21 +1,51 @@
 repo = "main"
 name = "cairo"
 version = "1.18.4"
+timestamp = "2025-04-16 17:10:23"
 description = "2D graphics library supporting multiple output devices"
-timestamp = "2025-03-20 16:44:06"
-dependencies = [
-    "libpng",
-    "pixman",
-    "fontconfig",
-    "glib",
-    "libx11",
-    "libxcb",
-    "libxext",
-    "libxrender",
-]
 upstream = "https://gitlab.freedesktop.org/cairo/cairo.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/cairo/cairo.git' | sed 's@.*/@@' | grep -v '[a-Z]' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/libpng"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pixman"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/fontconfig"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxcb"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxrender"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.cairographics.org/releases/cairo-1.18.4.tar.xz"
-hash = "RF7YIIpuSCPeEianTKMZ02AOg_Y2n5mxQmUAZZnDLMs"
