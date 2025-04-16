@@ -1,7 +1,7 @@
 repo = "main"
 name = "wezterm"
 version = "d2df5b755f9ed3f017472bbe66ff1eb762c36e18"
-timestamp = "2025-04-16 16:44:38"
+timestamp = "2025-04-16 16:45:17"
 categories = [
     "term",
     "gui",
