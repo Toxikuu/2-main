@@ -1,7 +1,7 @@
 repo = "main"
-name = "gd"
+name = "libgd"
 version = "2.3.3"
-timestamp = "2025-04-16 17:11:46"
+timestamp = "2025-04-16 17:11:47"
 categories = [
     "lib",
     "graphics",
