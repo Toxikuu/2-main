@@ -1,6 +1,7 @@
 NAME="less"
 VERS="675"
 DESC="Text pager"
+CATG="tui utils"
 UPST="https://github.com/gwsw/less.git"
 
 SOURCE="https://github.com/gwsw/less/archive/refs/tags/v$VERS.tar.gz"
