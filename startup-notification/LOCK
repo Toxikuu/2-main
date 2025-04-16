@@ -1,17 +1,27 @@
 repo = "main"
 name = "startup-notification"
 version = "0.12"
-description = "Libary to monitor and display application startup"
+timestamp = "2025-04-16 16:46:26"
 categories = ["lib"]
-timestamp = "2025-03-20 16:28:17"
-dependencies = [
-    "libx11",
-    "libxcb",
-    "xcb-util",
-]
+description = "Libary to monitor and display application startup"
 upstream = "https://gitlab.freedesktop.org/xdg/startup-notification/"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xdg/startup-notification/' | sed -e 's@.*/@@' -e 's@_@.@g' | cut -d. -f3- | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxcb"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-util"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz"
-hash = "PDkffpMMWDCVBFzS0Q63OmTwhcf96dJg8mUsfLPPvko"
