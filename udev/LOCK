@@ -1,15 +1,12 @@
 repo = "main"
 name = "udev"
 version = "257.5"
-description = "Programs for dynamic device node creation"
+timestamp = "2025-04-16 16:47:06"
 categories = ["core"]
-timestamp = "2025-04-03 22:18:38"
+description = "Programs for dynamic device node creation"
+extra = ["https://anduin.linuxfromscratch.org/LFS/udev-lfs-20230818.tar.xz"]
 upstream = "https://github.com/systemd/systemd.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/systemd/systemd/archive/v257.5/systemd-257.5.tar.gz"
-hash = "TWX5SCYIz594I99Cptd5bw4N_PuUMB33Xv__htQNoz4"
-
-[[extra]]
-url = "https://anduin.linuxfromscratch.org/LFS/udev-lfs-20230818.tar.xz"
-hash = "EEzd5SqJjGSM40ap7R--kpdRRlZTRjamWEEyzy10KNk"
