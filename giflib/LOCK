@@ -1,20 +1,21 @@
 repo = "main"
 name = "giflib"
 version = "5.2.2"
-description = "GIF libraries and utilities"
+timestamp = "2025-04-16 17:10:53"
 categories = [
     "lib",
     "img",
 ]
-timestamp = "2025-03-26 17:08:41"
-dependencies = ["xmlto"]
+description = "GIF libraries and utilities"
+extra = ["https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.patch"]
 upstream = "https://git.code.sf.net/p/giflib/code"
 version_command = "git ls-remote --tags --refs 'https://git.code.sf.net/p/giflib/code' | sed -e 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 
-[source]
-url = "https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz"
-hash = "vn_70FfK3r4qoURUL9kMaDjGoIO16KkEi47jtmsp1fs"
+[[dependencies]]
+relpath = "main/xmlto"
+optional = false
+runtime = false
 
-[[extra]]
-url = "https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.patch"
-hash = "EyOT34afkcn_YmvDwPu3uO10_JP1Q67FbF7a0h9WdD0"
+[source]
+kind = "Tarball"
+url = "https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz"
