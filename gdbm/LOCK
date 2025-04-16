@@ -1,7 +1,7 @@
 repo = "main"
 name = "gdbm"
 version = "1.25"
-timestamp = "2025-04-16 16:47:04"
+timestamp = "2025-04-16 17:10:53"
 categories = ["core"]
 description = "The GNU Database Manager"
 upstream = "https://git.savannah.gnu.org/git/gdbm.git"
