@@ -1,11 +1,11 @@
 repo = "main"
 name = "icu"
 version = "77.1"
+timestamp = "2025-04-16 16:35:38"
 description = "International Components for Unicode"
-timestamp = "2025-03-18 16:12:25"
 upstream = "https://github.com/unicode-org/icu.git"
 version_command = "git ls-remote --tags 'https://github.com/unicode-org/icu.git' | sed 's@.*/@@' | grep release- | grep -Ev 'tools-|-rc|alpha|preview' | tail -n1 | cut -d- -f2- | sed 's@-@.@'"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/unicode-org/icu/releases/download/release-77-1/icu4c-77_1-src.tgz"
-hash = "WI5DH3cyfDkDH_u4hDwOO8EiwhE3RIX6h9xfP6_yQGE"
