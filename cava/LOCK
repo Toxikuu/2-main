@@ -1,7 +1,7 @@
 repo = "main"
 name = "cava"
 version = "0.10.4"
-timestamp = "2025-04-16 16:47:02"
+timestamp = "2025-04-16 17:10:23"
 categories = [
     "tui",
     "audio",
