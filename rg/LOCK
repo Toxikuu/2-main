@@ -1,16 +1,22 @@
 repo = "main"
 name = "rg"
 version = "14.1.1"
-description = "Grep but in rust"
+timestamp = "2025-04-15 23:43:01"
 categories = ["cli"]
-timestamp = "2025-03-06 20:44:05"
-dependencies = [
-    "rust",
-    "pcre2",
-]
+description = "Grep but in rust"
 upstream = "https://github.com/BurntSushi/ripgrep.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/BurntSushi/ripgrep.git' | sed 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 
+[[dependencies]]
+relpath = "tox/rust"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pcre2"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/BurntSushi/ripgrep/archive/refs/tags/14.1.1.tar.gz"
-hash = "Ta0CovnIw8jYlDTkczeqZUyw4qpQ6AZYkTLxhr9cK2Y"
