@@ -1,7 +1,7 @@
 repo = "main"
 name = "flex"
 version = "2.6.4"
-timestamp = "2025-04-16 17:10:53"
+timestamp = "2025-04-16 17:11:24"
 categories = ["core"]
 description = "Tool for generating text-scanning programs"
 upstream = "https://github.com/westes/flex.git"
