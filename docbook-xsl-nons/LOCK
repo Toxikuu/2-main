@@ -1,17 +1,18 @@
 repo = "main"
 name = "docbook-xsl-nons"
 version = "1.79.2"
-description = "DocBook XSL Stylesheets"
+timestamp = "2025-04-16 17:10:52"
 categories = ["doc"]
-timestamp = "2025-03-22 00:33:07"
-dependencies = ["libxml2"]
+description = "DocBook XSL Stylesheets"
+extra = ["https://www.linuxfromscratch.org/patches/blfs/svn/docbook-xsl-nons-1.79.2-stack_fix-1.patch"]
 upstream = "https://github.com/docbook/xslt10-stylesheets.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/docbook/xslt10-stylesheets.git' | sed 's@.*/@@' | grep -Ev '[a-Z]|-' | tail -n1"
 
-[source]
-url = "https://github.com/docbook/xslt10-stylesheets/releases/download/release/1.79.2/docbook-xsl-nons-1.79.2.tar.bz2"
-hash = "7oueygt6j4kHWDKi2nU0vOjFR4_I_CZ29RLV2H2DIQI"
+[[dependencies]]
+relpath = "main/libxml2"
+optional = false
+runtime = false
 
-[[extra]]
-url = "https://www.linuxfromscratch.org/patches/blfs/svn/docbook-xsl-nons-1.79.2-stack_fix-1.patch"
-hash = "qSw5cVxUlJupNprdGAlSe48VW34qKy4wy0s57nFfLjA"
+[source]
+kind = "Tarball"
+url = "https://github.com/docbook/xslt10-stylesheets/releases/download/release/1.79.2/docbook-xsl-nons-1.79.2.tar.bz2"
