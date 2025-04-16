@@ -1,36 +1,84 @@
 repo = "main"
 name = "pipewire"
 version = "1.4.2"
-description = "Low-latency audio/video router and processor"
+timestamp = "2025-04-16 16:48:40"
 categories = [
     "audio",
     "video",
 ]
-timestamp = "2025-04-14 17:09:10"
-dependencies = [
-    "o^bluez",
-    "o^sbc",
-    "o^v4l-utils",
-    "o^alsa-lib",
-    "o^avahi",
-    "o^fdk-aac",
-    "o^ffmpeg",
-    "o^libcanberra",
-    "o^libdrm",
-    "o^libxcb",
-    "o^libsndfile",
-    "o^libusb",
-    "o^opus",
-    "o^sdl2",
-    "o^vulkan-loader",
-    "pulseaudio",
-    "gstreamer",
-    "gst-plugins-base",
-    "dbus",
-    "run^wireplumber",
-]
+description = "Low-latency audio/video router and processor"
 upstream = "https://gitlab.freedesktop.org/pipewire/pipewire.git"
 
+[[dependencies]]
+relpath = "main/alsa-lib"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/fdk-aac"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/ffmpeg"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/libdrm"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxcb"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/libsndfile"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/opus"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/sdl2"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/vulkan-loader"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/pulseaudio"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/gstreamer"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/gst-plugins-base"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/dbus"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/wireplumber"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.2/pipewire-1.4.2.tar.bz2"
-hash = "qpCYAB4bwvd0IUByfhm81XgStoaECSOv2ivmwie4i_A"
