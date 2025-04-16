@@ -1,7 +1,7 @@
 repo = "main"
 name = "uthash"
 version = "2.3.0"
-timestamp = "2025-04-16 16:47:06"
+timestamp = "2025-04-16 16:48:11"
 categories = ["lib"]
 description = "C macros for hash tables and more"
 upstream = "https://github.com/troydhanson/uthash.git"
