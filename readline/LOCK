@@ -1,7 +1,7 @@
 repo = "main"
 name = "readline"
 version = "8.2.13"
-timestamp = "2025-04-16 16:47:06"
+timestamp = "2025-04-16 16:48:11"
 categories = ["core"]
 description = "Libraries for command-line editing and history"
 upstream = "https://ftp.gnu.org/gnu/readline/?C=M;O=D"
