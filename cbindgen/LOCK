@@ -1,16 +1,20 @@
 repo = "main"
 name = "cbindgen"
 version = "0.28.0"
-description = "Tool for generating C bindings from Rust code"
+timestamp = "2025-04-16 16:45:19"
 categories = [
     "dev",
     "graphics",
 ]
-timestamp = "2025-02-24 21:14:57"
-dependencies = ["rust"]
+description = "Tool for generating C bindings from Rust code"
 upstream = "https://github.com/mozilla/cbindgen.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/mozilla/cbindgen.git' | sed 's@.*/@@' | grep '^v[0-9]' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "tox/rust"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/mozilla/cbindgen/archive/v0.28.0/cbindgen-0.28.0.tar.gz"
-hash = "sO053aCJyvulg-QHGD5D3hUdKunZRddPtIcNt-TKhY4"
