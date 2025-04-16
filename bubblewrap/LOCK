@@ -1,7 +1,7 @@
 repo = "main"
 name = "bubblewrap"
 version = "0.11.0"
-timestamp = "2025-04-16 16:46:46"
+timestamp = "2025-04-16 16:47:05"
 description = "Unprivileged sandboxing tool"
 upstream = "https://github.com/containers/bubblewrap.git"
 
