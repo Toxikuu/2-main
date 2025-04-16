@@ -1,7 +1,7 @@
 repo = "main"
 name = "xxhash"
 version = "0.8.3"
-timestamp = "2025-04-16 17:12:29"
+timestamp = "2025-04-16 17:12:55"
 description = "Extremely fast non-cryptographic hash algorithm"
 upstream = "https://github.com/Cyan4973/xxHash.git"
 
