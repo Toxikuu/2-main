@@ -1,11 +1,11 @@
 repo = "main"
 name = "gdbm"
 version = "1.25"
-description = "The GNU Database Manager"
+timestamp = "2025-04-16 16:37:32"
 categories = ["core"]
-timestamp = "2025-03-23 14:35:51"
+description = "The GNU Database Manager"
 upstream = "https://git.savannah.gnu.org/git/gdbm.git"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/gdbm/gdbm-1.25.tar.gz"
-hash = "0C2zxZJu2Hf4gXuBzR-S9T73TKjG21Q_u6AnGzTzk-w"
