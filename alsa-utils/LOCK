@@ -1,10 +1,10 @@
 repo = "main"
-name = "alsa-utils"
+name = "alsa-utils/"
 version = "1.2.14"
+timestamp = "2025-04-16 17:09:10"
 description = "ALSA utilities"
-timestamp = "2025-04-14 17:09:37"
 upstream = "https://github.com/alsa-project/alsa-utils.git"
 
 [source]
+kind = "Tarball"
 url = "https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.14.tar.bz2"
-hash = "B5THTTP-2UPnxQYJwTCJ5AkxK2xAPWromE_EKcCWB0E"
