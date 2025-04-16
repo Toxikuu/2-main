@@ -1,7 +1,7 @@
 repo = "main"
 name = "intltool"
 version = "0.51.0"
-timestamp = "2025-04-16 17:11:46"
+timestamp = "2025-04-16 17:12:30"
 description = "Internationalization tool for extracting translatable strings from source files"
 upstream = "https://salsa.debian.org/gnome-team/intltool.git"
 version_command = "git ls-remote --tags --refs 'https://salsa.debian.org/gnome-team/intltool.git' | sed 's@.*/@@' | cut -d- -f1 | uniq | tail -n1"
