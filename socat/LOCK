@@ -1,16 +1,22 @@
 repo = "main"
 name = "socat"
 version = "1.8.0.3"
-description = "Multipurpose relay tool"
+timestamp = "2025-04-16 16:48:11"
 categories = ["util"]
-timestamp = "2025-03-20 16:12:18"
-dependencies = [
-    "openssl",
-    "readline",
-]
+description = "Multipurpose relay tool"
 upstream = "https://repo.or.cz/socat.git"
 version_command = "git ls-remote --tags --refs 'https://repo.or.cz/socat.git' | sed 's@.*/@@' | cut -d- -f2- | grep -v '[a-Z]' | tail -n1"
 
+[[dependencies]]
+relpath = "main/openssl"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/readline"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "http://www.dest-unreach.org/socat/download/socat-1.8.0.3.tar.gz"
-hash = "qfnrbPuaprG0uP4mDtusPyx0PylNseNiuTLrP-yje6Q"
