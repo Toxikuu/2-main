@@ -1,12 +1,12 @@
 repo = "main"
 name = "libyaml"
 version = "0.2.5"
-description = "C library for parsing and emitting YAML"
+timestamp = "2025-04-16 17:11:48"
 categories = ["dev"]
-timestamp = "2025-03-26 17:43:29"
+description = "C library for parsing and emitting YAML"
 upstream = "https://github.com/yaml/libyaml.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/yaml/libyaml.git' | sed 's@.*/@@' | grep -v '[a-z]' | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz"
-hash = "xkKum3X-4SCy2WxxJTi9LPKDIo0jN98s8piOPAJnjvQ"
