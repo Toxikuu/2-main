@@ -1,10 +1,10 @@
 repo = "main"
 name = "pciutils"
 version = "3.13.0"
+timestamp = "2025-04-16 16:37:30"
 description = "PCI bus configuration space access library and tools"
-timestamp = "2025-02-20 20:23:25"
 upstream = "https://github.com/pciutils/pciutils.git"
 
 [source]
+kind = "Tarball"
 url = "https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz"
-hash = "oDyIoKq3CbFpfKF1N2b0Q-eCl_hMe82AqCwUIu3Xy0I"
