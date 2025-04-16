@@ -1,7 +1,7 @@
 repo = "main"
 name = "wireplumber"
 version = "0.5.8"
-timestamp = "2025-04-16 16:43:13"
+timestamp = "2025-04-16 16:44:20"
 categories = [
     "audio",
     "video",
