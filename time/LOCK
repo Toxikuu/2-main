@@ -1,7 +1,7 @@
 repo = "main"
 name = "time"
 version = "1.9"
-timestamp = "2025-04-16 16:48:11"
+timestamp = "2025-04-16 16:48:39"
 description = "Utility for monitoring a program's use of system resources"
 upstream = "https://git.savannah.gnu.org/git/time.git"
 
