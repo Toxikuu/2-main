@@ -1,7 +1,7 @@
 repo = "main"
 name = "ply"
 version = "3.11"
-timestamp = "2025-04-16 16:48:40"
+timestamp = "2025-04-16 17:12:57"
 categories = ["dev"]
 description = "Zero-dependency python implementation of lex and yacc"
 upstream = "https://github.com/dabeaz/ply.git"
