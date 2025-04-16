@@ -1,21 +1,47 @@
 repo = "main"
 name = "at-spi2-core"
 version = "2.56.1"
-description = "Comprehensive accessibility framework for GNOME's Assistive Technologies"
+timestamp = "2025-04-16 17:10:23"
 categories = ["lib"]
-timestamp = "2025-03-29 12:13:06"
-dependencies = [
-    "dbus",
-    "glib",
-    "gsettings-desktop-schemas",
-    "libx11",
-    "libxi",
-    "libxtst",
-    "xprop",
-]
+description = "Comprehensive accessibility framework for GNOME's Assistive Technologies"
 upstream = "https://gitlab.gnome.org/GNOME/at-spi2-core.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.gnome.org/GNOME/at-spi2-core.git' | sed -e 's@.*/@@' | grep -v '[a-Z]' | tail -n1"
 
+[[dependencies]]
+relpath = "main/dbus"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/gsettings-desktop-schemas"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxi"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxtst"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xprop"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.1.tar.xz"
-hash = "_Rd_7NjJUAb_CjVer9cGb-EQouF-tetf4X_3Dkmk6s4"
