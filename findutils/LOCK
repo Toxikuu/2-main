@@ -1,11 +1,11 @@
 repo = "main"
 name = "findutils"
 version = "4.10.0"
-description = "Programs to find and execute commands on files"
+timestamp = "2025-04-16 17:10:53"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:39"
+description = "Programs to find and execute commands on files"
 upstream = "https://git.savannah.gnu.org/git/findutils.git"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz"
-hash = "E4fgtn_yR9Kr3pmPkN-_cMFJE5Glnd_suK5ph4nwpPU"
