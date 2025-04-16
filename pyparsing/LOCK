@@ -1,13 +1,17 @@
 repo = "main"
 name = "pyparsing"
 version = "3.2.3"
-description = "General parsing module for Python"
+timestamp = "2025-04-16 16:37:31"
 categories = ["lib"]
-timestamp = "2025-03-30 15:10:56"
-dependencies = ["python"]
+description = "General parsing module for Python"
 upstream = "https://github.com/pyparsing/pyparsing.git"
 version_command = "git ls-remote --tags --refs https://github.com/pyparsing/pyparsing.git | sed 's@.*/@@' | cut -d_ -f2- | grep -v '[a-Z]' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/python"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.2.3.tar.gz"
-hash = "ucE_GriztUL3Lij2NLrU3nWKs85FRuQwGXCtb6d8OL4"
