@@ -1,7 +1,7 @@
 repo = "main"
 name = "jaq"
 version = "2.1.1"
-timestamp = "2025-04-16 16:35:38"
+timestamp = "2025-04-16 16:36:46"
 description = "A jq clone focussed on correctness, speed, and simplicity"
 upstream = "https://github.com/01mf02/jaq.git"
 
