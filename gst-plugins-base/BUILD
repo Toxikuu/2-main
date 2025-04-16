@@ -17,12 +17,12 @@ DEPS=(
     "pango"
     "wayland-protocols"
     "libx11"
-    "o^libtheora"
-    "o^libvisual"
-    "o^graphene"
+    # "o^libtheora"
+    # "o^libvisual"
+    # "o^graphene"
     "o^opus"
     "o^sdl2"
-    "o^cdparanoia: for cdda"
+    # "o^cdparanoia: for cdda"
 )
 
 SOURCE="https://gstreamer.freedesktop.org/src/$NAME/$NAME-$VERS.tar.xz"
