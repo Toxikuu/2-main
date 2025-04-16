@@ -1,7 +1,7 @@
 repo = "main"
 name = "expect"
 version = "5.45.4"
-timestamp = "2025-04-16 17:11:24"
+timestamp = "2025-04-16 17:11:45"
 description = "Tools for automating interactive applications"
 extra = ["https://www.linuxfromscratch.org/patches/lfs/development/expect-5.45.4-gcc14-1.patch"]
 upstream = "https://sourceforge.net/projects/expect/files/Expect/"
