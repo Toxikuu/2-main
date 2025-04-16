@@ -1,7 +1,7 @@
 repo = "main"
 name = "libxmlb"
 version = "0.3.22"
-timestamp = "2025-04-16 16:47:06"
+timestamp = "2025-04-16 17:11:48"
 categories = ["lib"]
 description = "Library for binary XML blobs"
 upstream = "https://github.com/hughsie/libxmlb.git"
