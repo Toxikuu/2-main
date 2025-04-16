@@ -1,15 +1,29 @@
 repo = "main"
 name = "xmlto"
 version = "0.0.29"
+timestamp = "2025-04-16 16:31:05"
 description = "Convert XML to another format"
-timestamp = "2025-03-22 00:27:45"
-dependencies = [
-    "docbook-xml4",
-    "docbook-xsl-nons",
-    "libxslt",
-    "lynx",
-]
+
+[[dependencies]]
+relpath = "main/docbook-xml4"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/docbook-xsl-nons"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libxslt"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/lynx"
+optional = false
+runtime = false
 
 [source]
+kind = "Tarball"
 url = "https://pagure.io/xmlto/archive/0.0.29/xmlto-0.0.29.tar.gz"
-hash = "QFBNtocYOFpOqpFUoo9Z5R5Z0AbRqhT1vJ1v3tHWAXo"
