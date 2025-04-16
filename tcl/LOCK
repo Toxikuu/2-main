@@ -1,7 +1,7 @@
 repo = "main"
 name = "tcl"
 version = "8.6.16"
-timestamp = "2025-04-16 16:37:32"
+timestamp = "2025-04-16 16:38:44"
 description = "Tool Command Language"
 upstream = "https://github.com/tcltk/tcl.git"
 version_command = '''git ls-remote --tags --refs 'https://github.com/tcltk/tcl.git' | sed -e 's@.*/@@' -e 's@^core-@@' -e 's@-@.@g' | grep -Ev '[a-z]' | grep '\.' | tail -n1'''
