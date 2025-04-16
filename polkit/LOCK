@@ -1,11 +1,11 @@
 repo = "main"
 name = "polkit"
 version = "126"
+timestamp = "2025-04-16 16:47:06"
 description = "Toolkit for defining and handling authorizations"
-timestamp = "2025-03-24 00:06:39"
 upstream = "https://github.com/polkit-org/polkit.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/polkit-org/polkit.git' | sed 's@.*/@@' | grep -E '^[0-9]+$' | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/polkit-org/polkit/archive/126/polkit-126.tar.gz"
-hash = "KBSnKBmJ9rqp5XvTO7xeFIgn4nIczvIqryirKzdgaOg"
