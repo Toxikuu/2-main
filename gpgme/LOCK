@@ -1,7 +1,7 @@
 repo = "main"
 name = "gpgme"
 version = "1.24.2"
-timestamp = "2025-04-16 17:10:53"
+timestamp = "2025-04-16 17:11:24"
 categories = ["lib"]
 description = "C wrapper library for GnuPG"
 upstream = "https://www.gnupg.org/software/gpgme/index.html"
