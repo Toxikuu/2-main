@@ -1,7 +1,7 @@
 repo = "main"
 name = "glib-networking"
 version = "2.80.1"
-timestamp = "2025-04-16 16:44:40"
+timestamp = "2025-04-16 16:45:18"
 categories = [
     "lib",
     "net",
