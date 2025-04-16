@@ -1,10 +1,10 @@
 repo = "main"
 name = "neofetch"
 version = "7.1.0"
-description = "Famous (now unmaintained) fetch script written in bash"
-timestamp = "2025-02-21 16:16:49"
+timestamp = "2025-04-16 16:37:32"
+description = "Famous (and unmaintained) fetch script written in bash"
 upstream = "https://github.com/dylanaraps/neofetch.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/dylanaraps/neofetch/archive/refs/tags/7.1.0.tar.gz"
-hash = "WKlea3FOQe_IBOyjiaIjMJFpst7zXlf6k0SCprR8J-c"
