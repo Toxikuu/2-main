@@ -1,7 +1,7 @@
 repo = "main"
 name = "libdecor"
 version = "0.2.2"
-timestamp = "2025-04-16 17:11:47"
+timestamp = "2025-04-16 17:12:57"
 categories = ["lib"]
 description = "Wayland client-side decorations library"
 upstream = "https://gitlab.freedesktop.org/libdecor/libdecor.git"
