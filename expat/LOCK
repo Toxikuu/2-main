@@ -1,12 +1,12 @@
 repo = "main"
 name = "expat"
 version = "2.7.1"
-description = "XML parsing library"
+timestamp = "2025-04-16 16:46:47"
 categories = ["core"]
-timestamp = "2025-03-29 12:13:22"
+description = "XML parsing library"
 upstream = "https://github.com/libexpat/libexpat.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/libexpat/libexpat.git' | sed 's:.*/::' | sort -V | grep -B 1 V1_0 | head -n1 | cut -d_ -f2- | sed 's/_/./g'"
 
 [source]
+kind = "Tarball"
 url = "https://prdownloads.sourceforge.net/expat/expat-2.7.1.tar.xz"
-hash = "NUVSVEuPmQEuUGL31XDsd_FLQSo_9cfY0NrmLA0hfDA"
