@@ -1,10 +1,10 @@
 repo = "main"
 name = "time"
 version = "1.9"
+timestamp = "2025-04-16 16:48:11"
 description = "Utility for monitoring a program's use of system resources"
-timestamp = "2025-02-20 20:23:26"
 upstream = "https://git.savannah.gnu.org/git/time.git"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/time/time-1.9.tar.gz"
-hash = "-6zwyB5iQp3z4zvaTO44dWYE8Y4B2XczjiMwaj47Uh4"
