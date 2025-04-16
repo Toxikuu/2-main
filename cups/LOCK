@@ -1,24 +1,41 @@
 repo = "main"
 name = "cups"
 version = "2.4.12"
-description = "Common Unix Printing System"
+timestamp = "2025-04-16 17:10:49"
 categories = ["print"]
-timestamp = "2025-04-08 15:35:09"
-dependencies = [
-    "gnutls",
-    "dbus",
-    "libusb",
-    "linux-pam",
-    "xdg-utils",
-    "o^colord",
-    "o^avahi",
-    "o^libpaper",
-    "o^krb5",
-    "o^php",
-    "r^cups-filters",
-]
+description = "Common Unix Printing System"
 upstream = "https://github.com/OpenPrinting/cups.git"
 
+[[dependencies]]
+relpath = "main/gnutls"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/dbus"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libusb"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/linux-pam"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/xdg-utils"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/krb5"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/OpenPrinting/cups/releases/download/v2.4.12/cups-2.4.12-source.tar.gz"
-hash = "sd3hkaSuJ2DEciDILKYVWijDgnAebBoBWdEFSZAjHVk"
