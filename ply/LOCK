@@ -1,12 +1,16 @@
 repo = "main"
 name = "ply"
 version = "3.11"
-description = "Zero-dependency python implementation of lex and yacc"
+timestamp = "2025-04-16 16:48:12"
 categories = ["dev"]
-timestamp = "2025-02-22 13:24:00"
-dependencies = ["python"]
+description = "Zero-dependency python implementation of lex and yacc"
 upstream = "https://github.com/dabeaz/ply.git"
 
+[[dependencies]]
+relpath = "main/python"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz"
-hash = "AMfBqqiDWLnHZbbTAAxu7AukKrylNRsJUyGu9EYIHaM"
