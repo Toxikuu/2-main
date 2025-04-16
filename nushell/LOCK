@@ -1,7 +1,7 @@
 repo = "main"
 name = "nushell"
 version = "0.103.0"
-timestamp = "2025-04-16 17:12:30"
+timestamp = "2025-04-16 17:12:55"
 categories = ["shells"]
 description = "A new type of shell"
 upstream = "https://github.com/nushell/nushell.git"
