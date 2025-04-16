@@ -1,13 +1,17 @@
 repo = "main"
 name = "json-glib"
 version = "1.10.6"
-description = "Library providing (de)serialization support for JSON"
+timestamp = "2025-04-16 16:37:32"
 categories = ["lib"]
-timestamp = "2025-03-30 14:58:48"
-dependencies = ["glib"]
+description = "Library providing (de)serialization support for JSON"
 upstream = "https://gitlab.gnome.org/GNOME/json-glib.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.gnome.org/GNOME/json-glib.git' | sed 's@.*/@@' | grep -v '[a-Z]' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/glib"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.6.tar.xz"
-hash = "d_S8v5M5Uo8Wa4BzRYaT8KILd7cFnbwtthdGoZKLApM"
