@@ -1,18 +1,32 @@
 repo = "main"
 name = "mako"
 version = "1.3.9"
-description = "Hyperfast, lightweight Python templating"
+timestamp = "2025-04-16 17:12:59"
 categories = ["dev"]
-timestamp = "2025-02-22 13:07:02"
-dependencies = [
-    "python",
-    "setuptools",
-    "wheel",
-    "markupsafe",
-]
+description = "Hyperfast, lightweight Python templating"
 upstream = "https://github.com/sqlalchemy/mako.git"
 version_command = "git ls-remote 'https://github.com/sqlalchemy/mako.git' | sed -e 's@.*/@@' -e 's|_|.|g' | tail -n1 | cut -d. -f2-"
 
+[[dependencies]]
+relpath = "main/python"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/setuptools"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/wheel"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/markupsafe"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/sqlalchemy/mako/archive/refs/tags/rel_1_3_9.tar.gz"
-hash = "na_XZnmtowYDQ7DWrciIKRgXBJ3hNRtID2Z2KvjLBGw"
