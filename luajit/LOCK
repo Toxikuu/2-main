@@ -1,7 +1,7 @@
 repo = "main"
 name = "luajit"
 version = "eec7a8016c3381b949b5d84583800d05897fa960"
-timestamp = "2025-04-15 23:43:01"
+timestamp = "2025-04-16 17:12:58"
 categories = ["lang"]
 description = "Just-In-Time Lua compiler"
 upstream = "https://github.com/LuaJIT/LuaJIT.git"
