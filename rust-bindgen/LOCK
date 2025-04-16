@@ -1,18 +1,24 @@
 repo = "main"
 name = "rust-bindgen"
 version = "0.71.1"
-description = "Automatically generates Rust FFI bindings to C (and some C++) libraries"
+timestamp = "2025-04-16 16:46:46"
 categories = [
     "dev",
     "graphics",
 ]
-timestamp = "2025-02-21 15:40:19"
-dependencies = [
-    "llvm",
-    "rust",
-]
+description = "Automatically generates Rust FFI bindings to C (and some C++) libraries"
 upstream = "https://github.com/rust-lang/rust-bindgen.git"
 
+[[dependencies]]
+relpath = "tox/llvm"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "tox/rust"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/rust-lang/rust-bindgen/archive/v0.71.1/rust-bindgen-0.71.1.tar.gz"
-hash = "Yg2Awytqr0LRLYXehvxWlQyGsqE6W5Q8EMKdMMTz77A"
