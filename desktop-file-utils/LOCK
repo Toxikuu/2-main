@@ -1,7 +1,7 @@
 repo = "main"
 name = "desktop-file-utils"
 version = "0.28"
-timestamp = "2025-04-16 16:44:34"
+timestamp = "2025-04-16 16:44:41"
 description = "Command line utilities for working with desktop entries"
 upstream = "https://gitlab.freedesktop.org/xdg/desktop-file-utils.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xdg/desktop-file-utils.git' | sed 's@.*/@@' | grep -E '^[0-9]+' | tail -n1"
