@@ -1,7 +1,7 @@
 repo = "main"
 name = "cpio"
 version = "2.15"
-timestamp = "2025-04-16 16:46:43"
+timestamp = "2025-04-16 16:47:02"
 categories = [
     "util",
     "cli",
