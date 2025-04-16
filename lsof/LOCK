@@ -1,15 +1,19 @@
 repo = "main"
 name = "lsof"
 version = "4.99.4"
-description = "List open files for a given process"
+timestamp = "2025-04-15 23:43:01"
 categories = [
     "cli",
     "util",
 ]
-timestamp = "2025-03-20 16:48:01"
-dependencies = ["libtirpc"]
+description = "List open files for a given process"
 upstream = "https://github.com/lsof-org/lsof.git"
 
+[[dependencies]]
+relpath = "main/libtirpc"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/lsof-org/lsof/releases/download/4.99.4/lsof-4.99.4.tar.gz"
-hash = "DEROLavsFK0UbLt_W1K1q0l2coQC_zSNn-ztmtl0DGY"
