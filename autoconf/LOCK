@@ -1,12 +1,12 @@
 repo = "main"
 name = "autoconf"
 version = "2.72"
-description = "Programs to produce shell scripts to automatically configure source code"
+timestamp = "2025-04-16 16:47:06"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:06"
+description = "Programs to produce shell scripts to automatically configure source code"
 upstream = "https://git.savannah.gnu.org/git/autoconf.git"
 version_command = '''git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/autoconf.git' | sed 's@.*/@@' | grep -E '^v[0-9]\.[0-9]' | grep -v '[a-k]$' | tail -n1'''
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.xz"
-hash = "uohcExlXjWyU1G6bDc60AUyq_iSQ5Deg28o_JwoiP1o"
