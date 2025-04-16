@@ -1,7 +1,7 @@
 repo = "main"
 name = "alsa-lib"
 version = "1.2.14"
-timestamp = "2025-04-16 17:10:23"
+timestamp = "2025-04-16 17:10:52"
 description = "ALSA library"
 upstream = "https://github.com/alsa-project/alsa-lib.git"
 
