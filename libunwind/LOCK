@@ -1,7 +1,7 @@
 repo = "main"
 name = "libunwind"
 version = "1.8.1"
-timestamp = "2025-04-16 16:38:44"
+timestamp = "2025-04-16 16:43:14"
 description = "C API to determine the call-chain of a program"
 upstream = "https://github.com/libunwind/libunwind.git"
 
