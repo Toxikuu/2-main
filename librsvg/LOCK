@@ -1,7 +1,7 @@
 repo = "main"
 name = "librsvg"
 version = "2.60.0"
-timestamp = "2025-04-16 16:47:05"
+timestamp = "2025-04-16 17:11:48"
 categories = ["lib"]
 description = "Rust library for manipulating and viewing SVG images"
 upstream = "https://github.com/GNOME/librsvg.git"
