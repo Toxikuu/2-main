@@ -1,22 +1,40 @@
 repo = "main"
 name = "shadow"
 version = "4.17.4"
-description = "Secure password handling"
+timestamp = "2025-04-16 16:48:11"
 categories = [
     "core",
     "security",
 ]
-timestamp = "2025-04-06 20:45:06"
-dependencies = [
-    "libcap",
-    "libxcrypt",
-    "linux-pam",
-    "acl",
-    "attr",
-]
+description = "Secure password handling"
 upstream = "https://github.com/shadow-maint/shadow.git"
 version_command = '''git ls-remote --tags --refs 'https://github.com/shadow-maint/shadow.git' | sed -e 's@.*/@@' -e 's,v,,' | grep '\.' | grep -v '[a-Z]' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "main/libcap"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libxcrypt"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/linux-pam"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/acl"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/attr"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/shadow-maint/shadow/releases/download/4.17.4/shadow-4.17.4.tar.xz"
-hash = "VUgBBUaU_32Ker3w1uzjTi8W4RFnPMAbjJ7hJ4RRGB4"
