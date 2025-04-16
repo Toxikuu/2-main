@@ -1,7 +1,7 @@
 repo = "main"
 name = "libcap"
 version = "2.76"
-timestamp = "2025-04-16 17:11:25"
+timestamp = "2025-04-16 17:11:47"
 categories = ["core"]
 description = "POSIX 1003.1e capabilities"
 upstream = "https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
