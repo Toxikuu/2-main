@@ -1,7 +1,7 @@
 repo = "main"
 name = "dex"
 version = "0.10.1"
-timestamp = "2025-04-16 16:37:31"
+timestamp = "2025-04-16 16:44:22"
 categories = ["utils"]
 description = "Desktop entry execution utility"
 upstream = "https://github.com/jceb/dex.git"
