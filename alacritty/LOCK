@@ -1,7 +1,7 @@
 repo = "main"
-name = "alacritty"
+name = "alacritty/"
 version = "0.15.1"
-timestamp = "2025-04-16 16:47:03"
+timestamp = "2025-04-16 17:09:10"
 categories = [
     "gui",
     "term",
