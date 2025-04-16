@@ -1,7 +1,7 @@
 repo = "main"
 name = "groff"
 version = "1.23.0"
-timestamp = "2025-04-16 16:46:46"
+timestamp = "2025-04-16 16:47:06"
 categories = ["core"]
 description = "Programs for processing and formatting text and images"
 upstream = "https://git.savannah.gnu.org/git/groff.git"
