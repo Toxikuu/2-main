@@ -1,11 +1,11 @@
 repo = "main"
 name = "pkgconf"
 version = "2.4.3"
-description = "Package compiler and linker metadata toolkit"
+timestamp = "2025-04-16 16:47:06"
 categories = ["core"]
-timestamp = "2025-03-07 23:57:38"
+description = "Package compiler and linker metadata toolkit"
 upstream = "https://github.com/pkgconf/pkgconf.git"
 
 [source]
+kind = "Tarball"
 url = "https://distfiles.ariadne.space/pkgconf/pkgconf-2.4.3.tar.xz"
-hash = "USA9me1XP6c0S_B8pibxDHzAlOCEasSqACO9DIPCWkE"
