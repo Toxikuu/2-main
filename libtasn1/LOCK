@@ -1,7 +1,7 @@
 repo = "main"
 name = "libtasn1"
 version = "4.20.0"
-timestamp = "2025-04-16 16:45:18"
+timestamp = "2025-04-16 16:46:24"
 description = "Library for encoding and decoding DER/BER data"
 upstream = "https://gitlab.com/gnutls/libtasn1.git"
 
