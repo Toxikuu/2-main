@@ -1,24 +1,50 @@
 repo = "main"
 name = "libplacebo"
 version = "7.349.0"
-description = "Reusable library for GPU-accelerated video/image rendering primitives"
+timestamp = "2025-04-16 16:37:32"
 categories = [
     "lib",
     "img",
     "video",
 ]
-timestamp = "2025-03-24 20:29:48"
-dependencies = [
-    "ffmpeg",
-    "glad",
-    "glslang",
-    "vulkan-loader",
-    "o^little-cms",
-    "o^libunwind",
-    "o^xxhash",
-]
+description = "Reusable library for GPU-accelerated video/image rendering primitives"
 upstream = "https://github.com/haasn/libplacebo.git"
 
+[[dependencies]]
+relpath = "main/ffmpeg"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glad"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glslang"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/vulkan-loader"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/little-cms"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/libunwind"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/xxhash"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/haasn/libplacebo/archive/v7.349.0/libplacebo-7.349.0.tar.gz"
-hash = "Yn4yQ5oLPSuQNo6tfpGfRw7nRGyHzA94QbvjGbI6qLE"
