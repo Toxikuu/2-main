@@ -1,7 +1,7 @@
 repo = "main"
 name = "ext4magic"
 version = "0.3.2"
-timestamp = "2025-04-16 17:10:53"
+timestamp = "2025-04-16 17:11:24"
 description = "Utility to recover deleted files on the ext3/4 filesystems"
 extra = [
     "https://gitweb.gentoo.org/repo/gentoo.git/plain/sys-fs/ext4magic/files/ext4magic-0.3.2-fix-sys-types-h.patch",
