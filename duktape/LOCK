@@ -1,10 +1,10 @@
 repo = "main"
 name = "duktape"
 version = "2.7.0"
+timestamp = "2025-04-16 16:37:32"
 description = "Lightweight, portable, embeddable Javascript engine"
-timestamp = "2025-02-20 20:19:48"
 upstream = "https://github.com/svaarala/duktape.git"
 
 [source]
+kind = "Tarball"
 url = "https://duktape.org/duktape-2.7.0.tar.xz"
-hash = "kPjS-otVZ8aJmDDd7ywD88J5YLEayiIvoXqnrGE8KJA"
