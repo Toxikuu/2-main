@@ -7,8 +7,8 @@ VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep 'V_' | grep -Ev
 DEPS=(
     "o^linux-pam"   # pam configuration files
     "o^shadow"      # pam configuration files
-    "o^net-tools"   # entropy
-    "o^sysstat"     # entropy
+    # "o^net-tools"   # entropy
+    # "o^sysstat"     # entropy
 )
 
 TAGV=${VERS//./_}
