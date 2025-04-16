@@ -1,15 +1,19 @@
 repo = "main"
 name = "libnsl"
 version = "2.0.1"
-description = "Public client interface library for NIS(YP)"
+timestamp = "2025-04-16 16:46:26"
 categories = [
     "lib",
     "net",
 ]
-timestamp = "2025-03-18 21:47:55"
-dependencies = ["libtirpc"]
+description = "Public client interface library for NIS(YP)"
 upstream = "https://github.com/thkukuk/libnsl.git"
 
+[[dependencies]]
+relpath = "main/libtirpc"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/thkukuk/libnsl/releases/download/v2.0.1/libnsl-2.0.1.tar.xz"
-hash = "XJ5HCyMqes00M0kaxSIbSDLwxxMYYY3GqgTdBf_Nj9k"
