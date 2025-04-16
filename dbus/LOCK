@@ -1,7 +1,7 @@
 repo = "main"
 name = "dbus"
 version = "1.16.2"
-timestamp = "2025-04-16 17:10:52"
+timestamp = "2025-04-16 17:11:23"
 description = "Freedesktop.org message bus system"
 extra = ["https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20240913.tar.xz"]
 upstream = "https://gitlab.freedesktop.org/dbus/dbus.git"
