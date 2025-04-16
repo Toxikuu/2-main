@@ -1,21 +1,36 @@
 repo = "main"
 name = "nvidia"
 version = "570.133.07"
-description = "The NVIDIA drivers"
+timestamp = "2025-04-16 17:12:57"
 categories = [
     "drivers",
     "graphics",
 ]
-timestamp = "2025-04-10 19:43:39"
-dependencies = [
-    "tox/mesa",
-    "kernel",
-    "libglvnd",
-    "libvdpau",
-    "vulkan-loader",
-]
+description = "The NVIDIA drivers"
+extra = ["https://us.download.nvidia.com/XFree86/Linux-x86_64/570.133.07/NVIDIA-Linux-x86_64-570.133.07.run"]
 upstream = "https://github.com/NVIDIA/open-gpu-kernel-modules.git"
 
-[[extra]]
-url = "https://us.download.nvidia.com/XFree86/Linux-x86_64/570.133.07/NVIDIA-Linux-x86_64-570.133.07.run"
-hash = "LUPmTFgb5e9VTemIixqpADfvbUX1QoTT2dztwI3E3CY"
+[[dependencies]]
+relpath = "tox/mesa"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "tox/kernel"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libglvnd"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libvdpau"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/vulkan-loader"
+optional = false
+runtime = false
