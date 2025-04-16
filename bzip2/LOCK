@@ -1,7 +1,7 @@
 repo = "main"
 name = "bzip2"
 version = "1.0.8"
-timestamp = "2025-04-16 17:10:52"
+timestamp = "2025-04-16 17:11:23"
 categories = ["core"]
 description = "The bzip2 compression algorithm"
 upstream = "https://sourceware.org/git/bzip2.git"
