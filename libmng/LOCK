@@ -1,14 +1,20 @@
 repo = "main"
 name = "libmng"
 version = "2.0.3"
-description = "MNG/JNG reference library"
+timestamp = "2025-04-16 16:31:05"
 categories = ["lib"]
-timestamp = "2025-03-18 21:39:26"
-dependencies = [
-    "libjpeg-turbo",
-    "little-cms",
-]
+description = "MNG/JNG reference library"
+
+[[dependencies]]
+relpath = "main/libjpeg-turbo"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/little-cms"
+optional = false
+runtime = false
 
 [source]
+kind = "Tarball"
 url = "https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz"
-hash = "SkYv3UjUvILB16IRBsihi2L4zABCRUMjBY5toNu1fdM"
