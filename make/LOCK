@@ -1,12 +1,12 @@
 repo = "main"
 name = "make"
 version = "4.4.1"
-description = "Program for generating executables and other files from source code"
+timestamp = "2025-04-15 23:43:01"
 categories = ["core"]
-timestamp = "2025-02-25 20:17:53"
+description = "Program for generating executables and other files from source code"
 upstream = "https://git.savannah.gnu.org/git/make.git"
 version_command = "git ls-remote --tags --refs 'https://git.savannah.gnu.org/git/make.git' | sed 's@.*/@@' | grep -Ev '[a-Z]' | grep -Ev '9[0-9]$' | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz"
-hash = "3Rb7HWe_q3mnL16DkHNcSePo5wtJRaFasfgd23hlj7M"
