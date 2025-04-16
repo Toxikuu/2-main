@@ -1,17 +1,27 @@
 repo = "main"
 name = "libepoxy"
 version = "1.5.10"
-description = "OpenGL function pointer management library"
+timestamp = "2025-04-16 16:45:19"
 categories = ["graphics"]
-timestamp = "2025-03-08 00:06:46"
-dependencies = [
-    "mesa",
-    "libx11",
-    "o^libglvnd",
-]
+description = "OpenGL function pointer management library"
 upstream = "https://github.com/anholt/libepoxy.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/anholt/libepoxy.git' | sed -e 's@.*/@@' -e 's,v,,' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "tox/mesa"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libglvnd"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz"
-hash = "ByzaS1ndCYu6jCNjpiRymdsfqJQR3CIci4G47oGS5iM"
