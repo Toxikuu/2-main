@@ -1,7 +1,7 @@
 repo = "main"
 name = "mtdev"
 version = "1.1.7"
-timestamp = "2025-04-16 17:12:30"
+timestamp = "2025-04-16 17:12:56"
 description = "Normalizes kernel multi-touch events to the slotted type B protocol"
 upstream = "http://bitmath.org/git/mtdev.git"
 
