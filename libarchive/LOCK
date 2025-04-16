@@ -1,20 +1,34 @@
 repo = "main"
 name = "libarchive"
 version = "3.7.9"
-description = "Multi-format archive and compression library"
+timestamp = "2025-04-16 16:35:38"
 categories = [
     "lib",
     "utils",
 ]
-timestamp = "2025-04-10 22:09:12"
-dependencies = [
-    "o^libxml2",
-    "o^lzo",
-    "o^nettle",
-    "o^pcre2",
-]
+description = "Multi-format archive and compression library"
 upstream = "https://github.com/libarchive/libarchive.git"
 
+[[dependencies]]
+relpath = "main/libxml2"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "testing/lzo"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/nettle"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/pcre2"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/libarchive/libarchive/releases/download/v3.7.9/libarchive-3.7.9.tar.xz"
-hash = "7YtXMuTNbjD66Qn7lFytj_nLe-XGzao5ROyW5KIAwEw"
