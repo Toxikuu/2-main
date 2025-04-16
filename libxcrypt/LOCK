@@ -1,14 +1,14 @@
 repo = "main"
 name = "libxcrypt"
 version = "4.4.38"
-description = "Modern library for password hashing"
+timestamp = "2025-04-16 16:46:46"
 categories = [
     "core",
     "security",
 ]
-timestamp = "2025-02-25 20:15:48"
+description = "Modern library for password hashing"
 upstream = "https://github.com/besser82/libxcrypt.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz"
-hash = "gDBLnDBup5kyfwHZp1Sb2ygxd4kYJjHxtU9FEbQgbdY"
