@@ -1,14 +1,14 @@
 repo = "main"
 name = "tree"
 version = "2.2.1"
-description = "A cli utility for viewing file trees"
+timestamp = "2025-04-16 16:46:46"
 categories = [
     "utils",
     "cli",
 ]
-timestamp = "2025-03-31 20:32:11"
+description = "A cli utility for viewing file trees"
 upstream = "https://github.com/Old-Man-Programmer/tree"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.2.1.tar.gz"
-hash = "XK3cvKgFEx_1kLEm0yGAGYguTKELyetJC7pRwFubO3U"
