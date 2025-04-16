@@ -1,15 +1,15 @@
 repo = "main"
 name = "bash"
 version = "5.2.37"
-description = "The Bourne-Again Shell"
+timestamp = "2025-04-16 16:46:46"
 categories = [
     "core",
     "shell",
 ]
-timestamp = "2025-04-10 18:05:12"
+description = "The Bourne-Again Shell"
 upstream = "https://ftp.gnu.org/gnu/bash/?C=M;O=D"
 version_command = "curl -s 'https://ftp.gnu.org/gnu/bash/?C=M;O=D' | grep bash- | grep -Ev -- '-beta|-alpha|-rc|diff|doc|\\.sig|patches' | head -n1 | cut -d- -f2 | cut -dt -f1 | sed 's,.$,,'"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz"
-hash = "lZmyLs0dV4etfTt78MWfMSszltHigRdd0fikAU2mIf8"
