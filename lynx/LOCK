@@ -1,16 +1,20 @@
 repo = "main"
 name = "lynx"
 version = "2.9.2"
-description = "TUI web browser"
+timestamp = "2025-04-16 17:12:58"
 categories = [
     "tui",
     "net",
 ]
-timestamp = "2025-04-10 17:38:31"
-dependencies = ["o^gnutls"]
+description = "TUI web browser"
 upstream = "https://invisible-mirror.net/archives/lynx/tarballs/?C=N;O=D"
 version_command = '''curl -s 'https://invisible-mirror.net/archives/lynx/tarballs/?C=N;O=D' | grep 'lynx[0-9].\+.tar.bz2' | grep -v 'rel|dev' | head -n1 | cut -dx -f2 | cut -d. -f1-3'''
 
+[[dependencies]]
+relpath = "main/gnutls"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2"
-hash = "c3S4mTbZkWaeEB9Ol_LJWSA24ejNqnuvwlmnerb7B84"
