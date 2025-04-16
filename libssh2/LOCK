@@ -1,12 +1,12 @@
 repo = "main"
 name = "libssh2"
 version = "1.11.1"
-description = "Client-side SSH2 library"
+timestamp = "2025-04-16 16:47:06"
 categories = ["lib"]
-timestamp = "2025-03-25 15:38:09"
+description = "Client-side SSH2 library"
 upstream = "https://github.com/libssh2/libssh2.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/libssh2/libssh2.git' | sed 's@.*/@@' | grep '^libssh2-' | sort -V | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/libssh2/libssh2/releases/download/libssh2-1.11.1/libssh2-1.11.1.tar.xz"
-hash = "mVTLVMT1SBmKfL660ki9yH3WS9JhhXCKKUsrUHceN2k"
