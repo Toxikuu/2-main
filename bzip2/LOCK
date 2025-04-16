@@ -1,11 +1,11 @@
 repo = "main"
 name = "bzip2"
 version = "1.0.8"
-description = "The bzip2 compression algorithm"
+timestamp = "2025-04-15 23:43:01"
 categories = ["core"]
-timestamp = "2025-02-25 20:14:30"
+description = "The bzip2 compression algorithm"
 upstream = "https://sourceware.org/git/bzip2.git"
 
 [source]
+kind = "Tarball"
 url = "https://www.sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz"
-hash = "q1oDF27hBtPw-pDjgdpHjdrkBZGBU8yiSOaCzQxKImk"
