@@ -1,10 +1,10 @@
 repo = "main"
-name = "alsa-plugins"
+name = "alsa-plugins/"
 version = "1.2.12"
+timestamp = "2025-04-16 17:09:10"
 description = "ALSA plugins"
-timestamp = "2025-02-20 20:19:47"
 upstream = "https://github.com/alsa-project/alsa-plugins.git"
 
 [source]
+kind = "Tarball"
 url = "https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.12.tar.bz2"
-hash = "e9ioPTBOji2GoliV2Nyw7wJFqN8y4nGVnNvcavObZvI"
