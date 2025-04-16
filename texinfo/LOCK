@@ -1,10 +1,10 @@
 repo = "main"
 name = "texinfo"
 version = "7.2"
+timestamp = "2025-04-16 16:48:11"
 description = "Programs for reading, writing, and converting info pages"
-timestamp = "2025-02-25 20:20:19"
 upstream = "https://git.savannah.gnu.org/git/texinfo.git"
 
 [source]
+kind = "Tarball"
 url = "https://ftp.gnu.org/gnu/texinfo/texinfo-7.2.tar.xz"
-hash = "AynXeI--8RP6gsuAiJyhl6NEzg33ZG_gAJdMXXFDY6Y"
