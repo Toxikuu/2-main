@@ -5,7 +5,7 @@ CATG="graphics"
 UPST="https://gitlab.freedesktop.org/vdpau/libvdpau.git"
 VCMD="git ls-remote --tags --refs 'https://gitlab.freedesktop.org/vdpau/libvdpau.git' | sed 's@.*/@@' | sed 's@libvdpau-@@' | sort -V | tail -n1"
 DEPS=(
-    "xorg/@libs"
+    # "xorg/@libs"
 )
 
 SOURCE="https://gitlab.freedesktop.org/vdpau/libvdpau/-/archive/$VERS/libvdpau-$VERS.tar.bz2"
