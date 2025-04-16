@@ -1,10 +1,10 @@
 repo = "main"
 name = "check"
 version = "0.15.2"
+timestamp = "2025-04-16 16:46:46"
 description = "Unit testing framework for C"
-timestamp = "2025-02-20 20:19:48"
 upstream = "https://github.com/libcheck/check.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/libcheck/check/releases/download/0.15.2/check-0.15.2.tar.gz"
-hash = "qN5OC6z7TXbdHGGN7SY1I7U7hdkqFG2INesaUpMvogo"
