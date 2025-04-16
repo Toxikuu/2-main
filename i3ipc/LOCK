@@ -1,19 +1,29 @@
 repo = "main"
 name = "i3ipc"
 version = "2.2.1"
-description = "i3 IPC library"
+timestamp = "2025-04-16 16:37:30"
 categories = [
     "lib",
     "wm",
 ]
-timestamp = "2025-04-10 16:54:43"
-dependencies = [
-    "setuptools",
-    "python",
-    "i3",
-]
+description = "i3 IPC library"
 upstream = "https://github.com/altdesktop/i3ipc-python.git"
 
+[[dependencies]]
+relpath = "main/setuptools"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/python"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/i3"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/altdesktop/i3ipc-python/archive/refs/tags/v2.2.1.tar.gz"
-hash = "VK8YD6xuPhbGV0eISuRHnw3wNMRe0CUj-DAPmMmesp4"
