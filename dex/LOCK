@@ -1,12 +1,16 @@
 repo = "main"
 name = "dex"
 version = "0.10.1"
-description = "Desktop entry execution utility"
+timestamp = "2025-04-16 16:37:31"
 categories = ["utils"]
-timestamp = "2025-04-10 21:35:26"
-dependencies = ["python"]
+description = "Desktop entry execution utility"
 upstream = "https://github.com/jceb/dex.git"
 
+[[dependencies]]
+relpath = "main/python"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/jceb/dex/archive/refs/tags/0.10.1.tar.gz"
-hash = "ZhuWdjscrAYvhyx4wD8VDtV9FOMVcgaBux-x5TYuKdQ"
