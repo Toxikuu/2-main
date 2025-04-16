@@ -1,7 +1,7 @@
 repo = "main"
 name = "libarchive"
 version = "3.7.9"
-timestamp = "2025-04-16 17:11:25"
+timestamp = "2025-04-16 17:11:47"
 categories = [
     "lib",
     "utils",
