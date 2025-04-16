@@ -1,7 +1,7 @@
 repo = "main"
 name = "ncurses"
 version = "6.5"
-timestamp = "2025-04-16 16:46:44"
+timestamp = "2025-04-16 16:47:03"
 categories = ["core"]
 description = "Libraries for terminal-independent character screen handling"
 upstream = "https://invisible-mirror.net/archives/ncurses/?C=M;O=D"
