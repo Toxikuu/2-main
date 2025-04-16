@@ -1,7 +1,7 @@
 repo = "main"
 name = "dhcpcd"
 version = "10.2.2"
-timestamp = "2025-04-16 17:11:45"
+timestamp = "2025-04-16 17:12:29"
 categories = ["net"]
 description = "Fully-featured, lightweight DHCP client"
 upstream = "https://github.com/NetworkConfiguration/dhcpcd.git"
