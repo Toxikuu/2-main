@@ -1,19 +1,29 @@
 repo = "main"
 name = "wgetpaste"
 version = "2.34"
-description = "Automate pasting to a number of pastebin services"
+timestamp = "2025-04-16 16:46:26"
 categories = [
     "cli",
     "utils",
 ]
-timestamp = "2025-03-21 22:14:34"
-dependencies = [
-    "wget",
-    "bash",
-    "sed",
-]
+description = "Automate pasting to a number of pastebin services"
 upstream = "https://github.com/zlin/wgetpaste.git"
 
+[[dependencies]]
+relpath = "main/wget"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/bash"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/sed"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/zlin/wgetpaste/releases/download/2.34/wgetpaste-2.34.tar.xz"
-hash = "vW0G7ZAaPWPJyMVxJghP8JlPCZAb-xY4uHlT6sHpQz8"
