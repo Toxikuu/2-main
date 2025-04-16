@@ -1,7 +1,7 @@
 repo = "main"
 name = "efivar"
 version = "39"
-timestamp = "2025-04-16 17:11:23"
+timestamp = "2025-04-16 17:11:45"
 description = "Tools and libraries for EFI variable manipulation"
 upstream = "https://github.com/rhboot/efivar.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/rhboot/efivar.git' | grep -B1 'refs/tags/4$' | head -n1 | cut -d/ -f3"
