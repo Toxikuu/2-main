@@ -1,7 +1,7 @@
 repo = "main"
 name = "docbook-xsl-nons"
 version = "1.79.2"
-timestamp = "2025-04-16 17:11:23"
+timestamp = "2025-04-16 17:11:45"
 categories = ["doc"]
 description = "DocBook XSL Stylesheets"
 extra = ["https://www.linuxfromscratch.org/patches/blfs/svn/docbook-xsl-nons-1.79.2-stack_fix-1.patch"]
