@@ -1,17 +1,31 @@
 repo = "main"
 name = "libass"
 version = "0.17.3"
-description = "Library for the ASS subtitle format"
+timestamp = "2025-04-16 16:46:25"
 categories = ["lib"]
-timestamp = "2025-03-24 18:16:10"
-dependencies = [
-    "freetype",
-    "fribidi",
-    "fontconfig",
-    "nasm",
-]
+description = "Library for the ASS subtitle format"
 upstream = "https://github.com/libass/libass.git"
 
+[[dependencies]]
+relpath = "main/freetype"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/fribidi"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/fontconfig"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/nasm"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/libass/libass/releases/download/0.17.3/libass-0.17.3.tar.xz"
-hash = "6uQl2lDwAVwh97OpxyYqkQ8CGK9GniLikxRi_tPFCVk"
