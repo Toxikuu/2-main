@@ -1,12 +1,12 @@
 repo = "main"
 name = "sqlite"
 version = "3.49.1"
-description = "Self-contained, serverless, zero-configuration, transactional SQL database engine"
+timestamp = "2025-04-16 16:48:11"
 categories = ["db"]
-timestamp = "2025-03-18 00:00:56"
+description = "Self-contained, serverless, zero-configuration, transactional SQL database engine"
 upstream = "https://github.com/sqlite/sqlite.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/sqlite/sqlite.git' | sed 's@.*/@@' | grep 'version-' | sort -V | tail -n1 | cut -d- -f2"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/sqlite/sqlite/archive/refs/tags/version-3.49.1.tar.gz"
-hash = "vArpLH9xWMYGA3hYLstq6QAaHC6whxnhLgiUDuB2zbg"
