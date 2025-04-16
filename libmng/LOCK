@@ -1,7 +1,7 @@
 repo = "main"
 name = "libmng"
 version = "2.0.3"
-timestamp = "2025-04-16 17:11:47"
+timestamp = "2025-04-16 17:12:26"
 categories = ["lib"]
 description = "MNG/JNG reference library"
 
