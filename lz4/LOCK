@@ -1,11 +1,11 @@
 repo = "main"
 name = "lz4"
 version = "1.10.0"
-description = "The lz4 compression algorithm."
+timestamp = "2025-04-16 17:12:57"
 categories = ["core"]
-timestamp = "2025-03-06 22:49:16"
+description = "The lz4 compression algorithm."
 upstream = "https://github.com/lz4/lz4.git"
 
 [source]
+kind = "Tarball"
 url = "https://github.com/lz4/lz4/releases/download/v1.10.0/lz4-1.10.0.tar.gz"
-hash = "U3USkEdEs14jKRIFXM-Oxm12hjn_Or5XiNkNeS7F9Is"
