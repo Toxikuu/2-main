@@ -1,7 +1,11 @@
 repo = "main"
 name = "less"
 version = "675"
-timestamp = "2025-04-15 23:40:24"
+timestamp = "2025-04-15 23:41:00"
+categories = [
+    "tui",
+    "utils",
+]
 description = "Text pager"
 upstream = "https://github.com/gwsw/less.git"
 
