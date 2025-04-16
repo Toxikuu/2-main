@@ -1,20 +1,30 @@
 repo = "main"
 name = "wpa_supplicant"
 version = "2.11"
-description = "Utility providing key negotiation for WPA wireless networks"
+timestamp = "2025-04-16 16:37:31"
 categories = [
     "utils",
     "net",
 ]
-timestamp = "2025-04-08 15:37:06"
-dependencies = [
-    "libnl",
-    "o^libxml2",
-    "o^dbus",
-]
+description = "Utility providing key negotiation for WPA wireless networks"
 upstream = "git://w1.fi/hostap.git"
 version_command = "git ls-remote --tags --refs 'git://w1.fi/hostap.git' | sed -e 's@.*/@@' -e 's,_,.,g' | cut -d. -f2- | grep -v '[a-Z]' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/libnl"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libxml2"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/dbus"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://w1.fi/releases/wpa_supplicant-2.11.tar.gz"
-hash = "kS6gb3TjCo42-7aAZNbN_yGNjVkdsPxddd7myBrH_Ao"
