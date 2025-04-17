@@ -1,17 +1,17 @@
 repo = "main"
 name = "llvm"
-version = "20.1.2"
-timestamp = "2025-04-16 17:12:57"
+version = "20.1.3"
+timestamp = "2025-04-16 19:40:08"
 description = "A collection of modular and reusable compiler and toolchain technologies"
 extra = [
-    "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/cmake-20.1.2.src.tar.xz",
-    "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/third-party-20.1.2.src.tar.xz",
-    "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/clang-20.1.2.src.tar.xz",
-    "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/compiler-rt-20.1.2.src.tar.xz",
+    "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.3/cmake-20.1.3.src.tar.xz",
+    "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.3/third-party-20.1.3.src.tar.xz",
+    "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.3/clang-20.1.3.src.tar.xz",
+    "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.3/compiler-rt-20.1.3.src.tar.xz",
 ]
 upstream = "https://github.com/llvm/llvm-project.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/llvm/llvm-project.git' | cut -d- -f2- | grep -v [a-Z] | sort -V | tail -n1"
 
 [source]
 kind = "Tarball"
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/llvm-20.1.2.src.tar.xz"
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.3/llvm-20.1.3.src.tar.xz"
