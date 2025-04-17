@@ -1,7 +1,7 @@
 repo = "main"
 name = "less"
-version = "675"
-timestamp = "2025-04-16 17:12:56"
+version = "676"
+timestamp = "2025-04-16 19:39:42"
 categories = [
     "tui",
     "utils",
@@ -11,4 +11,4 @@ upstream = "https://github.com/gwsw/less.git"
 
 [source]
 kind = "Tarball"
-url = "https://github.com/gwsw/less/archive/refs/tags/v675.tar.gz"
+url = "https://github.com/gwsw/less/archive/refs/tags/v676.tar.gz"
