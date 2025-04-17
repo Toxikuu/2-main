@@ -1,7 +1,7 @@
 repo = "main"
 name = "libclc"
-version = "20.1.2"
-timestamp = "2025-04-16 17:12:59"
+version = "20.1.3"
+timestamp = "2025-04-16 19:40:20"
 categories = ["dev"]
 description = "Library requirements of the OpenCL C programming language"
 upstream = "https://github.com/llvm/llvm-project.git"
@@ -19,4 +19,4 @@ runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.2/libclc-20.1.2.src.tar.xz"
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.3/libclc-20.1.3.src.tar.xz"
