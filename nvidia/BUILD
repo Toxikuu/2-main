@@ -1,5 +1,5 @@
 NAME="nvidia"
-VERS="570.133.07"
+VERS="575.51.02"
 DESC="The NVIDIA drivers"
 CATG="drivers graphics"
 UPST="https://github.com/NVIDIA/open-gpu-kernel-modules.git"  # often inaccurate because nvidia
