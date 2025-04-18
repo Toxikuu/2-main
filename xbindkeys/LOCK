@@ -1,13 +1,18 @@
 repo = "main"
 name = "xbindkeys"
 version = "1.8.7"
-timestamp = "2025-04-17 23:08:46"
+timestamp = "2025-04-17 23:16:33"
 categories = ["utils"]
 description = "Launch shell commands with your keyboard or your mouse under X"
 upstream = "https://git.savannah.gnu.org/cgit/xbindkeys.git"
 
 [[dependencies]]
 relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "testing/guile"
 optional = false
 runtime = false
 
