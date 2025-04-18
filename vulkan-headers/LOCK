@@ -1,7 +1,7 @@
 repo = "main"
 name = "vulkan-headers"
-version = "1.4.312"
-timestamp = "2025-04-16 17:12:58"
+version = "1.4.313"
+timestamp = "2025-04-18 12:51:54"
 description = "Header files needed to build and link applications against the Vulkan API"
 upstream = "https://github.com/KhronosGroup/Vulkan-Headers.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/KhronosGroup/Vulkan-Headers.git' | sed 's@.*/@@' | grep -E '^v[0-9]' | tail -n1"
@@ -13,4 +13,4 @@ runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.312/Vulkan-Headers-1.4.312.tar.gz"
+url = "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.313/Vulkan-Headers-1.4.313.tar.gz"
