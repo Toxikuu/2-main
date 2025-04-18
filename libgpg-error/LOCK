@@ -1,10 +1,10 @@
 repo = "main"
 name = "libgpg-error"
-version = "1.53"
-timestamp = "2025-04-16 17:12:57"
+version = "1.54"
+timestamp = "2025-04-17 19:47:58"
 description = "Library defining common error values for GPG components"
 upstream = "https://github.com/gpg/libgpg-error.git"
 
 [source]
 kind = "Tarball"
-url = "https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.53.tar.gz"
+url = "https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.54.tar.gz"
