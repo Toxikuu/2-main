@@ -5,6 +5,7 @@ CATG="utils"
 UPST="https://git.savannah.gnu.org/cgit/xbindkeys.git"
 DEPS=(
     "libx11"
+    "guile"
 )
 
 SOURCE="http://git.savannah.gnu.org/cgit/$NAME.git/snapshot/$NAME-$VERS.tar.gz"
