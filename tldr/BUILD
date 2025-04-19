@@ -18,9 +18,9 @@ cbr
 
 install -vDm755 target/release/tldr "$D/usr/bin/tldr"
 
-install -vDm644 completions/bash_tealdeer "$D/usr/share/bash-completion/completions/tldr"
-install -vDm644 completions/fish_tealdeer "$D/usr/share/fish/vendor_completions.d/tldr.fish"
-install -vDm644 completions/zsh_tealdeer  "$D/usr/share/zsh/site-functions/_tldr"
+install -vDm644 completion/bash_tealdeer "$D/usr/share/bash-completion/completions/tldr"
+install -vDm644 completion/fish_tealdeer "$D/usr/share/fish/vendor_completions.d/tldr.fish"
+install -vDm644 completion/zsh_tealdeer  "$D/usr/share/zsh/site-functions/_tldr"
 
 # Set up global configuration and cache dirs
 mkdir -pv "$D/etc/profile.d"
@@ -35,4 +35,4 @@ tldr --show-paths
 tldr --update
 
 }
-#d Added completions and a config
+#d fix a build failure
