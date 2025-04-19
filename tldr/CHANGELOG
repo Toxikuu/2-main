@@ -22,3 +22,4 @@ nothing to commit, working tree clean] [2025-04-06 08:23:40] | Added alias main/
 [a5ff124be8629568d9856e9b7708c8114066e10f] [2025-04-16 21:48:39] | Generated tldr=1.7.2
 [aadbc4667250a1ebc24d4a2f7f4b38a6fe6bc063] [2025-04-16 22:12:28] | Generated tldr=1.7.2
 [fc8152747469bdf7fb86b70d1fb9b7d8453e6b55] [2025-04-16 22:12:54] | Generated tldr=1.7.2
+[38fa403c6a15e752a10ab16582a6621c2860a211] [2025-04-19 02:14:57] | Revised tldr: fix a build failure
