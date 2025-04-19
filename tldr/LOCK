@@ -1,7 +1,7 @@
 repo = "main"
 name = "tldr"
 version = "1.7.2"
-timestamp = "2025-04-16 17:12:54"
+timestamp = "2025-04-18 21:14:57"
 categories = [
     "cli",
     "util",
@@ -10,7 +10,7 @@ description = "A very fast implementation of tldr in Rust"
 upstream = "https://github.com/tealdeer-rs/tealdeer.git"
 
 [[dependencies]]
-relpath = "tox/rust"
+relpath = "main/rust"
 optional = false
 runtime = false
 
