@@ -2,7 +2,7 @@ NAME="binutils"
 VERS="2.44"
 CATG="critical core"
 DESC="Programs for working with binary and object files"
-UPST="https://sourceware.org/git/binutils-gdb.git"
+UPST="https://github.com/bminor/binutils-gdb.git" # using a mirror because gnu's uptime is miserable
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -E '^binutils-[0-9]+_+' | grep -Ev 'release|branchpoint' | sed 's@_@.@g' | tail -n1"
 
 SOURCE="https://sourceware.org/pub/binutils/releases/binutils-$VERS.tar.xz"
@@ -37,3 +37,4 @@ mi tooldir=/usr
 rm -vf "$D"/usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a
 
 }
+#d updated upst
