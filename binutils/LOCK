@@ -1,14 +1,14 @@
 repo = "main"
 name = "binutils"
 version = "2.44"
-timestamp = "2025-04-16 17:12:56"
+timestamp = "2025-04-21 13:47:16"
 categories = [
     "critical",
     "core",
 ]
 description = "Programs for working with binary and object files"
-upstream = "https://sourceware.org/git/binutils-gdb.git"
-version_command = "git ls-remote --tags --refs 'https://sourceware.org/git/binutils-gdb.git' | sed 's@.*/@@' | grep -E '^binutils-[0-9]+_+' | grep -Ev 'release|branchpoint' | sed 's@_@.@g' | tail -n1"
+upstream = "https://github.com/bminor/binutils-gdb.git"
+version_command = "git ls-remote --tags --refs 'https://github.com/bminor/binutils-gdb.git' | sed 's@.*/@@' | grep -E '^binutils-[0-9]+_+' | grep -Ev 'release|branchpoint' | sed 's@_@.@g' | tail -n1"
 
 [source]
 kind = "Tarball"
