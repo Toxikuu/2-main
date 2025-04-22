@@ -1,7 +1,7 @@
 repo = "main"
 name = "tmux"
-version = "f0a85d04695bcdc84d6dfbf5f9d3f9757a148365"
-timestamp = "2025-04-16 17:12:55"
+version = "b4f8340f16fc6e0108f9af5ef7d4ee093eac8a8c"
+timestamp = "2025-04-22 17:53:53"
 categories = ["tui"]
 description = "Terminal multiplexer"
 upstream = "https://github.com/tmux/tmux.git"
@@ -18,4 +18,4 @@ runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://github.com/tmux/tmux/archive/f0a85d04695bcdc84d6dfbf5f9d3f9757a148365.tar.gz"
+url = "https://github.com/tmux/tmux/archive/b4f8340f16fc6e0108f9af5ef7d4ee093eac8a8c.tar.gz"
