@@ -1,7 +1,7 @@
 repo = "main"
 name = "man-db"
 version = "2.13.0"
-timestamp = "2025-04-16 17:12:57"
+timestamp = "2025-04-22 17:52:52"
 categories = [
     "doc",
     "utils",
@@ -9,6 +9,7 @@ categories = [
 ]
 description = "Utility for reading man pages"
 upstream = "https://gitlab.com/man-db/man-db.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.com/man-db/man-db.git' | sed 's@.*/@@' | grep -v 'pre' | sort -V | tail -n1"
 
 [source]
 kind = "Tarball"
