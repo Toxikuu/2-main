@@ -1,5 +1,5 @@
 NAME="gpu-screen-recorder"
-VERS="5.3.8"
+VERS="5.4.0"
 DESC="Fastest screen recorder for Linux"
 CATG="rec cli"
 UPST="https://repo.dec05eba.com/gpu-screen-recorder"
