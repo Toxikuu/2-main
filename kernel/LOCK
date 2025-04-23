@@ -1,14 +1,14 @@
 repo = "main"
 name = "kernel"
 version = "6.13.11"
-timestamp = "2025-04-16 17:12:52"
+timestamp = "2025-04-23 05:03:14"
 categories = [
     "critical",
     "core",
 ]
 description = "The Linux kernel"
 upstream = "https://kernel.org"
-version_command = "curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
+version_command = "no"
 
 [source]
 kind = "Tarball"
