@@ -1,11 +1,11 @@
 repo = "main"
 name = "bzip2"
 version = "66c46b8c9436613fd81bc5d03f63a61933a4dcc3"
-timestamp = "2025-04-23 05:09:23"
+timestamp = "2025-04-23 05:12:08"
 categories = ["core"]
 description = "The bzip2 compression algorithm"
 upstream = "https://gitlab.com/bzip2/bzip2.git"
 
 [source]
 kind = "Tarball"
-url = "https://gitlab.com/bzip2/bzip2/-/archive/66c46b8c9436613fd81bc5d03f63a61933a4dcc3/bzip2-66c46b8c9436613fd81bc5d03f63a61933a4dcc3.tar.bz2"
+url = "https://gitlab.com/bzip2/bzip2/-/archive/bzip2-66c46b8c9436613fd81bc5d03f63a61933a4dcc3/bzip2-bzip2-66c46b8c9436613fd81bc5d03f63a61933a4dcc3.tar.gz"
