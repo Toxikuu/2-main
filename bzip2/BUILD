@@ -1,10 +1,10 @@
 NAME="bzip2"
-VERS="1.0.8"
+VERS="66c46b8c9436613fd81bc5d03f63a61933a4dcc3"
 CATG="core"
 DESC="The bzip2 compression algorithm"
 UPST="https://gitlab.com/bzip2/bzip2.git"
 
-SOURCE="https://www.sourceware.org/pub/bzip2/bzip2-$VERS.tar.gz"
+SOURCE="https://gitlab.com/$NAME/$NAME/-/archive/$VERS/$NAME-$VERS.tar.bz2"
 EXTRA=()
 
 2b() {
@@ -40,4 +40,3 @@ ln -sf libbz2.so.$VERS "$D"/usr/lib32/libbz2.so.1.0
 install -vDm644 libbz2.a "$D"/usr/lib32/libbz2.a
 
 }
-#d change $UPST to not use sourceware (on account of abysmal uptime)
