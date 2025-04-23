@@ -4,7 +4,7 @@ CATG="core"
 DESC="The bzip2 compression algorithm"
 UPST="https://gitlab.com/bzip2/bzip2.git"
 
-SOURCE="https://gitlab.com/$NAME/$NAME/-/archive/$VERS/$NAME-$VERS.tar.bz2"
+SOURCE="https://gitlab.com/$NAME/$NAME/-/archive/$NAME-$VERS/$NAME-$NAME-$VERS.tar.gz"
 EXTRA=()
 
 2b() {
