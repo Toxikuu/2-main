@@ -13,13 +13,6 @@ cfg
 mk
 mi
 
-mk distclean
-m32=1
-
-cfg
-mk
-mi
-
-rm -vf "$D"/usr/lib{,32}/libltdl.a
+rm -vf "$D"/usr/lib/libltdl.a
 
 }
