@@ -42,29 +42,6 @@ mk -C "$PWD/localedata" objdir="$PWD/build" \
   DESTDIR="$D" install-locale-files
 popd
 
-rm -rf ./*
-find .. -name "*.a" -delete
-
-m32=1
-# remove frame pointer flags due to nvidia driver + steam crashes
-# https://gitlab.archlinux.org/archlinux/packaging/packages/glibc/-/issues/10
-CC="gcc -m32 -mstackrealign"  \
-CXX="g++ -m32 -mstackrealign" \
-CP=.. cfg                                \
-      --host=i686-pc-linux-gnu           \
-      --build=$(../scripts/config.guess) \
-      --enable-kernel=6.11               \
-      --disable-nscd                     \
-      --libdir=/usr/lib32                \
-      --libexecdir=/usr/lib32            \
-      libc_cv_slibdir=/usr/lib32
-
-mk
-mi
-
-install -vm644 "$BLD"/32DEST/usr/include/gnu/{lib-names,stubs}-32.h \
-               "$D"/usr/include/gnu/
-
 mkdir -pv "$D"/etc
 for FILE in nsswitch.conf ld.so.conf; do
   cp -vf "$PORT/$FILE" "$D/etc/$FILE"
