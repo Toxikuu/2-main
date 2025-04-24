@@ -9,9 +9,6 @@ EXTRA=()
 
 2b() {
 
-sed -e '/^structured/s/xmlError \*/typeof(xmlCtxtGetLastError(NULL)) /' \
-    -i gettext-tools/src/its.c
-
 _cfg_opts=(
     --disable-c++
     --disable-csharp
