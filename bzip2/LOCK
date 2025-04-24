@@ -1,7 +1,7 @@
 repo = "main"
 name = "bzip2"
 version = "1.0.8"
-timestamp = "2025-04-23 05:12:30"
+timestamp = "2025-04-23 22:23:31"
 categories = ["core"]
 description = "The bzip2 compression algorithm"
 upstream = "https://gitlab.com/bzip2/bzip2.git"
