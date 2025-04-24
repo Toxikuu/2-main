@@ -14,11 +14,4 @@ cfg
 mk
 mi
 
-mk distclean
-m32=1
-
-cfg
-mk
-mi
-
 }
