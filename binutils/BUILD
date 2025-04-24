@@ -21,15 +21,14 @@ CP=.. cfg \
     --disable-werror        \
     --enable-64-bit-bfd     \
     --with-system-zlib      \
-    --enable-multilib       \
     --enable-default-hash-style=gnu
 
 mk tooldir=/usr
 
 make -k check || true
-NUMFAILED=$(grep '^FAIL:' $(find -name '*.log') | wc -l)
+NUMFAILED="$(grep -c '^FAIL:' "$(find . -name '*.log')")"
 
-if [ NUMFAILED -gt 12 ]; then
+if [ "$NUMFAILED" -gt 12 ]; then
     die "$NUMFAILED tests failed (<= 12 is acceptable)"
 fi
 
@@ -37,4 +36,3 @@ mi tooldir=/usr
 rm -vf "$D"/usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a
 
 }
-#d updated upst
