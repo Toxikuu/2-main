@@ -13,11 +13,4 @@ cfg --sysconfdir=/etc
 mk
 mi
 
-mk distclean
-m32=1
-
-cfg --sysconfdir=/etc
-mk
-mi
-
 }
