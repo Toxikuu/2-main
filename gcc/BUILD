@@ -42,7 +42,15 @@ mkdir -pv "$D"/usr/lib/bfd-plugins
 ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/$VERS/liblto_plugin.so \
         "$D"/usr/lib/bfd-plugins/
 
-echo 'int main(){}' | "$D/usr/bin/cc" -x c - -v -Wl,--verbose &> dummy.log
+mkdir -pv "$D"/usr/share/gdb/auto-load/usr/lib
+mv -vf "$D"/usr/lib/*gdb.py "$D"/usr/share/gdb/auto-load/usr/lib
+
+}
+
+2postinstall() {
+
+echo "Running some sanity checks..." >&2
+echo 'int main(){}' | cc -x c - -v -Wl,--verbose &> dummy.log
 readelf -l a.out | grep ': /lib'
 
 grep -E -o '/usr/lib.*/S?crt[1in].*succeeded' dummy.log | grep succeeded || die "GCC sanity check failure!"
@@ -55,8 +63,5 @@ grep "/lib.*/libc.so.6 " dummy.log | grep succeeded || die "GCC sanity check fai
 grep found dummy.log | grep found || die "GCC sanity check failure!"
 
 rm -vf a.out dummy.log
-
-mkdir -pv "$D"/usr/share/gdb/auto-load/usr/lib
-mv -vf "$D"/usr/lib/*gdb.py "$D"/usr/share/gdb/auto-load/usr/lib
 
 }
