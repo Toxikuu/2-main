@@ -11,27 +11,18 @@ EXTRA=()
 2b() {
 
 _cfg_opts=(
-    --openssldir=/etc/ssl
     --prefix=/usr
+    --openssldir=/etc/ssl
+    --libdir=lib
     shared
     zlib-dynamic
 )
 
-./config "${_cfg_opts[@]}" \
-          --libdir=lib
+./config ${_cfg_opts[@]}
 mk
 
 sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
 mi MANSUFFIX=ssl
-
-mk distclean
-m32=1
-
-./config "${_cfg_opts[@]}" \
-          --libdir=lib32   \
-          linux-x86
-mk
-mi
 
 # this is a fucking stupid solution but i cant get openssl to cooperate LOL
 pushd "$D"/usr/lib
