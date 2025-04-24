@@ -13,11 +13,4 @@ cfg --disable-rpath
 mk
 mi
 
-mk distclean
-m32=1
-
-CC="gcc -m32" cfg --disable-doc --disable-rpath
-mk
-mi
-
 }
