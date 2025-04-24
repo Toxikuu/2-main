@@ -24,30 +24,4 @@ fi
 mi
 mk DESTDIR="$D" install-html
 
-mk distclean
-
-cp -v configfsf.guess config.guess
-cp -v configfsf.sub   config.sub
-
-m32=1
-CFLAGS="-m32 -O2 -pedantic -fomit-frame-pointer -mtune=generic -march=i686" \
-CXXFLAGS="${CFLAGS}" ABI="32" \
-cfg --enable-cxx \
-    --includedir=/usr/include/m32/gmp
-
-sed -i 's/$(exec_prefix)\/include/$\(includedir\)/' Makefile
-mk
-
-make check 2>&1 | tee gmp-check-log
-NUMPASSED=$(awk '/# PASS:/{total+=$3} ; END{print total}' gmp-check-log)
-
-if [ $NUMPASSED -lt 197 ]; then
-    echo "Only $NUMPASSED gmp tests passed (>= 197 needed)!"
-fi
-
-mkdir -pv "$D/usr/include/m32"
-
-mi
-cp -av "$BLD/32DEST/usr/include/m32" "$D/usr/include/m32"
-
 }
