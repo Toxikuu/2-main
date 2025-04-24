@@ -21,13 +21,4 @@ _mk_opts=(
 mk "${_mk_opts[@]}"
 mi lib=lib "${_mk_opts[@]}"
 
-make distclean || true # flaky
-m32=1
-
-mk CC="gcc -m32 -march=i686" "${_mk_opts[@]}"
-mi CC="gcc -m32 -march=i686" "${_mk_opts[@]}" lib=lib32
-
-sed -e "s@^libdir=.*@libdir=/usr/lib32@" -i "$D"/usr/lib32/pkgconfig/lib{cap,psx}.pc
-chmod -v 755 "$D"/usr/lib32/libcap.so.$VERS
-
 }
