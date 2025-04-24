@@ -13,11 +13,4 @@ cfg --enable-libgdbm-compat
 mk
 mi
 
-mk distclean
-
-m32=1
-cfg --enable-libgdbm-compat
-mk
-mi
-
 }
