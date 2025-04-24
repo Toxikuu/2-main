@@ -1,7 +1,7 @@
 repo = "main"
 name = "make"
 version = "4.4.1"
-timestamp = "2025-04-16 17:12:57"
+timestamp = "2025-04-23 22:42:27"
 categories = ["core"]
 description = "Program for generating executables and other files from source code"
 upstream = "https://git.savannah.gnu.org/git/make.git"
