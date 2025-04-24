@@ -26,9 +26,9 @@ CP=.. cfg \
     --enable-default-pie        \
     --enable-default-ssp        \
     --enable-host-pie           \
+    --disable-multilib          \
     --disable-bootstrap         \
     --disable-fixincludes       \
-    --disable-multilib          \
     --with-system-zlib
 mk
 mi
@@ -59,3 +59,4 @@ mkdir -pv "$D"/usr/share/gdb/auto-load/usr/lib
 mv -vf "$D"/usr/lib/*gdb.py "$D"/usr/share/gdb/auto-load/usr/lib
 
 }
+#d hopefully fix a build failure
