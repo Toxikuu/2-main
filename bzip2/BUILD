@@ -28,15 +28,4 @@ done
 
 rm -fv "$D"/usr/lib/libbz2.a
 
-mk clean
-sed -e "s/^CC=.*/CC=gcc -m32/" -i Makefile{,-libbz2_so}
-mk -f Makefile-libbz2_so
-mk libbz2.a
-
-install -vDm755 libbz2.so.$VERS "$D"/usr/lib32/libbz2.so.$VERS
-ln -sf libbz2.so.$VERS "$D"/usr/lib32/libbz2.so
-ln -sf libbz2.so.$VERS "$D"/usr/lib32/libbz2.so.1
-ln -sf libbz2.so.$VERS "$D"/usr/lib32/libbz2.so.1.0
-install -vDm644 libbz2.a "$D"/usr/lib32/libbz2.a
-
 }
