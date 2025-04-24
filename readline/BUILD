@@ -18,11 +18,4 @@ cfg --with-curses
 mk SHLIB_LIBS="-lncursesw"
 mi SHLIB_LIBS="-lncursesw"
 
-mk distclean
-m32=1
-
-cfg --with-curses
-mk SHLIB_LIBS="-lncursesw"
-mi SHLIB_LIBS="-lncursesw"
-
 }
