@@ -1,5 +1,5 @@
 NAME="fuse3"
-VERS="3.17.1"
+VERS="3.17.2"
 DESC="Filesystem in userspace"
 CATG="lib"
 UPST="https://github.com/libfuse/libfuse.git"
