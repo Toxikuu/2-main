@@ -21,3 +21,4 @@
 [ad3b7f0b2daf5c16bb9789816ff520e00050fe9f] [2025-04-17 00:39:58] | Updated mesa: 25.0.3 -> 25.0.4
 [6ab1d3444b4259a4c2ed61a423e7e3f346b1a28a] [2025-04-17 00:39:58] | Generated mesa=25.0.4
 [6b69e7a8e08b57766dbfedd79568cdf152fe0c8c] [2025-04-24 22:36:50] | Revised mesa: stop building osmesa, following https://github.com/glfs-book/glfs/issues/211
+[481c7dcd235d5ce5819f061fa0b45758b3f33945] [2025-04-24 22:36:50] | Generated mesa=25.0.4
