@@ -14,14 +14,6 @@ cfg
 mk
 mi
 
-make distclean
-m32=1
-
-CFLAGS+=" -m32" CXXFLAGS+=" -m32" \
-./configure --prefix=/usr --libdir=/usr/lib32 # doesnt recognize --host=i686-pc-linux-gnu => no abstraction :(
-mk
-mi
-
 rm -vf D/usr/lib{,32}/libz.a
 
 }
