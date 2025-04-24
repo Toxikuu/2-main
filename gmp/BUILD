@@ -12,7 +12,6 @@ EXTRA=()
 
 cfg --enable-cxx --host=none-linux-gnu
 mk
-mk html
 
 make check 2>&1 | tee gmp-check-log
 NUMPASSED=$(awk '/# PASS:/{total+=$3} ; END{print total}' gmp-check-log)
@@ -22,6 +21,5 @@ if [ $NUMPASSED -lt 199 ]; then
 fi
 
 mi
-mk DESTDIR="$D" install-html
 
 }
