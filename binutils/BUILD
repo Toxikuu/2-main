@@ -14,19 +14,19 @@ cd       build
 
 CP=.. cfg \
     --sysconfdir=/etc       \
-    --enable-gold           \
     --enable-ld=default     \
     --enable-plugins        \
     --enable-shared         \
     --disable-werror        \
     --enable-64-bit-bfd     \
+    --enable-new-dtags      \
     --with-system-zlib      \
     --enable-default-hash-style=gnu
 
 mk tooldir=/usr
 
 make -k check || true
-NUMFAILED="$(grep -c '^FAIL:' "$(find . -name '*.log')")"
+NUMFAILED=$(grep '^FAIL:' $(find -name '*.log') | wc -l)
 
 if [ "$NUMFAILED" -gt 12 ]; then
     die "$NUMFAILED tests failed (<= 12 is acceptable)"
