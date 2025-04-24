@@ -12,15 +12,4 @@ EXTRA=()
 mk prefix=/usr
 mi prefix=/usr
 
-mkdir -pv "$D"/usr/lib32
-mk clean
-m32=1
-
-CC="gcc -m32" mk prefix=/usr
-mi prefix=/usr
-
-sed -e "/^libdir/s/lib$/lib32/" -i "$D"/usr/lib32/pkgconfig/libzstd.pc
-rm -vf "$D"/usr/lib{,32}/libzstd.a
-
 }
-#d testing 32DEST/usr/lib fallback
