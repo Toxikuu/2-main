@@ -1,7 +1,7 @@
 repo = "main"
 name = "grep"
 version = "3.12"
-timestamp = "2025-04-16 17:12:55"
+timestamp = "2025-04-23 22:39:34"
 categories = ["core"]
 description = "String search utility"
 upstream = "https://git.savannah.gnu.org/git/grep.git"
