@@ -22,7 +22,7 @@ EXTRA=()
 with meson ninja rust
 
 _cfg_opts=(
-    -D osmesa=true
+    -D osmesa=false
     -D platforms=x11,wayland
     -D gallium-drivers=auto
     -D vulkan-drivers=auto
@@ -53,3 +53,4 @@ ni
 }
 
 }
+#d stop building osmesa, following https://github.com/glfs-book/glfs/issues/211
