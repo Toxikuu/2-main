@@ -17,18 +17,4 @@ cfg \
 mk
 mi
 
-m32=1
-
-cfg \
-    --enable-hashes=strong,glibc \
-    --enable-obsolete-api=glibc  \
-    --disable-failure-tokens
-
-mk
-mkdir -pv "$D"/usr/lib32/pkgconfig
-cp -av .libs/libcrypt.so* "$D"/usr/lib32
-
-mk install-pkgconfigDATA
-ln -sfv libxcrypt.pc "$D"/usr/lib32/pkgconfig/libcrypt.pc
-
 }
