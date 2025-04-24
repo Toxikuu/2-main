@@ -35,7 +35,8 @@ mi
 
 # historical symlink is skipped (fuck fhs ong)
 # ln -svr /usr/bin/cpp /usr/lib
-ln -sv gcc.1 "$D"/usr/share/man/man1/cc.1
+ln -sfv gcc "$D"/usr/bin/cc
+ln -sfv gcc.1 "$D"/usr/share/man/man1/cc.1
 
 mkdir -pv "$D"/usr/lib/bfd-plugins
 ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/$VERS/liblto_plugin.so \
@@ -59,4 +60,3 @@ mkdir -pv "$D"/usr/share/gdb/auto-load/usr/lib
 mv -vf "$D"/usr/lib/*gdb.py "$D"/usr/share/gdb/auto-load/usr/lib
 
 }
-#d hopefully fix a build failure
