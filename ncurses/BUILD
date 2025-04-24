@@ -32,31 +32,4 @@ done
 
 ln -sfv libncursesw.so "$D"/usr/lib/libcurses.so
 
-mk distclean
-m32=1
-
-cfg \
-    --mandir=/usr/share/man \
-    --with-shared           \
-    --without-debug         \
-    --without-normal        \
-    --with-cxx-shared       \
-    --enable-pc-files       \
-    --with-pkg-config-libdir=/usr/lib32/pkgconfig
-
-mk
-mi
-
-mkdir -pv {32DEST,D}/usr/lib32/pkgconfig
-for lib in ncurses form panel menu ; do
-    rm -vf                    32DEST/usr/lib32/lib${lib}.so
-    echo "INPUT(-l${lib}w)" > 32DEST/usr/lib32/lib${lib}.so
-    ln -svf ${lib}w.pc        32DEST/usr/lib32/pkgconfig/$lib.pc
-done
-
-rm -vf                     32DEST/usr/lib32/libcursesw.so
-echo "INPUT(-lncursesw)" > 32DEST/usr/lib32/libcursesw.so
-ln -sfv libncurses.so      32DEST/usr/lib32/libcurses.so
-cp -Rv 32DEST/usr/lib32/* "$D"/usr/lib32
-
 }
