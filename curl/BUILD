@@ -13,6 +13,7 @@ cd        build
 
 _cfg_opts=(
     --with-openssl
+    --with-libssh2
     --with-ca-path=/etc/ssl/certs
 )
 
@@ -28,12 +29,5 @@ find docs \( -name Makefile\* -o  \
              -name CMakeLists.txt \) -delete &&
 
 cp -av docs -T /usr/share/doc/curl-$VERS
-
-rm -rf *
-
-m32=1
-CP=.. cfg "${_cfg_opts[@]}"
-mk
-mi
 
 }
