@@ -1,7 +1,7 @@
 repo = "main"
 name = "nvim"
-version = "0.11.0"
-timestamp = "2025-04-16 17:12:57"
+version = "0.11.1"
+timestamp = "2025-04-26 12:13:17"
 description = "Continuation and extension of Vim"
 upstream = "https://github.com/neovim/neovim.git"
 
@@ -32,4 +32,4 @@ runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://github.com/neovim/neovim/archive/refs/tags/v0.11.0.tar.gz"
+url = "https://github.com/neovim/neovim/archive/refs/tags/v0.11.1.tar.gz"
