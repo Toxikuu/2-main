@@ -1,5 +1,5 @@
 NAME="libuv"
-VERS="1.50.0"
+VERS="1.51.0"
 DESC="Multi-platform support library focusing on asyncio"
 CATG="lib"
 UPST="https://github.com/libuv/libuv.git"
