@@ -1,7 +1,7 @@
 repo = "main"
 name = "appstream"
-version = "1.0.4"
-timestamp = "2025-04-16 17:12:52"
+version = "1.0.5"
+timestamp = "2025-04-26 12:14:09"
 categories = ["lib"]
 description = "Tools and libraries to work with AppStream metadata"
 upstream = "https://github.com/ximion/appstream.git"
@@ -38,4 +38,4 @@ runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.4.tar.xz"
+url = "https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.5.tar.xz"
