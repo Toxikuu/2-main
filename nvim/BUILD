@@ -1,5 +1,5 @@
 NAME="nvim"
-VERS="0.11.0"
+VERS="0.11.1"
 DESC="Continuation and extension of Vim"
 UPST="https://github.com/neovim/neovim.git"
 DEPS=(
@@ -26,4 +26,3 @@ nj
 ni
 
 }
-#d Add dependencies
