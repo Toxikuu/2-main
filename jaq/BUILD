@@ -1,5 +1,5 @@
 NAME="jaq"
-VERS="2.1.1"
+VERS="2.2.0"
 DESC="A jq clone focussed on correctness, speed, and simplicity"
 UPST="https://github.com/01mf02/jaq.git"
 
