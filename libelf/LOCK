@@ -1,7 +1,7 @@
 repo = "main"
 name = "libelf"
-version = "0.192"
-timestamp = "2025-04-16 17:12:52"
+version = "0.193"
+timestamp = "2025-04-26 12:14:01"
 categories = ["core"]
 description = "Library for handling ELF files"
 upstream = "https://sourceware.org/git/elfutils.git"
@@ -9,4 +9,4 @@ version_command = "git ls-remote --tags 'https://sourceware.org/git/elfutils.git
 
 [source]
 kind = "Tarball"
-url = "https://sourceware.org/ftp/elfutils/0.192/elfutils-0.192.tar.bz2"
+url = "https://sourceware.org/ftp/elfutils/0.193/elfutils-0.193.tar.bz2"
