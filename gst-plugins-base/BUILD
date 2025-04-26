@@ -1,5 +1,5 @@
 NAME="gst-plugins-base"
-VERS="1.26.0"
+VERS="1.26.1"
 DESC="Base gstreamer plugins and helper libraries"
 CATG="lib"
 UPST="https://github.com/GStreamer/gstreamer.git"
