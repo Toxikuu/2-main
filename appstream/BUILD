@@ -1,5 +1,5 @@
 NAME="appstream"
-VERS="1.0.4"
+VERS="1.0.5"
 DESC="Tools and libraries to work with AppStream metadata"
 CATG="lib"
 UPST="https://github.com/ximion/appstream.git"
