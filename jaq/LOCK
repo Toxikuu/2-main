@@ -1,15 +1,15 @@
 repo = "main"
 name = "jaq"
-version = "2.1.1"
-timestamp = "2025-04-16 17:12:52"
+version = "2.2.0"
+timestamp = "2025-04-26 12:14:17"
 description = "A jq clone focussed on correctness, speed, and simplicity"
 upstream = "https://github.com/01mf02/jaq.git"
 
 [[dependencies]]
-relpath = "tox/rust"
+relpath = "main/rust"
 optional = false
 runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://github.com/01mf02/jaq/archive/refs/tags/v2.1.1.tar.gz"
+url = "https://github.com/01mf02/jaq/archive/refs/tags/v2.2.0.tar.gz"
