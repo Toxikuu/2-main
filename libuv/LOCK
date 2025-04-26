@@ -1,11 +1,11 @@
 repo = "main"
 name = "libuv"
-version = "1.50.0"
-timestamp = "2025-04-16 17:12:58"
+version = "1.51.0"
+timestamp = "2025-04-26 12:12:45"
 categories = ["lib"]
 description = "Multi-platform support library focusing on asyncio"
 upstream = "https://github.com/libuv/libuv.git"
 
 [source]
 kind = "Tarball"
-url = "https://dist.libuv.org/dist/v1.50.0/libuv-v1.50.0.tar.gz"
+url = "https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz"
