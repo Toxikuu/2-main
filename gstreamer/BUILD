@@ -1,5 +1,5 @@
 NAME="gstreamer"
-VERS="1.26.0"
+VERS="1.26.1"
 DESC="Development framework for multimedia applications"
 CATG=""
 UPST="https://github.com/GStreamer/gstreamer.git"
