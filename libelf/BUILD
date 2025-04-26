@@ -1,5 +1,5 @@
 NAME="libelf"
-VERS="0.192"
+VERS="0.193"
 CATG="core"
 DESC="Library for handling ELF files"
 UPST="https://sourceware.org/git/elfutils.git"
