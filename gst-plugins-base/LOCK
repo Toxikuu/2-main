@@ -1,7 +1,7 @@
 repo = "main"
 name = "gst-plugins-base"
-version = "1.26.0"
-timestamp = "2025-04-16 17:14:13"
+version = "1.26.1"
+timestamp = "2025-04-26 12:13:33"
 categories = ["lib"]
 description = "Base gstreamer plugins and helper libraries"
 upstream = "https://github.com/GStreamer/gstreamer.git"
@@ -48,7 +48,7 @@ optional = false
 runtime = false
 
 [[dependencies]]
-relpath = "tox/mesa"
+relpath = "main/mesa"
 optional = false
 runtime = false
 
@@ -79,4 +79,4 @@ runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.0.tar.xz"
+url = "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.1.tar.xz"
