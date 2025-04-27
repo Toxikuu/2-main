@@ -1,5 +1,5 @@
 NAME="steam"
-VERS="1.0.0.82"
+VERS="1.0.0.83"
 DESC="Valve's digital software delivery system"
 CATG="games gui"
 UPST="https://repo.steampowered.com/steam/pool/steam/s/steam/?C=M&O=D"
