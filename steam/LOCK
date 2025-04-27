@@ -1,7 +1,7 @@
 repo = "main"
 name = "steam"
-version = "1.0.0.82"
-timestamp = "2025-04-16 17:12:54"
+version = "1.0.0.83"
+timestamp = "2025-04-27 00:59:31"
 categories = [
     "games",
     "gui",
@@ -31,7 +31,7 @@ optional = false
 runtime = false
 
 [[dependencies]]
-relpath = "tox/mesa"
+relpath = "main/mesa"
 optional = false
 runtime = false
 
@@ -57,4 +57,4 @@ runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://repo.steampowered.com/steam/pool/steam/s/steam/steam_1.0.0.82.tar.gz"
+url = "https://repo.steampowered.com/steam/pool/steam/s/steam/steam_1.0.0.83.tar.gz"
