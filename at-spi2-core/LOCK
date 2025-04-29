@@ -1,7 +1,7 @@
 repo = "main"
 name = "at-spi2-core"
-version = "2.56.1"
-timestamp = "2025-04-16 17:12:57"
+version = "2.56.2"
+timestamp = "2025-04-29 15:04:46"
 categories = ["lib"]
 description = "Comprehensive accessibility framework for GNOME's Assistive Technologies"
 upstream = "https://gitlab.gnome.org/GNOME/at-spi2-core.git"
@@ -44,4 +44,4 @@ runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.1.tar.xz"
+url = "https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.2.tar.xz"
