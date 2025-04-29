@@ -1,11 +1,11 @@
 repo = "main"
 name = "libconfig"
-version = "1.7.3"
-timestamp = "2025-04-16 17:12:55"
+version = "1.8"
+timestamp = "2025-04-29 15:04:54"
 categories = ["lib"]
 description = "C library for processing configuration files"
 upstream = "https://github.com/hyperrealm/libconfig.git"
 
 [source]
 kind = "Tarball"
-url = "https://github.com/hyperrealm/libconfig/releases/download/v1.7.3/libconfig-1.7.3.tar.gz"
+url = "https://github.com/hyperrealm/libconfig/releases/download/v1.8/libconfig-1.8.tar.gz"
