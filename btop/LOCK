@@ -1,7 +1,7 @@
 repo = "main"
 name = "btop"
-version = "1.4.0"
-timestamp = "2025-04-16 17:12:57"
+version = "1.4.1"
+timestamp = "2025-04-29 15:04:18"
 categories = [
     "tui",
     "utils",
@@ -11,4 +11,4 @@ upstream = "https://github.com/aristocratos/btop.git"
 
 [source]
 kind = "Tarball"
-url = "https://github.com/aristocratos/btop/archive/v1.4.0/btop-1.4.0.tar.gz"
+url = "https://github.com/aristocratos/btop/archive/v1.4.1/btop-1.4.1.tar.gz"
