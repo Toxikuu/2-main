@@ -1,7 +1,7 @@
 repo = "main"
 name = "nss"
-version = "3.110"
-timestamp = "2025-04-16 17:12:56"
+version = "3.111"
+timestamp = "2025-04-29 15:05:02"
 description = "Network Security Services"
 extra = ["https://github.com/glfs-book/glfs/raw/refs/heads/trunk/patches/nss/nss-standalone-1.patch"]
 upstream = "https://github.com/nss-dev/nss.git"
@@ -9,4 +9,4 @@ version_command = "git ls-remote --tags --refs 'https://github.com/nss-dev/nss.g
 
 [source]
 kind = "Tarball"
-url = "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_110_RTM/src/nss-3.110.tar.gz"
+url = "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_111_RTM/src/nss-3.111.tar.gz"
