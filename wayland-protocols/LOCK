@@ -1,10 +1,10 @@
 repo = "main"
 name = "wayland-protocols"
-version = "1.43"
-timestamp = "2025-04-16 17:12:55"
+version = "1.44"
+timestamp = "2025-04-29 15:05:38"
 description = "Additional protocols expanding Wayland functionality"
 upstream = "https://gitlab.freedesktop.org/wayland/wayland-protocols.git"
 
 [source]
 kind = "Tarball"
-url = "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.43/downloads/wayland-protocols-1.43.tar.xz"
+url = "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.44/downloads/wayland-protocols-1.44.tar.xz"
