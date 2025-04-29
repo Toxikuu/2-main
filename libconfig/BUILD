@@ -1,5 +1,5 @@
 NAME="libconfig"
-VERS="1.7.3"
+VERS="1.8"
 DESC="C library for processing configuration files"
 CATG="lib"
 UPST="https://github.com/hyperrealm/libconfig.git"
