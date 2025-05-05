@@ -1,7 +1,7 @@
 repo = "main"
 name = "spirv-llvm-translator"
-version = "20.1.1"
-timestamp = "2025-04-16 17:12:56"
+version = "20.1.2"
+timestamp = "2025-05-04 19:37:02"
 categories = ["dev"]
 description = "Bi-directional translation between SPIR-V and LLVM IR"
 upstream = "https://github.com/KhronosGroup/SPIRV-LLVM-Translator.git"
@@ -18,7 +18,7 @@ optional = false
 runtime = false
 
 [[dependencies]]
-relpath = "tox/llvm"
+relpath = "main/llvm"
 optional = false
 runtime = false
 
@@ -34,4 +34,4 @@ runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v20.1.1/SPIRV-LLVM-Translator-20.1.1.tar.gz"
+url = "https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v20.1.2/SPIRV-LLVM-Translator-20.1.2.tar.gz"
