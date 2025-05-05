@@ -1,14 +1,14 @@
 repo = "main"
 name = "libclc"
-version = "20.1.3"
-timestamp = "2025-04-16 19:40:20"
+version = "20.1.4"
+timestamp = "2025-05-04 19:37:13"
 categories = ["dev"]
 description = "Library requirements of the OpenCL C programming language"
 upstream = "https://github.com/llvm/llvm-project.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/llvm/llvm-project.git' | sed 's@.*/@@' | grep -Ev 'init|rc' | sort -V | cut -d- -f2 | tail -n1"
 
 [[dependencies]]
-relpath = "tox/llvm"
+relpath = "main/llvm"
 optional = false
 runtime = false
 
@@ -19,4 +19,4 @@ runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.3/libclc-20.1.3.src.tar.xz"
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.4/libclc-20.1.4.src.tar.xz"
