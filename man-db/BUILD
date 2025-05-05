@@ -1,5 +1,5 @@
 NAME="man-db"
-VERS="2.13.0"
+VERS="2.13.1"
 DESC="Utility for reading man pages"
 CATG="doc utils tui"
 UPST="https://gitlab.com/$NAME/$NAME.git"
