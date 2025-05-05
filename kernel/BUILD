@@ -1,5 +1,5 @@
 NAME="kernel"
-VERS="6.13.11"
+VERS="6.14.5"
 DESC="The Linux kernel"
 UPST="https://kernel.org"
 # VCMD="curl -s '$UPST' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
@@ -66,4 +66,3 @@ fi
 2z() {
     warn "The kernel has been compiled and installed to /boot. You must now specify it in your bootloader or whatever. Also, if you use nvidia drivers, you're gonna wanna rebuild those."
 }
-#d disabled vcmd (covered by tox/kernel)
