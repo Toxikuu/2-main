@@ -1,5 +1,5 @@
 NAME="mesa"
-VERS="25.0.4"
+VERS="25.0.5"
 DESC="Graphics software bundle (OpenGL, Vulkan, etc.)"
 CATG="graphics"
 UPST="https://gitlab.freedesktop.org/mesa/mesa.git"
@@ -53,4 +53,3 @@ ni
 }
 
 }
-#d stop building osmesa, following https://github.com/glfs-book/glfs/issues/211
