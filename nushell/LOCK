@@ -1,7 +1,7 @@
 repo = "main"
 name = "nushell"
-version = "0.103.0"
-timestamp = "2025-04-16 17:12:55"
+version = "0.104.0"
+timestamp = "2025-05-04 19:36:41"
 categories = ["shells"]
 description = "A new type of shell"
 upstream = "https://github.com/nushell/nushell.git"
@@ -18,10 +18,10 @@ optional = false
 runtime = false
 
 [[dependencies]]
-relpath = "tox/rust"
+relpath = "main/rust"
 optional = false
 runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://github.com/nushell/nushell/archive/refs/tags/0.103.0.tar.gz"
+url = "https://github.com/nushell/nushell/archive/refs/tags/0.104.0.tar.gz"
