@@ -1,13 +1,13 @@
 repo = "main"
 name = "gsr"
-version = "5.4.1"
-timestamp = "2025-04-24 17:00:08"
+version = "5.5.1"
+timestamp = "2025-05-04 19:39:23"
 categories = [
     "rec",
     "cli",
 ]
 description = "Fastest screen recorder for Linux"
-extra = ["https://dec05eba.com/snapshot/gpu-screen-recorder.git.5.4.1.tar.gz"]
+extra = ["https://dec05eba.com/snapshot/gpu-screen-recorder.git.5.5.1.tar.gz"]
 upstream = "https://repo.dec05eba.com/gpu-screen-recorder"
 
 [[dependencies]]
