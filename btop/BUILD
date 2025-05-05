@@ -1,5 +1,5 @@
 NAME="btop"
-VERS="1.4.1"
+VERS="1.4.2"
 DESC="System resource monitor"
 CATG="tui utils"
 UPST="https://github.com/aristocratos/btop.git"
