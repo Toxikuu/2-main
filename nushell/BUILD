@@ -1,5 +1,5 @@
 NAME="nushell"
-VERS="0.103.0"
+VERS="0.104.0"
 DESC="A new type of shell"
 CATG="shells"
 UPST="https://github.com/$NAME/$NAME.git"
