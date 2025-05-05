@@ -1,5 +1,5 @@
 NAME="pixman"
-VERS="0.44.2"
+VERS="0.46.0"
 DESC="Pixel manipulation library for X and cairo"
 UPST="https://gitlab.freedesktop.org/pixman/pixman.git"
 
