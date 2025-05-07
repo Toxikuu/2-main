@@ -11,7 +11,6 @@ EXTRA=()
 
 sed -i 's:\\\${:\\\$\\{:' intltool-update.in
 
-# ./configure --prefix=/usr
 cfg
 mk
 mi
