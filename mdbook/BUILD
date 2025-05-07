@@ -1,5 +1,5 @@
 NAME="mdbook"
-VERS="0.4.48"
+VERS="0.4.49"
 DESC="Create a book from markdown files"
 CATG="doc"
 UPST="https://github.com/rust-lang/mdBook.git"
