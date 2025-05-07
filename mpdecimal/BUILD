@@ -1,5 +1,5 @@
 NAME="mpdecimal"
-VERS="4.0.0"
+VERS="4.0.1"
 DESC="Arbitrary-precision decimal floating point arithmetic library"
 CATG="lib"
 UPST="https://www.bytereef.org/mpdecimal/download.html"
