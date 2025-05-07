@@ -1,5 +1,5 @@
 NAME="whois"
-VERS="5.5.23"
+VERS="5.6.0"
 DESC="Tool to query domain name information"
 UPST="https://github.com/rfc1036/whois"
 
