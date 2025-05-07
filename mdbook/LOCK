@@ -1,16 +1,16 @@
 repo = "main"
 name = "mdbook"
-version = "0.4.48"
-timestamp = "2025-04-16 17:12:57"
+version = "0.4.49"
+timestamp = "2025-05-06 19:32:09"
 categories = ["doc"]
 description = "Create a book from markdown files"
 upstream = "https://github.com/rust-lang/mdBook.git"
 
 [[dependencies]]
-relpath = "tox/rust"
+relpath = "main/rust"
 optional = false
 runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://github.com/rust-lang/mdBook/archive/refs/tags/v0.4.48.tar.gz"
+url = "https://github.com/rust-lang/mdBook/archive/refs/tags/v0.4.49.tar.gz"
