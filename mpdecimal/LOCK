@@ -1,7 +1,7 @@
 repo = "main"
 name = "mpdecimal"
-version = "4.0.0"
-timestamp = "2025-04-16 17:12:58"
+version = "4.0.1"
+timestamp = "2025-05-06 19:31:33"
 categories = ["lib"]
 description = "Arbitrary-precision decimal floating point arithmetic library"
 upstream = "https://www.bytereef.org/mpdecimal/download.html"
@@ -9,4 +9,4 @@ version_command = "curl -s 'https://www.bytereef.org/mpdecimal/download.html' | 
 
 [source]
 kind = "Tarball"
-url = "https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-4.0.0.tar.gz"
+url = "https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-4.0.1.tar.gz"
