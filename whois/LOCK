@@ -1,10 +1,10 @@
 repo = "main"
 name = "whois"
-version = "5.5.23"
-timestamp = "2025-04-16 17:12:58"
+version = "5.6.0"
+timestamp = "2025-05-06 19:31:22"
 description = "Tool to query domain name information"
 upstream = "https://github.com/rfc1036/whois"
 
 [source]
 kind = "Tarball"
-url = "https://github.com/rfc1036/whois/archive/v5.5.23/whois-5.5.23.tar.gz"
+url = "https://github.com/rfc1036/whois/archive/v5.6.0/whois-5.6.0.tar.gz"
